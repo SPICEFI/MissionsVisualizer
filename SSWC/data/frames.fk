@@ -1,0 +1,23 @@
+KPL/FK
+
+\begindata
+
+	FRAME_TEST_FRAME		=	1400001
+	FRAME_1400001_NAME		=	'TEST_FRAME'
+	FRAME_1400001_CLASS		=	4
+	FRAME_1400001_CENTER	=	301
+	FRAME_1400001_CLASS_ID	=	1400001
+
+	TKFRAME_1400001_RELATIVE		=	'IAU_EARTH'
+	TKFRAME_1400001_SPEC			=	'MATRIX'
+	TKFRAME_1400001_MATRIX			=	(	1
+											0
+											0
+											0
+											1
+											0
+											0
+											0
+											1)
+
+\begintext

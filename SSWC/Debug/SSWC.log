@@ -1,0 +1,36 @@
+﻿Build started 19.11.2015 22:28:51.
+     1>Project "O:\SSWC\SSWC\SSWC.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Routine.cpp
+         Routine.cpp
+     1>o:\sswc\sswc\src\routine.cpp(58): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"O:\SSWC\Debug\SSWC.exe" /INCREMENTAL /NOLOGO /LIBPATH:O:\SSWC\Resources\lib /LIBPATH:O:\SSWC\SSWC\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"O:\SSWC\Debug\SSWC.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"O:\SSWC\Debug\SSWC.lib" /MACHINE:X86 Debug\App.obj
+         Debug\CSpice.obj
+         Debug\CSpiceCore.obj
+         Debug\CSpiceUtil.obj
+         Debug\Date.obj
+         Debug\Frame.obj
+         Debug\glCamera.obj
+         Debug\ARB_Multisample.obj
+         Debug\Matrix3x3.obj
+         Debug\Matrix4x4.obj
+         Debug\Orientation.obj
+         Debug\Planet.obj
+         Debug\Program.obj
+         Debug\Quantity.obj
+         Debug\Routine.obj
+         Debug\Scene.obj
+         Debug\SpaceBody.obj
+         Debug\SpaceObject.obj
+         Debug\TGA.obj
+         Debug\Traectory.obj
+         Debug\Vector3.obj
+         Debug\Vector3T.obj
+         Debug\Window.obj
+         SSWC.vcxproj -> O:\SSWC\Debug\SSWC.exe
+     1>Done Building Project "O:\SSWC\SSWC\SSWC.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.57
