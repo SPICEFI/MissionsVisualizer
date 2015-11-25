@@ -102,29 +102,6 @@ Vector3 Frame::AxisZ(const Date& t, const Frame& ref) const
 	return TransformVector(Vector3::k, t, ref);
 }
 
-Orientation Frame::GetOrientation(const Date& t, const Frame& ref) const
-{
-	return Orientation(AxisX(t, ref), AxisY(t, ref), AxisZ(t, ref));
-}
-
-//Matrix3x3 Frame::GetTransformationMatrix(const Date& t, const Frame& ref) const
-//{
-//	double transform[3][3];
-//	CSPICE_ASSERT(pxform_c(GetSpiceName().c_str(), ref.GetSpiceName().c_str(), t.AsDouble(), transform));
-//
-//	float fMatrix[3][3];
-//
-//	for(int i = 0; i < 3; i++)
-//	{
-//		for(int j = 0; j < 3; j++)
-//		{
-//			fMatrix[i][j] = static_cast<float>(transform[i][j]);
-//		}
-//	}
-//
-//	return Matrix3x3(fMatrix);
-//}
-
 Matrix4x4 Frame::GetTransformationMatrix(const Date& t, const Frame& ref) const
 {
 	Matrix4x4 transform = Matrix4x4::Zero;

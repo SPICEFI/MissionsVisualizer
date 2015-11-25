@@ -80,11 +80,6 @@ Frame SpaceBody::GetDefaultFrame() const
 	return Frame(frameId);
 }
 
-//Orientation SpaceBody::GetOrientation(const Time& t, const Frame& ref) const
-//{
-//	return frame->GetOrientation(t, ref);
-//}
-
 bool SpaceBody::HasParameter(BulkParameter param) const
 {
 	switch(param)

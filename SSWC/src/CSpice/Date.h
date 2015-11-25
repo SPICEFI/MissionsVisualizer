@@ -3,7 +3,7 @@
 #include <string>
 
 #include "CSpiceCore.h"
-#include "Quantity.h"
+#include "../Math/Quantity.h"
 
 #define FORMAT_STRING_BUFFER 1024
 

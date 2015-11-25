@@ -12,52 +12,48 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\App.h" />
-    <ClInclude Include="src\CSpice.h" />
-    <ClInclude Include="src\CSpiceCore.h" />
-    <ClInclude Include="src\CSpiceUtil.h" />
-    <ClInclude Include="src\Date.h" />
-    <ClInclude Include="src\Frame.h" />
+    <ClInclude Include="src\CSpice\CSpice.h" />
+    <ClInclude Include="src\CSpice\CSpiceCore.h" />
+    <ClInclude Include="src\CSpice\CSpiceUtil.h" />
+    <ClInclude Include="src\CSpice\Date.h" />
+    <ClInclude Include="src\CSpice\Frame.h" />
+    <ClInclude Include="src\CSpice\SpaceBody.h" />
+    <ClInclude Include="src\CSpice\SpaceObject.h" />
+    <ClInclude Include="src\CSpice\Window.h" />
     <ClInclude Include="src\glCameara.h" />
     <ClInclude Include="src\GL\ARB_Multisample.h" />
-    <ClInclude Include="src\Matrix3x3.h" />
-    <ClInclude Include="src\Matrix4x4.h" />
-    <ClInclude Include="src\Orientation.h" />
+    <ClInclude Include="src\Math\Matrix4x4.h" />
+    <ClInclude Include="src\Math\Quantity.h" />
+    <ClInclude Include="src\Math\Vector3.h" />
+    <ClInclude Include="src\Math\Vector3T.h" />
     <ClInclude Include="src\Planet.h" />
     <ClInclude Include="src\Program.h" />
-    <ClInclude Include="src\Quantity.h" />
     <ClInclude Include="src\Scene.h" />
-    <ClInclude Include="src\SpaceBody.h" />
-    <ClInclude Include="src\SpaceObject.h" />
     <ClInclude Include="src\TGA.h" />
     <ClInclude Include="src\Traectory.h" />
-    <ClInclude Include="src\Vector3.h" />
-    <ClInclude Include="src\Vector3T.h" />
-    <ClInclude Include="src\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\App.cpp" />
-    <ClCompile Include="src\CSpice.cpp" />
-    <ClCompile Include="src\CSpiceCore.cpp" />
-    <ClCompile Include="src\CSpiceUtil.cpp" />
-    <ClCompile Include="src\Date.cpp" />
-    <ClCompile Include="src\Frame.cpp" />
+    <ClCompile Include="src\CSpice\CSpice.cpp" />
+    <ClCompile Include="src\CSpice\CSpiceCore.cpp" />
+    <ClCompile Include="src\CSpice\CSpiceUtil.cpp" />
+    <ClCompile Include="src\CSpice\Date.cpp" />
+    <ClCompile Include="src\CSpice\Frame.cpp" />
+    <ClCompile Include="src\CSpice\SpaceBody.cpp" />
+    <ClCompile Include="src\CSpice\SpaceObject.cpp" />
+    <ClCompile Include="src\CSpice\Window.cpp" />
     <ClCompile Include="src\glCamera.cpp" />
     <ClCompile Include="src\GL\ARB_Multisample.cpp" />
-    <ClCompile Include="src\Matrix3x3.cpp" />
-    <ClCompile Include="src\Matrix4x4.cpp" />
-    <ClCompile Include="src\Orientation.cpp" />
+    <ClCompile Include="src\Math\Matrix4x4.cpp" />
+    <ClCompile Include="src\Math\Quantity.cpp" />
+    <ClCompile Include="src\Math\Vector3.cpp" />
+    <ClCompile Include="src\Math\Vector3T.cpp" />
     <ClCompile Include="src\Planet.cpp" />
     <ClCompile Include="src\Program.cpp" />
-    <ClCompile Include="src\Quantity.cpp" />
     <ClCompile Include="src\Routine.cpp" />
     <ClCompile Include="src\Scene.cpp" />
-    <ClCompile Include="src\SpaceBody.cpp" />
-    <ClCompile Include="src\SpaceObject.cpp" />
     <ClCompile Include="src\TGA.cpp" />
     <ClCompile Include="src\Traectory.cpp" />
-    <ClCompile Include="src\Vector3.cpp" />
-    <ClCompile Include="src\Vector3T.cpp" />
-    <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{43F2E47A-4E8C-416B-A112-0FA6C9652460}</ProjectGuid>

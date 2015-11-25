@@ -8,7 +8,7 @@
 
 #pragma comment(linker, "/NODEFAULTLIB:LIBCMT.lib")
 
-#include "..\include\CSpice\SpiceUsr.h"
+#include "..\..\include\CSpice\SpiceUsr.h"
 #include "CSpiceUtil.h"
 
 //class Time;

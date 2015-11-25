@@ -6,5 +6,4 @@
 #include "SpaceObject.h"
 #include "SpaceBody.h"
 #include "Frame.h"
-#include "Orientation.h"
 #include "Window.h"

@@ -13,54 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{d1344d33-fc22-42ce-9fc7-d638c2c7cab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CSpice">
+      <UniqueIdentifier>{2244b55e-052c-4bca-895f-a35b2dd7ee29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{cd73143f-e0b9-4df0-8914-04c97e333c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CSpice">
+      <UniqueIdentifier>{61469e14-55fd-4f65-9555-baa791eeeb5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\App.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\CSpice.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\CSpiceCore.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\CSpiceUtil.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Date.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Frame.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\glCameara.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Matrix3x3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Orientation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Program.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Quantity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\SpaceBody.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\SpaceObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Vector3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Vector3T.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\GL\ARB_Multisample.h">
@@ -78,60 +48,54 @@
     <ClInclude Include="src\Traectory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Matrix4x4.h">
+    <ClInclude Include="src\App.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\Matrix4x4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\Quantity.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\Vector3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\Vector3T.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSpice\CSpice.h">
+      <Filter>Header Files\CSpice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSpice\CSpiceCore.h">
+      <Filter>Header Files\CSpice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSpice\CSpiceUtil.h">
+      <Filter>Header Files\CSpice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSpice\Date.h">
+      <Filter>Header Files\CSpice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSpice\Frame.h">
+      <Filter>Header Files\CSpice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSpice\SpaceBody.h">
+      <Filter>Header Files\CSpice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSpice\SpaceObject.h">
+      <Filter>Header Files\CSpice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSpice\Window.h">
+      <Filter>Header Files\CSpice</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\App.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CSpice.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CSpiceCore.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CSpiceUtil.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Date.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Frame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\glCamera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Matrix3x3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Orientation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Quantity.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Routine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\SpaceBody.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\SpaceObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Vector3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Vector3T.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\GL\ARB_Multisample.cpp">
@@ -149,8 +113,44 @@
     <ClCompile Include="src\Traectory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Matrix4x4.cpp">
+    <ClCompile Include="src\App.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSpice\CSpice.cpp">
+      <Filter>Source Files\CSpice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSpice\CSpiceCore.cpp">
+      <Filter>Source Files\CSpice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSpice\CSpiceUtil.cpp">
+      <Filter>Source Files\CSpice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSpice\Date.cpp">
+      <Filter>Source Files\CSpice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSpice\Frame.cpp">
+      <Filter>Source Files\CSpice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSpice\SpaceBody.cpp">
+      <Filter>Source Files\CSpice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSpice\SpaceObject.cpp">
+      <Filter>Source Files\CSpice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSpice\Window.cpp">
+      <Filter>Source Files\CSpice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\Matrix4x4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\Quantity.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\Vector3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\Vector3T.cpp">
+      <Filter>Source Files\Math</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

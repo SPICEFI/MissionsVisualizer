@@ -1,7 +1,7 @@
 #pragma once
 
 #include "SpaceObject.h"
-#include "Quantity.h"
+#include "../Math/Quantity.h"
 
 #include <vector>
 #include <array>
@@ -34,8 +34,6 @@ public:
 	Frame GetIAUFrame() const;
 	bool HasDefaultFrame() const;
 	Frame GetDefaultFrame() const;
-
-	//Orientation GetOrientation(const Time& t, const Frame& ref = Frame::J2000) const;
 
 	bool HasParameter(BulkParameter param) const;
 
