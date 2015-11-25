@@ -1,14 +1,14 @@
 #pragma once
-#include "SpaceBody.h"
-#include "Date.h"
+//#include "SpaceBody.h"
+//#include "Date.h"
 #include "TGA.h"
-#include "Window.h"
-#include "Vector3T.h"
+//#include "Window.h"
+//#include "Vector3T.h"
 #include "App.h"
 #include <vector>
 #include "Traectory.h"
-#include "Matrix4x4.h"
-#include "Frame.h"
+#include "Math\Matrix4x4.h"
+//#include "Frame.h"
 
 #undef GetObject
 

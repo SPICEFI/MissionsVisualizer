@@ -1,7 +1,7 @@
 #pragma once
 #include "windows.h"
 
-#include "Vector3.h"
+#include "Math\Vector3.h"
 #include <vector>
 
 #include <gl\GL.h>

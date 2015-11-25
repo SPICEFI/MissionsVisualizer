@@ -2,7 +2,7 @@
 
 #include <windows.h>
 #include <math.h>
-#include "Vector3.h"
+#include "Math\Vector3.h"
 class glCamera
 {
 public:
