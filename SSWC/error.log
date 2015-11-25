@@ -30,3 +30,19 @@ Fri Oct 02 2015 23:18:17
 	Traceback: bodvcd_c --> BODVCD
 	Extra info: CSpice error in o:\sswc\sswc\src\spacebody.cpp (line 169): SPICE(KERNELVARNOTFOUND)
 
+Wed Nov 25 2015 16:37:01
+	Toolkit version: CSPICE_N0065
+	Short: SPICE(NOSUCHFILE)
+	Explain: 
+	Long: The first file 'O:/NASA/Kernels/lsk/naif0011.tls.pc' specified by KERNELS_TO_LOAD in the file data/meta.tm could not be located.
+	Traceback: furnsh_c --> FURNSH --> ZZLDKER
+	Extra info: CSpice error in c:\users\jne0xff\documents\visual studio 2013\projects\missionsvisualizer\sswc\src\cspiceutil.cpp (line 28): SPICE(NOSUCHFILE)
+
+Wed Nov 25 2015 16:39:34
+	Toolkit version: CSPICE_N0065
+	Short: SPICE(NOSUCHFILE)
+	Explain: 
+	Long: The first file 'O:/NASA/Kernels/lsk/naif0011.tls.pc' specified by KERNELS_TO_LOAD in the file data/meta.tm could not be located.
+	Traceback: furnsh_c --> FURNSH --> ZZLDKER
+	Extra info: CSpice error in c:\users\jne0xff\documents\visual studio 2013\projects\missionsvisualizer\sswc\src\cspiceutil.cpp (line 28): SPICE(NOSUCHFILE)
+
