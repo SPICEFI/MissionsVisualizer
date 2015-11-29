@@ -33,6 +33,7 @@ typedef struct {									// Contains Information Vital To A Window
 void TerminateApplication(GL_Window* window);		// Terminate The Application
 
 void ToggleFullscreen(GL_Window* window);			// Toggle Fullscreen / Windowed Mode
+void ChangeMode(GL_Window* window);					// Change Between Brientation And Pick Modes
 
 // These Are The Function You Must Provide
 BOOL Initialize(GL_Window* window, Keys* keys);	// Performs All Your Initialization
@@ -47,3 +48,4 @@ void Selection(void);								// Perform Selection
 
 extern int mouse_x;
 extern int mouse_y;
+extern bool LEFT_MOUSE_BUTTON_DOWN;

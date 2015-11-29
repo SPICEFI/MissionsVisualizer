@@ -8,6 +8,7 @@
 #include "GL\ARB_Multisample.h"
 
 #define WM_TOGGLEFULLSCREEN (WM_USER+1)									// Application Define Message For Toggling
+#define WM_CHANGEMODE (WM_USER+2)
 // Between Fullscreen / Windowed Mode
 static BOOL g_isProgramLooping;											// Window Creation Loop, For FullScreen/Windowed Toggle																		// Between Fullscreen / Windowed Mode
 static BOOL g_createFullScreen;											// If TRUE, Then Create Fullscreen
@@ -16,6 +17,9 @@ int	mouse_x, mouse_y;							                        // The Current Position Of T
 
 BOOL DestroyWindowGL(GL_Window* window);
 BOOL CreateWindowGL(GL_Window* window);
+
+bool LEFT_MOUSE_BUTTON_DOWN;
+extern bool orientationMode;
 
 void TerminateApplication(GL_Window* window)							// Terminate The Application
 {
@@ -26,6 +30,11 @@ void TerminateApplication(GL_Window* window)							// Terminate The Application
 void ToggleFullscreen(GL_Window* window)								// Toggle Fullscreen/Windowed
 {
 	PostMessage(window->hWnd, WM_TOGGLEFULLSCREEN, 0, 0);				// Send A WM_TOGGLEFULLSCREEN Message
+}
+
+void ChangeMode(GL_Window* window)
+{
+	PostMessage(window->hWnd, WM_CHANGEMODE, 0, 0);
 }
 
 void ReshapeGL(int width, int height)									// Reshape The Window When It's Moved Or Resized
@@ -213,6 +222,8 @@ BOOL CreateWindowGL(GL_Window* window)									// This Code Creates Our OpenGL W
 
 	window->lastTickCount = GetTickCount();							// Get Tick Count
 
+	LEFT_MOUSE_BUTTON_DOWN = false;
+
 	return TRUE;														// Window Creating Was A Success
 	// Initialization Will Be Done In WM_CREATE
 }
@@ -305,8 +316,12 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		if ((wParam >= 0) && (wParam <= 255))						// Is Key (wParam) In A Valid Range?
 		{
 			window->keys->keyDown[wParam] = TRUE;					// Set The Selected Key (wParam) To True
-			return 0;												// Return
+			//return 0;												// Return
 		}
+		switch (wParam)
+			case VK_F2:
+				ChangeMode(window);
+				return 0;
 		break;															// Break
 
 	case WM_KEYUP:													// Update Keyboard Buffers For Keys Released
@@ -326,6 +341,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 	{
 		mouse_x = LOWORD(lParam);
 		mouse_y = HIWORD(lParam);
+		LEFT_MOUSE_BUTTON_DOWN = true;
 		//Selection();
 	}
 	break;
@@ -336,6 +352,14 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		mouse_y = HIWORD(lParam);
 	}
 	break;
+
+	case WM_CHANGEMODE:
+	{
+		orientationMode = !orientationMode;
+		ShowCursor(!orientationMode);
+	}
+	break;
+
 	}
 
 	return DefWindowProc(hWnd, uMsg, wParam, lParam);					// Pass Unhandled Messages To DefWindowProc

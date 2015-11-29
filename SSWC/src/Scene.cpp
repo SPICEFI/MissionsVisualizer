@@ -24,6 +24,7 @@ Scene::~Scene()
 void Scene::addPlanet(Planet& planet)
 {
 	planets.push_back( planet );
+
 }
 //void Scene::addPlanet(MyVector3 newPosition, float radius, GLuint textureHandle)
 //{
@@ -60,3 +61,12 @@ void Scene::render(Date t, App& app)
 	}
 }
 
+const Planet& Scene::FindObjectWithID(int id)
+{
+	for (int i = 0; i < planets.size(); i++)
+	{
+		int tempID = planets[i].GetID();
+		if (tempID == id)
+			return planets[i];
+	}
+}

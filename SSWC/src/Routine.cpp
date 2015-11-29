@@ -11,6 +11,7 @@
 #include "Program.h"
 #include "GL\ARB_Multisample.h"
 
+
 #include "App.h"
 //#include "Date.h"
 
@@ -37,7 +38,11 @@ Scene SolarSystem;
 Date t;
 TGA* skyTexture;
 
+int id = -1;
 float g_LightPosition[4] = { 0, 0, 0, 1 };
+
+bool orientationMode = true;
+std::string planetName;
 
 BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization Goes Here
 {
@@ -127,29 +132,45 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 		ToggleFullscreen(g_window);							// Toggle Fullscreen Mode
 	}
 
-	if (g_keys->keyDown[VK_F2])
+	/*if (g_keys->keyDown[VK_F2])
 	{
-
-	}
+		ChangeMode(g_window);
+	}*/
 
 	if (g_keys->keyDown['W'])
 	{
-		g_Camera.MoveCamera(0.03f);
+		if (orientationMode)
+			g_Camera.MoveCamera(0.03f);
 	}
 
 	if (g_keys->keyDown['S'])
 	{
-		g_Camera.MoveCamera(-0.03f);
+		if (orientationMode)
+			g_Camera.MoveCamera(-0.03f);
 	}
 
 	if (g_keys->keyDown['A'])
 	{
-		g_Camera.Strafe(-0.03f);
+		if (orientationMode)
+			g_Camera.Strafe(-0.03f);
 	}
 
 	if (g_keys->keyDown['D'])
 	{
-		g_Camera.Strafe(0.03f);
+		if (orientationMode)
+			g_Camera.Strafe(0.03f);
+	}
+
+	if (LEFT_MOUSE_BUTTON_DOWN)
+	{
+		if (!orientationMode)
+		id = g_Camera.RetrieveObjectID(mouse_x, mouse_y, centerX * 2, centerY * 2, SolarSystem, t, app);
+		LEFT_MOUSE_BUTTON_DOWN = false;
+		if (id != 0)
+		{
+			Planet obj = SolarSystem.FindObjectWithID(id);
+			MessageBox(NULL, obj.body.GetSpiceName().c_str(), "Information", MB_OK);
+		}
 	}
 
 	t += Time(1.0, Units::Common::minutes);
@@ -214,7 +235,7 @@ void Draw(void)													// Draw Our Scene
 	glLoadIdentity();
 
 	//glViewport(0, 0, 640, 720);
-	g_Camera.Update(centerX, centerY);
+	g_Camera.Update(centerX, centerY, orientationMode);
 	CreateSkyBox(0, 0, 0, 400, 400, 400);
 	SolarSystem.render(t, app);
 

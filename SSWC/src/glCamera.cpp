@@ -129,11 +129,58 @@ void glCamera::Strafe(float speed)
 	viewVec += strafeVec * speed;
 }
 
-void glCamera::Update(int centerX, int centerY)
+void glCamera::Update(int centerX, int centerY, bool orientationMode)
 {
 	strafeVec = (viewVec - position).CrossProduct(upVec);
 	strafeVec.Normalise();
-	setViewByMouse(centerX, centerY);
+	if (orientationMode)
+		setViewByMouse(centerX, centerY);
 	transformOrientation();
 	transformTranslation();
+}
+
+int glCamera::RetrieveObjectID(int x, int y, int width, int height, Scene scene, Date t, App& app)
+{
+	int objectsFound = 0;
+
+	int viewportCoordinates[4] = { 0 };
+	GLuint selectBuffer[32] = { 0 };//Array for storing ID of objects which were clicked 32 is Opengl requriments
+
+	glSelectBuffer(32, selectBuffer);//Register buffer for objects
+	glGetIntegerv(GL_VIEWPORT, viewportCoordinates);//To get current viewport coordinates
+	glMatrixMode(GL_PROJECTION);
+
+	glPushMatrix();
+	glRenderMode(GL_SELECT);//Render objects without framebiffer changes
+	glLoadIdentity();
+	gluPickMatrix(x, viewportCoordinates[3] - y, 2, 2, viewportCoordinates);
+
+	gluPerspective(45.0f, (GLfloat)(width) / (GLfloat)(height), 1.0f, 500.0f);
+
+	glMatrixMode(GL_MODELVIEW);
+
+	scene.render(t, app);
+
+	objectsFound = glRenderMode(GL_RENDER);
+	glMatrixMode(GL_PROJECTION);
+	glPopMatrix();
+	glMatrixMode(GL_MODELVIEW);
+
+	if (objectsFound > 0)
+	{
+		GLuint lowestDepth = selectBuffer[1];
+		int selectedObject = selectBuffer[3];
+
+		for (int i = 1; i < objectsFound; i++)
+		{
+			if (selectBuffer[(i * 4) + 1] < lowestDepth)
+			{
+				lowestDepth = selectBuffer[(i * 4) + 1];
+				selectedObject = selectBuffer[(i * 4) + 3];
+			}
+		}
+		return selectedObject;
+	}
+	else
+		return 0;
 }

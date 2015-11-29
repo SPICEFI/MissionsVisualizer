@@ -3,6 +3,9 @@
 #include <windows.h>
 #include <math.h>
 #include "Math\Vector3.h"
+#include "App.h"
+#include "Scene.h"
+
 class glCamera
 {
 public:
@@ -22,7 +25,8 @@ public:
 	void Rotate(float angle, float x, float y, float z);
 	void setViewByMouse(int width, int height);
 
-	void Update(int centerX, int centerY);
+	void Update(int centerX, int centerY, bool orientationMode);
+	int RetrieveObjectID(int x, int y, int width, int height, Scene scene, Date t, App& app);
 
 private:
 	void transformOrientation();

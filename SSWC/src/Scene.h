@@ -18,6 +18,7 @@ public:
 
 	void addPlanet(Planet& planet);
 	void render(Date t, App& app);
+	const Planet& FindObjectWithID(int ID);
 
 	/*void calculatepositions(float time);
 	void calculatepositions(Vector3 newPosition, unsigned int index);

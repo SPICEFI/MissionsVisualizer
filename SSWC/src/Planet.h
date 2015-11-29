@@ -26,5 +26,9 @@ public:
 	~Planet();
 
 	void Render(Date t, App& app);
+	int GetID()const{ return ID; }
+
+protected:
+	int ID;
 };
 

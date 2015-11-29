@@ -8,7 +8,7 @@ double distanceScale = 0.00000004f;
 Planet::Planet(const SpaceBody& body, TGA* texture) :body(body)
 {
 	this->texture = texture;
-
+	ID = body.GetSpiceId();
 }
 
 
@@ -27,6 +27,7 @@ void Planet::Render(Date t, App& app)
 	const Matrix4x4& matrix = bodyFrame.GetTransformationMatrix(t, app.GetReferenceFrame());
 	matrix.GetColumnMajor(rotationMatrix);
 
+	glPushName(ID);
 	glPushMatrix();	
 
 	glTranslatef(position.x, position.y, position.z);
@@ -43,6 +44,7 @@ void Planet::Render(Date t, App& app)
 	gluDeleteQuadric(quadric);
 
 	glPopMatrix();
+	glPopName();
 
 	glLineWidth(1);			// размер точек
 	glColor3f(255.0, 255.0, 255.0);		// текущий цвет примитивов
