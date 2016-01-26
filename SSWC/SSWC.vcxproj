@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\App.h" />
+    <ClInclude Include="src\CosmoPoint.h" />
     <ClInclude Include="src\CSpice\CSpice.h" />
     <ClInclude Include="src\CSpice\CSpiceCore.h" />
     <ClInclude Include="src\CSpice\CSpiceUtil.h" />
@@ -30,10 +31,11 @@
     <ClInclude Include="src\Program.h" />
     <ClInclude Include="src\Scene.h" />
     <ClInclude Include="src\TGA.h" />
-    <ClInclude Include="src\Traectory.h" />
+    <ClInclude Include="src\Trajectory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\App.cpp" />
+    <ClCompile Include="src\CosmoPoint.cpp" />
     <ClCompile Include="src\CSpice\CSpice.cpp" />
     <ClCompile Include="src\CSpice\CSpiceCore.cpp" />
     <ClCompile Include="src\CSpice\CSpiceUtil.cpp" />
@@ -53,7 +55,7 @@
     <ClCompile Include="src\Routine.cpp" />
     <ClCompile Include="src\Scene.cpp" />
     <ClCompile Include="src\TGA.cpp" />
-    <ClCompile Include="src\Traectory.cpp" />
+    <ClCompile Include="src\Trajectory.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{43F2E47A-4E8C-416B-A112-0FA6C9652460}</ProjectGuid>

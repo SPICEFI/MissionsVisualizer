@@ -26,6 +26,8 @@ public:
 	void setViewByMouse(int width, int height);
 
 	void Update(int centerX, int centerY, bool orientationMode);
+	void FocusOnPlanet(Planet& planet, Date t, App& app);
+
 	int RetrieveObjectID(int x, int y, int width, int height, Scene scene, Date t, App& app);
 
 private:

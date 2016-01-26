@@ -19,7 +19,10 @@ BOOL DestroyWindowGL(GL_Window* window);
 BOOL CreateWindowGL(GL_Window* window);
 
 bool LEFT_MOUSE_BUTTON_DOWN;
+bool MOUSE_CHANGED_POSITION;
+
 extern bool orientationMode;
+
 
 void TerminateApplication(GL_Window* window)							// Terminate The Application
 {
@@ -350,6 +353,8 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 	{
 		mouse_x = LOWORD(lParam);
 		mouse_y = HIWORD(lParam);
+
+		MOUSE_CHANGED_POSITION = true;
 	}
 	break;
 

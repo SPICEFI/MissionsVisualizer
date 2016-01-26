@@ -4,6 +4,10 @@
 #include <gl\GL.h>
 #include <gl\GLU.h>
 
+bool modeWasChanged = false;
+
+extern double scale;
+
 glCamera::glCamera()
 {
 	position = Vector3(0.0, 0.0, 0.0);
@@ -68,9 +72,14 @@ void glCamera::Rotate(float angle, float x, float y, float z)
 void glCamera::setViewByMouse(int middleX, int middleY)
 {
 	POINT mousePos;
-
 	//int middleX = width >> 1;
 	//int middleY = height >> 1;
+
+	if (modeWasChanged)
+	{
+		SetCursorPos(middleX, middleY);
+		return;
+	}
 
 	float angleY = 0.0f;
 	float angleZ = 0.0f;
@@ -134,7 +143,13 @@ void glCamera::Update(int centerX, int centerY, bool orientationMode)
 	strafeVec = (viewVec - position).CrossProduct(upVec);
 	strafeVec.Normalise();
 	if (orientationMode)
+	{
 		setViewByMouse(centerX, centerY);
+		modeWasChanged = false;
+	}
+	else
+		modeWasChanged = true;
+
 	transformOrientation();
 	transformTranslation();
 }
@@ -183,4 +198,9 @@ int glCamera::RetrieveObjectID(int x, int y, int width, int height, Scene scene,
 	}
 	else
 		return 0;
+}
+
+void glCamera::FocusOnPlanet(Planet& planet, Date t, App& app)
+{
+
 }

@@ -6,7 +6,7 @@
 //#include "Vector3T.h"
 #include "App.h"
 #include <vector>
-#include "Traectory.h"
+#include "Trajectory.h"
 #include "Math\Matrix4x4.h"
 //#include "Frame.h"
 
@@ -17,7 +17,7 @@ class Planet
 public:
 	SpaceBody body;
 	TGA* texture;
-	Traectory traectory;
+	Trajectory trajectory;
 	//std::vector<Vector3> traectory;
 	Matrix4x4 m;
 	float rotationMatrix[16];
@@ -28,7 +28,15 @@ public:
 	void Render(Date t, App& app);
 	int GetID()const{ return ID; }
 
+	void SetMark(bool value)
+	{
+		marked = value;
+	}
+
+	const Vector3& GetPosition(Date t, App& app);
+
 protected:
 	int ID;
+	bool marked;
 };
 

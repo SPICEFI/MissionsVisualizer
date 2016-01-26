@@ -18,6 +18,10 @@ public:
 
 	void addPlanet(Planet& planet);
 	void render(Date t, App& app);
+	void MarkPlanetWithID(int id, bool value);
+	 
+	void RenderPlanetWithID(int id, Date t, App& app);
+
 	const Planet& FindObjectWithID(int ID);
 
 	/*void calculatepositions(float time);

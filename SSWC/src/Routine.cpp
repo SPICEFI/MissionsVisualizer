@@ -29,6 +29,8 @@
 int centerX;
 int centerY;
 
+int prev_x, prev_y;
+
 glCamera g_Camera;
 GL_Window*	g_window;
 Keys*		g_keys;
@@ -39,9 +41,13 @@ Date t;
 TGA* skyTexture;
 
 int id = -1;
+int idWhenMove = -1;
+
 float g_LightPosition[4] = { 0, 0, 0, 1 };
 
 bool orientationMode = true;
+bool PLANET_CLICKED = false;
+
 std::string planetName;
 
 BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization Goes Here
@@ -164,12 +170,37 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 	if (LEFT_MOUSE_BUTTON_DOWN)
 	{
 		if (!orientationMode)
-		id = g_Camera.RetrieveObjectID(mouse_x, mouse_y, centerX * 2, centerY * 2, SolarSystem, t, app);
+			id = g_Camera.RetrieveObjectID(mouse_x, mouse_y, centerX * 2, centerY * 2, SolarSystem, t, app);
 		LEFT_MOUSE_BUTTON_DOWN = false;
 		if (id != 0)
 		{
-			Planet obj = SolarSystem.FindObjectWithID(id);
-			MessageBox(NULL, obj.body.GetSpiceName().c_str(), "Information", MB_OK);
+			//Planet obj = SolarSystem.FindObjectWithID(id);
+			//MessageBox(NULL, obj.body.GetSpiceName().c_str(), "Information", MB_OK);
+			PLANET_CLICKED = true;
+		}
+		else
+			PLANET_CLICKED = false;
+	}
+
+	if (MOUSE_CHANGED_POSITION)
+	{
+		if (!orientationMode)
+		{
+			int currID = g_Camera.RetrieveObjectID(mouse_x, mouse_y, centerX * 2, centerY * 2, SolarSystem, t, app);
+			if (currID != 0)
+			{
+				if (currID != idWhenMove)
+				{
+					SolarSystem.MarkPlanetWithID(idWhenMove, false);
+					idWhenMove = currID;
+					SolarSystem.MarkPlanetWithID(idWhenMove, true);
+				}
+			}
+			else
+			{
+				SolarSystem.MarkPlanetWithID(idWhenMove, false);
+				idWhenMove = -1;
+			}
 		}
 	}
 
@@ -234,16 +265,41 @@ void Draw(void)													// Draw Our Scene
 	// Reset The Modelview Matrix
 	glLoadIdentity();
 
-	//glViewport(0, 0, 640, 720);
-	g_Camera.Update(centerX, centerY, orientationMode);
-	CreateSkyBox(0, 0, 0, 400, 400, 400);
-	SolarSystem.render(t, app);
+	if (!PLANET_CLICKED)
+	{
+		glViewport(0, 0, g_window->init.width, g_window->init.height);
 
-	//glViewport(640, 0, 640, 720);
-	//glLightfv(GL_LIGHT0, GL_POSITION, g_LightPosition);
-	//g_Camera.Update(centerX, centerY);
-	//CreateSkyBox(0, 0, 0, 400, 400, 400);
-	//SolarSystem.render(t, app);
+		glMatrixMode(GL_PROJECTION);										// Select The Projection Matrix
+		glLoadIdentity();													// Reset The Projection Matrix
+		gluPerspective(45.0f, (GLfloat)1280 / (GLfloat)720, 1.0f, 500.0f);		// Calculate The Aspect Ratio Of The Window
+		glMatrixMode(GL_MODELVIEW);										// Select The Modelview Matrix
+		glLoadIdentity();
+
+		g_Camera.Update(centerX, centerY, orientationMode);
+		CreateSkyBox(0, 0, 0, 400, 400, 400);
+		SolarSystem.render(t, app);
+
+		prev_x = centerX;
+		prev_y = centerY;
+	}
+
+	if (PLANET_CLICKED)
+	{
+		
+		glViewport(0, 0, 854, 720);
+		glMatrixMode(GL_PROJECTION);										// Select The Projection Matrix
+		glLoadIdentity();													// Reset The Projection Matrix
+		gluPerspective(45.0f, (GLfloat)854 / (GLfloat)720, 1.0f, 500.0f);		// Calculate The Aspect Ratio Of The Window
+		glMatrixMode(GL_MODELVIEW);										// Select The Modelview Matrix
+		glLoadIdentity();													// Reset The Modelview Matrix
+
+		g_Camera.Update(centerX, centerY, orientationMode);
+		CreateSkyBox(0, 0, 0, 400, 400, 400);
+		SolarSystem.render(t, app);
+
+		glViewport(854, 293, 427, 427);
+
+	}
 
 	glLightfv(GL_LIGHT0, GL_POSITION, g_LightPosition);
 

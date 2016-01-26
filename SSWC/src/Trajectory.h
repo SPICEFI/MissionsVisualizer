@@ -8,7 +8,7 @@
 #include <gl\GLU.h>
 
 
-class Traectory
+class Trajectory
 {
 protected:
 	std::vector<Vector3> path;
@@ -17,9 +17,9 @@ protected:
 	float green = 255.0f;
 	float blue = 255.0f;
 public:
-	Traectory();
+	Trajectory();
 	//Traectory(float lineWidth, Vector3 rgb);
-	~Traectory(){};
+	~Trajectory(){};
 
 	void Render();
 	void PushBack(Vector3 newPos);

@@ -1,13 +1,13 @@
 #pragma once
-#include "Traectory.h"
+#include "Trajectory.h"
 
-Traectory::Traectory() {};
-void Traectory::PushBack(Vector3 newPos)
+Trajectory::Trajectory() {};
+void Trajectory::PushBack(Vector3 newPos)
 {
 	path.push_back(newPos);
 }
 
-void Traectory::Render()
+void Trajectory::Render()
 {
 	glLineWidth(lineWidth);
 	glColor3f(red, green, blue);

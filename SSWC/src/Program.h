@@ -49,3 +49,4 @@ void Selection(void);								// Perform Selection
 extern int mouse_x;
 extern int mouse_y;
 extern bool LEFT_MOUSE_BUTTON_DOWN;
+extern bool MOUSE_CHANGED_POSITION;
