@@ -181,9 +181,25 @@ private:
 	{
 		return rhs * lhs;
 	}
+	friend Quantity operator*(const Quantity& lhs, int rhs)
+	{
+		return lhs * (double)rhs;
+	}
+	friend Quantity operator*(int lhs, const Quantity& rhs)
+	{
+		return rhs * lhs;
+	}
 	friend double operator/(const Quantity& lhs, const Quantity& rhs)
 	{
 		return lhs.value / rhs.ValueIn(lhs.unit);
+	}
+	friend Quantity operator/(const Quantity& lhs, double rhs)
+	{
+		return lhs * (1.0 / rhs);
+	}
+	friend Quantity operator/(const Quantity& lhs, int rhs)
+	{
+		return lhs / (double)rhs;
 	}
 	friend bool operator>(const Quantity& lhs, const Quantity& rhs)
 	{
