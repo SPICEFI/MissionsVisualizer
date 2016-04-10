@@ -239,3 +239,4 @@ _Pvt_Extensions
 # CSpiceApp-specific files
 out.txt
 error.log
+meta.tm
