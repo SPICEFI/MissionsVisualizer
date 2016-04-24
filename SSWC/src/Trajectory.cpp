@@ -25,6 +25,7 @@ std::vector<Vector3> Trajectory::GetTrajectory(Date curDate, const LengthUnit& u
 	while (date < toDate)
 	{
 		trajectory.push_back(GetPosition(date, unit));
+		date += stepDuration;
 	}
 
 	return trajectory;
