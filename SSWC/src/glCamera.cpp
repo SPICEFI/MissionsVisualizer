@@ -204,3 +204,4 @@ void glCamera::FocusOnPlanet(Planet& planet, Date t, App& app)
 {
 
 }
+

@@ -3,6 +3,7 @@
 
 Scene::Scene()
 {
+
 }
 
 
@@ -94,5 +95,28 @@ void Scene::RenderPlanetWithID(int id, Date t, App& app)
 		int tempID = planets[i].GetID();
 		if (tempID == id)
 			planets[i].Render(t, app);
+	}
+}
+
+float CalculateDistanceBetween(Vector3& first, Vector3& second)
+{
+	float res = sqrt((first.x - second.x)*(first.x - second.x) + (first.y - second.y)*(first.y - second.y) +
+		(first.z - second.z)*(first.z - second.z));
+
+	return res;
+}
+
+void Scene::UpdateTrackingDistances(Vector3& sceneCameraPosition, Date t, App& app)
+{
+	Vector3 planetPos;
+	float dis;
+	for (int i = 0; i < planets.size(); i++)
+	{
+		planetPos = planets[i].GetPosition(t, app);
+		dis = CalculateDistanceBetween(sceneCameraPosition, planetPos);
+		if (dis > minDistanceToRenderFullPlanet)
+			planets.at(i).SetRenderMode(false);
+		else
+			planets.at(i).SetRenderMode(true);
 	}
 }

@@ -71,19 +71,19 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 		const SpaceObject& obj = app.GetObjectByIndex(i);
 		try
 		{
-			if (SpaceObject::IsPlanet(obj.GetSpiceId()) /*|| obj.GetSpiceId() == SUN_SPICE_ID*/)
+			if (SpaceObject::IsPlanet(obj.GetSpiceId()) || obj.GetSpiceId() == SUN_SPICE_ID)
 			{
 				std::string path = "Images\\" + obj.GetName() + ".tga";
 
 				if(TGA* Texture = new TGA(path.c_str()))
 				{
 					const SpaceBody& body = dynamic_cast<const SpaceBody&>(obj);
-					SolarSystem.addPlanet(Planet(body, Texture));
+					SolarSystem.addPlanet(Planet(body, Texture, obj, app.GetReferenceFrame()));
 				}
 				else
 				{
 					const SpaceBody& body = dynamic_cast<const SpaceBody&>(obj);
-					SolarSystem.addPlanet(Planet(body, sunTexture));
+					SolarSystem.addPlanet(Planet(body, sunTexture, obj, app.GetReferenceFrame()));
 				}
 			}
 		}
@@ -91,7 +91,6 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 		{
 		}
 	}
-
 
  	g_window = window;
 	g_keys = keys;
@@ -205,6 +204,7 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 	}
 
 	t += Time(1.0, Units::Common::minutes);
+	SolarSystem.UpdateTrackingDistances(g_Camera.position, t, app);
 }
 
 void CreateSkyBox(float x, float y, float z, float width, float height, float length)
@@ -283,7 +283,7 @@ void Draw(void)													// Draw Our Scene
 		prev_y = centerY;
 	}
 
-	if (PLANET_CLICKED)
+	/*if (PLANET_CLICKED)
 	{
 		
 		glViewport(0, 0, 854, 720);
@@ -299,7 +299,7 @@ void Draw(void)													// Draw Our Scene
 
 		glViewport(854, 293, 427, 427);
 
-	}
+	}*/
 
 	glLightfv(GL_LIGHT0, GL_POSITION, g_LightPosition);
 

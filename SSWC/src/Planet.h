@@ -21,10 +21,12 @@ public:
 	//std::vector<Vector3> traectory;
 	Matrix4x4 m;
 	float rotationMatrix[16];
+	bool renderAsPlanet = true;
 public:
-	Planet(const SpaceBody& body, TGA* texture);
+	Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, const Frame& frame);
 	~Planet();
 
+	void SetRenderMode(bool value) { renderAsPlanet = value; }
 	void Render(Date t, App& app);
 	int GetID()const{ return ID; }
 

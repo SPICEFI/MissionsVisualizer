@@ -1,11 +1,12 @@
 #include "Planet.h"
 
 //double scale = 0.000002f;
-double scale = 0.00004f;
+double scale = 0.00000004f;
+double extraScale = 0.00004f;
 
 double distanceScale = 0.00000004f;
 
-Planet::Planet(const SpaceBody& body, TGA* texture) :body(body)
+Planet::Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, const Frame& frame) :body(body), trajectory(obj, frame)
 {
 	this->texture = texture;
 	ID = body.GetSpiceId();
@@ -28,7 +29,17 @@ void Planet::Render(Date t, App& app)
 	}
 	else
 	{
-		scale = 0.00004f;
+		scale = 0.00000004f;
+	}
+
+	if (!renderAsPlanet)
+		scale = extraScale;
+
+	if (ID == SUN_SPICE_ID)
+	{
+		scale = 0.000002f;
+		glDisable(GL_LIGHT0);
+		glDisable(GL_LIGHTING);
 	}
 
 	Vector3T <Length> pos = body.GetPosition(t, SpaceObject::SSB, app.GetReferenceFrame());
@@ -44,6 +55,7 @@ void Planet::Render(Date t, App& app)
 
 	glTranslatef(position.x, position.y, position.z);
 	glMultMatrixf(rotationMatrix);
+
 
 	glBindTexture(GL_TEXTURE_2D, texture->getTextureHandle());
 	//render as a GLU sphere quadric object
@@ -63,7 +75,7 @@ void Planet::Render(Date t, App& app)
 	trajectory.PushBack(position);
 	trajectory.Render();
 
-	if (marked)
+	if (marked || ID == SUN_SPICE_ID)
 	{
 		glEnable(GL_LIGHT0);
 		glEnable(GL_LIGHTING);

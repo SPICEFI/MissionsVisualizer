@@ -11,7 +11,7 @@ class Scene
 {
 protected:
 	std::vector<Planet> planets;
-
+	float minDistanceToRenderFullPlanet = 200000;
 public:
 	Scene();
 	~Scene();
@@ -23,6 +23,9 @@ public:
 	void RenderPlanetWithID(int id, Date t, App& app);
 
 	const Planet& FindObjectWithID(int ID);
+
+	void AddPlanetToTrackDistanceTo(Planet& planet);
+	void UpdateTrackingDistances(Vector3& sceneCameraPosition, Date t, App& app);
 
 	/*void calculatepositions(float time);
 	void calculatepositions(Vector3 newPosition, unsigned int index);
