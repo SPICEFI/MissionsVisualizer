@@ -17,6 +17,7 @@
 
 #include "Planet.h"
 #include "Scene.h"
+#include "Font.h"
 
 #pragma comment( lib, "opengl32.lib" )							// Search For OpenGL32.lib While Linking
 #pragma comment( lib, "glu32.lib" )								// Search For GLu32.lib While Linking
@@ -49,9 +50,11 @@ bool orientationMode = true;
 bool PLANET_CLICKED = false;
 
 std::string planetName;
+Font font;
 
 BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization Goes Here
 {
+	font = Font(window->hDC);
 	glShadeModel(GL_SMOOTH);
 	glEnable(GL_TEXTURE_2D);
 
@@ -78,12 +81,12 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 				if(TGA* Texture = new TGA(path.c_str()))
 				{
 					const SpaceBody& body = dynamic_cast<const SpaceBody&>(obj);
-					SolarSystem.addPlanet(Planet(body, Texture, obj, app.GetReferenceFrame()));
+					SolarSystem.addPlanet(Planet(body, Texture, obj, app.GetReferenceFrame(), window->hDC));
 				}
 				else
 				{
 					const SpaceBody& body = dynamic_cast<const SpaceBody&>(obj);
-					SolarSystem.addPlanet(Planet(body, sunTexture, obj, app.GetReferenceFrame()));
+					SolarSystem.addPlanet(Planet(body, sunTexture, obj, app.GetReferenceFrame(), window->hDC));
 				}
 			}
 		}
@@ -132,7 +135,7 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 		TerminateApplication(g_window);						// Terminate The Program
 	}
 
-	if (g_keys->keyDown[VK_F1])									// Is F1 Being Pressed?
+	/*if (g_keys->keyDown[VK_F1])									// Is F1 Being Pressed?
 	{
 		ToggleFullscreen(g_window);							// Toggle Fullscreen Mode
 	}
@@ -173,7 +176,7 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 		LEFT_MOUSE_BUTTON_DOWN = false;
 		if (id != 0)
 		{
-			//Planet obj = SolarSystem.FindObjectWithID(id);
+			//SolarSystem.FindObjectWithID(id).SetClicked(true);
 			//MessageBox(NULL, obj.body.GetSpiceName().c_str(), "Information", MB_OK);
 			PLANET_CLICKED = true;
 		}
@@ -203,8 +206,9 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 		}
 	}
 
-	t += Time(1.0, Units::Common::minutes);
 	SolarSystem.UpdateTrackingDistances(g_Camera.position, t, app);
+	t += Time(1.0, Units::Common::hours);
+	
 }
 
 void CreateSkyBox(float x, float y, float z, float width, float height, float length)
@@ -215,7 +219,8 @@ void CreateSkyBox(float x, float y, float z, float width, float height, float le
 
 	glBindTexture(GL_TEXTURE_2D, skyTexture->getTextureHandle());
 
-	
+	glDisable(GL_LIGHT0);
+	glDisable(GL_LIGHTING);
 	glBegin(GL_QUADS);
 
 	//BACK
@@ -255,6 +260,8 @@ void CreateSkyBox(float x, float y, float z, float width, float height, float le
 	glTexCoord2f(0.0f, 1.0f); glVertex3f(x + width, y + height, z);
 
 	glEnd();
+	glEnable(GL_LIGHT0);
+	glEnable(GL_LIGHTING);
 }
 
 void Draw(void)													// Draw Our Scene
@@ -265,8 +272,8 @@ void Draw(void)													// Draw Our Scene
 	// Reset The Modelview Matrix
 	glLoadIdentity();
 
-	if (!PLANET_CLICKED)
-	{
+	//if (!PLANET_CLICKED)
+	//{
 		glViewport(0, 0, g_window->init.width, g_window->init.height);
 
 		glMatrixMode(GL_PROJECTION);										// Select The Projection Matrix
@@ -281,7 +288,7 @@ void Draw(void)													// Draw Our Scene
 
 		prev_x = centerX;
 		prev_y = centerY;
-	}
+	//}
 
 	/*if (PLANET_CLICKED)
 	{
@@ -302,6 +309,5 @@ void Draw(void)													// Draw Our Scene
 	}*/
 
 	glLightfv(GL_LIGHT0, GL_POSITION, g_LightPosition);
-
 	glFlush();													// Flush The GL Rendering Pipeline
 }

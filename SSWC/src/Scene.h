@@ -11,7 +11,7 @@ class Scene
 {
 protected:
 	std::vector<Planet> planets;
-	float minDistanceToRenderFullPlanet = 200000;
+	float minDistanceToRenderFullPlanet;
 public:
 	Scene();
 	~Scene();

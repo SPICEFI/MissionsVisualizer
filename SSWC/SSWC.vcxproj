@@ -21,6 +21,7 @@
     <ClInclude Include="src\CSpice\SpaceBody.h" />
     <ClInclude Include="src\CSpice\SpaceObject.h" />
     <ClInclude Include="src\CSpice\Window.h" />
+    <ClInclude Include="src\Font.h" />
     <ClInclude Include="src\glCameara.h" />
     <ClInclude Include="src\GL\ARB_Multisample.h" />
     <ClInclude Include="src\Math\Matrix4x4.h" />
@@ -44,6 +45,7 @@
     <ClCompile Include="src\CSpice\SpaceBody.cpp" />
     <ClCompile Include="src\CSpice\SpaceObject.cpp" />
     <ClCompile Include="src\CSpice\Window.cpp" />
+    <ClCompile Include="src\Font.cpp" />
     <ClCompile Include="src\glCamera.cpp" />
     <ClCompile Include="src\GL\ARB_Multisample.cpp" />
     <ClCompile Include="src\Math\Matrix4x4.cpp" />
@@ -105,6 +107,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

@@ -1,5 +1,4 @@
 #pragma once
-
 #include "CSpiceCore.h"
 
 #include <sstream>

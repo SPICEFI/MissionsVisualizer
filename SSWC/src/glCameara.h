@@ -27,6 +27,7 @@ public:
 
 	void Update(int centerX, int centerY, bool orientationMode);
 	void FocusOnPlanet(Planet& planet, Date t, App& app);
+	//void SetVelocity(float value) { velocity = value; }
 
 	int RetrieveObjectID(int x, int y, int width, int height, Scene scene, Date t, App& app);
 
