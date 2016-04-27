@@ -22,14 +22,14 @@ protected:
 	Time historyDuration;
 	Time stepDuration;
 	Date startDate;
-	const Frame& frame;
+	Frame frame;
 
 	float lineWidth = 1.0f;
 	float red = 255.0f;
 	float green = 255.0f;
 	float blue = 255.0f;
 public:
-	Trajectory(const SpaceObject& obj, const Frame& frame);
+	Trajectory(const SpaceObject& obj, Frame frame);
 	//Traectory(float lineWidth, Vector3 rgb);
 	~Trajectory(){};
 

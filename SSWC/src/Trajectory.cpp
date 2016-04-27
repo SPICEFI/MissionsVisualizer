@@ -1,7 +1,7 @@
 #pragma once
 #include "Trajectory.h"
 
-Trajectory::Trajectory(const SpaceObject& obj, const Frame& frame) : obj(obj), frame(frame)
+Trajectory::Trajectory(const SpaceObject& obj, Frame frame) : obj(obj), frame(frame)
 {
 
 };
