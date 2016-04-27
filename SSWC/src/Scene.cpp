@@ -132,7 +132,7 @@ void Scene::AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date
 {
 	standaloneTrajectories.push_back(Trajectory(obj, frame));
 	Time time(3, Units::Common::hours);
-	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetDateParams(startingDate, time, 100);
+	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetDateParams(startingDate, time, 5000);
 }
 
 void Scene::RenderStandaloneTrajectories(Date t, float lineWidth, float red, float green, float blue)

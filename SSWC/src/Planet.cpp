@@ -14,7 +14,7 @@ Planet::Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, cons
 	font = Font(hdc);
 	if (body.GetSpiceId() == 399)
 	{
-		Date t("Aug 17 2000 15:51:01 UTC-5");
+		Date t("Jan 01 2000 19:36 : 52.36073947325300000 UTC+0");
 		Time time(120, Units::Common::days);
 		trajectory.SetDateParams(t, time, 100);
 	}
@@ -96,28 +96,6 @@ void Planet::RenderObject(Date t, App& app)
 	if (body.GetSpiceId() == 399)
 		RenderTrajectory(t);
 #pragma endregion
-
-
-
-
-
-	glLineWidth(1);
-	glColor3f(1, 1, 1);
-
-	glDisable(GL_LIGHTING);
-
-	glBegin(GL_LINE_STRIP);
-	glEnable(GL_LINE_SMOOTH);
-	std::vector<Vector3> path = trajectory.GetTrajectory(t, Units::Metric::kilometers);
-	for (int i = 0; i < path.size(); i++)
-		glVertex3f(path.at(i).x * distanceScale, path.at(i).y * distanceScale, path.at(i).z * distanceScale);
-	glDisable(GL_LINE_SMOOTH);
-	glEnd();
-	glEnable(GL_LIGHTING);
-
-
-
-
 
 	glTranslatef(position.x, position.y, position.z);
 	glMultMatrixf(rotationMatrix);
