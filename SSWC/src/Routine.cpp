@@ -11,11 +11,8 @@
 #include "Program.h"
 #include "GL\ARB_Multisample.h"
 
-
 #include "App.h"
-//#include "Date.h"
 
-#include "Planet.h"
 #include "Scene.h"
 #include "Font.h"
 
@@ -48,9 +45,11 @@ float g_LightPosition[4] = { 0, 0, 0, 1 };
 
 bool orientationMode = true;
 bool PLANET_CLICKED = false;
-
+bool StopSimulation = false;
+bool lastFrameSpaceWasPressed = false;
 std::string planetName;
 Font font;
+Vector3 startingPosForCam;
 
 BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization Goes Here
 {
@@ -63,10 +62,17 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 	app.SetDefaultUnits(App::UT_DEFAULT);
 
 	app.LoadKernel("data/meta.tm");
-	app.LoadChildren(SpaceObject("Solar system barycenter"), true, true);
+	//app.LoadChildren(SpaceObject("Solar system barycenter"), true, true);
+
+	app.AddObject(SpaceBody("EARTH"));
+	app.AddObject(SpaceBody("SUN"));
+	app.AddObject(SpaceBody("MOON"));
+	app.AddObject(SpaceObject("L2_OBJECT"));
 
 	TGA* sunTexture = new TGA("Images\\SUN.tga");
 	skyTexture = new TGA("Images\\STARS.tga");
+
+	t = Date("Jan 01 2000 19:36:52.36073947325300000 UTC+0");
 
 	size_t count = app.GetObjectsLength();
 	for (int i = 0; i < count; i++)
@@ -74,11 +80,11 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 		const SpaceObject& obj = app.GetObjectByIndex(i);
 		try
 		{
-			if (SpaceObject::IsPlanet(obj.GetSpiceId()) || obj.GetSpiceId() == SUN_SPICE_ID)
+			if (SpaceObject::IsPlanet(obj.GetSpiceId()) || obj.GetSpiceId() == SUN_SPICE_ID || obj.GetSpiceName() == "MOON")
 			{
 				std::string path = "Images\\" + obj.GetName() + ".tga";
 
-				if(TGA* Texture = new TGA(path.c_str()))
+				if (TGA* Texture = new TGA(path.c_str()))
 				{
 					const SpaceBody& body = dynamic_cast<const SpaceBody&>(obj);
 					SolarSystem.addPlanet(Planet(body, Texture, obj, app.GetReferenceFrame(), window->hDC));
@@ -89,6 +95,8 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 					SolarSystem.addPlanet(Planet(body, sunTexture, obj, app.GetReferenceFrame(), window->hDC));
 				}
 			}
+			else if(obj.GetSpiceName() == "L2_OBJECT")
+				SolarSystem.AddTrajectoryAsSpaceObject(obj, app.GetReferenceFrame(), t);
 		}
 		catch (const std::bad_cast&)
 		{
@@ -97,7 +105,7 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 
  	g_window = window;
 	g_keys = keys;
-	g_Camera.PositionCamera(Vector3(0, 0, 0), Vector3(0, 1, 0), Vector3(0, 0, 1));
+	g_Camera.PositionCamera(Vector3(0, 1, 0), Vector3(0, 0, 0), Vector3(0, 0, 1));
 
 	RECT rect;
 	GetClientRect(g_window->hWnd, &rect);
@@ -107,8 +115,7 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 
 	SetCursorPos(centerX, centerY);
 
-	Date t("Aug 17 2000 15:51:01 UTC-5");
-
+	//t = Date("Aug 17 2000 15:51:01 UTC-5");
 	//Color setup
 	glClearColor(0, 0, 0, 1);
 
@@ -130,45 +137,38 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 
 void Update(DWORD milliseconds)									// Perform Motion Updates Here
 {
-	if (g_keys->keyDown[VK_ESCAPE])								// Is ESC Being Pressed?
+#pragma region CHECK_MOVING_KEYS
+	if (g_keys->keyDown[VK_ESCAPE])								
 	{
-		TerminateApplication(g_window);						// Terminate The Program
+		TerminateApplication(g_window);						
 	}
-
-	/*if (g_keys->keyDown[VK_F1])									// Is F1 Being Pressed?
-	{
-		ToggleFullscreen(g_window);							// Toggle Fullscreen Mode
-	}
-
-	/*if (g_keys->keyDown[VK_F2])
-	{
-		ChangeMode(g_window);
-	}*/
 
 	if (g_keys->keyDown['W'])
 	{
 		if (orientationMode)
-			g_Camera.MoveCamera(0.03f);
+			g_Camera.MoveCamera(1);
 	}
 
 	if (g_keys->keyDown['S'])
 	{
 		if (orientationMode)
-			g_Camera.MoveCamera(-0.03f);
+			g_Camera.MoveCamera(-1);
 	}
 
 	if (g_keys->keyDown['A'])
 	{
 		if (orientationMode)
-			g_Camera.Strafe(-0.03f);
+			g_Camera.Strafe(-1);
 	}
 
 	if (g_keys->keyDown['D'])
 	{
 		if (orientationMode)
-			g_Camera.Strafe(0.03f);
+			g_Camera.Strafe(1);
 	}
+#pragma endregion
 
+#pragma region CHECK_MOUSE
 	if (LEFT_MOUSE_BUTTON_DOWN)
 	{
 		if (!orientationMode)
@@ -176,8 +176,7 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 		LEFT_MOUSE_BUTTON_DOWN = false;
 		if (id != 0)
 		{
-			//SolarSystem.FindObjectWithID(id).SetClicked(true);
-			//MessageBox(NULL, obj.body.GetSpiceName().c_str(), "Information", MB_OK);
+			SolarSystem.ShowInfoAboutPlanetWithID(id, app);
 			PLANET_CLICKED = true;
 		}
 		else
@@ -205,10 +204,24 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 			}
 		}
 	}
+#pragma endregion
 
-	SolarSystem.UpdateTrackingDistances(g_Camera.position, t, app);
-	t += Time(1.0, Units::Common::hours);
-	
+	if (g_keys->keyDown[VK_SPACE])
+	{
+		if (!lastFrameSpaceWasPressed)
+		{
+			StopSimulation = !StopSimulation;
+			lastFrameSpaceWasPressed = true;
+		}
+	}
+	else
+	{
+		lastFrameSpaceWasPressed = false;
+	}
+
+	if (!StopSimulation)
+		//t += Time(1.0, Units::Common::hours);
+		t += Time(1.0, Units::Common::minutes);
 }
 
 void CreateSkyBox(float x, float y, float z, float width, float height, float length)
@@ -272,41 +285,11 @@ void Draw(void)													// Draw Our Scene
 	// Reset The Modelview Matrix
 	glLoadIdentity();
 
-	//if (!PLANET_CLICKED)
-	//{
-		glViewport(0, 0, g_window->init.width, g_window->init.height);
-
-		glMatrixMode(GL_PROJECTION);										// Select The Projection Matrix
-		glLoadIdentity();													// Reset The Projection Matrix
-		gluPerspective(45.0f, (GLfloat)1280 / (GLfloat)720, 1.0f, 500.0f);		// Calculate The Aspect Ratio Of The Window
-		glMatrixMode(GL_MODELVIEW);										// Select The Modelview Matrix
-		glLoadIdentity();
-
-		g_Camera.Update(centerX, centerY, orientationMode);
-		CreateSkyBox(0, 0, 0, 400, 400, 400);
-		SolarSystem.render(t, app);
-
-		prev_x = centerX;
-		prev_y = centerY;
-	//}
-
-	/*if (PLANET_CLICKED)
-	{
-		
-		glViewport(0, 0, 854, 720);
-		glMatrixMode(GL_PROJECTION);										// Select The Projection Matrix
-		glLoadIdentity();													// Reset The Projection Matrix
-		gluPerspective(45.0f, (GLfloat)854 / (GLfloat)720, 1.0f, 500.0f);		// Calculate The Aspect Ratio Of The Window
-		glMatrixMode(GL_MODELVIEW);										// Select The Modelview Matrix
-		glLoadIdentity();													// Reset The Modelview Matrix
-
-		g_Camera.Update(centerX, centerY, orientationMode);
-		CreateSkyBox(0, 0, 0, 400, 400, 400);
-		SolarSystem.render(t, app);
-
-		glViewport(854, 293, 427, 427);
-
-	}*/
+	g_Camera.Update(centerX, centerY, orientationMode);
+	CreateSkyBox(0, 0, 0, 400, 400, 400);
+	SolarSystem.render(t, app);
+	prev_x = centerX;
+	prev_y = centerY;
 
 	glLightfv(GL_LIGHT0, GL_POSITION, g_LightPosition);
 	glFlush();													// Flush The GL Rendering Pipeline

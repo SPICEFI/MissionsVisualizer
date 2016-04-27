@@ -42,5 +42,4 @@ void Font::glPrint(const char* fmt, ...)
 
 	glCallLists(strlen(text), GL_UNSIGNED_BYTE, text);  // Draws The Display List Text
 	glPopAttrib();										// Pops The Display List Bits
-
 }

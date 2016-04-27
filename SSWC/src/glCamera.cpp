@@ -1,8 +1,6 @@
 #pragma once
 
 #include "glCameara.h"
-#include <gl\GL.h>
-#include <gl\GLU.h>
 
 bool modeWasChanged = false;
 
@@ -13,6 +11,7 @@ glCamera::glCamera()
 	position = Vector3(0.0, 0.0, 0.0);
 	viewVec = Vector3(0.0, 1.0, 0.0);
 	upVec = Vector3(0.0, 0.0, 1.0);
+	speed = 0.03f;
 }
 
 void glCamera::PositionCamera(const Vector3& position, const Vector3& viewVec, const Vector3& upVec)
@@ -24,6 +23,7 @@ void glCamera::PositionCamera(const Vector3& position, const Vector3& viewVec, c
 
 void glCamera::MoveCamera(float velocity)
 {
+	velocity *= speed;
 	Vector3 vVec = viewVec - position;						//Here we get vector of our view
 	
 	vVec.Normalise();
@@ -132,10 +132,11 @@ void glCamera::setViewByMouse(int middleX, int middleY)
 	Rotate(angleY, upVec.x, upVec.y, upVec.z); 
 }
 
-void glCamera::Strafe(float speed)
+void glCamera::Strafe(float velocity)
 {
-	position += strafeVec * speed;
-	viewVec += strafeVec * speed;
+	velocity *= speed;
+	position += strafeVec * velocity;
+	viewVec += strafeVec * velocity;
 }
 
 void glCamera::Update(int centerX, int centerY, bool orientationMode)
@@ -170,7 +171,7 @@ int glCamera::RetrieveObjectID(int x, int y, int width, int height, Scene scene,
 	glLoadIdentity();
 	gluPickMatrix(x, viewportCoordinates[3] - y, 2, 2, viewportCoordinates);
 
-	gluPerspective(45.0f, (GLfloat)(width) / (GLfloat)(height), 1.0f, 500.0f);
+	gluPerspective(60.0f, (GLfloat)(width) / (GLfloat)(height), 0.2f, 500.0f);
 
 	glMatrixMode(GL_MODELVIEW);
 

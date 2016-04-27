@@ -45,8 +45,8 @@ void ReshapeGL(int width, int height)									// Reshape The Window When It's Mo
 	glViewport(0, 0, (GLsizei)(width), (GLsizei)(height));				// Reset The Current Viewport
 	glMatrixMode(GL_PROJECTION);										// Select The Projection Matrix
 	glLoadIdentity();													// Reset The Projection Matrix
-	gluPerspective(45.0f, (GLfloat)(width) / (GLfloat)(height),			// Calculate The Aspect Ratio Of The Window
-		1.0f, 500.0f);
+	gluPerspective(60.0f, (GLfloat)(width) / (GLfloat)(height),			// Calculate The Aspect Ratio Of The Window
+		0.2f, 500.0f);
 	glMatrixMode(GL_MODELVIEW);										// Select The Modelview Matrix
 	glLoadIdentity();													// Reset The Modelview Matrix
 }
@@ -87,7 +87,7 @@ BOOL CreateWindowGL(GL_Window* window)									// This Code Creates Our OpenGL W
 		0,																// Shift Bit Ignored
 		0,																// No Accumulation Buffer
 		0, 0, 0, 0,														// Accumulation Bits Ignored
-		16,																// 16Bit Z-Buffer (Depth Buffer)  
+		32,																// 16Bit Z-Buffer (Depth Buffer)  
 		0,																// No Stencil Buffer
 		0,																// No Auxiliary Buffer
 		PFD_MAIN_PLANE,													// Main Drawing Layer

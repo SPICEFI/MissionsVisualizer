@@ -1,10 +1,10 @@
 #include "Planet.h"
 #include <sstream>
-//double scale = 0.000002f;
-double scale = 0.00000004f;
-double extraScale = 0.00004f;
+//double scale = 0.0004f;
+//double scale = 0.00000003f;
+//double extraScale = 0.00004f;
 
-double distanceScale = 0.00000004f;
+//double distanceScale = 0.00000003f;
 
 Planet::Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, const Frame& frame, HDC hdc) :body(body), trajectory(obj, frame)
 {
@@ -15,8 +15,8 @@ Planet::Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, cons
 	if (body.GetSpiceId() == 399)
 	{
 		Date t("Aug 17 2000 15:51:01 UTC-5");
-		Time time(356, Units::Common::days);
-		trajectory.SetDateParams(t, time, 1000);
+		Time time(120, Units::Common::days);
+		trajectory.SetDateParams(t, time, 100);
 	}
 }
 
@@ -29,12 +29,17 @@ Planet::~Planet()
 void Planet::Render(Date t, App& app)
 {
 	if (body.GetSpiceId() == SUN_SPICE_ID)
-		RenderAsSun(t, app);
+	{
+		glDisable(GL_LIGHT0);
+		glDisable(GL_LIGHTING);
+		RenderObject(t, app);
+		glEnable(GL_LIGHT0);
+		glEnable(GL_LIGHTING);
+	}
 	else
-		RenderAsPlanet(t, app);
+		RenderObject(t, app);
 }
 
-//const Vector3& Planet::GetPosition(Date t, App& app)
 Vector3 Planet::GetPosition(Date t, App& app)
 {
 	Vector3T <Length> pos = body.GetPosition(t, SpaceObject::SSB, app.GetReferenceFrame());
@@ -43,9 +48,9 @@ Vector3 Planet::GetPosition(Date t, App& app)
 	return position;
 }
 
-void Planet::RenderAsSun(Date t, App& app)
+void Planet::RenderObject(Date t, App& app)
 {
-	if (simpleRender)
+	/*if (simpleRender)
 	{
 		scale = 0.000002f;
 	}
@@ -53,24 +58,77 @@ void Planet::RenderAsSun(Date t, App& app)
 	{
 		scale = 0.00000004f;
 	}
-
 	glDisable(GL_LIGHT0);
-	glDisable(GL_LIGHTING);
+	glDisable(GL_LIGHTING);*/
+	//if (marked){
+	//	scale = 0.00005f;
+	//}else{
+	//	scale = 0.00004f;
+	//}
 
+//#pragma region CHECK_IF_SUN
+//	if (body.GetSpiceId() == SUN_SPICE_ID){
+//		scale = 0.0000004f;
+//	}
+//#pragma endregion
+
+#pragma region Object_Positioning
 	Vector3T <Length> pos = body.GetPosition(t, SpaceObject::SSB, app.GetReferenceFrame());
-
 	Vector3 position(pos.x.ValueIn(app.LengthUnit())* distanceScale, pos.y.ValueIn(app.LengthUnit()) * distanceScale, pos.z.ValueIn(app.LengthUnit()) * distanceScale);
 
 	Frame bodyFrame = body.GetDefaultFrame();
 	const Matrix4x4& matrix = bodyFrame.GetTransformationMatrix(t, app.GetReferenceFrame());
 	matrix.GetColumnMajor(rotationMatrix);
 
+#pragma region DRAW_INFO_BILLBOARD
+	if (clicked)
+	{
+		Length radius = body.GetRadius();
+		DrawBillboard(position, radius.ValueIn(app.LengthUnit()) * scale);
+	}
+#pragma endregion
+
 	glPushName(ID);
 	glPushMatrix();
 
+#pragma region Trajectory_Rendering
+	glBindTexture(GL_TEXTURE_2D, texture->getTextureHandle());
+	if (body.GetSpiceId() == 399)
+		RenderTrajectory(t);
+#pragma endregion
+
+
+
+
+
+	glLineWidth(1);
+	glColor3f(1, 1, 1);
+
+	glDisable(GL_LIGHTING);
+
+	glBegin(GL_LINE_STRIP);
+	glEnable(GL_LINE_SMOOTH);
+	std::vector<Vector3> path = trajectory.GetTrajectory(t, Units::Metric::kilometers);
+	for (int i = 0; i < path.size(); i++)
+		glVertex3f(path.at(i).x * distanceScale, path.at(i).y * distanceScale, path.at(i).z * distanceScale);
+	glDisable(GL_LINE_SMOOTH);
+	glEnd();
+	glEnable(GL_LIGHTING);
+
+
+
+
+
 	glTranslatef(position.x, position.y, position.z);
 	glMultMatrixf(rotationMatrix);
+#pragma endregion
 
+#pragma region Render_As_Glu_Sphere
+	if (marked)
+	{
+		glDisable(GL_LIGHT0);
+		glDisable(GL_LIGHTING);
+	}
 
 	glBindTexture(GL_TEXTURE_2D, texture->getTextureHandle());
 	//render as a GLU sphere quadric object
@@ -81,6 +139,32 @@ void Planet::RenderAsSun(Date t, App& app)
 	Length radius = body.GetRadius();
 	gluSphere(quadric, radius.ValueIn(app.LengthUnit()) * scale, 30, 30);
 	gluDeleteQuadric(quadric);
+
+#pragma endregion
+
+#pragma region Planet_Info_Writing
+	glDisable(GL_LIGHTING);
+	glColor3f(255.0, 255.0, 255.0);
+
+	std::string data;
+
+	if (marked)
+	{
+		std::ostringstream strs;
+		strs << "Position: (" << pos.x.ValueIn(app.LengthUnit()) << app.LengthUnit().str() << ", " << pos.y.ValueIn(app.LengthUnit()) 
+			 << app.LengthUnit().str() <<  ", " << pos.z.ValueIn(app.LengthUnit()) << app.LengthUnit().str() 
+			 << ") " << app.GetReferenceFrame().GetName() << std::endl;
+		data = body.GetName() + " " + strs.str();
+	}
+	else
+	{
+		data = body.GetName();
+	}
+	glRasterPos3f(0, 0, radius.ValueIn(app.LengthUnit()) * scale);
+	font.glPrint(data.c_str());
+	glEnable(GL_LIGHTING);
+#pragma endregion
+
 
 	glPopMatrix();
 	glPopName();
@@ -89,101 +173,57 @@ void Planet::RenderAsSun(Date t, App& app)
 	glEnable(GL_LIGHTING);
 }
 
-void Planet::RenderAsPlanet(Date t, App& app)
+void Planet::DrawBillboard(Vector3& planetPosition, double radius)
 {
-	Length len(100, LengthUnit::BaseUnit());
-	if (marked)
-	{
-		glDisable(GL_LIGHT0);
-		glDisable(GL_LIGHTING);
-		scale = 0.00005f;
-	}
-	else
-	{
-		scale = 0.00000004f;
-	}
-	if (simpleRender)
-	{
-		scale = extraScale;
-	}
 
-	Vector3T <Length> pos = body.GetPosition(t, SpaceObject::SSB, app.GetReferenceFrame());
 
-	Vector3 position(pos.x.ValueIn(app.LengthUnit())* distanceScale, pos.y.ValueIn(app.LengthUnit()) * distanceScale, pos.z.ValueIn(app.LengthUnit()) * distanceScale);
+}
 
-	Frame bodyFrame = body.GetDefaultFrame();
-	const Matrix4x4& matrix = bodyFrame.GetTransformationMatrix(t, app.GetReferenceFrame());
-	matrix.GetColumnMajor(rotationMatrix);
+void Planet::ShowMessageBoxWithInfo(App& app)
+{
+	std::ostringstream strs;
+	strs << body.GetRadius().ValueIn(app.LengthUnit()) << app.LengthUnit().str() << " " << std::endl;
+	std::string str = strs.str();
 
-	glPushName(ID);
-	glPushMatrix();
+	std::string res = "Name: " + body.GetName() + "\nRadius: " + str;
 
-	glTranslatef(position.x, position.y, position.z);
-	glMultMatrixf(rotationMatrix);
+	strs.str(std::string());
+	strs.clear();
+	str.clear();
+	strs << body.GetMass().ValueInBase() << app.MassUnit().str() << " " << std::endl;
+	str = strs.str();
+	res += "Mass: "  + str;
 
-	glBindTexture(GL_TEXTURE_2D, texture->getTextureHandle());
-	//render as a GLU sphere quadric object
-	GLUquadricObj* quadric = gluNewQuadric();
-	gluQuadricTexture(quadric, true);
-	gluQuadricNormals(quadric, GLU_SMOOTH);
+	strs.str(std::string());
+	strs.clear();
+	str.clear();
+	strs << body.GetGM().ValueInBase() << app.GMUnit().str() << " " << std::endl;
+	str = strs.str();
+	res += "Gravitational Parameter: " + str;
 
-	Length radius = body.GetRadius();
-	gluSphere(quadric, radius.ValueIn(app.LengthUnit()) * scale, 30, 30);
-	gluDeleteQuadric(quadric);
-	//trajectory.Render();
-	if (body.GetSpiceId() == 399)
-	{
-		float lineWidth = 5.0f;
-		float red = 255.0f;
-		float green = 255.0f;
-		float blue = 255.0f;
+	strs.str(std::string());
+	strs.clear();
+	str.clear();
+	strs << body.GetSurfaceAcceleration().ValueInBase() << app.AccelerationUnit().str() << " " << std::endl;
+	str = strs.str();
+	res += "Surface Acceleration: " + str;
 
-		glLineWidth(lineWidth);
-		glColor3f(red, green, blue);
+	MessageBox(NULL, res.c_str(), "Information", MB_OK);
+}
 
-		glDisable(GL_LIGHTING);
+void Planet::RenderTrajectory(Date t, float lineWidth, float red, float green, float blue)
+{
+	glLineWidth(lineWidth);
+	glColor3f(red, green, blue);
 
-		glBegin(GL_LINE_STRIP);
-		glEnable(GL_LINE_SMOOTH);
-		std::vector<Vector3> path = trajectory.GetTrajectory(t, Units::Metric::meters);
-		for (int i = 0; i < path.size(); i++)
-			glVertex3f(path.at(i).x, path.at(i).y, path.at(i).z);
-		glDisable(GL_LINE_SMOOTH);
-		glEnd();
-		glEnable(GL_LIGHTING);
-	}
-	//if (!simpleRender)
-	//{
-		glDisable(GL_LIGHT0);
-		glDisable(GL_LIGHTING);
-		glColor3f(255.0, 255.0, 255.0);
-
-		
-		/*std::ostringstream strs;
-		strs << radius.ValueIn(app.LengthUnit()) << std::endl;
-		std::string str = strs.str();*/
-
-		std::string data = /*"Name: " +*/ body.GetName();// + "\nRadius: " +str;
-		glRasterPos3f(0, 0, radius.ValueIn(app.LengthUnit()) * scale);
-		font.glPrint(data.c_str());
-
-		glEnable(GL_LIGHT0);
-		glEnable(GL_LIGHTING);
-	//}
-
-	glPopMatrix();
-	glPopName();
-
-	if (marked)
-	{
-		glEnable(GL_LIGHT0);
-		glEnable(GL_LIGHTING);
-	}
-	/*		glDisable(GL_LIGHT0);
 	glDisable(GL_LIGHTING);
-	glColor3f(255.0, 255.0, 255.0);
-	glRasterPos3f(0, 0, 0);
-	font.glPrint("Putin lives here");
-	glEnable(GL_LIGHT0);
-	glEnable(GL_LIGHTING);*/
+
+	glBegin(GL_LINE_STRIP);
+	glEnable(GL_LINE_SMOOTH);
+	std::vector<Vector3> path = trajectory.GetTrajectory(t, Units::Metric::kilometers);
+	for (int i = 0; i < path.size(); i++)
+		glVertex3f(path.at(i).x * distanceScale, path.at(i).y * distanceScale, path.at(i).z * distanceScale);
+	glDisable(GL_LINE_SMOOTH);
+	glEnd();
+	glEnable(GL_LIGHTING);
 }

@@ -4,6 +4,8 @@
 #include <math.h>
 #include "Math\Vector3.h"
 #include "App.h"
+#include <gl\GL.h>
+#include <gl\GLU.h>
 #include "Scene.h"
 
 class glCamera
@@ -14,6 +16,7 @@ public:
 	Vector3 position;
 	Vector3 strafeVec;
 
+	float speed;
 
 	glCamera();
 
