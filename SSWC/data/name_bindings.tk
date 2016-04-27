@@ -1,0 +1,6 @@
+\begintext
+Define L2 and L2_OBJECT names
+\begindata
+
+NAIF_BODY_CODE  += ( 392, -6666 )
+NAIF_BODY_NAME  += ( 'L2', 'L2_OBJECT' )
