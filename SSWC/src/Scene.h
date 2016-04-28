@@ -13,9 +13,14 @@ class Scene
 protected:
 	std::vector<Planet> planets;
 	std::vector<Trajectory> standaloneTrajectories;
+	std::vector<SpaceObject> standaloneSpacePoints;
+
 	float minDistanceToRenderFullPlanet;
 	double scale = 0.000004f;
 	double distanceScale = 0.0000004f;
+
+	HDC hdc;
+	Font font;
 public:
 	Scene();
 	~Scene();
@@ -33,6 +38,10 @@ public:
 	void AddPlanetToTrackDistanceTo(Planet& planet);
 	float UpdateTrackingDistances(Vector3& sceneCameraPosition, Date t, App& app);
 	void AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date startingDate);
+	void AddStandaloneSpacePoint(const SpaceObject& obj, Font standalonePointFont);
+
+protected:
 	void RenderStandaloneTrajectories(Date t, float lineWidth, float red, float green, float blue);
+	void RenderStabdaloneSpacePoints(Date t, App& app);
 };
 

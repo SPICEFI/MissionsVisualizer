@@ -171,7 +171,7 @@ int glCamera::RetrieveObjectID(int x, int y, int width, int height, Scene scene,
 	glLoadIdentity();
 	gluPickMatrix(x, viewportCoordinates[3] - y, 2, 2, viewportCoordinates);
 
-	gluPerspective(60.0f, (GLfloat)(width) / (GLfloat)(height), 0.2f, 500.0f);
+	gluPerspective(60.0f, (GLfloat)(width) / (GLfloat)(height), 0.01f, 500.0f);
 
 	glMatrixMode(GL_MODELVIEW);
 

@@ -46,7 +46,7 @@ void ReshapeGL(int width, int height)									// Reshape The Window When It's Mo
 	glMatrixMode(GL_PROJECTION);										// Select The Projection Matrix
 	glLoadIdentity();													// Reset The Projection Matrix
 	gluPerspective(60.0f, (GLfloat)(width) / (GLfloat)(height),			// Calculate The Aspect Ratio Of The Window
-		0.2f, 500.0f);
+		0.01f, 500.0f);
 	glMatrixMode(GL_MODELVIEW);										// Select The Modelview Matrix
 	glLoadIdentity();													// Reset The Modelview Matrix
 }

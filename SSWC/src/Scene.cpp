@@ -24,6 +24,7 @@ void Scene::render(Date t, App& app)
 		planets.at(i).Render(t, app);
 	}
 	RenderStandaloneTrajectories(t, 1, 1, 1, 1);
+	RenderStabdaloneSpacePoints(t, app);
 }
 
 const Planet& Scene::FindObjectWithID(int id)
@@ -132,7 +133,7 @@ void Scene::AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date
 {
 	standaloneTrajectories.push_back(Trajectory(obj, frame, Units::Metric::kilometers));
 	Time time(2, Units::Common::minutes);
-	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetIncrementalParams(startingDate, time, 1000000);
+	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetIncrementalParams(startingDate, time, 1000);
 }
 
 void Scene::RenderStandaloneTrajectories(Date t, float lineWidth, float red, float green, float blue)
@@ -153,6 +154,34 @@ void Scene::RenderStandaloneTrajectories(Date t, float lineWidth, float red, flo
 		}
 		glDisable(GL_LINE_SMOOTH);
 		glEnd();
+	}
+	glEnable(GL_LIGHTING);
+}
+
+void Scene::AddStandaloneSpacePoint(const SpaceObject& obj, Font standalonePointFont)
+{
+	standaloneSpacePoints.push_back(obj);
+	font = standalonePointFont;
+}
+
+void Scene::RenderStabdaloneSpacePoints(Date t, App& app)
+{
+	glDisable(GL_LIGHTING);
+	for (int i = 0; i < standaloneSpacePoints.size(); i++)
+	{
+		glColor3f(1.0f, 1.0f, 0.0f);
+		glPointSize(7.0f);
+		glEnable(GL_POINT_SMOOTH);
+
+		glBegin(GL_POINTS);
+			Vector3T <Length> pos = standaloneSpacePoints.at(i).GetPosition(t, SpaceObject::SSB, app.GetReferenceFrame());
+			Vector3 position(pos.x.ValueIn(app.LengthUnit())* distanceScale, pos.y.ValueIn(app.LengthUnit()) * distanceScale, pos.z.ValueIn(app.LengthUnit()) * distanceScale);
+			glVertex3d(position.x, position.y, position.z);
+		glEnd();
+
+		glColor3f(1.0f, 1.0f, 0.0f);
+		glRasterPos3f(position.x, position.y, position.z);
+		font.glPrint(standaloneSpacePoints.at(i).GetName().c_str());
 	}
 	glEnable(GL_LIGHTING);
 }

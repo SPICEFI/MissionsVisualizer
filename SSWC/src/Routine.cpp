@@ -37,7 +37,7 @@ App app;
 Scene SolarSystem;
 Date t;
 TGA* skyTexture;
-
+HDC instanceHDC;
 int id = -1;
 int idWhenMove = -1;
 
@@ -47,13 +47,17 @@ bool orientationMode = true;
 bool PLANET_CLICKED = false;
 bool StopSimulation = false;
 bool lastFrameSpaceWasPressed = false;
+bool moveTimeBack = false;
+
 std::string planetName;
 Font font;
-Vector3 startingPosForCam;
+Font standalonePointFont;
 
 BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization Goes Here
 {
 	font = Font(window->hDC);
+	standalonePointFont = Font(window->hDC);
+
 	glShadeModel(GL_SMOOTH);
 	glEnable(GL_TEXTURE_2D);
 
@@ -68,6 +72,7 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 	app.AddObject(SpaceBody("SUN"));
 	app.AddObject(SpaceBody("MOON"));
 	app.AddObject(SpaceObject("L2_OBJECT"));
+	app.AddObject(SpaceObject("L2"));
 
 	TGA* sunTexture = new TGA("Images\\SUN.tga");
 	skyTexture = new TGA("Images\\STARS.tga");
@@ -95,8 +100,10 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 					SolarSystem.addPlanet(Planet(body, sunTexture, obj, app.GetReferenceFrame(), window->hDC));
 				}
 			}
-			else if(obj.GetSpiceName() == "L2_OBJECT")
+			else if (obj.GetSpiceName() == "L2_OBJECT")
 				SolarSystem.AddTrajectoryAsSpaceObject(obj, app.GetReferenceFrame(), t);
+			else if (obj.GetSpiceName() == "L2")
+				SolarSystem.AddStandaloneSpacePoint(obj, standalonePointFont);
 		}
 		catch (const std::bad_cast&)
 		{
@@ -105,7 +112,7 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 
  	g_window = window;
 	g_keys = keys;
-	g_Camera.PositionCamera(Vector3(0, 1, 0), Vector3(0, 0, 0), Vector3(0, 0, 1));
+	g_Camera.PositionCamera(Vector3(-5.5f, 28.44f, 0.2f), Vector3(-17.6f, 53.26f, -8.5f), Vector3(0, 0, 1));
 
 	RECT rect;
 	GetClientRect(g_window->hWnd, &rect);
@@ -219,9 +226,30 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 		lastFrameSpaceWasPressed = false;
 	}
 
+	if (g_keys->keyDown[VK_LEFT])
+	{
+		moveTimeBack = true;
+	}
+	if (g_keys->keyDown[VK_RIGHT])
+	{
+		moveTimeBack = false;
+	}
+	if (g_keys->keyDown[VK_DOWN])
+	{
+		if(g_Camera.speed > 0.0005)
+			g_Camera.speed -= 0.0001f;
+	}
+	if (g_keys->keyDown[VK_UP])
+	{
+		if(g_Camera.speed < 2.0f)
+			g_Camera.speed += 0.0001f;
+	}
+
 	if (!StopSimulation)
-		//t += Time(1.0, Units::Common::hours);
-		t += Time(0.05, Units::Common::seconds);
+		if(moveTimeBack)
+			t -= Time(0.05, Units::Common::seconds);
+		else
+			t += Time(0.05, Units::Common::seconds);
 }
 
 void CreateSkyBox(float x, float y, float z, float width, float height, float length)
@@ -282,9 +310,17 @@ void Draw(void)													// Draw Our Scene
 	glEnable(GL_MULTISAMPLE_ARB);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);		// Clear Screen And Depth Buffer										
 	glEnable(GL_DEPTH_TEST);
-	// Reset The Modelview Matrix
+	
+#pragma region DRAWING_DATE_TO_THE_SCREEN
 	glLoadIdentity();
+	glDisable(GL_LIGHTING);
+	glColor3f(1, 1, 1);
+	glRasterPos3f(0.5, 0.5, -1);
+	font.glPrint(t.AsString().c_str());
+	glEnable(GL_LIGHTING);
+#pragma endregion
 
+	glLoadIdentity();
 	g_Camera.Update(centerX, centerY, orientationMode);
 	CreateSkyBox(0, 0, 0, 400, 400, 400);
 	SolarSystem.render(t, app);
