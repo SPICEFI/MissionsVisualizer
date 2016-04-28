@@ -130,9 +130,9 @@ float Scene::UpdateTrackingDistances(Vector3& sceneCameraPosition, Date t, App& 
 
 void Scene::AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date startingDate)
 {
-	standaloneTrajectories.push_back(Trajectory(obj, frame));
-	Time time(3, Units::Common::hours);
-	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetDateParams(startingDate, time, 5000);
+	standaloneTrajectories.push_back(Trajectory(obj, frame, Units::Metric::kilometers));
+	Time time(2, Units::Common::minutes);
+	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetIncrementalParams(startingDate, time, 1000000);
 }
 
 void Scene::RenderStandaloneTrajectories(Date t, float lineWidth, float red, float green, float blue)
@@ -145,9 +145,12 @@ void Scene::RenderStandaloneTrajectories(Date t, float lineWidth, float red, flo
 
 		glBegin(GL_LINE_STRIP);
 		glEnable(GL_LINE_SMOOTH);
-		std::vector<Vector3> path = standaloneTrajectories[i].GetTrajectory(t, Units::Metric::kilometers);
-		for (int i = 0; i < path.size(); i++)
-			glVertex3f(path.at(i).x * distanceScale, path.at(i).y * distanceScale, path.at(i).z * distanceScale);
+		if (standaloneTrajectories[i].IncrementalDefined())
+		{
+			const std::deque<Vector3>& path = standaloneTrajectories[i].GetIncrementalTrajectory(t);
+			for (int i = 0; i < path.size(); i++)
+				glVertex3f(path.at(i).x * distanceScale, path.at(i).y * distanceScale, path.at(i).z * distanceScale);
+		}
 		glDisable(GL_LINE_SMOOTH);
 		glEnd();
 	}

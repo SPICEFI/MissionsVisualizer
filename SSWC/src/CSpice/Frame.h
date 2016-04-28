@@ -3,10 +3,13 @@
 #include "CSpiceCore.h"
 #include "Date.h"
 #include "Window.h"
+#include "SpaceObject.h"
 #include "../Math/Vector3.h"
 #include "../Math/Matrix4x4.h"
 
 #define FRAME_NAME_MAX_LENGTH 64
+
+class SpaceObject;
 
 class Frame
 {
@@ -37,6 +40,7 @@ public:
 	const std::string& GetName() const;
 
 	FrameInfo GetFrameInfo() const;
+	const SpaceObject& GetCenterObject() const;
 
 	Vector3 TransformVector(const Vector3& vec, const Date& t, const Frame& ref) const;
 	Vector3 AxisX(const Date& t, const Frame& ref) const;
@@ -62,6 +66,7 @@ private:
 private:
 	long spiceId;
 	std::string name;
+	const SpaceObject* centerObject;
 
 public:
 	static const Frame J2000;

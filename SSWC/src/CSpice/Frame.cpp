@@ -24,13 +24,11 @@ void Frame::Construct(int spiceId, const std::string& name)
 	this->spiceId = spiceId;
 
 	if(name != "")
-	{
 		this->name = name;
-	}
 	else
-	{
 		this->name = GetSpiceName();
-	}
+
+	this->centerObject = new SpaceObject(GetFrameInfo().centerId, this->name + "_center");
 }
 
 Frame::~Frame()
@@ -71,6 +69,11 @@ Frame::FrameInfo Frame::GetFrameInfo() const
 	finfo.frameType = FrameType(frclss);
 
 	return finfo;
+}
+
+const SpaceObject& Frame::GetCenterObject() const
+{
+	return *centerObject;
 }
 
 Vector3 Frame::TransformVector(const Vector3& vec, const Date& t, const Frame& ref) const

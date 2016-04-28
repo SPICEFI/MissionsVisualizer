@@ -85,7 +85,7 @@ Vector3T<Length> SpaceObject::GetPosition(const Date& t, const Frame& frame) con
 {
 	Frame::FrameInfo frInfo = frame.GetFrameInfo();
 	
-	return GetPosition(t, SpaceObject(frInfo.centerId), frame);
+	return GetPosition(t, frame.GetCenterObject(), frame);
 }
 
 Vector3T<Velocity> SpaceObject::GetVelocity(const Date& t, const SpaceObject& relativeTo, const Frame& frame) const

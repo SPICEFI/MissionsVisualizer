@@ -15,6 +15,8 @@
 
 #define OBJECT_NAME_MAX_LENGTH 128
 
+class Frame;
+
 class SpaceObject
 {
 public:

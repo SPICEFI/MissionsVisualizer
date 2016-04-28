@@ -115,7 +115,7 @@ public:
 	{
 		Construct(0.0, CurrentUnit::BaseUnit());
 	}
-	Quantity(double value, const CurrentUnit& unit)
+	Quantity(double value, const CurrentUnit& unit = CurrentUnit::BaseUnit())
 	{
 		Construct(value, unit);
 	}

@@ -8,6 +8,7 @@
 #include "CSpice\Date.h"
 
 #include <vector>
+#include <deque>
 
 #include <gl\GL.h>
 #include <gl\GLU.h>
@@ -16,44 +17,63 @@
 class Trajectory
 {
 protected:
-	std::vector<Vector3> path;
+	//std::vector<Vector3> path;
 
 	const SpaceObject& obj;
-	Time historyDuration;
-	Time stepDuration;
-	Date startDate;
 	Frame frame;
+	LengthUnit unit;
+
+	bool staticDefined;
+	std::vector<Vector3> staticTrajectory;
+
+	bool incrementalDefined;
+	Date prevDate;
+	//std::vector<Vector3> incrementalTrajectory;
+	std::deque<Vector3> incrementalTrajectory;
+	Date incStartDate;
+	Time incHistoryDuration;
+	int incResolution;
+	Time incStepDuration;
+	//Date lastPointDate;
+	Date nextPointDate;
 
 	float lineWidth = 1.0f;
 	float red = 255.0f;
 	float green = 255.0f;
 	float blue = 255.0f;
 public:
-	Trajectory(const SpaceObject& obj, Frame frame);
+	Trajectory(const SpaceObject& obj, Frame frame, const LengthUnit& unit);
 	//Traectory(float lineWidth, Vector3 rgb);
 	~Trajectory(){};
 
-	void SetDateParams(Date startDate, Time historyDuration, int resolution);
+	void SetStaticParams(Date startDate, Date endDate, int resolution);
+	void SetIncrementalParams(Date startDate, Time historyDuration, int resolution);
 
-	std::vector<Vector3> GetTrajectory(Date curDate, const LengthUnit& unit) const;
+	const std::deque<Vector3>& GetIncrementalTrajectory(Date curDate);
+	const std::vector<Vector3>& GetStaticTrajectory() const;
 
-	void Render();
+	bool IncrementalDefined() const
+	{
+		return incrementalDefined;
+	}
+
+	bool StaticDefined() const
+	{
+		return staticDefined;
+	}
+
+	//void Render();
 	// void Render(Date curDate);
-	void PushBack(Vector3 newPos);
+	//void PushBack(Vector3 newPos);
 
 private:
 	Date GetFromDate(Date curDate) const
 	{
-		Date fromDate = curDate - historyDuration;
-		if (fromDate < startDate)
-			fromDate = startDate;
+		Date fromDate = curDate - incHistoryDuration;
+		if (fromDate < incStartDate)
+			fromDate = incStartDate;
 
 		return fromDate;
-	}
-
-	Date GetToDate(Date curDate) const
-	{
-		return curDate;
 	}
 
 	Vector3 GetPosition(Date date, const LengthUnit& unit) const
