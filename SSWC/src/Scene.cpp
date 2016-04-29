@@ -132,7 +132,7 @@ float Scene::UpdateTrackingDistances(Vector3& sceneCameraPosition, Date t, App& 
 void Scene::AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date startingDate)
 {
 	standaloneTrajectories.push_back(Trajectory(obj, frame, Units::Metric::kilometers));
-	Time time(2, Units::Common::minutes);
+	Time time(10, Units::Common::days);
 	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetIncrementalParams(startingDate, time, 1000);
 }
 

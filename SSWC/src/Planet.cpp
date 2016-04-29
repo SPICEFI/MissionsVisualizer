@@ -14,7 +14,7 @@ Planet::Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, cons
 	font = Font(hdc);
 	if (body.GetSpiceId() == 399)
 	{
-		Date t("Jan 01 2000 19:36:52.36073947325300000 UTC+0");
+		Date t("Mar 29 2016 01:03:52.99996036291100000 (UTC+0)");
 		Time time(10, Units::Common::days);
 		trajectory.SetStaticParams(t - time, t + time, 100);
 	}

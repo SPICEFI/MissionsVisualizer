@@ -74,10 +74,17 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 	app.AddObject(SpaceObject("L2_OBJECT"));
 	app.AddObject(SpaceObject("L2"));
 
+	SpaceObject lalka("L2_OBJECT");
+	Window wnd = lalka.GetCoverage();
+	wnd.IsIncluded(9.0);
+	auto interval = wnd.GetIntervals()[0];
+	double from = interval.GetLeft();
+	double to = interval.GetRight();
+
 	TGA* sunTexture = new TGA("Images\\SUN.tga");
 	skyTexture = new TGA("Images\\STARS.tga");
 
-	t = Date("Jan 01 2000 19:36:52.36073947325300000 UTC+0");
+	t = Date("Mar 29 2016 01:03:52.99996036291100000 (UTC+0)");
 
 	size_t count = app.GetObjectsLength();
 	for (int i = 0; i < count; i++)
@@ -247,9 +254,9 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 
 	if (!StopSimulation)
 		if(moveTimeBack)
-			t -= Time(0.05, Units::Common::seconds);
+			t -= Time(0.05, Units::Common::days);
 		else
-			t += Time(0.05, Units::Common::seconds);
+			t += Time(0.05, Units::Common::days);
 }
 
 void CreateSkyBox(float x, float y, float z, float width, float height, float length)
