@@ -23,18 +23,18 @@ protected:
 	Frame frame;
 	LengthUnit unit;
 
+	const SpaceObject* relativeTo;
+
 	bool staticDefined;
 	std::vector<Vector3> staticTrajectory;
 
 	bool incrementalDefined;
 	Date prevDate;
-	//std::vector<Vector3> incrementalTrajectory;
 	std::deque<Vector3> incrementalTrajectory;
 	Date incStartDate;
 	Time incHistoryDuration;
 	int incResolution;
 	Time incStepDuration;
-	//Date lastPointDate;
 	Date nextPointDate;
 
 	float lineWidth = 1.0f;
@@ -46,6 +46,8 @@ public:
 	//Traectory(float lineWidth, Vector3 rgb);
 	~Trajectory(){};
 
+	void SetRelativeTo(const SpaceObject& obj);
+	void SetRelativeToFrameCenter();
 	void SetStaticParams(Date startDate, Date endDate, int resolution);
 	void SetIncrementalParams(Date startDate, Time historyDuration, int resolution);
 
@@ -78,7 +80,11 @@ private:
 
 	Vector3 GetPosition(Date date, const LengthUnit& unit) const
 	{
-		Vector3T<Length> pt = obj.GetPosition(date, frame);
+		Vector3T<Length> pt;
+		if (relativeTo == nullptr)
+			pt = obj.GetPosition(date, frame);
+		else
+			pt = obj.GetPosition(date, *relativeTo, frame);
 
 		return Vector3(pt.x.ValueIn(unit), pt.y.ValueIn(unit), pt.z.ValueIn(unit));
 	}

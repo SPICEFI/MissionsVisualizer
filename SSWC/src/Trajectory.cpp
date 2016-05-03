@@ -7,12 +7,24 @@ Trajectory::Trajectory(const SpaceObject& obj, Frame frame, const LengthUnit& un
 	this->incrementalDefined = false;
 	this->unit = unit;
 
+	SetRelativeToFrameCenter();
+
 	incStartDate = -1;
 	incHistoryDuration = -1;
 	incResolution = -1;
 	incStepDuration = -1;
 	nextPointDate = -1;
 };
+
+void Trajectory::SetRelativeTo(const SpaceObject& obj)
+{
+	relativeTo = &obj;
+}
+
+void Trajectory::SetRelativeToFrameCenter()
+{
+	relativeTo = nullptr;
+}
 
 void Trajectory::SetStaticParams(Date startDate, Date endDate, int resolution)
 {
