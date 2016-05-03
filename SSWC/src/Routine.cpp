@@ -74,13 +74,6 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 	app.AddObject(SpaceObject("L2_OBJECT"));
 	app.AddObject(SpaceObject("L2"));
 
-	SpaceObject lalka("L2_OBJECT");
-	Window wnd = lalka.GetCoverage();
-	wnd.IsIncluded(9.0);
-	auto interval = wnd.GetIntervals()[0];
-	double from = interval.GetLeft();
-	double to = interval.GetRight();
-
 	TGA* sunTexture = new TGA("Images\\SUN.tga");
 	skyTexture = new TGA("Images\\STARS.tga");
 
