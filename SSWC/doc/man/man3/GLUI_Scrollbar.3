@@ -1,0 +1,413 @@
+.TH "GLUI_Scrollbar" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Scrollbar \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Scrollbar\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP horz_vert=\fBGLUI_SCROLL_HORIZONTAL\fP, \fBint\fP \fBdata_type\fP=\fBGLUI_SCROLL_INT\fP, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Scrollbar\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP horz_vert, \fBint\fP *live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Scrollbar\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP horz_vert, float *live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_pressed\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_unpressed\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_text\fP (\fBint\fP sunken)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_int_limits\fP (\fBint\fP low, \fBint\fP high, \fBint\fP limit_type=\fBGLUI_LIMIT_CLAMP\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_float_limits\fP (float low, float high, \fBint\fP limit_type=\fBGLUI_LIMIT_CLAMP\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfind_arrow\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdo_drag\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdo_callbacks\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_scroll\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdo_click\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBidle\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "bool \fBneeds_idle\fP (\fBvoid\fP) const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_int_val\fP (\fBint\fP new_val)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_float_val\fP (float new_val)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBincrease_growth\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBreset_growth\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_speed\fP (float speed)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_scroll_parameters\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_object_callback\fP (\fBGLUI_CB\fP cb=\fBGLUI_CB\fP(), \fBGLUI_Control\fP *\fBobj\fP=NULL)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcurrently_inside\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBstate\fP"
+.br
+.ti -1c
+.RI "float \fBgrowth\fP"
+.br
+.ti -1c
+.RI "float \fBgrowth_exp\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_x\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_y\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdata_type\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcallback_count\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_int_val\fP"
+.br
+.RI "\fIUsed to prevent repeated callbacks\&. \fP"
+.ti -1c
+.RI "float \fBlast_float_val\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfirst_callback\fP"
+.br
+.ti -1c
+.RI "float \fBuser_speed\fP"
+.br
+.ti -1c
+.RI "float \fBfloat_min\fP"
+.br
+.ti -1c
+.RI "float \fBfloat_max\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBint_min\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBint_max\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBhorizontal\fP"
+.br
+.ti -1c
+.RI "double \fBlast_update_time\fP"
+.br
+.RI "\fIGLUI_Time() we last advanced scrollbar\&. \fP"
+.ti -1c
+.RI "double \fBvelocity_limit\fP"
+.br
+.RI "\fIMaximum distance to advance per second\&. \fP"
+.ti -1c
+.RI "\fBint\fP \fBbox_length\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBbox_start_position\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBbox_end_position\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtrack_length\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBassociated_object\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_CB\fP \fBobject_cb\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_construct\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP horz_vert, \fBint\fP \fBdata_type\fP, \fBvoid\fP *live_var, \fBint\fP \fBid\fP, \fBGLUI_CB\fP \fBcallback\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBdraw_scroll_arrow\fP (\fBint\fP arrowtype, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBdraw_scroll_box\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBw\fP, \fBint\fP \fBh\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 2200 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Scrollbar::GLUI_Scrollbar (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPhorz_vert = \fC\fBGLUI_SCROLL_HORIZONTAL\fP\fP, \fBint\fPdata_type = \fC\fBGLUI_SCROLL_INT\fP\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_Scrollbar::GLUI_Scrollbar (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPhorz_vert, \fBint\fP *live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_Scrollbar::GLUI_Scrollbar (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPhorz_vert, float *live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Scrollbar::common_construct (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPhorz_vert, \fBint\fPdata_type, \fBvoid\fP *live_var, \fBint\fPid, \fBGLUI_CB\fPcallback)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::common_init (\fBvoid\fP)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::do_callbacks (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::do_click (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::do_drag (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Scrollbar::draw_pressed (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::draw_scroll (\fBvoid\fP)"
+
+.SS "virtual \fBvoid\fP GLUI_Scrollbar::draw_scroll_arrow (\fBint\fParrowtype, \fBint\fPx, \fBint\fPy)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "virtual \fBvoid\fP GLUI_Scrollbar::draw_scroll_box (\fBint\fPx, \fBint\fPy, \fBint\fPw, \fBint\fPh)\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::draw_text (\fBint\fPsunken)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::draw_unpressed (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI_Scrollbar::find_arrow (\fBint\fPlocal_x, \fBint\fPlocal_y)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::idle (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Scrollbar::increase_growth (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI_Scrollbar::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Scrollbar::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Scrollbar::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Scrollbar::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "bool GLUI_Scrollbar::needs_idle (\fBvoid\fP) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Scrollbar::reset_growth (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::set_float_limits (floatlow, floathigh, \fBint\fPlimit_type = \fC\fBGLUI_LIMIT_CLAMP\fP\fP)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::set_float_val (floatnew_val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Scrollbar::set_int_limits (\fBint\fPlow, \fBint\fPhigh, \fBint\fPlimit_type = \fC\fBGLUI_LIMIT_CLAMP\fP\fP)"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::set_int_val (\fBint\fPnew_val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Scrollbar::set_object_callback (\fBGLUI_CB\fPcb = \fC\fBGLUI_CB\fP()\fP, \fBGLUI_Control\fP *obj = \fCNULL\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2288 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Scrollbar::set_speed (floatspeed)\fC [inline]\fP"
+
+.PP
+Definition at line 2286 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Scrollbar::update_scroll_parameters ()"
+
+.SS "\fBvoid\fP GLUI_Scrollbar::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBvoid\fP* GLUI_Scrollbar::associated_object"
+
+.PP
+Definition at line 2256 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::box_end_position"
+
+.PP
+Definition at line 2246 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::box_length"
+
+.PP
+Definition at line 2244 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::box_start_position"
+
+.PP
+Definition at line 2245 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::callback_count"
+
+.PP
+Definition at line 2234 of file glui\&.h\&.
+.SS "bool GLUI_Scrollbar::currently_inside"
+
+.PP
+Definition at line 2229 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::data_type"
+
+.PP
+Definition at line 2233 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::first_callback"
+
+.PP
+Definition at line 2237 of file glui\&.h\&.
+.SS "float GLUI_Scrollbar::float_max"
+
+.PP
+Definition at line 2239 of file glui\&.h\&.
+.SS "float GLUI_Scrollbar::float_min"
+
+.PP
+Definition at line 2239 of file glui\&.h\&.
+.SS "float GLUI_Scrollbar::growth"
+
+.PP
+Definition at line 2231 of file glui\&.h\&.
+.SS "float GLUI_Scrollbar::growth_exp"
+
+.PP
+Definition at line 2231 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::horizontal"
+
+.PP
+Definition at line 2241 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::int_max"
+
+.PP
+Definition at line 2240 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::int_min"
+
+.PP
+Definition at line 2240 of file glui\&.h\&.
+.SS "float GLUI_Scrollbar::last_float_val"
+
+.PP
+Definition at line 2236 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::last_int_val"
+
+.PP
+Used to prevent repeated callbacks\&. 
+.PP
+Definition at line 2235 of file glui\&.h\&.
+.SS "double GLUI_Scrollbar::last_update_time"
+
+.PP
+GLUI_Time() we last advanced scrollbar\&. 
+.PP
+Definition at line 2242 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::last_x"
+
+.PP
+Definition at line 2232 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::last_y"
+
+.PP
+Definition at line 2232 of file glui\&.h\&.
+.SS "\fBGLUI_CB\fP GLUI_Scrollbar::object_cb"
+
+.PP
+Definition at line 2257 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::state"
+
+.PP
+Definition at line 2230 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Scrollbar::track_length"
+
+.PP
+Definition at line 2247 of file glui\&.h\&.
+.SS "float GLUI_Scrollbar::user_speed"
+
+.PP
+Definition at line 2238 of file glui\&.h\&.
+.SS "double GLUI_Scrollbar::velocity_limit"
+
+.PP
+Maximum distance to advance per second\&. 
+.PP
+Definition at line 2243 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

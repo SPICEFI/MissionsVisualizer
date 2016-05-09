@@ -1,0 +1,1307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="glsmap_8h" kind="file">
+    <compoundname>glsmap.h</compoundname>
+    <includes local="no">GL/gl.h</includes>
+    <incdepgraph>
+      <node id="1690">
+        <label>SSWC/src/GL/glsmap.h</label>
+        <link refid="glsmap.h"/>
+        <childnode refid="1691" relation="include">
+        </childnode>
+      </node>
+      <node id="1691">
+        <label>GL/gl.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5" prot="public" static="no">
+        <name>SphereMapFlags</name>
+        <enumvalue id="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5aad73bd60c4453c883ff3940c09c5db7c" prot="public">
+          <name>SMAP_CLEAR_SMAP_TEXTURE</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5aae8cfc955d15a07c1b5c55bcdc2ebc69" prot="public">
+          <name>SMAP_GENERATE_VIEW_MIPMAPS</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5a750cc755f77d3b3f6ae4ff57ee38b6df" prot="public">
+          <name>SMAP_GENERATE_SMAP_MIPMAPS</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5a60d2036616fe34c50c6736ea3e89f001" prot="public">
+          <name>SMAP_GENERATE_MIPMAPS</name>
+          <initializer>= 0x6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="56" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="enum" id="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55ba299bd68d7ab841fa957d906891238e34" prot="public">
+          <name>SMAP_FRONT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55ba1ac39456b912288eecbea9975b0dbf05" prot="public">
+          <name>SMAP_TOP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55baa69f5413a86172b9b2f265e7460a88f1" prot="public">
+          <name>SMAP_BOTTOM</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55baf9be2ad8ef8b028eef04184e6fe544bd" prot="public">
+          <name>SMAP_LEFT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55bade2b89fe9c3465057ef445b9d2f8549a" prot="public">
+          <name>SMAP_RIGHT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55bac7d4dfc57dea47ef589a7b2bfae19253" prot="public">
+          <name>SMAP_BACK</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="64" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" bodystart="64" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" prot="public" static="no">
+        <type>struct _SphereMap</type>
+        <definition>typedef struct _SphereMap SphereMap</definition>
+        <argsstring></argsstring>
+        <name>SphereMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="11986" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="glsmap_8h_1a0df728d29d955d6cf4c14ac8af58e06e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+        <definition>SphereMap* smapCreateSphereMap</definition>
+        <argsstring>(SphereMap *shareSmap)</argsstring>
+        <name>smapCreateSphereMap</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>shareSmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a03b69a9906d9ac8fb112bae293ec6458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapDestroySphereMap</definition>
+        <argsstring>(SphereMap *smap)</argsstring>
+        <name>smapDestroySphereMap</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1ae7ca381975c8119d530f4d46f47c11df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapConfigureSphereMapMesh</definition>
+        <argsstring>(SphereMap *smap, int steps, int rings, int edgeExtend)</argsstring>
+        <name>smapConfigureSphereMapMesh</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>steps</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>rings</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>edgeExtend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a2bb9e2e44dc617b9b40b6998b0d5f70a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetSphereMapTexObj</definition>
+        <argsstring>(SphereMap *smap, GLuint texobj)</argsstring>
+        <name>smapSetSphereMapTexObj</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref></type>
+          <declname>texobj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a55288933c51903cf807b93fcdb9258e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetViewTexObj</definition>
+        <argsstring>(SphereMap *smap, GLuint texobj)</argsstring>
+        <name>smapSetViewTexObj</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref></type>
+          <declname>texobj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a97191c4879951b4b6b45d534a61e0b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetViewTexObjs</definition>
+        <argsstring>(SphereMap *smap, GLuint texobjs[6])</argsstring>
+        <name>smapSetViewTexObjs</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref></type>
+          <declname>texobjs</declname>
+          <array>[6]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a900b0376368035931c4813107a0503db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetSphereMapTexObj</definition>
+        <argsstring>(SphereMap *smap, GLuint *texobj)</argsstring>
+        <name>smapGetSphereMapTexObj</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref> *</type>
+          <declname>texobj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a41b0e5a31623cac2c4c2177fc1f38e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetViewTexObj</definition>
+        <argsstring>(SphereMap *smap, GLuint *texobj)</argsstring>
+        <name>smapGetViewTexObj</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref> *</type>
+          <declname>texobj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a5ff313c947d5fe29dbcbda233c91b9cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetViewTexObjs</definition>
+        <argsstring>(SphereMap *smap, GLuint texobjs[6])</argsstring>
+        <name>smapGetViewTexObjs</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref></type>
+          <declname>texobjs</declname>
+          <array>[6]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a7119faaa177bad8a8b1e11653b27b23d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetFlags</definition>
+        <argsstring>(SphereMap *smap, SphereMapFlags flags)</argsstring>
+        <name>smapSetFlags</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5" kindref="member">SphereMapFlags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a01357f8e5580cd8d33b950059197d919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetFlags</definition>
+        <argsstring>(SphereMap *smap, SphereMapFlags *flags)</argsstring>
+        <name>smapGetFlags</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5" kindref="member">SphereMapFlags</ref> *</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1aac930bf38f0fc5da0c5a8e61a6a4c735" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetViewOrigin</definition>
+        <argsstring>(SphereMap *smap, GLint x, GLint y)</argsstring>
+        <name>smapSetViewOrigin</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a5c8ac3998d98285e0077ea6f57f4a1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetSphereMapOrigin</definition>
+        <argsstring>(SphereMap *smap, GLint x, GLint y)</argsstring>
+        <name>smapSetSphereMapOrigin</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a75369679e5ea4e1d8f5f7c72531a50f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetViewOrigin</definition>
+        <argsstring>(SphereMap *smap, GLint *x, GLint *y)</argsstring>
+        <name>smapGetViewOrigin</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref> *</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a3ada877a2bf38ffb3477ba22660a0400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetSphereMapOrigin</definition>
+        <argsstring>(SphereMap *smap, GLint *x, GLint *y)</argsstring>
+        <name>smapGetSphereMapOrigin</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref> *</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a633da72849770eeede5b44031a029552" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetEye</definition>
+        <argsstring>(SphereMap *smap, GLfloat eyex, GLfloat eyey, GLfloat eyez)</argsstring>
+        <name>smapSetEye</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>eyex</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>eyey</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>eyez</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a75f8b5f3b9007d186f8e8323c9544f92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetEyeVector</definition>
+        <argsstring>(SphereMap *smap, GLfloat *eye)</argsstring>
+        <name>smapSetEyeVector</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>eye</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a35ea2b66c23e3fcf7b8bb4b7b0ce79d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetUp</definition>
+        <argsstring>(SphereMap *smap, GLfloat upx, GLfloat upy, GLfloat upz)</argsstring>
+        <name>smapSetUp</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>upx</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>upy</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>upz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a755a2b900407171b02e84d5b09ff04d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetUpVector</definition>
+        <argsstring>(SphereMap *smap, GLfloat *up)</argsstring>
+        <name>smapSetUpVector</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a1cc86926aa68995ffdc38172561f998d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetObject</definition>
+        <argsstring>(SphereMap *smap, GLfloat objx, GLfloat objy, GLfloat objz)</argsstring>
+        <name>smapSetObject</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>objx</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>objy</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>objz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1aab0139a6904ef053d6f2f4e81f066c10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetObjectVector</definition>
+        <argsstring>(SphereMap *smap, GLfloat *obj)</argsstring>
+        <name>smapSetObjectVector</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a3a10a38b7f2a3f1c87ae18c2b1dde1e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetEye</definition>
+        <argsstring>(SphereMap *smap, GLfloat *eyex, GLfloat *eyey, GLfloat *eyez)</argsstring>
+        <name>smapGetEye</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>eyex</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>eyey</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>eyez</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a6a5324172abf1c840d705d9179d028ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetEyeVector</definition>
+        <argsstring>(SphereMap *smap, GLfloat *eye)</argsstring>
+        <name>smapGetEyeVector</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>eye</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1af3cda52c9ea142241ac937ff6a1f60cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetUp</definition>
+        <argsstring>(SphereMap *smap, GLfloat *upx, GLfloat *upy, GLfloat *upz)</argsstring>
+        <name>smapGetUp</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>upx</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>upy</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>upz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a24f56aa87e44e66319b6b44963d153ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetUpVector</definition>
+        <argsstring>(SphereMap *smap, GLfloat *up)</argsstring>
+        <name>smapGetUpVector</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a1cf8d94faf073682a3b7b910fa85247b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetObject</definition>
+        <argsstring>(SphereMap *smap, GLfloat *objx, GLfloat *objy, GLfloat *objz)</argsstring>
+        <name>smapGetObject</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>objx</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>objy</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>objz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a20697bbb1f52b28b61dd5cc14b2d055e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetObjectVector</definition>
+        <argsstring>(SphereMap *smap, GLfloat *obj)</argsstring>
+        <name>smapGetObjectVector</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a1a1e0497b0719b3a3dfec7315fa5f24c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetNearFar</definition>
+        <argsstring>(SphereMap *smap, GLfloat viewNear, GLfloat viewFar)</argsstring>
+        <name>smapSetNearFar</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>viewNear</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref></type>
+          <declname>viewFar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a7dbff47aa58caeaec4762cbf5903e243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetNearFar</definition>
+        <argsstring>(SphereMap *smap, GLfloat *viewNear, GLfloat *viewFar)</argsstring>
+        <name>smapGetNearFar</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>viewNear</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref> *</type>
+          <declname>viewFar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a3a86476f40feceb04cd4ed30c48d2921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetSphereMapTexDim</definition>
+        <argsstring>(SphereMap *smap, GLsizei texdim)</argsstring>
+        <name>smapSetSphereMapTexDim</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type>GLsizei</type>
+          <declname>texdim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a7c5006d8307458d3d89c0e4edd5e24b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetViewTexDim</definition>
+        <argsstring>(SphereMap *smap, GLsizei texdim)</argsstring>
+        <name>smapSetViewTexDim</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type>GLsizei</type>
+          <declname>texdim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a0fb89da539e94c8a0bf76916f1fdd4ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetSphereMapTexDim</definition>
+        <argsstring>(SphereMap *smap, GLsizei *texdim)</argsstring>
+        <name>smapGetSphereMapTexDim</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type>GLsizei *</type>
+          <declname>texdim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1ac44571890ab4e4ba2d8336fc741a6d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetViewTexDim</definition>
+        <argsstring>(SphereMap *smap, GLsizei *texdim)</argsstring>
+        <name>smapGetViewTexDim</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type>GLsizei *</type>
+          <declname>texdim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a820d58e838c3a2b87e48f50a547598c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetContextData</definition>
+        <argsstring>(SphereMap *smap, void *context)</argsstring>
+        <name>smapSetContextData</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1aef224598856b374cdd212154c4f08490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetContextData</definition>
+        <argsstring>(SphereMap *smap, void **context)</argsstring>
+        <name>smapGetContextData</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref> **</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a6a6cecb7f6c2828cba3183dbf4de7c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetPositionLightsFunc</definition>
+        <argsstring>(SphereMap *smap, void(*positionLights)(int view, void *context))</argsstring>
+        <name>smapSetPositionLightsFunc</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> view, <ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref> *context)</type>
+          <declname>positionLights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1af8e6f16b22a9b98f51b11e4d7ec7befa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapSetDrawViewFunc</definition>
+        <argsstring>(SphereMap *smap, void(*drawView)(int view, void *context))</argsstring>
+        <name>smapSetDrawViewFunc</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> view, <ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref> *context)</type>
+          <declname>drawView</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a566c7ce4b95f25109aa7f8c6af5743b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetPositionLightsFunc</definition>
+        <argsstring>(SphereMap *smap, void(**positionLights)(int view, void *context))</argsstring>
+        <name>smapGetPositionLightsFunc</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(**)(<ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> view, <ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref> *context)</type>
+          <declname>positionLights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1af98839c99ddba7da282b5081396a9cd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGetDrawViewFunc</definition>
+        <argsstring>(SphereMap *smap, void(**drawView)(int view, void *context))</argsstring>
+        <name>smapGetDrawViewFunc</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(**)(<ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> view, <ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref> *context)</type>
+          <declname>drawView</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1aace07080844a03fbd330925a7a667f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGenViewTex</definition>
+        <argsstring>(SphereMap *smap, int view)</argsstring>
+        <name>smapGenViewTex</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a55aa654e2f2082e2e943ff6fe4e7a003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGenViewTexs</definition>
+        <argsstring>(SphereMap *smap)</argsstring>
+        <name>smapGenViewTexs</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a0d2bbc3fa9d309243df0f6e0663670a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGenSphereMapFromViewTexs</definition>
+        <argsstring>(SphereMap *smap)</argsstring>
+        <name>smapGenSphereMapFromViewTexs</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a08191be3f40c4b504714f97d1e6b0aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGenSphereMap</definition>
+        <argsstring>(SphereMap *smap)</argsstring>
+        <name>smapGenSphereMap</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1ae8e4bf12a65dd91aa168705f6050787f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapGenSphereMapWithOneViewTex</definition>
+        <argsstring>(SphereMap *smap)</argsstring>
+        <name>smapGenSphereMapWithOneViewTex</name>
+        <param>
+          <type><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref> *</type>
+          <declname>smap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a185df24dd0d952e16744e86aaa355860" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int smapRvecToSt</definition>
+        <argsstring>(float rvec[3], float st[2])</argsstring>
+        <name>smapRvecToSt</name>
+        <param>
+          <type>float</type>
+          <declname>rvec</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>st</declname>
+          <array>[2]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="glsmap_8h_1a74912cc784b0b79b01ff865349fd1062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void smapStToRvec</definition>
+        <argsstring>(float *st, float *rvec)</argsstring>
+        <name>smapStToRvec</name>
+        <param>
+          <type>float *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>rvec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h" line="131" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__glsmap_h__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__glsmap_h__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>Mark<sp/>J.<sp/>Kilgard,<sp/>1998.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>program<sp/>is<sp/>freely<sp/>distributable<sp/>without<sp/>licensing<sp/>fees</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/>and<sp/>is<sp/>provided<sp/>without<sp/>guarantee<sp/>or<sp/>warrantee<sp/>expressed<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/>implied.<sp/>This<sp/>program<sp/>is<sp/>-not-<sp/>in<sp/>the<sp/>public<sp/>domain.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Try<sp/>hard<sp/>to<sp/>avoid<sp/>including<sp/>&lt;windows.h&gt;<sp/>to<sp/>avoid<sp/>name<sp/>space<sp/>pollution,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/>but<sp/>Win32&apos;s<sp/>&lt;GL/gl.h&gt;<sp/>needs<sp/>APIENTRY<sp/>and<sp/>WINGDIAPI<sp/>defined<sp/>properly.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/><sp/>WIN32_LEAN_AND_MEAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>XXX<sp/>This<sp/>is<sp/>from<sp/>Win32&apos;s<sp/>&lt;windef.h&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifndef<sp/>APIENTRY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>if<sp/>(_MSC_VER<sp/>&gt;=<sp/>800)<sp/>||<sp/>defined(_STDCALL_SUPPORTED)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>APIENTRY<sp/><sp/><sp/><sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>APIENTRY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifndef<sp/>CALLBACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>XXX<sp/>This<sp/>is<sp/>from<sp/>Win32&apos;s<sp/>&lt;winnt.h&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>if<sp/>(defined(_M_MRX000)<sp/>||<sp/>defined(_M_IX86)<sp/>||<sp/>defined(_M_ALPHA)<sp/>||<sp/>defined(_M_PPC))<sp/>&amp;&amp;<sp/>!defined(MIDL_PASS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>CALLBACK<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>CALLBACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>XXX<sp/>This<sp/>is<sp/>from<sp/>Win32&apos;s<sp/>&lt;wingdi.h&gt;<sp/>and<sp/>&lt;winnt.h&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifndef<sp/>WINGDIAPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>WINGDIAPI<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>XXX<sp/>This<sp/>is<sp/>from<sp/>Win32&apos;s<sp/>&lt;ctype.h&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifndef<sp/>_WCHAR_T_DEFINED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>wchar_t;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>_WCHAR_T_DEFINED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>(disable:4244)<sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>bogus<sp/>conversion<sp/>warnings.<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>(disable:4305)<sp/><sp/></highlight><highlight class="comment">/*<sp/>VC++<sp/>5.0<sp/>version<sp/>of<sp/>above<sp/>warning.<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_WIN32<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;GL/gl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57" refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5aad73bd60c4453c883ff3940c09c5db7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5aad73bd60c4453c883ff3940c09c5db7c" kindref="member">SMAP_CLEAR_SMAP_TEXTURE</ref><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="58" refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5aae8cfc955d15a07c1b5c55bcdc2ebc69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5aae8cfc955d15a07c1b5c55bcdc2ebc69" kindref="member">SMAP_GENERATE_VIEW_MIPMAPS</ref><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="59" refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5a750cc755f77d3b3f6ae4ff57ee38b6df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5a750cc755f77d3b3f6ae4ff57ee38b6df" kindref="member">SMAP_GENERATE_SMAP_MIPMAPS</ref><sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="60" refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5a60d2036616fe34c50c6736ea3e89f001" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5a60d2036616fe34c50c6736ea3e89f001" kindref="member">SMAP_GENERATE_MIPMAPS</ref><sp/>=<sp/>0x6<sp/><sp/></highlight><highlight class="comment">/*<sp/>both<sp/>of<sp/>above<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5" kindref="member">SphereMapFlags</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Cube<sp/>view<sp/>enumerants.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="65" refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55ba299bd68d7ab841fa957d906891238e34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55ba299bd68d7ab841fa957d906891238e34" kindref="member">SMAP_FRONT</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="66" refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55ba1ac39456b912288eecbea9975b0dbf05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55ba1ac39456b912288eecbea9975b0dbf05" kindref="member">SMAP_TOP</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="67" refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55baa69f5413a86172b9b2f265e7460a88f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55baa69f5413a86172b9b2f265e7460a88f1" kindref="member">SMAP_BOTTOM</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="68" refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55baf9be2ad8ef8b028eef04184e6fe544bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55baf9be2ad8ef8b028eef04184e6fe544bd" kindref="member">SMAP_LEFT</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="69" refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55bade2b89fe9c3465057ef445b9d2f8549a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55bade2b89fe9c3465057ef445b9d2f8549a" kindref="member">SMAP_RIGHT</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="70" refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55bac7d4dfc57dea47ef589a7b2bfae19253" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glsmap_8h_1a06fc87d81c62e9abb8790b6e5713c55bac7d4dfc57dea47ef589a7b2bfae19253" kindref="member">SMAP_BACK</ref><sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_SphereMap<sp/><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*<ref refid="glsmap_8h_1a0df728d29d955d6cf4c14ac8af58e06e" kindref="member">smapCreateSphereMap</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*shareSmap);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a03b69a9906d9ac8fb112bae293ec6458" kindref="member">smapDestroySphereMap</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1ae7ca381975c8119d530f4d46f47c11df" kindref="member">smapConfigureSphereMapMesh</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rings,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>edgeExtend);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a2bb9e2e44dc617b9b40b6998b0d5f70a" kindref="member">smapSetSphereMapTexObj</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/>texobj);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a55288933c51903cf807b93fcdb9258e9" kindref="member">smapSetViewTexObj</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/>texobj);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a97191c4879951b4b6b45d534a61e0b39" kindref="member">smapSetViewTexObjs</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/>texobjs[6]);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a900b0376368035931c4813107a0503db" kindref="member">smapGetSphereMapTexObj</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/>*texobj);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a41b0e5a31623cac2c4c2177fc1f38e18" kindref="member">smapGetViewTexObj</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/>*texobj);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a5ff313c947d5fe29dbcbda233c91b9cb" kindref="member">smapGetViewTexObjs</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/>texobjs[6]);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a7119faaa177bad8a8b1e11653b27b23d" kindref="member">smapSetFlags</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5" kindref="member">SphereMapFlags</ref><sp/><ref refid="glext_8h_1aa9459b47e7388437191d2d9a69c10d98" kindref="member">flags</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a01357f8e5580cd8d33b950059197d919" kindref="member">smapGetFlags</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glsmap_8h_1a47f0d86b336f12393b51104083f66fd5" kindref="member">SphereMapFlags</ref><sp/>*<ref refid="glext_8h_1aa9459b47e7388437191d2d9a69c10d98" kindref="member">flags</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1aac930bf38f0fc5da0c5a8e61a6a4c735" kindref="member">smapSetViewOrigin</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a5c8ac3998d98285e0077ea6f57f4a1eb" kindref="member">smapSetSphereMapOrigin</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a75369679e5ea4e1d8f5f7c72531a50f5" kindref="member">smapGetViewOrigin</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref><sp/>*<ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref><sp/>*<ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a3ada877a2bf38ffb3477ba22660a0400" kindref="member">smapGetSphereMapOrigin</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref><sp/>*<ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/><ref refid="glext_8h_1aacf898e4ecb940565baac883dc587ff0" kindref="member">GLint</ref><sp/>*<ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a633da72849770eeede5b44031a029552" kindref="member">smapSetEye</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>eyex,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>eyey,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>eyez);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a75f8b5f3b9007d186f8e8323c9544f92" kindref="member">smapSetEyeVector</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*eye);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a35ea2b66c23e3fcf7b8bb4b7b0ce79d9" kindref="member">smapSetUp</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>upx,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>upy,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>upz);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a755a2b900407171b02e84d5b09ff04d1" kindref="member">smapSetUpVector</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*up);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a1cc86926aa68995ffdc38172561f998d" kindref="member">smapSetObject</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>objx,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>objy,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>objz);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1aab0139a6904ef053d6f2f4e81f066c10" kindref="member">smapSetObjectVector</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*<ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a3a10a38b7f2a3f1c87ae18c2b1dde1e6" kindref="member">smapGetEye</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*eyex,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*eyey,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*eyez);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a6a5324172abf1c840d705d9179d028ec" kindref="member">smapGetEyeVector</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*eye);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1af3cda52c9ea142241ac937ff6a1f60cf" kindref="member">smapGetUp</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*upx,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*upy,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*upz);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a24f56aa87e44e66319b6b44963d153ad" kindref="member">smapGetUpVector</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*up);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a1cf8d94faf073682a3b7b910fa85247b" kindref="member">smapGetObject</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*objx,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*objy,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*objz);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a20697bbb1f52b28b61dd5cc14b2d055e" kindref="member">smapGetObjectVector</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*<ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a1a1e0497b0719b3a3dfec7315fa5f24c" kindref="member">smapSetNearFar</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>viewNear,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>viewFar);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a7dbff47aa58caeaec4762cbf5903e243" kindref="member">smapGetNearFar</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*viewNear,<sp/><ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref><sp/>*viewFar);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a3a86476f40feceb04cd4ed30c48d2921" kindref="member">smapSetSphereMapTexDim</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/>GLsizei<sp/>texdim);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a7c5006d8307458d3d89c0e4edd5e24b3" kindref="member">smapSetViewTexDim</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/>GLsizei<sp/>texdim);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a0fb89da539e94c8a0bf76916f1fdd4ee" kindref="member">smapGetSphereMapTexDim</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/>GLsizei<sp/>*texdim);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1ac44571890ab4e4ba2d8336fc741a6d35" kindref="member">smapGetViewTexDim</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/>GLsizei<sp/>*texdim);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a820d58e838c3a2b87e48f50a547598c3" kindref="member">smapSetContextData</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1aef224598856b374cdd212154c4f08490" kindref="member">smapGetContextData</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**context);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a6a6cecb7f6c2828cba3183dbf4de7c69" kindref="member">smapSetPositionLightsFunc</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*positionLights)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>view,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1af8e6f16b22a9b98f51b11e4d7ec7befa" kindref="member">smapSetDrawViewFunc</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*drawView)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>view,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a566c7ce4b95f25109aa7f8c6af5743b8" kindref="member">smapGetPositionLightsFunc</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(**positionLights)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>view,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1af98839c99ddba7da282b5081396a9cd6" kindref="member">smapGetDrawViewFunc</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(**drawView)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>view,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1aace07080844a03fbd330925a7a667f55" kindref="member">smapGenViewTex</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>view);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a55aa654e2f2082e2e943ff6fe4e7a003" kindref="member">smapGenViewTexs</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a0d2bbc3fa9d309243df0f6e0663670a3" kindref="member">smapGenSphereMapFromViewTexs</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a08191be3f40c4b504714f97d1e6b0aeb" kindref="member">smapGenSphereMap</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1ae8e4bf12a65dd91aa168705f6050787f" kindref="member">smapGenSphereMapWithOneViewTex</ref>(<ref refid="glsmap_8h_1ad541a1fc2feb081a44df0a9beec3e4c2" kindref="member">SphereMap</ref><sp/>*smap);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a185df24dd0d952e16744e86aaa355860" kindref="member">smapRvecToSt</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rvec[3],<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>st[2]);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glsmap_8h_1a74912cc784b0b79b01ff865349fd1062" kindref="member">smapStToRvec</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*st,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*rvec);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__glsmap_h__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glsmap.h"/>
+  </compounddef>
+</doxygen>

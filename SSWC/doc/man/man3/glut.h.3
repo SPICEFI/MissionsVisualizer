@@ -1,0 +1,1929 @@
+.TH "SSWC/src/GL/glut.h" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/GL/glut.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <GL/gl\&.h>\fP
+.br
+\fC#include <GL/glu\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAPIENTRY\fP"
+.br
+.ti -1c
+.RI "#define \fBGLUT_APIENTRY_DEFINED\fP"
+.br
+.ti -1c
+.RI "#define \fBCALLBACK\fP"
+.br
+.ti -1c
+.RI "#define \fBGLUT_API_VERSION\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUT_XLIB_IMPLEMENTATION\fP   13"
+.br
+.ti -1c
+.RI "#define \fBGLUT_RGB\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_RGBA\fP   \fBGLUT_RGB\fP"
+.br
+.ti -1c
+.RI "#define \fBGLUT_INDEX\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_SINGLE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_DOUBLE\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_ACCUM\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUT_ALPHA\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLUT_DEPTH\fP   16"
+.br
+.ti -1c
+.RI "#define \fBGLUT_STENCIL\fP   32"
+.br
+.ti -1c
+.RI "#define \fBGLUT_MULTISAMPLE\fP   128"
+.br
+.ti -1c
+.RI "#define \fBGLUT_STEREO\fP   256"
+.br
+.ti -1c
+.RI "#define \fBGLUT_LUMINANCE\fP   512"
+.br
+.ti -1c
+.RI "#define \fBGLUT_LEFT_BUTTON\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_MIDDLE_BUTTON\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_RIGHT_BUTTON\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_DOWN\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_UP\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F1\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F2\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F3\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F4\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F5\fP   5"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F6\fP   6"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F7\fP   7"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F8\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F9\fP   9"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F10\fP   10"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F11\fP   11"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_F12\fP   12"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_LEFT\fP   100"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_UP\fP   101"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_RIGHT\fP   102"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_DOWN\fP   103"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_PAGE_UP\fP   104"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_PAGE_DOWN\fP   105"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_HOME\fP   106"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_END\fP   107"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_INSERT\fP   108"
+.br
+.ti -1c
+.RI "#define \fBGLUT_LEFT\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_ENTERED\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_MENU_NOT_IN_USE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_MENU_IN_USE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NOT_VISIBLE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VISIBLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_HIDDEN\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_FULLY_RETAINED\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_PARTIALLY_RETAINED\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_FULLY_COVERED\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUT_RED\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_GREEN\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_BLUE\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NORMAL\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_OVERLAY\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_STROKE_ROMAN\fP   (&\fBglutStrokeRoman\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_STROKE_MONO_ROMAN\fP   (&\fBglutStrokeMonoRoman\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_BITMAP_9_BY_15\fP   (&\fBglutBitmap9By15\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_BITMAP_8_BY_13\fP   (&\fBglutBitmap8By13\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_BITMAP_TIMES_ROMAN_10\fP   (&\fBglutBitmapTimesRoman10\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_BITMAP_TIMES_ROMAN_24\fP   (&\fBglutBitmapTimesRoman24\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_BITMAP_HELVETICA_10\fP   (&\fBglutBitmapHelvetica10\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_BITMAP_HELVETICA_12\fP   (&\fBglutBitmapHelvetica12\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_BITMAP_HELVETICA_18\fP   (&\fBglutBitmapHelvetica18\fP)"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_X\fP   100"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_Y\fP   101"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_WIDTH\fP   102"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_HEIGHT\fP   103"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_BUFFER_SIZE\fP   104"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_STENCIL_SIZE\fP   105"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_DEPTH_SIZE\fP   106"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_RED_SIZE\fP   107"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_GREEN_SIZE\fP   108"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_BLUE_SIZE\fP   109"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_ALPHA_SIZE\fP   110"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_ACCUM_RED_SIZE\fP   111"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_ACCUM_GREEN_SIZE\fP   112"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_ACCUM_BLUE_SIZE\fP   113"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_ACCUM_ALPHA_SIZE\fP   114"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_DOUBLEBUFFER\fP   115"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_RGBA\fP   116"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_PARENT\fP   117"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_NUM_CHILDREN\fP   118"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_COLORMAP_SIZE\fP   119"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_NUM_SAMPLES\fP   120"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_STEREO\fP   121"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_CURSOR\fP   122"
+.br
+.ti -1c
+.RI "#define \fBGLUT_SCREEN_WIDTH\fP   200"
+.br
+.ti -1c
+.RI "#define \fBGLUT_SCREEN_HEIGHT\fP   201"
+.br
+.ti -1c
+.RI "#define \fBGLUT_SCREEN_WIDTH_MM\fP   202"
+.br
+.ti -1c
+.RI "#define \fBGLUT_SCREEN_HEIGHT_MM\fP   203"
+.br
+.ti -1c
+.RI "#define \fBGLUT_MENU_NUM_ITEMS\fP   300"
+.br
+.ti -1c
+.RI "#define \fBGLUT_DISPLAY_MODE_POSSIBLE\fP   400"
+.br
+.ti -1c
+.RI "#define \fBGLUT_INIT_WINDOW_X\fP   500"
+.br
+.ti -1c
+.RI "#define \fBGLUT_INIT_WINDOW_Y\fP   501"
+.br
+.ti -1c
+.RI "#define \fBGLUT_INIT_WINDOW_WIDTH\fP   502"
+.br
+.ti -1c
+.RI "#define \fBGLUT_INIT_WINDOW_HEIGHT\fP   503"
+.br
+.ti -1c
+.RI "#define \fBGLUT_INIT_DISPLAY_MODE\fP   504"
+.br
+.ti -1c
+.RI "#define \fBGLUT_ELAPSED_TIME\fP   700"
+.br
+.ti -1c
+.RI "#define \fBGLUT_WINDOW_FORMAT_ID\fP   123"
+.br
+.ti -1c
+.RI "#define \fBGLUT_HAS_KEYBOARD\fP   600"
+.br
+.ti -1c
+.RI "#define \fBGLUT_HAS_MOUSE\fP   601"
+.br
+.ti -1c
+.RI "#define \fBGLUT_HAS_SPACEBALL\fP   602"
+.br
+.ti -1c
+.RI "#define \fBGLUT_HAS_DIAL_AND_BUTTON_BOX\fP   603"
+.br
+.ti -1c
+.RI "#define \fBGLUT_HAS_TABLET\fP   604"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NUM_MOUSE_BUTTONS\fP   605"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NUM_SPACEBALL_BUTTONS\fP   606"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NUM_BUTTON_BOX_BUTTONS\fP   607"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NUM_DIALS\fP   608"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NUM_TABLET_BUTTONS\fP   609"
+.br
+.ti -1c
+.RI "#define \fBGLUT_DEVICE_IGNORE_KEY_REPEAT\fP   610"
+.br
+.ti -1c
+.RI "#define \fBGLUT_DEVICE_KEY_REPEAT\fP   611"
+.br
+.ti -1c
+.RI "#define \fBGLUT_HAS_JOYSTICK\fP   612"
+.br
+.ti -1c
+.RI "#define \fBGLUT_OWNS_JOYSTICK\fP   613"
+.br
+.ti -1c
+.RI "#define \fBGLUT_JOYSTICK_BUTTONS\fP   614"
+.br
+.ti -1c
+.RI "#define \fBGLUT_JOYSTICK_AXES\fP   615"
+.br
+.ti -1c
+.RI "#define \fBGLUT_JOYSTICK_POLL_RATE\fP   616"
+.br
+.ti -1c
+.RI "#define \fBGLUT_OVERLAY_POSSIBLE\fP   800"
+.br
+.ti -1c
+.RI "#define \fBGLUT_LAYER_IN_USE\fP   801"
+.br
+.ti -1c
+.RI "#define \fBGLUT_HAS_OVERLAY\fP   802"
+.br
+.ti -1c
+.RI "#define \fBGLUT_TRANSPARENT_INDEX\fP   803"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NORMAL_DAMAGED\fP   804"
+.br
+.ti -1c
+.RI "#define \fBGLUT_OVERLAY_DAMAGED\fP   805"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_POSSIBLE\fP   900"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_IN_USE\fP   901"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_X_DELTA\fP   902"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_Y_DELTA\fP   903"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_WIDTH_DELTA\fP   904"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_HEIGHT_DELTA\fP   905"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_X\fP   906"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_Y\fP   907"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_WIDTH\fP   908"
+.br
+.ti -1c
+.RI "#define \fBGLUT_VIDEO_RESIZE_HEIGHT\fP   909"
+.br
+.ti -1c
+.RI "#define \fBGLUT_NORMAL\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_OVERLAY\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_ACTIVE_SHIFT\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_ACTIVE_CTRL\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_ACTIVE_ALT\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_RIGHT_ARROW\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_LEFT_ARROW\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_INFO\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_DESTROY\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_HELP\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_CYCLE\fP   5"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_SPRAY\fP   6"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_WAIT\fP   7"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_TEXT\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_CROSSHAIR\fP   9"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_UP_DOWN\fP   10"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_LEFT_RIGHT\fP   11"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_TOP_SIDE\fP   12"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_BOTTOM_SIDE\fP   13"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_LEFT_SIDE\fP   14"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_RIGHT_SIDE\fP   15"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_TOP_LEFT_CORNER\fP   16"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_TOP_RIGHT_CORNER\fP   17"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_BOTTOM_RIGHT_CORNER\fP   18"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_BOTTOM_LEFT_CORNER\fP   19"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_INHERIT\fP   100"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_NONE\fP   101"
+.br
+.ti -1c
+.RI "#define \fBGLUT_CURSOR_FULL_CROSSHAIR\fP   102"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_REPEAT_OFF\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_REPEAT_ON\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_KEY_REPEAT_DEFAULT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_JOYSTICK_BUTTON_A\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_JOYSTICK_BUTTON_B\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_JOYSTICK_BUTTON_C\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUT_JOYSTICK_BUTTON_D\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLUT_GAME_MODE_ACTIVE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUT_GAME_MODE_POSSIBLE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUT_GAME_MODE_WIDTH\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUT_GAME_MODE_HEIGHT\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUT_GAME_MODE_PIXEL_DEPTH\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUT_GAME_MODE_REFRESH_RATE\fP   5"
+.br
+.ti -1c
+.RI "#define \fBGLUT_GAME_MODE_DISPLAY_CHANGED\fP   6"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutInit\fP (\fBint\fP *argcp, char **argv)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutInitDisplayMode\fP (unsigned \fBint\fP \fBmode\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutInitDisplayString\fP (const char *\fBstring\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutInitWindowPosition\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutInitWindowSize\fP (\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutMainLoop\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutCreateWindow\fP (const char *title)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutCreateSubWindow\fP (\fBint\fP win, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutDestroyWindow\fP (\fBint\fP win)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutPostRedisplay\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutPostWindowRedisplay\fP (\fBint\fP win)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSwapBuffers\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutGetWindow\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSetWindow\fP (\fBint\fP win)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSetWindowTitle\fP (const char *title)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSetIconTitle\fP (const char *title)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutPositionWindow\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutReshapeWindow\fP (\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutPopWindow\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutPushWindow\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutIconifyWindow\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutShowWindow\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutHideWindow\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutFullScreen\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSetCursor\fP (\fBint\fP cursor)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWarpPointer\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutEstablishOverlay\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutRemoveOverlay\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutUseLayer\fP (\fBGLenum\fP \fBlayer\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutPostOverlayRedisplay\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutPostWindowOverlayRedisplay\fP (\fBint\fP win)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutShowOverlay\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutHideOverlay\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutCreateMenu\fP (\fBvoid\fP(*)(\fBint\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutDestroyMenu\fP (\fBint\fP menu)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutGetMenu\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSetMenu\fP (\fBint\fP menu)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutAddMenuEntry\fP (const char *\fBlabel\fP, \fBint\fP \fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutAddSubMenu\fP (const char *\fBlabel\fP, \fBint\fP submenu)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutChangeToMenuEntry\fP (\fBint\fP item, const char *\fBlabel\fP, \fBint\fP \fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutChangeToSubMenu\fP (\fBint\fP item, const char *\fBlabel\fP, \fBint\fP submenu)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutRemoveMenuItem\fP (\fBint\fP item)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutAttachMenu\fP (\fBint\fP button)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutDetachMenu\fP (\fBint\fP button)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutDisplayFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBvoid\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutReshapeFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutKeyboardFunc\fP (\fBvoid\fP(*\fBfunc\fP)(unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutMouseFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP button, \fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutMotionFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutPassiveMotionFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutEntryFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP state))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutVisibilityFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP state))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutIdleFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBvoid\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutTimerFunc\fP (unsigned \fBint\fP millis, \fBvoid\fP(*\fBfunc\fP)(\fBint\fP \fBvalue\fP), \fBint\fP \fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutMenuStateFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP state))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSpecialFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSpaceballMotionFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBz\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSpaceballRotateFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBz\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSpaceballButtonFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP button, \fBint\fP state))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutButtonBoxFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP button, \fBint\fP state))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutDialsFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP dial, \fBint\fP \fBvalue\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutTabletMotionFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutTabletButtonFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP button, \fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutMenuStatusFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP status, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutOverlayDisplayFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBvoid\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWindowStatusFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP state))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutKeyboardUpFunc\fP (\fBvoid\fP(*\fBfunc\fP)(unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSpecialUpFunc\fP (\fBvoid\fP(*\fBfunc\fP)(\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutJoystickFunc\fP (\fBvoid\fP(*\fBfunc\fP)(unsigned \fBint\fP buttonMask, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBz\fP), \fBint\fP pollInterval)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSetColor\fP (\fBint\fP, \fBGLfloat\fP red, \fBGLfloat\fP \fBgreen\fP, \fBGLfloat\fP \fBblue\fP)"
+.br
+.ti -1c
+.RI "\fBGLfloat\fP \fBAPIENTRY\fP \fBglutGetColor\fP (\fBint\fP ndx, \fBint\fP component)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutCopyColormap\fP (\fBint\fP win)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutGet\fP (\fBGLenum\fP \fBtype\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutDeviceGet\fP (\fBGLenum\fP \fBtype\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutExtensionSupported\fP (const char *\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutGetModifiers\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutLayerGet\fP (\fBGLenum\fP \fBtype\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutBitmapCharacter\fP (\fBvoid\fP *\fBfont\fP, \fBint\fP character)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutBitmapWidth\fP (\fBvoid\fP *\fBfont\fP, \fBint\fP character)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutStrokeCharacter\fP (\fBvoid\fP *\fBfont\fP, \fBint\fP character)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutStrokeWidth\fP (\fBvoid\fP *\fBfont\fP, \fBint\fP character)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutBitmapLength\fP (\fBvoid\fP *\fBfont\fP, const unsigned char *\fBstring\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutStrokeLength\fP (\fBvoid\fP *\fBfont\fP, const unsigned char *\fBstring\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireSphere\fP (GLdouble radius, \fBGLint\fP slices, \fBGLint\fP stacks)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidSphere\fP (GLdouble radius, \fBGLint\fP slices, \fBGLint\fP stacks)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireCone\fP (GLdouble base, GLdouble \fBheight\fP, \fBGLint\fP slices, \fBGLint\fP stacks)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidCone\fP (GLdouble base, GLdouble \fBheight\fP, \fBGLint\fP slices, \fBGLint\fP stacks)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireCube\fP (GLdouble \fBsize\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidCube\fP (GLdouble \fBsize\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireTorus\fP (GLdouble innerRadius, GLdouble outerRadius, \fBGLint\fP sides, \fBGLint\fP rings)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidTorus\fP (GLdouble innerRadius, GLdouble outerRadius, \fBGLint\fP sides, \fBGLint\fP rings)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireDodecahedron\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidDodecahedron\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireTeapot\fP (GLdouble \fBsize\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidTeapot\fP (GLdouble \fBsize\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireOctahedron\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidOctahedron\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireTetrahedron\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidTetrahedron\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutWireIcosahedron\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSolidIcosahedron\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutVideoResizeGet\fP (\fBGLenum\fP \fBparam\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSetupVideoResizing\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutStopVideoResizing\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutVideoResize\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutVideoPan\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutReportErrors\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutIgnoreKeyRepeat\fP (\fBint\fP ignore)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutSetKeyRepeat\fP (\fBint\fP repeatMode)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutForceJoystickFunc\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutGameModeString\fP (const char *\fBstring\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutEnterGameMode\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAPIENTRY\fP \fBglutLeaveGameMode\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBAPIENTRY\fP \fBglutGameModeGet\fP (\fBGLenum\fP \fBmode\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP * \fBglutStrokeRoman\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBglutStrokeMonoRoman\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBglutBitmap9By15\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBglutBitmap8By13\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBglutBitmapTimesRoman10\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBglutBitmapTimesRoman24\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBglutBitmapHelvetica10\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBglutBitmapHelvetica12\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBglutBitmapHelvetica18\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define APIENTRY"
+
+.PP
+Definition at line 63 of file glut\&.h\&.
+.SS "#define CALLBACK"
+
+.PP
+Definition at line 65 of file glut\&.h\&.
+.SS "#define GLUT_ACCUM   4"
+
+.PP
+Definition at line 139 of file glut\&.h\&.
+.SS "#define GLUT_ACTIVE_ALT   4"
+
+.PP
+Definition at line 357 of file glut\&.h\&.
+.SS "#define GLUT_ACTIVE_CTRL   2"
+
+.PP
+Definition at line 356 of file glut\&.h\&.
+.SS "#define GLUT_ACTIVE_SHIFT   1"
+
+.PP
+Definition at line 355 of file glut\&.h\&.
+.SS "#define GLUT_ALPHA   8"
+
+.PP
+Definition at line 140 of file glut\&.h\&.
+.SS "#define GLUT_API_VERSION   3"
+GLUT API revision history:
+.PP
+GLUT_API_VERSION is updated to reflect incompatible GLUT API changes (interface changes, semantic changes, deletions, or additions)\&.
+.PP
+GLUT_API_VERSION=1 First public release of GLUT\&. 11/29/94
+.PP
+GLUT_API_VERSION=2 Added support for OpenGL/GLX multisampling, extension\&. Supports new input devices like tablet, dial and button box, and Spaceball\&. Easy to query OpenGL extensions\&.
+.PP
+GLUT_API_VERSION=3 glutMenuStatus added\&.
+.PP
+GLUT_API_VERSION=4 glutInitDisplayString, glutWarpPointer, glutBitmapLength, glutStrokeLength, glutWindowStatusFunc, dynamic video resize subAPI, glutPostWindowRedisplay, glutKeyboardUpFunc, glutSpecialUpFunc, glutIgnoreKeyRepeat, glutSetKeyRepeat, glutJoystickFunc, glutForceJoystickFunc (NOT FINALIZED!)\&. 
+.PP
+Definition at line 94 of file glut\&.h\&.
+.SS "#define GLUT_APIENTRY_DEFINED"
+
+.PP
+Definition at line 64 of file glut\&.h\&.
+.SS "#define GLUT_BITMAP_8_BY_13   (&\fBglutBitmap8By13\fP)"
+
+.PP
+Definition at line 248 of file glut\&.h\&.
+.SS "#define GLUT_BITMAP_9_BY_15   (&\fBglutBitmap9By15\fP)"
+
+.PP
+Definition at line 247 of file glut\&.h\&.
+.SS "#define GLUT_BITMAP_HELVETICA_10   (&\fBglutBitmapHelvetica10\fP)"
+
+.PP
+Definition at line 252 of file glut\&.h\&.
+.SS "#define GLUT_BITMAP_HELVETICA_12   (&\fBglutBitmapHelvetica12\fP)"
+
+.PP
+Definition at line 253 of file glut\&.h\&.
+.SS "#define GLUT_BITMAP_HELVETICA_18   (&\fBglutBitmapHelvetica18\fP)"
+
+.PP
+Definition at line 254 of file glut\&.h\&.
+.SS "#define GLUT_BITMAP_TIMES_ROMAN_10   (&\fBglutBitmapTimesRoman10\fP)"
+
+.PP
+Definition at line 249 of file glut\&.h\&.
+.SS "#define GLUT_BITMAP_TIMES_ROMAN_24   (&\fBglutBitmapTimesRoman24\fP)"
+
+.PP
+Definition at line 250 of file glut\&.h\&.
+.SS "#define GLUT_BLUE   2"
+
+.PP
+Definition at line 207 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_BOTTOM_LEFT_CORNER   19"
+
+.PP
+Definition at line 383 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_BOTTOM_RIGHT_CORNER   18"
+
+.PP
+Definition at line 382 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_BOTTOM_SIDE   13"
+
+.PP
+Definition at line 377 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_CROSSHAIR   9"
+
+.PP
+Definition at line 371 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_CYCLE   5"
+
+.PP
+Definition at line 367 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_DESTROY   3"
+
+.PP
+Definition at line 365 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_FULL_CROSSHAIR   102"
+
+.PP
+Definition at line 389 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_HELP   4"
+
+.PP
+Definition at line 366 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_INFO   2"
+
+.PP
+Definition at line 364 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_INHERIT   100"
+
+.PP
+Definition at line 385 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_LEFT_ARROW   1"
+
+.PP
+Definition at line 362 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_LEFT_RIGHT   11"
+
+.PP
+Definition at line 374 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_LEFT_SIDE   14"
+
+.PP
+Definition at line 378 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_NONE   101"
+
+.PP
+Definition at line 387 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_RIGHT_ARROW   0"
+
+.PP
+Definition at line 361 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_RIGHT_SIDE   15"
+
+.PP
+Definition at line 379 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_SPRAY   6"
+
+.PP
+Definition at line 368 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_TEXT   8"
+
+.PP
+Definition at line 370 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_TOP_LEFT_CORNER   16"
+
+.PP
+Definition at line 380 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_TOP_RIGHT_CORNER   17"
+
+.PP
+Definition at line 381 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_TOP_SIDE   12"
+
+.PP
+Definition at line 376 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_UP_DOWN   10"
+
+.PP
+Definition at line 373 of file glut\&.h\&.
+.SS "#define GLUT_CURSOR_WAIT   7"
+
+.PP
+Definition at line 369 of file glut\&.h\&.
+.SS "#define GLUT_DEPTH   16"
+
+.PP
+Definition at line 141 of file glut\&.h\&.
+.SS "#define GLUT_DEVICE_IGNORE_KEY_REPEAT   610"
+
+.PP
+Definition at line 318 of file glut\&.h\&.
+.SS "#define GLUT_DEVICE_KEY_REPEAT   611"
+
+.PP
+Definition at line 319 of file glut\&.h\&.
+.SS "#define GLUT_DISPLAY_MODE_POSSIBLE   400"
+
+.PP
+Definition at line 291 of file glut\&.h\&.
+.SS "#define GLUT_DOUBLE   2"
+
+.PP
+Definition at line 138 of file glut\&.h\&.
+.SS "#define GLUT_DOWN   0"
+
+.PP
+Definition at line 157 of file glut\&.h\&.
+.SS "#define GLUT_ELAPSED_TIME   700"
+
+.PP
+Definition at line 298 of file glut\&.h\&.
+.SS "#define GLUT_ENTERED   1"
+
+.PP
+Definition at line 188 of file glut\&.h\&.
+.SS "#define GLUT_FULLY_COVERED   3"
+
+.PP
+Definition at line 202 of file glut\&.h\&.
+.SS "#define GLUT_FULLY_RETAINED   1"
+
+.PP
+Definition at line 200 of file glut\&.h\&.
+.SS "#define GLUT_GAME_MODE_ACTIVE   0"
+
+.PP
+Definition at line 567 of file glut\&.h\&.
+.SS "#define GLUT_GAME_MODE_DISPLAY_CHANGED   6"
+
+.PP
+Definition at line 573 of file glut\&.h\&.
+.SS "#define GLUT_GAME_MODE_HEIGHT   3"
+
+.PP
+Definition at line 570 of file glut\&.h\&.
+.SS "#define GLUT_GAME_MODE_PIXEL_DEPTH   4"
+
+.PP
+Definition at line 571 of file glut\&.h\&.
+.SS "#define GLUT_GAME_MODE_POSSIBLE   1"
+
+.PP
+Definition at line 568 of file glut\&.h\&.
+.SS "#define GLUT_GAME_MODE_REFRESH_RATE   5"
+
+.PP
+Definition at line 572 of file glut\&.h\&.
+.SS "#define GLUT_GAME_MODE_WIDTH   2"
+
+.PP
+Definition at line 569 of file glut\&.h\&.
+.SS "#define GLUT_GREEN   1"
+
+.PP
+Definition at line 206 of file glut\&.h\&.
+.SS "#define GLUT_HAS_DIAL_AND_BUTTON_BOX   603"
+
+.PP
+Definition at line 309 of file glut\&.h\&.
+.SS "#define GLUT_HAS_JOYSTICK   612"
+
+.PP
+Definition at line 320 of file glut\&.h\&.
+.SS "#define GLUT_HAS_KEYBOARD   600"
+
+.PP
+Definition at line 306 of file glut\&.h\&.
+.SS "#define GLUT_HAS_MOUSE   601"
+
+.PP
+Definition at line 307 of file glut\&.h\&.
+.SS "#define GLUT_HAS_OVERLAY   802"
+
+.PP
+Definition at line 331 of file glut\&.h\&.
+.SS "#define GLUT_HAS_SPACEBALL   602"
+
+.PP
+Definition at line 308 of file glut\&.h\&.
+.SS "#define GLUT_HAS_TABLET   604"
+
+.PP
+Definition at line 310 of file glut\&.h\&.
+.SS "#define GLUT_HIDDEN   0"
+
+.PP
+Definition at line 199 of file glut\&.h\&.
+.SS "#define GLUT_INDEX   1"
+
+.PP
+Definition at line 136 of file glut\&.h\&.
+.SS "#define GLUT_INIT_DISPLAY_MODE   504"
+
+.PP
+Definition at line 296 of file glut\&.h\&.
+.SS "#define GLUT_INIT_WINDOW_HEIGHT   503"
+
+.PP
+Definition at line 295 of file glut\&.h\&.
+.SS "#define GLUT_INIT_WINDOW_WIDTH   502"
+
+.PP
+Definition at line 294 of file glut\&.h\&.
+.SS "#define GLUT_INIT_WINDOW_X   500"
+
+.PP
+Definition at line 292 of file glut\&.h\&.
+.SS "#define GLUT_INIT_WINDOW_Y   501"
+
+.PP
+Definition at line 293 of file glut\&.h\&.
+.SS "#define GLUT_JOYSTICK_AXES   615"
+
+.PP
+Definition at line 323 of file glut\&.h\&.
+.SS "#define GLUT_JOYSTICK_BUTTON_A   1"
+
+.PP
+Definition at line 556 of file glut\&.h\&.
+.SS "#define GLUT_JOYSTICK_BUTTON_B   2"
+
+.PP
+Definition at line 557 of file glut\&.h\&.
+.SS "#define GLUT_JOYSTICK_BUTTON_C   4"
+
+.PP
+Definition at line 558 of file glut\&.h\&.
+.SS "#define GLUT_JOYSTICK_BUTTON_D   8"
+
+.PP
+Definition at line 559 of file glut\&.h\&.
+.SS "#define GLUT_JOYSTICK_BUTTONS   614"
+
+.PP
+Definition at line 322 of file glut\&.h\&.
+.SS "#define GLUT_JOYSTICK_POLL_RATE   616"
+
+.PP
+Definition at line 324 of file glut\&.h\&.
+.SS "#define GLUT_KEY_DOWN   103"
+
+.PP
+Definition at line 178 of file glut\&.h\&.
+.SS "#define GLUT_KEY_END   107"
+
+.PP
+Definition at line 182 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F1   1"
+
+.PP
+Definition at line 162 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F10   10"
+
+.PP
+Definition at line 171 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F11   11"
+
+.PP
+Definition at line 172 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F12   12"
+
+.PP
+Definition at line 173 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F2   2"
+
+.PP
+Definition at line 163 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F3   3"
+
+.PP
+Definition at line 164 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F4   4"
+
+.PP
+Definition at line 165 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F5   5"
+
+.PP
+Definition at line 166 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F6   6"
+
+.PP
+Definition at line 167 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F7   7"
+
+.PP
+Definition at line 168 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F8   8"
+
+.PP
+Definition at line 169 of file glut\&.h\&.
+.SS "#define GLUT_KEY_F9   9"
+
+.PP
+Definition at line 170 of file glut\&.h\&.
+.SS "#define GLUT_KEY_HOME   106"
+
+.PP
+Definition at line 181 of file glut\&.h\&.
+.SS "#define GLUT_KEY_INSERT   108"
+
+.PP
+Definition at line 183 of file glut\&.h\&.
+.SS "#define GLUT_KEY_LEFT   100"
+
+.PP
+Definition at line 175 of file glut\&.h\&.
+.SS "#define GLUT_KEY_PAGE_DOWN   105"
+
+.PP
+Definition at line 180 of file glut\&.h\&.
+.SS "#define GLUT_KEY_PAGE_UP   104"
+
+.PP
+Definition at line 179 of file glut\&.h\&.
+.SS "#define GLUT_KEY_REPEAT_DEFAULT   2"
+
+.PP
+Definition at line 553 of file glut\&.h\&.
+.SS "#define GLUT_KEY_REPEAT_OFF   0"
+
+.PP
+Definition at line 551 of file glut\&.h\&.
+.SS "#define GLUT_KEY_REPEAT_ON   1"
+
+.PP
+Definition at line 552 of file glut\&.h\&.
+.SS "#define GLUT_KEY_RIGHT   102"
+
+.PP
+Definition at line 177 of file glut\&.h\&.
+.SS "#define GLUT_KEY_UP   101"
+
+.PP
+Definition at line 176 of file glut\&.h\&.
+.SS "#define GLUT_LAYER_IN_USE   801"
+
+.PP
+Definition at line 330 of file glut\&.h\&.
+.SS "#define GLUT_LEFT   0"
+
+.PP
+Definition at line 187 of file glut\&.h\&.
+.SS "#define GLUT_LEFT_BUTTON   0"
+
+.PP
+Definition at line 152 of file glut\&.h\&.
+.SS "#define GLUT_LUMINANCE   512"
+
+.PP
+Definition at line 148 of file glut\&.h\&.
+.SS "#define GLUT_MENU_IN_USE   1"
+
+.PP
+Definition at line 192 of file glut\&.h\&.
+.SS "#define GLUT_MENU_NOT_IN_USE   0"
+
+.PP
+Definition at line 191 of file glut\&.h\&.
+.SS "#define GLUT_MENU_NUM_ITEMS   300"
+
+.PP
+Definition at line 290 of file glut\&.h\&.
+.SS "#define GLUT_MIDDLE_BUTTON   1"
+
+.PP
+Definition at line 153 of file glut\&.h\&.
+.SS "#define GLUT_MULTISAMPLE   128"
+
+.PP
+Definition at line 144 of file glut\&.h\&.
+.SS "#define GLUT_NORMAL   0"
+
+.PP
+Definition at line 351 of file glut\&.h\&.
+.SS "#define GLUT_NORMAL   0"
+
+.PP
+Definition at line 351 of file glut\&.h\&.
+.SS "#define GLUT_NORMAL_DAMAGED   804"
+
+.PP
+Definition at line 333 of file glut\&.h\&.
+.SS "#define GLUT_NOT_VISIBLE   0"
+
+.PP
+Definition at line 195 of file glut\&.h\&.
+.SS "#define GLUT_NUM_BUTTON_BOX_BUTTONS   607"
+
+.PP
+Definition at line 313 of file glut\&.h\&.
+.SS "#define GLUT_NUM_DIALS   608"
+
+.PP
+Definition at line 314 of file glut\&.h\&.
+.SS "#define GLUT_NUM_MOUSE_BUTTONS   605"
+
+.PP
+Definition at line 311 of file glut\&.h\&.
+.SS "#define GLUT_NUM_SPACEBALL_BUTTONS   606"
+
+.PP
+Definition at line 312 of file glut\&.h\&.
+.SS "#define GLUT_NUM_TABLET_BUTTONS   609"
+
+.PP
+Definition at line 315 of file glut\&.h\&.
+.SS "#define GLUT_OVERLAY   1"
+
+.PP
+Definition at line 352 of file glut\&.h\&.
+.SS "#define GLUT_OVERLAY   1"
+
+.PP
+Definition at line 352 of file glut\&.h\&.
+.SS "#define GLUT_OVERLAY_DAMAGED   805"
+
+.PP
+Definition at line 334 of file glut\&.h\&.
+.SS "#define GLUT_OVERLAY_POSSIBLE   800"
+
+.PP
+Definition at line 329 of file glut\&.h\&.
+.SS "#define GLUT_OWNS_JOYSTICK   613"
+
+.PP
+Definition at line 321 of file glut\&.h\&.
+.SS "#define GLUT_PARTIALLY_RETAINED   2"
+
+.PP
+Definition at line 201 of file glut\&.h\&.
+.SS "#define GLUT_RED   0"
+
+.PP
+Definition at line 205 of file glut\&.h\&.
+.SS "#define GLUT_RGB   0"
+
+.PP
+Definition at line 134 of file glut\&.h\&.
+.SS "#define GLUT_RGBA   \fBGLUT_RGB\fP"
+
+.PP
+Definition at line 135 of file glut\&.h\&.
+.SS "#define GLUT_RIGHT_BUTTON   2"
+
+.PP
+Definition at line 154 of file glut\&.h\&.
+.SS "#define GLUT_SCREEN_HEIGHT   201"
+
+.PP
+Definition at line 287 of file glut\&.h\&.
+.SS "#define GLUT_SCREEN_HEIGHT_MM   203"
+
+.PP
+Definition at line 289 of file glut\&.h\&.
+.SS "#define GLUT_SCREEN_WIDTH   200"
+
+.PP
+Definition at line 286 of file glut\&.h\&.
+.SS "#define GLUT_SCREEN_WIDTH_MM   202"
+
+.PP
+Definition at line 288 of file glut\&.h\&.
+.SS "#define GLUT_SINGLE   0"
+
+.PP
+Definition at line 137 of file glut\&.h\&.
+.SS "#define GLUT_STENCIL   32"
+
+.PP
+Definition at line 142 of file glut\&.h\&.
+.SS "#define GLUT_STEREO   256"
+
+.PP
+Definition at line 145 of file glut\&.h\&.
+.SS "#define GLUT_STROKE_MONO_ROMAN   (&\fBglutStrokeMonoRoman\fP)"
+
+.PP
+Definition at line 235 of file glut\&.h\&.
+.SS "#define GLUT_STROKE_ROMAN   (&\fBglutStrokeRoman\fP)"
+
+.PP
+Definition at line 234 of file glut\&.h\&.
+.SS "#define GLUT_TRANSPARENT_INDEX   803"
+
+.PP
+Definition at line 332 of file glut\&.h\&.
+.SS "#define GLUT_UP   1"
+
+.PP
+Definition at line 158 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_HEIGHT   909"
+
+.PP
+Definition at line 347 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_HEIGHT_DELTA   905"
+
+.PP
+Definition at line 343 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_IN_USE   901"
+
+.PP
+Definition at line 339 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_POSSIBLE   900"
+
+.PP
+Definition at line 338 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_WIDTH   908"
+
+.PP
+Definition at line 346 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_WIDTH_DELTA   904"
+
+.PP
+Definition at line 342 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_X   906"
+
+.PP
+Definition at line 344 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_X_DELTA   902"
+
+.PP
+Definition at line 340 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_Y   907"
+
+.PP
+Definition at line 345 of file glut\&.h\&.
+.SS "#define GLUT_VIDEO_RESIZE_Y_DELTA   903"
+
+.PP
+Definition at line 341 of file glut\&.h\&.
+.SS "#define GLUT_VISIBLE   1"
+
+.PP
+Definition at line 196 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_ACCUM_ALPHA_SIZE   114"
+
+.PP
+Definition at line 273 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_ACCUM_BLUE_SIZE   113"
+
+.PP
+Definition at line 272 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_ACCUM_GREEN_SIZE   112"
+
+.PP
+Definition at line 271 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_ACCUM_RED_SIZE   111"
+
+.PP
+Definition at line 270 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_ALPHA_SIZE   110"
+
+.PP
+Definition at line 269 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_BLUE_SIZE   109"
+
+.PP
+Definition at line 268 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_BUFFER_SIZE   104"
+
+.PP
+Definition at line 263 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_COLORMAP_SIZE   119"
+
+.PP
+Definition at line 278 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_CURSOR   122"
+
+.PP
+Definition at line 284 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_DEPTH_SIZE   106"
+
+.PP
+Definition at line 265 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_DOUBLEBUFFER   115"
+
+.PP
+Definition at line 274 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_FORMAT_ID   123"
+
+.PP
+Definition at line 301 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_GREEN_SIZE   108"
+
+.PP
+Definition at line 267 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_HEIGHT   103"
+
+.PP
+Definition at line 262 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_NUM_CHILDREN   118"
+
+.PP
+Definition at line 277 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_NUM_SAMPLES   120"
+
+.PP
+Definition at line 280 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_PARENT   117"
+
+.PP
+Definition at line 276 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_RED_SIZE   107"
+
+.PP
+Definition at line 266 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_RGBA   116"
+
+.PP
+Definition at line 275 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_STENCIL_SIZE   105"
+
+.PP
+Definition at line 264 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_STEREO   121"
+
+.PP
+Definition at line 281 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_WIDTH   102"
+
+.PP
+Definition at line 261 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_X   100"
+
+.PP
+Definition at line 259 of file glut\&.h\&.
+.SS "#define GLUT_WINDOW_Y   101"
+
+.PP
+Definition at line 260 of file glut\&.h\&.
+.SS "#define GLUT_XLIB_IMPLEMENTATION   13"
+GLUT implementation revision history:
+.PP
+GLUT_XLIB_IMPLEMENTATION is updated to reflect both GLUT API revisions and implementation revisions (ie, bug fixes)\&.
+.PP
+GLUT_XLIB_IMPLEMENTATION=1 mjk's first public release of GLUT Xlib-based implementation\&. 11/29/94
+.PP
+GLUT_XLIB_IMPLEMENTATION=2 mjk's second public release of GLUT Xlib-based implementation providing GLUT version 2 interfaces\&.
+.PP
+GLUT_XLIB_IMPLEMENTATION=3 mjk's GLUT 2\&.2 images\&. 4/17/95
+.PP
+GLUT_XLIB_IMPLEMENTATION=4 mjk's GLUT 2\&.3 images\&. 6/?/95
+.PP
+GLUT_XLIB_IMPLEMENTATION=5 mjk's GLUT 3\&.0 images\&. 10/?/95
+.PP
+GLUT_XLIB_IMPLEMENTATION=7 mjk's GLUT 3\&.1+ with glutWarpPoitner\&. 7/24/96
+.PP
+GLUT_XLIB_IMPLEMENTATION=8 mjk's GLUT 3\&.1+ with glutWarpPoitner and video resize\&. 1/3/97
+.PP
+GLUT_XLIB_IMPLEMENTATION=9 mjk's GLUT 3\&.4 release with early GLUT 4 routines\&.
+.PP
+GLUT_XLIB_IMPLEMENTATION=11 Mesa 2\&.5's GLUT 3\&.6 release\&.
+.PP
+GLUT_XLIB_IMPLEMENTATION=12 mjk's GLUT 3\&.6 release with early GLUT 4 routines + signal handling\&.
+.PP
+GLUT_XLIB_IMPLEMENTATION=13 mjk's GLUT 3\&.7 release with GameGLUT support\&. 
+.PP
+Definition at line 130 of file glut\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutAddMenuEntry (const char *label, \fBint\fPvalue)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutAddSubMenu (const char *label, \fBint\fPsubmenu)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutAttachMenu (\fBint\fPbutton)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutBitmapCharacter (\fBvoid\fP *font, \fBint\fPcharacter)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutBitmapLength (\fBvoid\fP *font, const unsigned char *string)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutBitmapWidth (\fBvoid\fP *font, \fBint\fPcharacter)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutButtonBoxFunc (\fBvoid\fP(*)(\fBint\fP button, \fBint\fP state)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutChangeToMenuEntry (\fBint\fPitem, const char *label, \fBint\fPvalue)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutChangeToSubMenu (\fBint\fPitem, const char *label, \fBint\fPsubmenu)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutCopyColormap (\fBint\fPwin)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutCreateMenu (\fBvoid\fP(*)(\fBint\fP))"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutCreateSubWindow (\fBint\fPwin, \fBint\fPx, \fBint\fPy, \fBint\fPwidth, \fBint\fPheight)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutCreateWindow (const char *title)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutDestroyMenu (\fBint\fPmenu)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutDestroyWindow (\fBint\fPwin)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutDetachMenu (\fBint\fPbutton)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutDeviceGet (\fBGLenum\fPtype)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutDialsFunc (\fBvoid\fP(*)(\fBint\fP dial, \fBint\fP \fBvalue\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutDisplayFunc (\fBvoid\fP(*)(\fBvoid\fP)func)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutEnterGameMode (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutEntryFunc (\fBvoid\fP(*)(\fBint\fP state)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutEstablishOverlay (\fBvoid\fP)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutExtensionSupported (const char *name)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutForceJoystickFunc (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutFullScreen (\fBvoid\fP)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutGameModeGet (\fBGLenum\fPmode)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutGameModeString (const char *string)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutGet (\fBGLenum\fPtype)"
+
+.SS "\fBGLfloat\fP \fBAPIENTRY\fP glutGetColor (\fBint\fPndx, \fBint\fPcomponent)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutGetMenu (\fBvoid\fP)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutGetModifiers (\fBvoid\fP)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutGetWindow (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutHideOverlay (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutHideWindow (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutIconifyWindow (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutIdleFunc (\fBvoid\fP(*)(\fBvoid\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutIgnoreKeyRepeat (\fBint\fPignore)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutInit (\fBint\fP *argcp, char **argv)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutInitDisplayMode (unsigned \fBint\fPmode)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutInitDisplayString (const char *string)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutInitWindowPosition (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutInitWindowSize (\fBint\fPwidth, \fBint\fPheight)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutJoystickFunc (\fBvoid\fP(*)(unsigned \fBint\fP buttonMask, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBz\fP)func, \fBint\fPpollInterval)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutKeyboardFunc (\fBvoid\fP(*)(unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutKeyboardUpFunc (\fBvoid\fP(*)(unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutLayerGet (\fBGLenum\fPtype)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutLeaveGameMode (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutMainLoop (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutMenuStateFunc (\fBvoid\fP(*)(\fBint\fP state)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutMenuStatusFunc (\fBvoid\fP(*)(\fBint\fP status, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutMotionFunc (\fBvoid\fP(*)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutMouseFunc (\fBvoid\fP(*)(\fBint\fP button, \fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutOverlayDisplayFunc (\fBvoid\fP(*)(\fBvoid\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutPassiveMotionFunc (\fBvoid\fP(*)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutPopWindow (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutPositionWindow (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutPostOverlayRedisplay (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutPostRedisplay (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutPostWindowOverlayRedisplay (\fBint\fPwin)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutPostWindowRedisplay (\fBint\fPwin)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutPushWindow (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutRemoveMenuItem (\fBint\fPitem)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutRemoveOverlay (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutReportErrors (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutReshapeFunc (\fBvoid\fP(*)(\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutReshapeWindow (\fBint\fPwidth, \fBint\fPheight)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSetColor (\fBint\fP, \fBGLfloat\fPred, \fBGLfloat\fPgreen, \fBGLfloat\fPblue)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSetCursor (\fBint\fPcursor)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSetIconTitle (const char *title)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSetKeyRepeat (\fBint\fPrepeatMode)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSetMenu (\fBint\fPmenu)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSetupVideoResizing (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSetWindow (\fBint\fPwin)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSetWindowTitle (const char *title)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutShowOverlay (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutShowWindow (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidCone (GLdoublebase, GLdoubleheight, \fBGLint\fPslices, \fBGLint\fPstacks)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidCube (GLdoublesize)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidDodecahedron (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidIcosahedron (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidOctahedron (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidSphere (GLdoubleradius, \fBGLint\fPslices, \fBGLint\fPstacks)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidTeapot (GLdoublesize)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidTetrahedron (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSolidTorus (GLdoubleinnerRadius, GLdoubleouterRadius, \fBGLint\fPsides, \fBGLint\fPrings)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSpaceballButtonFunc (\fBvoid\fP(*)(\fBint\fP button, \fBint\fP state)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSpaceballMotionFunc (\fBvoid\fP(*)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBz\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSpaceballRotateFunc (\fBvoid\fP(*)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBz\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSpecialFunc (\fBvoid\fP(*)(\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSpecialUpFunc (\fBvoid\fP(*)(\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutStopVideoResizing (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutStrokeCharacter (\fBvoid\fP *font, \fBint\fPcharacter)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutStrokeLength (\fBvoid\fP *font, const unsigned char *string)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutStrokeWidth (\fBvoid\fP *font, \fBint\fPcharacter)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutSwapBuffers (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutTabletButtonFunc (\fBvoid\fP(*)(\fBint\fP button, \fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutTabletMotionFunc (\fBvoid\fP(*)(\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutTimerFunc (unsigned \fBint\fPmillis, \fBvoid\fP(*)(\fBint\fP \fBvalue\fP)func, \fBint\fPvalue)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutUseLayer (\fBGLenum\fPlayer)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutVideoPan (\fBint\fPx, \fBint\fPy, \fBint\fPwidth, \fBint\fPheight)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutVideoResize (\fBint\fPx, \fBint\fPy, \fBint\fPwidth, \fBint\fPheight)"
+
+.SS "\fBint\fP \fBAPIENTRY\fP glutVideoResizeGet (\fBGLenum\fPparam)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutVisibilityFunc (\fBvoid\fP(*)(\fBint\fP state)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWarpPointer (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWindowStatusFunc (\fBvoid\fP(*)(\fBint\fP state)func)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireCone (GLdoublebase, GLdoubleheight, \fBGLint\fPslices, \fBGLint\fPstacks)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireCube (GLdoublesize)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireDodecahedron (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireIcosahedron (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireOctahedron (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireSphere (GLdoubleradius, \fBGLint\fPslices, \fBGLint\fPstacks)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireTeapot (GLdoublesize)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireTetrahedron (\fBvoid\fP)"
+
+.SS "\fBvoid\fP \fBAPIENTRY\fP glutWireTorus (GLdoubleinnerRadius, GLdoubleouterRadius, \fBGLint\fPsides, \fBGLint\fPrings)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBvoid\fP* glutBitmap8By13"
+
+.SS "\fBvoid\fP* glutBitmap9By15"
+
+.SS "\fBvoid\fP* glutBitmapHelvetica10"
+
+.SS "\fBvoid\fP* glutBitmapHelvetica12"
+
+.SS "\fBvoid\fP* glutBitmapHelvetica18"
+
+.SS "\fBvoid\fP* glutBitmapTimesRoman10"
+
+.SS "\fBvoid\fP* glutBitmapTimesRoman24"
+
+.SS "\fBvoid\fP* glutStrokeMonoRoman"
+
+.SS "\fBvoid\fP* glutStrokeRoman"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

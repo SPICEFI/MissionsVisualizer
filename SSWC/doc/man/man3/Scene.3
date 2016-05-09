@@ -1,0 +1,194 @@
+.TH "Scene" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Scene \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Scene\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBScene\fP ()"
+.br
+.ti -1c
+.RI "\fB~Scene\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBaddPlanet\fP (\fBPlanet\fP &planet)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBrender\fP (\fBDate\fP \fBt\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBMarkPlanetWithID\fP (\fBint\fP \fBid\fP, bool \fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSteClickedToPlanetWithID\fP (\fBint\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBShowInfoAboutPlanetWithID\fP (\fBint\fP \fBid\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBRenderPlanetWithID\fP (\fBint\fP \fBid\fP, \fBDate\fP \fBt\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.ti -1c
+.RI "const \fBPlanet\fP & \fBFindObjectWithID\fP (\fBint\fP ID)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAddPlanetToTrackDistanceTo\fP (\fBPlanet\fP &planet)"
+.br
+.ti -1c
+.RI "float \fBUpdateTrackingDistances\fP (\fBVector3\fP &sceneCameraPosition, \fBDate\fP \fBt\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAddTrajectoryAsSpaceObject\fP (const \fBSpaceObject\fP &\fBobj\fP, \fBFrame\fP frame, \fBDate\fP startingDate)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAddStandaloneSpacePoint\fP (const \fBSpaceObject\fP &\fBobj\fP, \fBFont\fP \fBstandalonePointFont\fP)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBRenderStandaloneTrajectories\fP (\fBDate\fP \fBt\fP, float lineWidth, float red, float \fBgreen\fP, float \fBblue\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBRenderStabdaloneSpacePoints\fP (\fBDate\fP \fBt\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBPlanet\fP > \fBplanets\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBTrajectory\fP > \fBstandaloneTrajectories\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBSpaceObject\fP > \fBstandaloneSpacePoints\fP"
+.br
+.ti -1c
+.RI "float \fBminDistanceToRenderFullPlanet\fP"
+.br
+.ti -1c
+.RI "double \fBscale\fP = 0\&.000004f"
+.br
+.ti -1c
+.RI "double \fBdistanceScale\fP = 0\&.0000004f"
+.br
+.ti -1c
+.RI "\fBHDC\fP \fBhdc\fP"
+.br
+.ti -1c
+.RI "\fBFont\fP \fBfont\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 11 of file Scene\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Scene::Scene ()"
+
+.PP
+Definition at line 4 of file Scene\&.cpp\&.
+.SS "Scene::~Scene ()"
+
+.PP
+Definition at line 10 of file Scene\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP Scene::addPlanet (\fBPlanet\fP &planet)"
+
+.PP
+Definition at line 14 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::AddPlanetToTrackDistanceTo (\fBPlanet\fP &planet)"
+
+.SS "\fBvoid\fP Scene::AddStandaloneSpacePoint (const \fBSpaceObject\fP &obj, \fBFont\fPstandalonePointFont)"
+
+.PP
+Definition at line 161 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::AddTrajectoryAsSpaceObject (const \fBSpaceObject\fP &obj, \fBFrame\fPframe, \fBDate\fPstartingDate)"
+
+.PP
+Definition at line 132 of file Scene\&.cpp\&.
+.SS "const \fBPlanet\fP & Scene::FindObjectWithID (\fBint\fPID)"
+
+.PP
+Definition at line 30 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::MarkPlanetWithID (\fBint\fPid, boolvalue)"
+
+.PP
+Definition at line 42 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::render (\fBDate\fPt, \fBApp\fP &app)"
+
+.PP
+Definition at line 20 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::RenderPlanetWithID (\fBint\fPid, \fBDate\fPt, \fBApp\fP &app)"
+
+.PP
+Definition at line 77 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::RenderStabdaloneSpacePoints (\fBDate\fPt, \fBApp\fP &app)\fC [protected]\fP"
+
+.PP
+Definition at line 167 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::RenderStandaloneTrajectories (\fBDate\fPt, floatlineWidth, floatred, floatgreen, floatblue)\fC [protected]\fP"
+
+.PP
+Definition at line 139 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::ShowInfoAboutPlanetWithID (\fBint\fPid, \fBApp\fP &app)"
+
+.PP
+Definition at line 66 of file Scene\&.cpp\&.
+.SS "\fBvoid\fP Scene::SteClickedToPlanetWithID (\fBint\fPid)"
+
+.PP
+Definition at line 54 of file Scene\&.cpp\&.
+.SS "float Scene::UpdateTrackingDistances (\fBVector3\fP &sceneCameraPosition, \fBDate\fPt, \fBApp\fP &app)"
+
+.PP
+Definition at line 97 of file Scene\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double Scene::distanceScale = 0\&.0000004f\fC [protected]\fP"
+
+.PP
+Definition at line 20 of file Scene\&.h\&.
+.SS "\fBFont\fP Scene::font\fC [protected]\fP"
+
+.PP
+Definition at line 23 of file Scene\&.h\&.
+.SS "\fBHDC\fP Scene::hdc\fC [protected]\fP"
+
+.PP
+Definition at line 22 of file Scene\&.h\&.
+.SS "float Scene::minDistanceToRenderFullPlanet\fC [protected]\fP"
+
+.PP
+Definition at line 18 of file Scene\&.h\&.
+.SS "std::vector<\fBPlanet\fP> Scene::planets\fC [protected]\fP"
+
+.PP
+Definition at line 14 of file Scene\&.h\&.
+.SS "double Scene::scale = 0\&.000004f\fC [protected]\fP"
+
+.PP
+Definition at line 19 of file Scene\&.h\&.
+.SS "std::vector<\fBSpaceObject\fP> Scene::standaloneSpacePoints\fC [protected]\fP"
+
+.PP
+Definition at line 16 of file Scene\&.h\&.
+.SS "std::vector<\fBTrajectory\fP> Scene::standaloneTrajectories\fC [protected]\fP"
+
+.PP
+Definition at line 15 of file Scene\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

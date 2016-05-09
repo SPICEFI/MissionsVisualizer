@@ -1,0 +1,7 @@
+<map id="Trajectory" name="Trajectory">
+<area shape="rect" id="node2" href="$class_space_object.html" title="SpaceObject" alt="" coords="5,7,101,33"/>
+<area shape="rect" id="node3" href="$class_frame.html" title="Frame" alt="" coords="179,7,236,33"/>
+<area shape="rect" id="node4" href="$class_unit.html" title="Unit\&lt; 1, 0, 0 \&gt;" alt="" coords="360,7,467,33"/>
+<area shape="rect" id="node5" href="$class_date.html" title="Date" alt="" coords="491,7,541,33"/>
+<area shape="rect" id="node6" href="$class_quantity.html" title="Quantity\&lt; 0, 1, 0 \&gt;" alt="" coords="567,7,699,33"/>
+</map>

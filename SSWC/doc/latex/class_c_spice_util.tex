@@ -1,0 +1,196 @@
+\hypertarget{class_c_spice_util}{\section{C\+Spice\+Util Class Reference}
+\label{class_c_spice_util}\index{C\+Spice\+Util@{C\+Spice\+Util}}
+}
+
+
+{\ttfamily \#include $<$C\+Spice\+Util.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_c_spice_util_a1bc23133b0aa142ccc71d5fd85d0e609}{Set\+Error\+Handling\+Params} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&action, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&device)
+\item 
+static \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_c_spice_util_af1b073c99197ec2a2d22772e3a86d30d}{Set\+Logging\+File} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&file)
+\item 
+static \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_c_spice_util_a0940aa96ffa3ef14f0ea2510c4163710}{Load\+Kernel} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ab25d8cd967ccbd19b630d7100ff8f67e}{path})
+\item 
+static std\+::vector$<$ \hyperlink{struct_kernel_data}{Kernel\+Data} $>$ \hyperlink{class_c_spice_util_a596f67731f91d55c8bb9b57e9ccb9c3d}{Get\+Loaded\+Kernels} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ab7c1afc09f67635c2c376638fcc0db5f}{type}=\char`\"{}A\+L\+L\char`\"{})
+\item 
+static \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{class_c_spice_util_aeb94a04c72d380e3d2ed82b93ea2ab8f}{Get\+Short\+Error\+Message} ()
+\item 
+static \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{class_c_spice_util_a9f5342e5699102d1f8ab772c43229a1c}{Get\+Explain\+Error\+Message} ()
+\item 
+static \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{class_c_spice_util_a22c2279dc23954b16e54261cad31ed9f}{Get\+Long\+Error\+Message} ()
+\item 
+static \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{class_c_spice_util_aec756d470ac2d41a2b66f096783350d7}{Get\+Traceback} ()
+\item 
+static \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_c_spice_util_ad91e1b9618b9514d4cfd516a446a7e11}{Signal\+Error} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&error\+Msg)
+\item 
+static \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_c_spice_util_a8ee7a37df1a51e2cdfe2681fbd57fdbc}{Log\+Error} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&extra\+Msg)
+\item 
+static \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_c_spice_util_ab48e656441c984750f672468e19d99d3}{Reset\+Error\+Flag} ()
+\item 
+static std\+::vector$<$ long $>$ \hyperlink{class_c_spice_util_ab25fa56cd04c09b14f79c0f6fc8fe41b}{Int\+Cell\+To\+Vector} (Spice\+Cell cell)
+\item 
+static std\+::vector$<$ double $>$ \hyperlink{class_c_spice_util_aaa992f2f108a00da3b758207514a1a0b}{Double\+Cell\+To\+Vector} (Spice\+Cell cell)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 46 of file C\+Spice\+Util.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_spice_util_aaa992f2f108a00da3b758207514a1a0b}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Double\+Cell\+To\+Vector@{Double\+Cell\+To\+Vector}}
+\index{Double\+Cell\+To\+Vector@{Double\+Cell\+To\+Vector}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Double\+Cell\+To\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ double $>$ C\+Spice\+Util\+::\+Double\+Cell\+To\+Vector (
+\begin{DoxyParamCaption}
+\item[{Spice\+Cell}]{cell}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_aaa992f2f108a00da3b758207514a1a0b}
+
+
+Definition at line 151 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_a9f5342e5699102d1f8ab772c43229a1c}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Get\+Explain\+Error\+Message@{Get\+Explain\+Error\+Message}}
+\index{Get\+Explain\+Error\+Message@{Get\+Explain\+Error\+Message}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Get\+Explain\+Error\+Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} C\+Spice\+Util\+::\+Get\+Explain\+Error\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_a9f5342e5699102d1f8ab772c43229a1c}
+
+
+Definition at line 68 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_a596f67731f91d55c8bb9b57e9ccb9c3d}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Get\+Loaded\+Kernels@{Get\+Loaded\+Kernels}}
+\index{Get\+Loaded\+Kernels@{Get\+Loaded\+Kernels}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Get\+Loaded\+Kernels}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Kernel\+Data} $>$ C\+Spice\+Util\+::\+Get\+Loaded\+Kernels (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{type = {\ttfamily \char`\"{}ALL\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_a596f67731f91d55c8bb9b57e9ccb9c3d}
+
+
+Definition at line 31 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_a22c2279dc23954b16e54261cad31ed9f}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Get\+Long\+Error\+Message@{Get\+Long\+Error\+Message}}
+\index{Get\+Long\+Error\+Message@{Get\+Long\+Error\+Message}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Get\+Long\+Error\+Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} C\+Spice\+Util\+::\+Get\+Long\+Error\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_a22c2279dc23954b16e54261cad31ed9f}
+
+
+Definition at line 76 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_aeb94a04c72d380e3d2ed82b93ea2ab8f}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Get\+Short\+Error\+Message@{Get\+Short\+Error\+Message}}
+\index{Get\+Short\+Error\+Message@{Get\+Short\+Error\+Message}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Get\+Short\+Error\+Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} C\+Spice\+Util\+::\+Get\+Short\+Error\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_aeb94a04c72d380e3d2ed82b93ea2ab8f}
+
+
+Definition at line 60 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_aec756d470ac2d41a2b66f096783350d7}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Get\+Traceback@{Get\+Traceback}}
+\index{Get\+Traceback@{Get\+Traceback}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Get\+Traceback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} C\+Spice\+Util\+::\+Get\+Traceback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_aec756d470ac2d41a2b66f096783350d7}
+
+
+Definition at line 84 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_ab25fa56cd04c09b14f79c0f6fc8fe41b}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Int\+Cell\+To\+Vector@{Int\+Cell\+To\+Vector}}
+\index{Int\+Cell\+To\+Vector@{Int\+Cell\+To\+Vector}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Int\+Cell\+To\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ long $>$ C\+Spice\+Util\+::\+Int\+Cell\+To\+Vector (
+\begin{DoxyParamCaption}
+\item[{Spice\+Cell}]{cell}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_ab25fa56cd04c09b14f79c0f6fc8fe41b}
+
+
+Definition at line 133 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_a0940aa96ffa3ef14f0ea2510c4163710}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Load\+Kernel@{Load\+Kernel}}
+\index{Load\+Kernel@{Load\+Kernel}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Load\+Kernel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\+Spice\+Util\+::\+Load\+Kernel (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_a0940aa96ffa3ef14f0ea2510c4163710}
+
+
+Definition at line 26 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_a8ee7a37df1a51e2cdfe2681fbd57fdbc}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Log\+Error@{Log\+Error}}
+\index{Log\+Error@{Log\+Error}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Log\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\+Spice\+Util\+::\+Log\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{extra\+Msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_a8ee7a37df1a51e2cdfe2681fbd57fdbc}
+
+
+Definition at line 99 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_ab48e656441c984750f672468e19d99d3}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Reset\+Error\+Flag@{Reset\+Error\+Flag}}
+\index{Reset\+Error\+Flag@{Reset\+Error\+Flag}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Reset\+Error\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\+Spice\+Util\+::\+Reset\+Error\+Flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_ab48e656441c984750f672468e19d99d3}
+
+
+Definition at line 128 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_a1bc23133b0aa142ccc71d5fd85d0e609}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Set\+Error\+Handling\+Params@{Set\+Error\+Handling\+Params}}
+\index{Set\+Error\+Handling\+Params@{Set\+Error\+Handling\+Params}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Set\+Error\+Handling\+Params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\+Spice\+Util\+::\+Set\+Error\+Handling\+Params (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{action, }
+\item[{const {\bf std\+::string} \&}]{device}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_a1bc23133b0aa142ccc71d5fd85d0e609}
+
+
+Definition at line 3 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_af1b073c99197ec2a2d22772e3a86d30d}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Set\+Logging\+File@{Set\+Logging\+File}}
+\index{Set\+Logging\+File@{Set\+Logging\+File}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Set\+Logging\+File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\+Spice\+Util\+::\+Set\+Logging\+File (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_af1b073c99197ec2a2d22772e3a86d30d}
+
+
+Definition at line 21 of file C\+Spice\+Util.\+cpp.
+
+\hypertarget{class_c_spice_util_ad91e1b9618b9514d4cfd516a446a7e11}{\index{C\+Spice\+Util@{C\+Spice\+Util}!Signal\+Error@{Signal\+Error}}
+\index{Signal\+Error@{Signal\+Error}!C\+Spice\+Util@{C\+Spice\+Util}}
+\subsubsection[{Signal\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\+Spice\+Util\+::\+Signal\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{error\+Msg = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_spice_util_ad91e1b9618b9514d4cfd516a446a7e11}
+
+
+Definition at line 92 of file C\+Spice\+Util.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_c_spice_util_8h}{C\+Spice\+Util.\+h}\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_c_spice_util_8cpp}{C\+Spice\+Util.\+cpp}\end{DoxyCompactItemize}

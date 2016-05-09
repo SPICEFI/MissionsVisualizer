@@ -1,0 +1,570 @@
+\hypertarget{glsmap_8h}{\section{S\+S\+W\+C/src/\+G\+L/glsmap.h File Reference}
+\label{glsmap_8h}\index{S\+S\+W\+C/src/\+G\+L/glsmap.\+h@{S\+S\+W\+C/src/\+G\+L/glsmap.\+h}}
+}
+{\ttfamily \#include $<$G\+L/gl.\+h$>$}\\*
+Include dependency graph for glsmap.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{glsmap_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \+\_\+\+Sphere\+Map \hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{glsmap_8h_a47f0d86b336f12393b51104083f66fd5}{Sphere\+Map\+Flags} \{ \hyperlink{glsmap_8h_a47f0d86b336f12393b51104083f66fd5aad73bd60c4453c883ff3940c09c5db7c}{S\+M\+A\+P\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E} = 0x1, 
+\hyperlink{glsmap_8h_a47f0d86b336f12393b51104083f66fd5aae8cfc955d15a07c1b5c55bcdc2ebc69}{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+V\+I\+E\+W\+\_\+\+M\+I\+P\+M\+A\+P\+S} = 0x2, 
+\hyperlink{glsmap_8h_a47f0d86b336f12393b51104083f66fd5a750cc755f77d3b3f6ae4ff57ee38b6df}{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+S\+M\+A\+P\+\_\+\+M\+I\+P\+M\+A\+P\+S} = 0x4, 
+\hyperlink{glsmap_8h_a47f0d86b336f12393b51104083f66fd5a60d2036616fe34c50c6736ea3e89f001}{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+M\+I\+P\+M\+A\+P\+S} = 0x6
+ \}
+\item 
+enum \{ \\*
+\hyperlink{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55ba299bd68d7ab841fa957d906891238e34}{S\+M\+A\+P\+\_\+\+F\+R\+O\+N\+T} = 0, 
+\hyperlink{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55ba1ac39456b912288eecbea9975b0dbf05}{S\+M\+A\+P\+\_\+\+T\+O\+P} = 1, 
+\hyperlink{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55baa69f5413a86172b9b2f265e7460a88f1}{S\+M\+A\+P\+\_\+\+B\+O\+T\+T\+O\+M} = 2, 
+\hyperlink{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55baf9be2ad8ef8b028eef04184e6fe544bd}{S\+M\+A\+P\+\_\+\+L\+E\+F\+T} = 3, 
+\\*
+\hyperlink{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55bade2b89fe9c3465057ef445b9d2f8549a}{S\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T} = 4, 
+\hyperlink{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55bac7d4dfc57dea47ef589a7b2bfae19253}{S\+M\+A\+P\+\_\+\+B\+A\+C\+K} = 5
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$ \hyperlink{glsmap_8h_a0df728d29d955d6cf4c14ac8af58e06e}{smap\+Create\+Sphere\+Map} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$share\+Smap)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a03b69a9906d9ac8fb112bae293ec6458}{smap\+Destroy\+Sphere\+Map} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_ae7ca381975c8119d530f4d46f47c11df}{smap\+Configure\+Sphere\+Map\+Mesh} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} steps, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} rings, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} edge\+Extend)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a2bb9e2e44dc617b9b40b6998b0d5f70a}{smap\+Set\+Sphere\+Map\+Tex\+Obj} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_a2f0c8cd5c21f9fcbd931c3f48bc90dfc}{G\+Luint} texobj)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a55288933c51903cf807b93fcdb9258e9}{smap\+Set\+View\+Tex\+Obj} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_a2f0c8cd5c21f9fcbd931c3f48bc90dfc}{G\+Luint} texobj)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a97191c4879951b4b6b45d534a61e0b39}{smap\+Set\+View\+Tex\+Objs} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_a2f0c8cd5c21f9fcbd931c3f48bc90dfc}{G\+Luint} texobjs\mbox{[}6\mbox{]})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a900b0376368035931c4813107a0503db}{smap\+Get\+Sphere\+Map\+Tex\+Obj} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_a2f0c8cd5c21f9fcbd931c3f48bc90dfc}{G\+Luint} $\ast$texobj)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a41b0e5a31623cac2c4c2177fc1f38e18}{smap\+Get\+View\+Tex\+Obj} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_a2f0c8cd5c21f9fcbd931c3f48bc90dfc}{G\+Luint} $\ast$texobj)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a5ff313c947d5fe29dbcbda233c91b9cb}{smap\+Get\+View\+Tex\+Objs} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_a2f0c8cd5c21f9fcbd931c3f48bc90dfc}{G\+Luint} texobjs\mbox{[}6\mbox{]})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a7119faaa177bad8a8b1e11653b27b23d}{smap\+Set\+Flags} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glsmap_8h_a47f0d86b336f12393b51104083f66fd5}{Sphere\+Map\+Flags} \hyperlink{glext_8h_aa9459b47e7388437191d2d9a69c10d98}{flags})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a01357f8e5580cd8d33b950059197d919}{smap\+Get\+Flags} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glsmap_8h_a47f0d86b336f12393b51104083f66fd5}{Sphere\+Map\+Flags} $\ast$\hyperlink{glext_8h_aa9459b47e7388437191d2d9a69c10d98}{flags})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_aac930bf38f0fc5da0c5a8e61a6a4c735}{smap\+Set\+View\+Origin} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_aacf898e4ecb940565baac883dc587ff0}{G\+Lint} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{glext_8h_aacf898e4ecb940565baac883dc587ff0}{G\+Lint} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a5c8ac3998d98285e0077ea6f57f4a1eb}{smap\+Set\+Sphere\+Map\+Origin} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_aacf898e4ecb940565baac883dc587ff0}{G\+Lint} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{glext_8h_aacf898e4ecb940565baac883dc587ff0}{G\+Lint} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a75369679e5ea4e1d8f5f7c72531a50f5}{smap\+Get\+View\+Origin} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_aacf898e4ecb940565baac883dc587ff0}{G\+Lint} $\ast$\hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{glext_8h_aacf898e4ecb940565baac883dc587ff0}{G\+Lint} $\ast$\hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a3ada877a2bf38ffb3477ba22660a0400}{smap\+Get\+Sphere\+Map\+Origin} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_aacf898e4ecb940565baac883dc587ff0}{G\+Lint} $\ast$\hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{glext_8h_aacf898e4ecb940565baac883dc587ff0}{G\+Lint} $\ast$\hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a633da72849770eeede5b44031a029552}{smap\+Set\+Eye} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} eyex, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} eyey, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} eyez)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a75f8b5f3b9007d186f8e8323c9544f92}{smap\+Set\+Eye\+Vector} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$eye)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a35ea2b66c23e3fcf7b8bb4b7b0ce79d9}{smap\+Set\+Up} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} upx, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} upy, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} upz)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a755a2b900407171b02e84d5b09ff04d1}{smap\+Set\+Up\+Vector} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$up)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a1cc86926aa68995ffdc38172561f998d}{smap\+Set\+Object} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} objx, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} objy, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} objz)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_aab0139a6904ef053d6f2f4e81f066c10}{smap\+Set\+Object\+Vector} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a3a10a38b7f2a3f1c87ae18c2b1dde1e6}{smap\+Get\+Eye} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$eyex, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$eyey, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$eyez)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a6a5324172abf1c840d705d9179d028ec}{smap\+Get\+Eye\+Vector} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$eye)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_af3cda52c9ea142241ac937ff6a1f60cf}{smap\+Get\+Up} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$upx, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$upy, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$upz)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a24f56aa87e44e66319b6b44963d153ad}{smap\+Get\+Up\+Vector} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$up)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a1cf8d94faf073682a3b7b910fa85247b}{smap\+Get\+Object} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$objx, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$objy, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$objz)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a20697bbb1f52b28b61dd5cc14b2d055e}{smap\+Get\+Object\+Vector} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a1a1e0497b0719b3a3dfec7315fa5f24c}{smap\+Set\+Near\+Far} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} view\+Near, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} view\+Far)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a7dbff47aa58caeaec4762cbf5903e243}{smap\+Get\+Near\+Far} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$view\+Near, \hyperlink{glext_8h_afb586952866409c82b50c9995210cd03}{G\+Lfloat} $\ast$view\+Far)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a3a86476f40feceb04cd4ed30c48d2921}{smap\+Set\+Sphere\+Map\+Tex\+Dim} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, G\+Lsizei texdim)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a7c5006d8307458d3d89c0e4edd5e24b3}{smap\+Set\+View\+Tex\+Dim} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, G\+Lsizei texdim)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a0fb89da539e94c8a0bf76916f1fdd4ee}{smap\+Get\+Sphere\+Map\+Tex\+Dim} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, G\+Lsizei $\ast$texdim)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_ac44571890ab4e4ba2d8336fc741a6d35}{smap\+Get\+View\+Tex\+Dim} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, G\+Lsizei $\ast$texdim)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a820d58e838c3a2b87e48f50a547598c3}{smap\+Set\+Context\+Data} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$context)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_aef224598856b374cdd212154c4f08490}{smap\+Get\+Context\+Data} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$$\ast$context)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a6a6cecb7f6c2828cba3183dbf4de7c69}{smap\+Set\+Position\+Lights\+Func} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$position\+Lights)(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} view, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$context))
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_af8e6f16b22a9b98f51b11e4d7ec7befa}{smap\+Set\+Draw\+View\+Func} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$draw\+View)(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} view, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$context))
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a566c7ce4b95f25109aa7f8c6af5743b8}{smap\+Get\+Position\+Lights\+Func} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$$\ast$position\+Lights)(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} view, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$context))
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_af98839c99ddba7da282b5081396a9cd6}{smap\+Get\+Draw\+View\+Func} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$$\ast$draw\+View)(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} view, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$context))
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_aace07080844a03fbd330925a7a667f55}{smap\+Gen\+View\+Tex} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} view)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a55aa654e2f2082e2e943ff6fe4e7a003}{smap\+Gen\+View\+Texs} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a0d2bbc3fa9d309243df0f6e0663670a3}{smap\+Gen\+Sphere\+Map\+From\+View\+Texs} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a08191be3f40c4b504714f97d1e6b0aeb}{smap\+Gen\+Sphere\+Map} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_ae8e4bf12a65dd91aa168705f6050787f}{smap\+Gen\+Sphere\+Map\+With\+One\+View\+Tex} (\hyperlink{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{Sphere\+Map} $\ast$smap)
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glsmap_8h_a185df24dd0d952e16744e86aaa355860}{smap\+Rvec\+To\+St} (float rvec\mbox{[}3\mbox{]}, float st\mbox{[}2\mbox{]})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glsmap_8h_a74912cc784b0b79b01ff865349fd1062}{smap\+St\+To\+Rvec} (float $\ast$st, float $\ast$rvec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}{\index{glsmap.\+h@{glsmap.\+h}!Sphere\+Map@{Sphere\+Map}}
+\index{Sphere\+Map@{Sphere\+Map}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{Sphere\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct \+\_\+\+Sphere\+Map {\bf Sphere\+Map}}}\label{glsmap_8h_ad541a1fc2feb081a44df0a9beec3e4c2}
+
+
+Definition at line 73 of file glsmap.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55b}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+M\+A\+P\+\_\+\+F\+R\+O\+N\+T@{S\+M\+A\+P\+\_\+\+F\+R\+O\+N\+T}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+F\+R\+O\+N\+T@{S\+M\+A\+P\+\_\+\+F\+R\+O\+N\+T}}\item[{\em 
+\hypertarget{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55ba299bd68d7ab841fa957d906891238e34}{S\+M\+A\+P\+\_\+\+F\+R\+O\+N\+T}\label{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55ba299bd68d7ab841fa957d906891238e34}
+}]\index{S\+M\+A\+P\+\_\+\+T\+O\+P@{S\+M\+A\+P\+\_\+\+T\+O\+P}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+T\+O\+P@{S\+M\+A\+P\+\_\+\+T\+O\+P}}\item[{\em 
+\hypertarget{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55ba1ac39456b912288eecbea9975b0dbf05}{S\+M\+A\+P\+\_\+\+T\+O\+P}\label{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55ba1ac39456b912288eecbea9975b0dbf05}
+}]\index{S\+M\+A\+P\+\_\+\+B\+O\+T\+T\+O\+M@{S\+M\+A\+P\+\_\+\+B\+O\+T\+T\+O\+M}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+B\+O\+T\+T\+O\+M@{S\+M\+A\+P\+\_\+\+B\+O\+T\+T\+O\+M}}\item[{\em 
+\hypertarget{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55baa69f5413a86172b9b2f265e7460a88f1}{S\+M\+A\+P\+\_\+\+B\+O\+T\+T\+O\+M}\label{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55baa69f5413a86172b9b2f265e7460a88f1}
+}]\index{S\+M\+A\+P\+\_\+\+L\+E\+F\+T@{S\+M\+A\+P\+\_\+\+L\+E\+F\+T}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+L\+E\+F\+T@{S\+M\+A\+P\+\_\+\+L\+E\+F\+T}}\item[{\em 
+\hypertarget{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55baf9be2ad8ef8b028eef04184e6fe544bd}{S\+M\+A\+P\+\_\+\+L\+E\+F\+T}\label{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55baf9be2ad8ef8b028eef04184e6fe544bd}
+}]\index{S\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T@{S\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T@{S\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T}}\item[{\em 
+\hypertarget{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55bade2b89fe9c3465057ef445b9d2f8549a}{S\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T}\label{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55bade2b89fe9c3465057ef445b9d2f8549a}
+}]\index{S\+M\+A\+P\+\_\+\+B\+A\+C\+K@{S\+M\+A\+P\+\_\+\+B\+A\+C\+K}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+B\+A\+C\+K@{S\+M\+A\+P\+\_\+\+B\+A\+C\+K}}\item[{\em 
+\hypertarget{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55bac7d4dfc57dea47ef589a7b2bfae19253}{S\+M\+A\+P\+\_\+\+B\+A\+C\+K}\label{glsmap_8h_a06fc87d81c62e9abb8790b6e5713c55bac7d4dfc57dea47ef589a7b2bfae19253}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 64 of file glsmap.\+h.
+
+\hypertarget{glsmap_8h_a47f0d86b336f12393b51104083f66fd5}{\index{glsmap.\+h@{glsmap.\+h}!Sphere\+Map\+Flags@{Sphere\+Map\+Flags}}
+\index{Sphere\+Map\+Flags@{Sphere\+Map\+Flags}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{Sphere\+Map\+Flags}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Sphere\+Map\+Flags}}}\label{glsmap_8h_a47f0d86b336f12393b51104083f66fd5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+M\+A\+P\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E@{S\+M\+A\+P\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E@{S\+M\+A\+P\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E}}\item[{\em 
+\hypertarget{glsmap_8h_a47f0d86b336f12393b51104083f66fd5aad73bd60c4453c883ff3940c09c5db7c}{S\+M\+A\+P\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E}\label{glsmap_8h_a47f0d86b336f12393b51104083f66fd5aad73bd60c4453c883ff3940c09c5db7c}
+}]\index{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+V\+I\+E\+W\+\_\+\+M\+I\+P\+M\+A\+P\+S@{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+V\+I\+E\+W\+\_\+\+M\+I\+P\+M\+A\+P\+S}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+V\+I\+E\+W\+\_\+\+M\+I\+P\+M\+A\+P\+S@{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+V\+I\+E\+W\+\_\+\+M\+I\+P\+M\+A\+P\+S}}\item[{\em 
+\hypertarget{glsmap_8h_a47f0d86b336f12393b51104083f66fd5aae8cfc955d15a07c1b5c55bcdc2ebc69}{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+V\+I\+E\+W\+\_\+\+M\+I\+P\+M\+A\+P\+S}\label{glsmap_8h_a47f0d86b336f12393b51104083f66fd5aae8cfc955d15a07c1b5c55bcdc2ebc69}
+}]\index{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+S\+M\+A\+P\+\_\+\+M\+I\+P\+M\+A\+P\+S@{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+S\+M\+A\+P\+\_\+\+M\+I\+P\+M\+A\+P\+S}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+S\+M\+A\+P\+\_\+\+M\+I\+P\+M\+A\+P\+S@{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+S\+M\+A\+P\+\_\+\+M\+I\+P\+M\+A\+P\+S}}\item[{\em 
+\hypertarget{glsmap_8h_a47f0d86b336f12393b51104083f66fd5a750cc755f77d3b3f6ae4ff57ee38b6df}{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+S\+M\+A\+P\+\_\+\+M\+I\+P\+M\+A\+P\+S}\label{glsmap_8h_a47f0d86b336f12393b51104083f66fd5a750cc755f77d3b3f6ae4ff57ee38b6df}
+}]\index{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+M\+I\+P\+M\+A\+P\+S@{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+M\+I\+P\+M\+A\+P\+S}!glsmap.\+h@{glsmap.\+h}}\index{glsmap.\+h@{glsmap.\+h}!S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+M\+I\+P\+M\+A\+P\+S@{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+M\+I\+P\+M\+A\+P\+S}}\item[{\em 
+\hypertarget{glsmap_8h_a47f0d86b336f12393b51104083f66fd5a60d2036616fe34c50c6736ea3e89f001}{S\+M\+A\+P\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+M\+I\+P\+M\+A\+P\+S}\label{glsmap_8h_a47f0d86b336f12393b51104083f66fd5a60d2036616fe34c50c6736ea3e89f001}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 56 of file glsmap.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{glsmap_8h_ae7ca381975c8119d530f4d46f47c11df}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Configure\+Sphere\+Map\+Mesh@{smap\+Configure\+Sphere\+Map\+Mesh}}
+\index{smap\+Configure\+Sphere\+Map\+Mesh@{smap\+Configure\+Sphere\+Map\+Mesh}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Configure\+Sphere\+Map\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Configure\+Sphere\+Map\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf int}}]{steps, }
+\item[{{\bf int}}]{rings, }
+\item[{{\bf int}}]{edge\+Extend}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_ae7ca381975c8119d530f4d46f47c11df}
+\hypertarget{glsmap_8h_a0df728d29d955d6cf4c14ac8af58e06e}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Create\+Sphere\+Map@{smap\+Create\+Sphere\+Map}}
+\index{smap\+Create\+Sphere\+Map@{smap\+Create\+Sphere\+Map}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Create\+Sphere\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sphere\+Map}$\ast$ smap\+Create\+Sphere\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{share\+Smap}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a0df728d29d955d6cf4c14ac8af58e06e}
+\hypertarget{glsmap_8h_a03b69a9906d9ac8fb112bae293ec6458}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Destroy\+Sphere\+Map@{smap\+Destroy\+Sphere\+Map}}
+\index{smap\+Destroy\+Sphere\+Map@{smap\+Destroy\+Sphere\+Map}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Destroy\+Sphere\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Destroy\+Sphere\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a03b69a9906d9ac8fb112bae293ec6458}
+\hypertarget{glsmap_8h_a08191be3f40c4b504714f97d1e6b0aeb}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Gen\+Sphere\+Map@{smap\+Gen\+Sphere\+Map}}
+\index{smap\+Gen\+Sphere\+Map@{smap\+Gen\+Sphere\+Map}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Gen\+Sphere\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Gen\+Sphere\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a08191be3f40c4b504714f97d1e6b0aeb}
+\hypertarget{glsmap_8h_a0d2bbc3fa9d309243df0f6e0663670a3}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Gen\+Sphere\+Map\+From\+View\+Texs@{smap\+Gen\+Sphere\+Map\+From\+View\+Texs}}
+\index{smap\+Gen\+Sphere\+Map\+From\+View\+Texs@{smap\+Gen\+Sphere\+Map\+From\+View\+Texs}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Gen\+Sphere\+Map\+From\+View\+Texs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Gen\+Sphere\+Map\+From\+View\+Texs (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a0d2bbc3fa9d309243df0f6e0663670a3}
+\hypertarget{glsmap_8h_ae8e4bf12a65dd91aa168705f6050787f}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Gen\+Sphere\+Map\+With\+One\+View\+Tex@{smap\+Gen\+Sphere\+Map\+With\+One\+View\+Tex}}
+\index{smap\+Gen\+Sphere\+Map\+With\+One\+View\+Tex@{smap\+Gen\+Sphere\+Map\+With\+One\+View\+Tex}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Gen\+Sphere\+Map\+With\+One\+View\+Tex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Gen\+Sphere\+Map\+With\+One\+View\+Tex (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_ae8e4bf12a65dd91aa168705f6050787f}
+\hypertarget{glsmap_8h_aace07080844a03fbd330925a7a667f55}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Gen\+View\+Tex@{smap\+Gen\+View\+Tex}}
+\index{smap\+Gen\+View\+Tex@{smap\+Gen\+View\+Tex}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Gen\+View\+Tex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Gen\+View\+Tex (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf int}}]{view}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_aace07080844a03fbd330925a7a667f55}
+\hypertarget{glsmap_8h_a55aa654e2f2082e2e943ff6fe4e7a003}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Gen\+View\+Texs@{smap\+Gen\+View\+Texs}}
+\index{smap\+Gen\+View\+Texs@{smap\+Gen\+View\+Texs}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Gen\+View\+Texs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Gen\+View\+Texs (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a55aa654e2f2082e2e943ff6fe4e7a003}
+\hypertarget{glsmap_8h_aef224598856b374cdd212154c4f08490}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Context\+Data@{smap\+Get\+Context\+Data}}
+\index{smap\+Get\+Context\+Data@{smap\+Get\+Context\+Data}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Context\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Context\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf void} $\ast$$\ast$}]{context}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_aef224598856b374cdd212154c4f08490}
+\hypertarget{glsmap_8h_af98839c99ddba7da282b5081396a9cd6}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Draw\+View\+Func@{smap\+Get\+Draw\+View\+Func}}
+\index{smap\+Get\+Draw\+View\+Func@{smap\+Get\+Draw\+View\+Func}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Draw\+View\+Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Draw\+View\+Func (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf void}($\ast$$\ast$)({\bf int} view, {\bf void} $\ast$context)}]{draw\+View}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_af98839c99ddba7da282b5081396a9cd6}
+\hypertarget{glsmap_8h_a3a10a38b7f2a3f1c87ae18c2b1dde1e6}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Eye@{smap\+Get\+Eye}}
+\index{smap\+Get\+Eye@{smap\+Get\+Eye}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Eye}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Eye (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{eyex, }
+\item[{{\bf G\+Lfloat} $\ast$}]{eyey, }
+\item[{{\bf G\+Lfloat} $\ast$}]{eyez}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a3a10a38b7f2a3f1c87ae18c2b1dde1e6}
+\hypertarget{glsmap_8h_a6a5324172abf1c840d705d9179d028ec}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Eye\+Vector@{smap\+Get\+Eye\+Vector}}
+\index{smap\+Get\+Eye\+Vector@{smap\+Get\+Eye\+Vector}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Eye\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Eye\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{eye}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a6a5324172abf1c840d705d9179d028ec}
+\hypertarget{glsmap_8h_a01357f8e5580cd8d33b950059197d919}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Flags@{smap\+Get\+Flags}}
+\index{smap\+Get\+Flags@{smap\+Get\+Flags}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Flags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Flags (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf Sphere\+Map\+Flags} $\ast$}]{flags}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a01357f8e5580cd8d33b950059197d919}
+\hypertarget{glsmap_8h_a7dbff47aa58caeaec4762cbf5903e243}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Near\+Far@{smap\+Get\+Near\+Far}}
+\index{smap\+Get\+Near\+Far@{smap\+Get\+Near\+Far}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Near\+Far}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Near\+Far (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{view\+Near, }
+\item[{{\bf G\+Lfloat} $\ast$}]{view\+Far}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a7dbff47aa58caeaec4762cbf5903e243}
+\hypertarget{glsmap_8h_a1cf8d94faf073682a3b7b910fa85247b}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Object@{smap\+Get\+Object}}
+\index{smap\+Get\+Object@{smap\+Get\+Object}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{objx, }
+\item[{{\bf G\+Lfloat} $\ast$}]{objy, }
+\item[{{\bf G\+Lfloat} $\ast$}]{objz}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a1cf8d94faf073682a3b7b910fa85247b}
+\hypertarget{glsmap_8h_a20697bbb1f52b28b61dd5cc14b2d055e}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Object\+Vector@{smap\+Get\+Object\+Vector}}
+\index{smap\+Get\+Object\+Vector@{smap\+Get\+Object\+Vector}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Object\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Object\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a20697bbb1f52b28b61dd5cc14b2d055e}
+\hypertarget{glsmap_8h_a566c7ce4b95f25109aa7f8c6af5743b8}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Position\+Lights\+Func@{smap\+Get\+Position\+Lights\+Func}}
+\index{smap\+Get\+Position\+Lights\+Func@{smap\+Get\+Position\+Lights\+Func}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Position\+Lights\+Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Position\+Lights\+Func (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf void}($\ast$$\ast$)({\bf int} view, {\bf void} $\ast$context)}]{position\+Lights}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a566c7ce4b95f25109aa7f8c6af5743b8}
+\hypertarget{glsmap_8h_a3ada877a2bf38ffb3477ba22660a0400}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Sphere\+Map\+Origin@{smap\+Get\+Sphere\+Map\+Origin}}
+\index{smap\+Get\+Sphere\+Map\+Origin@{smap\+Get\+Sphere\+Map\+Origin}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Sphere\+Map\+Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Sphere\+Map\+Origin (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lint} $\ast$}]{x, }
+\item[{{\bf G\+Lint} $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a3ada877a2bf38ffb3477ba22660a0400}
+\hypertarget{glsmap_8h_a0fb89da539e94c8a0bf76916f1fdd4ee}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Sphere\+Map\+Tex\+Dim@{smap\+Get\+Sphere\+Map\+Tex\+Dim}}
+\index{smap\+Get\+Sphere\+Map\+Tex\+Dim@{smap\+Get\+Sphere\+Map\+Tex\+Dim}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Sphere\+Map\+Tex\+Dim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Sphere\+Map\+Tex\+Dim (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{G\+Lsizei $\ast$}]{texdim}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a0fb89da539e94c8a0bf76916f1fdd4ee}
+\hypertarget{glsmap_8h_a900b0376368035931c4813107a0503db}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Sphere\+Map\+Tex\+Obj@{smap\+Get\+Sphere\+Map\+Tex\+Obj}}
+\index{smap\+Get\+Sphere\+Map\+Tex\+Obj@{smap\+Get\+Sphere\+Map\+Tex\+Obj}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Sphere\+Map\+Tex\+Obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Sphere\+Map\+Tex\+Obj (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Luint} $\ast$}]{texobj}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a900b0376368035931c4813107a0503db}
+\hypertarget{glsmap_8h_af3cda52c9ea142241ac937ff6a1f60cf}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Up@{smap\+Get\+Up}}
+\index{smap\+Get\+Up@{smap\+Get\+Up}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Up (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{upx, }
+\item[{{\bf G\+Lfloat} $\ast$}]{upy, }
+\item[{{\bf G\+Lfloat} $\ast$}]{upz}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_af3cda52c9ea142241ac937ff6a1f60cf}
+\hypertarget{glsmap_8h_a24f56aa87e44e66319b6b44963d153ad}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+Up\+Vector@{smap\+Get\+Up\+Vector}}
+\index{smap\+Get\+Up\+Vector@{smap\+Get\+Up\+Vector}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+Up\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+Up\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{up}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a24f56aa87e44e66319b6b44963d153ad}
+\hypertarget{glsmap_8h_a75369679e5ea4e1d8f5f7c72531a50f5}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+View\+Origin@{smap\+Get\+View\+Origin}}
+\index{smap\+Get\+View\+Origin@{smap\+Get\+View\+Origin}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+View\+Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+View\+Origin (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lint} $\ast$}]{x, }
+\item[{{\bf G\+Lint} $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a75369679e5ea4e1d8f5f7c72531a50f5}
+\hypertarget{glsmap_8h_ac44571890ab4e4ba2d8336fc741a6d35}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+View\+Tex\+Dim@{smap\+Get\+View\+Tex\+Dim}}
+\index{smap\+Get\+View\+Tex\+Dim@{smap\+Get\+View\+Tex\+Dim}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+View\+Tex\+Dim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+View\+Tex\+Dim (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{G\+Lsizei $\ast$}]{texdim}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_ac44571890ab4e4ba2d8336fc741a6d35}
+\hypertarget{glsmap_8h_a41b0e5a31623cac2c4c2177fc1f38e18}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+View\+Tex\+Obj@{smap\+Get\+View\+Tex\+Obj}}
+\index{smap\+Get\+View\+Tex\+Obj@{smap\+Get\+View\+Tex\+Obj}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+View\+Tex\+Obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+View\+Tex\+Obj (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Luint} $\ast$}]{texobj}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a41b0e5a31623cac2c4c2177fc1f38e18}
+\hypertarget{glsmap_8h_a5ff313c947d5fe29dbcbda233c91b9cb}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Get\+View\+Tex\+Objs@{smap\+Get\+View\+Tex\+Objs}}
+\index{smap\+Get\+View\+Tex\+Objs@{smap\+Get\+View\+Tex\+Objs}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Get\+View\+Tex\+Objs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Get\+View\+Tex\+Objs (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Luint}}]{texobjs\mbox{[}6\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a5ff313c947d5fe29dbcbda233c91b9cb}
+\hypertarget{glsmap_8h_a185df24dd0d952e16744e86aaa355860}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Rvec\+To\+St@{smap\+Rvec\+To\+St}}
+\index{smap\+Rvec\+To\+St@{smap\+Rvec\+To\+St}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Rvec\+To\+St}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} smap\+Rvec\+To\+St (
+\begin{DoxyParamCaption}
+\item[{float}]{rvec\mbox{[}3\mbox{]}, }
+\item[{float}]{st\mbox{[}2\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a185df24dd0d952e16744e86aaa355860}
+\hypertarget{glsmap_8h_a820d58e838c3a2b87e48f50a547598c3}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Context\+Data@{smap\+Set\+Context\+Data}}
+\index{smap\+Set\+Context\+Data@{smap\+Set\+Context\+Data}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Context\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Context\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf void} $\ast$}]{context}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a820d58e838c3a2b87e48f50a547598c3}
+\hypertarget{glsmap_8h_af8e6f16b22a9b98f51b11e4d7ec7befa}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Draw\+View\+Func@{smap\+Set\+Draw\+View\+Func}}
+\index{smap\+Set\+Draw\+View\+Func@{smap\+Set\+Draw\+View\+Func}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Draw\+View\+Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Draw\+View\+Func (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf void}($\ast$)({\bf int} view, {\bf void} $\ast$context)}]{draw\+View}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_af8e6f16b22a9b98f51b11e4d7ec7befa}
+\hypertarget{glsmap_8h_a633da72849770eeede5b44031a029552}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Eye@{smap\+Set\+Eye}}
+\index{smap\+Set\+Eye@{smap\+Set\+Eye}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Eye}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Eye (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat}}]{eyex, }
+\item[{{\bf G\+Lfloat}}]{eyey, }
+\item[{{\bf G\+Lfloat}}]{eyez}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a633da72849770eeede5b44031a029552}
+\hypertarget{glsmap_8h_a75f8b5f3b9007d186f8e8323c9544f92}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Eye\+Vector@{smap\+Set\+Eye\+Vector}}
+\index{smap\+Set\+Eye\+Vector@{smap\+Set\+Eye\+Vector}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Eye\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Eye\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{eye}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a75f8b5f3b9007d186f8e8323c9544f92}
+\hypertarget{glsmap_8h_a7119faaa177bad8a8b1e11653b27b23d}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Flags@{smap\+Set\+Flags}}
+\index{smap\+Set\+Flags@{smap\+Set\+Flags}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Flags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Flags (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf Sphere\+Map\+Flags}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a7119faaa177bad8a8b1e11653b27b23d}
+\hypertarget{glsmap_8h_a1a1e0497b0719b3a3dfec7315fa5f24c}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Near\+Far@{smap\+Set\+Near\+Far}}
+\index{smap\+Set\+Near\+Far@{smap\+Set\+Near\+Far}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Near\+Far}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Near\+Far (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat}}]{view\+Near, }
+\item[{{\bf G\+Lfloat}}]{view\+Far}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a1a1e0497b0719b3a3dfec7315fa5f24c}
+\hypertarget{glsmap_8h_a1cc86926aa68995ffdc38172561f998d}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Object@{smap\+Set\+Object}}
+\index{smap\+Set\+Object@{smap\+Set\+Object}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat}}]{objx, }
+\item[{{\bf G\+Lfloat}}]{objy, }
+\item[{{\bf G\+Lfloat}}]{objz}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a1cc86926aa68995ffdc38172561f998d}
+\hypertarget{glsmap_8h_aab0139a6904ef053d6f2f4e81f066c10}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Object\+Vector@{smap\+Set\+Object\+Vector}}
+\index{smap\+Set\+Object\+Vector@{smap\+Set\+Object\+Vector}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Object\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Object\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_aab0139a6904ef053d6f2f4e81f066c10}
+\hypertarget{glsmap_8h_a6a6cecb7f6c2828cba3183dbf4de7c69}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Position\+Lights\+Func@{smap\+Set\+Position\+Lights\+Func}}
+\index{smap\+Set\+Position\+Lights\+Func@{smap\+Set\+Position\+Lights\+Func}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Position\+Lights\+Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Position\+Lights\+Func (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf void}($\ast$)({\bf int} view, {\bf void} $\ast$context)}]{position\+Lights}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a6a6cecb7f6c2828cba3183dbf4de7c69}
+\hypertarget{glsmap_8h_a5c8ac3998d98285e0077ea6f57f4a1eb}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Sphere\+Map\+Origin@{smap\+Set\+Sphere\+Map\+Origin}}
+\index{smap\+Set\+Sphere\+Map\+Origin@{smap\+Set\+Sphere\+Map\+Origin}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Sphere\+Map\+Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Sphere\+Map\+Origin (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lint}}]{x, }
+\item[{{\bf G\+Lint}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a5c8ac3998d98285e0077ea6f57f4a1eb}
+\hypertarget{glsmap_8h_a3a86476f40feceb04cd4ed30c48d2921}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Sphere\+Map\+Tex\+Dim@{smap\+Set\+Sphere\+Map\+Tex\+Dim}}
+\index{smap\+Set\+Sphere\+Map\+Tex\+Dim@{smap\+Set\+Sphere\+Map\+Tex\+Dim}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Sphere\+Map\+Tex\+Dim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Sphere\+Map\+Tex\+Dim (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{G\+Lsizei}]{texdim}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a3a86476f40feceb04cd4ed30c48d2921}
+\hypertarget{glsmap_8h_a2bb9e2e44dc617b9b40b6998b0d5f70a}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Sphere\+Map\+Tex\+Obj@{smap\+Set\+Sphere\+Map\+Tex\+Obj}}
+\index{smap\+Set\+Sphere\+Map\+Tex\+Obj@{smap\+Set\+Sphere\+Map\+Tex\+Obj}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Sphere\+Map\+Tex\+Obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Sphere\+Map\+Tex\+Obj (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Luint}}]{texobj}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a2bb9e2e44dc617b9b40b6998b0d5f70a}
+\hypertarget{glsmap_8h_a35ea2b66c23e3fcf7b8bb4b7b0ce79d9}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Up@{smap\+Set\+Up}}
+\index{smap\+Set\+Up@{smap\+Set\+Up}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Up (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat}}]{upx, }
+\item[{{\bf G\+Lfloat}}]{upy, }
+\item[{{\bf G\+Lfloat}}]{upz}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a35ea2b66c23e3fcf7b8bb4b7b0ce79d9}
+\hypertarget{glsmap_8h_a755a2b900407171b02e84d5b09ff04d1}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+Up\+Vector@{smap\+Set\+Up\+Vector}}
+\index{smap\+Set\+Up\+Vector@{smap\+Set\+Up\+Vector}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+Up\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+Up\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lfloat} $\ast$}]{up}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a755a2b900407171b02e84d5b09ff04d1}
+\hypertarget{glsmap_8h_aac930bf38f0fc5da0c5a8e61a6a4c735}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+View\+Origin@{smap\+Set\+View\+Origin}}
+\index{smap\+Set\+View\+Origin@{smap\+Set\+View\+Origin}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+View\+Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+View\+Origin (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Lint}}]{x, }
+\item[{{\bf G\+Lint}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_aac930bf38f0fc5da0c5a8e61a6a4c735}
+\hypertarget{glsmap_8h_a7c5006d8307458d3d89c0e4edd5e24b3}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+View\+Tex\+Dim@{smap\+Set\+View\+Tex\+Dim}}
+\index{smap\+Set\+View\+Tex\+Dim@{smap\+Set\+View\+Tex\+Dim}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+View\+Tex\+Dim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+View\+Tex\+Dim (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{G\+Lsizei}]{texdim}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a7c5006d8307458d3d89c0e4edd5e24b3}
+\hypertarget{glsmap_8h_a55288933c51903cf807b93fcdb9258e9}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+View\+Tex\+Obj@{smap\+Set\+View\+Tex\+Obj}}
+\index{smap\+Set\+View\+Tex\+Obj@{smap\+Set\+View\+Tex\+Obj}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+View\+Tex\+Obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+View\+Tex\+Obj (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Luint}}]{texobj}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a55288933c51903cf807b93fcdb9258e9}
+\hypertarget{glsmap_8h_a97191c4879951b4b6b45d534a61e0b39}{\index{glsmap.\+h@{glsmap.\+h}!smap\+Set\+View\+Tex\+Objs@{smap\+Set\+View\+Tex\+Objs}}
+\index{smap\+Set\+View\+Tex\+Objs@{smap\+Set\+View\+Tex\+Objs}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+Set\+View\+Tex\+Objs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+Set\+View\+Tex\+Objs (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Map} $\ast$}]{smap, }
+\item[{{\bf G\+Luint}}]{texobjs\mbox{[}6\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a97191c4879951b4b6b45d534a61e0b39}
+\hypertarget{glsmap_8h_a74912cc784b0b79b01ff865349fd1062}{\index{glsmap.\+h@{glsmap.\+h}!smap\+St\+To\+Rvec@{smap\+St\+To\+Rvec}}
+\index{smap\+St\+To\+Rvec@{smap\+St\+To\+Rvec}!glsmap.\+h@{glsmap.\+h}}
+\subsubsection[{smap\+St\+To\+Rvec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} smap\+St\+To\+Rvec (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{st, }
+\item[{float $\ast$}]{rvec}
+\end{DoxyParamCaption}
+)}}\label{glsmap_8h_a74912cc784b0b79b01ff865349fd1062}

@@ -1,0 +1,510 @@
+\hypertarget{class_app}{\section{App Class Reference}
+\label{class_app}\index{App@{App}}
+}
+
+
+{\ttfamily \#include $<$App.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_app_1_1_default_units}{Default\+Units}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_app_aea5a9482f92f593735e0e6568c46b0d8}{Units\+Type} \{ \hyperlink{class_app_aea5a9482f92f593735e0e6568c46b0d8a7c7fdae6b9832748ec23644eebfcd51d}{U\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T}, 
+\hyperlink{class_app_aea5a9482f92f593735e0e6568c46b0d8ae892d830f9e69c46728781e9a53638ee}{U\+T\+\_\+\+M\+E\+T\+R\+I\+C}, 
+\hyperlink{class_app_aea5a9482f92f593735e0e6568c46b0d8abec12c861c4181a6fcf6f36ceb4728fb}{U\+T\+\_\+\+I\+M\+P\+E\+R\+I\+A\+L}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_app_acb8cbf3e285b91d0170ffe87df5989c5}{App} ()
+\item 
+\hyperlink{class_app_a34f1f253b1cef5f4ecbac66eaf6964ec}{$\sim$\+App} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_a12b15f30e7c0a6f5a2ebf5b1b6dcb409}{Init} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_a4c9cf8bd78997b07082a3a5d23e9f056}{Load\+Kernel} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&file) const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_a698fea2610b1e5767c12525b67b33e6d}{Set\+Logging\+File} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&file) const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_a8a64f7e38d933bdfde41d79ef0f847d0}{Set\+Reference\+Frame} (const \hyperlink{class_frame}{Frame} \&\hyperlink{glext_8h_ad32bdec748ba376f6c0d2df39ab9a95b}{ref})
+\item 
+const \hyperlink{class_frame}{Frame} \& \hyperlink{class_app_aae4a208c58219724eff18c9eb1e2ea64}{Get\+Reference\+Frame} () const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_a6503f750c4ed359bcd08db5a8e0c7008}{Set\+Default\+Units} (\hyperlink{class_app_aea5a9482f92f593735e0e6568c46b0d8}{Units\+Type} \hyperlink{glext_8h_abfa9efe7c13ea1f8f0756f7d74b32958}{units})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_a2dd4b717c331d2afd0801ea589d35e0c}{Set\+Individual\+Units} (const \hyperlink{struct_app_1_1_default_units}{Default\+Units} \&def\+Units)
+\item 
+const \hyperlink{_quantity_8h_afb62d6d68e6cd2c62c96aa8c3aeb7d1f}{Length\+Unit} \& \hyperlink{class_app_ad04c66a48bfdbf61b6683b450708a8c7}{Length\+Unit} () const 
+\item 
+const \hyperlink{_quantity_8h_a4130b5cf107e9890a06c6c06bbfa7da3}{Velocity\+Unit} \& \hyperlink{class_app_af4c711d659e35f4dd32935045864084a}{Velocity\+Unit} () const 
+\item 
+const \hyperlink{_quantity_8h_a2dde25127542e6a5fcf7c085269b8963}{Mass\+Unit} \& \hyperlink{class_app_acf7486b4787ea7fe43abae0d166dfb5c}{Mass\+Unit} () const 
+\item 
+const \hyperlink{_quantity_8h_ac250a56b26235a8dc9d44fbbeabe2024}{Gravitational\+Parameter\+Unit} \& \hyperlink{class_app_a8487d93c3f260c9fc94f2ca40b526035}{G\+M\+Unit} () const 
+\item 
+const \hyperlink{_quantity_8h_aa1729851532d88933ff921f24a0bce3b}{Acceleration\+Unit} \& \hyperlink{class_app_a6227e7123ec66f2de575c3e8f8ad8380}{Acceleration\+Unit} () const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_ab41aea25a7f5312dfef22644138c1fac}{Load\+Children} (const \hyperlink{class_space_object}{Space\+Object} \&parent, bool include\+Self=false, bool recursive=false)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_aa8eb4865cea9f3ffc31199f539e35e53}{Load\+Parent} (const \hyperlink{class_space_object}{Space\+Object} \&child, bool include\+Mass\+Center, bool include\+Self=false, bool recursive=false)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_ae50b47e38db35856dbad40c3281603eb}{Load\+Moons} (const \hyperlink{class_space_object}{Space\+Object} \&parent)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_ad163108cca1f0c17229627dc44a18d5b}{Load\+Moons} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&parent\+Name)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_a481f856c3ca5b90d8bf903a4a208dfc5}{Load\+Solar\+System} (bool entire=false)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_ab947a8da031b06d05bfa6dd392ba59bf}{Load\+All\+Available\+Objects} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_app_a2feb5b0ad3a5018c3bf61e3920aaaf5a}{Add\+Object} (const \hyperlink{class_space_object}{Space\+Object} \&\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj})
+\item 
+size\+\_\+t \hyperlink{class_app_afec3098fabcf5728d0a50b3660322e85}{Get\+Objects\+Length} () const 
+\item 
+\hyperlink{class_space_object}{Space\+Object} \& \hyperlink{class_app_af6e4143b4dabe6ea635099dda0bb531e}{Get\+Object\+By\+Index} (size\+\_\+t idx)
+\item 
+bool \hyperlink{class_app_a362e000126120fd4f6ce12ba75d47945}{Check\+Object\+Exists} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+bool \hyperlink{class_app_ad2700c102cb00a025ec1e17b178d287d}{Check\+Object\+Exists} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name})
+\item 
+bool \hyperlink{class_app_aa34a12b23a2f5c69c8e9d440df37a4a9}{Check\+Object\+Exists} (const \hyperlink{class_space_object}{Space\+Object} \&sample)
+\item 
+\hyperlink{class_space_object}{Space\+Object} \& \hyperlink{class_app_a863d8814f100aecf3a204677fe64c71d}{Retrieve\+Object} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+\hyperlink{class_space_object}{Space\+Object} \& \hyperlink{class_app_a82ab292df58ac850fcc5d29d3961884c}{Retrieve\+Object} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name})
+\item 
+\hyperlink{class_space_object}{Space\+Object} \& \hyperlink{class_app_a8fe52303bcef03a0482d680ce9f2b431}{Retrieve\+Object} (const \hyperlink{class_space_object}{Space\+Object} \&sample)
+\item 
+std\+::vector$<$ \hyperlink{class_space_object}{Space\+Object} $\ast$ $>$ \hyperlink{class_app_a182106fc2c4faaaee41c167953bbe35e}{Get\+Loaded\+Planets} ()
+\item 
+std\+::vector$<$ \hyperlink{class_space_object}{Space\+Object} $\ast$ $>$ \hyperlink{class_app_abd9836f44c32188ded4a2868526d1451}{Get\+Loaded\+Moons\+Of} (const \hyperlink{class_space_object}{Space\+Object} \&planet)
+\item 
+std\+::vector$<$ \hyperlink{class_space_object}{Space\+Object} $\ast$ $>$ \hyperlink{class_app_a22ba61abf8eefa49d514933cbeb65445}{Get\+Loaded\+Moons\+Of} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{_routine_8cpp_a1cc303acbb3ff05d12048e9caaa58081}{planet\+Name})
+\item 
+std\+::vector$<$ \hyperlink{class_space_object}{Space\+Object} $\ast$ $>$ \hyperlink{class_app_ad6b106d39f3033f9707644f018e66478}{Get\+Loaded\+Moons} ()
+\item 
+std\+::vector$<$ \hyperlink{class_space_object}{Space\+Object} $\ast$ $>$ \hyperlink{class_app_afe8189e6c77a3a8b90fa9cfc6f2d9cd5}{Get\+Loaded\+Barycenters} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file App.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_app_aea5a9482f92f593735e0e6568c46b0d8}{\index{App@{App}!Units\+Type@{Units\+Type}}
+\index{Units\+Type@{Units\+Type}!App@{App}}
+\subsubsection[{Units\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf App\+::\+Units\+Type}}}\label{class_app_aea5a9482f92f593735e0e6568c46b0d8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T@{U\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T}!App@{App}}\index{App@{App}!U\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T@{U\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T}}\item[{\em 
+\hypertarget{class_app_aea5a9482f92f593735e0e6568c46b0d8a7c7fdae6b9832748ec23644eebfcd51d}{U\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T}\label{class_app_aea5a9482f92f593735e0e6568c46b0d8a7c7fdae6b9832748ec23644eebfcd51d}
+}]\index{U\+T\+\_\+\+M\+E\+T\+R\+I\+C@{U\+T\+\_\+\+M\+E\+T\+R\+I\+C}!App@{App}}\index{App@{App}!U\+T\+\_\+\+M\+E\+T\+R\+I\+C@{U\+T\+\_\+\+M\+E\+T\+R\+I\+C}}\item[{\em 
+\hypertarget{class_app_aea5a9482f92f593735e0e6568c46b0d8ae892d830f9e69c46728781e9a53638ee}{U\+T\+\_\+\+M\+E\+T\+R\+I\+C}\label{class_app_aea5a9482f92f593735e0e6568c46b0d8ae892d830f9e69c46728781e9a53638ee}
+}]\index{U\+T\+\_\+\+I\+M\+P\+E\+R\+I\+A\+L@{U\+T\+\_\+\+I\+M\+P\+E\+R\+I\+A\+L}!App@{App}}\index{App@{App}!U\+T\+\_\+\+I\+M\+P\+E\+R\+I\+A\+L@{U\+T\+\_\+\+I\+M\+P\+E\+R\+I\+A\+L}}\item[{\em 
+\hypertarget{class_app_aea5a9482f92f593735e0e6568c46b0d8abec12c861c4181a6fcf6f36ceb4728fb}{U\+T\+\_\+\+I\+M\+P\+E\+R\+I\+A\+L}\label{class_app_aea5a9482f92f593735e0e6568c46b0d8abec12c861c4181a6fcf6f36ceb4728fb}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 16 of file App.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_app_acb8cbf3e285b91d0170ffe87df5989c5}{\index{App@{App}!App@{App}}
+\index{App@{App}!App@{App}}
+\subsubsection[{App}]{\setlength{\rightskip}{0pt plus 5cm}App\+::\+App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_acb8cbf3e285b91d0170ffe87df5989c5}
+
+
+Definition at line 3 of file App.\+cpp.
+
+\hypertarget{class_app_a34f1f253b1cef5f4ecbac66eaf6964ec}{\index{App@{App}!````~App@{$\sim$\+App}}
+\index{````~App@{$\sim$\+App}!App@{App}}
+\subsubsection[{$\sim$\+App}]{\setlength{\rightskip}{0pt plus 5cm}App\+::$\sim$\+App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_a34f1f253b1cef5f4ecbac66eaf6964ec}
+
+
+Definition at line 8 of file App.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_app_a6227e7123ec66f2de575c3e8f8ad8380}{\index{App@{App}!Acceleration\+Unit@{Acceleration\+Unit}}
+\index{Acceleration\+Unit@{Acceleration\+Unit}!App@{App}}
+\subsubsection[{Acceleration\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Acceleration\+Unit} \& App\+::\+Acceleration\+Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_app_a6227e7123ec66f2de575c3e8f8ad8380}
+
+
+Definition at line 90 of file App.\+cpp.
+
+\hypertarget{class_app_a2feb5b0ad3a5018c3bf61e3920aaaf5a}{\index{App@{App}!Add\+Object@{Add\+Object}}
+\index{Add\+Object@{Add\+Object}!App@{App}}
+\subsubsection[{Add\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Add\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{obj}
+\end{DoxyParamCaption}
+)}}\label{class_app_a2feb5b0ad3a5018c3bf61e3920aaaf5a}
+
+
+Definition at line 199 of file App.\+cpp.
+
+\hypertarget{class_app_a362e000126120fd4f6ce12ba75d47945}{\index{App@{App}!Check\+Object\+Exists@{Check\+Object\+Exists}}
+\index{Check\+Object\+Exists@{Check\+Object\+Exists}!App@{App}}
+\subsubsection[{Check\+Object\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool App\+::\+Check\+Object\+Exists (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_app_a362e000126120fd4f6ce12ba75d47945}
+
+
+Definition at line 218 of file App.\+cpp.
+
+\hypertarget{class_app_ad2700c102cb00a025ec1e17b178d287d}{\index{App@{App}!Check\+Object\+Exists@{Check\+Object\+Exists}}
+\index{Check\+Object\+Exists@{Check\+Object\+Exists}!App@{App}}
+\subsubsection[{Check\+Object\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool App\+::\+Check\+Object\+Exists (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_app_ad2700c102cb00a025ec1e17b178d287d}
+
+
+Definition at line 229 of file App.\+cpp.
+
+\hypertarget{class_app_aa34a12b23a2f5c69c8e9d440df37a4a9}{\index{App@{App}!Check\+Object\+Exists@{Check\+Object\+Exists}}
+\index{Check\+Object\+Exists@{Check\+Object\+Exists}!App@{App}}
+\subsubsection[{Check\+Object\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool App\+::\+Check\+Object\+Exists (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{sample}
+\end{DoxyParamCaption}
+)}}\label{class_app_aa34a12b23a2f5c69c8e9d440df37a4a9}
+
+
+Definition at line 240 of file App.\+cpp.
+
+\hypertarget{class_app_afe8189e6c77a3a8b90fa9cfc6f2d9cd5}{\index{App@{App}!Get\+Loaded\+Barycenters@{Get\+Loaded\+Barycenters}}
+\index{Get\+Loaded\+Barycenters@{Get\+Loaded\+Barycenters}!App@{App}}
+\subsubsection[{Get\+Loaded\+Barycenters}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Space\+Object} $\ast$ $>$ App\+::\+Get\+Loaded\+Barycenters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_afe8189e6c77a3a8b90fa9cfc6f2d9cd5}
+
+
+Definition at line 318 of file App.\+cpp.
+
+\hypertarget{class_app_ad6b106d39f3033f9707644f018e66478}{\index{App@{App}!Get\+Loaded\+Moons@{Get\+Loaded\+Moons}}
+\index{Get\+Loaded\+Moons@{Get\+Loaded\+Moons}!App@{App}}
+\subsubsection[{Get\+Loaded\+Moons}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Space\+Object} $\ast$ $>$ App\+::\+Get\+Loaded\+Moons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_ad6b106d39f3033f9707644f018e66478}
+
+
+Definition at line 306 of file App.\+cpp.
+
+\hypertarget{class_app_abd9836f44c32188ded4a2868526d1451}{\index{App@{App}!Get\+Loaded\+Moons\+Of@{Get\+Loaded\+Moons\+Of}}
+\index{Get\+Loaded\+Moons\+Of@{Get\+Loaded\+Moons\+Of}!App@{App}}
+\subsubsection[{Get\+Loaded\+Moons\+Of}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Space\+Object} $\ast$ $>$ App\+::\+Get\+Loaded\+Moons\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{planet}
+\end{DoxyParamCaption}
+)}}\label{class_app_abd9836f44c32188ded4a2868526d1451}
+
+
+Definition at line 286 of file App.\+cpp.
+
+\hypertarget{class_app_a22ba61abf8eefa49d514933cbeb65445}{\index{App@{App}!Get\+Loaded\+Moons\+Of@{Get\+Loaded\+Moons\+Of}}
+\index{Get\+Loaded\+Moons\+Of@{Get\+Loaded\+Moons\+Of}!App@{App}}
+\subsubsection[{Get\+Loaded\+Moons\+Of}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Space\+Object} $\ast$ $>$ App\+::\+Get\+Loaded\+Moons\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{planet\+Name}
+\end{DoxyParamCaption}
+)}}\label{class_app_a22ba61abf8eefa49d514933cbeb65445}
+
+
+Definition at line 301 of file App.\+cpp.
+
+\hypertarget{class_app_a182106fc2c4faaaee41c167953bbe35e}{\index{App@{App}!Get\+Loaded\+Planets@{Get\+Loaded\+Planets}}
+\index{Get\+Loaded\+Planets@{Get\+Loaded\+Planets}!App@{App}}
+\subsubsection[{Get\+Loaded\+Planets}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Space\+Object} $\ast$ $>$ App\+::\+Get\+Loaded\+Planets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_a182106fc2c4faaaee41c167953bbe35e}
+
+
+Definition at line 274 of file App.\+cpp.
+
+\hypertarget{class_app_af6e4143b4dabe6ea635099dda0bb531e}{\index{App@{App}!Get\+Object\+By\+Index@{Get\+Object\+By\+Index}}
+\index{Get\+Object\+By\+Index@{Get\+Object\+By\+Index}!App@{App}}
+\subsubsection[{Get\+Object\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space\+Object} \& App\+::\+Get\+Object\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{idx}
+\end{DoxyParamCaption}
+)}}\label{class_app_af6e4143b4dabe6ea635099dda0bb531e}
+
+
+Definition at line 213 of file App.\+cpp.
+
+\hypertarget{class_app_afec3098fabcf5728d0a50b3660322e85}{\index{App@{App}!Get\+Objects\+Length@{Get\+Objects\+Length}}
+\index{Get\+Objects\+Length@{Get\+Objects\+Length}!App@{App}}
+\subsubsection[{Get\+Objects\+Length}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t App\+::\+Get\+Objects\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_app_afec3098fabcf5728d0a50b3660322e85}
+
+
+Definition at line 208 of file App.\+cpp.
+
+\hypertarget{class_app_aae4a208c58219724eff18c9eb1e2ea64}{\index{App@{App}!Get\+Reference\+Frame@{Get\+Reference\+Frame}}
+\index{Get\+Reference\+Frame@{Get\+Reference\+Frame}!App@{App}}
+\subsubsection[{Get\+Reference\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Frame} \& App\+::\+Get\+Reference\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_app_aae4a208c58219724eff18c9eb1e2ea64}
+
+
+Definition at line 40 of file App.\+cpp.
+
+\hypertarget{class_app_a8487d93c3f260c9fc94f2ca40b526035}{\index{App@{App}!G\+M\+Unit@{G\+M\+Unit}}
+\index{G\+M\+Unit@{G\+M\+Unit}!App@{App}}
+\subsubsection[{G\+M\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Gravitational\+Parameter\+Unit} \& App\+::\+G\+M\+Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_app_a8487d93c3f260c9fc94f2ca40b526035}
+
+
+Definition at line 85 of file App.\+cpp.
+
+\hypertarget{class_app_a12b15f30e7c0a6f5a2ebf5b1b6dcb409}{\index{App@{App}!Init@{Init}}
+\index{Init@{Init}!App@{App}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_a12b15f30e7c0a6f5a2ebf5b1b6dcb409}
+
+
+Definition at line 19 of file App.\+cpp.
+
+\hypertarget{class_app_ad04c66a48bfdbf61b6683b450708a8c7}{\index{App@{App}!Length\+Unit@{Length\+Unit}}
+\index{Length\+Unit@{Length\+Unit}!App@{App}}
+\subsubsection[{Length\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Length\+Unit} \& App\+::\+Length\+Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_app_ad04c66a48bfdbf61b6683b450708a8c7}
+
+
+Definition at line 70 of file App.\+cpp.
+
+\hypertarget{class_app_ab947a8da031b06d05bfa6dd392ba59bf}{\index{App@{App}!Load\+All\+Available\+Objects@{Load\+All\+Available\+Objects}}
+\index{Load\+All\+Available\+Objects@{Load\+All\+Available\+Objects}!App@{App}}
+\subsubsection[{Load\+All\+Available\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Load\+All\+Available\+Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_ab947a8da031b06d05bfa6dd392ba59bf}
+
+
+Definition at line 185 of file App.\+cpp.
+
+\hypertarget{class_app_ab41aea25a7f5312dfef22644138c1fac}{\index{App@{App}!Load\+Children@{Load\+Children}}
+\index{Load\+Children@{Load\+Children}!App@{App}}
+\subsubsection[{Load\+Children}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Load\+Children (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{parent, }
+\item[{bool}]{include\+Self = {\ttfamily false}, }
+\item[{bool}]{recursive = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_app_ab41aea25a7f5312dfef22644138c1fac}
+
+
+Definition at line 100 of file App.\+cpp.
+
+\hypertarget{class_app_a4c9cf8bd78997b07082a3a5d23e9f056}{\index{App@{App}!Load\+Kernel@{Load\+Kernel}}
+\index{Load\+Kernel@{Load\+Kernel}!App@{App}}
+\subsubsection[{Load\+Kernel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Load\+Kernel (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{file}
+\end{DoxyParamCaption}
+) const}}\label{class_app_a4c9cf8bd78997b07082a3a5d23e9f056}
+
+
+Definition at line 25 of file App.\+cpp.
+
+\hypertarget{class_app_ae50b47e38db35856dbad40c3281603eb}{\index{App@{App}!Load\+Moons@{Load\+Moons}}
+\index{Load\+Moons@{Load\+Moons}!App@{App}}
+\subsubsection[{Load\+Moons}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Load\+Moons (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{parent}
+\end{DoxyParamCaption}
+)}}\label{class_app_ae50b47e38db35856dbad40c3281603eb}
+
+
+Definition at line 150 of file App.\+cpp.
+
+\hypertarget{class_app_ad163108cca1f0c17229627dc44a18d5b}{\index{App@{App}!Load\+Moons@{Load\+Moons}}
+\index{Load\+Moons@{Load\+Moons}!App@{App}}
+\subsubsection[{Load\+Moons}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Load\+Moons (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{parent\+Name}
+\end{DoxyParamCaption}
+)}}\label{class_app_ad163108cca1f0c17229627dc44a18d5b}
+
+
+Definition at line 160 of file App.\+cpp.
+
+\hypertarget{class_app_aa8eb4865cea9f3ffc31199f539e35e53}{\index{App@{App}!Load\+Parent@{Load\+Parent}}
+\index{Load\+Parent@{Load\+Parent}!App@{App}}
+\subsubsection[{Load\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Load\+Parent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{child, }
+\item[{bool}]{include\+Mass\+Center, }
+\item[{bool}]{include\+Self = {\ttfamily false}, }
+\item[{bool}]{recursive = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_app_aa8eb4865cea9f3ffc31199f539e35e53}
+
+
+Definition at line 123 of file App.\+cpp.
+
+\hypertarget{class_app_a481f856c3ca5b90d8bf903a4a208dfc5}{\index{App@{App}!Load\+Solar\+System@{Load\+Solar\+System}}
+\index{Load\+Solar\+System@{Load\+Solar\+System}!App@{App}}
+\subsubsection[{Load\+Solar\+System}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Load\+Solar\+System (
+\begin{DoxyParamCaption}
+\item[{bool}]{entire = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_app_a481f856c3ca5b90d8bf903a4a208dfc5}
+
+
+Definition at line 165 of file App.\+cpp.
+
+\hypertarget{class_app_acf7486b4787ea7fe43abae0d166dfb5c}{\index{App@{App}!Mass\+Unit@{Mass\+Unit}}
+\index{Mass\+Unit@{Mass\+Unit}!App@{App}}
+\subsubsection[{Mass\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Mass\+Unit} \& App\+::\+Mass\+Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_app_acf7486b4787ea7fe43abae0d166dfb5c}
+
+
+Definition at line 80 of file App.\+cpp.
+
+\hypertarget{class_app_a863d8814f100aecf3a204677fe64c71d}{\index{App@{App}!Retrieve\+Object@{Retrieve\+Object}}
+\index{Retrieve\+Object@{Retrieve\+Object}!App@{App}}
+\subsubsection[{Retrieve\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space\+Object} \& App\+::\+Retrieve\+Object (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_app_a863d8814f100aecf3a204677fe64c71d}
+
+
+Definition at line 245 of file App.\+cpp.
+
+\hypertarget{class_app_a82ab292df58ac850fcc5d29d3961884c}{\index{App@{App}!Retrieve\+Object@{Retrieve\+Object}}
+\index{Retrieve\+Object@{Retrieve\+Object}!App@{App}}
+\subsubsection[{Retrieve\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space\+Object} \& App\+::\+Retrieve\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_app_a82ab292df58ac850fcc5d29d3961884c}
+
+
+Definition at line 258 of file App.\+cpp.
+
+\hypertarget{class_app_a8fe52303bcef03a0482d680ce9f2b431}{\index{App@{App}!Retrieve\+Object@{Retrieve\+Object}}
+\index{Retrieve\+Object@{Retrieve\+Object}!App@{App}}
+\subsubsection[{Retrieve\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space\+Object} \& App\+::\+Retrieve\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{sample}
+\end{DoxyParamCaption}
+)}}\label{class_app_a8fe52303bcef03a0482d680ce9f2b431}
+
+
+Definition at line 269 of file App.\+cpp.
+
+\hypertarget{class_app_a6503f750c4ed359bcd08db5a8e0c7008}{\index{App@{App}!Set\+Default\+Units@{Set\+Default\+Units}}
+\index{Set\+Default\+Units@{Set\+Default\+Units}!App@{App}}
+\subsubsection[{Set\+Default\+Units}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Set\+Default\+Units (
+\begin{DoxyParamCaption}
+\item[{{\bf Units\+Type}}]{units}
+\end{DoxyParamCaption}
+)}}\label{class_app_a6503f750c4ed359bcd08db5a8e0c7008}
+
+
+Definition at line 45 of file App.\+cpp.
+
+\hypertarget{class_app_a2dd4b717c331d2afd0801ea589d35e0c}{\index{App@{App}!Set\+Individual\+Units@{Set\+Individual\+Units}}
+\index{Set\+Individual\+Units@{Set\+Individual\+Units}!App@{App}}
+\subsubsection[{Set\+Individual\+Units}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Set\+Individual\+Units (
+\begin{DoxyParamCaption}
+\item[{const {\bf Default\+Units} \&}]{def\+Units}
+\end{DoxyParamCaption}
+)}}\label{class_app_a2dd4b717c331d2afd0801ea589d35e0c}
+
+
+Definition at line 95 of file App.\+cpp.
+
+\hypertarget{class_app_a698fea2610b1e5767c12525b67b33e6d}{\index{App@{App}!Set\+Logging\+File@{Set\+Logging\+File}}
+\index{Set\+Logging\+File@{Set\+Logging\+File}!App@{App}}
+\subsubsection[{Set\+Logging\+File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Set\+Logging\+File (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{file}
+\end{DoxyParamCaption}
+) const}}\label{class_app_a698fea2610b1e5767c12525b67b33e6d}
+
+
+Definition at line 30 of file App.\+cpp.
+
+\hypertarget{class_app_a8a64f7e38d933bdfde41d79ef0f847d0}{\index{App@{App}!Set\+Reference\+Frame@{Set\+Reference\+Frame}}
+\index{Set\+Reference\+Frame@{Set\+Reference\+Frame}!App@{App}}
+\subsubsection[{Set\+Reference\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} App\+::\+Set\+Reference\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf Frame} \&}]{ref}
+\end{DoxyParamCaption}
+)}}\label{class_app_a8a64f7e38d933bdfde41d79ef0f847d0}
+
+
+Definition at line 35 of file App.\+cpp.
+
+\hypertarget{class_app_af4c711d659e35f4dd32935045864084a}{\index{App@{App}!Velocity\+Unit@{Velocity\+Unit}}
+\index{Velocity\+Unit@{Velocity\+Unit}!App@{App}}
+\subsubsection[{Velocity\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Velocity\+Unit} \& App\+::\+Velocity\+Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_app_af4c711d659e35f4dd32935045864084a}
+
+
+Definition at line 75 of file App.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\hyperlink{_app_8h}{App.\+h}\item 
+S\+S\+W\+C/src/\hyperlink{_app_8cpp}{App.\+cpp}\end{DoxyCompactItemize}

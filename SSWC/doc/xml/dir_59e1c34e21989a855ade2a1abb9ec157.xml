@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_59e1c34e21989a855ade2a1abb9ec157" kind="dir">
+    <compoundname>SSWC/src/GL</compoundname>
+    <innerfile refid="_a_r_b___multisample_8cpp">ARB_Multisample.cpp</innerfile>
+    <innerfile refid="_a_r_b___multisample_8h">ARB_Multisample.h</innerfile>
+    <innerfile refid="fgl_8h">fgl.h</innerfile>
+    <innerfile refid="fglu_8h">fglu.h</innerfile>
+    <innerfile refid="fglut_8h">fglut.h</innerfile>
+    <innerfile refid="glext_8h">glext.h</innerfile>
+    <innerfile refid="glsmap_8h">glsmap.h</innerfile>
+    <innerfile refid="glui_8h">glui.h</innerfile>
+    <innerfile refid="glut_8h">glut.h</innerfile>
+    <innerfile refid="tube_8h">tube.h</innerfile>
+    <innerfile refid="wglext_8h">wglext.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/"/>
+  </compounddef>
+</doxygen>

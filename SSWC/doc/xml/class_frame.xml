@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_frame" kind="class" prot="public">
+    <compoundname>Frame</compoundname>
+    <includes refid="_frame_8h" local="no">Frame.h</includes>
+    <innerclass refid="struct_frame_1_1_frame_info" prot="public">Frame::FrameInfo</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_frame_1ad2f22450377db20233914c9ec0a21df4" prot="public" static="no">
+        <name>FrameType</name>
+        <enumvalue id="class_frame_1ad2f22450377db20233914c9ec0a21df4ac73961ac9e615a4da4339c8e20fe92ef" prot="public">
+          <name>FT_INERTIAL</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_frame_1ad2f22450377db20233914c9ec0a21df4a03c1983206078ccc3fd8c290a5d63019" prot="public">
+          <name>FT_PCK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_frame_1ad2f22450377db20233914c9ec0a21df4a4438b3590992adb7e998575e686a995b" prot="public">
+          <name>FT_CK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_frame_1ad2f22450377db20233914c9ec0a21df4a3a52c9b5914442b7ca49e20720257800" prot="public">
+          <name>FT_TK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_frame_1ad2f22450377db20233914c9ec0a21df4ad682b0691e051ce65913fdf42d4be1af" prot="public">
+          <name>FT_DYNAMIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="18" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="17" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_frame_1a192985a57f75a6d3475bf5b63afa7191" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Frame::spiceId</definition>
+        <argsstring></argsstring>
+        <name>spiceId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="67" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_frame_1a7d5f44e66ab5eee073195d23e190beeb" prot="private" static="no" mutable="no">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string Frame::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="68" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_frame_1ab906b504879578e0bd4eec39e92e282e" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_space_object" kindref="compound">SpaceObject</ref> *</type>
+        <definition>const SpaceObject* Frame::centerObject</definition>
+        <argsstring></argsstring>
+        <name>centerObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="69" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_frame_1a83f98b1d0aa72dca955fd91752e6b499" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="class_frame" kindref="compound">Frame</ref></type>
+        <definition>const Frame Frame::J2000</definition>
+        <argsstring></argsstring>
+        <name>J2000</name>
+        <initializer>= <ref refid="class_frame" kindref="compound">Frame</ref>(&quot;J2000&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="72" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_frame_1af25db3f51bb9838c9bce46d30e663331" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="class_frame" kindref="compound">Frame</ref></type>
+        <definition>const Frame Frame::ECLIPJ2000</definition>
+        <argsstring></argsstring>
+        <name>ECLIPJ2000</name>
+        <initializer>= <ref refid="class_frame" kindref="compound">Frame</ref>(&quot;ECLIPJ2000&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="73" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_frame_1affeadc282e1d1b07d51918add4b48fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Frame::Frame</definition>
+        <argsstring>(int spiceId, const std::string &amp;name=&quot;&quot;)</argsstring>
+        <name>Frame</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>spiceId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="34" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a7254d330d38d6d454f5a77777d8f1bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Frame::Frame</definition>
+        <argsstring>(const std::string &amp;spiceName, const std::string &amp;name=&quot;&quot;)</argsstring>
+        <name>Frame</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>spiceName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="35" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="11" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1abec8c7bccdfc88cb4da137caae9f73d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Frame::~Frame</definition>
+        <argsstring>()</argsstring>
+        <name>~Frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="36" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a679aa287b6474930b7c1682f3a9ceb14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Frame::GetSpiceId</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSpiceId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="38" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1ad7596949a1ff9c2d1dd837e730f6aefc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string Frame::GetSpiceName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSpiceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="39" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1afc3c2fb53313f43fd6b906cd5423145e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+        <definition>const std::string &amp; Frame::GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="40" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a676a0342efbbafb23ef5366e02843b15" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_frame_1_1_frame_info" kindref="compound">FrameInfo</ref></type>
+        <definition>Frame::FrameInfo Frame::GetFrameInfo</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFrameInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="42" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="57" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1ad41c119171bcaebc84a9c5e0daea6c92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_space_object" kindref="compound">SpaceObject</ref> &amp;</type>
+        <definition>const SpaceObject &amp; Frame::GetCenterObject</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCenterObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="43" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a9fac9191222fbcf79954b5cb4fe8a181" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Frame::TransformVector</definition>
+        <argsstring>(const Vector3 &amp;vec, const Date &amp;t, const Frame &amp;ref) const </argsstring>
+        <name>TransformVector</name>
+        <param>
+          <type>const <ref refid="class_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_frame" kindref="compound">Frame</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="45" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="79" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1ac8195fe92d18baac95813e2bf751f533" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Frame::AxisX</definition>
+        <argsstring>(const Date &amp;t, const Frame &amp;ref) const </argsstring>
+        <name>AxisX</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_frame" kindref="compound">Frame</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="46" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a5ed0a2188dc255484b793ae5288c36c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Frame::AxisY</definition>
+        <argsstring>(const Date &amp;t, const Frame &amp;ref) const </argsstring>
+        <name>AxisY</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_frame" kindref="compound">Frame</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="47" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a89ebe688b416263f06f2393151194e77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Frame::AxisZ</definition>
+        <argsstring>(const Date &amp;t, const Frame &amp;ref) const </argsstring>
+        <name>AxisZ</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_frame" kindref="compound">Frame</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="48" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a4862be40cebae8c367031baf2ca6dc8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref></type>
+        <definition>Matrix4x4 Frame::GetTransformationMatrix</definition>
+        <argsstring>(const Date &amp;t, const Frame &amp;ref) const </argsstring>
+        <name>GetTransformationMatrix</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_frame" kindref="compound">Frame</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="50" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="108" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1afbf0802e2374c57dd80f754bd0c232da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Frame::HasAvailableData</definition>
+        <argsstring>() const </argsstring>
+        <name>HasAvailableData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="52" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="128" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1af03488c8a8eb25e55725b1af7c379671" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Frame::HasLimitedCoverage</definition>
+        <argsstring>() const </argsstring>
+        <name>HasLimitedCoverage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="53" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="142" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a54fe03adc618817f27c43738ca77ccf8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_window" kindref="compound">Window</ref></type>
+        <definition>Window Frame::GetCoverage</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCoverage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="54" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="151" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_frame_1a2530927116bf3b764862623c518d274e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Frame::ValidateId</definition>
+        <argsstring>(long id)</argsstring>
+        <name>ValidateId</name>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="56" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="167" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a33201e744d6593f2294bfb57bcb448d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Frame::MakeFrameId</definition>
+        <argsstring>(FrameType type, long classId)</argsstring>
+        <name>MakeFrameId</name>
+        <param>
+          <type><ref refid="class_frame_1ad2f22450377db20233914c9ec0a21df4" kindref="member">FrameType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>classId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="57" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="179" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1af143d92b7e9c07d2db5aec79b89ac1b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt; long &gt; Frame::GetBuiltInIds</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuiltInIds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="59" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="190" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1a80d4a5985129beb4d8010f072def67d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt; long &gt; Frame::GetPoolIds</definition>
+        <argsstring>()</argsstring>
+        <name>GetPoolIds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="60" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="197" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_frame_1ac5865bd9a4b0f8904b059fc005311971" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt; long &gt; Frame::GetLoadedPckIds</definition>
+        <argsstring>()</argsstring>
+        <name>GetLoadedPckIds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="61" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="204" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_frame_1a176034ddf34ecf98c20c9b189705053f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Frame::Construct</definition>
+        <argsstring>(int spiceId, const std::string &amp;name)</argsstring>
+        <name>Construct</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>spiceId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="64" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp" bodystart="19" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="533">
+        <label>Frame</label>
+        <link refid="class_frame"/>
+        <childnode refid="533" relation="usage">
+          <edgelabel>J2000</edgelabel>
+          <edgelabel>ECLIPJ2000</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="15" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="14" bodyend="74"/>
+    <listofallmembers>
+      <member refid="class_frame_1ac8195fe92d18baac95813e2bf751f533" prot="public" virt="non-virtual"><scope>Frame</scope><name>AxisX</name></member>
+      <member refid="class_frame_1a5ed0a2188dc255484b793ae5288c36c0" prot="public" virt="non-virtual"><scope>Frame</scope><name>AxisY</name></member>
+      <member refid="class_frame_1a89ebe688b416263f06f2393151194e77" prot="public" virt="non-virtual"><scope>Frame</scope><name>AxisZ</name></member>
+      <member refid="class_frame_1ab906b504879578e0bd4eec39e92e282e" prot="private" virt="non-virtual"><scope>Frame</scope><name>centerObject</name></member>
+      <member refid="class_frame_1a176034ddf34ecf98c20c9b189705053f" prot="private" virt="non-virtual"><scope>Frame</scope><name>Construct</name></member>
+      <member refid="class_frame_1af25db3f51bb9838c9bce46d30e663331" prot="public" virt="non-virtual"><scope>Frame</scope><name>ECLIPJ2000</name></member>
+      <member refid="class_frame_1affeadc282e1d1b07d51918add4b48fbf" prot="public" virt="non-virtual"><scope>Frame</scope><name>Frame</name></member>
+      <member refid="class_frame_1a7254d330d38d6d454f5a77777d8f1bcb" prot="public" virt="non-virtual"><scope>Frame</scope><name>Frame</name></member>
+      <member refid="class_frame_1ad2f22450377db20233914c9ec0a21df4" prot="public" virt="non-virtual"><scope>Frame</scope><name>FrameType</name></member>
+      <member refid="class_frame_1ad2f22450377db20233914c9ec0a21df4a4438b3590992adb7e998575e686a995b" prot="public" virt="non-virtual"><scope>Frame</scope><name>FT_CK</name></member>
+      <member refid="class_frame_1ad2f22450377db20233914c9ec0a21df4ad682b0691e051ce65913fdf42d4be1af" prot="public" virt="non-virtual"><scope>Frame</scope><name>FT_DYNAMIC</name></member>
+      <member refid="class_frame_1ad2f22450377db20233914c9ec0a21df4ac73961ac9e615a4da4339c8e20fe92ef" prot="public" virt="non-virtual"><scope>Frame</scope><name>FT_INERTIAL</name></member>
+      <member refid="class_frame_1ad2f22450377db20233914c9ec0a21df4a03c1983206078ccc3fd8c290a5d63019" prot="public" virt="non-virtual"><scope>Frame</scope><name>FT_PCK</name></member>
+      <member refid="class_frame_1ad2f22450377db20233914c9ec0a21df4a3a52c9b5914442b7ca49e20720257800" prot="public" virt="non-virtual"><scope>Frame</scope><name>FT_TK</name></member>
+      <member refid="class_frame_1af143d92b7e9c07d2db5aec79b89ac1b2" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetBuiltInIds</name></member>
+      <member refid="class_frame_1ad41c119171bcaebc84a9c5e0daea6c92" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetCenterObject</name></member>
+      <member refid="class_frame_1a54fe03adc618817f27c43738ca77ccf8" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetCoverage</name></member>
+      <member refid="class_frame_1a676a0342efbbafb23ef5366e02843b15" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetFrameInfo</name></member>
+      <member refid="class_frame_1ac5865bd9a4b0f8904b059fc005311971" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetLoadedPckIds</name></member>
+      <member refid="class_frame_1afc3c2fb53313f43fd6b906cd5423145e" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetName</name></member>
+      <member refid="class_frame_1a80d4a5985129beb4d8010f072def67d7" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetPoolIds</name></member>
+      <member refid="class_frame_1a679aa287b6474930b7c1682f3a9ceb14" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetSpiceId</name></member>
+      <member refid="class_frame_1ad7596949a1ff9c2d1dd837e730f6aefc" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetSpiceName</name></member>
+      <member refid="class_frame_1a4862be40cebae8c367031baf2ca6dc8b" prot="public" virt="non-virtual"><scope>Frame</scope><name>GetTransformationMatrix</name></member>
+      <member refid="class_frame_1afbf0802e2374c57dd80f754bd0c232da" prot="public" virt="non-virtual"><scope>Frame</scope><name>HasAvailableData</name></member>
+      <member refid="class_frame_1af03488c8a8eb25e55725b1af7c379671" prot="public" virt="non-virtual"><scope>Frame</scope><name>HasLimitedCoverage</name></member>
+      <member refid="class_frame_1a83f98b1d0aa72dca955fd91752e6b499" prot="public" virt="non-virtual"><scope>Frame</scope><name>J2000</name></member>
+      <member refid="class_frame_1a33201e744d6593f2294bfb57bcb448d9" prot="public" virt="non-virtual"><scope>Frame</scope><name>MakeFrameId</name></member>
+      <member refid="class_frame_1a7d5f44e66ab5eee073195d23e190beeb" prot="private" virt="non-virtual"><scope>Frame</scope><name>name</name></member>
+      <member refid="class_frame_1a192985a57f75a6d3475bf5b63afa7191" prot="private" virt="non-virtual"><scope>Frame</scope><name>spiceId</name></member>
+      <member refid="class_frame_1a9fac9191222fbcf79954b5cb4fe8a181" prot="public" virt="non-virtual"><scope>Frame</scope><name>TransformVector</name></member>
+      <member refid="class_frame_1a2530927116bf3b764862623c518d274e" prot="public" virt="non-virtual"><scope>Frame</scope><name>ValidateId</name></member>
+      <member refid="class_frame_1abec8c7bccdfc88cb4da137caae9f73d6" prot="public" virt="non-virtual"><scope>Frame</scope><name>~Frame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

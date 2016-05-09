@@ -1,0 +1,189 @@
+\hypertarget{class_unit}{\section{Unit$<$ length, time, mass $>$ Class Template Reference}
+\label{class_unit}\index{Unit$<$ length, time, mass $>$@{Unit$<$ length, time, mass $>$}}
+}
+
+
+{\ttfamily \#include $<$Quantity.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_unit_a135a7f1e0f7e1163c4f4f312b45cdc83}{Unit} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_a9371a1f53f8067997cd15aaf657c62d0}{label}=\char`\"{}\char`\"{})
+\item 
+double \hyperlink{class_unit_abc965c27239020bcaa506a923567ac4f}{Get\+Multiplier} () const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_unit_a7874709adb65fd349a7fc2511c2f843c}{Set\+Label} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_a9371a1f53f8067997cd15aaf657c62d0}{label})
+\item 
+const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \& \hyperlink{class_unit_ac4e0cec1f68ac214f1cc050501597899}{str} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_unit}{This\+Unit} \hyperlink{class_unit_aa2102921ecd21d9938707db58e4df964}{Base\+Unit} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_a9371a1f53f8067997cd15aaf657c62d0}{label}=\char`\"{}\char`\"{})
+\item 
+static \hyperlink{class_unit}{This\+Unit} \hyperlink{class_unit_aa44ac3044c0cdb834cd220652e5d1c40}{Scaled\+Unit} (double multiplier, const \hyperlink{class_unit}{This\+Unit} \&\hyperlink{glext_8h_ad32bdec748ba376f6c0d2df39ab9a95b}{ref}=\hyperlink{class_unit}{This\+Unit}(), const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_a9371a1f53f8067997cd15aaf657c62d0}{label}=\char`\"{}\char`\"{})
+\item 
+static \hyperlink{class_unit}{This\+Unit} \hyperlink{class_unit_a62b5aa1a4619ce98223eb728f91cf28d}{Derived\+Unit} (const \hyperlink{class_unit}{Length\+Unit} \&length\+Unit, const \hyperlink{class_unit}{Time\+Unit} \&time\+Unit, const \hyperlink{class_unit}{Mass\+Unit} \&mass\+Unit, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_a9371a1f53f8067997cd15aaf657c62d0}{label}=\char`\"{}\char`\"{})
+\item 
+static \hyperlink{class_unit}{This\+Unit} \hyperlink{class_unit_ab06f5f16f209acf9edf464eab887147d}{Derived\+Unit} (const \hyperlink{class_unit}{Length\+Unit} \&length\+Unit, const \hyperlink{class_unit}{Time\+Unit} \&time\+Unit, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_a9371a1f53f8067997cd15aaf657c62d0}{label}=\char`\"{}\char`\"{})
+\item 
+static \hyperlink{class_unit}{This\+Unit} \hyperlink{class_unit_a5d25b24d83374e3955347683fac527b9}{Derived\+Unit} (const \hyperlink{class_unit}{Time\+Unit} \&time\+Unit, const \hyperlink{class_unit}{Mass\+Unit} \&mass\+Unit, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_a9371a1f53f8067997cd15aaf657c62d0}{label}=\char`\"{}\char`\"{})
+\item 
+static \hyperlink{class_unit}{This\+Unit} \hyperlink{class_unit_a49e42c94a0eaca0f7aee6ccfc100796a}{Derived\+Unit} (const \hyperlink{class_unit}{Length\+Unit} \&length\+Unit, const \hyperlink{class_unit}{Mass\+Unit} \&mass\+Unit, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_a9371a1f53f8067997cd15aaf657c62d0}{label}=\char`\"{}\char`\"{})
+\item 
+static double \hyperlink{class_unit_acf57b62d40c90ed9fa71375374dc3eb6}{Convert} (double \hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value}, const \hyperlink{class_unit}{This\+Unit} \&from, const \hyperlink{class_unit}{This\+Unit} \&to)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int length, int time, int mass$>$class Unit$<$ length, time, mass $>$}
+
+
+
+Definition at line 9 of file Quantity.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_unit_a135a7f1e0f7e1163c4f4f312b45cdc83}{\index{Unit@{Unit}!Unit@{Unit}}
+\index{Unit@{Unit}!Unit@{Unit}}
+\subsubsection[{Unit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Unit}$<$ {\bf length}, time, mass $>$\+::{\bf Unit} (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{label = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_unit_a135a7f1e0f7e1163c4f4f312b45cdc83}
+
+
+Definition at line 53 of file Quantity.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_unit_aa2102921ecd21d9938707db58e4df964}{\index{Unit@{Unit}!Base\+Unit@{Base\+Unit}}
+\index{Base\+Unit@{Base\+Unit}!Unit@{Unit}}
+\subsubsection[{Base\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ static {\bf This\+Unit} {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Base\+Unit (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{label = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_unit_aa2102921ecd21d9938707db58e4df964}
+
+
+Definition at line 18 of file Quantity.\+h.
+
+\hypertarget{class_unit_acf57b62d40c90ed9fa71375374dc3eb6}{\index{Unit@{Unit}!Convert@{Convert}}
+\index{Convert@{Convert}!Unit@{Unit}}
+\subsubsection[{Convert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ static double {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Convert (
+\begin{DoxyParamCaption}
+\item[{double}]{value, }
+\item[{const {\bf This\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{from, }
+\item[{const {\bf This\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_unit_acf57b62d40c90ed9fa71375374dc3eb6}
+
+
+Definition at line 87 of file Quantity.\+h.
+
+\hypertarget{class_unit_a62b5aa1a4619ce98223eb728f91cf28d}{\index{Unit@{Unit}!Derived\+Unit@{Derived\+Unit}}
+\index{Derived\+Unit@{Derived\+Unit}!Unit@{Unit}}
+\subsubsection[{Derived\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ static {\bf This\+Unit} {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Derived\+Unit (
+\begin{DoxyParamCaption}
+\item[{const {\bf Length\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{length\+Unit, }
+\item[{const {\bf Time\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{time\+Unit, }
+\item[{const {\bf Mass\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{mass\+Unit, }
+\item[{const {\bf std\+::string} \&}]{label = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_unit_a62b5aa1a4619ce98223eb728f91cf28d}
+
+
+Definition at line 26 of file Quantity.\+h.
+
+\hypertarget{class_unit_ab06f5f16f209acf9edf464eab887147d}{\index{Unit@{Unit}!Derived\+Unit@{Derived\+Unit}}
+\index{Derived\+Unit@{Derived\+Unit}!Unit@{Unit}}
+\subsubsection[{Derived\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ static {\bf This\+Unit} {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Derived\+Unit (
+\begin{DoxyParamCaption}
+\item[{const {\bf Length\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{length\+Unit, }
+\item[{const {\bf Time\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{time\+Unit, }
+\item[{const {\bf std\+::string} \&}]{label = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_unit_ab06f5f16f209acf9edf464eab887147d}
+
+
+Definition at line 36 of file Quantity.\+h.
+
+\hypertarget{class_unit_a5d25b24d83374e3955347683fac527b9}{\index{Unit@{Unit}!Derived\+Unit@{Derived\+Unit}}
+\index{Derived\+Unit@{Derived\+Unit}!Unit@{Unit}}
+\subsubsection[{Derived\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ static {\bf This\+Unit} {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Derived\+Unit (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{time\+Unit, }
+\item[{const {\bf Mass\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{mass\+Unit, }
+\item[{const {\bf std\+::string} \&}]{label = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_unit_a5d25b24d83374e3955347683fac527b9}
+
+
+Definition at line 40 of file Quantity.\+h.
+
+\hypertarget{class_unit_a49e42c94a0eaca0f7aee6ccfc100796a}{\index{Unit@{Unit}!Derived\+Unit@{Derived\+Unit}}
+\index{Derived\+Unit@{Derived\+Unit}!Unit@{Unit}}
+\subsubsection[{Derived\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ static {\bf This\+Unit} {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Derived\+Unit (
+\begin{DoxyParamCaption}
+\item[{const {\bf Length\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{length\+Unit, }
+\item[{const {\bf Mass\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{mass\+Unit, }
+\item[{const {\bf std\+::string} \&}]{label = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_unit_a49e42c94a0eaca0f7aee6ccfc100796a}
+
+
+Definition at line 44 of file Quantity.\+h.
+
+\hypertarget{class_unit_abc965c27239020bcaa506a923567ac4f}{\index{Unit@{Unit}!Get\+Multiplier@{Get\+Multiplier}}
+\index{Get\+Multiplier@{Get\+Multiplier}!Unit@{Unit}}
+\subsubsection[{Get\+Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ double {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Get\+Multiplier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_unit_abc965c27239020bcaa506a923567ac4f}
+
+
+Definition at line 72 of file Quantity.\+h.
+
+\hypertarget{class_unit_aa44ac3044c0cdb834cd220652e5d1c40}{\index{Unit@{Unit}!Scaled\+Unit@{Scaled\+Unit}}
+\index{Scaled\+Unit@{Scaled\+Unit}!Unit@{Unit}}
+\subsubsection[{Scaled\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ static {\bf This\+Unit} {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Scaled\+Unit (
+\begin{DoxyParamCaption}
+\item[{double}]{multiplier, }
+\item[{const {\bf This\+Unit}$<$ {\bf length}, time, mass $>$ \&}]{ref = {\ttfamily {\bf This\+Unit}$<$~{\bf length},~time,~mass~$>$()}, }
+\item[{const {\bf std\+::string} \&}]{label = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_unit_aa44ac3044c0cdb834cd220652e5d1c40}
+
+
+Definition at line 22 of file Quantity.\+h.
+
+\hypertarget{class_unit_a7874709adb65fd349a7fc2511c2f843c}{\index{Unit@{Unit}!Set\+Label@{Set\+Label}}
+\index{Set\+Label@{Set\+Label}!Unit@{Unit}}
+\subsubsection[{Set\+Label}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf void} {\bf Unit}$<$ {\bf length}, time, mass $>$\+::Set\+Label (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{label}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_unit_a7874709adb65fd349a7fc2511c2f843c}
+
+
+Definition at line 77 of file Quantity.\+h.
+
+\hypertarget{class_unit_ac4e0cec1f68ac214f1cc050501597899}{\index{Unit@{Unit}!str@{str}}
+\index{str@{str}!Unit@{Unit}}
+\subsubsection[{str}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ const {\bf std\+::string}\& {\bf Unit}$<$ {\bf length}, time, mass $>$\+::str (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_unit_ac4e0cec1f68ac214f1cc050501597899}
+
+
+Definition at line 82 of file Quantity.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+Math/\hyperlink{_quantity_8h}{Quantity.\+h}\end{DoxyCompactItemize}

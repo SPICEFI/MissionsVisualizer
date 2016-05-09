@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct___g_p_u___d_e_v_i_c_e" kind="struct" prot="public">
+    <compoundname>_GPU_DEVICE</compoundname>
+    <includes refid="wglext_8h" local="no">wglext.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___g_p_u___d_e_v_i_c_e_1afcb22f16ba9e526610489ff56ab78ddb" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD _GPU_DEVICE::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" line="458" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___g_p_u___d_e_v_i_c_e_1a604bfab61f1a2c5d1e635837d369ba14" prot="public" static="no" mutable="no">
+        <type>CHAR</type>
+        <definition>CHAR _GPU_DEVICE::DeviceName[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>DeviceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" line="459" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___g_p_u___d_e_v_i_c_e_1aff8b7920ccc85afcd6f325da6cdb0b73" prot="public" static="no" mutable="no">
+        <type>CHAR</type>
+        <definition>CHAR _GPU_DEVICE::DeviceString[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>DeviceString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" line="460" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___g_p_u___d_e_v_i_c_e_1a008db9d0f5fc13a5160805f40465f14a" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD _GPU_DEVICE::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" line="461" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___g_p_u___d_e_v_i_c_e_1aeb573bbeb3b6c589246720ef259b9a27" prot="public" static="no" mutable="no">
+        <type>RECT</type>
+        <definition>RECT _GPU_DEVICE::rcVirtualScreen</definition>
+        <argsstring></argsstring>
+        <name>rcVirtualScreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" line="462" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" line="457" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/wglext.h" bodystart="457" bodyend="463"/>
+    <listofallmembers>
+      <member refid="struct___g_p_u___d_e_v_i_c_e_1afcb22f16ba9e526610489ff56ab78ddb" prot="public" virt="non-virtual"><scope>_GPU_DEVICE</scope><name>cb</name></member>
+      <member refid="struct___g_p_u___d_e_v_i_c_e_1a604bfab61f1a2c5d1e635837d369ba14" prot="public" virt="non-virtual"><scope>_GPU_DEVICE</scope><name>DeviceName</name></member>
+      <member refid="struct___g_p_u___d_e_v_i_c_e_1aff8b7920ccc85afcd6f325da6cdb0b73" prot="public" virt="non-virtual"><scope>_GPU_DEVICE</scope><name>DeviceString</name></member>
+      <member refid="struct___g_p_u___d_e_v_i_c_e_1a008db9d0f5fc13a5160805f40465f14a" prot="public" virt="non-virtual"><scope>_GPU_DEVICE</scope><name>Flags</name></member>
+      <member refid="struct___g_p_u___d_e_v_i_c_e_1aeb573bbeb3b6c589246720ef259b9a27" prot="public" virt="non-virtual"><scope>_GPU_DEVICE</scope><name>rcVirtualScreen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

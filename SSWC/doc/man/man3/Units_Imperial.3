@@ -1,0 +1,79 @@
+.TH "Units::Imperial" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Units::Imperial \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Quantity\&.h>\fP
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const \fBLengthUnit\fP \fBinches\fP = \fBLengthUnit::ScaledUnit\fP(0\&.0254, \fBUnits::Metric::meters\fP, 'in')"
+.br
+.ti -1c
+.RI "static const \fBLengthUnit\fP \fBfeet\fP = \fBLengthUnit::ScaledUnit\fP(0\&.3048, \fBUnits::Metric::meters\fP, 'ft')"
+.br
+.ti -1c
+.RI "static const \fBLengthUnit\fP \fByards\fP = \fBLengthUnit::ScaledUnit\fP(3\&.0, \fBUnits::Imperial::feet\fP, 'yd')"
+.br
+.ti -1c
+.RI "static const \fBLengthUnit\fP \fBmiles\fP = \fBLengthUnit::ScaledUnit\fP(5280\&.0, \fBUnits::Imperial::feet\fP, 'mi')"
+.br
+.ti -1c
+.RI "static const \fBMassUnit\fP \fBounces\fP = \fBMassUnit::ScaledUnit\fP(1\&.0/16\&.0, \fBUnits::Imperial::pounds\fP, 'oz')"
+.br
+.ti -1c
+.RI "static const \fBMassUnit\fP \fBpounds\fP = \fBMassUnit::ScaledUnit\fP(453\&.59237, \fBUnits::Metric::grams\fP, 'lb')"
+.br
+.ti -1c
+.RI "static const \fBMassUnit\fP \fBtons\fP = \fBMassUnit::ScaledUnit\fP(2240\&.0, \fBUnits::Imperial::pounds\fP, 't')"
+.br
+.ti -1c
+.RI "static const \fBVelocityUnit\fP \fBmph\fP = \fBVelocityUnit::DerivedUnit\fP(\fBUnits::Imperial::miles\fP, \fBUnits::Common::hours\fP, 'mph')"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 251 of file Quantity\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBLengthUnit\fP Units::Imperial::feet = \fBLengthUnit::ScaledUnit\fP(0\&.3048, \fBUnits::Metric::meters\fP, 'ft')\fC [static]\fP"
+
+.PP
+Definition at line 255 of file Quantity\&.h\&.
+.SS "const \fBLengthUnit\fP Units::Imperial::inches = \fBLengthUnit::ScaledUnit\fP(0\&.0254, \fBUnits::Metric::meters\fP, 'in')\fC [static]\fP"
+
+.PP
+Definition at line 254 of file Quantity\&.h\&.
+.SS "const \fBLengthUnit\fP Units::Imperial::miles = \fBLengthUnit::ScaledUnit\fP(5280\&.0, \fBUnits::Imperial::feet\fP, 'mi')\fC [static]\fP"
+
+.PP
+Definition at line 257 of file Quantity\&.h\&.
+.SS "const \fBVelocityUnit\fP Units::Imperial::mph = \fBVelocityUnit::DerivedUnit\fP(\fBUnits::Imperial::miles\fP, \fBUnits::Common::hours\fP, 'mph')\fC [static]\fP"
+
+.PP
+Definition at line 263 of file Quantity\&.h\&.
+.SS "const \fBMassUnit\fP Units::Imperial::ounces = \fBMassUnit::ScaledUnit\fP(1\&.0/16\&.0, \fBUnits::Imperial::pounds\fP, 'oz')\fC [static]\fP"
+
+.PP
+Definition at line 259 of file Quantity\&.h\&.
+.SS "const \fBMassUnit\fP Units::Imperial::pounds = \fBMassUnit::ScaledUnit\fP(453\&.59237, \fBUnits::Metric::grams\fP, 'lb')\fC [static]\fP"
+
+.PP
+Definition at line 260 of file Quantity\&.h\&.
+.SS "const \fBMassUnit\fP Units::Imperial::tons = \fBMassUnit::ScaledUnit\fP(2240\&.0, \fBUnits::Imperial::pounds\fP, 't')\fC [static]\fP"
+
+.PP
+Definition at line 261 of file Quantity\&.h\&.
+.SS "const \fBLengthUnit\fP Units::Imperial::yards = \fBLengthUnit::ScaledUnit\fP(3\&.0, \fBUnits::Imperial::feet\fP, 'yd')\fC [static]\fP"
+
+.PP
+Definition at line 256 of file Quantity\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

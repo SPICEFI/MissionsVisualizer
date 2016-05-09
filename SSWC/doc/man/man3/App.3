@@ -1,0 +1,292 @@
+.TH "App" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+App \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <App\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDefaultUnits\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBUnitsType\fP { \fBUT_DEFAULT\fP, \fBUT_METRIC\fP, \fBUT_IMPERIAL\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBApp\fP ()"
+.br
+.ti -1c
+.RI "\fB~App\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBInit\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadKernel\fP (const \fBstd::string\fP &file) const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetLoggingFile\fP (const \fBstd::string\fP &file) const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetReferenceFrame\fP (const \fBFrame\fP &\fBref\fP)"
+.br
+.ti -1c
+.RI "const \fBFrame\fP & \fBGetReferenceFrame\fP () const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetDefaultUnits\fP (\fBUnitsType\fP \fBunits\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetIndividualUnits\fP (const \fBDefaultUnits\fP &defUnits)"
+.br
+.ti -1c
+.RI "const \fBLengthUnit\fP & \fBLengthUnit\fP () const "
+.br
+.ti -1c
+.RI "const \fBVelocityUnit\fP & \fBVelocityUnit\fP () const "
+.br
+.ti -1c
+.RI "const \fBMassUnit\fP & \fBMassUnit\fP () const "
+.br
+.ti -1c
+.RI "const \fBGravitationalParameterUnit\fP & \fBGMUnit\fP () const "
+.br
+.ti -1c
+.RI "const \fBAccelerationUnit\fP & \fBAccelerationUnit\fP () const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadChildren\fP (const \fBSpaceObject\fP &parent, bool includeSelf=false, bool recursive=false)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadParent\fP (const \fBSpaceObject\fP &child, bool includeMassCenter, bool includeSelf=false, bool recursive=false)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadMoons\fP (const \fBSpaceObject\fP &parent)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadMoons\fP (const \fBstd::string\fP &parentName)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadSolarSystem\fP (bool entire=false)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadAllAvailableObjects\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAddObject\fP (const \fBSpaceObject\fP &\fBobj\fP)"
+.br
+.ti -1c
+.RI "size_t \fBGetObjectsLength\fP () const "
+.br
+.ti -1c
+.RI "\fBSpaceObject\fP & \fBGetObjectByIndex\fP (size_t idx)"
+.br
+.ti -1c
+.RI "bool \fBCheckObjectExists\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "bool \fBCheckObjectExists\fP (const \fBstd::string\fP &\fBname\fP)"
+.br
+.ti -1c
+.RI "bool \fBCheckObjectExists\fP (const \fBSpaceObject\fP &sample)"
+.br
+.ti -1c
+.RI "\fBSpaceObject\fP & \fBRetrieveObject\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "\fBSpaceObject\fP & \fBRetrieveObject\fP (const \fBstd::string\fP &\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBSpaceObject\fP & \fBRetrieveObject\fP (const \fBSpaceObject\fP &sample)"
+.br
+.ti -1c
+.RI "std::vector< \fBSpaceObject\fP * > \fBGetLoadedPlanets\fP ()"
+.br
+.ti -1c
+.RI "std::vector< \fBSpaceObject\fP * > \fBGetLoadedMoonsOf\fP (const \fBSpaceObject\fP &planet)"
+.br
+.ti -1c
+.RI "std::vector< \fBSpaceObject\fP * > \fBGetLoadedMoonsOf\fP (const \fBstd::string\fP &\fBplanetName\fP)"
+.br
+.ti -1c
+.RI "std::vector< \fBSpaceObject\fP * > \fBGetLoadedMoons\fP ()"
+.br
+.ti -1c
+.RI "std::vector< \fBSpaceObject\fP * > \fBGetLoadedBarycenters\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 13 of file App\&.h\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBApp::UnitsType\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUT_DEFAULT \fP\fP
+.TP
+\fB\fIUT_METRIC \fP\fP
+.TP
+\fB\fIUT_IMPERIAL \fP\fP
+.PP
+Definition at line 16 of file App\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "App::App ()"
+
+.PP
+Definition at line 3 of file App\&.cpp\&.
+.SS "App::~App ()"
+
+.PP
+Definition at line 8 of file App\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBAccelerationUnit\fP & App::AccelerationUnit () const"
+
+.PP
+Definition at line 90 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::AddObject (const \fBSpaceObject\fP &obj)"
+
+.PP
+Definition at line 199 of file App\&.cpp\&.
+.SS "bool App::CheckObjectExists (longid)"
+
+.PP
+Definition at line 218 of file App\&.cpp\&.
+.SS "bool App::CheckObjectExists (const \fBstd::string\fP &name)"
+
+.PP
+Definition at line 229 of file App\&.cpp\&.
+.SS "bool App::CheckObjectExists (const \fBSpaceObject\fP &sample)"
+
+.PP
+Definition at line 240 of file App\&.cpp\&.
+.SS "std::vector< \fBSpaceObject\fP * > App::GetLoadedBarycenters ()"
+
+.PP
+Definition at line 318 of file App\&.cpp\&.
+.SS "std::vector< \fBSpaceObject\fP * > App::GetLoadedMoons ()"
+
+.PP
+Definition at line 306 of file App\&.cpp\&.
+.SS "std::vector< \fBSpaceObject\fP * > App::GetLoadedMoonsOf (const \fBSpaceObject\fP &planet)"
+
+.PP
+Definition at line 286 of file App\&.cpp\&.
+.SS "std::vector< \fBSpaceObject\fP * > App::GetLoadedMoonsOf (const \fBstd::string\fP &planetName)"
+
+.PP
+Definition at line 301 of file App\&.cpp\&.
+.SS "std::vector< \fBSpaceObject\fP * > App::GetLoadedPlanets ()"
+
+.PP
+Definition at line 274 of file App\&.cpp\&.
+.SS "\fBSpaceObject\fP & App::GetObjectByIndex (size_tidx)"
+
+.PP
+Definition at line 213 of file App\&.cpp\&.
+.SS "size_t App::GetObjectsLength () const"
+
+.PP
+Definition at line 208 of file App\&.cpp\&.
+.SS "const \fBFrame\fP & App::GetReferenceFrame () const"
+
+.PP
+Definition at line 40 of file App\&.cpp\&.
+.SS "const \fBGravitationalParameterUnit\fP & App::GMUnit () const"
+
+.PP
+Definition at line 85 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::Init ()"
+
+.PP
+Definition at line 19 of file App\&.cpp\&.
+.SS "const \fBLengthUnit\fP & App::LengthUnit () const"
+
+.PP
+Definition at line 70 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::LoadAllAvailableObjects ()"
+
+.PP
+Definition at line 185 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::LoadChildren (const \fBSpaceObject\fP &parent, boolincludeSelf = \fCfalse\fP, boolrecursive = \fCfalse\fP)"
+
+.PP
+Definition at line 100 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::LoadKernel (const \fBstd::string\fP &file) const"
+
+.PP
+Definition at line 25 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::LoadMoons (const \fBSpaceObject\fP &parent)"
+
+.PP
+Definition at line 150 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::LoadMoons (const \fBstd::string\fP &parentName)"
+
+.PP
+Definition at line 160 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::LoadParent (const \fBSpaceObject\fP &child, boolincludeMassCenter, boolincludeSelf = \fCfalse\fP, boolrecursive = \fCfalse\fP)"
+
+.PP
+Definition at line 123 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::LoadSolarSystem (boolentire = \fCfalse\fP)"
+
+.PP
+Definition at line 165 of file App\&.cpp\&.
+.SS "const \fBMassUnit\fP & App::MassUnit () const"
+
+.PP
+Definition at line 80 of file App\&.cpp\&.
+.SS "\fBSpaceObject\fP & App::RetrieveObject (longid)"
+
+.PP
+Definition at line 245 of file App\&.cpp\&.
+.SS "\fBSpaceObject\fP & App::RetrieveObject (const \fBstd::string\fP &name)"
+
+.PP
+Definition at line 258 of file App\&.cpp\&.
+.SS "\fBSpaceObject\fP & App::RetrieveObject (const \fBSpaceObject\fP &sample)"
+
+.PP
+Definition at line 269 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::SetDefaultUnits (\fBUnitsType\fPunits)"
+
+.PP
+Definition at line 45 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::SetIndividualUnits (const \fBDefaultUnits\fP &defUnits)"
+
+.PP
+Definition at line 95 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::SetLoggingFile (const \fBstd::string\fP &file) const"
+
+.PP
+Definition at line 30 of file App\&.cpp\&.
+.SS "\fBvoid\fP App::SetReferenceFrame (const \fBFrame\fP &ref)"
+
+.PP
+Definition at line 35 of file App\&.cpp\&.
+.SS "const \fBVelocityUnit\fP & App::VelocityUnit () const"
+
+.PP
+Definition at line 75 of file App\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

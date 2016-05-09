@@ -1,0 +1,295 @@
+.TH "SpaceObject" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SpaceObject \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SpaceObject\&.h>\fP
+.PP
+Inherited by \fBSpaceBody\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSpaceObject\fP (long \fBspiceId\fP, const \fBstd::string\fP &\fBname\fP='')"
+.br
+.ti -1c
+.RI "\fBSpaceObject\fP (const \fBstd::string\fP &spiceName, const \fBstd::string\fP &\fBname\fP='')"
+.br
+.ti -1c
+.RI "virtual \fB~SpaceObject\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBSpaceObject\fP * \fBClone\fP () const "
+.br
+.ti -1c
+.RI "long \fBGetSpiceId\fP () const "
+.br
+.ti -1c
+.RI "\fBstd::string\fP \fBGetSpiceName\fP () const "
+.br
+.ti -1c
+.RI "const \fBstd::string\fP & \fBGetName\fP () const "
+.br
+.ti -1c
+.RI "\fBVector3T\fP< \fBLength\fP > \fBGetPosition\fP (const \fBDate\fP &\fBt\fP, const \fBSpaceObject\fP &relativeTo, const \fBFrame\fP &frame) const "
+.br
+.ti -1c
+.RI "\fBVector3T\fP< \fBLength\fP > \fBGetPosition\fP (const \fBDate\fP &\fBt\fP, const \fBFrame\fP &frame) const "
+.br
+.ti -1c
+.RI "\fBVector3T\fP< \fBVelocity\fP > \fBGetVelocity\fP (const \fBDate\fP &\fBt\fP, const \fBSpaceObject\fP &relativeTo, const \fBFrame\fP &frame) const "
+.br
+.ti -1c
+.RI "\fBVector3T\fP< \fBVelocity\fP > \fBGetVelocity\fP (const \fBDate\fP &\fBt\fP, const \fBFrame\fP &frame) const "
+.br
+.ti -1c
+.RI "\fBWindow\fP \fBGetCoverage\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIsBarycenter\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIsPlanetaryBarycenter\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIsSSB\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIsPlanet\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIsMoon\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIsBody\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIsSun\fP () const "
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBValidateId\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static bool \fBIsBarycenter\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static bool \fBIsPlanetaryBarycenter\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static bool \fBIsSSB\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static bool \fBIsPlanet\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static bool \fBIsMoon\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static bool \fBIsBody\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static bool \fBIsSun\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static std::vector< long > \fBFindChildObjectIds\fP (long \fBid\fP, bool includeMassCenter=true)"
+.br
+.ti -1c
+.RI "static long \fBFindChildMassCenterId\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static std::vector< long > \fBFindMoonIds\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static long \fBFindParentObjectId\fP (long \fBid\fP)"
+.br
+.ti -1c
+.RI "static std::vector< long > \fBGetLoadedSpkIds\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const \fBSpaceObject\fP \fBSSB\fP = \fBSpaceObject\fP(\fBSSB_SPICE_ID\fP, 'Solar System Barycenter')"
+.br
+.ti -1c
+.RI "static const \fBSpaceObject\fP \fBSun\fP = \fBSpaceObject\fP(\fBSUN_SPICE_ID\fP, 'Sun')"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "long \fBspiceId\fP"
+.br
+.ti -1c
+.RI "\fBstd::string\fP \fBname\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 20 of file SpaceObject\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SpaceObject::SpaceObject (longspiceId, const \fBstd::string\fP &name = \fC''\fP)"
+
+.PP
+Definition at line 3 of file SpaceObject\&.cpp\&.
+.SS "SpaceObject::SpaceObject (const \fBstd::string\fP &spiceName, const \fBstd::string\fP &name = \fC''\fP)"
+
+.PP
+Definition at line 8 of file SpaceObject\&.cpp\&.
+.SS "SpaceObject::~SpaceObject ()\fC [virtual]\fP"
+
+.PP
+Definition at line 37 of file SpaceObject\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBSpaceObject\fP * SpaceObject::Clone () const\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBSpaceBody\fP\&.
+.PP
+Definition at line 42 of file SpaceObject\&.cpp\&.
+.SS "long SpaceObject::FindChildMassCenterId (longid)\fC [static]\fP"
+
+.PP
+Definition at line 265 of file SpaceObject\&.cpp\&.
+.SS "std::vector< long > SpaceObject::FindChildObjectIds (longid, boolincludeMassCenter = \fCtrue\fP)\fC [static]\fP"
+
+.PP
+Definition at line 234 of file SpaceObject\&.cpp\&.
+.SS "std::vector< long > SpaceObject::FindMoonIds (longid)\fC [static]\fP"
+
+.PP
+Definition at line 275 of file SpaceObject\&.cpp\&.
+.SS "long SpaceObject::FindParentObjectId (longid)\fC [static]\fP"
+
+.PP
+Definition at line 285 of file SpaceObject\&.cpp\&.
+.SS "\fBWindow\fP SpaceObject::GetCoverage () const"
+
+.PP
+Definition at line 118 of file SpaceObject\&.cpp\&.
+.SS "std::vector< long > SpaceObject::GetLoadedSpkIds ()\fC [static]\fP"
+
+.PP
+Definition at line 301 of file SpaceObject\&.cpp\&.
+.SS "const \fBstd::string\fP & SpaceObject::GetName () const"
+
+.PP
+Definition at line 61 of file SpaceObject\&.cpp\&.
+.SS "\fBVector3T\fP< \fBLength\fP > SpaceObject::GetPosition (const \fBDate\fP &t, const \fBSpaceObject\fP &relativeTo, const \fBFrame\fP &frame) const"
+
+.PP
+Definition at line 66 of file SpaceObject\&.cpp\&.
+.SS "\fBVector3T\fP< \fBLength\fP > SpaceObject::GetPosition (const \fBDate\fP &t, const \fBFrame\fP &frame) const"
+
+.PP
+Definition at line 84 of file SpaceObject\&.cpp\&.
+.SS "long SpaceObject::GetSpiceId () const"
+
+.PP
+Definition at line 47 of file SpaceObject\&.cpp\&.
+.SS "\fBstd::string\fP SpaceObject::GetSpiceName () const"
+
+.PP
+Definition at line 52 of file SpaceObject\&.cpp\&.
+.SS "\fBVector3T\fP< \fBVelocity\fP > SpaceObject::GetVelocity (const \fBDate\fP &t, const \fBSpaceObject\fP &relativeTo, const \fBFrame\fP &frame) const"
+
+.PP
+Definition at line 91 of file SpaceObject\&.cpp\&.
+.SS "\fBVector3T\fP< \fBVelocity\fP > SpaceObject::GetVelocity (const \fBDate\fP &t, const \fBFrame\fP &frame) const"
+
+.PP
+Definition at line 111 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsBarycenter () const"
+
+.PP
+Definition at line 134 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsBarycenter (longid)\fC [static]\fP"
+
+.PP
+Definition at line 178 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsBody () const"
+
+.PP
+Definition at line 159 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsBody (longid)\fC [static]\fP"
+
+.PP
+Definition at line 218 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsMoon () const"
+
+.PP
+Definition at line 154 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsMoon (longid)\fC [static]\fP"
+
+.PP
+Definition at line 210 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsPlanet () const"
+
+.PP
+Definition at line 149 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsPlanet (longid)\fC [static]\fP"
+
+.PP
+Definition at line 202 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsPlanetaryBarycenter () const"
+
+.PP
+Definition at line 139 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsPlanetaryBarycenter (longid)\fC [static]\fP"
+
+.PP
+Definition at line 186 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsSSB () const"
+
+.PP
+Definition at line 144 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsSSB (longid)\fC [static]\fP"
+
+.PP
+Definition at line 194 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsSun () const"
+
+.PP
+Definition at line 164 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::IsSun (longid)\fC [static]\fP"
+
+.PP
+Definition at line 226 of file SpaceObject\&.cpp\&.
+.SS "bool SpaceObject::ValidateId (longid)\fC [static]\fP"
+
+.PP
+Definition at line 169 of file SpaceObject\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBstd::string\fP SpaceObject::name\fC [protected]\fP"
+
+.PP
+Definition at line 72 of file SpaceObject\&.h\&.
+.SS "long SpaceObject::spiceId\fC [protected]\fP"
+
+.PP
+Definition at line 71 of file SpaceObject\&.h\&.
+.SS "const \fBSpaceObject\fP SpaceObject::SSB = \fBSpaceObject\fP(\fBSSB_SPICE_ID\fP, 'Solar System Barycenter')\fC [static]\fP"
+
+.PP
+Definition at line 75 of file SpaceObject\&.h\&.
+.SS "const \fBSpaceObject\fP SpaceObject::Sun = \fBSpaceObject\fP(\fBSUN_SPICE_ID\fP, 'Sun')\fC [static]\fP"
+
+.PP
+Definition at line 76 of file SpaceObject\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

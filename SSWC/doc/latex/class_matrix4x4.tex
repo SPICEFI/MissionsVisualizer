@@ -1,0 +1,211 @@
+\hypertarget{class_matrix4x4}{\section{Matrix4x4 Class Reference}
+\label{class_matrix4x4}\index{Matrix4x4@{Matrix4x4}}
+}
+
+
+{\ttfamily \#include $<$Matrix4x4.\+h$>$}
+
+
+
+Collaboration diagram for Matrix4x4\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_matrix4x4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matrix4x4_a714a467ba7f85f88ebe3897b5e3580be}{Matrix4x4} ()
+\item 
+\hyperlink{class_matrix4x4_a870cfc231c909b9b2eed7de0568470f2}{Matrix4x4} (const float $\ast$\hyperlink{glext_8h_a11941354c1d09e70ec63bde35fc79d4f}{m})
+\item 
+\hyperlink{class_matrix4x4_a3b0a9ee0e5113c7805c3d0bb54b25460}{Matrix4x4} (const float \hyperlink{glext_8h_a11941354c1d09e70ec63bde35fc79d4f}{m}\mbox{[}\hyperlink{_matrix4x4_8h_ac25189db92959bff3c6c2adf4c34b50a}{D\+I\+M}\mbox{]}\mbox{[}\hyperlink{_matrix4x4_8h_ac25189db92959bff3c6c2adf4c34b50a}{D\+I\+M}\mbox{]})
+\item 
+\hyperlink{class_matrix4x4_a800b92eacd31be52d0ad1c52d74bd16a}{Matrix4x4} (float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_matrix4x4_acb07f122201caa230eccaeb1688a7bb2}{Set} (const float $\ast$\hyperlink{glext_8h_a11941354c1d09e70ec63bde35fc79d4f}{m})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_matrix4x4_a1e52f1eba7ea388bbca497a988e6db3f}{Set} (size\+\_\+t \hyperlink{glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}, size\+\_\+t col, float \hyperlink{glext_8h_a26942fd2ed566ef553eae82d2c109c8f}{val})
+\item 
+float \hyperlink{class_matrix4x4_a2fa8d389f00e100783d96dca2841dcd9}{Get} (size\+\_\+t \hyperlink{glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}, size\+\_\+t col) const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_matrix4x4_a1ac1a48d82ace2c2ac98c2bb86ff7b5f}{Get\+Row\+Major} (float $\ast$\hyperlink{glext_8h_a11941354c1d09e70ec63bde35fc79d4f}{m}) const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_matrix4x4_a5868dcbb00ef438b651a90ac0950f93c}{Get\+Column\+Major} (float $\ast$\hyperlink{glext_8h_a11941354c1d09e70ec63bde35fc79d4f}{m}) const 
+\item 
+bool \hyperlink{class_matrix4x4_a3cfb5cb29c3afa4bff1514fdfd1551c0}{Is\+Row\+Col\+Correct} (size\+\_\+t \hyperlink{glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}, size\+\_\+t col) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{class_matrix4x4}{Matrix4x4} \hyperlink{class_matrix4x4_acd4066dd53c9d97a6675f5f63736387b}{Identity} = \hyperlink{class_matrix4x4}{Matrix4x4}(1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f)
+\item 
+static const \hyperlink{class_matrix4x4}{Matrix4x4} \hyperlink{class_matrix4x4_aa29a050d95415f55095e0a95cdca03c7}{Zero} = \hyperlink{class_matrix4x4}{Matrix4x4}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file Matrix4x4.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_matrix4x4_a714a467ba7f85f88ebe3897b5e3580be}{\index{Matrix4x4@{Matrix4x4}!Matrix4x4@{Matrix4x4}}
+\index{Matrix4x4@{Matrix4x4}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Matrix4x4}]{\setlength{\rightskip}{0pt plus 5cm}Matrix4x4\+::\+Matrix4x4 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_matrix4x4_a714a467ba7f85f88ebe3897b5e3580be}
+
+
+Definition at line 6 of file Matrix4x4.\+cpp.
+
+\hypertarget{class_matrix4x4_a870cfc231c909b9b2eed7de0568470f2}{\index{Matrix4x4@{Matrix4x4}!Matrix4x4@{Matrix4x4}}
+\index{Matrix4x4@{Matrix4x4}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Matrix4x4}]{\setlength{\rightskip}{0pt plus 5cm}Matrix4x4\+::\+Matrix4x4 (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_matrix4x4_a870cfc231c909b9b2eed7de0568470f2}
+
+
+Definition at line 17 of file Matrix4x4.\+cpp.
+
+\hypertarget{class_matrix4x4_a3b0a9ee0e5113c7805c3d0bb54b25460}{\index{Matrix4x4@{Matrix4x4}!Matrix4x4@{Matrix4x4}}
+\index{Matrix4x4@{Matrix4x4}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Matrix4x4}]{\setlength{\rightskip}{0pt plus 5cm}Matrix4x4\+::\+Matrix4x4 (
+\begin{DoxyParamCaption}
+\item[{const float}]{m\mbox{[}\+D\+I\+M\mbox{]}\mbox{[}\+D\+I\+M\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{class_matrix4x4_a3b0a9ee0e5113c7805c3d0bb54b25460}
+
+
+Definition at line 22 of file Matrix4x4.\+cpp.
+
+\hypertarget{class_matrix4x4_a800b92eacd31be52d0ad1c52d74bd16a}{\index{Matrix4x4@{Matrix4x4}!Matrix4x4@{Matrix4x4}}
+\index{Matrix4x4@{Matrix4x4}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Matrix4x4}]{\setlength{\rightskip}{0pt plus 5cm}Matrix4x4\+::\+Matrix4x4 (
+\begin{DoxyParamCaption}
+\item[{float}]{m11, }
+\item[{float}]{m12, }
+\item[{float}]{m13, }
+\item[{float}]{m14, }
+\item[{float}]{m21, }
+\item[{float}]{m22, }
+\item[{float}]{m23, }
+\item[{float}]{m24, }
+\item[{float}]{m31, }
+\item[{float}]{m32, }
+\item[{float}]{m33, }
+\item[{float}]{m34, }
+\item[{float}]{m41, }
+\item[{float}]{m42, }
+\item[{float}]{m43, }
+\item[{float}]{m44}
+\end{DoxyParamCaption}
+)}}\label{class_matrix4x4_a800b92eacd31be52d0ad1c52d74bd16a}
+
+
+Definition at line 27 of file Matrix4x4.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_matrix4x4_a2fa8d389f00e100783d96dca2841dcd9}{\index{Matrix4x4@{Matrix4x4}!Get@{Get}}
+\index{Get@{Get}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Get}]{\setlength{\rightskip}{0pt plus 5cm}float Matrix4x4\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{row, }
+\item[{size\+\_\+t}]{col}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix4x4_a2fa8d389f00e100783d96dca2841dcd9}
+
+
+Definition at line 53 of file Matrix4x4.\+cpp.
+
+\hypertarget{class_matrix4x4_a5868dcbb00ef438b651a90ac0950f93c}{\index{Matrix4x4@{Matrix4x4}!Get\+Column\+Major@{Get\+Column\+Major}}
+\index{Get\+Column\+Major@{Get\+Column\+Major}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Get\+Column\+Major}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Matrix4x4\+::\+Get\+Column\+Major (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{m}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix4x4_a5868dcbb00ef438b651a90ac0950f93c}
+
+
+Definition at line 78 of file Matrix4x4.\+cpp.
+
+\hypertarget{class_matrix4x4_a1ac1a48d82ace2c2ac98c2bb86ff7b5f}{\index{Matrix4x4@{Matrix4x4}!Get\+Row\+Major@{Get\+Row\+Major}}
+\index{Get\+Row\+Major@{Get\+Row\+Major}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Get\+Row\+Major}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Matrix4x4\+::\+Get\+Row\+Major (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{m}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix4x4_a1ac1a48d82ace2c2ac98c2bb86ff7b5f}
+
+
+Definition at line 61 of file Matrix4x4.\+cpp.
+
+\hypertarget{class_matrix4x4_a3cfb5cb29c3afa4bff1514fdfd1551c0}{\index{Matrix4x4@{Matrix4x4}!Is\+Row\+Col\+Correct@{Is\+Row\+Col\+Correct}}
+\index{Is\+Row\+Col\+Correct@{Is\+Row\+Col\+Correct}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Is\+Row\+Col\+Correct}]{\setlength{\rightskip}{0pt plus 5cm}bool Matrix4x4\+::\+Is\+Row\+Col\+Correct (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{row, }
+\item[{size\+\_\+t}]{col}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix4x4_a3cfb5cb29c3afa4bff1514fdfd1551c0}
+
+
+Definition at line 93 of file Matrix4x4.\+cpp.
+
+\hypertarget{class_matrix4x4_acb07f122201caa230eccaeb1688a7bb2}{\index{Matrix4x4@{Matrix4x4}!Set@{Set}}
+\index{Set@{Set}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Matrix4x4\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_matrix4x4_acb07f122201caa230eccaeb1688a7bb2}
+
+
+Definition at line 40 of file Matrix4x4.\+cpp.
+
+\hypertarget{class_matrix4x4_a1e52f1eba7ea388bbca497a988e6db3f}{\index{Matrix4x4@{Matrix4x4}!Set@{Set}}
+\index{Set@{Set}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Matrix4x4\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{row, }
+\item[{size\+\_\+t}]{col, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)}}\label{class_matrix4x4_a1e52f1eba7ea388bbca497a988e6db3f}
+
+
+Definition at line 45 of file Matrix4x4.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_matrix4x4_acd4066dd53c9d97a6675f5f63736387b}{\index{Matrix4x4@{Matrix4x4}!Identity@{Identity}}
+\index{Identity@{Identity}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4x4} Matrix4x4\+::\+Identity = {\bf Matrix4x4}(1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_matrix4x4_acd4066dd53c9d97a6675f5f63736387b}
+
+
+Definition at line 32 of file Matrix4x4.\+h.
+
+\hypertarget{class_matrix4x4_aa29a050d95415f55095e0a95cdca03c7}{\index{Matrix4x4@{Matrix4x4}!Zero@{Zero}}
+\index{Zero@{Zero}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{Zero}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4x4} Matrix4x4\+::\+Zero = {\bf Matrix4x4}()\hspace{0.3cm}{\ttfamily [static]}}}\label{class_matrix4x4_aa29a050d95415f55095e0a95cdca03c7}
+
+
+Definition at line 33 of file Matrix4x4.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+Math/\hyperlink{_matrix4x4_8h}{Matrix4x4.\+h}\item 
+S\+S\+W\+C/src/\+Math/\hyperlink{_matrix4x4_8cpp}{Matrix4x4.\+cpp}\end{DoxyCompactItemize}

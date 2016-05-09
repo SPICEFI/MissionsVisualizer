@@ -1,0 +1,234 @@
+\hypertarget{classgl_camera}{\section{gl\+Camera Class Reference}
+\label{classgl_camera}\index{gl\+Camera@{gl\+Camera}}
+}
+
+
+{\ttfamily \#include $<$gl\+Cameara.\+h$>$}
+
+
+
+Collaboration diagram for gl\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classgl_camera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgl_camera_a8339c3cd03f2c15ea28cc4f7d473d3cd}{gl\+Camera} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{classgl_camera_aefdc27e4f845a5c3610044c78068f802}{Position\+Camera} (const \hyperlink{class_vector3}{Vector3} \&\hyperlink{classgl_camera_a4e7a84b7ccc0840f436d9792c5429c2b}{position}, const \hyperlink{class_vector3}{Vector3} \&\hyperlink{classgl_camera_a2d6263fab021ec81f9f13582f8bdcb9b}{view\+Vec}, const \hyperlink{class_vector3}{Vector3} \&\hyperlink{classgl_camera_a361375f29cfc87acae069ec5b45f56f4}{up\+Vec})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{classgl_camera_ad14659710098d9f0db8211c7681243b7}{Rotate\+Around\+Point} (\hyperlink{class_vector3}{Vector3} center, float \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, float \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, float \hyperlink{glext_8h_a1483160fae141afea848a5393c286b2b}{z})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{classgl_camera_ac5785ab7420408b165ad7a48aaab1a3a}{Move\+Camera} (float velocity)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{classgl_camera_a31b34555bdea70f380fe6810b6be24ed}{Strafe} (float \hyperlink{classgl_camera_a78fc5959743b15b58b90fb747642fee2}{speed})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{classgl_camera_a72ee7df8a391d2ce1be6cc997131143f}{Rotate} (float \hyperlink{glext_8h_a9e06c1f76a20fed54ca742cd25cb02c4}{angle}, float \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, float \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, float \hyperlink{glext_8h_a1483160fae141afea848a5393c286b2b}{z})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{classgl_camera_ab5c79ab0c78257e824f10bef3efbf61a}{set\+View\+By\+Mouse} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_aa105b18f96e6bc2485cb7f576a7fb9ba}{width}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_aa214bd63e12f7ddf524c83894fcc69a7}{height})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{classgl_camera_a1ab1368aaf700ab1a4c38f4332a4fc0e}{Update} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_routine_8cpp_a2ef9a98c01d810b5c65529f7a96db72c}{center\+X}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_routine_8cpp_a02c5292ed607e9932ef7083772bd1df8}{center\+Y}, bool \hyperlink{_routine_8cpp_a3772f1f217df2a7863cc26d1d8a5bbbe}{orientation\+Mode})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{classgl_camera_a7ad65ff247a29468cb939474e4c07c4b}{Focus\+On\+Planet} (\hyperlink{class_planet}{Planet} \&planet, \hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{classgl_camera_a1be4621c5b94b057920b3a2a27adb99b}{Retrieve\+Object\+I\+D} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_aa105b18f96e6bc2485cb7f576a7fb9ba}{width}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_aa214bd63e12f7ddf524c83894fcc69a7}{height}, \hyperlink{class_scene}{Scene} scene, \hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{classgl_camera_a2d6263fab021ec81f9f13582f8bdcb9b}{view\+Vec}
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{classgl_camera_a361375f29cfc87acae069ec5b45f56f4}{up\+Vec}
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{classgl_camera_a4e7a84b7ccc0840f436d9792c5429c2b}{position}
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{classgl_camera_a8d5190bd0b8078e6b653904f9fc84687}{strafe\+Vec}
+\item 
+float \hyperlink{classgl_camera_a78fc5959743b15b58b90fb747642fee2}{speed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file gl\+Cameara.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgl_camera_a8339c3cd03f2c15ea28cc4f7d473d3cd}{\index{gl\+Camera@{gl\+Camera}!gl\+Camera@{gl\+Camera}}
+\index{gl\+Camera@{gl\+Camera}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{gl\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}gl\+Camera\+::gl\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_a8339c3cd03f2c15ea28cc4f7d473d3cd}
+
+
+Definition at line 9 of file gl\+Camera.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgl_camera_a7ad65ff247a29468cb939474e4c07c4b}{\index{gl\+Camera@{gl\+Camera}!Focus\+On\+Planet@{Focus\+On\+Planet}}
+\index{Focus\+On\+Planet@{Focus\+On\+Planet}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{Focus\+On\+Planet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\+Camera\+::\+Focus\+On\+Planet (
+\begin{DoxyParamCaption}
+\item[{{\bf Planet} \&}]{planet, }
+\item[{{\bf Date}}]{t, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_a7ad65ff247a29468cb939474e4c07c4b}
+
+
+Definition at line 204 of file gl\+Camera.\+cpp.
+
+\hypertarget{classgl_camera_ac5785ab7420408b165ad7a48aaab1a3a}{\index{gl\+Camera@{gl\+Camera}!Move\+Camera@{Move\+Camera}}
+\index{Move\+Camera@{Move\+Camera}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{Move\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\+Camera\+::\+Move\+Camera (
+\begin{DoxyParamCaption}
+\item[{float}]{velocity}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_ac5785ab7420408b165ad7a48aaab1a3a}
+
+
+Definition at line 24 of file gl\+Camera.\+cpp.
+
+\hypertarget{classgl_camera_aefdc27e4f845a5c3610044c78068f802}{\index{gl\+Camera@{gl\+Camera}!Position\+Camera@{Position\+Camera}}
+\index{Position\+Camera@{Position\+Camera}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{Position\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\+Camera\+::\+Position\+Camera (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{position, }
+\item[{const {\bf Vector3} \&}]{view\+Vec, }
+\item[{const {\bf Vector3} \&}]{up\+Vec}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_aefdc27e4f845a5c3610044c78068f802}
+
+
+Definition at line 17 of file gl\+Camera.\+cpp.
+
+\hypertarget{classgl_camera_a1be4621c5b94b057920b3a2a27adb99b}{\index{gl\+Camera@{gl\+Camera}!Retrieve\+Object\+I\+D@{Retrieve\+Object\+I\+D}}
+\index{Retrieve\+Object\+I\+D@{Retrieve\+Object\+I\+D}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{Retrieve\+Object\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} gl\+Camera\+::\+Retrieve\+Object\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y, }
+\item[{{\bf int}}]{width, }
+\item[{{\bf int}}]{height, }
+\item[{{\bf Scene}}]{scene, }
+\item[{{\bf Date}}]{t, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_a1be4621c5b94b057920b3a2a27adb99b}
+
+
+Definition at line 158 of file gl\+Camera.\+cpp.
+
+\hypertarget{classgl_camera_a72ee7df8a391d2ce1be6cc997131143f}{\index{gl\+Camera@{gl\+Camera}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{Rotate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\+Camera\+::\+Rotate (
+\begin{DoxyParamCaption}
+\item[{float}]{angle, }
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_a72ee7df8a391d2ce1be6cc997131143f}
+
+
+Definition at line 47 of file gl\+Camera.\+cpp.
+
+\hypertarget{classgl_camera_ad14659710098d9f0db8211c7681243b7}{\index{gl\+Camera@{gl\+Camera}!Rotate\+Around\+Point@{Rotate\+Around\+Point}}
+\index{Rotate\+Around\+Point@{Rotate\+Around\+Point}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{Rotate\+Around\+Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\+Camera\+::\+Rotate\+Around\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{center, }
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_ad14659710098d9f0db8211c7681243b7}
+\hypertarget{classgl_camera_ab5c79ab0c78257e824f10bef3efbf61a}{\index{gl\+Camera@{gl\+Camera}!set\+View\+By\+Mouse@{set\+View\+By\+Mouse}}
+\index{set\+View\+By\+Mouse@{set\+View\+By\+Mouse}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{set\+View\+By\+Mouse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\+Camera\+::set\+View\+By\+Mouse (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{width, }
+\item[{{\bf int}}]{height}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_ab5c79ab0c78257e824f10bef3efbf61a}
+
+
+Definition at line 72 of file gl\+Camera.\+cpp.
+
+\hypertarget{classgl_camera_a31b34555bdea70f380fe6810b6be24ed}{\index{gl\+Camera@{gl\+Camera}!Strafe@{Strafe}}
+\index{Strafe@{Strafe}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{Strafe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\+Camera\+::\+Strafe (
+\begin{DoxyParamCaption}
+\item[{float}]{speed}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_a31b34555bdea70f380fe6810b6be24ed}
+
+
+Definition at line 135 of file gl\+Camera.\+cpp.
+
+\hypertarget{classgl_camera_a1ab1368aaf700ab1a4c38f4332a4fc0e}{\index{gl\+Camera@{gl\+Camera}!Update@{Update}}
+\index{Update@{Update}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\+Camera\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{center\+X, }
+\item[{{\bf int}}]{center\+Y, }
+\item[{bool}]{orientation\+Mode}
+\end{DoxyParamCaption}
+)}}\label{classgl_camera_a1ab1368aaf700ab1a4c38f4332a4fc0e}
+
+
+Definition at line 142 of file gl\+Camera.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classgl_camera_a4e7a84b7ccc0840f436d9792c5429c2b}{\index{gl\+Camera@{gl\+Camera}!position@{position}}
+\index{position@{position}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} gl\+Camera\+::position}}\label{classgl_camera_a4e7a84b7ccc0840f436d9792c5429c2b}
+
+
+Definition at line 16 of file gl\+Cameara.\+h.
+
+\hypertarget{classgl_camera_a78fc5959743b15b58b90fb747642fee2}{\index{gl\+Camera@{gl\+Camera}!speed@{speed}}
+\index{speed@{speed}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}float gl\+Camera\+::speed}}\label{classgl_camera_a78fc5959743b15b58b90fb747642fee2}
+
+
+Definition at line 19 of file gl\+Cameara.\+h.
+
+\hypertarget{classgl_camera_a8d5190bd0b8078e6b653904f9fc84687}{\index{gl\+Camera@{gl\+Camera}!strafe\+Vec@{strafe\+Vec}}
+\index{strafe\+Vec@{strafe\+Vec}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{strafe\+Vec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} gl\+Camera\+::strafe\+Vec}}\label{classgl_camera_a8d5190bd0b8078e6b653904f9fc84687}
+
+
+Definition at line 17 of file gl\+Cameara.\+h.
+
+\hypertarget{classgl_camera_a361375f29cfc87acae069ec5b45f56f4}{\index{gl\+Camera@{gl\+Camera}!up\+Vec@{up\+Vec}}
+\index{up\+Vec@{up\+Vec}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{up\+Vec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} gl\+Camera\+::up\+Vec}}\label{classgl_camera_a361375f29cfc87acae069ec5b45f56f4}
+
+
+Definition at line 15 of file gl\+Cameara.\+h.
+
+\hypertarget{classgl_camera_a2d6263fab021ec81f9f13582f8bdcb9b}{\index{gl\+Camera@{gl\+Camera}!view\+Vec@{view\+Vec}}
+\index{view\+Vec@{view\+Vec}!gl\+Camera@{gl\+Camera}}
+\subsubsection[{view\+Vec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} gl\+Camera\+::view\+Vec}}\label{classgl_camera_a2d6263fab021ec81f9f13582f8bdcb9b}
+
+
+Definition at line 14 of file gl\+Cameara.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\hyperlink{gl_cameara_8h}{gl\+Cameara.\+h}\item 
+S\+S\+W\+C/src/\hyperlink{gl_camera_8cpp}{gl\+Camera.\+cpp}\end{DoxyCompactItemize}

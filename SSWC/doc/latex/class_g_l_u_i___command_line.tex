@@ -1,0 +1,299 @@
+\hypertarget{class_g_l_u_i___command_line}{\section{G\+L\+U\+I\+\_\+\+Command\+Line Class Reference}
+\label{class_g_l_u_i___command_line}\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+}
+
+
+{\ttfamily \#include $<$glui.\+h$>$}
+
+
+
+Inheritance diagram for G\+L\+U\+I\+\_\+\+Command\+Line\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_g_l_u_i___command_line__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+L\+U\+I\+\_\+\+Command\+Line\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_l_u_i___command_line__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{class_g_l_u_i___command_line_afcd6d744f2444c5a8cfbe053b5f37cd6a991ecacadb37c63013e7e24f4e86496f}{H\+I\+S\+T\+\_\+\+S\+I\+Z\+E} = 100
+ \}
+\item 
+typedef \hyperlink{class_g_l_u_i___edit_text}{G\+L\+U\+I\+\_\+\+Edit\+Text} \hyperlink{class_g_l_u_i___command_line_af9db00326863efa876cbb5c6b2d255b7}{Super}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i___command_line_aac74b2f165792141d6665de1690d0aa4}{key\+\_\+handler} (unsigned char key, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} modifiers)
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i___command_line_a88dafdb294350ff13c68973b59c308d1}{special\+\_\+handler} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} key, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} modifiers)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___command_line_a827fe6510aa5a38b0d2c5d016a93e1ba}{deactivate} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+virtual const char $\ast$ \hyperlink{class_g_l_u_i___command_line_a565145da6c84b9f925ca30735fc27686}{get\+\_\+history} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} command\+\_\+number) const 
+\item 
+virtual \hyperlink{glui_8h_aada824856f7bcf29794719981ebd8f60}{G\+L\+U\+I\+\_\+\+String} \& \hyperlink{class_g_l_u_i___command_line_a43403d60b3ac8534b84393c5328b7a03}{get\+\_\+history\+\_\+str} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} command\+\_\+number)
+\item 
+virtual const \hyperlink{glui_8h_aada824856f7bcf29794719981ebd8f60}{G\+L\+U\+I\+\_\+\+String} \& \hyperlink{class_g_l_u_i___command_line_a9365735c17057bea2039db66d8df67f3}{get\+\_\+history\+\_\+str} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} command\+\_\+number) const 
+\item 
+virtual \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___command_line_a6f8d01fd2db25c98723f85172c93fb01}{recall\+\_\+history} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} history\+\_\+number)
+\item 
+virtual \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___command_line_a82e2cd651cbc5431b6e4ad88c4c01472}{scroll\+\_\+history} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} direction)
+\item 
+virtual \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___command_line_a79894d2a826c7b042c93c401a915b28f}{add\+\_\+to\+\_\+history} (const char $\ast$\hyperlink{class_g_l_u_i___control_af0d60e9736f4dbc34e9a536e75876d72}{text})
+\item 
+virtual \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___command_line_a2fcb9cb75a1960fd56c187f940e22938}{reset\+\_\+history} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___command_line_a89815aca68b849830ba26253135efaf5}{dump} (F\+I\+L\+E $\ast$out, const char $\ast$\hyperlink{class_g_l_u_i___control_af0d60e9736f4dbc34e9a536e75876d72}{text})
+\item 
+\hyperlink{class_g_l_u_i___command_line_a1367881039ac1384af53f71fa35932b3}{G\+L\+U\+I\+\_\+\+Command\+Line} (\hyperlink{class_g_l_u_i___node}{G\+L\+U\+I\+\_\+\+Node} $\ast$\hyperlink{class_g_l_u_i___node_a8ed65d447784f6f88bd3e2e2bcac6cdb}{parent}, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} \hyperlink{class_g_l_u_i___control_a96060fe0cc6d537e736dd6eef78e24ab}{callback}=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___command_line_ae6c787ef5aa1a8c181eef9ade0c710a1}{G\+L\+U\+I\+\_\+\+Command\+Line} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{glui_8h_aada824856f7bcf29794719981ebd8f60}{G\+L\+U\+I\+\_\+\+String} $>$ \hyperlink{class_g_l_u_i___command_line_abc9dcdc275bb36dee1a9db8d348338b5}{hist\+\_\+list}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i___command_line_ab8d88779584003b82000b824ac6f4906}{curr\+\_\+hist}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i___command_line_a689ee6f9ede7c0f6c2060fd5650b1d22}{oldest\+\_\+hist}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i___command_line_af4f50f57b5a239d8564619ec0779518d}{newest\+\_\+hist}
+\item 
+bool \hyperlink{class_g_l_u_i___command_line_ac2f61fd248c6adb663c6de52e9e431fd}{commit\+\_\+flag}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___command_line_a21eeafb7d6f3df4d3ddee365422894b6}{common\+\_\+init} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1697 of file glui.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_g_l_u_i___command_line_af9db00326863efa876cbb5c6b2d255b7}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!Super@{Super}}
+\index{Super@{Super}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{Super}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf G\+L\+U\+I\+\_\+\+Edit\+Text} {\bf G\+L\+U\+I\+\_\+\+Command\+Line\+::\+Super}}}\label{class_g_l_u_i___command_line_af9db00326863efa876cbb5c6b2d255b7}
+
+
+Definition at line 1700 of file glui.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_g_l_u_i___command_line_afcd6d744f2444c5a8cfbe053b5f37cd6}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{class_g_l_u_i___command_line_afcd6d744f2444c5a8cfbe053b5f37cd6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{H\+I\+S\+T\+\_\+\+S\+I\+Z\+E@{H\+I\+S\+T\+\_\+\+S\+I\+Z\+E}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!H\+I\+S\+T\+\_\+\+S\+I\+Z\+E@{H\+I\+S\+T\+\_\+\+S\+I\+Z\+E}}\item[{\em 
+\hypertarget{class_g_l_u_i___command_line_afcd6d744f2444c5a8cfbe053b5f37cd6a991ecacadb37c63013e7e24f4e86496f}{H\+I\+S\+T\+\_\+\+S\+I\+Z\+E}\label{class_g_l_u_i___command_line_afcd6d744f2444c5a8cfbe053b5f37cd6a991ecacadb37c63013e7e24f4e86496f}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 1702 of file glui.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_l_u_i___command_line_a1367881039ac1384af53f71fa35932b3}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Command\+Line}]{\setlength{\rightskip}{0pt plus 5cm}G\+L\+U\+I\+\_\+\+Command\+Line\+::\+G\+L\+U\+I\+\_\+\+Command\+Line (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Node} $\ast$}]{parent, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf void} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i___command_line_a1367881039ac1384af53f71fa35932b3}
+\hypertarget{class_g_l_u_i___command_line_ae6c787ef5aa1a8c181eef9ade0c710a1}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Command\+Line}]{\setlength{\rightskip}{0pt plus 5cm}G\+L\+U\+I\+\_\+\+Command\+Line\+::\+G\+L\+U\+I\+\_\+\+Command\+Line (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_u_i___command_line_ae6c787ef5aa1a8c181eef9ade0c710a1}
+
+
+Definition at line 1730 of file glui.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_u_i___command_line_a79894d2a826c7b042c93c401a915b28f}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!add\+\_\+to\+\_\+history@{add\+\_\+to\+\_\+history}}
+\index{add\+\_\+to\+\_\+history@{add\+\_\+to\+\_\+history}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{add\+\_\+to\+\_\+history}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} G\+L\+U\+I\+\_\+\+Command\+Line\+::add\+\_\+to\+\_\+history (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a79894d2a826c7b042c93c401a915b28f}
+\hypertarget{class_g_l_u_i___command_line_a21eeafb7d6f3df4d3ddee365422894b6}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!common\+\_\+init@{common\+\_\+init}}
+\index{common\+\_\+init@{common\+\_\+init}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{common\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+\_\+\+Command\+Line\+::common\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_g_l_u_i___command_line_a21eeafb7d6f3df4d3ddee365422894b6}
+
+
+Definition at line 1732 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___command_line_a827fe6510aa5a38b0d2c5d016a93e1ba}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{deactivate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+\_\+\+Command\+Line\+::deactivate (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a827fe6510aa5a38b0d2c5d016a93e1ba}
+
+
+Reimplemented from \hyperlink{class_g_l_u_i___edit_text_a4a83b7bc0b6d60e4fa0dd797b49255ab}{G\+L\+U\+I\+\_\+\+Edit\+Text}.
+
+\hypertarget{class_g_l_u_i___command_line_a89815aca68b849830ba26253135efaf5}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!dump@{dump}}
+\index{dump@{dump}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+\_\+\+Command\+Line\+::dump (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{out, }
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i___command_line_a89815aca68b849830ba26253135efaf5}
+\hypertarget{class_g_l_u_i___command_line_a565145da6c84b9f925ca30735fc27686}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!get\+\_\+history@{get\+\_\+history}}
+\index{get\+\_\+history@{get\+\_\+history}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{get\+\_\+history}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ G\+L\+U\+I\+\_\+\+Command\+Line\+::get\+\_\+history (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{command\+\_\+number}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a565145da6c84b9f925ca30735fc27686}
+
+
+Definition at line 1714 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___command_line_a43403d60b3ac8534b84393c5328b7a03}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!get\+\_\+history\+\_\+str@{get\+\_\+history\+\_\+str}}
+\index{get\+\_\+history\+\_\+str@{get\+\_\+history\+\_\+str}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{get\+\_\+history\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf G\+L\+U\+I\+\_\+\+String}\& G\+L\+U\+I\+\_\+\+Command\+Line\+::get\+\_\+history\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{command\+\_\+number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a43403d60b3ac8534b84393c5328b7a03}
+
+
+Definition at line 1716 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___command_line_a9365735c17057bea2039db66d8df67f3}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!get\+\_\+history\+\_\+str@{get\+\_\+history\+\_\+str}}
+\index{get\+\_\+history\+\_\+str@{get\+\_\+history\+\_\+str}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{get\+\_\+history\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf G\+L\+U\+I\+\_\+\+String}\& G\+L\+U\+I\+\_\+\+Command\+Line\+::get\+\_\+history\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{command\+\_\+number}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a9365735c17057bea2039db66d8df67f3}
+
+
+Definition at line 1718 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___command_line_aac74b2f165792141d6665de1690d0aa4}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!key\+\_\+handler@{key\+\_\+handler}}
+\index{key\+\_\+handler@{key\+\_\+handler}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{key\+\_\+handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} G\+L\+U\+I\+\_\+\+Command\+Line\+::key\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{{\bf int}}]{modifiers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_aac74b2f165792141d6665de1690d0aa4}
+
+
+Reimplemented from \hyperlink{class_g_l_u_i___edit_text_a92fcd78877375cb2bba3b5e9f88635b6}{G\+L\+U\+I\+\_\+\+Edit\+Text}.
+
+\hypertarget{class_g_l_u_i___command_line_a6f8d01fd2db25c98723f85172c93fb01}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!recall\+\_\+history@{recall\+\_\+history}}
+\index{recall\+\_\+history@{recall\+\_\+history}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{recall\+\_\+history}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} G\+L\+U\+I\+\_\+\+Command\+Line\+::recall\+\_\+history (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{history\+\_\+number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a6f8d01fd2db25c98723f85172c93fb01}
+\hypertarget{class_g_l_u_i___command_line_a2fcb9cb75a1960fd56c187f940e22938}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!reset\+\_\+history@{reset\+\_\+history}}
+\index{reset\+\_\+history@{reset\+\_\+history}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{reset\+\_\+history}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} G\+L\+U\+I\+\_\+\+Command\+Line\+::reset\+\_\+history (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a2fcb9cb75a1960fd56c187f940e22938}
+\hypertarget{class_g_l_u_i___command_line_a82e2cd651cbc5431b6e4ad88c4c01472}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!scroll\+\_\+history@{scroll\+\_\+history}}
+\index{scroll\+\_\+history@{scroll\+\_\+history}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{scroll\+\_\+history}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} G\+L\+U\+I\+\_\+\+Command\+Line\+::scroll\+\_\+history (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a82e2cd651cbc5431b6e4ad88c4c01472}
+\hypertarget{class_g_l_u_i___command_line_a88dafdb294350ff13c68973b59c308d1}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!special\+\_\+handler@{special\+\_\+handler}}
+\index{special\+\_\+handler@{special\+\_\+handler}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{special\+\_\+handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} G\+L\+U\+I\+\_\+\+Command\+Line\+::special\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{key, }
+\item[{{\bf int}}]{modifiers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___command_line_a88dafdb294350ff13c68973b59c308d1}
+
+
+Reimplemented from \hyperlink{class_g_l_u_i___edit_text_a81478f6a0a9ba0c2dc715e0b3730077e}{G\+L\+U\+I\+\_\+\+Edit\+Text}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_g_l_u_i___command_line_ac2f61fd248c6adb663c6de52e9e431fd}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!commit\+\_\+flag@{commit\+\_\+flag}}
+\index{commit\+\_\+flag@{commit\+\_\+flag}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{commit\+\_\+flag}]{\setlength{\rightskip}{0pt plus 5cm}bool G\+L\+U\+I\+\_\+\+Command\+Line\+::commit\+\_\+flag}}\label{class_g_l_u_i___command_line_ac2f61fd248c6adb663c6de52e9e431fd}
+
+
+Definition at line 1707 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___command_line_ab8d88779584003b82000b824ac6f4906}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!curr\+\_\+hist@{curr\+\_\+hist}}
+\index{curr\+\_\+hist@{curr\+\_\+hist}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{curr\+\_\+hist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} G\+L\+U\+I\+\_\+\+Command\+Line\+::curr\+\_\+hist}}\label{class_g_l_u_i___command_line_ab8d88779584003b82000b824ac6f4906}
+
+
+Definition at line 1704 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___command_line_abc9dcdc275bb36dee1a9db8d348338b5}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!hist\+\_\+list@{hist\+\_\+list}}
+\index{hist\+\_\+list@{hist\+\_\+list}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{hist\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf G\+L\+U\+I\+\_\+\+String}$>$ G\+L\+U\+I\+\_\+\+Command\+Line\+::hist\+\_\+list}}\label{class_g_l_u_i___command_line_abc9dcdc275bb36dee1a9db8d348338b5}
+
+
+Definition at line 1703 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___command_line_af4f50f57b5a239d8564619ec0779518d}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!newest\+\_\+hist@{newest\+\_\+hist}}
+\index{newest\+\_\+hist@{newest\+\_\+hist}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{newest\+\_\+hist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} G\+L\+U\+I\+\_\+\+Command\+Line\+::newest\+\_\+hist}}\label{class_g_l_u_i___command_line_af4f50f57b5a239d8564619ec0779518d}
+
+
+Definition at line 1706 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___command_line_a689ee6f9ede7c0f6c2060fd5650b1d22}{\index{G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}!oldest\+\_\+hist@{oldest\+\_\+hist}}
+\index{oldest\+\_\+hist@{oldest\+\_\+hist}!G\+L\+U\+I\+\_\+\+Command\+Line@{G\+L\+U\+I\+\_\+\+Command\+Line}}
+\subsubsection[{oldest\+\_\+hist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} G\+L\+U\+I\+\_\+\+Command\+Line\+::oldest\+\_\+hist}}\label{class_g_l_u_i___command_line_a689ee6f9ede7c0f6c2060fd5650b1d22}
+
+
+Definition at line 1705 of file glui.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+G\+L/\hyperlink{glui_8h}{glui.\+h}\end{DoxyCompactItemize}

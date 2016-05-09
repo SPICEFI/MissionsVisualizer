@@ -1,0 +1,377 @@
+.TH "SSWC/src/ftoption.h" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/ftoption.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <ft2build\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_SUBPIXEL_RENDERING\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_INLINE_MULFIX\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_USE_LZW\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_USE_ZLIB\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_USE_BZIP2\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_USE_PNG\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_USE_HARFBUZZ\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_POSTSCRIPT_NAMES\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_ADOBE_GLYPH_LIST\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_MAC_FONTS\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_GUESSING_EMBEDDED_RFORK\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_CONFIG_OPTION_INCREMENTAL\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_RENDER_POOL_SIZE\fP   16384L"
+.br
+.ti -1c
+.RI "#define \fBFT_MAX_MODULES\fP   32"
+.br
+.ti -1c
+.RI "#define \fBFT_DEBUG_LEVEL_ERROR\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_DEBUG_LEVEL_TRACE\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_DEBUG_AUTOFIT\fP"
+.br
+.ti -1c
+.RI "#define \fBFT_DEBUG_MEMORY\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_OPTION_EMBEDDED_BITMAPS\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_OPTION_POSTSCRIPT_NAMES\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_OPTION_SFNT_NAMES\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_0\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_2\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_4\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_6\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_8\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_10\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_12\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_13\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_CMAP_FORMAT_14\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_OPTION_BYTECODE_INTERPRETER\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_OPTION_SUBPIXEL_HINTING\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_OPTION_GX_VAR_SUPPORT\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_OPTION_BDF\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_CONFIG_OPTION_MAX_RUNNABLE_OPCODES\fP   1000000L"
+.br
+.ti -1c
+.RI "#define \fBT1_MAX_DICT_DEPTH\fP   5"
+.br
+.ti -1c
+.RI "#define \fBT1_MAX_SUBRS_CALLS\fP   16"
+.br
+.ti -1c
+.RI "#define \fBT1_MAX_CHARSTRINGS_OPERANDS\fP   256"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_DARKENING_PARAMETER_X1\fP   500"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_DARKENING_PARAMETER_Y1\fP   400"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_DARKENING_PARAMETER_X2\fP   1000"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_DARKENING_PARAMETER_Y2\fP   275"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_DARKENING_PARAMETER_X3\fP   1667"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_DARKENING_PARAMETER_Y3\fP   275"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_DARKENING_PARAMETER_X4\fP   2333"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_DARKENING_PARAMETER_Y4\fP   0"
+.br
+.ti -1c
+.RI "#define \fBCFF_CONFIG_OPTION_OLD_ENGINE\fP"
+.br
+.ti -1c
+.RI "#define \fBAF_CONFIG_OPTION_CJK\fP"
+.br
+.ti -1c
+.RI "#define \fBAF_CONFIG_OPTION_INDIC\fP"
+.br
+.ti -1c
+.RI "#define \fBAF_CONFIG_OPTION_USE_WARPER\fP"
+.br
+.ti -1c
+.RI "#define \fBTT_USE_BYTECODE_INTERPRETER\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define AF_CONFIG_OPTION_CJK"
+
+.PP
+Definition at line 825 of file ftoption\&.h\&.
+.SS "#define AF_CONFIG_OPTION_INDIC"
+
+.PP
+Definition at line 831 of file ftoption\&.h\&.
+.SS "#define AF_CONFIG_OPTION_USE_WARPER"
+
+.PP
+Definition at line 846 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_DARKENING_PARAMETER_X1   500"
+
+.PP
+Definition at line 788 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_DARKENING_PARAMETER_X2   1000"
+
+.PP
+Definition at line 791 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_DARKENING_PARAMETER_X3   1667"
+
+.PP
+Definition at line 794 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_DARKENING_PARAMETER_X4   2333"
+
+.PP
+Definition at line 797 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_DARKENING_PARAMETER_Y1   400"
+
+.PP
+Definition at line 789 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_DARKENING_PARAMETER_Y2   275"
+
+.PP
+Definition at line 792 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_DARKENING_PARAMETER_Y3   275"
+
+.PP
+Definition at line 795 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_DARKENING_PARAMETER_Y4   0"
+
+.PP
+Definition at line 798 of file ftoption\&.h\&.
+.SS "#define CFF_CONFIG_OPTION_OLD_ENGINE"
+
+.PP
+Definition at line 808 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_ADOBE_GLYPH_LIST"
+
+.PP
+Definition at line 326 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_GUESSING_EMBEDDED_RFORK"
+
+.PP
+Definition at line 361 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_INCREMENTAL"
+
+.PP
+Definition at line 373 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_INLINE_MULFIX"
+
+.PP
+Definition at line 136 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_MAC_FONTS"
+
+.PP
+Definition at line 339 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_POSTSCRIPT_NAMES"
+
+.PP
+Definition at line 308 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_SUBPIXEL_RENDERING"
+
+.PP
+Definition at line 95 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_USE_BZIP2"
+
+.PP
+Definition at line 203 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_USE_HARFBUZZ"
+
+.PP
+Definition at line 241 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_USE_LZW"
+
+.PP
+Definition at line 151 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_USE_PNG"
+
+.PP
+Definition at line 228 of file ftoption\&.h\&.
+.SS "#define FT_CONFIG_OPTION_USE_ZLIB"
+
+.PP
+Definition at line 166 of file ftoption\&.h\&.
+.SS "#define FT_DEBUG_AUTOFIT"
+
+.PP
+Definition at line 447 of file ftoption\&.h\&.
+.SS "#define FT_DEBUG_LEVEL_ERROR"
+
+.PP
+Definition at line 411 of file ftoption\&.h\&.
+.SS "#define FT_DEBUG_LEVEL_TRACE"
+
+.PP
+Definition at line 412 of file ftoption\&.h\&.
+.SS "#define FT_DEBUG_MEMORY"
+
+.PP
+Definition at line 465 of file ftoption\&.h\&.
+.SS "#define FT_MAX_MODULES   32"
+
+.PP
+Definition at line 391 of file ftoption\&.h\&.
+.SS "#define FT_RENDER_POOL_SIZE   16384L"
+
+.PP
+Definition at line 381 of file ftoption\&.h\&.
+.SS "#define T1_MAX_CHARSTRINGS_OPERANDS   256"
+
+.PP
+Definition at line 746 of file ftoption\&.h\&.
+.SS "#define T1_MAX_DICT_DEPTH   5"
+
+.PP
+Definition at line 728 of file ftoption\&.h\&.
+.SS "#define T1_MAX_SUBRS_CALLS   16"
+
+.PP
+Definition at line 736 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_0"
+
+.PP
+Definition at line 553 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_10"
+
+.PP
+Definition at line 558 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_12"
+
+.PP
+Definition at line 559 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_13"
+
+.PP
+Definition at line 560 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_14"
+
+.PP
+Definition at line 561 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_2"
+
+.PP
+Definition at line 554 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_4"
+
+.PP
+Definition at line 555 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_6"
+
+.PP
+Definition at line 556 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_CMAP_FORMAT_8"
+
+.PP
+Definition at line 557 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_OPTION_BDF"
+
+.PP
+Definition at line 692 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_OPTION_BYTECODE_INTERPRETER"
+
+.PP
+Definition at line 583 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_OPTION_EMBEDDED_BITMAPS"
+
+.PP
+Definition at line 515 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_OPTION_GX_VAR_SUPPORT"
+
+.PP
+Definition at line 684 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_OPTION_MAX_RUNNABLE_OPCODES   1000000L"
+
+.PP
+Definition at line 709 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_OPTION_POSTSCRIPT_NAMES"
+
+.PP
+Definition at line 530 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_OPTION_SFNT_NAMES"
+
+.PP
+Definition at line 544 of file ftoption\&.h\&.
+.SS "#define TT_CONFIG_OPTION_SUBPIXEL_HINTING"
+
+.PP
+Definition at line 605 of file ftoption\&.h\&.
+.SS "#define TT_USE_BYTECODE_INTERPRETER"
+
+.PP
+Definition at line 863 of file ftoption\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

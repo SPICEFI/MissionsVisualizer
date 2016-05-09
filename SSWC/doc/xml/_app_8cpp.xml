@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_app_8cpp" kind="file">
+    <compoundname>App.cpp</compoundname>
+    <includes refid="_app_8h" local="yes">App.h</includes>
+    <incdepgraph>
+      <node id="1172">
+        <label>iomanip</label>
+      </node>
+      <node id="1176">
+        <label>cmath</label>
+      </node>
+      <node id="1182">
+        <label>stdexcept</label>
+      </node>
+      <node id="1169">
+        <label>string</label>
+      </node>
+      <node id="1174">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+      </node>
+      <node id="1171">
+        <label>fstream</label>
+      </node>
+      <node id="1179">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+      </node>
+      <node id="1178">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1183" relation="include">
+        </childnode>
+      </node>
+      <node id="1165">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="1166" relation="include">
+        </childnode>
+        <childnode refid="1167" relation="include">
+        </childnode>
+      </node>
+      <node id="1163">
+        <label>App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1164" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1172" relation="include">
+        </childnode>
+      </node>
+      <node id="1167">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+      </node>
+      <node id="1170">
+        <label>ctime</label>
+      </node>
+      <node id="1180">
+        <label>Time.h</label>
+      </node>
+      <node id="1173">
+        <label>vector</label>
+      </node>
+      <node id="1187">
+        <label>array</label>
+      </node>
+      <node id="1168">
+        <label>sstream</label>
+      </node>
+      <node id="1183">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="1184" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+      </node>
+      <node id="1162">
+        <label>SSWC/src/App.cpp</label>
+        <link refid="App.cpp"/>
+        <childnode refid="1163" relation="include">
+        </childnode>
+      </node>
+      <node id="1175">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1177">
+        <label>SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1185" relation="include">
+        </childnode>
+      </node>
+      <node id="1186">
+        <label>SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+      </node>
+      <node id="1184">
+        <label>cstring</label>
+      </node>
+      <node id="1166">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="1181">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+      </node>
+      <node id="1185">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="1176" relation="include">
+        </childnode>
+      </node>
+      <node id="1164">
+        <label>CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1167" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_app_8h" kindref="compound">App.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_app_1acb8cbf3e285b91d0170ffe87df5989c5" refkind="member"><highlight class="normal"><ref refid="class_app_1acb8cbf3e285b91d0170ffe87df5989c5" kindref="member">App::App</ref>()<sp/>:<sp/>refFrame(<ref refid="_app_8h_1a8d28cfb6bcffc99fcae6f2c166002dee" kindref="member">REF_FRAME_DEFAULT</ref>)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_app_1a12b15f30e7c0a6f5a2ebf5b1b6dcb409" kindref="member">Init</ref>();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" refkind="member"><highlight class="normal"><ref refid="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" kindref="member">App::~App</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>objects.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>objects[i];</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects[i]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>objects.clear();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_app_1a12b15f30e7c0a6f5a2ebf5b1b6dcb409" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a12b15f30e7c0a6f5a2ebf5b1b6dcb409" kindref="member">App::Init</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_spice_util_1a1bc23133b0aa142ccc71d5fd85d0e609" kindref="member">CSpiceUtil::SetErrorHandlingParams</ref>(</highlight><highlight class="stringliteral">&quot;return&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;null&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_app_1a6503f750c4ed359bcd08db5a8e0c7008" kindref="member">SetDefaultUnits</ref>(<ref refid="class_app_1aea5a9482f92f593735e0e6568c46b0d8a7c7fdae6b9832748ec23644eebfcd51d" kindref="member">UT_DEFAULT</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_app_1a4c9cf8bd78997b07082a3a5d23e9f056" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a4c9cf8bd78997b07082a3a5d23e9f056" kindref="member">App::LoadKernel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/>file)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="26"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_spice_util_1a0940aa96ffa3ef14f0ea2510c4163710" kindref="member">CSpiceUtil::LoadKernel</ref>(file);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_app_1a698fea2610b1e5767c12525b67b33e6d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a698fea2610b1e5767c12525b67b33e6d" kindref="member">App::SetLoggingFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/>file)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="31"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_spice_util_1af1b073c99197ec2a2d22772e3a86d30d" kindref="member">CSpiceUtil::SetLoggingFile</ref>(file);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_app_1a8a64f7e38d933bdfde41d79ef0f847d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a8a64f7e38d933bdfde41d79ef0f847d0" kindref="member">App::SetReferenceFrame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>refFrame<sp/>=<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/><ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">App::GetReferenceFrame</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="41"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>refFrame;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_app_1a6503f750c4ed359bcd08db5a8e0c7008" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a6503f750c4ed359bcd08db5a8e0c7008" kindref="member">App::SetDefaultUnits</ref>(<ref refid="class_app_1aea5a9482f92f593735e0e6568c46b0d8" kindref="member">UnitsType</ref><sp/><ref refid="glext_8h_1abfa9efe7c13ea1f8f0756f7d74b32958" kindref="member">units</ref>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;units.accUnit<sp/>=<sp/><ref refid="class_units_1_1_metric_1a172a4a3ec21992ffee09794cf07f9563" kindref="member">Units::Metric::ms2</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;units.gmUnit<sp/>=<sp/><ref refid="class_units_1_1_metric_1a8e5b74eb410af1d26aadb0adfb77dc21" kindref="member">Units::Metric::gm</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(units)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_app_1aea5a9482f92f593735e0e6568c46b0d8a7c7fdae6b9832748ec23644eebfcd51d" kindref="member">UT_DEFAULT</ref>:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.lengthUnit<sp/>=<sp/><ref refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" kindref="member">Units::Metric::kilometers</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.velocityUnit<sp/>=<sp/><ref refid="class_units_1_1_metric_1ae30e1438d1f93d6d08901e1fe9b31919" kindref="member">Units::Metric::kmps</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.massUnit<sp/>=<sp/><ref refid="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" kindref="member">Units::Metric::kilograms</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_app_1aea5a9482f92f593735e0e6568c46b0d8abec12c861c4181a6fcf6f36ceb4728fb" kindref="member">UT_IMPERIAL</ref>:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.lengthUnit<sp/>=<sp/><ref refid="class_units_1_1_imperial_1a3ccc983d656c0b984f7b269d6e6c3625" kindref="member">Units::Imperial::miles</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.velocityUnit<sp/>=<sp/><ref refid="class_units_1_1_imperial_1aa16979886192a537b02c2421701c8e25" kindref="member">Units::Imperial::mph</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.massUnit<sp/>=<sp/><ref refid="class_units_1_1_imperial_1a25954e93175ecbf7c8dcc870e6c01dd4" kindref="member">Units::Imperial::pounds</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_app_1aea5a9482f92f593735e0e6568c46b0d8ae892d830f9e69c46728781e9a53638ee" kindref="member">UT_METRIC</ref>:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.lengthUnit<sp/>=<sp/><ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">Units::Metric::meters</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.velocityUnit<sp/>=<sp/><ref refid="class_units_1_1_metric_1af960d1782d357569275d856dc28ed895" kindref="member">Units::Metric::mps</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;units.massUnit<sp/>=<sp/><ref refid="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" kindref="member">Units::Metric::kilograms</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref>&amp;<sp/><ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">App::LengthUnit</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1abfa9efe7c13ea1f8f0756f7d74b32958" kindref="member">units</ref>.lengthUnit;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="class_app_1af4c711d659e35f4dd32935045864084a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">VelocityUnit</ref>&amp;<sp/><ref refid="class_app_1af4c711d659e35f4dd32935045864084a" kindref="member">App::VelocityUnit</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1abfa9efe7c13ea1f8f0756f7d74b32958" kindref="member">units</ref>.velocityUnit;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="class_app_1acf7486b4787ea7fe43abae0d166dfb5c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref>&amp;<sp/><ref refid="class_app_1acf7486b4787ea7fe43abae0d166dfb5c" kindref="member">App::MassUnit</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1abfa9efe7c13ea1f8f0756f7d74b32958" kindref="member">units</ref>.massUnit;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_app_1a8487d93c3f260c9fc94f2ca40b526035" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">GravitationalParameterUnit</ref>&amp;<sp/><ref refid="class_app_1a8487d93c3f260c9fc94f2ca40b526035" kindref="member">App::GMUnit</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="86"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1abfa9efe7c13ea1f8f0756f7d74b32958" kindref="member">units</ref>.gmUnit;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_app_1a6227e7123ec66f2de575c3e8f8ad8380" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">AccelerationUnit</ref>&amp;<sp/><ref refid="class_app_1a6227e7123ec66f2de575c3e8f8ad8380" kindref="member">App::AccelerationUnit</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="91"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1abfa9efe7c13ea1f8f0756f7d74b32958" kindref="member">units</ref>.accUnit;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_app_1a2dd4b717c331d2afd0801ea589d35e0c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a2dd4b717c331d2afd0801ea589d35e0c" kindref="member">App::SetIndividualUnits</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_app_1_1_default_units" kindref="compound">DefaultUnits</ref>&amp;<sp/>defUnits)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>std::memcpy(&amp;this-&gt;<ref refid="glext_8h_1abfa9efe7c13ea1f8f0756f7d74b32958" kindref="member">units</ref>,<sp/>&amp;defUnits,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_app_1_1_default_units" kindref="compound">DefaultUnits</ref>));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="class_app_1ab41aea25a7f5312dfef22644138c1fac" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1ab41aea25a7f5312dfef22644138c1fac" kindref="member">App::LoadChildren</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/>parent,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includeSelf,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>parentId<sp/>=<sp/>parent.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long&gt;<sp/>childrenIds<sp/>=<sp/><ref refid="class_space_object_1ae7c1493eccfe0e35037e884bc886d164" kindref="member">SpaceObject::FindChildObjectIds</ref>(parentId);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(includeSelf)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(parent);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>childrenIds.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>childId<sp/>=<sp/>childrenIds[i];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_space_object_1ac8010baf561aced8e70fb2fb66a47171" kindref="member">SpaceObject::IsBody</ref>(childId))</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_body" kindref="compound">SpaceBody</ref>(childId));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(childId));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(recursive)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1ab41aea25a7f5312dfef22644138c1fac" kindref="member">LoadChildren</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(childId),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="class_app_1aa8eb4865cea9f3ffc31199f539e35e53" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1aa8eb4865cea9f3ffc31199f539e35e53" kindref="member">App::LoadParent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/>child,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includeMassCenter,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includeSelf,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(includeSelf)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(child);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>childId<sp/>=<sp/>child.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>parentId<sp/>=<sp/><ref refid="class_space_object_1a6d9980e2b888bcd13cb393c6cf58e499" kindref="member">SpaceObject::FindParentObjectId</ref>(childId);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(childId<sp/>==<sp/>parentId)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_space_object_1ac8010baf561aced8e70fb2fb66a47171" kindref="member">SpaceObject::IsBody</ref>(parentId))</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_body" kindref="compound">SpaceBody</ref>(parentId));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(parentId));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(includeMassCenter)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>massCenterId<sp/>=<sp/><ref refid="class_space_object_1a980fbd5fe060a425fd0dbaac37879eb0" kindref="member">SpaceObject::FindChildMassCenterId</ref>(parentId);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(massCenterId<sp/>!=<sp/>parentId)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_body" kindref="compound">SpaceBody</ref>(massCenterId));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(recursive)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1aa8eb4865cea9f3ffc31199f539e35e53" kindref="member">LoadParent</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(parentId),<sp/>includeMassCenter,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="class_app_1ae50b47e38db35856dbad40c3281603eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1ae50b47e38db35856dbad40c3281603eb" kindref="member">App::LoadMoons</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/>planet)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>barycenterId<sp/>=<sp/><ref refid="class_space_object_1a6d9980e2b888bcd13cb393c6cf58e499" kindref="member">SpaceObject::FindParentObjectId</ref>(planet.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>());</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_space_object_1aee6e2b434bf3b775813c26dfedbf0d8b" kindref="member">SpaceObject::IsPlanetaryBarycenter</ref>(barycenterId))</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_spice_util_1ad91e1b9618b9514d4cfd516a446a7e11" kindref="member">CSpiceUtil::SignalError</ref>(</highlight><highlight class="stringliteral">&quot;LoadMoons<sp/>failed:<sp/>&apos;planet&apos;<sp/>argument<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>planet<sp/>object&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1ab41aea25a7f5312dfef22644138c1fac" kindref="member">LoadChildren</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(barycenterId),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="class_app_1ad163108cca1f0c17229627dc44a18d5b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1ae50b47e38db35856dbad40c3281603eb" kindref="member">App::LoadMoons</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/>parentName)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1ae50b47e38db35856dbad40c3281603eb" kindref="member">LoadMoons</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(parentName));</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="class_app_1a481f856c3ca5b90d8bf903a4a208dfc5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a481f856c3ca5b90d8bf903a4a208dfc5" kindref="member">App::LoadSolarSystem</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>entire)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!entire)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;long&gt;<sp/>barycenterIds<sp/>=<sp/><ref refid="class_space_object_1ae7c1493eccfe0e35037e884bc886d164" kindref="member">SpaceObject::FindChildObjectIds</ref>(<ref refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" kindref="member">SpaceObject::SSB</ref>.GetSpiceId());</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>barycenterIds.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>planetId<sp/>=<sp/>barycenterIds[i]<sp/>*<sp/>100<sp/>+<sp/>99;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_space_object_1a9983084aeef5b66ad1867a11af3f6d78" kindref="member">SpaceObject::IsPlanet</ref>(planetId)<sp/>||<sp/><ref refid="class_space_object_1adf3b4cb454468d8cc3d467c0fe799dcd" kindref="member">SpaceObject::IsSun</ref>(planetId))</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_body" kindref="compound">SpaceBody</ref>(planetId));</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1ab41aea25a7f5312dfef22644138c1fac" kindref="member">LoadChildren</ref>(<ref refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" kindref="member">SpaceObject::SSB</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="class_app_1ab947a8da031b06d05bfa6dd392ba59bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1ab947a8da031b06d05bfa6dd392ba59bf" kindref="member">App::LoadAllAvailableObjects</ref>()</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long&gt;<sp/>loadedIds<sp/>=<sp/><ref refid="class_space_object_1a71e5c1b80aa1a2f512bdbdd0ee186c4d" kindref="member">SpaceObject::GetLoadedSpkIds</ref>();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>loadedIds.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_space_object_1ac8010baf561aced8e70fb2fb66a47171" kindref="member">SpaceObject::IsBody</ref>(loadedIds[i]))</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_body" kindref="compound">SpaceBody</ref>(loadedIds[i]));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_space_object_1afa92ccf71440611067a3ee0239c060ae" kindref="member">SpaceObject::ValidateId</ref>(loadedIds[i]))</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(loadedIds[i]));</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" kindref="member">SpaceObject::SSB</ref>);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">App::AddObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_app_1a362e000126120fd4f6ce12ba75d47945" kindref="member">CheckObjectExists</ref>(obj)<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects.push_back(obj.<ref refid="class_space_object_1a479f0732cad7fe1f6a1752a1f12eaa7b" kindref="member">Clone</ref>());</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1aa8eb4865cea9f3ffc31199f539e35e53" kindref="member">LoadParent</ref>(obj,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="class_app_1afec3098fabcf5728d0a50b3660322e85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_app_1afec3098fabcf5728d0a50b3660322e85" kindref="member">App::GetObjectsLength</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="209"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>objects.size();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="class_app_1af6e4143b4dabe6ea635099dda0bb531e" refkind="member"><highlight class="normal"><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="class_app_1af6e4143b4dabe6ea635099dda0bb531e" kindref="member">App::GetObjectByIndex</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>idx)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*objects[idx];</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="class_app_1a362e000126120fd4f6ce12ba75d47945" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_app_1a362e000126120fd4f6ce12ba75d47945" kindref="member">App::CheckObjectExists</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>objects.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objects[i]-&gt;GetSpiceId()<sp/>==<sp/><ref refid="glext_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="class_app_1ad2700c102cb00a025ec1e17b178d287d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_app_1a362e000126120fd4f6ce12ba75d47945" kindref="member">App::CheckObjectExists</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref>)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>objects.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objects[i]-&gt;GetName()<sp/>==<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref>)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1a362e000126120fd4f6ce12ba75d47945" kindref="member">CheckObjectExists</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(name));</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="class_app_1aa34a12b23a2f5c69c8e9d440df37a4a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_app_1a362e000126120fd4f6ce12ba75d47945" kindref="member">App::CheckObjectExists</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/>sample)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1a362e000126120fd4f6ce12ba75d47945" kindref="member">CheckObjectExists</ref>(sample.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>());</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="class_app_1a863d8814f100aecf3a204677fe64c71d" refkind="member"><highlight class="normal"><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="class_app_1a863d8814f100aecf3a204677fe64c71d" kindref="member">App::RetrieveObject</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>objects.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objects[i]-&gt;GetSpiceId()<sp/>==<sp/><ref refid="glext_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1af6e4143b4dabe6ea635099dda0bb531e" kindref="member">GetObjectByIndex</ref>(i);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_spice_util_1ad91e1b9618b9514d4cfd516a446a7e11" kindref="member">CSpiceUtil::SignalError</ref>(</highlight><highlight class="stringliteral">&quot;RetrieveObject<sp/>haven&apos;t<sp/>found<sp/>requested<sp/>object&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="class_app_1a82ab292df58ac850fcc5d29d3961884c" refkind="member"><highlight class="normal"><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="class_app_1a863d8814f100aecf3a204677fe64c71d" kindref="member">App::RetrieveObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref>)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>objects.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objects[i]-&gt;GetName()<sp/>==<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref>)</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1af6e4143b4dabe6ea635099dda0bb531e" kindref="member">GetObjectByIndex</ref>(i);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1a863d8814f100aecf3a204677fe64c71d" kindref="member">RetrieveObject</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(name));</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="class_app_1a8fe52303bcef03a0482d680ce9f2b431" refkind="member"><highlight class="normal"><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="class_app_1a863d8814f100aecf3a204677fe64c71d" kindref="member">App::RetrieveObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/>sample)</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1a863d8814f100aecf3a204677fe64c71d" kindref="member">RetrieveObject</ref>(sample.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>());</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="class_app_1a182106fc2c4faaaee41c167953bbe35e" refkind="member"><highlight class="normal">std::vector&lt;SpaceObject*&gt;<sp/><ref refid="class_app_1a182106fc2c4faaaee41c167953bbe35e" kindref="member">App::GetLoadedPlanets</ref>()</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SpaceObject*&gt;<sp/>planets;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>objects.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objects[i]-&gt;IsPlanet())</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>planets.push_back(objects[i]);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>planets;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="class_app_1abd9836f44c32188ded4a2868526d1451" refkind="member"><highlight class="normal">std::vector&lt;SpaceObject*&gt;<sp/><ref refid="class_app_1abd9836f44c32188ded4a2868526d1451" kindref="member">App::GetLoadedMoonsOf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/>planet)</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SpaceObject*&gt;<sp/>moons;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long&gt;<sp/>allMoonIds<sp/>=<sp/><ref refid="class_space_object_1a88fb61e9a9c94f262cad1e5fed33e73b" kindref="member">SpaceObject::FindMoonIds</ref>(planet.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>());</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>allMoonIds.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_app_1a362e000126120fd4f6ce12ba75d47945" kindref="member">CheckObjectExists</ref>(allMoonIds[i]))</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moons.push_back(&amp;<ref refid="class_app_1a863d8814f100aecf3a204677fe64c71d" kindref="member">RetrieveObject</ref>(allMoonIds[i]));</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>moons;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="class_app_1a22ba61abf8eefa49d514933cbeb65445" refkind="member"><highlight class="normal">std::vector&lt;SpaceObject*&gt;<sp/><ref refid="class_app_1abd9836f44c32188ded4a2868526d1451" kindref="member">App::GetLoadedMoonsOf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="_routine_8cpp_1a1cc303acbb3ff05d12048e9caaa58081" kindref="member">planetName</ref>)</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_app_1abd9836f44c32188ded4a2868526d1451" kindref="member">GetLoadedMoonsOf</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(planetName));</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="class_app_1ad6b106d39f3033f9707644f018e66478" refkind="member"><highlight class="normal">std::vector&lt;SpaceObject*&gt;<sp/><ref refid="class_app_1ad6b106d39f3033f9707644f018e66478" kindref="member">App::GetLoadedMoons</ref>()</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SpaceObject*&gt;<sp/>moons;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>objects.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objects[i]-&gt;IsMoon())</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moons.push_back(objects[i]);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>moons;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="class_app_1afe8189e6c77a3a8b90fa9cfc6f2d9cd5" refkind="member"><highlight class="normal">std::vector&lt;SpaceObject*&gt;<sp/><ref refid="class_app_1afe8189e6c77a3a8b90fa9cfc6f2d9cd5" kindref="member">App::GetLoadedBarycenters</ref>()</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SpaceObject*&gt;<sp/>barycenters;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>objects.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objects[i]-&gt;IsBarycenter())</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>barycenters.push_back(objects[i]);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>barycenters;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.cpp"/>
+  </compounddef>
+</doxygen>

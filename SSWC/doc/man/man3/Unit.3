@@ -1,0 +1,110 @@
+.TH "Unit< length, time, mass >" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Unit< length, time, mass > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Quantity\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUnit\fP (const \fBstd::string\fP &\fBlabel\fP='')"
+.br
+.ti -1c
+.RI "double \fBGetMultiplier\fP () const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetLabel\fP (const \fBstd::string\fP &\fBlabel\fP)"
+.br
+.ti -1c
+.RI "const \fBstd::string\fP & \fBstr\fP () const "
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBThisUnit\fP \fBBaseUnit\fP (const \fBstd::string\fP &\fBlabel\fP='')"
+.br
+.ti -1c
+.RI "static \fBThisUnit\fP \fBScaledUnit\fP (double multiplier, const \fBThisUnit\fP &\fBref\fP=\fBThisUnit\fP(), const \fBstd::string\fP &\fBlabel\fP='')"
+.br
+.ti -1c
+.RI "static \fBThisUnit\fP \fBDerivedUnit\fP (const \fBLengthUnit\fP &lengthUnit, const \fBTimeUnit\fP &timeUnit, const \fBMassUnit\fP &massUnit, const \fBstd::string\fP &\fBlabel\fP='')"
+.br
+.ti -1c
+.RI "static \fBThisUnit\fP \fBDerivedUnit\fP (const \fBLengthUnit\fP &lengthUnit, const \fBTimeUnit\fP &timeUnit, const \fBstd::string\fP &\fBlabel\fP='')"
+.br
+.ti -1c
+.RI "static \fBThisUnit\fP \fBDerivedUnit\fP (const \fBTimeUnit\fP &timeUnit, const \fBMassUnit\fP &massUnit, const \fBstd::string\fP &\fBlabel\fP='')"
+.br
+.ti -1c
+.RI "static \fBThisUnit\fP \fBDerivedUnit\fP (const \fBLengthUnit\fP &lengthUnit, const \fBMassUnit\fP &massUnit, const \fBstd::string\fP &\fBlabel\fP='')"
+.br
+.ti -1c
+.RI "static double \fBConvert\fP (double \fBvalue\fP, const \fBThisUnit\fP &from, const \fBThisUnit\fP &to)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<int length, int time, int mass>class Unit< length, time, mass >"
+
+.PP
+Definition at line 9 of file Quantity\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<int length, int time, int mass> \fBUnit\fP< \fBlength\fP, time, mass >::\fBUnit\fP (const \fBstd::string\fP &label = \fC''\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file Quantity\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<int length, int time, int mass> static \fBThisUnit\fP \fBUnit\fP< \fBlength\fP, time, mass >::BaseUnit (const \fBstd::string\fP &label = \fC''\fP)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 18 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> static double \fBUnit\fP< \fBlength\fP, time, mass >::Convert (doublevalue, const \fBThisUnit\fP< \fBlength\fP, time, mass > &from, const \fBThisUnit\fP< \fBlength\fP, time, mass > &to)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 87 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> static \fBThisUnit\fP \fBUnit\fP< \fBlength\fP, time, mass >::DerivedUnit (const \fBLengthUnit\fP< \fBlength\fP, time, mass > &lengthUnit, const \fBTimeUnit\fP< \fBlength\fP, time, mass > &timeUnit, const \fBMassUnit\fP< \fBlength\fP, time, mass > &massUnit, const \fBstd::string\fP &label = \fC''\fP)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 26 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> static \fBThisUnit\fP \fBUnit\fP< \fBlength\fP, time, mass >::DerivedUnit (const \fBLengthUnit\fP< \fBlength\fP, time, mass > &lengthUnit, const \fBTimeUnit\fP< \fBlength\fP, time, mass > &timeUnit, const \fBstd::string\fP &label = \fC''\fP)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 36 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> static \fBThisUnit\fP \fBUnit\fP< \fBlength\fP, time, mass >::DerivedUnit (const \fBTimeUnit\fP< \fBlength\fP, time, mass > &timeUnit, const \fBMassUnit\fP< \fBlength\fP, time, mass > &massUnit, const \fBstd::string\fP &label = \fC''\fP)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 40 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> static \fBThisUnit\fP \fBUnit\fP< \fBlength\fP, time, mass >::DerivedUnit (const \fBLengthUnit\fP< \fBlength\fP, time, mass > &lengthUnit, const \fBMassUnit\fP< \fBlength\fP, time, mass > &massUnit, const \fBstd::string\fP &label = \fC''\fP)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 44 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> double \fBUnit\fP< \fBlength\fP, time, mass >::GetMultiplier () const\fC [inline]\fP"
+
+.PP
+Definition at line 72 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> static \fBThisUnit\fP \fBUnit\fP< \fBlength\fP, time, mass >::ScaledUnit (doublemultiplier, const \fBThisUnit\fP< \fBlength\fP, time, mass > &ref = \fC\fBThisUnit\fP< \fBlength\fP, time, mass >()\fP, const \fBstd::string\fP &label = \fC''\fP)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definition at line 22 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBvoid\fP \fBUnit\fP< \fBlength\fP, time, mass >::SetLabel (const \fBstd::string\fP &label)\fC [inline]\fP"
+
+.PP
+Definition at line 77 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> const \fBstd::string\fP& \fBUnit\fP< \fBlength\fP, time, mass >::str () const\fC [inline]\fP"
+
+.PP
+Definition at line 82 of file Quantity\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

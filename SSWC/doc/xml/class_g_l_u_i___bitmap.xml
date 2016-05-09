@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___bitmap" kind="class" prot="public">
+    <compoundname>GLUI_Bitmap</compoundname>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_g_l_u_i___bitmap_1aa9d1e2d4b5b5b9d0c2512496f768ecf4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GLUI_StdBitmaps</definition>
+        <argsstring></argsstring>
+        <name>GLUI_StdBitmaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="412" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___bitmap_1acd8209d05bce28ea7cdb8618d0f575d5" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* GLUI_Bitmap::pixels</definition>
+        <argsstring></argsstring>
+        <name>pixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RGB pixel data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="426" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___bitmap_1a24fe4ea2e84def8e0572b692cb8ad1ee" prot="private" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_Bitmap::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="427" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___bitmap_1a96526eb83cf7ba301c76c667bddf44b0" prot="private" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_Bitmap::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="427" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_l_u_i___bitmap_1a5074c49b991fc949a229ec520eab208f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_Bitmap::GLUI_Bitmap</definition>
+        <argsstring>()</argsstring>
+        <name>GLUI_Bitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___bitmap_1a6fdad2b88cc56835afe6ebb1bb87d89f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_Bitmap::~GLUI_Bitmap</definition>
+        <argsstring>()</argsstring>
+        <name>~GLUI_Bitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="416" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___bitmap_1a329b8c9e64d0a5df4d1cc657ed379075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Bitmap::init_grey</definition>
+        <argsstring>(unsigned char *array)</argsstring>
+        <name>init_grey</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create bitmap from greyscale byte image </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="419" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___bitmap_1aac85d978c45e38395bbf504ad8abd9a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Bitmap::init</definition>
+        <argsstring>(int *array)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create bitmap from color int image </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="422" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_g_l_u_i___bitmap" kindref="compound">GLUI_Bitmap</ref> is a simple 2D texture map. It&apos;s used to represent small textures like checkboxes, arrows, etc. via the <ref refid="class_g_l_u_i___std_bitmaps" kindref="compound">GLUI_StdBitmaps</ref> class. </para>    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="411" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="410" bodyend="428"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___bitmap_1a5074c49b991fc949a229ec520eab208f" prot="public" virt="non-virtual"><scope>GLUI_Bitmap</scope><name>GLUI_Bitmap</name></member>
+      <member refid="class_g_l_u_i___bitmap_1aa9d1e2d4b5b5b9d0c2512496f768ecf4" prot="private" virt="non-virtual"><scope>GLUI_Bitmap</scope><name>GLUI_StdBitmaps</name></member>
+      <member refid="class_g_l_u_i___bitmap_1a96526eb83cf7ba301c76c667bddf44b0" prot="private" virt="non-virtual"><scope>GLUI_Bitmap</scope><name>h</name></member>
+      <member refid="class_g_l_u_i___bitmap_1aac85d978c45e38395bbf504ad8abd9a9" prot="public" virt="non-virtual"><scope>GLUI_Bitmap</scope><name>init</name></member>
+      <member refid="class_g_l_u_i___bitmap_1a329b8c9e64d0a5df4d1cc657ed379075" prot="public" virt="non-virtual"><scope>GLUI_Bitmap</scope><name>init_grey</name></member>
+      <member refid="class_g_l_u_i___bitmap_1acd8209d05bce28ea7cdb8618d0f575d5" prot="private" virt="non-virtual"><scope>GLUI_Bitmap</scope><name>pixels</name></member>
+      <member refid="class_g_l_u_i___bitmap_1a24fe4ea2e84def8e0572b692cb8ad1ee" prot="private" virt="non-virtual"><scope>GLUI_Bitmap</scope><name>w</name></member>
+      <member refid="class_g_l_u_i___bitmap_1a6fdad2b88cc56835afe6ebb1bb87d89f" prot="public" virt="non-virtual"><scope>GLUI_Bitmap</scope><name>~GLUI_Bitmap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

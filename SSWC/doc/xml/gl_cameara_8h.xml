@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="gl_cameara_8h" kind="file">
+    <compoundname>glCameara.h</compoundname>
+    <includes local="no">windows.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="yes">Math\Vector3.h</includes>
+    <includes refid="_app_8h" local="yes">App.h</includes>
+    <includes local="no">gl\GL.h</includes>
+    <includes local="no">gl\GLU.h</includes>
+    <includes refid="_scene_8h" local="yes">Scene.h</includes>
+    <includedby refid="gl_camera_8cpp" local="yes">SSWC/src/glCamera.cpp</includedby>
+    <includedby refid="_program_8h" local="yes">SSWC/src/Program.h</includedby>
+    <includedby refid="_program_8cpp" local="yes">SSWC/src/Program.cpp</includedby>
+    <incdepgraph>
+      <node id="1753">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1723">
+        <label>iomanip</label>
+      </node>
+      <node id="1711">
+        <label>windows.h</label>
+      </node>
+      <node id="1754">
+        <label>gl/gl.h</label>
+      </node>
+      <node id="1748">
+        <label>CSpice\Date.h</label>
+      </node>
+      <node id="1750">
+        <label>Math\Matrix4x4.h</label>
+      </node>
+      <node id="1747">
+        <label>CSpice\SpaceObject.h</label>
+      </node>
+      <node id="1742">
+        <label>Windows.h</label>
+      </node>
+      <node id="1727">
+        <label>cmath</label>
+      </node>
+      <node id="1733">
+        <label>stdexcept</label>
+      </node>
+      <node id="1720">
+        <label>string</label>
+      </node>
+      <node id="1740">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="1744">
+        <label>TGA.h</label>
+        <link refid="_t_g_a_8h"/>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1740" relation="include">
+        </childnode>
+      </node>
+      <node id="1725">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+      </node>
+      <node id="1722">
+        <label>fstream</label>
+      </node>
+      <node id="1710">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="glCameara.h"/>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1740" relation="include">
+        </childnode>
+        <childnode refid="1741" relation="include">
+        </childnode>
+      </node>
+      <node id="1730">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1731" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+      </node>
+      <node id="1729">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1725" relation="include">
+        </childnode>
+        <childnode refid="1730" relation="include">
+        </childnode>
+        <childnode refid="1728" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+        <childnode refid="1734" relation="include">
+        </childnode>
+      </node>
+      <node id="1741">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1743" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+      </node>
+      <node id="1716">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+      </node>
+      <node id="1714">
+        <label>App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+      </node>
+      <node id="1718">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+      </node>
+      <node id="1751">
+        <label>Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1721">
+        <label>ctime</label>
+      </node>
+      <node id="1731">
+        <label>Time.h</label>
+      </node>
+      <node id="1724">
+        <label>vector</label>
+      </node>
+      <node id="1743">
+        <label>Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1744" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1738">
+        <label>array</label>
+      </node>
+      <node id="1719">
+        <label>sstream</label>
+      </node>
+      <node id="1745">
+        <label>Trajectory.h</label>
+        <link refid="_trajectory_8h"/>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1740" relation="include">
+        </childnode>
+      </node>
+      <node id="1713">
+        <label>Math\Vector3.h</label>
+      </node>
+      <node id="1712">
+        <label>math.h</label>
+      </node>
+      <node id="1734">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="1735" relation="include">
+        </childnode>
+        <childnode refid="1733" relation="include">
+        </childnode>
+      </node>
+      <node id="1746">
+        <label>Math\Quantity.h</label>
+      </node>
+      <node id="1749">
+        <label>deque</label>
+      </node>
+      <node id="1726">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="1727" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1755">
+        <label>gl/glu.h</label>
+      </node>
+      <node id="1728">
+        <label>SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+        <childnode refid="1725" relation="include">
+        </childnode>
+        <childnode refid="1730" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+        <childnode refid="1736" relation="include">
+        </childnode>
+      </node>
+      <node id="1737">
+        <label>SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1728" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1738" relation="include">
+        </childnode>
+      </node>
+      <node id="1739">
+        <label>gl\GL.h</label>
+      </node>
+      <node id="1752">
+        <label>stdio.h</label>
+      </node>
+      <node id="1735">
+        <label>cstring</label>
+      </node>
+      <node id="1717">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="1732">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="1727" relation="include">
+        </childnode>
+        <childnode refid="1733" relation="include">
+        </childnode>
+      </node>
+      <node id="1736">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="1727" relation="include">
+        </childnode>
+      </node>
+      <node id="1715">
+        <label>CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1725" relation="include">
+        </childnode>
+        <childnode refid="1728" relation="include">
+        </childnode>
+        <childnode refid="1737" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+        <childnode refid="1730" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1760">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="1758">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="1759" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+      </node>
+      <node id="1756">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="glCameara.h"/>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1758" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+      </node>
+      <node id="1757">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="1759">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgl_camera" prot="public">glCamera</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Math\Vector3.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_app_8h" kindref="compound">App.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl\GL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl\GLU.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_scene_8h" kindref="compound">Scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classgl_camera" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgl_camera" kindref="compound">glCamera</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//direction<sp/>of<sp/>camera<sp/>view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//vertical<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classgl_camera_1a8d5190bd0b8078e6b653904f9fc84687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="classgl_camera_1a8d5190bd0b8078e6b653904f9fc84687" kindref="member">strafeVec</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a8339c3cd03f2c15ea28cc4f7d473d3cd" kindref="member">glCamera</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1aefdc27e4f845a5c3610044c78068f802" kindref="member">PositionCamera</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1ad14659710098d9f0db8211c7681243b7" kindref="member">RotateAroundPoint</ref>(<ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1ac5785ab7420408b165ad7a48aaab1a3a" kindref="member">MoveCamera</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>velocity);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a31b34555bdea70f380fe6810b6be24ed" kindref="member">Strafe</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" kindref="member">Rotate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9e06c1f76a20fed54ca742cd25cb02c4" kindref="member">angle</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1ab5c79ab0c78257e824f10bef3efbf61a" kindref="member">setViewByMouse</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa214bd63e12f7ddf524c83894fcc69a7" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a1ab1368aaf700ab1a4c38f4332a4fc0e" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_program_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a7ad65ff247a29468cb939474e4c07c4b" kindref="member">FocusOnPlanet</ref>(<ref refid="class_planet" kindref="compound">Planet</ref>&amp;<sp/>planet,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>SetVelocity(float<sp/>value)<sp/>{<sp/>velocity<sp/>=<sp/>value;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a1be4621c5b94b057920b3a2a27adb99b" kindref="member">RetrieveObjectID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa214bd63e12f7ddf524c83894fcc69a7" kindref="member">height</ref>,<sp/><ref refid="class_scene" kindref="compound">Scene</ref><sp/>scene,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transformOrientation();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transformTranslation();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,816 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___master___object" kind="class" prot="public">
+    <compoundname>GLUI_Master_Object</compoundname>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___master___object_1adef972538b4195478dd9feaabd55bd26" prot="public" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref></type>
+        <definition>GLUI_Node GLUI_Master_Object::gluis</definition>
+        <argsstring></argsstring>
+        <name>gluis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="481" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___master___object_1a024c89d0bbae3ea4ebf84af79b093a36" prot="public" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___control" kindref="compound">GLUI_Control</ref> *</type>
+        <definition>GLUI_Control* GLUI_Master_Object::active_control</definition>
+        <argsstring></argsstring>
+        <name>active_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="482" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___master___object_1a0df5b34fced5bb930fb0fe4d982b4e8c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___control" kindref="compound">GLUI_Control</ref> *</type>
+        <definition>GLUI_Control * GLUI_Master_Object::curr_left_button_glut_menu</definition>
+        <argsstring></argsstring>
+        <name>curr_left_button_glut_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="482" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___master___object_1a41b447c76e0a9088aa703593499ff4cb" prot="public" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i" kindref="compound">GLUI</ref> *</type>
+        <definition>GLUI* GLUI_Master_Object::active_control_glui</definition>
+        <argsstring></argsstring>
+        <name>active_control_glui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="483" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___master___object_1a9cd3c12203f03cd54115e7852e0d82e3" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_Master_Object::glui_id_counter</definition>
+        <argsstring></argsstring>
+        <name>glui_id_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="484" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___master___object_1a9e7c7f665bd3f07d81125e59e727748f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref></type>
+        <definition>GLUI_Node GLUI_Master_Object::glut_windows</definition>
+        <argsstring></argsstring>
+        <name>glut_windows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="544" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___master___object_1abf6168a26cd0cacf4d7daec5f7c51559" prot="private" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*</type>
+        <definition>void(* GLUI_Master_Object::glut_idle_CB)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>glut_idle_CB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="545" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="545" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_g_l_u_i___master___object_1ad7c67b26e8436e7ef84d8657704010da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glui_idle_func</definition>
+        <argsstring>()</argsstring>
+        <name>glui_idle_func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="474" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a5947a4fbf4c2d75296781c642cd56d13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_Master_Object::GLUI_Master_Object</definition>
+        <argsstring>()</argsstring>
+        <name>GLUI_Master_Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="478" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a21dd14b088510fb6b3fb1f4d50e31cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_Master_Object::~GLUI_Master_Object</definition>
+        <argsstring>()</argsstring>
+        <name>~GLUI_Master_Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="479" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a8f9134da7b46e4147fc07dbf8c881e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i___glut___window" kindref="compound">GLUI_Glut_Window</ref> *</type>
+        <definition>GLUI_Glut_Window* GLUI_Master_Object::find_glut_window</definition>
+        <argsstring>(int window_id)</argsstring>
+        <name>find_glut_window</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>window_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="486" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a5d1b3a7cc294314dda9864cd7bd64a62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutIdleFunc</definition>
+        <argsstring>(void(*f)(void))</argsstring>
+        <name>set_glutIdleFunc</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1afb8aea4fc250cddb252570508acbd603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_left_button_glut_menu_control</definition>
+        <argsstring>(GLUI_Control *control)</argsstring>
+        <name>set_left_button_glut_menu_control</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___control" kindref="compound">GLUI_Control</ref> *</type>
+          <declname>control</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="503" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1aed8155ef565e847af72ba26478daa388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutReshapeFunc</definition>
+        <argsstring>(void(*f)(int width, int height))</argsstring>
+        <name>set_glutReshapeFunc</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> <ref refid="glext_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>, <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> <ref refid="glext_8h_1aa214bd63e12f7ddf524c83894fcc69a7" kindref="member">height</ref>)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="508" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1aec70f38a81424a09c42f5a3e4e6edc43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutKeyboardFunc</definition>
+        <argsstring>(void(*f)(unsigned char key, int x, int y))</argsstring>
+        <name>set_glutKeyboardFunc</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(unsigned char key, <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> <ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>, <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> <ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="509" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a69ccd15bd0829ef1600de7026e6e903e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutSpecialFunc</definition>
+        <argsstring>(void(*f)(int key, int x, int y))</argsstring>
+        <name>set_glutSpecialFunc</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> key, <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> <ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>, <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> <ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="510" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a8cfe4c66d1eae820db4409ea7f4cdd61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutMouseFunc</definition>
+        <argsstring>(void(*f)(int, int, int, int))</argsstring>
+        <name>set_glutMouseFunc</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>, <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>, <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>, <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="511" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a2a20f0e78093357d1b2ca9099dccab2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutDisplayFunc</definition>
+        <argsstring>(void(*f)(void))</argsstring>
+        <name>set_glutDisplayFunc</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="513" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="513" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a57fd64245124e6d77e78b2d33b8d34b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutTimerFunc</definition>
+        <argsstring>(unsigned int millis, void(*f)(int value), int value)</argsstring>
+        <name>set_glutTimerFunc</name>
+        <param>
+          <type>unsigned <ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>millis</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> <ref refid="glext_8h_1a79169be77d7e02a24f68a5bfe627dc29" kindref="member">value</ref>)</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="514" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="514" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1aa36f406dc447d6903dec41d7b3a8293e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutOverlayDisplayFunc</definition>
+        <argsstring>(void(*f)(void))</argsstring>
+        <name>set_glutOverlayDisplayFunc</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>(*)(<ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref>)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="516" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="516" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1acfcb50c389eb48a599ffabfa87ee91d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutSpaceballMotionFunc</definition>
+        <argsstring>(Int3_CB f)</argsstring>
+        <name>set_glutSpaceballMotionFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1a6990fdc97840c78d17c74d77113b60ad" kindref="member">Int3_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="517" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="517" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a0d8211580f34f3349c4c63431220049c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutSpaceballRotateFunc</definition>
+        <argsstring>(Int3_CB f)</argsstring>
+        <name>set_glutSpaceballRotateFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1a6990fdc97840c78d17c74d77113b60ad" kindref="member">Int3_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="518" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="518" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a47961d2385bfbbb58c5cc2aac24473b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutSpaceballButtonFunc</definition>
+        <argsstring>(Int2_CB f)</argsstring>
+        <name>set_glutSpaceballButtonFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1aab4303326f838bf185b93c83524af987" kindref="member">Int2_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="519" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="519" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1aa0f01144f1894acdebffce2c0c3d1a93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutTabletMotionFunc</definition>
+        <argsstring>(Int2_CB f)</argsstring>
+        <name>set_glutTabletMotionFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1aab4303326f838bf185b93c83524af987" kindref="member">Int2_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="520" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="520" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a449c4ac3bd2edfb6854b90543b6633de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutTabletButtonFunc</definition>
+        <argsstring>(Int4_CB f)</argsstring>
+        <name>set_glutTabletButtonFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1a47b7da882646d5a03c1d3bd080434272" kindref="member">Int4_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="521" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="521" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1af230d62a22c0016cf740977553c42c33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutMenuStatusFunc</definition>
+        <argsstring>(Int3_CB f)</argsstring>
+        <name>set_glutMenuStatusFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1a6990fdc97840c78d17c74d77113b60ad" kindref="member">Int3_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="523" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="523" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a191c14ba9994bf9ca365c5da06286c59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutMenuStateFunc</definition>
+        <argsstring>(Int1_CB f)</argsstring>
+        <name>set_glutMenuStateFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1a04a3d4228bbb184c4202b2178e9e142b" kindref="member">Int1_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="524" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="524" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a02d788570f74d1997075c2ad536154ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutButtonBoxFunc</definition>
+        <argsstring>(Int2_CB f)</argsstring>
+        <name>set_glutButtonBoxFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1aab4303326f838bf185b93c83524af987" kindref="member">Int2_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="525" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="525" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a8b6d9eed9feec3c8e138ebfe2c1b93e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::set_glutDialsFunc</definition>
+        <argsstring>(Int2_CB f)</argsstring>
+        <name>set_glutDialsFunc</name>
+        <param>
+          <type><ref refid="glui_8h_1aab4303326f838bf185b93c83524af987" kindref="member">Int2_CB</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="526" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="526" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a47180ea52267dd8355c607e3a1d51b7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i" kindref="compound">GLUI</ref> *</type>
+        <definition>GLUI* GLUI_Master_Object::create_glui</definition>
+        <argsstring>(const char *name, long flags=0, int x=-1, int y=-1)</argsstring>
+        <name>create_glui</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>x</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>y</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="529" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a434b0331a0c3c529b6d439839bb80143" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i" kindref="compound">GLUI</ref> *</type>
+        <definition>GLUI* GLUI_Master_Object::create_glui_subwindow</definition>
+        <argsstring>(int parent_window, long flags=0)</argsstring>
+        <name>create_glui_subwindow</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>parent_window</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="530" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a7bc5d2a384514f038e9ae83737f02f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i" kindref="compound">GLUI</ref> *</type>
+        <definition>GLUI* GLUI_Master_Object::find_glui_by_window_id</definition>
+        <argsstring>(int window_id)</argsstring>
+        <name>find_glui_by_window_id</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>window_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="531" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a2bee4bcbf463ab57f6da65eeb9a93ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::get_viewport_area</definition>
+        <argsstring>(int *x, int *y, int *w, int *h)</argsstring>
+        <name>get_viewport_area</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="532" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1ad62e7468e51d92ac67617f1968b1c944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::auto_set_viewport</definition>
+        <argsstring>()</argsstring>
+        <name>auto_set_viewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="533" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1ad2f380184ab29c1817f1ad3b25b36fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::close_all</definition>
+        <argsstring>()</argsstring>
+        <name>close_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="534" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a6fb29a6080a45d364fc4653591cb1ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::sync_live_all</definition>
+        <argsstring>()</argsstring>
+        <name>sync_live_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="535" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a8e092dea6e4ae3a6b52c8cba92eeefb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::reshape</definition>
+        <argsstring>()</argsstring>
+        <name>reshape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="537" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1ad4654282669300f569d30a4c430f4e6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float GLUI_Master_Object::get_version</definition>
+        <argsstring>()</argsstring>
+        <name>get_version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="539" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="539" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1af9b11cec3c215c6acc1de9bf8e0d92f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::glui_setIdleFuncIfNecessary</definition>
+        <argsstring>(void)</argsstring>
+        <name>glui_setIdleFuncIfNecessary</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="541" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_g_l_u_i___master___object_1a1efe89b09783b9fce6f5ad9d09bb0181" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Master_Object::add_cb_to_glut_window</definition>
+        <argsstring>(int window, int cb_type, void *cb)</argsstring>
+        <name>add_cb_to_glut_window</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>cb_type</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref> *</type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="547" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The master manages our interaction with GLUT. There&apos;s only one <ref refid="class_g_l_u_i___master___object" kindref="compound">GLUI_Master_Object</ref>. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="732">
+        <label>RGBc</label>
+        <link refid="class_r_g_bc"/>
+      </node>
+      <node id="728">
+        <label>GLUI_Control</label>
+        <link refid="class_g_l_u_i___control"/>
+        <childnode refid="727" relation="public-inheritance">
+        </childnode>
+        <childnode refid="727" relation="usage">
+          <edgelabel>collapsed_node</edgelabel>
+        </childnode>
+        <childnode refid="729" relation="usage">
+          <edgelabel>callback</edgelabel>
+        </childnode>
+        <childnode refid="730" relation="usage">
+          <edgelabel>glui</edgelabel>
+        </childnode>
+      </node>
+      <node id="733">
+        <label>GLUI_StdBitmaps</label>
+        <link refid="class_g_l_u_i___std_bitmaps"/>
+      </node>
+      <node id="726">
+        <label>GLUI_Master_Object</label>
+        <link refid="class_g_l_u_i___master___object"/>
+        <childnode refid="727" relation="usage">
+          <edgelabel>gluis</edgelabel>
+        </childnode>
+        <childnode refid="728" relation="usage">
+          <edgelabel>curr_left_button_glut_menu</edgelabel>
+          <edgelabel>active_control</edgelabel>
+        </childnode>
+        <childnode refid="730" relation="usage">
+          <edgelabel>active_control_glui</edgelabel>
+        </childnode>
+      </node>
+      <node id="729">
+        <label>GLUI_CB</label>
+        <link refid="class_g_l_u_i___c_b"/>
+      </node>
+      <node id="734">
+        <label>GLUI_Panel</label>
+        <link refid="class_g_l_u_i___panel"/>
+        <childnode refid="728" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="731">
+        <label>GLUI_Main</label>
+        <link refid="class_g_l_u_i___main"/>
+        <childnode refid="727" relation="public-inheritance">
+        </childnode>
+        <childnode refid="728" relation="usage">
+          <edgelabel>active_control</edgelabel>
+          <edgelabel>mouse_over_control</edgelabel>
+        </childnode>
+        <childnode refid="732" relation="usage">
+          <edgelabel>bkgd_color</edgelabel>
+        </childnode>
+        <childnode refid="733" relation="usage">
+          <edgelabel>std_bitmaps</edgelabel>
+        </childnode>
+        <childnode refid="734" relation="usage">
+          <edgelabel>main_panel</edgelabel>
+        </childnode>
+      </node>
+      <node id="727">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+        <childnode refid="727" relation="usage">
+          <edgelabel>prev_sibling</edgelabel>
+          <edgelabel>next_sibling</edgelabel>
+          <edgelabel>child_head</edgelabel>
+          <edgelabel>parent_node</edgelabel>
+          <edgelabel>child_tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="730">
+        <label>GLUI</label>
+        <link refid="class_g_l_u_i"/>
+        <childnode refid="731" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="472" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="471" bodyend="548"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___master___object_1a024c89d0bbae3ea4ebf84af79b093a36" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>active_control</name></member>
+      <member refid="class_g_l_u_i___master___object_1a41b447c76e0a9088aa703593499ff4cb" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>active_control_glui</name></member>
+      <member refid="class_g_l_u_i___master___object_1a1efe89b09783b9fce6f5ad9d09bb0181" prot="private" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>add_cb_to_glut_window</name></member>
+      <member refid="class_g_l_u_i___master___object_1ad62e7468e51d92ac67617f1968b1c944" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>auto_set_viewport</name></member>
+      <member refid="class_g_l_u_i___master___object_1ad2f380184ab29c1817f1ad3b25b36fd5" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>close_all</name></member>
+      <member refid="class_g_l_u_i___master___object_1a47180ea52267dd8355c607e3a1d51b7a" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>create_glui</name></member>
+      <member refid="class_g_l_u_i___master___object_1a434b0331a0c3c529b6d439839bb80143" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>create_glui_subwindow</name></member>
+      <member refid="class_g_l_u_i___master___object_1a0df5b34fced5bb930fb0fe4d982b4e8c" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>curr_left_button_glut_menu</name></member>
+      <member refid="class_g_l_u_i___master___object_1a7bc5d2a384514f038e9ae83737f02f6c" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>find_glui_by_window_id</name></member>
+      <member refid="class_g_l_u_i___master___object_1a8f9134da7b46e4147fc07dbf8c881e90" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>find_glut_window</name></member>
+      <member refid="class_g_l_u_i___master___object_1ad4654282669300f569d30a4c430f4e6f" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>get_version</name></member>
+      <member refid="class_g_l_u_i___master___object_1a2bee4bcbf463ab57f6da65eeb9a93ee8" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>get_viewport_area</name></member>
+      <member refid="class_g_l_u_i___master___object_1a9cd3c12203f03cd54115e7852e0d82e3" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>glui_id_counter</name></member>
+      <member refid="class_g_l_u_i___master___object_1ad7c67b26e8436e7ef84d8657704010da" prot="private" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>glui_idle_func</name></member>
+      <member refid="class_g_l_u_i___master___object_1a5947a4fbf4c2d75296781c642cd56d13" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>GLUI_Master_Object</name></member>
+      <member refid="class_g_l_u_i___master___object_1af9b11cec3c215c6acc1de9bf8e0d92f3" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>glui_setIdleFuncIfNecessary</name></member>
+      <member refid="class_g_l_u_i___master___object_1adef972538b4195478dd9feaabd55bd26" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>gluis</name></member>
+      <member refid="class_g_l_u_i___master___object_1abf6168a26cd0cacf4d7daec5f7c51559" prot="private" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>glut_idle_CB</name></member>
+      <member refid="class_g_l_u_i___master___object_1a9e7c7f665bd3f07d81125e59e727748f" prot="private" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>glut_windows</name></member>
+      <member refid="class_g_l_u_i___master___object_1a8e092dea6e4ae3a6b52c8cba92eeefb4" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>reshape</name></member>
+      <member refid="class_g_l_u_i___master___object_1a02d788570f74d1997075c2ad536154ac" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutButtonBoxFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a8b6d9eed9feec3c8e138ebfe2c1b93e5" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutDialsFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a2a20f0e78093357d1b2ca9099dccab2a" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutDisplayFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a5d1b3a7cc294314dda9864cd7bd64a62" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutIdleFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1aec70f38a81424a09c42f5a3e4e6edc43" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutKeyboardFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a191c14ba9994bf9ca365c5da06286c59" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutMenuStateFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1af230d62a22c0016cf740977553c42c33" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutMenuStatusFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a8cfe4c66d1eae820db4409ea7f4cdd61" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutMouseFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1aa36f406dc447d6903dec41d7b3a8293e" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutOverlayDisplayFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1aed8155ef565e847af72ba26478daa388" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutReshapeFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a47961d2385bfbbb58c5cc2aac24473b0" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutSpaceballButtonFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1acfcb50c389eb48a599ffabfa87ee91d7" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutSpaceballMotionFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a0d8211580f34f3349c4c63431220049c" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutSpaceballRotateFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a69ccd15bd0829ef1600de7026e6e903e" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutSpecialFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a449c4ac3bd2edfb6854b90543b6633de" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutTabletButtonFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1aa0f01144f1894acdebffce2c0c3d1a93" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutTabletMotionFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1a57fd64245124e6d77e78b2d33b8d34b4" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_glutTimerFunc</name></member>
+      <member refid="class_g_l_u_i___master___object_1afb8aea4fc250cddb252570508acbd603" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>set_left_button_glut_menu_control</name></member>
+      <member refid="class_g_l_u_i___master___object_1a6fb29a6080a45d364fc4653591cb1ade" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>sync_live_all</name></member>
+      <member refid="class_g_l_u_i___master___object_1a21dd14b088510fb6b3fb1f4d50e31cfc" prot="public" virt="non-virtual"><scope>GLUI_Master_Object</scope><name>~GLUI_Master_Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

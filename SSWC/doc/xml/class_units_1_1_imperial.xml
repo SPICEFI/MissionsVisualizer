@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_units_1_1_imperial" kind="class" prot="public">
+    <compoundname>Units::Imperial</compoundname>
+    <includes refid="_quantity_8h" local="no">Quantity.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_units_1_1_imperial_1ab94938e29c6ad2bfd28576401a580fc7" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>const LengthUnit Units::Imperial::inches</definition>
+        <argsstring></argsstring>
+        <name>inches</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(0.0254, <ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">Units::Metric::meters</ref>, &quot;in&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="254" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_imperial_1aa9b2921928f73582aec2467ba60bb625" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>const LengthUnit Units::Imperial::feet</definition>
+        <argsstring></argsstring>
+        <name>feet</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(0.3048, <ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">Units::Metric::meters</ref>, &quot;ft&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="255" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_imperial_1ae2bee79b25bd5888d7e6b454a057cb66" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>const LengthUnit Units::Imperial::yards</definition>
+        <argsstring></argsstring>
+        <name>yards</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(3.0, <ref refid="class_units_1_1_imperial_1aa9b2921928f73582aec2467ba60bb625" kindref="member">Units::Imperial::feet</ref>, &quot;yd&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="256" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_imperial_1a3ccc983d656c0b984f7b269d6e6c3625" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>const LengthUnit Units::Imperial::miles</definition>
+        <argsstring></argsstring>
+        <name>miles</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(5280.0, <ref refid="class_units_1_1_imperial_1aa9b2921928f73582aec2467ba60bb625" kindref="member">Units::Imperial::feet</ref>, &quot;mi&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="257" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_imperial_1af866267c1b81518be69261c840d1e201" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" kindref="member">MassUnit</ref></type>
+        <definition>const MassUnit Units::Imperial::ounces</definition>
+        <argsstring></argsstring>
+        <name>ounces</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(1.0/16.0, <ref refid="class_units_1_1_imperial_1a25954e93175ecbf7c8dcc870e6c01dd4" kindref="member">Units::Imperial::pounds</ref>, &quot;oz&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="259" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_imperial_1a25954e93175ecbf7c8dcc870e6c01dd4" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" kindref="member">MassUnit</ref></type>
+        <definition>const MassUnit Units::Imperial::pounds</definition>
+        <argsstring></argsstring>
+        <name>pounds</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(453.59237, <ref refid="class_units_1_1_metric_1a88cdf60341e6f6d7013018cdc1c26ec6" kindref="member">Units::Metric::grams</ref>, &quot;lb&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="260" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_imperial_1aa704afada0bf66bfb942b92b880e425e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" kindref="member">MassUnit</ref></type>
+        <definition>const MassUnit Units::Imperial::tons</definition>
+        <argsstring></argsstring>
+        <name>tons</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(2240.0, <ref refid="class_units_1_1_imperial_1a25954e93175ecbf7c8dcc870e6c01dd4" kindref="member">Units::Imperial::pounds</ref>, &quot;t&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="261" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_imperial_1aa16979886192a537b02c2421701c8e25" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a4130b5cf107e9890a06c6c06bbfa7da3" kindref="member">VelocityUnit</ref></type>
+        <definition>const VelocityUnit Units::Imperial::mph</definition>
+        <argsstring></argsstring>
+        <name>mph</name>
+        <initializer>= <ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">VelocityUnit::DerivedUnit</ref>(<ref refid="class_units_1_1_imperial_1a3ccc983d656c0b984f7b269d6e6c3625" kindref="member">Units::Imperial::miles</ref>, <ref refid="class_units_1_1_common_1a85905b04a8c1fa4058249d06c81828c7" kindref="member">Units::Common::hours</ref>, &quot;mph&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="263" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="956">
+        <label>Units::Imperial</label>
+        <link refid="class_units_1_1_imperial"/>
+        <childnode refid="957" relation="usage">
+          <edgelabel>tons</edgelabel>
+          <edgelabel>yards</edgelabel>
+          <edgelabel>pounds</edgelabel>
+          <edgelabel>miles</edgelabel>
+          <edgelabel>inches</edgelabel>
+          <edgelabel>ounces</edgelabel>
+          <edgelabel>feet</edgelabel>
+          <edgelabel>mph</edgelabel>
+        </childnode>
+      </node>
+      <node id="957">
+        <label>Unit&lt; length, time, mass &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="252" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="251" bodyend="264"/>
+    <listofallmembers>
+      <member refid="class_units_1_1_imperial_1aa9b2921928f73582aec2467ba60bb625" prot="public" virt="non-virtual"><scope>Units::Imperial</scope><name>feet</name></member>
+      <member refid="class_units_1_1_imperial_1ab94938e29c6ad2bfd28576401a580fc7" prot="public" virt="non-virtual"><scope>Units::Imperial</scope><name>inches</name></member>
+      <member refid="class_units_1_1_imperial_1a3ccc983d656c0b984f7b269d6e6c3625" prot="public" virt="non-virtual"><scope>Units::Imperial</scope><name>miles</name></member>
+      <member refid="class_units_1_1_imperial_1aa16979886192a537b02c2421701c8e25" prot="public" virt="non-virtual"><scope>Units::Imperial</scope><name>mph</name></member>
+      <member refid="class_units_1_1_imperial_1af866267c1b81518be69261c840d1e201" prot="public" virt="non-virtual"><scope>Units::Imperial</scope><name>ounces</name></member>
+      <member refid="class_units_1_1_imperial_1a25954e93175ecbf7c8dcc870e6c01dd4" prot="public" virt="non-virtual"><scope>Units::Imperial</scope><name>pounds</name></member>
+      <member refid="class_units_1_1_imperial_1aa704afada0bf66bfb942b92b880e425e" prot="public" virt="non-virtual"><scope>Units::Imperial</scope><name>tons</name></member>
+      <member refid="class_units_1_1_imperial_1ae2bee79b25bd5888d7e6b454a057cb66" prot="public" virt="non-virtual"><scope>Units::Imperial</scope><name>yards</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

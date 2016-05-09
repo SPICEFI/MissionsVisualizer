@@ -1,0 +1,236 @@
+\hypertarget{_program_8cpp}{\section{S\+S\+W\+C/src/\+Program.cpp File Reference}
+\label{_program_8cpp}\index{S\+S\+W\+C/src/\+Program.\+cpp@{S\+S\+W\+C/src/\+Program.\+cpp}}
+}
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$gl/gl.\+h$>$}\\*
+{\ttfamily \#include $<$gl/glu.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Program.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gl\+Cameara.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+L\textbackslash{}\+A\+R\+B\+\_\+\+Multisample.\+h\char`\"{}}\\*
+Include dependency graph for Program.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_program_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_program_8cpp_a527ebd50a21f72cd2b9fddef165ed238}{W\+M\+\_\+\+T\+O\+G\+G\+L\+E\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}~(W\+M\+\_\+\+U\+S\+E\+R+1)
+\item 
+\#define \hyperlink{_program_8cpp_afa897dbff5fe069c3de0de6b29d87d23}{W\+M\+\_\+\+C\+H\+A\+N\+G\+E\+M\+O\+D\+E}~(W\+M\+\_\+\+U\+S\+E\+R+2)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a05538ca0e53ef21cb679e6de0fef7f8e}{B\+O\+O\+L} \hyperlink{_program_8cpp_a925c379c31d2b266b6a2f40489aa71b0}{Destroy\+Window\+G\+L} (\hyperlink{struct_g_l___window}{G\+L\+\_\+\+Window} $\ast$window)
+\item 
+\hyperlink{wglext_8h_a05538ca0e53ef21cb679e6de0fef7f8e}{B\+O\+O\+L} \hyperlink{_program_8cpp_a9ebdc997c7278fa86878981ccedf59c0}{Create\+Window\+G\+L} (\hyperlink{struct_g_l___window}{G\+L\+\_\+\+Window} $\ast$window)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{_program_8cpp_a0fdcd098e981b37c3685361619834b1e}{Terminate\+Application} (\hyperlink{struct_g_l___window}{G\+L\+\_\+\+Window} $\ast$window)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{_program_8cpp_a64336eb1fbbdd65a88ef980e54f8c612}{Toggle\+Fullscreen} (\hyperlink{struct_g_l___window}{G\+L\+\_\+\+Window} $\ast$window)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{_program_8cpp_aca13ae354e568d47ac6a6f43a11c7cd5}{Change\+Mode} (\hyperlink{struct_g_l___window}{G\+L\+\_\+\+Window} $\ast$window)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{_program_8cpp_acd8e77ed23d70212a163cf8cbc5ac3eb}{Reshape\+G\+L} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_aa105b18f96e6bc2485cb7f576a7fb9ba}{width}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_aa214bd63e12f7ddf524c83894fcc69a7}{height})
+\item 
+\hyperlink{wglext_8h_a05538ca0e53ef21cb679e6de0fef7f8e}{B\+O\+O\+L} \hyperlink{_program_8cpp_a2b7b187c6a62d4ad37075630443bb655}{Change\+Screen\+Resolution} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_aa105b18f96e6bc2485cb7f576a7fb9ba}{width}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_aa214bd63e12f7ddf524c83894fcc69a7}{height}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} bits\+Per\+Pixel)
+\item 
+L\+R\+E\+S\+U\+L\+T \hyperlink{glut_8h_ad48a1ae177f90ad8a0ccc92481c664a7}{C\+A\+L\+L\+B\+A\+C\+K} \hyperlink{_program_8cpp_aa3c0dffffb193b71b4355d686021719c}{Window\+Proc} (H\+W\+N\+D h\+Wnd, \hyperlink{wglext_8h_a27e741d83d43f1ecddfe8b256a6e4355}{U\+I\+N\+T} u\+Msg, W\+P\+A\+R\+A\+M w\+Param, L\+P\+A\+R\+A\+M l\+Param)
+\item 
+\hyperlink{wglext_8h_a05538ca0e53ef21cb679e6de0fef7f8e}{B\+O\+O\+L} \hyperlink{_program_8cpp_a719eb7a4abab6bbc5126ce945a5e8b0a}{Register\+Window\+Class} (\hyperlink{struct_application}{Application} $\ast$application)
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} W\+I\+N\+A\+P\+I \hyperlink{_program_8cpp_a661c2abc03926acfaeb93b4ae7db4943}{Win\+Main} (H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance, H\+I\+N\+S\+T\+A\+N\+C\+E h\+Prev\+Instance, L\+P\+S\+T\+R lp\+Cmd\+Line, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} n\+Cmd\+Show)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_program_8cpp_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_program_8cpp_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}
+\item 
+bool \hyperlink{_program_8cpp_a267464ccc3025f3a57afac78adad6c26}{L\+E\+F\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+D\+O\+W\+N}
+\item 
+bool \hyperlink{_program_8cpp_ab4ee690627521f03271ea0d8ec41b4d6}{M\+O\+U\+S\+E\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N}
+\item 
+bool \hyperlink{_program_8cpp_a3772f1f217df2a7863cc26d1d8a5bbbe}{orientation\+Mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_program_8cpp_afa897dbff5fe069c3de0de6b29d87d23}{\index{Program.\+cpp@{Program.\+cpp}!W\+M\+\_\+\+C\+H\+A\+N\+G\+E\+M\+O\+D\+E@{W\+M\+\_\+\+C\+H\+A\+N\+G\+E\+M\+O\+D\+E}}
+\index{W\+M\+\_\+\+C\+H\+A\+N\+G\+E\+M\+O\+D\+E@{W\+M\+\_\+\+C\+H\+A\+N\+G\+E\+M\+O\+D\+E}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{W\+M\+\_\+\+C\+H\+A\+N\+G\+E\+M\+O\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+M\+\_\+\+C\+H\+A\+N\+G\+E\+M\+O\+D\+E~(W\+M\+\_\+\+U\+S\+E\+R+2)}}\label{_program_8cpp_afa897dbff5fe069c3de0de6b29d87d23}
+
+
+Definition at line 11 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a527ebd50a21f72cd2b9fddef165ed238}{\index{Program.\+cpp@{Program.\+cpp}!W\+M\+\_\+\+T\+O\+G\+G\+L\+E\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N@{W\+M\+\_\+\+T\+O\+G\+G\+L\+E\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}}
+\index{W\+M\+\_\+\+T\+O\+G\+G\+L\+E\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N@{W\+M\+\_\+\+T\+O\+G\+G\+L\+E\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{W\+M\+\_\+\+T\+O\+G\+G\+L\+E\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+M\+\_\+\+T\+O\+G\+G\+L\+E\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N~(W\+M\+\_\+\+U\+S\+E\+R+1)}}\label{_program_8cpp_a527ebd50a21f72cd2b9fddef165ed238}
+
+
+Definition at line 10 of file Program.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_program_8cpp_aca13ae354e568d47ac6a6f43a11c7cd5}{\index{Program.\+cpp@{Program.\+cpp}!Change\+Mode@{Change\+Mode}}
+\index{Change\+Mode@{Change\+Mode}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Change\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Change\+Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+\_\+\+Window} $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_aca13ae354e568d47ac6a6f43a11c7cd5}
+
+
+Definition at line 38 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a2b7b187c6a62d4ad37075630443bb655}{\index{Program.\+cpp@{Program.\+cpp}!Change\+Screen\+Resolution@{Change\+Screen\+Resolution}}
+\index{Change\+Screen\+Resolution@{Change\+Screen\+Resolution}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Change\+Screen\+Resolution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+O\+L} Change\+Screen\+Resolution (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{width, }
+\item[{{\bf int}}]{height, }
+\item[{{\bf int}}]{bits\+Per\+Pixel}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_a2b7b187c6a62d4ad37075630443bb655}
+
+
+Definition at line 54 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a9ebdc997c7278fa86878981ccedf59c0}{\index{Program.\+cpp@{Program.\+cpp}!Create\+Window\+G\+L@{Create\+Window\+G\+L}}
+\index{Create\+Window\+G\+L@{Create\+Window\+G\+L}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Create\+Window\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+O\+L} Create\+Window\+G\+L (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+\_\+\+Window} $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_a9ebdc997c7278fa86878981ccedf59c0}
+
+
+Definition at line 70 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a925c379c31d2b266b6a2f40489aa71b0}{\index{Program.\+cpp@{Program.\+cpp}!Destroy\+Window\+G\+L@{Destroy\+Window\+G\+L}}
+\index{Destroy\+Window\+G\+L@{Destroy\+Window\+G\+L}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Destroy\+Window\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+O\+L} Destroy\+Window\+G\+L (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+\_\+\+Window} $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_a925c379c31d2b266b6a2f40489aa71b0}
+
+
+Definition at line 234 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a719eb7a4abab6bbc5126ce945a5e8b0a}{\index{Program.\+cpp@{Program.\+cpp}!Register\+Window\+Class@{Register\+Window\+Class}}
+\index{Register\+Window\+Class@{Register\+Window\+Class}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Register\+Window\+Class}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+O\+L} Register\+Window\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf Application} $\ast$}]{application}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_a719eb7a4abab6bbc5126ce945a5e8b0a}
+
+
+Definition at line 373 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_acd8e77ed23d70212a163cf8cbc5ac3eb}{\index{Program.\+cpp@{Program.\+cpp}!Reshape\+G\+L@{Reshape\+G\+L}}
+\index{Reshape\+G\+L@{Reshape\+G\+L}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Reshape\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Reshape\+G\+L (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{width, }
+\item[{{\bf int}}]{height}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_acd8e77ed23d70212a163cf8cbc5ac3eb}
+
+
+Definition at line 43 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a0fdcd098e981b37c3685361619834b1e}{\index{Program.\+cpp@{Program.\+cpp}!Terminate\+Application@{Terminate\+Application}}
+\index{Terminate\+Application@{Terminate\+Application}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Terminate\+Application}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Terminate\+Application (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+\_\+\+Window} $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_a0fdcd098e981b37c3685361619834b1e}
+
+
+Definition at line 27 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a64336eb1fbbdd65a88ef980e54f8c612}{\index{Program.\+cpp@{Program.\+cpp}!Toggle\+Fullscreen@{Toggle\+Fullscreen}}
+\index{Toggle\+Fullscreen@{Toggle\+Fullscreen}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Toggle\+Fullscreen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Toggle\+Fullscreen (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+\_\+\+Window} $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_a64336eb1fbbdd65a88ef980e54f8c612}
+
+
+Definition at line 33 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_aa3c0dffffb193b71b4355d686021719c}{\index{Program.\+cpp@{Program.\+cpp}!Window\+Proc@{Window\+Proc}}
+\index{Window\+Proc@{Window\+Proc}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Window\+Proc}]{\setlength{\rightskip}{0pt plus 5cm}L\+R\+E\+S\+U\+L\+T {\bf C\+A\+L\+L\+B\+A\+C\+K} Window\+Proc (
+\begin{DoxyParamCaption}
+\item[{H\+W\+N\+D}]{h\+Wnd, }
+\item[{{\bf U\+I\+N\+T}}]{u\+Msg, }
+\item[{W\+P\+A\+R\+A\+M}]{w\+Param, }
+\item[{L\+P\+A\+R\+A\+M}]{l\+Param}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_aa3c0dffffb193b71b4355d686021719c}
+
+
+Definition at line 263 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a661c2abc03926acfaeb93b4ae7db4943}{\index{Program.\+cpp@{Program.\+cpp}!Win\+Main@{Win\+Main}}
+\index{Win\+Main@{Win\+Main}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{Win\+Main}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} W\+I\+N\+A\+P\+I Win\+Main (
+\begin{DoxyParamCaption}
+\item[{H\+I\+N\+S\+T\+A\+N\+C\+E}]{h\+Instance, }
+\item[{H\+I\+N\+S\+T\+A\+N\+C\+E}]{h\+Prev\+Instance, }
+\item[{L\+P\+S\+T\+R}]{lp\+Cmd\+Line, }
+\item[{{\bf int}}]{n\+Cmd\+Show}
+\end{DoxyParamCaption}
+)}}\label{_program_8cpp_a661c2abc03926acfaeb93b4ae7db4943}
+
+
+Definition at line 395 of file Program.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_program_8cpp_a267464ccc3025f3a57afac78adad6c26}{\index{Program.\+cpp@{Program.\+cpp}!L\+E\+F\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+D\+O\+W\+N@{L\+E\+F\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+D\+O\+W\+N}}
+\index{L\+E\+F\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+D\+O\+W\+N@{L\+E\+F\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+D\+O\+W\+N}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{L\+E\+F\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+D\+O\+W\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool L\+E\+F\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+D\+O\+W\+N}}\label{_program_8cpp_a267464ccc3025f3a57afac78adad6c26}
+
+
+Definition at line 21 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_ab4ee690627521f03271ea0d8ec41b4d6}{\index{Program.\+cpp@{Program.\+cpp}!M\+O\+U\+S\+E\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N@{M\+O\+U\+S\+E\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N}}
+\index{M\+O\+U\+S\+E\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N@{M\+O\+U\+S\+E\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{M\+O\+U\+S\+E\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+O\+U\+S\+E\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N}}\label{_program_8cpp_ab4ee690627521f03271ea0d8ec41b4d6}
+
+
+Definition at line 22 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a6c59af730728bf5260ef828aea2eebee}{\index{Program.\+cpp@{Program.\+cpp}!mouse\+\_\+x@{mouse\+\_\+x}}
+\index{mouse\+\_\+x@{mouse\+\_\+x}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{mouse\+\_\+x}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} mouse\+\_\+x}}\label{_program_8cpp_a6c59af730728bf5260ef828aea2eebee}
+
+
+Definition at line 16 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_ab21653e455bbca86826aa5f628a5fdb2}{\index{Program.\+cpp@{Program.\+cpp}!mouse\+\_\+y@{mouse\+\_\+y}}
+\index{mouse\+\_\+y@{mouse\+\_\+y}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{mouse\+\_\+y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} mouse\+\_\+y}}\label{_program_8cpp_ab21653e455bbca86826aa5f628a5fdb2}
+
+
+Definition at line 16 of file Program.\+cpp.
+
+\hypertarget{_program_8cpp_a3772f1f217df2a7863cc26d1d8a5bbbe}{\index{Program.\+cpp@{Program.\+cpp}!orientation\+Mode@{orientation\+Mode}}
+\index{orientation\+Mode@{orientation\+Mode}!Program.\+cpp@{Program.\+cpp}}
+\subsubsection[{orientation\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool orientation\+Mode}}\label{_program_8cpp_a3772f1f217df2a7863cc26d1d8a5bbbe}
+
+
+Definition at line 46 of file Routine.\+cpp.
+

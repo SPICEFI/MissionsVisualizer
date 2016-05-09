@@ -1,0 +1,131 @@
+.TH "GLUI_Button" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Button \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_pressed\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_text\fP (\fBint\fP sunken)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Button\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP cb=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Button\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcurrently_inside\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+An onscreen, clickable button--an outlined label that can be clicked\&. When clicked, a button calls its \fBGLUI_CB\fP callback with its ID\&. 
+.PP
+Definition at line 956 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Button::GLUI_Button (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcb = \fC\fBGLUI_CB\fP()\fP)"
+Create a new button\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP The panel our object is inside; or the main \fBGLUI\fP object\&. 
+.br
+\fIname\fP The text inside the button\&. 
+.br
+\fIid\fP Optional ID number, to pass to the optional callback function\&. 
+.br
+\fIcallback\fP Optional callback function, taking either the int ID or control\&. 
+.RE
+.PP
+
+.SS "GLUI_Button::GLUI_Button (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 982 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Button::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 985 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Button::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Button::draw_pressed (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Button::draw_text (\fBint\fPsunken)"
+
+.SS "\fBint\fP GLUI_Button::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Button::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Button::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Button::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Button::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool GLUI_Button::currently_inside"
+
+.PP
+Definition at line 959 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

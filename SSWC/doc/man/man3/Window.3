@@ -1,0 +1,74 @@
+.TH "Window" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Window \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Window\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWindow\fP ()"
+.br
+.ti -1c
+.RI "\fBWindow\fP (SpiceCell cell)"
+.br
+.ti -1c
+.RI "std::vector< \fBInterval\fP > \fBGetIntervals\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIsIncluded\fP (double point) const "
+.br
+.ti -1c
+.RI "bool \fBIsIncluded\fP (double \fBleft\fP, double \fBright\fP) const "
+.br
+.ti -1c
+.RI "bool \fBIsIncluded\fP (const \fBInterval\fP &interval) const "
+.br
+.ti -1c
+.RI "SpiceCell & \fBGetSpiceCell\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 43 of file Window\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Window::Window ()"
+
+.PP
+Definition at line 3 of file Window\&.cpp\&.
+.SS "Window::Window (SpiceCellcell)"
+
+.PP
+Definition at line 10 of file Window\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::vector< \fBInterval\fP > Window::GetIntervals () const"
+
+.PP
+Definition at line 19 of file Window\&.cpp\&.
+.SS "SpiceCell & Window::GetSpiceCell ()"
+
+.PP
+Definition at line 59 of file Window\&.cpp\&.
+.SS "bool Window::IsIncluded (doublepoint) const"
+
+.PP
+Definition at line 38 of file Window\&.cpp\&.
+.SS "bool Window::IsIncluded (doubleleft, doubleright) const"
+
+.PP
+Definition at line 43 of file Window\&.cpp\&.
+.SS "bool Window::IsIncluded (const \fBInterval\fP &interval) const"
+
+.PP
+Definition at line 54 of file Window\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

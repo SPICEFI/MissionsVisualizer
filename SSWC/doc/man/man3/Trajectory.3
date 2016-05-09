@@ -1,0 +1,227 @@
+.TH "Trajectory" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Trajectory \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Trajectory\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTrajectory\fP (const \fBSpaceObject\fP &\fBobj\fP, \fBFrame\fP \fBframe\fP, const \fBLengthUnit\fP &\fBunit\fP)"
+.br
+.ti -1c
+.RI "\fB~Trajectory\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetRelativeTo\fP (const \fBSpaceObject\fP &\fBobj\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetRelativeToFrameCenter\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetStaticParams\fP (\fBDate\fP startDate, \fBDate\fP endDate, \fBint\fP resolution)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetIncrementalParams\fP (\fBDate\fP startDate, \fBTime\fP historyDuration, \fBint\fP resolution)"
+.br
+.ti -1c
+.RI "const std::deque< \fBVector3\fP > & \fBGetIncrementalTrajectory\fP (\fBDate\fP curDate)"
+.br
+.ti -1c
+.RI "const std::vector< \fBVector3\fP > & \fBGetStaticTrajectory\fP () const "
+.br
+.ti -1c
+.RI "bool \fBIncrementalDefined\fP () const "
+.br
+.ti -1c
+.RI "bool \fBStaticDefined\fP () const "
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "const \fBSpaceObject\fP & \fBobj\fP"
+.br
+.ti -1c
+.RI "\fBFrame\fP \fBframe\fP"
+.br
+.ti -1c
+.RI "\fBLengthUnit\fP \fBunit\fP"
+.br
+.ti -1c
+.RI "const \fBSpaceObject\fP * \fBrelativeTo\fP"
+.br
+.ti -1c
+.RI "bool \fBstaticDefined\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBVector3\fP > \fBstaticTrajectory\fP"
+.br
+.ti -1c
+.RI "bool \fBincrementalDefined\fP"
+.br
+.ti -1c
+.RI "\fBDate\fP \fBprevDate\fP"
+.br
+.ti -1c
+.RI "std::deque< \fBVector3\fP > \fBincrementalTrajectory\fP"
+.br
+.ti -1c
+.RI "\fBDate\fP \fBincStartDate\fP"
+.br
+.ti -1c
+.RI "\fBTime\fP \fBincHistoryDuration\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBincResolution\fP"
+.br
+.ti -1c
+.RI "\fBTime\fP \fBincStepDuration\fP"
+.br
+.ti -1c
+.RI "\fBDate\fP \fBnextPointDate\fP"
+.br
+.ti -1c
+.RI "float \fBlineWidth\fP = 1\&.0f"
+.br
+.ti -1c
+.RI "float \fBred\fP = 255\&.0f"
+.br
+.ti -1c
+.RI "float \fBgreen\fP = 255\&.0f"
+.br
+.ti -1c
+.RI "float \fBblue\fP = 255\&.0f"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 17 of file Trajectory\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Trajectory::Trajectory (const \fBSpaceObject\fP &obj, \fBFrame\fPframe, const \fBLengthUnit\fP &unit)"
+
+.PP
+Definition at line 4 of file Trajectory\&.cpp\&.
+.SS "Trajectory::~Trajectory ()\fC [inline]\fP"
+
+.PP
+Definition at line 47 of file Trajectory\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::deque< \fBVector3\fP > & Trajectory::GetIncrementalTrajectory (\fBDate\fPcurDate)"
+
+.PP
+Definition at line 53 of file Trajectory\&.cpp\&.
+.SS "const std::vector< \fBVector3\fP > & Trajectory::GetStaticTrajectory () const"
+
+.PP
+Definition at line 72 of file Trajectory\&.cpp\&.
+.SS "bool Trajectory::IncrementalDefined () const\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file Trajectory\&.h\&.
+.SS "\fBvoid\fP Trajectory::SetIncrementalParams (\fBDate\fPstartDate, \fBTime\fPhistoryDuration, \fBint\fPresolution)"
+
+.PP
+Definition at line 41 of file Trajectory\&.cpp\&.
+.SS "\fBvoid\fP Trajectory::SetRelativeTo (const \fBSpaceObject\fP &obj)"
+
+.PP
+Definition at line 19 of file Trajectory\&.cpp\&.
+.SS "\fBvoid\fP Trajectory::SetRelativeToFrameCenter ()"
+
+.PP
+Definition at line 24 of file Trajectory\&.cpp\&.
+.SS "\fBvoid\fP Trajectory::SetStaticParams (\fBDate\fPstartDate, \fBDate\fPendDate, \fBint\fPresolution)"
+
+.PP
+Definition at line 29 of file Trajectory\&.cpp\&.
+.SS "bool Trajectory::StaticDefined () const\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file Trajectory\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float Trajectory::blue = 255\&.0f\fC [protected]\fP"
+
+.PP
+Definition at line 43 of file Trajectory\&.h\&.
+.SS "\fBFrame\fP Trajectory::frame\fC [protected]\fP"
+
+.PP
+Definition at line 23 of file Trajectory\&.h\&.
+.SS "float Trajectory::green = 255\&.0f\fC [protected]\fP"
+
+.PP
+Definition at line 42 of file Trajectory\&.h\&.
+.SS "\fBTime\fP Trajectory::incHistoryDuration\fC [protected]\fP"
+
+.PP
+Definition at line 35 of file Trajectory\&.h\&.
+.SS "bool Trajectory::incrementalDefined\fC [protected]\fP"
+
+.PP
+Definition at line 31 of file Trajectory\&.h\&.
+.SS "std::deque<\fBVector3\fP> Trajectory::incrementalTrajectory\fC [protected]\fP"
+
+.PP
+Definition at line 33 of file Trajectory\&.h\&.
+.SS "\fBint\fP Trajectory::incResolution\fC [protected]\fP"
+
+.PP
+Definition at line 36 of file Trajectory\&.h\&.
+.SS "\fBDate\fP Trajectory::incStartDate\fC [protected]\fP"
+
+.PP
+Definition at line 34 of file Trajectory\&.h\&.
+.SS "\fBTime\fP Trajectory::incStepDuration\fC [protected]\fP"
+
+.PP
+Definition at line 37 of file Trajectory\&.h\&.
+.SS "float Trajectory::lineWidth = 1\&.0f\fC [protected]\fP"
+
+.PP
+Definition at line 40 of file Trajectory\&.h\&.
+.SS "\fBDate\fP Trajectory::nextPointDate\fC [protected]\fP"
+
+.PP
+Definition at line 38 of file Trajectory\&.h\&.
+.SS "const \fBSpaceObject\fP& Trajectory::obj\fC [protected]\fP"
+
+.PP
+Definition at line 22 of file Trajectory\&.h\&.
+.SS "\fBDate\fP Trajectory::prevDate\fC [protected]\fP"
+
+.PP
+Definition at line 32 of file Trajectory\&.h\&.
+.SS "float Trajectory::red = 255\&.0f\fC [protected]\fP"
+
+.PP
+Definition at line 41 of file Trajectory\&.h\&.
+.SS "const \fBSpaceObject\fP* Trajectory::relativeTo\fC [protected]\fP"
+
+.PP
+Definition at line 26 of file Trajectory\&.h\&.
+.SS "bool Trajectory::staticDefined\fC [protected]\fP"
+
+.PP
+Definition at line 28 of file Trajectory\&.h\&.
+.SS "std::vector<\fBVector3\fP> Trajectory::staticTrajectory\fC [protected]\fP"
+
+.PP
+Definition at line 29 of file Trajectory\&.h\&.
+.SS "\fBLengthUnit\fP Trajectory::unit\fC [protected]\fP"
+
+.PP
+Definition at line 24 of file Trajectory\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

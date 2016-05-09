@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_planet" kind="class" prot="public">
+    <compoundname>Planet</compoundname>
+    <includes refid="_planet_8h" local="no">Planet.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_planet_1a31ab1654dd709417ec574489f3ff9449" prot="public" static="no" mutable="no">
+        <type><ref refid="class_space_body" kindref="compound">SpaceBody</ref></type>
+        <definition>SpaceBody Planet::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="14" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1abe80bd4546d0c412fdb14bd831e035df" prot="public" static="no" mutable="no">
+        <type><ref refid="class_t_g_a" kindref="compound">TGA</ref> *</type>
+        <definition>TGA* Planet::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="15" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1aa5996da28b63251a27728cc07f233234" prot="public" static="no" mutable="no">
+        <type><ref refid="class_trajectory" kindref="compound">Trajectory</ref></type>
+        <definition>Trajectory Planet::trajectory</definition>
+        <argsstring></argsstring>
+        <name>trajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="16" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1aba2872d5b503c1f36436bc7e05b27b51" prot="public" static="no" mutable="no">
+        <type><ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref></type>
+        <definition>Matrix4x4 Planet::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="17" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1adc07c8cd520fd4dac2c646c30085c65b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Planet::rotationMatrix[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>rotationMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="18" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1a0d455048a88b3c681a0f1480802445f8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Planet::simpleRender</definition>
+        <argsstring></argsstring>
+        <name>simpleRender</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="19" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1abeda08386455b0aae9f55b4623f89200" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Planet::clicked</definition>
+        <argsstring></argsstring>
+        <name>clicked</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="20" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1a43314ec05b89111f6a3a1787cb9f8af3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Planet::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <initializer>= 0.000004f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="23" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1a233de9f5467dd01708a6ea14fadeb057" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Planet::distanceScale</definition>
+        <argsstring></argsstring>
+        <name>distanceScale</name>
+        <initializer>= 0.0000004f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="24" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_planet_1aa0ecbff60832f5532799b452fa45783d" prot="protected" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int Planet::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="48" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1a0e7b5b758400af733e7a06380ff4cf84" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Planet::marked</definition>
+        <argsstring></argsstring>
+        <name>marked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="49" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_planet_1a7a9f21f63faf830b6bbbbec3e0ac668c" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_font" kindref="compound">Font</ref></type>
+        <definition>Font Planet::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="50" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_planet_1a02ba902d9d51b174b4c57403f1638495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Planet::Planet</definition>
+        <argsstring>(const SpaceBody &amp;body, TGA *texture, const SpaceObject &amp;obj, const Frame &amp;frame, HDC hDC)</argsstring>
+        <name>Planet</name>
+        <param>
+          <type>const <ref refid="class_space_body" kindref="compound">SpaceBody</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type><ref refid="class_t_g_a" kindref="compound">TGA</ref> *</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_space_object" kindref="compound">SpaceObject</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_frame" kindref="compound">Frame</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref></type>
+          <declname>hDC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp" bodystart="9" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1aaa1aaed9d4ef90b4836531edb7b18e0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Planet::~Planet</definition>
+        <argsstring>()</argsstring>
+        <name>~Planet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="27" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1a5e2be16561d2a5f687dc1928afa9a783" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::SetSimpleRenderMode</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>SetSimpleRenderMode</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1a938d62dd26e9fc747bbc9eb7ab8fa177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::Render</definition>
+        <argsstring>(Date t, App &amp;app)</argsstring>
+        <name>Render</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="class_app" kindref="compound">App</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="30" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp" bodystart="29" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1a0675007fd8f528fb0614c224faf87d84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int Planet::GetID</definition>
+        <argsstring>() const </argsstring>
+        <name>GetID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="31" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1aeaf472f68af81e148fd429e366f85150" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::SetMark</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>SetMark</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="33" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1a83ded8fa3ef34e76649cc68fcb9af217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::SetClicked</definition>
+        <argsstring>()</argsstring>
+        <name>SetClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="35" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1ae7360bf0dbe27e47a2425c09587e3461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Planet::GetPosition</definition>
+        <argsstring>(Date t, App &amp;app)</argsstring>
+        <name>GetPosition</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="class_app" kindref="compound">App</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="37" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1ab77012071c79fec77e23f9f6e95241c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Planet::GetRadius</definition>
+        <argsstring>(App &amp;app)</argsstring>
+        <name>GetRadius</name>
+        <param>
+          <type><ref refid="class_app" kindref="compound">App</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="38" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1aa50208f541563334226c4e6ddcd5994f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::ShowMessageBoxWithInfo</definition>
+        <argsstring>(App &amp;app)</argsstring>
+        <name>ShowMessageBoxWithInfo</name>
+        <param>
+          <type><ref refid="class_app" kindref="compound">App</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="39" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp" bodystart="160" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_planet_1ae0e4b2dc072babd4b9c41b4d58bae59a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::RenderObject</definition>
+        <argsstring>(Date t, App &amp;app)</argsstring>
+        <name>RenderObject</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="class_app" kindref="compound">App</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="42" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp" bodystart="51" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1ab192a4a1288d2654e833d072be66cedf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::RenderAsPlanet</definition>
+        <argsstring>(Date t, App &amp;app)</argsstring>
+        <name>RenderAsPlanet</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="class_app" kindref="compound">App</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1a879d6d523d1fb59fb209d3ae1c30da6e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::RenderTrajectory</definition>
+        <argsstring>(Date t, float lineWidth=1.0f, float red=255.0f, float green=255.0f, float blue=255.0f)</argsstring>
+        <name>RenderTrajectory</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lineWidth</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>red</declname>
+          <defval>255.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>green</declname>
+          <defval>255.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>blue</declname>
+          <defval>255.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="44" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp" bodystart="192" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_planet_1a4c65f02a1dd09efd4303f33ee62b1150" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Planet::DrawBillboard</definition>
+        <argsstring>(Vector3 &amp;planetPosition, double radius)</argsstring>
+        <name>DrawBillboard</name>
+        <param>
+          <type><ref refid="class_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>planetPosition</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="45" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp" bodystart="154" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="980">
+        <label>Matrix4x4</label>
+        <link refid="class_matrix4x4"/>
+        <childnode refid="980" relation="usage">
+          <edgelabel>Identity</edgelabel>
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+      <node id="979">
+        <label>Font</label>
+        <link refid="class_font"/>
+      </node>
+      <node id="971">
+        <label>SpaceBody</label>
+        <link refid="class_space_body"/>
+        <childnode refid="972" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="973">
+        <label>Trajectory</label>
+        <link refid="class_trajectory"/>
+        <childnode refid="972" relation="usage">
+          <edgelabel>obj</edgelabel>
+          <edgelabel>relativeTo</edgelabel>
+        </childnode>
+        <childnode refid="974" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+        <childnode refid="975" relation="usage">
+          <edgelabel>unit</edgelabel>
+        </childnode>
+        <childnode refid="976" relation="usage">
+          <edgelabel>nextPointDate</edgelabel>
+          <edgelabel>prevDate</edgelabel>
+          <edgelabel>incStartDate</edgelabel>
+        </childnode>
+        <childnode refid="977" relation="usage">
+          <edgelabel>incHistoryDuration</edgelabel>
+          <edgelabel>incStepDuration</edgelabel>
+        </childnode>
+      </node>
+      <node id="978">
+        <label>TGA</label>
+        <link refid="class_t_g_a"/>
+      </node>
+      <node id="975">
+        <label>Unit&lt; 1, 0, 0 &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+      <node id="976">
+        <label>Date</label>
+        <link refid="class_date"/>
+      </node>
+      <node id="977">
+        <label>Quantity&lt; 0, 1, 0 &gt;</label>
+        <link refid="class_quantity"/>
+      </node>
+      <node id="974">
+        <label>Frame</label>
+        <link refid="class_frame"/>
+        <childnode refid="974" relation="usage">
+          <edgelabel>J2000</edgelabel>
+          <edgelabel>ECLIPJ2000</edgelabel>
+        </childnode>
+      </node>
+      <node id="972">
+        <label>SpaceObject</label>
+        <link refid="class_space_object"/>
+        <childnode refid="972" relation="usage">
+          <edgelabel>Sun</edgelabel>
+          <edgelabel>SSB</edgelabel>
+        </childnode>
+      </node>
+      <node id="970">
+        <label>Planet</label>
+        <link refid="class_planet"/>
+        <childnode refid="971" relation="usage">
+          <edgelabel>body</edgelabel>
+        </childnode>
+        <childnode refid="973" relation="usage">
+          <edgelabel>trajectory</edgelabel>
+        </childnode>
+        <childnode refid="978" relation="usage">
+          <edgelabel>texture</edgelabel>
+        </childnode>
+        <childnode refid="979" relation="usage">
+          <edgelabel>font</edgelabel>
+        </childnode>
+        <childnode refid="980" relation="usage">
+          <edgelabel>m</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" line="12" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.h" bodystart="11" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" prot="public" virt="non-virtual"><scope>Planet</scope><name>body</name></member>
+      <member refid="class_planet_1abeda08386455b0aae9f55b4623f89200" prot="public" virt="non-virtual"><scope>Planet</scope><name>clicked</name></member>
+      <member refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" prot="public" virt="non-virtual"><scope>Planet</scope><name>distanceScale</name></member>
+      <member refid="class_planet_1a4c65f02a1dd09efd4303f33ee62b1150" prot="private" virt="non-virtual"><scope>Planet</scope><name>DrawBillboard</name></member>
+      <member refid="class_planet_1a7a9f21f63faf830b6bbbbec3e0ac668c" prot="protected" virt="non-virtual"><scope>Planet</scope><name>font</name></member>
+      <member refid="class_planet_1a0675007fd8f528fb0614c224faf87d84" prot="public" virt="non-virtual"><scope>Planet</scope><name>GetID</name></member>
+      <member refid="class_planet_1ae7360bf0dbe27e47a2425c09587e3461" prot="public" virt="non-virtual"><scope>Planet</scope><name>GetPosition</name></member>
+      <member refid="class_planet_1ab77012071c79fec77e23f9f6e95241c5" prot="public" virt="non-virtual"><scope>Planet</scope><name>GetRadius</name></member>
+      <member refid="class_planet_1aa0ecbff60832f5532799b452fa45783d" prot="protected" virt="non-virtual"><scope>Planet</scope><name>ID</name></member>
+      <member refid="class_planet_1aba2872d5b503c1f36436bc7e05b27b51" prot="public" virt="non-virtual"><scope>Planet</scope><name>m</name></member>
+      <member refid="class_planet_1a0e7b5b758400af733e7a06380ff4cf84" prot="protected" virt="non-virtual"><scope>Planet</scope><name>marked</name></member>
+      <member refid="class_planet_1a02ba902d9d51b174b4c57403f1638495" prot="public" virt="non-virtual"><scope>Planet</scope><name>Planet</name></member>
+      <member refid="class_planet_1a938d62dd26e9fc747bbc9eb7ab8fa177" prot="public" virt="non-virtual"><scope>Planet</scope><name>Render</name></member>
+      <member refid="class_planet_1ab192a4a1288d2654e833d072be66cedf" prot="private" virt="non-virtual"><scope>Planet</scope><name>RenderAsPlanet</name></member>
+      <member refid="class_planet_1ae0e4b2dc072babd4b9c41b4d58bae59a" prot="private" virt="non-virtual"><scope>Planet</scope><name>RenderObject</name></member>
+      <member refid="class_planet_1a879d6d523d1fb59fb209d3ae1c30da6e" prot="private" virt="non-virtual"><scope>Planet</scope><name>RenderTrajectory</name></member>
+      <member refid="class_planet_1adc07c8cd520fd4dac2c646c30085c65b" prot="public" virt="non-virtual"><scope>Planet</scope><name>rotationMatrix</name></member>
+      <member refid="class_planet_1a43314ec05b89111f6a3a1787cb9f8af3" prot="public" virt="non-virtual"><scope>Planet</scope><name>scale</name></member>
+      <member refid="class_planet_1a83ded8fa3ef34e76649cc68fcb9af217" prot="public" virt="non-virtual"><scope>Planet</scope><name>SetClicked</name></member>
+      <member refid="class_planet_1aeaf472f68af81e148fd429e366f85150" prot="public" virt="non-virtual"><scope>Planet</scope><name>SetMark</name></member>
+      <member refid="class_planet_1a5e2be16561d2a5f687dc1928afa9a783" prot="public" virt="non-virtual"><scope>Planet</scope><name>SetSimpleRenderMode</name></member>
+      <member refid="class_planet_1aa50208f541563334226c4e6ddcd5994f" prot="public" virt="non-virtual"><scope>Planet</scope><name>ShowMessageBoxWithInfo</name></member>
+      <member refid="class_planet_1a0d455048a88b3c681a0f1480802445f8" prot="public" virt="non-virtual"><scope>Planet</scope><name>simpleRender</name></member>
+      <member refid="class_planet_1abe80bd4546d0c412fdb14bd831e035df" prot="public" virt="non-virtual"><scope>Planet</scope><name>texture</name></member>
+      <member refid="class_planet_1aa5996da28b63251a27728cc07f233234" prot="public" virt="non-virtual"><scope>Planet</scope><name>trajectory</name></member>
+      <member refid="class_planet_1aaa1aaed9d4ef90b4836531edb7b18e0a" prot="public" virt="non-virtual"><scope>Planet</scope><name>~Planet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

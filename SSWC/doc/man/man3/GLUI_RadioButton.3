@@ -1,0 +1,133 @@
+.TH "GLUI_RadioButton" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_RadioButton \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_active_area\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_checked\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_unchecked\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_O\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_RadioButton\fP (\fBGLUI_RadioGroup\fP *\fBgroup\fP, const char *\fBname\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBorig_value\fP"
+.br
+.ti -1c
+.RI "bool \fBcurrently_inside\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtext_x_offset\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_RadioGroup\fP * \fBgroup\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 1784 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_RadioButton::GLUI_RadioButton (\fBGLUI_RadioGroup\fP *group, const char *name)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_RadioButton::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1807 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_RadioButton::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_RadioButton::draw_active_area (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_RadioButton::draw_checked (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_RadioButton::draw_O (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_RadioButton::draw_unchecked (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI_RadioButton::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_RadioButton::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_RadioButton::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_RadioButton::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool GLUI_RadioButton::currently_inside"
+
+.PP
+Definition at line 1788 of file glui\&.h\&.
+.SS "\fBGLUI_RadioGroup\fP* GLUI_RadioButton::group"
+
+.PP
+Definition at line 1804 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_RadioButton::orig_value"
+
+.PP
+Definition at line 1787 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_RadioButton::text_x_offset"
+
+.PP
+Definition at line 1789 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

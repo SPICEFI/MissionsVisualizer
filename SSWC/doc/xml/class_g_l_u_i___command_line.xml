@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___command_line" kind="class" prot="public">
+    <compoundname>GLUI_CommandLine</compoundname>
+    <basecompoundref refid="class_g_l_u_i___edit_text" prot="public" virt="non-virtual">GLUI_EditText</basecompoundref>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_g_l_u_i___command_line_1afcd6d744f2444c5a8cfbe053b5f37cd6" prot="public" static="no">
+        <name>@1</name>
+        <enumvalue id="class_g_l_u_i___command_line_1afcd6d744f2444c5a8cfbe053b5f37cd6a991ecacadb37c63013e7e24f4e86496f" prot="public">
+          <name>HIST_SIZE</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1702" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1702" bodyend="1702"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_g_l_u_i___command_line_1af9db00326863efa876cbb5c6b2d255b7" prot="public" static="no">
+        <type><ref refid="class_g_l_u_i___edit_text" kindref="compound">GLUI_EditText</ref></type>
+        <definition>typedef GLUI_EditText GLUI_CommandLine::Super</definition>
+        <argsstring></argsstring>
+        <name>Super</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1700" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1700" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___command_line_1abc9dcdc275bb36dee1a9db8d348338b5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="glui_8h_1aada824856f7bcf29794719981ebd8f60" kindref="member">GLUI_String</ref> &gt;</type>
+        <definition>std::vector&lt;GLUI_String&gt; GLUI_CommandLine::hist_list</definition>
+        <argsstring></argsstring>
+        <name>hist_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1703" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___command_line_1ab8d88779584003b82000b824ac6f4906" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_CommandLine::curr_hist</definition>
+        <argsstring></argsstring>
+        <name>curr_hist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1704" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___command_line_1a689ee6f9ede7c0f6c2060fd5650b1d22" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_CommandLine::oldest_hist</definition>
+        <argsstring></argsstring>
+        <name>oldest_hist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1705" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___command_line_1af4f50f57b5a239d8564619ec0779518d" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_CommandLine::newest_hist</definition>
+        <argsstring></argsstring>
+        <name>newest_hist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1706" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___command_line_1ac2f61fd248c6adb663c6de52e9e431fd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GLUI_CommandLine::commit_flag</definition>
+        <argsstring></argsstring>
+        <name>commit_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1707" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1707" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1aac74b2f165792141d6665de1690d0aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_CommandLine::key_handler</definition>
+        <argsstring>(unsigned char key, int modifiers)</argsstring>
+        <name>key_handler</name>
+        <reimplements refid="class_g_l_u_i___edit_text_1a92fcd78877375cb2bba3b5e9f88635b6">key_handler</reimplements>
+        <param>
+          <type>unsigned char</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>modifiers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1710" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a88dafdb294350ff13c68973b59c308d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_CommandLine::special_handler</definition>
+        <argsstring>(int key, int modifiers)</argsstring>
+        <name>special_handler</name>
+        <reimplements refid="class_g_l_u_i___edit_text_1a81478f6a0a9ba0c2dc715e0b3730077e">special_handler</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>modifiers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1711" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a827fe6510aa5a38b0d2c5d016a93e1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_CommandLine::deactivate</definition>
+        <argsstring>(void)</argsstring>
+        <name>deactivate</name>
+        <reimplements refid="class_g_l_u_i___edit_text_1a4a83b7bc0b6d60e4fa0dd797b49255ab">deactivate</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1712" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a565145da6c84b9f925ca30735fc27686" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GLUI_CommandLine::get_history</definition>
+        <argsstring>(int command_number) const </argsstring>
+        <name>get_history</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>command_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1714" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1714" bodyend="1715"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a43403d60b3ac8534b84393c5328b7a03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="glui_8h_1aada824856f7bcf29794719981ebd8f60" kindref="member">GLUI_String</ref> &amp;</type>
+        <definition>virtual GLUI_String&amp; GLUI_CommandLine::get_history_str</definition>
+        <argsstring>(int command_number)</argsstring>
+        <name>get_history_str</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>command_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1716" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1716" bodyend="1717"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a9365735c17057bea2039db66d8df67f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="glui_8h_1aada824856f7bcf29794719981ebd8f60" kindref="member">GLUI_String</ref> &amp;</type>
+        <definition>virtual const GLUI_String&amp; GLUI_CommandLine::get_history_str</definition>
+        <argsstring>(int command_number) const </argsstring>
+        <name>get_history_str</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>command_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1718" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1718" bodyend="1719"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a6f8d01fd2db25c98723f85172c93fb01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>virtual void GLUI_CommandLine::recall_history</definition>
+        <argsstring>(int history_number)</argsstring>
+        <name>recall_history</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>history_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1720" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a82e2cd651cbc5431b6e4ad88c4c01472" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>virtual void GLUI_CommandLine::scroll_history</definition>
+        <argsstring>(int direction)</argsstring>
+        <name>scroll_history</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1721" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a79894d2a826c7b042c93c401a915b28f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>virtual void GLUI_CommandLine::add_to_history</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>add_to_history</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1722" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a2fcb9cb75a1960fd56c187f940e22938" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>virtual void GLUI_CommandLine::reset_history</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset_history</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1723" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a89815aca68b849830ba26253135efaf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_CommandLine::dump</definition>
+        <argsstring>(FILE *out, const char *text)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>FILE *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1725" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a1367881039ac1384af53f71fa35932b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_CommandLine::GLUI_CommandLine</definition>
+        <argsstring>(GLUI_Node *parent, const char *name, void *live_var=NULL, int id=-1, GLUI_CB callback=GLUI_CB())</argsstring>
+        <name>GLUI_CommandLine</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref> *</type>
+          <declname>live_var</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>id</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref></type>
+          <declname>callback</declname>
+          <defval><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1728" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1ae6c787ef5aa1a8c181eef9ade0c710a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_CommandLine::GLUI_CommandLine</definition>
+        <argsstring>(void)</argsstring>
+        <name>GLUI_CommandLine</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1730" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1730" bodyend="1730"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_g_l_u_i___command_line_1a21eeafb7d6f3df4d3ddee365422894b6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_CommandLine::common_init</definition>
+        <argsstring>()</argsstring>
+        <name>common_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1732" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1732" bodyend="1738"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="600">
+        <label>GLUI_Control</label>
+        <link refid="class_g_l_u_i___control"/>
+        <childnode refid="601" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="599">
+        <label>GLUI_EditText</label>
+        <link refid="class_g_l_u_i___edit_text"/>
+        <childnode refid="600" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="598">
+        <label>GLUI_CommandLine</label>
+        <link refid="class_g_l_u_i___command_line"/>
+        <childnode refid="599" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="609">
+        <label>RGBc</label>
+        <link refid="class_r_g_bc"/>
+      </node>
+      <node id="612">
+        <label>GLUI_Spinner</label>
+        <link refid="class_g_l_u_i___spinner"/>
+        <childnode refid="604" relation="public-inheritance">
+        </childnode>
+        <childnode refid="603" relation="usage">
+          <edgelabel>edittext</edgelabel>
+        </childnode>
+      </node>
+      <node id="604">
+        <label>GLUI_Control</label>
+        <link refid="class_g_l_u_i___control"/>
+        <childnode refid="605" relation="public-inheritance">
+        </childnode>
+        <childnode refid="605" relation="usage">
+          <edgelabel>collapsed_node</edgelabel>
+        </childnode>
+        <childnode refid="606" relation="usage">
+          <edgelabel>callback</edgelabel>
+        </childnode>
+        <childnode refid="607" relation="usage">
+          <edgelabel>glui</edgelabel>
+        </childnode>
+      </node>
+      <node id="610">
+        <label>GLUI_StdBitmaps</label>
+        <link refid="class_g_l_u_i___std_bitmaps"/>
+      </node>
+      <node id="606">
+        <label>GLUI_CB</label>
+        <link refid="class_g_l_u_i___c_b"/>
+      </node>
+      <node id="603">
+        <label>GLUI_EditText</label>
+        <link refid="class_g_l_u_i___edit_text"/>
+        <childnode refid="604" relation="public-inheritance">
+        </childnode>
+        <childnode refid="612" relation="usage">
+          <edgelabel>spinner</edgelabel>
+        </childnode>
+      </node>
+      <node id="602">
+        <label>GLUI_CommandLine</label>
+        <link refid="class_g_l_u_i___command_line"/>
+        <childnode refid="603" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="611">
+        <label>GLUI_Panel</label>
+        <link refid="class_g_l_u_i___panel"/>
+        <childnode refid="604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="608">
+        <label>GLUI_Main</label>
+        <link refid="class_g_l_u_i___main"/>
+        <childnode refid="605" relation="public-inheritance">
+        </childnode>
+        <childnode refid="604" relation="usage">
+          <edgelabel>active_control</edgelabel>
+          <edgelabel>mouse_over_control</edgelabel>
+        </childnode>
+        <childnode refid="609" relation="usage">
+          <edgelabel>bkgd_color</edgelabel>
+        </childnode>
+        <childnode refid="610" relation="usage">
+          <edgelabel>std_bitmaps</edgelabel>
+        </childnode>
+        <childnode refid="611" relation="usage">
+          <edgelabel>main_panel</edgelabel>
+        </childnode>
+      </node>
+      <node id="605">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+        <childnode refid="605" relation="usage">
+          <edgelabel>prev_sibling</edgelabel>
+          <edgelabel>next_sibling</edgelabel>
+          <edgelabel>child_head</edgelabel>
+          <edgelabel>parent_node</edgelabel>
+          <edgelabel>child_tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="607">
+        <label>GLUI</label>
+        <link refid="class_g_l_u_i"/>
+        <childnode refid="608" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1698" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1697" bodyend="1739"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___edit_text_1a071ddcac9844e7d0bed23a7c0dabadd1" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>activate</name></member>
+      <member refid="class_g_l_u_i___control_1ad285387e771b46fb294935f68e967a77" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>active</name></member>
+      <member refid="class_g_l_u_i___control_1ab9864db034526ddd5bbff94a5fb3ee9b" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>active_type</name></member>
+      <member refid="class_g_l_u_i___node_1a02cf295c81cebe31c39e95403dbadbc1" prot="protected" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>add_child_to_control</name></member>
+      <member refid="class_g_l_u_i___node_1abdcdd643758adab07580124187565fcd" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>add_control</name></member>
+      <member refid="class_g_l_u_i___command_line_1a79894d2a826c7b042c93c401a915b28f" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>add_to_history</name></member>
+      <member refid="class_g_l_u_i___control_1aa82d73e561e85086c13de6b8d67e9322" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>align</name></member>
+      <member refid="class_g_l_u_i___control_1a5d352c36d6bad2a1eaf9795bba00b7e7" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>alignment</name></member>
+      <member refid="class_g_l_u_i___control_1a96060fe0cc6d537e736dd6eef78e24ab" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>callback</name></member>
+      <member refid="class_g_l_u_i___control_1a2484b0899bd5b56673a73387c9c530a7" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>can_activate</name></member>
+      <member refid="class_g_l_u_i___control_1add5d7aa8efcd213181cf84975661e168" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>can_draw</name></member>
+      <member refid="class_g_l_u_i___control_1ae56ff4899b691fc25332071f8f4c15f3" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>char_width</name></member>
+      <member refid="class_g_l_u_i___control_1a3b24d8c0f29ab6fc2318278543906cb5" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>char_widths</name></member>
+      <member refid="class_g_l_u_i___node_1ad9370e7f62e83bb720063d2439f544c2" prot="protected" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>child_head</name></member>
+      <member refid="class_g_l_u_i___node_1a971d8e606c1a3442ad9b8681bdb9ed59" prot="protected" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>child_tail</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a7d8d760a5559a3317a8a080877fdab4b" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>clear_substring</name></member>
+      <member refid="class_g_l_u_i___control_1a0f32f9b712ae3233f914d02738c43e7f" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>collapsed_node</name></member>
+      <member refid="class_g_l_u_i___control_1a7a6528f287b80bed5861625eda4e5cad" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>collapsible</name></member>
+      <member refid="class_g_l_u_i___command_line_1ac2f61fd248c6adb663c6de52e9e431fd" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>commit_flag</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a35813da027699537c43e39912c3d77cd" prot="protected" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>common_construct</name></member>
+      <member refid="class_g_l_u_i___command_line_1a21eeafb7d6f3df4d3ddee365422894b6" prot="protected" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>common_init</name></member>
+      <member refid="class_g_l_u_i___control_1afc9111c158e729b1e1630d4d9cd6ee1a" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>contain_h</name></member>
+      <member refid="class_g_l_u_i___control_1a9d54f7b7c867572debdad16b37867093" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>contain_w</name></member>
+      <member refid="class_g_l_u_i___control_1aa02b20473b2d00e5b95bf36ff941e5bf" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>contain_x</name></member>
+      <member refid="class_g_l_u_i___control_1a6327d4d71e9368bf238c6fddd958649e" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>contain_y</name></member>
+      <member refid="class_g_l_u_i___command_line_1ab8d88779584003b82000b824ac6f4906" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>curr_hist</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a790a6e20d384d0f2eb4f9d4014aa9f95" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>data_type</name></member>
+      <member refid="class_g_l_u_i___command_line_1a827fe6510aa5a38b0d2c5d016a93e1ba" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>deactivate</name></member>
+      <member refid="class_g_l_u_i___edit_text_1ad6006ae65e038eb60f011c8c7200b9ea" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>debug</name></member>
+      <member refid="class_g_l_u_i___control_1a765dcd68a28a3db25bf41c015e28ee18" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>disable</name></member>
+      <member refid="class_g_l_u_i___edit_text_1af5027cba2aeff900776ea1cbea37fdd8" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>draw</name></member>
+      <member refid="class_g_l_u_i___control_1aa61812303961384f999c35f128f04c93" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_active_box</name></member>
+      <member refid="class_g_l_u_i___control_1ad1bcdb980c0ccbcbafd7b51a6564ccc0" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_bkgd_box</name></member>
+      <member refid="class_g_l_u_i___control_1a5dff8194089a66651d3729cf7c465644" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_box</name></member>
+      <member refid="class_g_l_u_i___control_1adba9e88ff56a8ea0596e6b1ede3d4b9d" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_box_inwards_outline</name></member>
+      <member refid="class_g_l_u_i___control_1af8bfdf4867b4521fd3c12825e8a150db" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_char</name></member>
+      <member refid="class_g_l_u_i___control_1a1386b942473e028e9204bd1a28e83a6d" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_emboss_box</name></member>
+      <member refid="class_g_l_u_i___edit_text_1acc67640b9e92d5c6c84e4f685762aaf4" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_insertion_pt</name></member>
+      <member refid="class_g_l_u_i___control_1aacacd563742e3e48bc5f27643e4a514c" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_name</name></member>
+      <member refid="class_g_l_u_i___control_1af151f23a66652c7be4a49320d49a3aab" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_recursive</name></member>
+      <member refid="class_g_l_u_i___control_1a05172f3645ac042839036c97e04ea819" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_string</name></member>
+      <member refid="class_g_l_u_i___control_1aba5d462fcca0297c3dbf6a26d0774e4a" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_string</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a37917739d5f240356d893b3d07d9afe6" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_text</name></member>
+      <member refid="class_g_l_u_i___edit_text_1aa6044d58c37fd18e9b5e83a153cfd108" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>draw_text_only</name></member>
+      <member refid="class_g_l_u_i___command_line_1a89815aca68b849830ba26253135efaf5" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>dump</name></member>
+      <member refid="class_g_l_u_i___control_1aaadc8fd35d8d40091abe3538af346255" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>enable</name></member>
+      <member refid="class_g_l_u_i___control_1a834202682d00a31a2141eae6709d37e1" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>enabled</name></member>
+      <member refid="class_g_l_u_i___control_1a76fe9cee85c7a296610a73b0ba12aa9c" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>execute_callback</name></member>
+      <member refid="class_g_l_u_i___edit_text_1adb7c9266e9e33ec38a2d81fbe83421b2" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>find_insertion_pt</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a9ae76bc752e7f6a8ea183c8d52844f6c" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>find_word_break</name></member>
+      <member refid="class_g_l_u_i___node_1a631b094804b887c0d091ece2786543d1" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>first_child</name></member>
+      <member refid="class_g_l_u_i___node_1ace20232965e8d9da8f3d286113d5572a" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>first_sibling</name></member>
+      <member refid="class_g_l_u_i___control_1a504f6aff85729e665fa8664d170d9878" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>float_array_size</name></member>
+      <member refid="class_g_l_u_i___control_1a6d2cc0faaa678706939ac775c523871a" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>float_array_val</name></member>
+      <member refid="class_g_l_u_i___edit_text_1abb9f58f751bb995c3c8e52dc5c085bfd" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>float_high</name></member>
+      <member refid="class_g_l_u_i___edit_text_1ac7f609e99bd8732d5026c7f57d5c8cd9" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>float_low</name></member>
+      <member refid="class_g_l_u_i___control_1ac69b8e62a6f4f16c83b70a64f73d7a1c" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>float_val</name></member>
+      <member refid="class_g_l_u_i___control_1a132273406b5ea6d95cd26501fc2f2027" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>font</name></member>
+      <member refid="class_g_l_u_i___control_1a98f514bf95d29320c175fe1d7d4ef13b" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>get_float_array_val</name></member>
+      <member refid="class_g_l_u_i___control_1a5b4f37b463259dfbf228b34b901a07cc" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>get_float_val</name></member>
+      <member refid="class_g_l_u_i___control_1af659cbe80e9a5bdfd4fbff4366d4ce4f" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>get_font</name></member>
+      <member refid="class_g_l_u_i___command_line_1a565145da6c84b9f925ca30735fc27686" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>get_history</name></member>
+      <member refid="class_g_l_u_i___command_line_1a43403d60b3ac8534b84393c5328b7a03" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>get_history_str</name></member>
+      <member refid="class_g_l_u_i___command_line_1a9365735c17057bea2039db66d8df67f3" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>get_history_str</name></member>
+      <member refid="class_g_l_u_i___control_1a855a5f2c0267a303b39f685284913b40" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>get_id</name></member>
+      <member refid="class_g_l_u_i___control_1a3ee80f39e04a26e38bc5e16f0f8af539" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>get_int_val</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a621ba269343beeba0346439a43e5e355" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>get_text</name></member>
+      <member refid="class_g_l_u_i___control_1a0cb273fd3dca9fb84809a4d350668c32" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>get_this_column_dims</name></member>
+      <member refid="class_g_l_u_i___control_1ac731aebe26d7eb0b916a9692229f0eb6" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>glui</name></member>
+      <member refid="class_g_l_u_i___command_line_1a1367881039ac1384af53f71fa35932b3" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_CommandLine</name></member>
+      <member refid="class_g_l_u_i___command_line_1ae6c787ef5aa1a8c181eef9ade0c710a1" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_CommandLine</name></member>
+      <member refid="class_g_l_u_i___control_1a09c6f812cb8b6ba83e15fd96d0018552" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_Control</name></member>
+      <member refid="class_g_l_u_i___edit_text_1af99784896490989539ef7638a7fd4e12" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_EditText</name></member>
+      <member refid="class_g_l_u_i___edit_text_1acde777046eb65672c70c51b5728e7c3f" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_EditText</name></member>
+      <member refid="class_g_l_u_i___edit_text_1adad7d18bc05da4e6aecfea680c0a0a65" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_EditText</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a85fadf933a22982801659cec28d159f1" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_EditText</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a721bd71256ee84de33682e0bf926e6a3" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_EditText</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a5aa2fc60832f1c93046a047084256474" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_EditText</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a05a7b7a6080a6cf28f19568dbb2c723c" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_EditText</name></member>
+      <member refid="class_g_l_u_i___node_1a066e5d80bfb9925bdb034c29da9c844c" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>GLUI_Node</name></member>
+      <member refid="class_g_l_u_i___control_1a058c4f060b70952e6199f1409710ba0b" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>h</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a2b89e775b0f4b989aee27cae59899a90" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>has_limits</name></member>
+      <member refid="class_g_l_u_i___control_1aec1b041f28d8ee36a0241dde827fea21" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>hidden</name></member>
+      <member refid="class_g_l_u_i___control_1ae88270c442111baddf290f4a153caed1" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>hide_internal</name></member>
+      <member refid="class_g_l_u_i___command_line_1abc9dcdc275bb36dee1a9db8d348338b5" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>hist_list</name></member>
+      <member refid="class_g_l_u_i___command_line_1afcd6d744f2444c5a8cfbe053b5f37cd6a991ecacadb37c63013e7e24f4e86496f" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>HIST_SIZE</name></member>
+      <member refid="class_g_l_u_i___control_1a4eb47a3c2c20c0c24dca192a2eb96c8d" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>idle</name></member>
+      <member refid="class_g_l_u_i___control_1a4d56b92f8b6454c3f64ba6f0ef5470b8" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>init_live</name></member>
+      <member refid="class_g_l_u_i___edit_text_1aa33884c39bf3ec7be573a345094ac590" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>insertion_pt</name></member>
+      <member refid="class_g_l_u_i___edit_text_1abd03f72719e48cadb42bb4b297b378f4" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>int_high</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a99eb694c9998c637125763cdd91b2280" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>int_low</name></member>
+      <member refid="class_g_l_u_i___control_1a4a890b5b5a854b34200b5e63f1069b4e" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>int_val</name></member>
+      <member refid="class_g_l_u_i___control_1ac667bec4efbc9bdbf3e246b4471fb4cb" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>is_container</name></member>
+      <member refid="class_g_l_u_i___control_1a3e4e35edfa04ce71c090bdb849b7642c" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>is_open</name></member>
+      <member refid="class_g_l_u_i___command_line_1aac74b2f165792141d6665de1690d0aa4" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>key_handler</name></member>
+      <member refid="class_g_l_u_i___node_1a4825cdc843f0e2b46d75fe5cb9e8ba35" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>last_child</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a66e1c808ae9587293d0a17208e7eb1db" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>last_insertion_pt</name></member>
+      <member refid="class_g_l_u_i___control_1aa9ebadbed670a1fa061918705083db57" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>last_live_float</name></member>
+      <member refid="class_g_l_u_i___control_1a719177af6b52ae3373d2b3c30430ff58" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>last_live_float_array</name></member>
+      <member refid="class_g_l_u_i___control_1abef31d8d51c8088afd6ac96ec7b596bf" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>last_live_int</name></member>
+      <member refid="class_g_l_u_i___control_1ac77569805eb6ccfce3f4ff1d09c309b6" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>last_live_text</name></member>
+      <member refid="class_g_l_u_i___node_1a6458e5a6af00ddf2ebb9271c06fa2931" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>last_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a3feadb4b6d58122ff5449adfb4a323bc" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>link_this_to_parent_first</name></member>
+      <member refid="class_g_l_u_i___node_1a28eb5c7bf5a0edf5b7ba2502384c6544" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>link_this_to_parent_last</name></member>
+      <member refid="class_g_l_u_i___node_1ad8d7fd8a437eeec4a72b73064dc954b4" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>link_this_to_sibling_next</name></member>
+      <member refid="class_g_l_u_i___node_1a5825555fc493712a1d6f24235f59f25a" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>link_this_to_sibling_prev</name></member>
+      <member refid="class_g_l_u_i___control_1a74977797cf84a38ef78de8c548bc2d25" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>live_inited</name></member>
+      <member refid="class_g_l_u_i___control_1a8ba7cae809a47dd870592aa2cc85483b" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>live_type</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a096021e2d0b258ffee0b36988850677b" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>mouse_down_handler</name></member>
+      <member refid="class_g_l_u_i___edit_text_1af98242599d889464f6b8dfb3aa23f6b4" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>mouse_held_down_handler</name></member>
+      <member refid="class_g_l_u_i___edit_text_1ad21f31b7e27b0f840ee0b8a984341b38" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>mouse_over</name></member>
+      <member refid="class_g_l_u_i___edit_text_1ac05967e2a8826e2bf796c65758da47ea" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>mouse_up_handler</name></member>
+      <member refid="class_g_l_u_i___control_1aa95b97d50df45335fc33f0af03958eb3" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>name</name></member>
+      <member refid="class_g_l_u_i___control_1a420fb3c5991b6486754ba192f8ab8274" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>needs_idle</name></member>
+      <member refid="class_g_l_u_i___command_line_1af4f50f57b5a239d8564619ec0779518d" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>newest_hist</name></member>
+      <member refid="class_g_l_u_i___node_1a7901214f386113b417a25de023476317" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>next</name></member>
+      <member refid="class_g_l_u_i___node_1a2c99ef6a1290035f98871d859d05e890" prot="protected" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>next_sibling</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a233d380e8b9fed7d5d1314888525297d" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>num_periods</name></member>
+      <member refid="class_g_l_u_i___command_line_1a689ee6f9ede7c0f6c2060fd5650b1d22" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>oldest_hist</name></member>
+      <member refid="class_g_l_u_i___edit_text_1ab65d3fccc51fefbfaf9da1dcd5ab8788" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>orig_text</name></member>
+      <member refid="class_g_l_u_i___control_1ac7417112964d4c5134d4453835a0da99" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>output_live</name></member>
+      <member refid="class_g_l_u_i___control_1a55b244224a7446e7254a9d3b468d4925" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>pack</name></member>
+      <member refid="class_g_l_u_i___control_1a1c9cf8a504998db2393c4d45144eca8d" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>pack_old</name></member>
+      <member refid="class_g_l_u_i___node_1a8ed65d447784f6f88bd3e2e2bcac6cdb" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>parent</name></member>
+      <member refid="class_g_l_u_i___node_1a308f39e8a182f499139381840418a573" prot="protected" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>parent_node</name></member>
+      <member refid="class_g_l_u_i___node_1a84892bf13144651007640c5f25b51145" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>prev</name></member>
+      <member refid="class_g_l_u_i___node_1afa72f0491ca54ce8d0a0af7049de8049" prot="protected" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>prev_sibling</name></member>
+      <member refid="class_g_l_u_i___control_1a0890ea809b8d980695939e1d92a0af47" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>ptr_val</name></member>
+      <member refid="class_g_l_u_i___command_line_1a6f8d01fd2db25c98723f85172c93fb01" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>recall_history</name></member>
+      <member refid="class_g_l_u_i___control_1a7777125cd866884377899df625bad6cd" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>redraw</name></member>
+      <member refid="class_g_l_u_i___control_1aecb4bacd8f4ff12de6ffcecc166d3adc" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>redraw_window</name></member>
+      <member refid="class_g_l_u_i___command_line_1a2fcb9cb75a1960fd56c187f940e22938" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>reset_history</name></member>
+      <member refid="class_g_l_u_i___control_1a49e4d3f46873d156162d9f770b7b3832" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>restore_window</name></member>
+      <member refid="class_g_l_u_i___command_line_1a82e2cd651cbc5431b6e4ad88c4c01472" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>scroll_history</name></member>
+      <member refid="class_g_l_u_i___edit_text_1ae757e323598b216dd656acb6bd36ce03" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>sel_end</name></member>
+      <member refid="class_g_l_u_i___edit_text_1adb68126f2422d08039af5a23a4761ab2" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>sel_start</name></member>
+      <member refid="class_g_l_u_i___control_1ad853d2029a306239daa3c9af6c36730d" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_alignment</name></member>
+      <member refid="class_g_l_u_i___control_1aa9a1c1e033c0e99e4710dfc4669660f4" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>set_float_array_val</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a3b46c3540795e49983394d3bfdb89fb6" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_float_limits</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a2c0caddce6e11b8a303c8f247b8fbf0f" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>set_float_val</name></member>
+      <member refid="class_g_l_u_i___control_1ae317f3c30fbd4cad6bd91523c7e3e6b0" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_font</name></member>
+      <member refid="class_g_l_u_i___control_1acc29b79df3861b1910b2a41e0e8d2822" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_h</name></member>
+      <member refid="class_g_l_u_i___control_1ad27f17ac45b13fb12d623f269d76db14" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>set_id</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a5761e028dc711efdc234f7211003a500" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_int_limits</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a230980562d1c49166c7600f1771669bd" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>set_int_val</name></member>
+      <member refid="class_g_l_u_i___control_1ad1bf0640802de0a40337cdbcf93a5ec6" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>set_name</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a7b1c3f892a2c340e8c7328a260d92d08" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_numeric_text</name></member>
+      <member refid="class_g_l_u_i___control_1a9c732d42b7d5e418e59c307ef2d98d5c" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>set_ptr_val</name></member>
+      <member refid="class_g_l_u_i___edit_text_1aa283908f42990f6056298d6381cc19a7" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>set_text</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a0f60b8b2a59ecf51b145187483b8deb2" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_text</name></member>
+      <member refid="class_g_l_u_i___control_1a091c0c095827c3270b442d9bd3542d50" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_to_bkgd_color</name></member>
+      <member refid="class_g_l_u_i___control_1aff3f98acd4b58ba0db35b5889c4006bc" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_to_glut_window</name></member>
+      <member refid="class_g_l_u_i___control_1a7f9dde76de0e5fd660dc43695b40c91d" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>set_w</name></member>
+      <member refid="class_g_l_u_i___control_1a023da130fb762f944077c55d90aec839" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>spacebar_mouse_click</name></member>
+      <member refid="class_g_l_u_i___command_line_1a88dafdb294350ff13c68973b59c308d1" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>special_handler</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a3d459f1fc60af26ac844283a87599a08" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>spinner</name></member>
+      <member refid="class_g_l_u_i___control_1a57ed4e7d0b82e459fb713a9bf29db12b" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>string_width</name></member>
+      <member refid="class_g_l_u_i___control_1a9d129d259e01c1b28f4fc7a7a7830189" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>string_width</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a39f38fdd484b82a55c020c9f80add5d4" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>substring_end</name></member>
+      <member refid="class_g_l_u_i___edit_text_1aa3ed3842b39fb5e9094ffcd76729ea60" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>substring_start</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a66b06ccdabaaee5ee00e77602f1aaa73" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>substring_width</name></member>
+      <member refid="class_g_l_u_i___command_line_1af9db00326863efa876cbb5c6b2d255b7" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>Super</name></member>
+      <member refid="class_g_l_u_i___control_1a56a06a9b1272eb0a537ea01a6c002cf8" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>sync_live</name></member>
+      <member refid="class_g_l_u_i___control_1af0d60e9736f4dbc34e9a536e75876d72" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>text</name></member>
+      <member refid="class_g_l_u_i___edit_text_1ad9e34b0c8c1636883b6cb8c6e8eaae7d" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>text_x_offset</name></member>
+      <member refid="class_g_l_u_i___edit_text_1aed30e771b57b3a9bcc708fba638666e6" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>title_x_offset</name></member>
+      <member refid="class_g_l_u_i___control_1ae0e46e41b11758295ae0f2d1c9372dda" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>translate_and_draw_front</name></member>
+      <member refid="class_g_l_u_i___control_1a11ae15dcbb0ed5136b471a77eda41266" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>translate_to_origin</name></member>
+      <member refid="class_g_l_u_i___control_1a73192b0fdcaa75eb04d43fa70abe246f" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>unhide_internal</name></member>
+      <member refid="class_g_l_u_i___node_1a48b62b12bf8c466fc54fbbbf30183493" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>unlink</name></member>
+      <member refid="class_g_l_u_i___edit_text_1acbd51f12d68de3e4444ac21e709aef50" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>update_and_draw_text</name></member>
+      <member refid="class_g_l_u_i___edit_text_1acb10946b2666d84c57a321cda5ab2abb" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>update_size</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a9787add80a6790d07796499508ebf62b" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>update_substring_bounds</name></member>
+      <member refid="class_g_l_u_i___edit_text_1a7875ec7ab7213fbe52370436b4a8af8c" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>update_x_offsets</name></member>
+      <member refid="class_g_l_u_i___control_1a6c88b7c72b0800f88a5d4cda4868c8b6" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>user_id</name></member>
+      <member refid="class_g_l_u_i___control_1aca82a099b9cbbadb188794cbfb06aa27" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>w</name></member>
+      <member refid="class_g_l_u_i___control_1a42a65c9dbc0690e270a8c0033fbc1845" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>wants_tabs</name></member>
+      <member refid="class_g_l_u_i___control_1a7f0f98737828ad255401f642826fbd7e" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>x_abs</name></member>
+      <member refid="class_g_l_u_i___control_1a853d95e48b8bd6d2bdd41dabc2b1a1a6" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>x_off</name></member>
+      <member refid="class_g_l_u_i___control_1a54a7a5a7c37e5c0e0a3154bac7ddb049" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>y_abs</name></member>
+      <member refid="class_g_l_u_i___control_1af4beca38aaf1aba7f5b4bfa3ccc8b909" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>y_off_bot</name></member>
+      <member refid="class_g_l_u_i___control_1a94fec9974356d3955e3a80e7d06926b9" prot="public" virt="non-virtual"><scope>GLUI_CommandLine</scope><name>y_off_top</name></member>
+      <member refid="class_g_l_u_i___control_1a8afdc7d81a09fa30a759d5456559e637" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>~GLUI_Control</name></member>
+      <member refid="class_g_l_u_i___node_1ae6982edc46ab73963ee8ce9f6d035982" prot="public" virt="virtual"><scope>GLUI_CommandLine</scope><name>~GLUI_Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

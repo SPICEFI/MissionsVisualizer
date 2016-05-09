@@ -1,0 +1,275 @@
+.TH "GLUI_Translation" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Translation \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Mouse_Interaction\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBiaction_mouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBiaction_mouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBiaction_mouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBiaction_special_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBiaction_init\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBiaction_draw_active_area_persp\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBiaction_draw_active_area_ortho\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBiaction_dump\fP (FILE *output)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_speed\fP (float \fBs\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsetup_texture\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsetup_lights\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_2d_arrow\fP (\fBint\fP radius, \fBint\fP filled, \fBint\fP orientation)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_2d_x_arrows\fP (\fBint\fP radius)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_2d_y_arrows\fP (\fBint\fP radius)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_2d_z_arrows\fP (\fBint\fP radius)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_2d_xy_arrows\fP (\fBint\fP radius)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_mouse_code\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "float \fBget_z\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "float \fBget_x\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "float \fBget_y\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_z\fP (float \fBval\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_x\fP (float \fBval\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_y\fP (float \fBval\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_one_val\fP (float \fBval\fP, \fBint\fP \fBindex\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Translation\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBtrans_type\fP, float *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Translation\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBtrans_type\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdown_x\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdown_y\fP"
+.br
+.ti -1c
+.RI "float \fBscale_factor\fP"
+.br
+.ti -1c
+.RI "GLUquadricObj * \fBquadObj\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtrans_mouse_code\fP"
+.br
+.ti -1c
+.RI "float \fBorig_x\fP"
+.br
+.ti -1c
+.RI "float \fBorig_y\fP"
+.br
+.ti -1c
+.RI "float \fBorig_z\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlocked\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+An onscreen translation controller--allows the user to interact with a 3D translation\&. 
+.PP
+Definition at line 2491 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Translation::GLUI_Translation (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPtrans_type, float *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_Translation::GLUI_Translation (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2541 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Translation::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 2544 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Translation::draw_2d_arrow (\fBint\fPradius, \fBint\fPfilled, \fBint\fPorientation)"
+
+.SS "\fBvoid\fP GLUI_Translation::draw_2d_x_arrows (\fBint\fPradius)"
+
+.SS "\fBvoid\fP GLUI_Translation::draw_2d_xy_arrows (\fBint\fPradius)"
+
+.SS "\fBvoid\fP GLUI_Translation::draw_2d_y_arrows (\fBint\fPradius)"
+
+.SS "\fBvoid\fP GLUI_Translation::draw_2d_z_arrows (\fBint\fPradius)"
+
+.SS "\fBint\fP GLUI_Translation::get_mouse_code (\fBint\fPx, \fBint\fPy)"
+
+.SS "float GLUI_Translation::get_x (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2527 of file glui\&.h\&.
+.SS "float GLUI_Translation::get_y (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2528 of file glui\&.h\&.
+.SS "float GLUI_Translation::get_z (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2526 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Translation::iaction_draw_active_area_ortho (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Mouse_Interaction\fP\&.
+.SS "\fBvoid\fP GLUI_Translation::iaction_draw_active_area_persp (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Mouse_Interaction\fP\&.
+.SS "\fBvoid\fP GLUI_Translation::iaction_dump (FILE *output)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Mouse_Interaction\fP\&.
+.SS "\fBvoid\fP GLUI_Translation::iaction_init (\fBvoid\fP)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Mouse_Interaction\fP\&.
+.PP
+Definition at line 2506 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Translation::iaction_mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Mouse_Interaction\fP\&.
+.SS "\fBint\fP GLUI_Translation::iaction_mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Mouse_Interaction\fP\&.
+.SS "\fBint\fP GLUI_Translation::iaction_mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Mouse_Interaction\fP\&.
+.SS "\fBint\fP GLUI_Translation::iaction_special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Mouse_Interaction\fP\&.
+.SS "\fBvoid\fP GLUI_Translation::set_one_val (floatval, \fBint\fPindex)"
+
+.SS "\fBvoid\fP GLUI_Translation::set_speed (floats)\fC [inline]\fP"
+
+.PP
+Definition at line 2511 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Translation::set_x (floatval)"
+
+.SS "\fBvoid\fP GLUI_Translation::set_y (floatval)"
+
+.SS "\fBvoid\fP GLUI_Translation::set_z (floatval)"
+
+.SS "\fBvoid\fP GLUI_Translation::setup_lights (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Translation::setup_texture (\fBvoid\fP)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBint\fP GLUI_Translation::down_x"
+
+.PP
+Definition at line 2495 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Translation::down_y"
+
+.PP
+Definition at line 2495 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Translation::locked"
+
+.PP
+Definition at line 2500 of file glui\&.h\&.
+.SS "float GLUI_Translation::orig_x"
+
+.PP
+Definition at line 2499 of file glui\&.h\&.
+.SS "float GLUI_Translation::orig_y"
+
+.PP
+Definition at line 2499 of file glui\&.h\&.
+.SS "float GLUI_Translation::orig_z"
+
+.PP
+Definition at line 2499 of file glui\&.h\&.
+.SS "GLUquadricObj* GLUI_Translation::quadObj"
+
+.PP
+Definition at line 2497 of file glui\&.h\&.
+.SS "float GLUI_Translation::scale_factor"
+
+.PP
+Definition at line 2496 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Translation::trans_mouse_code"
+
+.PP
+Definition at line 2498 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Translation::trans_type"
+
+.PP
+Definition at line 2494 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

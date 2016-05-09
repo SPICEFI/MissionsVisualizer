@@ -1,0 +1,318 @@
+\hypertarget{class_space_body}{\section{Space\+Body Class Reference}
+\label{class_space_body}\index{Space\+Body@{Space\+Body}}
+}
+
+
+{\ttfamily \#include $<$Space\+Body.\+h$>$}
+
+
+
+Inheritance diagram for Space\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{class_space_body__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Space\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_space_body__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcac}{Bulk\+Parameter} \{ \\*
+\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcacae59753bed35e0ebfbe10cff15804a89d}{B\+P\+\_\+\+R\+A\+D\+I\+U\+S}, 
+\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca35ccbddff5c61ac25c60773423f9bd9d}{B\+P\+\_\+\+G\+M}, 
+\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcacadb74f3603973fc2f6b212b48b525d634}{B\+P\+\_\+\+M\+A\+S\+S}, 
+\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcacaf618c8e50cf91cbd085ce4d337aaac55}{B\+P\+\_\+\+A\+C\+C}, 
+\\*
+\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcacac17b2de205132b2b6b1d64ea099b2059}{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+R\+A}, 
+\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca1c310590e6f88be6e339aa6fac74f4d2}{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+D\+E\+C}, 
+\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca97eddf1b8bdd0fbe01972a7b59188a85}{B\+P\+\_\+\+P\+M}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_space_body_a91bf206403f3f1e9e5a940693a27da58}{Space\+Body} (long \hyperlink{class_space_object_a841dd12234c1861d3c1978035c9d7b8d}{spice\+Id}, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}=\char`\"{}\char`\"{})
+\item 
+\hyperlink{class_space_body_a92a9cc41eb5c681fa3755bca9ec8ffc5}{Space\+Body} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&spice\+Name, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}=\char`\"{}\char`\"{})
+\item 
+\hyperlink{class_space_body_a4c744f1048b7f3b6a21e56a106791a41}{Space\+Body} (const \hyperlink{class_space_object}{Space\+Object} \&\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj})
+\item 
+\hyperlink{class_space_body_a218ec46693291ac05c434322525fb3af}{$\sim$\+Space\+Body} ()
+\item 
+virtual \hyperlink{class_space_body}{Space\+Body} $\ast$ \hyperlink{class_space_body_abb3a8167a17c31d8aa0a4250ad8ebc2a}{Clone} () const 
+\item 
+bool \hyperlink{class_space_body_a2d9a7c988b1451e2bf8cdb6ffed70011}{Has\+I\+A\+U\+Frame} () const 
+\item 
+\hyperlink{class_frame}{Frame} \hyperlink{class_space_body_a88cff28dd1d28613d94b2fc00994316b}{Get\+I\+A\+U\+Frame} () const 
+\item 
+bool \hyperlink{class_space_body_a5bf8f002b9e19bedb46f1accf75caaa8}{Has\+Default\+Frame} () const 
+\item 
+\hyperlink{class_frame}{Frame} \hyperlink{class_space_body_ae775f995eaa5a5467d6065be2f98f397}{Get\+Default\+Frame} () const 
+\item 
+bool \hyperlink{class_space_body_a40614e7d85560093d9260005a310a281}{Has\+Parameter} (\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcac}{Bulk\+Parameter} \hyperlink{glext_8h_ac7c896d55e93a6cf7ff8524005b4e7b4}{param}) const 
+\item 
+double \hyperlink{class_space_body_aa9c61cb125d77e2fab3db00766db3510}{Get\+Single\+Dim\+Param} (\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcac}{Bulk\+Parameter} \hyperlink{glext_8h_ac7c896d55e93a6cf7ff8524005b4e7b4}{param}) const 
+\item 
+std\+::vector$<$ double $>$ \hyperlink{class_space_body_a5a846abedc2aa8c89f4beabf186652fd}{Get\+Multi\+Dim\+Param} (\hyperlink{class_space_body_aac4475090a05b2f6d9c833f071c9bcac}{Bulk\+Parameter} \hyperlink{glext_8h_ac7c896d55e93a6cf7ff8524005b4e7b4}{param}) const 
+\item 
+\hyperlink{_quantity_8h_ae34580a93ad25d119ae1a64ded5aa3b2}{Length} \hyperlink{class_space_body_ada3282b18f50ad81c02d97a7b0095dee}{Get\+Radius} () const 
+\item 
+\hyperlink{glext_8h_a52f38e7d822a46377fde7a02708eedb1}{std\+::array}$<$ \hyperlink{_quantity_8h_ae34580a93ad25d119ae1a64ded5aa3b2}{Length}, 3 $>$ \hyperlink{class_space_body_a9040b548e16390c7294dcc4b2d5a5d58}{Get\+Radii} () const 
+\item 
+\hyperlink{_quantity_8h_a9a85e5d41c1ee35f67f3cc41ad01c417}{Gravitational\+Parameter} \hyperlink{class_space_body_aafaa2bca2b31f390a6c0094d3e36ff61}{Get\+G\+M} () const 
+\item 
+\hyperlink{_quantity_8h_a4ef88533f12b1ee67a3e0d8630b8ca87}{Mass} \hyperlink{class_space_body_ab5155fa5d6cc02f1dce20252187ff13d}{Get\+Mass} () const 
+\item 
+\hyperlink{_quantity_8h_aba4f456ecd43f9c8a095b7f882af47d8}{Acceleration} \hyperlink{class_space_body_a32dc9b481fe60576a78d4eab46be2d45}{Get\+Surface\+Acceleration} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Space\+Body.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_space_body_aac4475090a05b2f6d9c833f071c9bcac}{\index{Space\+Body@{Space\+Body}!Bulk\+Parameter@{Bulk\+Parameter}}
+\index{Bulk\+Parameter@{Bulk\+Parameter}!Space\+Body@{Space\+Body}}
+\subsubsection[{Bulk\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Space\+Body\+::\+Bulk\+Parameter}}}\label{class_space_body_aac4475090a05b2f6d9c833f071c9bcac}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+P\+\_\+\+R\+A\+D\+I\+U\+S@{B\+P\+\_\+\+R\+A\+D\+I\+U\+S}!Space\+Body@{Space\+Body}}\index{Space\+Body@{Space\+Body}!B\+P\+\_\+\+R\+A\+D\+I\+U\+S@{B\+P\+\_\+\+R\+A\+D\+I\+U\+S}}\item[{\em 
+\hypertarget{class_space_body_aac4475090a05b2f6d9c833f071c9bcacae59753bed35e0ebfbe10cff15804a89d}{B\+P\+\_\+\+R\+A\+D\+I\+U\+S}\label{class_space_body_aac4475090a05b2f6d9c833f071c9bcacae59753bed35e0ebfbe10cff15804a89d}
+}]\index{B\+P\+\_\+\+G\+M@{B\+P\+\_\+\+G\+M}!Space\+Body@{Space\+Body}}\index{Space\+Body@{Space\+Body}!B\+P\+\_\+\+G\+M@{B\+P\+\_\+\+G\+M}}\item[{\em 
+\hypertarget{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca35ccbddff5c61ac25c60773423f9bd9d}{B\+P\+\_\+\+G\+M}\label{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca35ccbddff5c61ac25c60773423f9bd9d}
+}]\index{B\+P\+\_\+\+M\+A\+S\+S@{B\+P\+\_\+\+M\+A\+S\+S}!Space\+Body@{Space\+Body}}\index{Space\+Body@{Space\+Body}!B\+P\+\_\+\+M\+A\+S\+S@{B\+P\+\_\+\+M\+A\+S\+S}}\item[{\em 
+\hypertarget{class_space_body_aac4475090a05b2f6d9c833f071c9bcacadb74f3603973fc2f6b212b48b525d634}{B\+P\+\_\+\+M\+A\+S\+S}\label{class_space_body_aac4475090a05b2f6d9c833f071c9bcacadb74f3603973fc2f6b212b48b525d634}
+}]\index{B\+P\+\_\+\+A\+C\+C@{B\+P\+\_\+\+A\+C\+C}!Space\+Body@{Space\+Body}}\index{Space\+Body@{Space\+Body}!B\+P\+\_\+\+A\+C\+C@{B\+P\+\_\+\+A\+C\+C}}\item[{\em 
+\hypertarget{class_space_body_aac4475090a05b2f6d9c833f071c9bcacaf618c8e50cf91cbd085ce4d337aaac55}{B\+P\+\_\+\+A\+C\+C}\label{class_space_body_aac4475090a05b2f6d9c833f071c9bcacaf618c8e50cf91cbd085ce4d337aaac55}
+}]\index{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+R\+A@{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+R\+A}!Space\+Body@{Space\+Body}}\index{Space\+Body@{Space\+Body}!B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+R\+A@{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+R\+A}}\item[{\em 
+\hypertarget{class_space_body_aac4475090a05b2f6d9c833f071c9bcacac17b2de205132b2b6b1d64ea099b2059}{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+R\+A}\label{class_space_body_aac4475090a05b2f6d9c833f071c9bcacac17b2de205132b2b6b1d64ea099b2059}
+}]\index{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+D\+E\+C@{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+D\+E\+C}!Space\+Body@{Space\+Body}}\index{Space\+Body@{Space\+Body}!B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+D\+E\+C@{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+D\+E\+C}}\item[{\em 
+\hypertarget{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca1c310590e6f88be6e339aa6fac74f4d2}{B\+P\+\_\+\+P\+O\+L\+E\+\_\+\+D\+E\+C}\label{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca1c310590e6f88be6e339aa6fac74f4d2}
+}]\index{B\+P\+\_\+\+P\+M@{B\+P\+\_\+\+P\+M}!Space\+Body@{Space\+Body}}\index{Space\+Body@{Space\+Body}!B\+P\+\_\+\+P\+M@{B\+P\+\_\+\+P\+M}}\item[{\em 
+\hypertarget{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca97eddf1b8bdd0fbe01972a7b59188a85}{B\+P\+\_\+\+P\+M}\label{class_space_body_aac4475090a05b2f6d9c833f071c9bcaca97eddf1b8bdd0fbe01972a7b59188a85}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 14 of file Space\+Body.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_space_body_a91bf206403f3f1e9e5a940693a27da58}{\index{Space\+Body@{Space\+Body}!Space\+Body@{Space\+Body}}
+\index{Space\+Body@{Space\+Body}!Space\+Body@{Space\+Body}}
+\subsubsection[{Space\+Body}]{\setlength{\rightskip}{0pt plus 5cm}Space\+Body\+::\+Space\+Body (
+\begin{DoxyParamCaption}
+\item[{long}]{spice\+Id, }
+\item[{const {\bf std\+::string} \&}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_space_body_a91bf206403f3f1e9e5a940693a27da58}
+
+
+Definition at line 3 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a92a9cc41eb5c681fa3755bca9ec8ffc5}{\index{Space\+Body@{Space\+Body}!Space\+Body@{Space\+Body}}
+\index{Space\+Body@{Space\+Body}!Space\+Body@{Space\+Body}}
+\subsubsection[{Space\+Body}]{\setlength{\rightskip}{0pt plus 5cm}Space\+Body\+::\+Space\+Body (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{spice\+Name, }
+\item[{const {\bf std\+::string} \&}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_space_body_a92a9cc41eb5c681fa3755bca9ec8ffc5}
+
+
+Definition at line 8 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a4c744f1048b7f3b6a21e56a106791a41}{\index{Space\+Body@{Space\+Body}!Space\+Body@{Space\+Body}}
+\index{Space\+Body@{Space\+Body}!Space\+Body@{Space\+Body}}
+\subsubsection[{Space\+Body}]{\setlength{\rightskip}{0pt plus 5cm}Space\+Body\+::\+Space\+Body (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{obj}
+\end{DoxyParamCaption}
+)}}\label{class_space_body_a4c744f1048b7f3b6a21e56a106791a41}
+
+
+Definition at line 13 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a218ec46693291ac05c434322525fb3af}{\index{Space\+Body@{Space\+Body}!````~Space\+Body@{$\sim$\+Space\+Body}}
+\index{````~Space\+Body@{$\sim$\+Space\+Body}!Space\+Body@{Space\+Body}}
+\subsubsection[{$\sim$\+Space\+Body}]{\setlength{\rightskip}{0pt plus 5cm}Space\+Body\+::$\sim$\+Space\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_body_a218ec46693291ac05c434322525fb3af}
+
+
+Definition at line 27 of file Space\+Body.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_space_body_abb3a8167a17c31d8aa0a4250ad8ebc2a}{\index{Space\+Body@{Space\+Body}!Clone@{Clone}}
+\index{Clone@{Clone}!Space\+Body@{Space\+Body}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space\+Body} $\ast$ Space\+Body\+::\+Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_space_body_abb3a8167a17c31d8aa0a4250ad8ebc2a}
+
+
+Reimplemented from \hyperlink{class_space_object_a479f0732cad7fe1f6a1752a1f12eaa7b}{Space\+Object}.
+
+
+
+Definition at line 36 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_ae775f995eaa5a5467d6065be2f98f397}{\index{Space\+Body@{Space\+Body}!Get\+Default\+Frame@{Get\+Default\+Frame}}
+\index{Get\+Default\+Frame@{Get\+Default\+Frame}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+Default\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Frame} Space\+Body\+::\+Get\+Default\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_ae775f995eaa5a5467d6065be2f98f397}
+
+
+Definition at line 69 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_aafaa2bca2b31f390a6c0094d3e36ff61}{\index{Space\+Body@{Space\+Body}!Get\+G\+M@{Get\+G\+M}}
+\index{Get\+G\+M@{Get\+G\+M}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+G\+M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gravitational\+Parameter} Space\+Body\+::\+Get\+G\+M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_aafaa2bca2b31f390a6c0094d3e36ff61}
+
+
+Definition at line 216 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a88cff28dd1d28613d94b2fc00994316b}{\index{Space\+Body@{Space\+Body}!Get\+I\+A\+U\+Frame@{Get\+I\+A\+U\+Frame}}
+\index{Get\+I\+A\+U\+Frame@{Get\+I\+A\+U\+Frame}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+I\+A\+U\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Frame} Space\+Body\+::\+Get\+I\+A\+U\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_a88cff28dd1d28613d94b2fc00994316b}
+
+
+Definition at line 51 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_ab5155fa5d6cc02f1dce20252187ff13d}{\index{Space\+Body@{Space\+Body}!Get\+Mass@{Get\+Mass}}
+\index{Get\+Mass@{Get\+Mass}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mass} Space\+Body\+::\+Get\+Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_ab5155fa5d6cc02f1dce20252187ff13d}
+
+
+Definition at line 223 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a5a846abedc2aa8c89f4beabf186652fd}{\index{Space\+Body@{Space\+Body}!Get\+Multi\+Dim\+Param@{Get\+Multi\+Dim\+Param}}
+\index{Get\+Multi\+Dim\+Param@{Get\+Multi\+Dim\+Param}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+Multi\+Dim\+Param}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ double $>$ Space\+Body\+::\+Get\+Multi\+Dim\+Param (
+\begin{DoxyParamCaption}
+\item[{{\bf Bulk\+Parameter}}]{param}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_a5a846abedc2aa8c89f4beabf186652fd}
+
+
+Definition at line 155 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a9040b548e16390c7294dcc4b2d5a5d58}{\index{Space\+Body@{Space\+Body}!Get\+Radii@{Get\+Radii}}
+\index{Get\+Radii@{Get\+Radii}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+Radii}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::array}$<$ {\bf Length}, 3 $>$ Space\+Body\+::\+Get\+Radii (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_a9040b548e16390c7294dcc4b2d5a5d58}
+
+
+Definition at line 204 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_ada3282b18f50ad81c02d97a7b0095dee}{\index{Space\+Body@{Space\+Body}!Get\+Radius@{Get\+Radius}}
+\index{Get\+Radius@{Get\+Radius}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+Radius}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Length} Space\+Body\+::\+Get\+Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_ada3282b18f50ad81c02d97a7b0095dee}
+
+
+Definition at line 197 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_aa9c61cb125d77e2fab3db00766db3510}{\index{Space\+Body@{Space\+Body}!Get\+Single\+Dim\+Param@{Get\+Single\+Dim\+Param}}
+\index{Get\+Single\+Dim\+Param@{Get\+Single\+Dim\+Param}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+Single\+Dim\+Param}]{\setlength{\rightskip}{0pt plus 5cm}double Space\+Body\+::\+Get\+Single\+Dim\+Param (
+\begin{DoxyParamCaption}
+\item[{{\bf Bulk\+Parameter}}]{param}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_aa9c61cb125d77e2fab3db00766db3510}
+
+
+Definition at line 119 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a32dc9b481fe60576a78d4eab46be2d45}{\index{Space\+Body@{Space\+Body}!Get\+Surface\+Acceleration@{Get\+Surface\+Acceleration}}
+\index{Get\+Surface\+Acceleration@{Get\+Surface\+Acceleration}!Space\+Body@{Space\+Body}}
+\subsubsection[{Get\+Surface\+Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Acceleration} Space\+Body\+::\+Get\+Surface\+Acceleration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_a32dc9b481fe60576a78d4eab46be2d45}
+
+
+Definition at line 230 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a5bf8f002b9e19bedb46f1accf75caaa8}{\index{Space\+Body@{Space\+Body}!Has\+Default\+Frame@{Has\+Default\+Frame}}
+\index{Has\+Default\+Frame@{Has\+Default\+Frame}!Space\+Body@{Space\+Body}}
+\subsubsection[{Has\+Default\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Body\+::\+Has\+Default\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_a5bf8f002b9e19bedb46f1accf75caaa8}
+
+
+Definition at line 58 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a2d9a7c988b1451e2bf8cdb6ffed70011}{\index{Space\+Body@{Space\+Body}!Has\+I\+A\+U\+Frame@{Has\+I\+A\+U\+Frame}}
+\index{Has\+I\+A\+U\+Frame@{Has\+I\+A\+U\+Frame}!Space\+Body@{Space\+Body}}
+\subsubsection[{Has\+I\+A\+U\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Body\+::\+Has\+I\+A\+U\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_a2d9a7c988b1451e2bf8cdb6ffed70011}
+
+
+Definition at line 41 of file Space\+Body.\+cpp.
+
+\hypertarget{class_space_body_a40614e7d85560093d9260005a310a281}{\index{Space\+Body@{Space\+Body}!Has\+Parameter@{Has\+Parameter}}
+\index{Has\+Parameter@{Has\+Parameter}!Space\+Body@{Space\+Body}}
+\subsubsection[{Has\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Body\+::\+Has\+Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf Bulk\+Parameter}}]{param}
+\end{DoxyParamCaption}
+) const}}\label{class_space_body_a40614e7d85560093d9260005a310a281}
+
+
+Definition at line 83 of file Space\+Body.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_space_body_8h}{Space\+Body.\+h}\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_space_body_8cpp}{Space\+Body.\+cpp}\end{DoxyCompactItemize}

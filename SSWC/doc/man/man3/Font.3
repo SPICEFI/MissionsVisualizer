@@ -1,0 +1,60 @@
+.TH "Font" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Font \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Font\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFont\fP ()"
+.br
+.ti -1c
+.RI "\fBFont\fP (\fBHDC\fP hDCint, \fBint\fP \fBheight\fP=-24, \fBint\fP \fBwidth\fP=-10, float angleOfEscapement=0, float orientationAngle=0, \fBint\fP fontWeight=FW_BOLD, bool italic=false, bool underline=false, bool strikeout=false, \fBint\fP charsetIdentifyer=ANSI_CHARSET, \fBint\fP outputQuality=ANTIALIASED_QUALITY, \fBstd::string\fP \fBfontName\fP='Courier New')"
+.br
+.ti -1c
+.RI "\fB~Font\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBKillFont\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglPrint\fP (const char *fmt,\&.\&.\&.)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 10 of file Font\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Font::Font ()"
+
+.PP
+Definition at line 4 of file Font\&.cpp\&.
+.SS "Font::Font (\fBHDC\fPhDCint, \fBint\fPheight = \fC-24\fP, \fBint\fPwidth = \fC-10\fP, floatangleOfEscapement = \fC0\fP, floatorientationAngle = \fC0\fP, \fBint\fPfontWeight = \fCFW_BOLD\fP, boolitalic = \fCfalse\fP, boolunderline = \fCfalse\fP, boolstrikeout = \fCfalse\fP, \fBint\fPcharsetIdentifyer = \fCANSI_CHARSET\fP, \fBint\fPoutputQuality = \fCANTIALIASED_QUALITY\fP, \fBstd::string\fPfontName = \fC'Courier New'\fP)"
+
+.PP
+Definition at line 9 of file Font\&.cpp\&.
+.SS "Font::~Font ()"
+
+.PP
+Definition at line 24 of file Font\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP Font::glPrint (const char *fmt, \&.\&.\&.)"
+
+.PP
+Definition at line 28 of file Font\&.cpp\&.
+.SS "\fBvoid\fP Font::KillFont ()\fC [inline]\fP"
+
+.PP
+Definition at line 26 of file Font\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

@@ -1,0 +1,95 @@
+.TH "GLUI_RadioGroup" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_RadioGroup \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_name\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_int_val\fP (\fBint\fP \fBint_val\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_selected\fP (\fBint\fP \fBint_val\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_group\fP (\fBint\fP translate)"
+.br
+.ti -1c
+.RI "\fBGLUI_RadioGroup\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBint\fP *live_var=NULL, \fBint\fP \fBuser_id\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_RadioGroup\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBnum_buttons\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 1747 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_RadioGroup::GLUI_RadioGroup (\fBGLUI_Node\fP *parent, \fBint\fP *live_var = \fCNULL\fP, \fBint\fPuser_id = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_RadioGroup::GLUI_RadioGroup (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 1761 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_RadioGroup::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1764 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_RadioGroup::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_RadioGroup::draw_group (\fBint\fPtranslate)"
+
+.SS "\fBvoid\fP GLUI_RadioGroup::set_int_val (\fBint\fPint_val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_RadioGroup::set_name (const char *text)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_RadioGroup::set_selected (\fBint\fPint_val)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBint\fP GLUI_RadioGroup::num_buttons"
+
+.PP
+Definition at line 1750 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

@@ -1,0 +1,60 @@
+.TH "GLUI_Bitmap" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Bitmap \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Bitmap\fP ()"
+.br
+.ti -1c
+.RI "\fB~GLUI_Bitmap\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBinit_grey\fP (unsigned char *\fBarray\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBinit\fP (\fBint\fP *\fBarray\fP)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBGLUI_StdBitmaps\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBGLUI_Bitmap\fP is a simple 2D texture map\&. It's used to represent small textures like checkboxes, arrows, etc\&. via the \fBGLUI_StdBitmaps\fP class\&. 
+.PP
+Definition at line 410 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Bitmap::GLUI_Bitmap ()"
+
+.SS "GLUI_Bitmap::~GLUI_Bitmap ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Bitmap::init (\fBint\fP *array)"
+Create bitmap from color int image 
+.SS "\fBvoid\fP GLUI_Bitmap::init_grey (unsigned char *array)"
+Create bitmap from greyscale byte image 
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBGLUI_StdBitmaps\fP\fC [friend]\fP"
+
+.PP
+Definition at line 412 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

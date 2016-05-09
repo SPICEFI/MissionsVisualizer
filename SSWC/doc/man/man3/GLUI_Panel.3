@@ -1,0 +1,96 @@
+.TH "GLUI_Panel" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Panel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.PP
+Inherited by \fBGLUI_FileBrowser\fP, \fBGLUI_Rollout\fP, \fBGLUI_Tree\fP, and \fBGLUI_TreePanel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Panel\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBtype\fP=\fBGLUI_PANEL_EMBOSSED\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Panel\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_name\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_type\fP (\fBint\fP new_type)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A \fBGLUI_Panel\fP contains a group of related controls\&. 
+.PP
+Definition at line 1095 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Panel::GLUI_Panel (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPtype = \fC\fBGLUI_PANEL_EMBOSSED\fP\fP)"
+Create a new panel\&. A panel groups together a set of related controls\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP The outer panel our panel is inside; or the main \fBGLUI\fP object\&. 
+.br
+\fIname\fP The string name at the top of our panel\&. 
+.br
+\fItype\fP Optional style to display the panel with--GLUI_PANEL_EMBOSSED by default\&. GLUI_PANEL_RAISED causes the panel to appear higher than the surroundings\&. GLUI_PANEL_NONE causes the panel's outline to be invisible\&. 
+.RE
+.PP
+
+.SS "GLUI_Panel::GLUI_Panel ()\fC [inline]\fP"
+
+.PP
+Definition at line 1110 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Panel::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1119 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Panel::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.PP
+Reimplemented in \fBGLUI_Tree\fP, and \fBGLUI_Rollout\fP\&.
+.SS "\fBvoid\fP GLUI_Panel::set_name (const char *text)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Panel::set_type (\fBint\fPnew_type)"
+
+.SS "\fBvoid\fP GLUI_Panel::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.PP
+Reimplemented in \fBGLUI_Tree\fP, and \fBGLUI_Rollout\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

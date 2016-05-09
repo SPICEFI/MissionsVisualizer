@@ -1,0 +1,80 @@
+.TH "SSWC/src/GL/ARB_Multisample.cpp" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/GL/ARB_Multisample.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <windows\&.h>\fP
+.br
+\fC#include <gl/gl\&.h>\fP
+.br
+\fC#include <gl/glu\&.h>\fP
+.br
+\fC#include 'arb_multisample\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBWGL_SAMPLE_BUFFERS_ARB\fP   0x2041"
+.br
+.ti -1c
+.RI "#define \fBWGL_SAMPLES_ARB\fP   0x2042"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBWGLisExtensionSupported\fP (const char *extension)"
+.br
+.ti -1c
+.RI "bool \fBInitMultisample\fP (HINSTANCE hInstance, HWND hWnd, PIXELFORMATDESCRIPTOR pfd)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "bool \fBarbMultisampleSupported\fP = false"
+.br
+.ti -1c
+.RI "\fBint\fP \fBarbMultisampleFormat\fP = 0"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define WGL_SAMPLE_BUFFERS_ARB   0x2041"
+
+.PP
+Definition at line 18 of file ARB_Multisample\&.cpp\&.
+.SS "#define WGL_SAMPLES_ARB   0x2042"
+
+.PP
+Definition at line 19 of file ARB_Multisample\&.cpp\&.
+.SH "Function Documentation"
+.PP 
+.SS "bool InitMultisample (HINSTANCEhInstance, HWNDhWnd, PIXELFORMATDESCRIPTORpfd)"
+
+.PP
+Definition at line 65 of file ARB_Multisample\&.cpp\&.
+.SS "bool WGLisExtensionSupported (const char *extension)"
+
+.PP
+Definition at line 25 of file ARB_Multisample\&.cpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBint\fP arbMultisampleFormat = 0"
+
+.PP
+Definition at line 22 of file ARB_Multisample\&.cpp\&.
+.SS "bool arbMultisampleSupported = false"
+
+.PP
+Definition at line 21 of file ARB_Multisample\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

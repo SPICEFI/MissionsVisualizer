@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_frame_8cpp" kind="file">
+    <compoundname>Frame.cpp</compoundname>
+    <includes refid="_frame_8h" local="yes">Frame.h</includes>
+    <incdepgraph>
+      <node id="1400">
+        <label>SSWC/src/CSpice/Frame.cpp</label>
+        <link refid="Frame.cpp"/>
+        <childnode refid="1401" relation="include">
+        </childnode>
+      </node>
+      <node id="1409">
+        <label>iomanip</label>
+      </node>
+      <node id="1413">
+        <label>cmath</label>
+      </node>
+      <node id="1418">
+        <label>stdexcept</label>
+      </node>
+      <node id="1406">
+        <label>string</label>
+      </node>
+      <node id="1411">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>fstream</label>
+      </node>
+      <node id="1414">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1415" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+      </node>
+      <node id="1401">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1416" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1420" relation="include">
+        </childnode>
+      </node>
+      <node id="1402">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+      </node>
+      <node id="1404">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+      </node>
+      <node id="1407">
+        <label>ctime</label>
+      </node>
+      <node id="1415">
+        <label>Time.h</label>
+      </node>
+      <node id="1410">
+        <label>vector</label>
+      </node>
+      <node id="1405">
+        <label>sstream</label>
+      </node>
+      <node id="1420">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="1421" relation="include">
+        </childnode>
+        <childnode refid="1418" relation="include">
+        </childnode>
+      </node>
+      <node id="1412">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1416">
+        <label>SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+      </node>
+      <node id="1421">
+        <label>cstring</label>
+      </node>
+      <node id="1403">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="1417">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1418" relation="include">
+        </childnode>
+      </node>
+      <node id="1419">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="1413" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_frame_8h" kindref="compound">Frame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref><sp/><ref refid="class_frame_1a83f98b1d0aa72dca955fd91752e6b499" kindref="member">Frame::J2000</ref><sp/>=<sp/><ref refid="class_frame" kindref="compound">Frame</ref>(</highlight><highlight class="stringliteral">&quot;J2000&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref><sp/><ref refid="class_frame_1af25db3f51bb9838c9bce46d30e663331" kindref="member">Frame::ECLIPJ2000</ref><sp/>=<sp/><ref refid="class_frame" kindref="compound">Frame</ref>(</highlight><highlight class="stringliteral">&quot;ECLIPJ2000&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_frame_1affeadc282e1d1b07d51918add4b48fbf" refkind="member"><highlight class="normal"><ref refid="class_frame_1affeadc282e1d1b07d51918add4b48fbf" kindref="member">Frame::Frame</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spiceId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>Construct(spiceId,<sp/>name);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_frame_1a7254d330d38d6d454f5a77777d8f1bcb" refkind="member"><highlight class="normal"><ref refid="class_frame_1affeadc282e1d1b07d51918add4b48fbf" kindref="member">Frame::Frame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/>spiceName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>spiceId;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(<sp/>namfrm_c(spiceName.c_str(),<sp/>&amp;spiceId)<sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>Construct(spiceId,<sp/>name);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Frame::Construct(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spiceId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_frame_1a2530927116bf3b764862623c518d274e" kindref="member">ValidateId</ref>(spiceId))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_spice_util_1ad91e1b9618b9514d4cfd516a446a7e11" kindref="member">CSpiceUtil::SignalError</ref>(</highlight><highlight class="stringliteral">&quot;No<sp/>such<sp/>CSpice<sp/>frame<sp/>is<sp/>defined&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;spiceId<sp/>=<sp/>spiceId;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(name<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;name<sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;name<sp/>=<sp/><ref refid="class_frame_1ad7596949a1ff9c2d1dd837e730f6aefc" kindref="member">GetSpiceName</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;centerObject<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>(<ref refid="class_frame_1a676a0342efbbafb23ef5366e02843b15" kindref="member">GetFrameInfo</ref>().centerId,<sp/>this-&gt;name<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_center&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_frame_1abec8c7bccdfc88cb4da137caae9f73d6" refkind="member"><highlight class="normal"><ref refid="class_frame_1abec8c7bccdfc88cb4da137caae9f73d6" kindref="member">Frame::~Frame</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_frame_1a679aa287b6474930b7c1682f3a9ceb14" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_frame_1a679aa287b6474930b7c1682f3a9ceb14" kindref="member">Frame::GetSpiceId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>spiceId;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_frame_1ad7596949a1ff9c2d1dd837e730f6aefc" refkind="member"><highlight class="normal"><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="class_frame_1ad7596949a1ff9c2d1dd837e730f6aefc" kindref="member">Frame::GetSpiceName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="45"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>frameName[<ref refid="_frame_8h_1a877d5cc37c354f0e22ee95dd79ce9768" kindref="member">FRAME_NAME_MAX_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(<sp/>frmnam_c(spiceId,<sp/><ref refid="_frame_8h_1a877d5cc37c354f0e22ee95dd79ce9768" kindref="member">FRAME_NAME_MAX_LENGTH</ref>,<sp/>frameName)<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>(frameName);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_frame_1afc3c2fb53313f43fd6b906cd5423145e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="class_frame_1afc3c2fb53313f43fd6b906cd5423145e" kindref="member">Frame::GetName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="53"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>name;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_frame_1a676a0342efbbafb23ef5366e02843b15" refkind="member"><highlight class="normal"><ref refid="struct_frame_1_1_frame_info" kindref="compound">Frame::FrameInfo</ref><sp/><ref refid="class_frame_1a676a0342efbbafb23ef5366e02843b15" kindref="member">Frame::GetFrameInfo</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceInt<sp/>centerId;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceInt<sp/>clssid;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceInt<sp/>frclss;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceBoolean<sp/>found;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(frinfo_c(spiceId,<sp/>&amp;centerId,<sp/>&amp;frclss,<sp/>&amp;clssid,<sp/>&amp;found));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_frame_1_1_frame_info" kindref="compound">FrameInfo</ref><sp/>finfo;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>finfo.<ref refid="struct_frame_1_1_frame_info_1a13df02e5be92dc224b0ed75c2e339fc5" kindref="member">centerId</ref><sp/>=<sp/>centerId;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>finfo.<ref refid="struct_frame_1_1_frame_info_1a26545f9bb7266068c37985694b990192" kindref="member">classId</ref><sp/>=<sp/>clssid;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>finfo.<ref refid="struct_frame_1_1_frame_info_1a26a5b5ce9d01a6029fbd2aaf6c77e574" kindref="member">frameType</ref><sp/>=<sp/><ref refid="class_frame_1ad2f22450377db20233914c9ec0a21df4" kindref="member">FrameType</ref>(frclss);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>finfo;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="class_frame_1ad41c119171bcaebc84a9c5e0daea6c92" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="class_frame_1ad41c119171bcaebc84a9c5e0daea6c92" kindref="member">Frame::GetCenterObject</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="75"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*centerObject;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_frame_1a9fac9191222fbcf79954b5cb4fe8a181" refkind="member"><highlight class="normal"><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_frame_1a9fac9191222fbcf79954b5cb4fe8a181" kindref="member">Frame::TransformVector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>vec,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="80"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a07993c0d92c1aeeb357ba0495c8b5325" kindref="member">transform</ref>[3][3];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(pxform_c(<ref refid="class_frame_1ad7596949a1ff9c2d1dd837e730f6aefc" kindref="member">GetSpiceName</ref>().c_str(),<sp/>ref.<ref refid="class_frame_1ad7596949a1ff9c2d1dd837e730f6aefc" kindref="member">GetSpiceName</ref>().c_str(),<sp/>t.<ref refid="class_date_1af5e52ad40ec03035f98ddd4bd5bfc2fd" kindref="member">AsDouble</ref>(),<sp/><ref refid="glext_8h_1a07993c0d92c1aeeb357ba0495c8b5325" kindref="member">transform</ref>));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>axisLocal[3]<sp/>=<sp/>{vec.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/>vec.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/>vec.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>axisGlobal[3];</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(mxv_c(transform,<sp/>axisLocal,<sp/>axisGlobal));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>(axisGlobal);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="class_frame_1ac8195fe92d18baac95813e2bf751f533" refkind="member"><highlight class="normal"><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_frame_1ac8195fe92d18baac95813e2bf751f533" kindref="member">Frame::AxisX</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="94"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_frame_1a9fac9191222fbcf79954b5cb4fe8a181" kindref="member">TransformVector</ref>(<ref refid="class_vector3_1a96074c1245025a7b6d345a63548033b7" kindref="member">Vector3::i</ref>,<sp/>t,<sp/>ref);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_frame_1a5ed0a2188dc255484b793ae5288c36c0" refkind="member"><highlight class="normal"><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_frame_1a5ed0a2188dc255484b793ae5288c36c0" kindref="member">Frame::AxisY</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="99"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_frame_1a9fac9191222fbcf79954b5cb4fe8a181" kindref="member">TransformVector</ref>(<ref refid="class_vector3_1ab45f6dbb5d5c71c4ef9ffaa6a9cd300f" kindref="member">Vector3::j</ref>,<sp/>t,<sp/>ref);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_frame_1a89ebe688b416263f06f2393151194e77" refkind="member"><highlight class="normal"><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_frame_1a89ebe688b416263f06f2393151194e77" kindref="member">Frame::AxisZ</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="104"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_frame_1a9fac9191222fbcf79954b5cb4fe8a181" kindref="member">TransformVector</ref>(<ref refid="class_vector3_1a659bddc1d76c28562050e2316184cdda" kindref="member">Vector3::k</ref>,<sp/>t,<sp/>ref);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_frame_1a4862be40cebae8c367031baf2ca6dc8b" refkind="member"><highlight class="normal"><ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref><sp/><ref refid="class_frame_1a4862be40cebae8c367031baf2ca6dc8b" kindref="member">Frame::GetTransformationMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="109"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref><sp/><ref refid="glext_8h_1a07993c0d92c1aeeb357ba0495c8b5325" kindref="member">transform</ref><sp/>=<sp/><ref refid="class_matrix4x4_1aa29a050d95415f55095e0a95cdca03c7" kindref="member">Matrix4x4::Zero</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref><sp/>=<sp/><ref refid="class_frame_1ac8195fe92d18baac95813e2bf751f533" kindref="member">AxisX</ref>(t,<sp/>ref);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref><sp/>=<sp/><ref refid="class_frame_1a5ed0a2188dc255484b793ae5288c36c0" kindref="member">AxisY</ref>(t,<sp/>ref);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>=<sp/><ref refid="class_frame_1a89ebe688b416263f06f2393151194e77" kindref="member">AxisZ</ref>(t,<sp/>ref);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a90d3e7e4182a9630993f640fa0443b0b" kindref="member">row</ref><sp/>=<sp/>0;<sp/><ref refid="glext_8h_1a90d3e7e4182a9630993f640fa0443b0b" kindref="member">row</ref><sp/>&lt;<sp/>3;<sp/><ref refid="glext_8h_1a90d3e7e4182a9630993f640fa0443b0b" kindref="member">row</ref>++)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transform.<ref refid="class_matrix4x4_1acb07f122201caa230eccaeb1688a7bb2" kindref="member">Set</ref>(<ref refid="glext_8h_1a90d3e7e4182a9630993f640fa0443b0b" kindref="member">row</ref>,<sp/>0,<sp/>x[<ref refid="glext_8h_1a90d3e7e4182a9630993f640fa0443b0b" kindref="member">row</ref>]);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transform.<ref refid="class_matrix4x4_1acb07f122201caa230eccaeb1688a7bb2" kindref="member">Set</ref>(row,<sp/>1,<sp/>y[row]);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transform.<ref refid="class_matrix4x4_1acb07f122201caa230eccaeb1688a7bb2" kindref="member">Set</ref>(row,<sp/>2,<sp/>z[row]);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>transform.<ref refid="class_matrix4x4_1acb07f122201caa230eccaeb1688a7bb2" kindref="member">Set</ref>(3,<sp/>3,<sp/>1.0);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a07993c0d92c1aeeb357ba0495c8b5325" kindref="member">transform</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="class_frame_1afbf0802e2374c57dd80f754bd0c232da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_frame_1afbf0802e2374c57dd80f754bd0c232da" kindref="member">Frame::HasAvailableData</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="129"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>centerId<sp/>=<sp/><ref refid="class_frame_1a676a0342efbbafb23ef5366e02843b15" kindref="member">GetFrameInfo</ref>().<ref refid="struct_frame_1_1_frame_info_1a13df02e5be92dc224b0ed75c2e339fc5" kindref="member">centerId</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasPoleRa<sp/>=<sp/>(bodfnd_c(centerId,<sp/></highlight><highlight class="stringliteral">&quot;POLE_RA&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>SPICEFALSE);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasPoleDec<sp/>=<sp/>(bodfnd_c(centerId,<sp/></highlight><highlight class="stringliteral">&quot;POLE_DEC&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>SPICEFALSE);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasPm<sp/>=<sp/>(bodfnd_c(centerId,<sp/></highlight><highlight class="stringliteral">&quot;PM&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>SPICEFALSE);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>centerHasIAUFrameData<sp/>=<sp/>hasPoleRa<sp/>&amp;&amp;<sp/>hasPoleDec<sp/>&amp;&amp;<sp/>hasPm;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isIAUFrame<sp/>=<sp/><ref refid="class_frame_1ad7596949a1ff9c2d1dd837e730f6aefc" kindref="member">GetSpiceName</ref>().substr(0,<sp/>3)<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;IAU&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(isIAUFrame<sp/>&amp;&amp;<sp/>centerHasIAUFrameData)<sp/>||<sp/><ref refid="class_frame_1af03488c8a8eb25e55725b1af7c379671" kindref="member">HasLimitedCoverage</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="class_frame_1af03488c8a8eb25e55725b1af7c379671" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_frame_1af03488c8a8eb25e55725b1af7c379671" kindref="member">Frame::HasLimitedCoverage</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="143"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;long&gt;&amp;<sp/>pckIds<sp/>=<sp/><ref refid="class_frame_1ac5865bd9a4b0f8904b059fc005311971" kindref="member">GetLoadedPckIds</ref>();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long&gt;::const_iterator<sp/>it<sp/>=<sp/>std::find(pckIds.begin(),<sp/>pckIds.end(),<sp/>this-&gt;spiceId);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>it<sp/>!=<sp/>pckIds.end();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="class_frame_1a54fe03adc618817f27c43738ca77ccf8" refkind="member"><highlight class="normal"><ref refid="class_window" kindref="compound">Window</ref><sp/><ref refid="class_frame_1a54fe03adc618817f27c43738ca77ccf8" kindref="member">Frame::GetCoverage</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="152"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;KernelData&gt;<sp/>kernels<sp/>=<sp/><ref refid="class_c_spice_util_1a596f67731f91d55c8bb9b57e9ccb9c3d" kindref="member">CSpiceUtil::GetLoadedKernels</ref>(</highlight><highlight class="stringliteral">&quot;PCK&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_window" kindref="compound">Window</ref><sp/>coverage;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>kernels.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>file<sp/>=<sp/>kernels[i].filename;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(pckcov_c(file.c_str(),<sp/>this-&gt;<ref refid="class_frame_1a676a0342efbbafb23ef5366e02843b15" kindref="member">GetFrameInfo</ref>().<ref refid="struct_frame_1_1_frame_info_1a26545f9bb7266068c37985694b990192" kindref="member">classId</ref>,<sp/>&amp;coverage.<ref refid="class_window_1aa45d1cf3477180a366044fc95ebf5cd7" kindref="member">GetSpiceCell</ref>()));</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>coverage;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="class_frame_1a2530927116bf3b764862623c518d274e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_frame_1a2530927116bf3b764862623c518d274e" kindref="member">Frame::ValidateId</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceInt<sp/>centerId;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceInt<sp/>clssid;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceInt<sp/>frclss;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceBoolean<sp/>found;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(frinfo_c(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>&amp;centerId,<sp/>&amp;frclss,<sp/>&amp;clssid,<sp/>&amp;found));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>found<sp/>!=<sp/>SPICEFALSE;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="class_frame_1a33201e744d6593f2294bfb57bcb448d9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_frame_1a33201e744d6593f2294bfb57bcb448d9" kindref="member">Frame::MakeFrameId</ref>(<ref refid="class_frame_1ad2f22450377db20233914c9ec0a21df4" kindref="member">FrameType</ref><sp/><ref refid="glext_8h_1ab7c1afc09f67635c2c376638fcc0db5f" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>classId)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>frameId;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>frameName[<ref refid="_frame_8h_1a877d5cc37c354f0e22ee95dd79ce9768" kindref="member">FRAME_NAME_MAX_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>centerId;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceBoolean<sp/>found;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(ccifrm_c(type,<sp/>classId,<sp/><ref refid="_frame_8h_1a877d5cc37c354f0e22ee95dd79ce9768" kindref="member">FRAME_NAME_MAX_LENGTH</ref>,<sp/>&amp;frameId,<sp/>frameName,<sp/>&amp;centerId,<sp/>&amp;found));</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(found<sp/>!=<sp/>SPICEFALSE)<sp/>?<sp/>frameId<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="class_frame_1af143d92b7e9c07d2db5aec79b89ac1b2" refkind="member"><highlight class="normal">std::vector&lt;long&gt;<sp/><ref refid="class_frame_1af143d92b7e9c07d2db5aec79b89ac1b2" kindref="member">Frame::GetBuiltInIds</ref>()</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>SPICEINT_CELL(cell,<sp/><ref refid="_c_spice_util_8h_1aa95b9a8eb124b853687f6f2a346a3a7d" kindref="member">CELL_SIZE_LARGE</ref>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(bltfrm_c(SPICE_FRMTYP_ALL,<sp/>&amp;cell));</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_spice_util_1ab25fa56cd04c09b14f79c0f6fc8fe41b" kindref="member">CSpiceUtil::IntCellToVector</ref>(cell);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="class_frame_1a80d4a5985129beb4d8010f072def67d7" refkind="member"><highlight class="normal">std::vector&lt;long&gt;<sp/><ref refid="class_frame_1a80d4a5985129beb4d8010f072def67d7" kindref="member">Frame::GetPoolIds</ref>()</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>SPICEINT_CELL(cell,<sp/><ref refid="_c_spice_util_8h_1aa95b9a8eb124b853687f6f2a346a3a7d" kindref="member">CELL_SIZE_LARGE</ref>);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(kplfrm_c(SPICE_FRMTYP_ALL,<sp/>&amp;cell));</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_spice_util_1ab25fa56cd04c09b14f79c0f6fc8fe41b" kindref="member">CSpiceUtil::IntCellToVector</ref>(cell);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="class_frame_1ac5865bd9a4b0f8904b059fc005311971" refkind="member"><highlight class="normal">std::vector&lt;long&gt;<sp/><ref refid="class_frame_1ac5865bd9a4b0f8904b059fc005311971" kindref="member">Frame::GetLoadedPckIds</ref>()</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>SPICEINT_CELL(cell,<sp/><ref refid="_c_spice_util_8h_1aa95b9a8eb124b853687f6f2a346a3a7d" kindref="member">CELL_SIZE_LARGE</ref>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;KernelData&gt;<sp/>kernels<sp/>=<sp/><ref refid="class_c_spice_util_1a596f67731f91d55c8bb9b57e9ccb9c3d" kindref="member">CSpiceUtil::GetLoadedKernels</ref>(</highlight><highlight class="stringliteral">&quot;PCK&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>kernels.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(pckfrm_c(kernels[i].filename.c_str(),<sp/>&amp;cell));</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long&gt;<sp/>classIds<sp/>=<sp/><ref refid="class_c_spice_util_1ab25fa56cd04c09b14f79c0f6fc8fe41b" kindref="member">CSpiceUtil::IntCellToVector</ref>(cell);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long&gt;<sp/>frameIds;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>frameIds.reserve(classIds.size());</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>classIds.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frameIds.push_back(<ref refid="class_frame_1a33201e744d6593f2294bfb57bcb448d9" kindref="member">Frame::MakeFrameId</ref>(<ref refid="class_frame_1ad2f22450377db20233914c9ec0a21df4a03c1983206078ccc3fd8c290a5d63019" kindref="member">FT_PCK</ref>,<sp/>classIds[i]));</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frameIds;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.cpp"/>
+  </compounddef>
+</doxygen>

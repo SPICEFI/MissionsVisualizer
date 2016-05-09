@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_space_object_8h" kind="file">
+    <compoundname>SpaceObject.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_c_spice_core_8h" local="yes">CSpiceCore.h</includes>
+    <includes refid="_frame_8h" local="yes">Frame.h</includes>
+    <includes refid="_date_8h" local="yes">Date.h</includes>
+    <includes refid="_window_8h" local="yes">Window.h</includes>
+    <includes refid="_vector3_8h" local="yes">../Math/Vector3.h</includes>
+    <includes refid="_vector3_t_8h" local="yes">../Math/Vector3T.h</includes>
+    <includedby refid="_c_spice_8h" local="yes">SSWC/src/CSpice/CSpice.h</includedby>
+    <includedby refid="_frame_8h" local="yes">SSWC/src/CSpice/Frame.h</includedby>
+    <includedby refid="_space_body_8h" local="yes">SSWC/src/CSpice/SpaceBody.h</includedby>
+    <includedby refid="_space_object_8cpp" local="yes">SSWC/src/CSpice/SpaceObject.cpp</includedby>
+    <incdepgraph>
+      <node id="1556">
+        <label>iomanip</label>
+      </node>
+      <node id="1560">
+        <label>cmath</label>
+      </node>
+      <node id="1564">
+        <label>stdexcept</label>
+      </node>
+      <node id="1548">
+        <label>string</label>
+      </node>
+      <node id="1558">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>fstream</label>
+      </node>
+      <node id="1561">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+      </node>
+      <node id="1557">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1565" relation="include">
+        </childnode>
+      </node>
+      <node id="1550">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>ctime</label>
+      </node>
+      <node id="1562">
+        <label>Time.h</label>
+      </node>
+      <node id="1549">
+        <label>vector</label>
+      </node>
+      <node id="1553">
+        <label>sstream</label>
+      </node>
+      <node id="1565">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="1566" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+      </node>
+      <node id="1547">
+        <label>SSWC/src/CSpice/SpaceObject.h</label>
+        <link refid="SpaceObject.h"/>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+      </node>
+      <node id="1566">
+        <label>cstring</label>
+      </node>
+      <node id="1551">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="1563">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+      </node>
+      <node id="1567">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="1560" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1582">
+        <label>SSWC/src/CSpice/Frame.cpp</label>
+        <link refid="_frame_8cpp"/>
+      </node>
+      <node id="1579">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="1576">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="1574">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="1575" relation="include">
+        </childnode>
+        <childnode refid="1576" relation="include">
+        </childnode>
+      </node>
+      <node id="1584">
+        <label>SSWC/src/CSpice/SpaceBody.cpp</label>
+        <link refid="_space_body_8cpp"/>
+      </node>
+      <node id="1572">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="1573" relation="include">
+        </childnode>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+      </node>
+      <node id="1573">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="1581">
+        <label>SSWC/src/CSpice/Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1568" relation="include">
+        </childnode>
+        <childnode refid="1569" relation="include">
+        </childnode>
+        <childnode refid="1582" relation="include">
+        </childnode>
+      </node>
+      <node id="1578">
+        <label>SSWC/src/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="1572" relation="include">
+        </childnode>
+        <childnode refid="1576" relation="include">
+        </childnode>
+        <childnode refid="1579" relation="include">
+        </childnode>
+      </node>
+      <node id="1570">
+        <label>SSWC/src/App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1571" relation="include">
+        </childnode>
+        <childnode refid="1572" relation="include">
+        </childnode>
+        <childnode refid="1577" relation="include">
+        </childnode>
+        <childnode refid="1576" relation="include">
+        </childnode>
+      </node>
+      <node id="1577">
+        <label>SSWC/src/Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1578" relation="include">
+        </childnode>
+        <childnode refid="1580" relation="include">
+        </childnode>
+      </node>
+      <node id="1571">
+        <label>SSWC/src/App.cpp</label>
+        <link refid="_app_8cpp"/>
+      </node>
+      <node id="1575">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+      <node id="1580">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="_planet_8cpp"/>
+      </node>
+      <node id="1585">
+        <label>SSWC/src/CSpice/SpaceObject.cpp</label>
+        <link refid="_space_object_8cpp"/>
+      </node>
+      <node id="1568">
+        <label>SSWC/src/CSpice/SpaceObject.h</label>
+        <link refid="SpaceObject.h"/>
+        <childnode refid="1569" relation="include">
+        </childnode>
+        <childnode refid="1581" relation="include">
+        </childnode>
+        <childnode refid="1583" relation="include">
+        </childnode>
+        <childnode refid="1585" relation="include">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>SSWC/src/CSpice/SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1569" relation="include">
+        </childnode>
+        <childnode refid="1584" relation="include">
+        </childnode>
+      </node>
+      <node id="1569">
+        <label>SSWC/src/CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1570" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_space_object" prot="public">SpaceObject</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_space_object_8h_1ad899257c67a52e10a59baf8d8eb1d474" prot="public" static="no">
+        <name>SSB_SPICE_ID</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceObject.h" line="13" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceObject.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_space_object_8h_1a70a62dce03c8c66364745759b836f902" prot="public" static="no">
+        <name>SUN_SPICE_ID</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceObject.h" line="14" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceObject.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_space_object_8h_1ad8aaa5625828dd616470abaad7a2744b" prot="public" static="no">
+        <name>OBJECT_NAME_MAX_LENGTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceObject.h" line="16" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceObject.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_spice_core_8h" kindref="compound">CSpiceCore.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_frame_8h" kindref="compound">Frame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_date_8h" kindref="compound">Date.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_window_8h" kindref="compound">Window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Vector3.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Vector3T.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_space_object_8h_1ad899257c67a52e10a59baf8d8eb1d474" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SSB_SPICE_ID<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_space_object_8h_1a70a62dce03c8c66364745759b836f902" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUN_SPICE_ID<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_space_object_8h_1ad8aaa5625828dd616470abaad7a2744b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OBJECT_NAME_MAX_LENGTH<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_frame" kindref="compound">Frame</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_space_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_space_object" kindref="compound">SpaceObject</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_space_object_1a2b8e7d63a95ad11bdffebb2a99d1a2d9" kindref="member">SpaceObject</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1a841dd12234c1861d3c1978035c9d7b8d" kindref="member">spiceId</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_space_object_1a2b8e7d63a95ad11bdffebb2a99d1a2d9" kindref="member">SpaceObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/>spiceName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1a60676c3b81a05900eab791eefde444cc" kindref="member">~SpaceObject</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>*<sp/><ref refid="class_space_object_1a479f0732cad7fe1f6a1752a1f12eaa7b" kindref="member">Clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="class_space_object_1aafe0595c55762e7fe30cb9722b45abe5" kindref="member">GetSpiceName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="class_space_object_1a5f202bec13294119b30e90f54ba2ed7f" kindref="member">GetName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T&lt;Length&gt;</ref><sp/><ref refid="class_space_object_1aa88309b3c2a07ba8884a0f665d1a3c15" kindref="member">GetPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/>relativeTo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/>frame)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T&lt;Length&gt;</ref><sp/><ref refid="class_space_object_1aa88309b3c2a07ba8884a0f665d1a3c15" kindref="member">GetPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/>frame)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T&lt;Velocity&gt;</ref><sp/><ref refid="class_space_object_1ac12ce6edf54d7e93c33aa8a1854d5f82" kindref="member">GetVelocity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/>relativeTo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/>frame)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T&lt;Velocity&gt;</ref><sp/><ref refid="class_space_object_1ac12ce6edf54d7e93c33aa8a1854d5f82" kindref="member">GetVelocity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref>&amp;<sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/>frame)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_window" kindref="compound">Window</ref><sp/><ref refid="class_space_object_1a8917a1ebbe125c0a40e857ba6cbca6a3" kindref="member">GetCoverage</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1ac28320427a47945f5a3f55d2d6782ac7" kindref="member">IsBarycenter</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1aee6e2b434bf3b775813c26dfedbf0d8b" kindref="member">IsPlanetaryBarycenter</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1af60d3e96d0d246d9efe821d453472222" kindref="member">IsSSB</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1a9983084aeef5b66ad1867a11af3f6d78" kindref="member">IsPlanet</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1af412b21c3066595a80169d413ec8777a" kindref="member">IsMoon</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1ac8010baf561aced8e70fb2fb66a47171" kindref="member">IsBody</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1adf3b4cb454468d8cc3d467c0fe799dcd" kindref="member">IsSun</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1afa92ccf71440611067a3ee0239c060ae" kindref="member">ValidateId</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1ac28320427a47945f5a3f55d2d6782ac7" kindref="member">IsBarycenter</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1aee6e2b434bf3b775813c26dfedbf0d8b" kindref="member">IsPlanetaryBarycenter</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1af60d3e96d0d246d9efe821d453472222" kindref="member">IsSSB</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1a9983084aeef5b66ad1867a11af3f6d78" kindref="member">IsPlanet</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1af412b21c3066595a80169d413ec8777a" kindref="member">IsMoon</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1ac8010baf561aced8e70fb2fb66a47171" kindref="member">IsBody</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1adf3b4cb454468d8cc3d467c0fe799dcd" kindref="member">IsSun</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;long&gt;<sp/><ref refid="class_space_object_1ae7c1493eccfe0e35037e884bc886d164" kindref="member">FindChildObjectIds</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includeMassCenter<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1a980fbd5fe060a425fd0dbaac37879eb0" kindref="member">FindChildMassCenterId</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;long&gt;<sp/><ref refid="class_space_object_1a88fb61e9a9c94f262cad1e5fed33e73b" kindref="member">FindMoonIds</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1a6d9980e2b888bcd13cb393c6cf58e499" kindref="member">FindParentObjectId</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;long&gt;<sp/><ref refid="class_space_object_1a71e5c1b80aa1a2f512bdbdd0ee186c4d" kindref="member">GetLoadedSpkIds</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Construct(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>spiceId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71" refid="class_space_object_1a841dd12234c1861d3c1978035c9d7b8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_space_object_1a841dd12234c1861d3c1978035c9d7b8d" kindref="member">spiceId</ref>;</highlight></codeline>
+<codeline lineno="72" refid="class_space_object_1a6af735f50cde4bb709c82c07d2332c73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="class_space_object_1a6af735f50cde4bb709c82c07d2332c73" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75" refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref><sp/><ref refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" kindref="member">SSB</ref>;<sp/></highlight><highlight class="comment">//<sp/>Solar<sp/>System<sp/>Barycenter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_space_object_1ad047dd22e8dc1ea15bc740d879cde226" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref><sp/><ref refid="class_space_object_1ad047dd22e8dc1ea15bc740d879cde226" kindref="member">Sun</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceObject.h"/>
+  </compounddef>
+</doxygen>

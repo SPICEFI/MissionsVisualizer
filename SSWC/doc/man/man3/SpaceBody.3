@@ -1,0 +1,179 @@
+.TH "SpaceBody" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SpaceBody \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SpaceBody\&.h>\fP
+.PP
+Inherits \fBSpaceObject\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBBulkParameter\fP { \fBBP_RADIUS\fP, \fBBP_GM\fP, \fBBP_MASS\fP, \fBBP_ACC\fP, \fBBP_POLE_RA\fP, \fBBP_POLE_DEC\fP, \fBBP_PM\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSpaceBody\fP (long \fBspiceId\fP, const \fBstd::string\fP &\fBname\fP='')"
+.br
+.ti -1c
+.RI "\fBSpaceBody\fP (const \fBstd::string\fP &spiceName, const \fBstd::string\fP &\fBname\fP='')"
+.br
+.ti -1c
+.RI "\fBSpaceBody\fP (const \fBSpaceObject\fP &\fBobj\fP)"
+.br
+.ti -1c
+.RI "\fB~SpaceBody\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBSpaceBody\fP * \fBClone\fP () const "
+.br
+.ti -1c
+.RI "bool \fBHasIAUFrame\fP () const "
+.br
+.ti -1c
+.RI "\fBFrame\fP \fBGetIAUFrame\fP () const "
+.br
+.ti -1c
+.RI "bool \fBHasDefaultFrame\fP () const "
+.br
+.ti -1c
+.RI "\fBFrame\fP \fBGetDefaultFrame\fP () const "
+.br
+.ti -1c
+.RI "bool \fBHasParameter\fP (\fBBulkParameter\fP \fBparam\fP) const "
+.br
+.ti -1c
+.RI "double \fBGetSingleDimParam\fP (\fBBulkParameter\fP \fBparam\fP) const "
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetMultiDimParam\fP (\fBBulkParameter\fP \fBparam\fP) const "
+.br
+.ti -1c
+.RI "\fBLength\fP \fBGetRadius\fP () const "
+.br
+.ti -1c
+.RI "\fBstd::array\fP< \fBLength\fP, 3 > \fBGetRadii\fP () const "
+.br
+.ti -1c
+.RI "\fBGravitationalParameter\fP \fBGetGM\fP () const "
+.br
+.ti -1c
+.RI "\fBMass\fP \fBGetMass\fP () const "
+.br
+.ti -1c
+.RI "\fBAcceleration\fP \fBGetSurfaceAcceleration\fP () const "
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 11 of file SpaceBody\&.h\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBSpaceBody::BulkParameter\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBP_RADIUS \fP\fP
+.TP
+\fB\fIBP_GM \fP\fP
+.TP
+\fB\fIBP_MASS \fP\fP
+.TP
+\fB\fIBP_ACC \fP\fP
+.TP
+\fB\fIBP_POLE_RA \fP\fP
+.TP
+\fB\fIBP_POLE_DEC \fP\fP
+.TP
+\fB\fIBP_PM \fP\fP
+.PP
+Definition at line 14 of file SpaceBody\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SpaceBody::SpaceBody (longspiceId, const \fBstd::string\fP &name = \fC''\fP)"
+
+.PP
+Definition at line 3 of file SpaceBody\&.cpp\&.
+.SS "SpaceBody::SpaceBody (const \fBstd::string\fP &spiceName, const \fBstd::string\fP &name = \fC''\fP)"
+
+.PP
+Definition at line 8 of file SpaceBody\&.cpp\&.
+.SS "SpaceBody::SpaceBody (const \fBSpaceObject\fP &obj)"
+
+.PP
+Definition at line 13 of file SpaceBody\&.cpp\&.
+.SS "SpaceBody::~SpaceBody ()"
+
+.PP
+Definition at line 27 of file SpaceBody\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBSpaceBody\fP * SpaceBody::Clone () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBSpaceObject\fP\&.
+.PP
+Definition at line 36 of file SpaceBody\&.cpp\&.
+.SS "\fBFrame\fP SpaceBody::GetDefaultFrame () const"
+
+.PP
+Definition at line 69 of file SpaceBody\&.cpp\&.
+.SS "\fBGravitationalParameter\fP SpaceBody::GetGM () const"
+
+.PP
+Definition at line 216 of file SpaceBody\&.cpp\&.
+.SS "\fBFrame\fP SpaceBody::GetIAUFrame () const"
+
+.PP
+Definition at line 51 of file SpaceBody\&.cpp\&.
+.SS "\fBMass\fP SpaceBody::GetMass () const"
+
+.PP
+Definition at line 223 of file SpaceBody\&.cpp\&.
+.SS "std::vector< double > SpaceBody::GetMultiDimParam (\fBBulkParameter\fPparam) const"
+
+.PP
+Definition at line 155 of file SpaceBody\&.cpp\&.
+.SS "\fBstd::array\fP< \fBLength\fP, 3 > SpaceBody::GetRadii () const"
+
+.PP
+Definition at line 204 of file SpaceBody\&.cpp\&.
+.SS "\fBLength\fP SpaceBody::GetRadius () const"
+
+.PP
+Definition at line 197 of file SpaceBody\&.cpp\&.
+.SS "double SpaceBody::GetSingleDimParam (\fBBulkParameter\fPparam) const"
+
+.PP
+Definition at line 119 of file SpaceBody\&.cpp\&.
+.SS "\fBAcceleration\fP SpaceBody::GetSurfaceAcceleration () const"
+
+.PP
+Definition at line 230 of file SpaceBody\&.cpp\&.
+.SS "bool SpaceBody::HasDefaultFrame () const"
+
+.PP
+Definition at line 58 of file SpaceBody\&.cpp\&.
+.SS "bool SpaceBody::HasIAUFrame () const"
+
+.PP
+Definition at line 41 of file SpaceBody\&.cpp\&.
+.SS "bool SpaceBody::HasParameter (\fBBulkParameter\fPparam) const"
+
+.PP
+Definition at line 83 of file SpaceBody\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

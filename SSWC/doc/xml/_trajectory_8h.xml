@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_trajectory_8h" kind="file">
+    <compoundname>Trajectory.h</compoundname>
+    <includes local="yes">windows.h</includes>
+    <includes local="yes">Math\Vector3.h</includes>
+    <includes local="yes">Math\Quantity.h</includes>
+    <includes local="yes">CSpice\SpaceObject.h</includes>
+    <includes local="yes">CSpice\Date.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">gl\GL.h</includes>
+    <includes local="no">gl\GLU.h</includes>
+    <includedby refid="_planet_8h" local="yes">SSWC/src/Planet.h</includedby>
+    <includedby refid="_trajectory_8cpp" local="yes">SSWC/src/Trajectory.cpp</includedby>
+    <incdepgraph>
+      <node id="2304">
+        <label>windows.h</label>
+      </node>
+      <node id="2308">
+        <label>CSpice\Date.h</label>
+      </node>
+      <node id="2307">
+        <label>CSpice\SpaceObject.h</label>
+      </node>
+      <node id="2312">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="2309">
+        <label>vector</label>
+      </node>
+      <node id="2303">
+        <label>SSWC/src/Trajectory.h</label>
+        <link refid="Trajectory.h"/>
+        <childnode refid="2304" relation="include">
+        </childnode>
+        <childnode refid="2305" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+        <childnode refid="2307" relation="include">
+        </childnode>
+        <childnode refid="2308" relation="include">
+        </childnode>
+        <childnode refid="2309" relation="include">
+        </childnode>
+        <childnode refid="2310" relation="include">
+        </childnode>
+        <childnode refid="2311" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+      </node>
+      <node id="2305">
+        <label>Math\Vector3.h</label>
+      </node>
+      <node id="2306">
+        <label>Math\Quantity.h</label>
+      </node>
+      <node id="2310">
+        <label>deque</label>
+      </node>
+      <node id="2311">
+        <label>gl\GL.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2321">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="2320">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="2323">
+        <label>SSWC/src/Trajectory.cpp</label>
+        <link refid="_trajectory_8cpp"/>
+      </node>
+      <node id="2318">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="2319" relation="include">
+        </childnode>
+        <childnode refid="2320" relation="include">
+        </childnode>
+      </node>
+      <node id="2316">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="2317" relation="include">
+        </childnode>
+        <childnode refid="2318" relation="include">
+        </childnode>
+        <childnode refid="2319" relation="include">
+        </childnode>
+      </node>
+      <node id="2317">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="2315">
+        <label>SSWC/src/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="2316" relation="include">
+        </childnode>
+        <childnode refid="2320" relation="include">
+        </childnode>
+        <childnode refid="2321" relation="include">
+        </childnode>
+      </node>
+      <node id="2314">
+        <label>SSWC/src/Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="2315" relation="include">
+        </childnode>
+        <childnode refid="2322" relation="include">
+        </childnode>
+      </node>
+      <node id="2313">
+        <label>SSWC/src/Trajectory.h</label>
+        <link refid="Trajectory.h"/>
+        <childnode refid="2314" relation="include">
+        </childnode>
+        <childnode refid="2323" relation="include">
+        </childnode>
+      </node>
+      <node id="2319">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+      <node id="2322">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="_planet_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_trajectory" prot="public">Trajectory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;windows.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Math\Vector3.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Math\Quantity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CSpice\SpaceObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CSpice\Date.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl\GL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl\GLU.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_trajectory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_trajectory" kindref="compound">Trajectory</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::vector&lt;Vector3&gt;<sp/>path;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_trajectory_1a7e553e1118e6a4accfacb8fae0d24f2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="class_trajectory_1a7e553e1118e6a4accfacb8fae0d24f2b" kindref="member">obj</ref>;</highlight></codeline>
+<codeline lineno="23" refid="class_trajectory_1a37e42637b529f9939b499600a07d2660" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_frame" kindref="compound">Frame</ref><sp/><ref refid="class_trajectory_1a37e42637b529f9939b499600a07d2660" kindref="member">frame</ref>;</highlight></codeline>
+<codeline lineno="24" refid="class_trajectory_1a8d881aa7724623b0a675a7f3cbe118bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref><sp/><ref refid="class_trajectory_1a8d881aa7724623b0a675a7f3cbe118bc" kindref="member">unit</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_trajectory_1aa0634363940b3bfa6c069a58b89fe975" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>*<sp/><ref refid="class_trajectory_1aa0634363940b3bfa6c069a58b89fe975" kindref="member">relativeTo</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_trajectory_1a28f0f31968990bc14ef64093f863f15e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a28f0f31968990bc14ef64093f863f15e" kindref="member">staticDefined</ref>;</highlight></codeline>
+<codeline lineno="29" refid="class_trajectory_1a8a7ff5214ca817280dea38c3f5c62cbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Vector3&gt;<sp/><ref refid="class_trajectory_1a8a7ff5214ca817280dea38c3f5c62cbf" kindref="member">staticTrajectory</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_trajectory_1ac51564d2490c6d02fce1b28d67afe8e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1ac51564d2490c6d02fce1b28d67afe8e6" kindref="member">incrementalDefined</ref>;</highlight></codeline>
+<codeline lineno="32" refid="class_trajectory_1a6d2fbd4cfaec29cfdf4f801318a88f3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="class_trajectory_1a6d2fbd4cfaec29cfdf4f801318a88f3d" kindref="member">prevDate</ref>;</highlight></codeline>
+<codeline lineno="33" refid="class_trajectory_1a78edc3b797f73f84656279d08cb2bd37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::deque&lt;Vector3&gt;<sp/><ref refid="class_trajectory_1a78edc3b797f73f84656279d08cb2bd37" kindref="member">incrementalTrajectory</ref>;</highlight></codeline>
+<codeline lineno="34" refid="class_trajectory_1a37ed928f5e147cf76d702f0aae0f0bee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="class_trajectory_1a37ed928f5e147cf76d702f0aae0f0bee" kindref="member">incStartDate</ref>;</highlight></codeline>
+<codeline lineno="35" refid="class_trajectory_1a7330cbb6db806aefd41b22fcedb00e83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">Time</ref><sp/><ref refid="class_trajectory_1a7330cbb6db806aefd41b22fcedb00e83" kindref="member">incHistoryDuration</ref>;</highlight></codeline>
+<codeline lineno="36" refid="class_trajectory_1a8894f4a18e771016f5e76d52209e6eee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a8894f4a18e771016f5e76d52209e6eee" kindref="member">incResolution</ref>;</highlight></codeline>
+<codeline lineno="37" refid="class_trajectory_1a49cef2583b8b87c9d9afe963d381426d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">Time</ref><sp/><ref refid="class_trajectory_1a49cef2583b8b87c9d9afe963d381426d" kindref="member">incStepDuration</ref>;</highlight></codeline>
+<codeline lineno="38" refid="class_trajectory_1ab04d69563f531cfbdf3f61f107592d44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="class_trajectory_1ab04d69563f531cfbdf3f61f107592d44" kindref="member">nextPointDate</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_trajectory_1a7cf337f408aa8f27d93c68d40d5030ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a7cf337f408aa8f27d93c68d40d5030ce" kindref="member">lineWidth</ref><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="41" refid="class_trajectory_1a3000185975d15a117e751eb9908593fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a3000185975d15a117e751eb9908593fe" kindref="member">red</ref><sp/>=<sp/>255.0f;</highlight></codeline>
+<codeline lineno="42" refid="class_trajectory_1a26301a3b5552b8dabc1b620a426fbcf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ac14cda87cf6c751d53b65a3cd41c35a1" kindref="member">green</ref><sp/>=<sp/>255.0f;</highlight></codeline>
+<codeline lineno="43" refid="class_trajectory_1aab23c0150b87a4df1564c403ecd17507" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1853b32584a90fa75432925f3e26d0e8" kindref="member">blue</ref><sp/>=<sp/>255.0f;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_trajectory_1af06089eb6ef979e970ffea5c27d9d9c1" kindref="member">Trajectory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>,<sp/><ref refid="class_frame" kindref="compound">Frame</ref><sp/><ref refid="class_trajectory_1a37e42637b529f9939b499600a07d2660" kindref="member">frame</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref>&amp;<sp/><ref refid="class_trajectory_1a8d881aa7724623b0a675a7f3cbe118bc" kindref="member">unit</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Traectory(float<sp/>lineWidth,<sp/>Vector3<sp/>rgb);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_trajectory_1ac673c37025ca5353ad99ab41c936e75d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_trajectory_1ac673c37025ca5353ad99ab41c936e75d" kindref="member">~Trajectory</ref>(){};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a8b446ebdbb4e99e0688ba5eff107ad2e" kindref="member">SetRelativeTo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1afbad58d4ab10afa7d50ec213380e4000" kindref="member">SetRelativeToFrameCenter</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a14dc0715fca73b67deaf3b86855b73d4" kindref="member">SetStaticParams</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>startDate,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>endDate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resolution);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a7fd57ddb9ca5afce1aaffb7e6fad66b0" kindref="member">SetIncrementalParams</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>startDate,<sp/><ref refid="class_quantity" kindref="compound">Time</ref><sp/>historyDuration,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resolution);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::deque&lt;Vector3&gt;&amp;<sp/><ref refid="class_trajectory_1a9386e11e76cd7769447559ca8b6013b1" kindref="member">GetIncrementalTrajectory</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>curDate);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector3&gt;&amp;<sp/><ref refid="class_trajectory_1a6cb4148a8a21abce789f2a0097faf092" kindref="member">GetStaticTrajectory</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_trajectory_1a13373b83b45bb664c3b9b8ef8b108e75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a13373b83b45bb664c3b9b8ef8b108e75" kindref="member">IncrementalDefined</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1ac51564d2490c6d02fce1b28d67afe8e6" kindref="member">incrementalDefined</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="class_trajectory_1a44237f7a5422f3006b4b2aa64cadbb9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a44237f7a5422f3006b4b2aa64cadbb9c" kindref="member">StaticDefined</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="63"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_trajectory_1a28f0f31968990bc14ef64093f863f15e" kindref="member">staticDefined</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>Render();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>Render(Date<sp/>curDate);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>PushBack(Vector3<sp/>newPos);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>GetFromDate(<ref refid="class_date" kindref="compound">Date</ref><sp/>curDate)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="73"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>fromDate<sp/>=<sp/>curDate<sp/>-<sp/><ref refid="class_trajectory_1a7330cbb6db806aefd41b22fcedb00e83" kindref="member">incHistoryDuration</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fromDate<sp/>&lt;<sp/><ref refid="class_trajectory_1a37ed928f5e147cf76d702f0aae0f0bee" kindref="member">incStartDate</ref>)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fromDate<sp/>=<sp/><ref refid="class_trajectory_1a37ed928f5e147cf76d702f0aae0f0bee" kindref="member">incStartDate</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fromDate;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>GetPosition(<ref refid="class_date" kindref="compound">Date</ref><sp/>date,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref>&amp;<sp/><ref refid="class_trajectory_1a8d881aa7724623b0a675a7f3cbe118bc" kindref="member">unit</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="82"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T&lt;Length&gt;</ref><sp/>pt;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_trajectory_1aa0634363940b3bfa6c069a58b89fe975" kindref="member">relativeTo</ref><sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>=<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>.GetPosition(date,<sp/><ref refid="class_trajectory_1a37e42637b529f9939b499600a07d2660" kindref="member">frame</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>=<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>.GetPosition(date,<sp/>*<ref refid="class_trajectory_1aa0634363940b3bfa6c069a58b89fe975" kindref="member">relativeTo</ref>,<sp/><ref refid="class_trajectory_1a37e42637b529f9939b499600a07d2660" kindref="member">frame</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>(pt.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(unit),<sp/>pt.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(unit),<sp/>pt.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(unit));</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h"/>
+  </compounddef>
+</doxygen>

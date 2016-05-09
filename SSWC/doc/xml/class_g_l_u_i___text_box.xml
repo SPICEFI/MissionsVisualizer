@@ -1,0 +1,1202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___text_box" kind="class" prot="public">
+    <compoundname>GLUI_TextBox</compoundname>
+    <basecompoundref refid="class_g_l_u_i___control" prot="public" virt="non-virtual">GLUI_Control</basecompoundref>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1acedd73b9f1446f4fb4609b775de4dcf9" prot="public" static="no" mutable="no">
+        <type><ref refid="glui_8h_1aada824856f7bcf29794719981ebd8f60" kindref="member">GLUI_String</ref></type>
+        <definition>GLUI_String GLUI_TextBox::orig_text</definition>
+        <argsstring></argsstring>
+        <name>orig_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1987" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1987" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1a2341b0e1fd1578c70670776a48b70203" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::insertion_pt</definition>
+        <argsstring></argsstring>
+        <name>insertion_pt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1988" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1988" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1a3607ee96b4b08fdbe40f2ae9f7b7e329" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::substring_start</definition>
+        <argsstring></argsstring>
+        <name>substring_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1989" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1a71b4b00d8f8256c2c019286be1630198" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::substring_end</definition>
+        <argsstring></argsstring>
+        <name>substring_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1990" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1ae3ec04f839ed154f00d8a8acefcd4400" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::sel_start</definition>
+        <argsstring></argsstring>
+        <name>sel_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1991" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1ae5169ff2c5d0d884614d8971b08339c5" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::sel_end</definition>
+        <argsstring></argsstring>
+        <name>sel_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1991" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1ae2cf6781e36f9d0fd01ac5c8f9607679" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::last_insertion_pt</definition>
+        <argsstring></argsstring>
+        <name>last_insertion_pt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1992" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1ae9ef94fc5046cc0471bb889c61f49017" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::debug</definition>
+        <argsstring></argsstring>
+        <name>debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1993" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1993" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1adeb398dd089cbf4f5fbb99748b5122ea" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::draw_text_only</definition>
+        <argsstring></argsstring>
+        <name>draw_text_only</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1994" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1994" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1a662a6e35456ef73e0a1f05be51327fa6" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::tab_width</definition>
+        <argsstring></argsstring>
+        <name>tab_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1995" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1995" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1abdb01fa3cbb194720cf63c17c7cf2437" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::start_line</definition>
+        <argsstring></argsstring>
+        <name>start_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1996" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1996" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1a835225eb4b76aac37d9a4433f3a5a9f2" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::num_lines</definition>
+        <argsstring></argsstring>
+        <name>num_lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1997" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1997" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1a965e17d22020a0e94bdae6e1147c8c15" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::curr_line</definition>
+        <argsstring></argsstring>
+        <name>curr_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1998" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1998" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1a6325bbadbe462f57a1a05c66c545095f" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::visible_lines</definition>
+        <argsstring></argsstring>
+        <name>visible_lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1999" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1ab682369bd28b63c4244895325e9201a4" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::insert_x</definition>
+        <argsstring></argsstring>
+        <name>insert_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2000" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1a8da3e5a7311a4fce73cfdf928bb32353" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::insert_y</definition>
+        <argsstring></argsstring>
+        <name>insert_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2001" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1ab15cbe014282ee8fa1352211d9dc21c9" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::keygoal_x</definition>
+        <argsstring></argsstring>
+        <name>keygoal_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2002" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2002" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___text_box_1aaabf0fb6c07d0a5d1f46b258e00f5461" prot="public" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___scrollbar" kindref="compound">GLUI_Scrollbar</ref> *</type>
+        <definition>GLUI_Scrollbar* GLUI_TextBox::scrollbar</definition>
+        <argsstring></argsstring>
+        <name>scrollbar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2003" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2003" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a2973d6ed429cb52fc794273939fbbcdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_TextBox::GLUI_TextBox</definition>
+        <argsstring>(GLUI_Node *parent, GLUI_String &amp;live_var, bool scroll=false, int id=-1, GLUI_CB callback=GLUI_CB())</argsstring>
+        <name>GLUI_TextBox</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="glui_8h_1aada824856f7bcf29794719981ebd8f60" kindref="member">GLUI_String</ref> &amp;</type>
+          <declname>live_var</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scroll</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>id</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref></type>
+          <declname>callback</declname>
+          <defval><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1981" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a91e7c9fcb2f00ac68e9d10dcb9a09769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_TextBox::GLUI_TextBox</definition>
+        <argsstring>(GLUI_Node *parent, bool scroll=false, int id=-1, GLUI_CB callback=GLUI_CB())</argsstring>
+        <name>GLUI_TextBox</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scroll</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>id</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref></type>
+          <declname>callback</declname>
+          <defval><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1983" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a193bf66dde6e93a501af7a04dd57fec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::mouse_down_handler</definition>
+        <argsstring>(int local_x, int local_y)</argsstring>
+        <name>mouse_down_handler</name>
+        <reimplements refid="class_g_l_u_i___control_1a92b77565168a1d2003bca1c16ac00e8d">mouse_down_handler</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>local_x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>local_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2005" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1ae2ec21715ffdacd73497acc91444a637" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::mouse_up_handler</definition>
+        <argsstring>(int local_x, int local_y, bool inside)</argsstring>
+        <name>mouse_up_handler</name>
+        <reimplements refid="class_g_l_u_i___control_1ac32aad8f69134d03682e34d0488a18f1">mouse_up_handler</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>local_x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>local_y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inside</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2006" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a825107a1c8c86b3a6327f62e634e8a4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::mouse_held_down_handler</definition>
+        <argsstring>(int local_x, int local_y, bool inside)</argsstring>
+        <name>mouse_held_down_handler</name>
+        <reimplements refid="class_g_l_u_i___control_1a4b44e44c1c455adc7f98c63aeb6aa919">mouse_held_down_handler</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>local_x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>local_y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inside</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2007" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1acdb3ac37acc3c3ba6260ea73f413257f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::key_handler</definition>
+        <argsstring>(unsigned char key, int modifiers)</argsstring>
+        <name>key_handler</name>
+        <reimplements refid="class_g_l_u_i___control_1a7f9da8ca7df99bd4cf394a9fd8ce19f1">key_handler</reimplements>
+        <param>
+          <type>unsigned char</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>modifiers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2008" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a2fa1ab2b0026f6eeea9a4e25107637f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::special_handler</definition>
+        <argsstring>(int key, int modifiers)</argsstring>
+        <name>special_handler</name>
+        <reimplements refid="class_g_l_u_i___control_1ab08da363df3f3eae867dd5ae61200f23">special_handler</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>modifiers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2009" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a700f7d07a42c613b95f212959a7329d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::activate</definition>
+        <argsstring>(int how)</argsstring>
+        <name>activate</name>
+        <reimplements refid="class_g_l_u_i___control_1af686704718daf4761d17e4da83c03aad">activate</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>how</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2011" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1ad622284de7190c5c51de5538fb076b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::deactivate</definition>
+        <argsstring>(void)</argsstring>
+        <name>deactivate</name>
+        <reimplements refid="class_g_l_u_i___control_1a9d18764a6cfe25c220c845eff480d4fe">deactivate</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2012" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a907c7dc3dcef136f551cb73ca243143a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::enable</definition>
+        <argsstring>(void)</argsstring>
+        <name>enable</name>
+        <reimplements refid="class_g_l_u_i___control_1aaadc8fd35d8d40091abe3538af346255">enable</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2014" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1ac04b5e44ae6d804ea3b499ee017f6b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>disable</name>
+        <reimplements refid="class_g_l_u_i___control_1a765dcd68a28a3db25bf41c015e28ee18">disable</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2015" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a7bc1b7cdead3e55b2e39c6258284ef05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::draw</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>draw</name>
+        <reimplements refid="class_g_l_u_i___control_1a2eb42d7a7951280ad2fe8c37972bf66a">draw</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2017" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1abd6406a461f85db80f75a806f3da29d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::mouse_over</definition>
+        <argsstring>(int state, int x, int y)</argsstring>
+        <name>mouse_over</name>
+        <reimplements refid="class_g_l_u_i___control_1ac16c3ff7bef1a64abd36a00aa3d935d8">mouse_over</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2019" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1aab2bc7ff59e3fb9a7ec6accd98588e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::get_box_width</definition>
+        <argsstring>()</argsstring>
+        <name>get_box_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2021" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a56832b2b1802b0d6b1af218ffb1bf8e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::find_word_break</definition>
+        <argsstring>(int start, int direction)</argsstring>
+        <name>find_word_break</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2022" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1af2b6cbe72c04724ea70d0801bb0981fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::substring_width</definition>
+        <argsstring>(int start, int end, int initial_width=0)</argsstring>
+        <name>substring_width</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>initial_width</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2023" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1abbd297802e6809cceb4acda92e877d83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::clear_substring</definition>
+        <argsstring>(int start, int end)</argsstring>
+        <name>clear_substring</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2024" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1ac2c3d5638dcc068ba1fc58a39744f787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::find_insertion_pt</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>find_insertion_pt</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2025" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a8cb5ae2044e1781eba8d10c0dd1cafd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_TextBox::update_substring_bounds</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_substring_bounds</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2026" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1aeb8a55c5a7192628db696228bc0038eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::update_and_draw_text</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_and_draw_text</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2027" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a44e6ef9b4ba90787d6ca83defdc60673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::draw_text</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>draw_text</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2028" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a0aa5e4a15073336f90df775f9820c276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::draw_insertion_pt</definition>
+        <argsstring>(void)</argsstring>
+        <name>draw_insertion_pt</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2029" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a77a14ce650cc1f043b7e5047a69081a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::update_x_offsets</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_x_offsets</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2030" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a36ae0f7f0beb253ca09cd1d3f141f6b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::update_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_size</name>
+        <reimplements refid="class_g_l_u_i___control_1a4bfe55acbbf735a7d2ff07d687a481e2">update_size</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2031" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a99733f4d591d54f26237f7c8023411b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::set_text</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>set_text</name>
+        <reimplements refid="class_g_l_u_i___control_1a44fab5a8af3c58865bc2cd8bfd596af8">set_text</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes live variable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2033" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a052758e34ba64b19325c4e9be1cfcbb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* GLUI_TextBox::get_text</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_text</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2034" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2034" bodyend="2034"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1ab137704b05cf5549def1713599b89552" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::dump</definition>
+        <argsstring>(FILE *out, char *text)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>FILE *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2036" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a6d461630cec6d9a388ad92f31fc052b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::set_tab_w</definition>
+        <argsstring>(int w)</argsstring>
+        <name>set_tab_w</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2037" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2037" bodyend="2037"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a36e8f773e0bcd48aebc103e3d9b24903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::set_start_line</definition>
+        <argsstring>(int l)</argsstring>
+        <name>set_start_line</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2038" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2038" bodyend="2038"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1adb058a900dfbf996ad9c24db82ab66c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool GLUI_TextBox::wants_tabs</definition>
+        <argsstring>(void) const </argsstring>
+        <name>wants_tabs</name>
+        <reimplements refid="class_g_l_u_i___control_1a42a65c9dbc0690e270a8c0033fbc1845">wants_tabs</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2041" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2041" bodyend="2041"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1aee80715231779a7911c1d547f3c4146a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>static void GLUI_TextBox::scrollbar_callback</definition>
+        <argsstring>(GLUI_Control *)</argsstring>
+        <name>scrollbar_callback</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___control" kindref="compound">GLUI_Control</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2039" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a641773e896a194d6413b4e04e27b9b6d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::common_init</definition>
+        <argsstring>()</argsstring>
+        <name>common_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2044" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2044" bodyend="2068"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___text_box_1a7db40231829baa67a57656a5a29b4473" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_TextBox::common_construct</definition>
+        <argsstring>(GLUI_Node *parent, GLUI_String *live_var, bool scroll, int id, GLUI_CB callback)</argsstring>
+        <name>common_construct</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="glui_8h_1aada824856f7bcf29794719981ebd8f60" kindref="member">GLUI_String</ref> *</type>
+          <declname>live_var</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scroll</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2069" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="899">
+        <label>GLUI_Control</label>
+        <link refid="class_g_l_u_i___control"/>
+        <childnode refid="900" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="898">
+        <label>GLUI_TextBox</label>
+        <link refid="class_g_l_u_i___text_box"/>
+        <childnode refid="899" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="900">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="907">
+        <label>RGBc</label>
+        <link refid="class_r_g_bc"/>
+      </node>
+      <node id="902">
+        <label>GLUI_Control</label>
+        <link refid="class_g_l_u_i___control"/>
+        <childnode refid="903" relation="public-inheritance">
+        </childnode>
+        <childnode refid="903" relation="usage">
+          <edgelabel>collapsed_node</edgelabel>
+        </childnode>
+        <childnode refid="904" relation="usage">
+          <edgelabel>callback</edgelabel>
+        </childnode>
+        <childnode refid="905" relation="usage">
+          <edgelabel>glui</edgelabel>
+        </childnode>
+      </node>
+      <node id="908">
+        <label>GLUI_StdBitmaps</label>
+        <link refid="class_g_l_u_i___std_bitmaps"/>
+      </node>
+      <node id="904">
+        <label>GLUI_CB</label>
+        <link refid="class_g_l_u_i___c_b"/>
+      </node>
+      <node id="909">
+        <label>GLUI_Panel</label>
+        <link refid="class_g_l_u_i___panel"/>
+        <childnode refid="902" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="901">
+        <label>GLUI_TextBox</label>
+        <link refid="class_g_l_u_i___text_box"/>
+        <childnode refid="902" relation="public-inheritance">
+        </childnode>
+        <childnode refid="910" relation="usage">
+          <edgelabel>scrollbar</edgelabel>
+        </childnode>
+      </node>
+      <node id="906">
+        <label>GLUI_Main</label>
+        <link refid="class_g_l_u_i___main"/>
+        <childnode refid="903" relation="public-inheritance">
+        </childnode>
+        <childnode refid="902" relation="usage">
+          <edgelabel>active_control</edgelabel>
+          <edgelabel>mouse_over_control</edgelabel>
+        </childnode>
+        <childnode refid="907" relation="usage">
+          <edgelabel>bkgd_color</edgelabel>
+        </childnode>
+        <childnode refid="908" relation="usage">
+          <edgelabel>std_bitmaps</edgelabel>
+        </childnode>
+        <childnode refid="909" relation="usage">
+          <edgelabel>main_panel</edgelabel>
+        </childnode>
+      </node>
+      <node id="910">
+        <label>GLUI_Scrollbar</label>
+        <link refid="class_g_l_u_i___scrollbar"/>
+        <childnode refid="902" relation="public-inheritance">
+        </childnode>
+        <childnode refid="904" relation="usage">
+          <edgelabel>object_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="903">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+        <childnode refid="903" relation="usage">
+          <edgelabel>prev_sibling</edgelabel>
+          <edgelabel>next_sibling</edgelabel>
+          <edgelabel>child_head</edgelabel>
+          <edgelabel>parent_node</edgelabel>
+          <edgelabel>child_tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="905">
+        <label>GLUI</label>
+        <link refid="class_g_l_u_i"/>
+        <childnode refid="906" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1978" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1977" bodyend="2072"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___text_box_1a700f7d07a42c613b95f212959a7329d2" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>activate</name></member>
+      <member refid="class_g_l_u_i___control_1ad285387e771b46fb294935f68e967a77" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>active</name></member>
+      <member refid="class_g_l_u_i___control_1ab9864db034526ddd5bbff94a5fb3ee9b" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>active_type</name></member>
+      <member refid="class_g_l_u_i___node_1a02cf295c81cebe31c39e95403dbadbc1" prot="protected" virt="non-virtual"><scope>GLUI_TextBox</scope><name>add_child_to_control</name></member>
+      <member refid="class_g_l_u_i___node_1abdcdd643758adab07580124187565fcd" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>add_control</name></member>
+      <member refid="class_g_l_u_i___control_1aa82d73e561e85086c13de6b8d67e9322" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>align</name></member>
+      <member refid="class_g_l_u_i___control_1a5d352c36d6bad2a1eaf9795bba00b7e7" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>alignment</name></member>
+      <member refid="class_g_l_u_i___control_1a96060fe0cc6d537e736dd6eef78e24ab" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>callback</name></member>
+      <member refid="class_g_l_u_i___control_1a2484b0899bd5b56673a73387c9c530a7" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>can_activate</name></member>
+      <member refid="class_g_l_u_i___control_1add5d7aa8efcd213181cf84975661e168" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>can_draw</name></member>
+      <member refid="class_g_l_u_i___control_1ae56ff4899b691fc25332071f8f4c15f3" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>char_width</name></member>
+      <member refid="class_g_l_u_i___control_1a3b24d8c0f29ab6fc2318278543906cb5" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>char_widths</name></member>
+      <member refid="class_g_l_u_i___node_1ad9370e7f62e83bb720063d2439f544c2" prot="protected" virt="non-virtual"><scope>GLUI_TextBox</scope><name>child_head</name></member>
+      <member refid="class_g_l_u_i___node_1a971d8e606c1a3442ad9b8681bdb9ed59" prot="protected" virt="non-virtual"><scope>GLUI_TextBox</scope><name>child_tail</name></member>
+      <member refid="class_g_l_u_i___text_box_1abbd297802e6809cceb4acda92e877d83" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>clear_substring</name></member>
+      <member refid="class_g_l_u_i___control_1a0f32f9b712ae3233f914d02738c43e7f" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>collapsed_node</name></member>
+      <member refid="class_g_l_u_i___control_1a7a6528f287b80bed5861625eda4e5cad" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>collapsible</name></member>
+      <member refid="class_g_l_u_i___text_box_1a7db40231829baa67a57656a5a29b4473" prot="protected" virt="non-virtual"><scope>GLUI_TextBox</scope><name>common_construct</name></member>
+      <member refid="class_g_l_u_i___text_box_1a641773e896a194d6413b4e04e27b9b6d" prot="protected" virt="non-virtual"><scope>GLUI_TextBox</scope><name>common_init</name></member>
+      <member refid="class_g_l_u_i___control_1afc9111c158e729b1e1630d4d9cd6ee1a" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>contain_h</name></member>
+      <member refid="class_g_l_u_i___control_1a9d54f7b7c867572debdad16b37867093" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>contain_w</name></member>
+      <member refid="class_g_l_u_i___control_1aa02b20473b2d00e5b95bf36ff941e5bf" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>contain_x</name></member>
+      <member refid="class_g_l_u_i___control_1a6327d4d71e9368bf238c6fddd958649e" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>contain_y</name></member>
+      <member refid="class_g_l_u_i___text_box_1a965e17d22020a0e94bdae6e1147c8c15" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>curr_line</name></member>
+      <member refid="class_g_l_u_i___text_box_1ad622284de7190c5c51de5538fb076b79" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>deactivate</name></member>
+      <member refid="class_g_l_u_i___text_box_1ae9ef94fc5046cc0471bb889c61f49017" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>debug</name></member>
+      <member refid="class_g_l_u_i___text_box_1ac04b5e44ae6d804ea3b499ee017f6b22" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>disable</name></member>
+      <member refid="class_g_l_u_i___text_box_1a7bc1b7cdead3e55b2e39c6258284ef05" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>draw</name></member>
+      <member refid="class_g_l_u_i___control_1aa61812303961384f999c35f128f04c93" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_active_box</name></member>
+      <member refid="class_g_l_u_i___control_1ad1bcdb980c0ccbcbafd7b51a6564ccc0" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_bkgd_box</name></member>
+      <member refid="class_g_l_u_i___control_1a5dff8194089a66651d3729cf7c465644" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_box</name></member>
+      <member refid="class_g_l_u_i___control_1adba9e88ff56a8ea0596e6b1ede3d4b9d" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_box_inwards_outline</name></member>
+      <member refid="class_g_l_u_i___control_1af8bfdf4867b4521fd3c12825e8a150db" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_char</name></member>
+      <member refid="class_g_l_u_i___control_1a1386b942473e028e9204bd1a28e83a6d" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_emboss_box</name></member>
+      <member refid="class_g_l_u_i___text_box_1a0aa5e4a15073336f90df775f9820c276" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_insertion_pt</name></member>
+      <member refid="class_g_l_u_i___control_1aacacd563742e3e48bc5f27643e4a514c" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_name</name></member>
+      <member refid="class_g_l_u_i___control_1af151f23a66652c7be4a49320d49a3aab" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_recursive</name></member>
+      <member refid="class_g_l_u_i___control_1a05172f3645ac042839036c97e04ea819" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_string</name></member>
+      <member refid="class_g_l_u_i___control_1aba5d462fcca0297c3dbf6a26d0774e4a" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_string</name></member>
+      <member refid="class_g_l_u_i___text_box_1a44e6ef9b4ba90787d6ca83defdc60673" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_text</name></member>
+      <member refid="class_g_l_u_i___text_box_1adeb398dd089cbf4f5fbb99748b5122ea" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>draw_text_only</name></member>
+      <member refid="class_g_l_u_i___text_box_1ab137704b05cf5549def1713599b89552" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>dump</name></member>
+      <member refid="class_g_l_u_i___node_1abce29cf0ade68e9e5702025f710cb1e8" prot="public" virt="non-virtual" ambiguityscope="GLUI_Control::"><scope>GLUI_TextBox</scope><name>dump</name></member>
+      <member refid="class_g_l_u_i___text_box_1a907c7dc3dcef136f551cb73ca243143a" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>enable</name></member>
+      <member refid="class_g_l_u_i___control_1a834202682d00a31a2141eae6709d37e1" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>enabled</name></member>
+      <member refid="class_g_l_u_i___control_1a76fe9cee85c7a296610a73b0ba12aa9c" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>execute_callback</name></member>
+      <member refid="class_g_l_u_i___text_box_1ac2c3d5638dcc068ba1fc58a39744f787" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>find_insertion_pt</name></member>
+      <member refid="class_g_l_u_i___text_box_1a56832b2b1802b0d6b1af218ffb1bf8e9" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>find_word_break</name></member>
+      <member refid="class_g_l_u_i___node_1a631b094804b887c0d091ece2786543d1" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>first_child</name></member>
+      <member refid="class_g_l_u_i___node_1ace20232965e8d9da8f3d286113d5572a" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>first_sibling</name></member>
+      <member refid="class_g_l_u_i___control_1a504f6aff85729e665fa8664d170d9878" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>float_array_size</name></member>
+      <member refid="class_g_l_u_i___control_1a6d2cc0faaa678706939ac775c523871a" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>float_array_val</name></member>
+      <member refid="class_g_l_u_i___control_1ac69b8e62a6f4f16c83b70a64f73d7a1c" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>float_val</name></member>
+      <member refid="class_g_l_u_i___control_1a132273406b5ea6d95cd26501fc2f2027" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>font</name></member>
+      <member refid="class_g_l_u_i___text_box_1aab2bc7ff59e3fb9a7ec6accd98588e61" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>get_box_width</name></member>
+      <member refid="class_g_l_u_i___control_1a98f514bf95d29320c175fe1d7d4ef13b" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>get_float_array_val</name></member>
+      <member refid="class_g_l_u_i___control_1a5b4f37b463259dfbf228b34b901a07cc" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>get_float_val</name></member>
+      <member refid="class_g_l_u_i___control_1af659cbe80e9a5bdfd4fbff4366d4ce4f" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>get_font</name></member>
+      <member refid="class_g_l_u_i___control_1a855a5f2c0267a303b39f685284913b40" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>get_id</name></member>
+      <member refid="class_g_l_u_i___control_1a3ee80f39e04a26e38bc5e16f0f8af539" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>get_int_val</name></member>
+      <member refid="class_g_l_u_i___text_box_1a052758e34ba64b19325c4e9be1cfcbb0" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>get_text</name></member>
+      <member refid="class_g_l_u_i___control_1a0cb273fd3dca9fb84809a4d350668c32" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>get_this_column_dims</name></member>
+      <member refid="class_g_l_u_i___control_1ac731aebe26d7eb0b916a9692229f0eb6" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>glui</name></member>
+      <member refid="class_g_l_u_i___control_1a09c6f812cb8b6ba83e15fd96d0018552" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>GLUI_Control</name></member>
+      <member refid="class_g_l_u_i___node_1a066e5d80bfb9925bdb034c29da9c844c" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>GLUI_Node</name></member>
+      <member refid="class_g_l_u_i___text_box_1a2973d6ed429cb52fc794273939fbbcdb" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>GLUI_TextBox</name></member>
+      <member refid="class_g_l_u_i___text_box_1a91e7c9fcb2f00ac68e9d10dcb9a09769" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>GLUI_TextBox</name></member>
+      <member refid="class_g_l_u_i___control_1a058c4f060b70952e6199f1409710ba0b" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>h</name></member>
+      <member refid="class_g_l_u_i___control_1aec1b041f28d8ee36a0241dde827fea21" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>hidden</name></member>
+      <member refid="class_g_l_u_i___control_1ae88270c442111baddf290f4a153caed1" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>hide_internal</name></member>
+      <member refid="class_g_l_u_i___control_1a4eb47a3c2c20c0c24dca192a2eb96c8d" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>idle</name></member>
+      <member refid="class_g_l_u_i___control_1a4d56b92f8b6454c3f64ba6f0ef5470b8" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>init_live</name></member>
+      <member refid="class_g_l_u_i___text_box_1ab682369bd28b63c4244895325e9201a4" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>insert_x</name></member>
+      <member refid="class_g_l_u_i___text_box_1a8da3e5a7311a4fce73cfdf928bb32353" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>insert_y</name></member>
+      <member refid="class_g_l_u_i___text_box_1a2341b0e1fd1578c70670776a48b70203" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>insertion_pt</name></member>
+      <member refid="class_g_l_u_i___control_1a4a890b5b5a854b34200b5e63f1069b4e" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>int_val</name></member>
+      <member refid="class_g_l_u_i___control_1ac667bec4efbc9bdbf3e246b4471fb4cb" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>is_container</name></member>
+      <member refid="class_g_l_u_i___control_1a3e4e35edfa04ce71c090bdb849b7642c" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>is_open</name></member>
+      <member refid="class_g_l_u_i___text_box_1acdb3ac37acc3c3ba6260ea73f413257f" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>key_handler</name></member>
+      <member refid="class_g_l_u_i___text_box_1ab15cbe014282ee8fa1352211d9dc21c9" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>keygoal_x</name></member>
+      <member refid="class_g_l_u_i___node_1a4825cdc843f0e2b46d75fe5cb9e8ba35" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>last_child</name></member>
+      <member refid="class_g_l_u_i___text_box_1ae2cf6781e36f9d0fd01ac5c8f9607679" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>last_insertion_pt</name></member>
+      <member refid="class_g_l_u_i___control_1aa9ebadbed670a1fa061918705083db57" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>last_live_float</name></member>
+      <member refid="class_g_l_u_i___control_1a719177af6b52ae3373d2b3c30430ff58" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>last_live_float_array</name></member>
+      <member refid="class_g_l_u_i___control_1abef31d8d51c8088afd6ac96ec7b596bf" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>last_live_int</name></member>
+      <member refid="class_g_l_u_i___control_1ac77569805eb6ccfce3f4ff1d09c309b6" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>last_live_text</name></member>
+      <member refid="class_g_l_u_i___node_1a6458e5a6af00ddf2ebb9271c06fa2931" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>last_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a3feadb4b6d58122ff5449adfb4a323bc" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>link_this_to_parent_first</name></member>
+      <member refid="class_g_l_u_i___node_1a28eb5c7bf5a0edf5b7ba2502384c6544" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>link_this_to_parent_last</name></member>
+      <member refid="class_g_l_u_i___node_1ad8d7fd8a437eeec4a72b73064dc954b4" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>link_this_to_sibling_next</name></member>
+      <member refid="class_g_l_u_i___node_1a5825555fc493712a1d6f24235f59f25a" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>link_this_to_sibling_prev</name></member>
+      <member refid="class_g_l_u_i___control_1a74977797cf84a38ef78de8c548bc2d25" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>live_inited</name></member>
+      <member refid="class_g_l_u_i___control_1a8ba7cae809a47dd870592aa2cc85483b" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>live_type</name></member>
+      <member refid="class_g_l_u_i___text_box_1a193bf66dde6e93a501af7a04dd57fec3" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>mouse_down_handler</name></member>
+      <member refid="class_g_l_u_i___text_box_1a825107a1c8c86b3a6327f62e634e8a4e" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>mouse_held_down_handler</name></member>
+      <member refid="class_g_l_u_i___text_box_1abd6406a461f85db80f75a806f3da29d8" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>mouse_over</name></member>
+      <member refid="class_g_l_u_i___text_box_1ae2ec21715ffdacd73497acc91444a637" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>mouse_up_handler</name></member>
+      <member refid="class_g_l_u_i___control_1aa95b97d50df45335fc33f0af03958eb3" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>name</name></member>
+      <member refid="class_g_l_u_i___control_1a420fb3c5991b6486754ba192f8ab8274" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>needs_idle</name></member>
+      <member refid="class_g_l_u_i___node_1a7901214f386113b417a25de023476317" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>next</name></member>
+      <member refid="class_g_l_u_i___node_1a2c99ef6a1290035f98871d859d05e890" prot="protected" virt="non-virtual"><scope>GLUI_TextBox</scope><name>next_sibling</name></member>
+      <member refid="class_g_l_u_i___text_box_1a835225eb4b76aac37d9a4433f3a5a9f2" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>num_lines</name></member>
+      <member refid="class_g_l_u_i___text_box_1acedd73b9f1446f4fb4609b775de4dcf9" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>orig_text</name></member>
+      <member refid="class_g_l_u_i___control_1ac7417112964d4c5134d4453835a0da99" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>output_live</name></member>
+      <member refid="class_g_l_u_i___control_1a55b244224a7446e7254a9d3b468d4925" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>pack</name></member>
+      <member refid="class_g_l_u_i___control_1a1c9cf8a504998db2393c4d45144eca8d" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>pack_old</name></member>
+      <member refid="class_g_l_u_i___node_1a8ed65d447784f6f88bd3e2e2bcac6cdb" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>parent</name></member>
+      <member refid="class_g_l_u_i___node_1a308f39e8a182f499139381840418a573" prot="protected" virt="non-virtual"><scope>GLUI_TextBox</scope><name>parent_node</name></member>
+      <member refid="class_g_l_u_i___node_1a84892bf13144651007640c5f25b51145" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>prev</name></member>
+      <member refid="class_g_l_u_i___node_1afa72f0491ca54ce8d0a0af7049de8049" prot="protected" virt="non-virtual"><scope>GLUI_TextBox</scope><name>prev_sibling</name></member>
+      <member refid="class_g_l_u_i___control_1a0890ea809b8d980695939e1d92a0af47" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>ptr_val</name></member>
+      <member refid="class_g_l_u_i___control_1a7777125cd866884377899df625bad6cd" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>redraw</name></member>
+      <member refid="class_g_l_u_i___control_1aecb4bacd8f4ff12de6ffcecc166d3adc" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>redraw_window</name></member>
+      <member refid="class_g_l_u_i___control_1a49e4d3f46873d156162d9f770b7b3832" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>restore_window</name></member>
+      <member refid="class_g_l_u_i___text_box_1aaabf0fb6c07d0a5d1f46b258e00f5461" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>scrollbar</name></member>
+      <member refid="class_g_l_u_i___text_box_1aee80715231779a7911c1d547f3c4146a" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>scrollbar_callback</name></member>
+      <member refid="class_g_l_u_i___text_box_1ae5169ff2c5d0d884614d8971b08339c5" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>sel_end</name></member>
+      <member refid="class_g_l_u_i___text_box_1ae3ec04f839ed154f00d8a8acefcd4400" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>sel_start</name></member>
+      <member refid="class_g_l_u_i___control_1ad853d2029a306239daa3c9af6c36730d" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>set_alignment</name></member>
+      <member refid="class_g_l_u_i___control_1aa9a1c1e033c0e99e4710dfc4669660f4" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>set_float_array_val</name></member>
+      <member refid="class_g_l_u_i___control_1a231fe69a978a66b858727e50327bcf59" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>set_float_val</name></member>
+      <member refid="class_g_l_u_i___control_1ae317f3c30fbd4cad6bd91523c7e3e6b0" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>set_font</name></member>
+      <member refid="class_g_l_u_i___control_1acc29b79df3861b1910b2a41e0e8d2822" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>set_h</name></member>
+      <member refid="class_g_l_u_i___control_1ad27f17ac45b13fb12d623f269d76db14" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>set_id</name></member>
+      <member refid="class_g_l_u_i___control_1a32ef6d11d6c62e344f17268dfb96aad6" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>set_int_val</name></member>
+      <member refid="class_g_l_u_i___control_1ad1bf0640802de0a40337cdbcf93a5ec6" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>set_name</name></member>
+      <member refid="class_g_l_u_i___control_1a9c732d42b7d5e418e59c307ef2d98d5c" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>set_ptr_val</name></member>
+      <member refid="class_g_l_u_i___text_box_1a36e8f773e0bcd48aebc103e3d9b24903" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>set_start_line</name></member>
+      <member refid="class_g_l_u_i___text_box_1a6d461630cec6d9a388ad92f31fc052b1" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>set_tab_w</name></member>
+      <member refid="class_g_l_u_i___text_box_1a99733f4d591d54f26237f7c8023411b0" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>set_text</name></member>
+      <member refid="class_g_l_u_i___control_1a091c0c095827c3270b442d9bd3542d50" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>set_to_bkgd_color</name></member>
+      <member refid="class_g_l_u_i___control_1aff3f98acd4b58ba0db35b5889c4006bc" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>set_to_glut_window</name></member>
+      <member refid="class_g_l_u_i___control_1a7f9dde76de0e5fd660dc43695b40c91d" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>set_w</name></member>
+      <member refid="class_g_l_u_i___control_1a023da130fb762f944077c55d90aec839" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>spacebar_mouse_click</name></member>
+      <member refid="class_g_l_u_i___text_box_1a2fa1ab2b0026f6eeea9a4e25107637f0" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>special_handler</name></member>
+      <member refid="class_g_l_u_i___text_box_1abdb01fa3cbb194720cf63c17c7cf2437" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>start_line</name></member>
+      <member refid="class_g_l_u_i___control_1a57ed4e7d0b82e459fb713a9bf29db12b" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>string_width</name></member>
+      <member refid="class_g_l_u_i___control_1a9d129d259e01c1b28f4fc7a7a7830189" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>string_width</name></member>
+      <member refid="class_g_l_u_i___text_box_1a71b4b00d8f8256c2c019286be1630198" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>substring_end</name></member>
+      <member refid="class_g_l_u_i___text_box_1a3607ee96b4b08fdbe40f2ae9f7b7e329" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>substring_start</name></member>
+      <member refid="class_g_l_u_i___text_box_1af2b6cbe72c04724ea70d0801bb0981fb" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>substring_width</name></member>
+      <member refid="class_g_l_u_i___control_1a56a06a9b1272eb0a537ea01a6c002cf8" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>sync_live</name></member>
+      <member refid="class_g_l_u_i___text_box_1a662a6e35456ef73e0a1f05be51327fa6" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>tab_width</name></member>
+      <member refid="class_g_l_u_i___control_1af0d60e9736f4dbc34e9a536e75876d72" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>text</name></member>
+      <member refid="class_g_l_u_i___control_1ae0e46e41b11758295ae0f2d1c9372dda" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>translate_and_draw_front</name></member>
+      <member refid="class_g_l_u_i___control_1a11ae15dcbb0ed5136b471a77eda41266" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>translate_to_origin</name></member>
+      <member refid="class_g_l_u_i___control_1a73192b0fdcaa75eb04d43fa70abe246f" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>unhide_internal</name></member>
+      <member refid="class_g_l_u_i___node_1a48b62b12bf8c466fc54fbbbf30183493" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>unlink</name></member>
+      <member refid="class_g_l_u_i___text_box_1aeb8a55c5a7192628db696228bc0038eb" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>update_and_draw_text</name></member>
+      <member refid="class_g_l_u_i___text_box_1a36ae0f7f0beb253ca09cd1d3f141f6b9" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>update_size</name></member>
+      <member refid="class_g_l_u_i___text_box_1a8cb5ae2044e1781eba8d10c0dd1cafd6" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>update_substring_bounds</name></member>
+      <member refid="class_g_l_u_i___text_box_1a77a14ce650cc1f043b7e5047a69081a6" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>update_x_offsets</name></member>
+      <member refid="class_g_l_u_i___control_1a6c88b7c72b0800f88a5d4cda4868c8b6" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>user_id</name></member>
+      <member refid="class_g_l_u_i___text_box_1a6325bbadbe462f57a1a05c66c545095f" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>visible_lines</name></member>
+      <member refid="class_g_l_u_i___control_1aca82a099b9cbbadb188794cbfb06aa27" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>w</name></member>
+      <member refid="class_g_l_u_i___text_box_1adb058a900dfbf996ad9c24db82ab66c3" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>wants_tabs</name></member>
+      <member refid="class_g_l_u_i___control_1a7f0f98737828ad255401f642826fbd7e" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>x_abs</name></member>
+      <member refid="class_g_l_u_i___control_1a853d95e48b8bd6d2bdd41dabc2b1a1a6" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>x_off</name></member>
+      <member refid="class_g_l_u_i___control_1a54a7a5a7c37e5c0e0a3154bac7ddb049" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>y_abs</name></member>
+      <member refid="class_g_l_u_i___control_1af4beca38aaf1aba7f5b4bfa3ccc8b909" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>y_off_bot</name></member>
+      <member refid="class_g_l_u_i___control_1a94fec9974356d3955e3a80e7d06926b9" prot="public" virt="non-virtual"><scope>GLUI_TextBox</scope><name>y_off_top</name></member>
+      <member refid="class_g_l_u_i___control_1a8afdc7d81a09fa30a759d5456559e637" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>~GLUI_Control</name></member>
+      <member refid="class_g_l_u_i___node_1ae6982edc46ab73963ee8ce9f6d035982" prot="public" virt="virtual"><scope>GLUI_TextBox</scope><name>~GLUI_Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

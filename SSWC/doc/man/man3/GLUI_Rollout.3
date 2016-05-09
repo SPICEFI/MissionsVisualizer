@@ -1,0 +1,143 @@
+.TH "GLUI_Rollout" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Rollout \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Panel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Rollout\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBopen\fP=true, \fBint\fP \fBtype\fP=\fBGLUI_PANEL_EMBOSSED\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Rollout\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_pressed\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBopen\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBclose\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcurrently_inside\fP"
+.br
+.ti -1c
+.RI "bool \fBinitially_inside\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Button\fP \fBbutton\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A rollout contains a set of controls, like a panel, but can be collapsed to just the name\&. 
+.PP
+Definition at line 1203 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Rollout::GLUI_Rollout (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPopen = \fCtrue\fP, \fBint\fPtype = \fC\fBGLUI_PANEL_EMBOSSED\fP\fP)"
+Create a new rollout\&. A rollout contains a set of controls, like a panel, but can be collapsed to just the name\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP The panel our object is inside; or the main \fBGLUI\fP object\&. 
+.br
+\fIname\fP String to show at the top of the rollout\&. 
+.br
+\fIopen\fP Optional boolean\&. If true (the default), the rollout's controls are displayed\&. If false, the rollout is closed to display only the name\&. 
+.br
+\fItype\fP Optional style to display the panel with--GLUI_PANEL_EMBOSSED by default\&. GLUI_PANEL_RAISED causes the panel to appear higher than the surroundings\&. GLUI_PANEL_NONE causes the panel's outline to be invisible\&. 
+.RE
+.PP
+
+.SS "GLUI_Rollout::GLUI_Rollout (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 1221 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Rollout::close (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Rollout::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1239 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Rollout::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Panel\fP\&.
+.SS "\fBvoid\fP GLUI_Rollout::draw_pressed (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI_Rollout::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Rollout::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Rollout::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Rollout::open (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Rollout::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Panel\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGLUI_Button\fP GLUI_Rollout::button"
+
+.PP
+Definition at line 1225 of file glui\&.h\&.
+.SS "bool GLUI_Rollout::currently_inside"
+
+.PP
+Definition at line 1224 of file glui\&.h\&.
+.SS "bool GLUI_Rollout::initially_inside"
+
+.PP
+Definition at line 1224 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

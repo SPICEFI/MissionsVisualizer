@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_vector3_t_8h" kind="file">
+    <compoundname>Vector3T.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includedby refid="_space_object_8h" local="yes">SSWC/src/CSpice/SpaceObject.h</includedby>
+    <incdepgraph>
+      <node id="1898">
+        <label>cmath</label>
+      </node>
+      <node id="1897">
+        <label>SSWC/src/Math/Vector3T.h</label>
+        <link refid="Vector3T.h"/>
+        <childnode refid="1898" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1914">
+        <label>SSWC/src/CSpice/Frame.cpp</label>
+        <link refid="_frame_8cpp"/>
+      </node>
+      <node id="1911">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="1908">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="1906">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="1907" relation="include">
+        </childnode>
+        <childnode refid="1908" relation="include">
+        </childnode>
+      </node>
+      <node id="1916">
+        <label>SSWC/src/CSpice/SpaceBody.cpp</label>
+        <link refid="_space_body_8cpp"/>
+      </node>
+      <node id="1904">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1906" relation="include">
+        </childnode>
+        <childnode refid="1907" relation="include">
+        </childnode>
+      </node>
+      <node id="1905">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="1913">
+        <label>SSWC/src/CSpice/Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1914" relation="include">
+        </childnode>
+      </node>
+      <node id="1910">
+        <label>SSWC/src/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1908" relation="include">
+        </childnode>
+        <childnode refid="1911" relation="include">
+        </childnode>
+      </node>
+      <node id="1902">
+        <label>SSWC/src/App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1903" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1909" relation="include">
+        </childnode>
+        <childnode refid="1908" relation="include">
+        </childnode>
+      </node>
+      <node id="1909">
+        <label>SSWC/src/Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1910" relation="include">
+        </childnode>
+        <childnode refid="1912" relation="include">
+        </childnode>
+      </node>
+      <node id="1903">
+        <label>SSWC/src/App.cpp</label>
+        <link refid="_app_8cpp"/>
+      </node>
+      <node id="1907">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+      <node id="1912">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="_planet_8cpp"/>
+      </node>
+      <node id="1917">
+        <label>SSWC/src/CSpice/SpaceObject.cpp</label>
+        <link refid="_space_object_8cpp"/>
+      </node>
+      <node id="1900">
+        <label>SSWC/src/CSpice/SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1913" relation="include">
+        </childnode>
+        <childnode refid="1915" relation="include">
+        </childnode>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1915">
+        <label>SSWC/src/CSpice/SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1916" relation="include">
+        </childnode>
+      </node>
+      <node id="1899">
+        <label>SSWC/src/Math/Vector3T.h</label>
+        <link refid="Vector3T.h"/>
+        <childnode refid="1900" relation="include">
+        </childnode>
+      </node>
+      <node id="1901">
+        <label>SSWC/src/CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1902" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_vector3_t" prot="public">Vector3T</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="6" refid="class_vector3_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_vector3_t" kindref="compound">Vector3T</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="class_vector3_t_1abab8ea3d1ea94c18782f5154469023b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t_1abab8ea3d1ea94c18782f5154469023b0" kindref="member">Vector3T</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13" refid="class_vector3_t_1a0ab19f96d1244ee04eac4d9e8eea0447" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t_1a0ab19f96d1244ee04eac4d9e8eea0447" kindref="member">Vector3T</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector3_t_1a4302d8d261afb559e29342f6ade7e2a0" kindref="member">Set</ref>(x,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17" refid="class_vector3_t_1a85ec9693b025744519289511f00aea2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t_1a85ec9693b025744519289511f00aea2e" kindref="member">Vector3T</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/>pv)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector3_t_1a40ac3fe2e63f553ad7344e9c6ecd3a61" kindref="member">Assign</ref>(pv);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_vector3_t_1a4302d8d261afb559e29342f6ade7e2a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t_1a4302d8d261afb559e29342f6ade7e2a0" kindref="member">Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>=<sp/><ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>=<sp/><ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;z<sp/>=<sp/><ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28" refid="class_vector3_t_1a40ac3fe2e63f553ad7344e9c6ecd3a61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t_1a40ac3fe2e63f553ad7344e9c6ecd3a61" kindref="member">Assign</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/>pv)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref><sp/>=<sp/>*(pv<sp/>+<sp/>0);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref><sp/>=<sp/>*(pv<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>=<sp/>*(pv<sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_vector3_t_1a732849496977b35c2cca4732ef81b0c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="class_vector3_t_1a732849496977b35c2cca4732ef81b0c3" kindref="member">Length</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="36"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ydivx<sp/>=<sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref><sp/>/<sp/><ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>zdivx<sp/>=<sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>/<sp/><ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref><sp/>=<sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref><sp/>*<sp/>std::sqrt(1.0<sp/>+<sp/>ydivx*ydivx<sp/>+<sp/>zdivx*zdivx);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>understand<sp/>how<sp/>to<sp/>use<sp/>abs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>zero<sp/>=<sp/>T();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(result<sp/>&gt;<sp/>zero)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_vector3_t_1a48034119665646e58334e4c389a9e71d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="class_vector3_t_1a48034119665646e58334e4c389a9e71d" kindref="member">operator+=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref><sp/>+=<sp/>rhs.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref><sp/>+=<sp/>rhs.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>+=<sp/>rhs.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58" refid="class_vector3_t_1af0109e6ab3cb3aca4aa9ffea9530f374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="class_vector3_t_1af0109e6ab3cb3aca4aa9ffea9530f374" kindref="member">operator-=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>+=<sp/>(-rhs));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62" refid="class_vector3_t_1aee2577a21fb3325937c5ba28cd0bce19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="class_vector3_t_1aee2577a21fb3325937c5ba28cd0bce19" kindref="member">operator*=</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref><sp/>*=<sp/>rhs;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref><sp/>*=<sp/>rhs;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>*=<sp/>rhs;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70" refid="class_vector3_t_1a2d1e777f372212c0a232a226e458233d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="class_vector3_t_1a2d1e777f372212c0a232a226e458233d" kindref="member">operator/=</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>*=<sp/>(1.0<sp/>/<sp/>rhs));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76" refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="77" refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="78" refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="class_vector3_t_1a8fad506cfcf9c616b7e9c77958991d70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>T<sp/><ref refid="class_vector3_t_1a8fad506cfcf9c616b7e9c77958991d70" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref><sp/>=<sp/>lhs.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref><sp/>+<sp/>rhs.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref><sp/>=<sp/>lhs.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref><sp/>+<sp/>rhs.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>=<sp/>lhs.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref><sp/>+<sp/>rhs.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t_1abab8ea3d1ea94c18782f5154469023b0" kindref="member">Vector3T</ref>(x,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88" refid="class_vector3_t_1a1f38493d72860421c81fb0ddc838575c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>T<sp/><ref refid="class_vector3_t_1a1f38493d72860421c81fb0ddc838575c" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs<sp/>+<sp/>(-rhs);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92" refid="class_vector3_t_1a0f0bb4990e11064035fca754c1f5e786" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>T<sp/><ref refid="class_vector3_t_1a0f0bb4990e11064035fca754c1f5e786" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>op)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1.0)<sp/>*<sp/>op;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96" refid="class_vector3_t_1a1c5739e109bc0df4077e72e3d5a15945" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>T<sp/><ref refid="class_vector3_t_1a1c5739e109bc0df4077e72e3d5a15945" kindref="member">operator*</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref><sp/>=<sp/>lsh<sp/>*<sp/>rhs.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref><sp/>=<sp/>lsh<sp/>*<sp/>rhs.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>=<sp/>lsh<sp/>*<sp/>rhs.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t_1abab8ea3d1ea94c18782f5154469023b0" kindref="member">Vector3T</ref>(x,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104" refid="class_vector3_t_1a7d96104e52a3f76d271617168cc782f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>T<sp/><ref refid="class_vector3_t_1a7d96104e52a3f76d271617168cc782f3" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rhs<sp/>*<sp/>lhs;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108" refid="class_vector3_t_1a6a04507b553855f430d09b79be9036f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>T<sp/><ref refid="class_vector3_t_1a6a04507b553855f430d09b79be9036f7" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs<sp/>*<sp/>(1.0)/rhs;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Vector3T.h"/>
+  </compounddef>
+</doxygen>

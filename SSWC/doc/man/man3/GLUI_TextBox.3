@@ -1,0 +1,371 @@
+.TH "GLUI_TextBox" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_TextBox \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_TextBox\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBGLUI_String\fP &live_var, bool scroll=false, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_TextBox\fP (\fBGLUI_Node\fP *\fBparent\fP, bool scroll=false, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBactivate\fP (\fBint\fP how)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdeactivate\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBenable\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdisable\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_over\fP (\fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_box_width\fP ()"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfind_word_break\fP (\fBint\fP \fBstart\fP, \fBint\fP direction)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsubstring_width\fP (\fBint\fP \fBstart\fP, \fBint\fP \fBend\fP, \fBint\fP initial_width=0)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBclear_substring\fP (\fBint\fP \fBstart\fP, \fBint\fP \fBend\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfind_insertion_pt\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBupdate_substring_bounds\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_and_draw_text\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_text\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_insertion_pt\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_x_offsets\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_text\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "const char * \fBget_text\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdump\fP (FILE *out, char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_tab_w\fP (\fBint\fP \fBw\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_start_line\fP (\fBint\fP l)"
+.br
+.ti -1c
+.RI "bool \fBwants_tabs\fP (\fBvoid\fP) const "
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBvoid\fP \fBscrollbar_callback\fP (\fBGLUI_Control\fP *)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_String\fP \fBorig_text\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBinsertion_pt\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsubstring_start\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsubstring_end\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsel_start\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsel_end\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_insertion_pt\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdebug\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdraw_text_only\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtab_width\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBstart_line\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBnum_lines\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcurr_line\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBvisible_lines\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBinsert_x\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBinsert_y\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBkeygoal_x\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Scrollbar\fP * \fBscrollbar\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_construct\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBGLUI_String\fP *live_var, bool scroll, \fBint\fP \fBid\fP, \fBGLUI_CB\fP \fBcallback\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 1977 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_TextBox::GLUI_TextBox (\fBGLUI_Node\fP *parent, \fBGLUI_String\fP &live_var, boolscroll = \fCfalse\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_TextBox::GLUI_TextBox (\fBGLUI_Node\fP *parent, boolscroll = \fCfalse\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_TextBox::activate (\fBint\fPhow)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_TextBox::clear_substring (\fBint\fPstart, \fBint\fPend)"
+
+.SS "\fBvoid\fP GLUI_TextBox::common_construct (\fBGLUI_Node\fP *parent, \fBGLUI_String\fP *live_var, boolscroll, \fBint\fPid, \fBGLUI_CB\fPcallback)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_TextBox::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 2044 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_TextBox::deactivate (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_TextBox::disable (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_TextBox::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_TextBox::draw_insertion_pt (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_TextBox::draw_text (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_TextBox::dump (FILE *out, char *text)"
+
+.SS "\fBvoid\fP GLUI_TextBox::enable (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_TextBox::find_insertion_pt (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBint\fP GLUI_TextBox::find_word_break (\fBint\fPstart, \fBint\fPdirection)"
+
+.SS "\fBint\fP GLUI_TextBox::get_box_width ()"
+
+.SS "const char* GLUI_TextBox::get_text (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2034 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_TextBox::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_TextBox::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_TextBox::mouse_over (\fBint\fPstate, \fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_TextBox::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "static \fBvoid\fP GLUI_TextBox::scrollbar_callback (\fBGLUI_Control\fP *)\fC [static]\fP"
+
+.SS "\fBvoid\fP GLUI_TextBox::set_start_line (\fBint\fPl)\fC [inline]\fP"
+
+.PP
+Definition at line 2038 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_TextBox::set_tab_w (\fBint\fPw)\fC [inline]\fP"
+
+.PP
+Definition at line 2037 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_TextBox::set_text (const char *t)\fC [virtual]\fP"
+Writes live variable 
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_TextBox::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_TextBox::substring_width (\fBint\fPstart, \fBint\fPend, \fBint\fPinitial_width = \fC0\fP)"
+
+.SS "\fBvoid\fP GLUI_TextBox::update_and_draw_text (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_TextBox::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_TextBox::update_substring_bounds (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_TextBox::update_x_offsets (\fBvoid\fP)"
+
+.SS "bool GLUI_TextBox::wants_tabs (\fBvoid\fP) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.PP
+Definition at line 2041 of file glui\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBint\fP GLUI_TextBox::curr_line"
+
+.PP
+Definition at line 1998 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::debug"
+
+.PP
+Definition at line 1993 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::draw_text_only"
+
+.PP
+Definition at line 1994 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::insert_x"
+
+.PP
+Definition at line 2000 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::insert_y"
+
+.PP
+Definition at line 2001 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::insertion_pt"
+
+.PP
+Definition at line 1988 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::keygoal_x"
+
+.PP
+Definition at line 2002 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::last_insertion_pt"
+
+.PP
+Definition at line 1992 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::num_lines"
+
+.PP
+Definition at line 1997 of file glui\&.h\&.
+.SS "\fBGLUI_String\fP GLUI_TextBox::orig_text"
+
+.PP
+Definition at line 1987 of file glui\&.h\&.
+.SS "\fBGLUI_Scrollbar\fP* GLUI_TextBox::scrollbar"
+
+.PP
+Definition at line 2003 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::sel_end"
+
+.PP
+Definition at line 1991 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::sel_start"
+
+.PP
+Definition at line 1991 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::start_line"
+
+.PP
+Definition at line 1996 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::substring_end"
+
+.PP
+Definition at line 1990 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::substring_start"
+
+.PP
+Definition at line 1989 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::tab_width"
+
+.PP
+Definition at line 1995 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TextBox::visible_lines"
+
+.PP
+Definition at line 1999 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

@@ -1,0 +1,330 @@
+.TH "GLUI_List" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_List \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_List\fP (\fBGLUI_Node\fP *\fBparent\fP, bool scroll=false, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_List\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBGLUI_String\fP &live_var, bool scroll=false, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBactivate\fP (\fBint\fP how)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdeactivate\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_over\fP (\fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_box_width\fP ()"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfind_word_break\fP (\fBint\fP \fBstart\fP, \fBint\fP direction)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsubstring_width\fP (const char *\fBt\fP, \fBint\fP \fBstart\fP, \fBint\fP \fBend\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfind_line\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_and_draw_text\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_text\fP (const char *\fBt\fP, \fBint\fP selected, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBadd_item\fP (\fBint\fP \fBid\fP, const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdelete_item\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdelete_item\fP (\fBint\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdelete_all\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_List_Item\fP * \fBget_item_ptr\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_List_Item\fP * \fBget_item_ptr\fP (\fBint\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdump\fP (FILE *out, const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_start_line\fP (\fBint\fP l)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_current_item\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_click_type\fP (\fBint\fP d)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_object_callback\fP (\fBGLUI_CB\fP cb=\fBGLUI_CB\fP(), \fBGLUI_Control\fP *\fBobj\fP=NULL)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBvoid\fP \fBscrollbar_callback\fP (\fBGLUI_Control\fP *)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_String\fP \fBorig_text\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdebug\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdraw_text_only\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBstart_line\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBnum_lines\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcurr_line\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBvisible_lines\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Scrollbar\fP * \fBscrollbar\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_List_Item\fP \fBitems_list\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBassociated_object\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_CB\fP \fBobj_cb\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcb_click_type\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_line\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_click_time\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_construct\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBGLUI_String\fP *live_var, bool scroll, \fBint\fP \fBid\fP, \fBGLUI_CB\fP \fBcallback\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 2093 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_List::GLUI_List (\fBGLUI_Node\fP *parent, boolscroll = \fCfalse\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_List::GLUI_List (\fBGLUI_Node\fP *parent, \fBGLUI_String\fP &live_var, boolscroll = \fCfalse\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_List::activate (\fBint\fPhow)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_List::add_item (\fBint\fPid, const char *text)"
+
+.SS "\fBvoid\fP GLUI_List::common_construct (\fBGLUI_Node\fP *parent, \fBGLUI_String\fP *live_var, boolscroll, \fBint\fPid, \fBGLUI_CB\fPcallback)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_List::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 2165 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_List::deactivate (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_List::delete_all ()"
+
+.SS "\fBint\fP GLUI_List::delete_item (const char *text)"
+
+.SS "\fBint\fP GLUI_List::delete_item (\fBint\fPid)"
+
+.SS "\fBvoid\fP GLUI_List::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_List::draw_text (const char *t, \fBint\fPselected, \fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_List::dump (FILE *out, const char *text)"
+
+.SS "\fBint\fP GLUI_List::find_line (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBint\fP GLUI_List::find_word_break (\fBint\fPstart, \fBint\fPdirection)"
+
+.SS "\fBint\fP GLUI_List::get_box_width ()"
+
+.SS "\fBint\fP GLUI_List::get_current_item ()\fC [inline]\fP"
+
+.PP
+Definition at line 2158 of file glui\&.h\&.
+.SS "\fBGLUI_List_Item\fP* GLUI_List::get_item_ptr (const char *text)"
+
+.SS "\fBGLUI_List_Item\fP* GLUI_List::get_item_ptr (\fBint\fPid)"
+
+.SS "\fBint\fP GLUI_List::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_List::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_List::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_List::mouse_over (\fBint\fPstate, \fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_List::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "static \fBvoid\fP GLUI_List::scrollbar_callback (\fBGLUI_Control\fP *)\fC [static]\fP"
+
+.SS "\fBvoid\fP GLUI_List::set_click_type (\fBint\fPd)\fC [inline]\fP"
+
+.PP
+Definition at line 2159 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_List::set_object_callback (\fBGLUI_CB\fPcb = \fC\fBGLUI_CB\fP()\fP, \fBGLUI_Control\fP *obj = \fCNULL\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2161 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_List::set_start_line (\fBint\fPl)\fC [inline]\fP"
+
+.PP
+Definition at line 2156 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_List::substring_width (const char *t, \fBint\fPstart, \fBint\fPend)"
+
+.SS "\fBvoid\fP GLUI_List::update_and_draw_text (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_List::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGLUI_Control\fP* GLUI_List::associated_object"
+
+.PP
+Definition at line 2119 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::cb_click_type"
+
+.PP
+Definition at line 2121 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::curr_line"
+
+.PP
+Definition at line 2115 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::debug"
+
+.PP
+Definition at line 2111 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::draw_text_only"
+
+.PP
+Definition at line 2112 of file glui\&.h\&.
+.SS "\fBGLUI_List_Item\fP GLUI_List::items_list"
+
+.PP
+Definition at line 2118 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::last_click_time"
+
+.PP
+Definition at line 2123 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::last_line"
+
+.PP
+Definition at line 2122 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::num_lines"
+
+.PP
+Definition at line 2114 of file glui\&.h\&.
+.SS "\fBGLUI_CB\fP GLUI_List::obj_cb"
+
+.PP
+Definition at line 2120 of file glui\&.h\&.
+.SS "\fBGLUI_String\fP GLUI_List::orig_text"
+
+.PP
+Definition at line 2110 of file glui\&.h\&.
+.SS "\fBGLUI_Scrollbar\fP* GLUI_List::scrollbar"
+
+.PP
+Definition at line 2117 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::start_line"
+
+.PP
+Definition at line 2113 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_List::visible_lines"
+
+.PP
+Definition at line 2116 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

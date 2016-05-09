@@ -1,0 +1,1489 @@
+\hypertarget{glui_8h}{\section{S\+S\+W\+C/src/\+G\+L/glui.h File Reference}
+\label{glui_8h}\index{S\+S\+W\+C/src/\+G\+L/glui.\+h@{S\+S\+W\+C/src/\+G\+L/glui.\+h}}
+}
+{\ttfamily \#include \char`\"{}G\+L\textbackslash{}glut.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for glui.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{glui_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_r_g_bc}{R\+G\+Bc}
+\item 
+class \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}
+\item 
+class \hyperlink{class_g_l_u_i___node}{G\+L\+U\+I\+\_\+\+Node}
+\item 
+class \hyperlink{class_g_l_u_i___bitmap}{G\+L\+U\+I\+\_\+\+Bitmap}
+\item 
+class \hyperlink{class_g_l_u_i___std_bitmaps}{G\+L\+U\+I\+\_\+\+Std\+Bitmaps}
+\item 
+class \hyperlink{class_g_l_u_i___master___object}{G\+L\+U\+I\+\_\+\+Master\+\_\+\+Object}
+\item 
+class \hyperlink{class_g_l_u_i___glut___window}{G\+L\+U\+I\+\_\+\+Glut\+\_\+\+Window}
+\item 
+class \hyperlink{class_g_l_u_i___main}{G\+L\+U\+I\+\_\+\+Main}
+\item 
+class \hyperlink{class_g_l_u_i___control}{G\+L\+U\+I\+\_\+\+Control}
+\item 
+class \hyperlink{class_g_l_u_i___button}{G\+L\+U\+I\+\_\+\+Button}
+\item 
+class \hyperlink{class_g_l_u_i___checkbox}{G\+L\+U\+I\+\_\+\+Checkbox}
+\item 
+class \hyperlink{class_g_l_u_i___column}{G\+L\+U\+I\+\_\+\+Column}
+\item 
+class \hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel}
+\item 
+class \hyperlink{class_g_l_u_i___file_browser}{G\+L\+U\+I\+\_\+\+File\+Browser}
+\item 
+class \hyperlink{class_g_l_u_i___rollout}{G\+L\+U\+I\+\_\+\+Rollout}
+\item 
+class \hyperlink{class_g_l_u_i___tree}{G\+L\+U\+I\+\_\+\+Tree}
+\item 
+class \hyperlink{class_g_l_u_i___tree_panel}{G\+L\+U\+I\+\_\+\+Tree\+Panel}
+\item 
+class \hyperlink{class_g_l_u_i}{G\+L\+U\+I}
+\item 
+class \hyperlink{class_g_l_u_i___edit_text}{G\+L\+U\+I\+\_\+\+Edit\+Text}
+\item 
+class \hyperlink{class_g_l_u_i___command_line}{G\+L\+U\+I\+\_\+\+Command\+Line}
+\item 
+class \hyperlink{class_g_l_u_i___radio_group}{G\+L\+U\+I\+\_\+\+Radio\+Group}
+\item 
+class \hyperlink{class_g_l_u_i___radio_button}{G\+L\+U\+I\+\_\+\+Radio\+Button}
+\item 
+class \hyperlink{class_g_l_u_i___separator}{G\+L\+U\+I\+\_\+\+Separator}
+\item 
+class \hyperlink{class_g_l_u_i___spinner}{G\+L\+U\+I\+\_\+\+Spinner}
+\item 
+class \hyperlink{class_g_l_u_i___static_text}{G\+L\+U\+I\+\_\+\+Static\+Text}
+\item 
+class \hyperlink{class_g_l_u_i___text_box}{G\+L\+U\+I\+\_\+\+Text\+Box}
+\item 
+class \hyperlink{class_g_l_u_i___list___item}{G\+L\+U\+I\+\_\+\+List\+\_\+\+Item}
+\item 
+class \hyperlink{class_g_l_u_i___list}{G\+L\+U\+I\+\_\+\+List}
+\item 
+class \hyperlink{class_g_l_u_i___scrollbar}{G\+L\+U\+I\+\_\+\+Scrollbar}
+\item 
+class \hyperlink{class_g_l_u_i___listbox___item}{G\+L\+U\+I\+\_\+\+Listbox\+\_\+\+Item}
+\item 
+class \hyperlink{class_g_l_u_i___listbox}{G\+L\+U\+I\+\_\+\+Listbox}
+\item 
+class \hyperlink{class_g_l_u_i___mouse___interaction}{G\+L\+U\+I\+\_\+\+Mouse\+\_\+\+Interaction}
+\item 
+class \hyperlink{class_g_l_u_i___rotation}{G\+L\+U\+I\+\_\+\+Rotation}
+\item 
+class \hyperlink{class_g_l_u_i___translation}{G\+L\+U\+I\+\_\+\+Translation}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{glui_8h_ad885205c0bfaec18d633545cd3873c90}{G\+L\+U\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}~2.\+3f    /$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$ Current version $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$/
+\item 
+\#define \hyperlink{glui_8h_a8390de1c62e036e839ec8150711d6539}{Byte}~unsigned char
+\item 
+\#define \hyperlink{glui_8h_a87be2ae104d9f5c8768b15a4c76a4308}{\+\_\+\+R\+G\+B\+C\+\_\+}
+\item 
+\#define \hyperlink{glui_8h_ab87788ff18f5c829d5002dc4fefafda7}{G\+L\+U\+I\+\_\+\+X\+O\+F\+F}~6
+\item 
+\#define \hyperlink{glui_8h_a833fa6b1f8cd9dc559232a06e8d58e23}{G\+L\+U\+I\+\_\+\+Y\+O\+F\+F}~6
+\item 
+\#define \hyperlink{glui_8h_afb3707f65fb30349aab8db1124069d57}{G\+L\+U\+I\+\_\+\+I\+T\+E\+M\+S\+P\+A\+C\+I\+N\+G}~3
+\item 
+\#define \hyperlink{glui_8h_aec55e9e230093605352ea1eccdece012}{G\+L\+U\+I\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+S\+I\+Z\+E}~13
+\item 
+\#define \hyperlink{glui_8h_a42faf109b5de852b95b63a82b70761b1}{G\+L\+U\+I\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E}~13
+\item 
+\#define \hyperlink{glui_8h_a6a88b20d0344cd50d166bcb547fd55c8}{G\+L\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E}~20
+\item 
+\#define \hyperlink{glui_8h_a14dd9a70ab84fa829ce7ee9fa632a22a}{G\+L\+U\+I\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+\_\+\+S\+I\+Z\+E}~13
+\item 
+\#define \hyperlink{glui_8h_a8d63895391f336a19ff6363cfab8bf06}{G\+L\+U\+I\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+H\+E\+I\+G\+H\+T}~8
+\item 
+\#define \hyperlink{glui_8h_a116f2b9cdac223e492603353c3dbd28b}{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+W\+I\+D\+T\+H}~100
+\item 
+\#define \hyperlink{glui_8h_a9dad86eb85ef222de91c4bc55ed7d187}{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+H\+E\+I\+G\+H\+T}~13
+\item 
+\#define \hyperlink{glui_8h_a32ccc3a42c38361bf52d196c52375681}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}~3
+\item 
+\#define \hyperlink{glui_8h_a5cfe7041fca1c5e7d97e2f7ffed8bccc}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+H\+E\+I\+G\+H\+T}~20
+\item 
+\#define \hyperlink{glui_8h_a360f2c8a053dc37a9d9cbf08e516d541}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}~130
+\item 
+\#define \hyperlink{glui_8h_a761df508fb71b728c0b6cb79874caabf}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+I\+N\+T\+\_\+\+W\+I\+D\+T\+H}~35
+\item 
+\#define \hyperlink{glui_8h_aa6b0bc4a2076a067194e28a173d47209}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}~50
+\item 
+\#define \hyperlink{glui_8h_a20df52f3926ab5c378bb34454ea2bfd4}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+A\+M\+E\+\_\+\+D\+R\+O\+P}~8
+\item 
+\#define \hyperlink{glui_8h_a05263fc189e6ffbb5e48d1ed7ef20ed0}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+\_\+\+T\+O\+P}~4
+\item 
+\#define \hyperlink{glui_8h_aad023a31142d6989d4c45eced3f6e3cb}{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}~50
+\item 
+\#define \hyperlink{glui_8h_a63b5dea6490c6a6226f09831d50e1c1b}{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T}~(\hyperlink{glui_8h_aad023a31142d6989d4c45eced3f6e3cb}{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}+18)
+\item 
+\#define \hyperlink{glui_8h_abed695dfee1e6106c9a7a89b0b61b1f8}{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}~50
+\item 
+\#define \hyperlink{glui_8h_a650b8fdaf75b0ca2355c3d6922d50ebf}{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T}~(\hyperlink{glui_8h_abed695dfee1e6106c9a7a89b0b61b1f8}{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H})+18
+\item 
+\#define \hyperlink{glui_8h_a3e759425f6c317820c13c42aa5ef36be}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+O\+N\+E}~0
+\item 
+\#define \hyperlink{glui_8h_add54979a7b4391067b8a125ee34f690a}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}~1
+\item 
+\#define \hyperlink{glui_8h_a30a175e7e2d5bf3a4d793433928df9d8}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+R\+A\+I\+S\+E\+D}~2
+\item 
+\#define \hyperlink{glui_8h_ae6cbace033fae45e6088bf23b1f72f4a}{G\+L\+U\+I\+\_\+\+D\+E\+F\+\_\+\+M\+A\+X\+\_\+\+A\+R\+R\+A\+Y}~30
+\item 
+\#define \hyperlink{glui_8h_aba1d7728625b51a41cb5d21565592bb4}{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+M\+O\+U\+S\+E\+D\+O\+W\+N}~1
+\item 
+\#define \hyperlink{glui_8h_a39f667da174dffb78dedfe60a6f66157}{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+P\+E\+R\+M\+A\+N\+E\+N\+T}~2
+\item 
+\#define \hyperlink{glui_8h_a6c6d28eb77e18b769103822f5ab9b01d}{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+E\+R}~1
+\item 
+\#define \hyperlink{glui_8h_acaf2751e09a0b972b9c76fba1233cf7b}{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+H\+T}~2
+\item 
+\#define \hyperlink{glui_8h_a44ef7bde91cb3b386f79d8026c116745}{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+F\+T}~3
+\item 
+\#define \hyperlink{glui_8h_ad44d409994bb92fb9ec4ab305d1cb0aa}{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+N\+O\+N\+E}~0
+\item 
+\#define \hyperlink{glui_8h_ac968cb6b340a4e1cad7734abc769d934}{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+C\+L\+A\+M\+P}~1
+\item 
+\#define \hyperlink{glui_8h_ab6740f503ec0da20bad0e332ac933cdc}{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+W\+R\+A\+P}~2
+\item 
+\#define \hyperlink{glui_8h_a3cb2692cdc5e3e84490fbb54ddfc3e01}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X\+Y}~0
+\item 
+\#define \hyperlink{glui_8h_a4d4778991d0505a77a04d7645e6a4e3c}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Z}~1
+\item 
+\#define \hyperlink{glui_8h_ab23343480641d3e315eb2a4646184923}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X}~2
+\item 
+\#define \hyperlink{glui_8h_a7ec779c9d04f35f3f9c2fe09b23890a3}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Y}~3
+\item 
+\#define \hyperlink{glui_8h_a8bf629d0e442f79a349c59dd2d638636}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+N\+O\+N\+E}~0
+\item 
+\#define \hyperlink{glui_8h_a9f0b88ea8bf392263eb8052d72cb6e85}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+X}~1
+\item 
+\#define \hyperlink{glui_8h_a263d51d6cbc17fc3b5336bd83413a630}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+Y}~2
+\item 
+\#define \hyperlink{glui_8h_ac53f28c12c82f5b18633783514b88e08}{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+M\+O\+U\+S\+E}~1
+\item 
+\#define \hyperlink{glui_8h_a9a119c65546aa59fc3e0ea2c0dd79e2d}{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+T\+A\+B}~2
+\item 
+\#define \hyperlink{glui_8h_a99e2e28cb420630001221ba49891b319}{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+N\+O\+N\+E}~0
+\item 
+\#define \hyperlink{glui_8h_a0d7b2f6a1ec3224c8573678a53614468}{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+I\+N\+T}~1
+\item 
+\#define \hyperlink{glui_8h_ad8d3969a7ea92ad39c30b99d3db41349}{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T}~2
+\item 
+\#define \hyperlink{glui_8h_a8eaa181b3f014f36c2c946974594caae}{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+T\+E\+X\+T}~3
+\item 
+\#define \hyperlink{glui_8h_adf4b57e3b17d012f58b3a4264975cb9f}{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+S\+T\+R\+I\+N\+G}~6
+\item 
+\#define \hyperlink{glui_8h_ad0ecd7a681c81e1170f384e58a2c8874}{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+D\+O\+U\+B\+L\+E}~4
+\item 
+\#define \hyperlink{glui_8h_a89c2467b9b15a830285deecd5d29e6a8}{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+R\+R\+A\+Y}~5
+\item 
+\#define \hyperlink{glui_8h_a2d7c201ace92fb4d249e908b6e407872}{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+H\+E\+I\+G\+H\+T}~130
+\item 
+\#define \hyperlink{glui_8h_a6fa27cd9a4bab948c0d1f6e172babfc8}{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+W\+I\+D\+T\+H}~130
+\item 
+\#define \hyperlink{glui_8h_a0e30dd91e8f8e395fcd5941c767ee435}{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+H\+E\+I\+G\+H\+T}~130
+\item 
+\#define \hyperlink{glui_8h_a855be7623092ebce07feccaacf84ee7a}{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+W\+I\+D\+T\+H}~130
+\item 
+\#define \hyperlink{glui_8h_a141c46fd6d9fda3c1792505459687f7e}{G\+L\+U\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+C\+K}~1
+\item 
+\#define \hyperlink{glui_8h_a292692254459c8014035e92f3305890b}{G\+L\+U\+I\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+C\+L\+I\+C\+K}~0
+\item 
+\#define \hyperlink{glui_8h_a729b883e874d9f004f18c37e2ad08f83}{G\+L\+U\+I\+\_\+\+T\+A\+B\+\_\+\+W\+I\+D\+T\+H}~50 /$\ast$ In \hyperlink{glext_8h_ad2818938351edcd54eba6bd5dce29ac3}{pixels} $\ast$/
+\item 
+\#define \hyperlink{glui_8h_a2aef697aa08d50c5e908ce3a25392aac}{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}~3
+\item 
+\#define \hyperlink{glui_8h_a90a11ca8213b3986422addb71600b413}{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}~50
+\item 
+\#define \hyperlink{glui_8h_a8f63bca352f3705f44f0d7d05ae5509e}{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}~3
+\item 
+\#define \hyperlink{glui_8h_af0032685963366dc514a16a431c4b8f5}{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}~50
+\item 
+\#define \hyperlink{glui_8h_ab23ba323d5c1fa92409e0236e234a9b8}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+S}~0
+\item 
+\#define \hyperlink{glui_8h_a8ca6bd25fd585b524f15a09b2397f961}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+E\+\_\+\+C\+O\+L\+O\+R}~1
+\item 
+\#define \hyperlink{glui_8h_a3224fe720c8735340852f1fb0c58f528}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+B\+A\+R}~2
+\item 
+\#define \hyperlink{glui_8h_a4eba606ea71c5a322a8ace1dce410e25}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+B\+A\+R}~4
+\item 
+\#define \hyperlink{glui_8h_a78b4b3691515d60d6bf8c2ed5a9def7b}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+E\+E\+P\+E\+S\+T\+\_\+\+B\+A\+R}~8
+\item 
+\#define \hyperlink{glui_8h_a2cb7d3c0fc33416662c3332f0656c842}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N\+\_\+\+O\+N\+L\+Y}~16
+\item 
+\#define \hyperlink{glui_8h_a0d8ad14f7f9b14fafa4e5f21ef849bbe}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y}~32
+\item 
+\#define \hyperlink{glui_8h_a86ae7c6f404dd25d723b438cfafde20a}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+N\+U\+M\+E\+R\+I\+C\+D\+O\+T}~64
+\item 
+\#define \hyperlink{glui_8h_a1047aea59807c715dd16f8daa7eccc45}{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+N\+L\+Y}~128
+\item 
+\#define \hyperlink{glui_8h_a788274f1a6ca9fc4b675875f259b1f73}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H}~16
+\item 
+\#define \hyperlink{glui_8h_a386541b435f687eb3d67a5b26d8837cd}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T}~16
+\item 
+\#define \hyperlink{glui_8h_ae2ffa86f43c659afe875635c83f0a413}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+H\+E\+I\+G\+H\+T}~5
+\item 
+\#define \hyperlink{glui_8h_a42171c70561f10fecfa94a22d41bcb0c}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+S\+T\+D\+\_\+\+H\+E\+I\+G\+H\+T}~16
+\item 
+\#define \hyperlink{glui_8h_a1f061c8adc2191b6897c6fbc504045d1}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E}~0
+\item 
+\#define \hyperlink{glui_8h_a4fa8f9606c18eb038950ae85a0147f40}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P}~1
+\item 
+\#define \hyperlink{glui_8h_a5c650e4fdae321e3340078bbbe3091e1}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N}~2
+\item 
+\#define \hyperlink{glui_8h_a1047af9046f816a35899d941c0c803bd}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H}~3
+\item 
+\#define \hyperlink{glui_8h_a38df6317d571c5e5cc1be19a831ebd8d}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+C\+R\+O\+L\+L}~4
+\item 
+\#define \hyperlink{glui_8h_a593a8d67fb70ca8a908a8847a00a1a96}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P}~1.\+05f
+\item 
+\#define \hyperlink{glui_8h_a97457fd9596bff938facd6ec13b64691}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L}~0
+\item 
+\#define \hyperlink{glui_8h_a52ee49f77a81116b7e8c04d11988fbf3}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L}~1
+\item 
+\#define \hyperlink{glui_8h_a3091a06ca7da5c6ab445b1e9765fc21f}{C\+H\+A\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+Z\+E}~128
+\item 
+\#define \hyperlink{glui_8h_ae6d1a93a7d7f288439698253725b83e0}{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W}~((long)(1$<$$<$1))
+\item 
+\#define \hyperlink{glui_8h_a615b334e22b7b8fd8fbb19bee8259f8c}{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+T\+O\+P}~((long)(1$<$$<$2))
+\item 
+\#define \hyperlink{glui_8h_a7b2f2ad945b56f24f8f21ed05e639423}{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+B\+O\+T\+T\+O\+M}~((long)(1$<$$<$3))
+\item 
+\#define \hyperlink{glui_8h_ad0fe1088f2af30f44cb8f39f192205b0}{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+L\+E\+F\+T}~((long)(1$<$$<$4))
+\item 
+\#define \hyperlink{glui_8h_ae6ec780471374929fa69d0e1a84160e8}{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+R\+I\+G\+H\+T}~((long)(1$<$$<$5))
+\item 
+\#define \hyperlink{glui_8h_a5e7e137e5f35f2859b135d8924719d27}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T}~1
+\item 
+\#define \hyperlink{glui_8h_adfbf69707606f0eef8ea90ba90fe105e}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T}~2
+\item 
+\#define \hyperlink{glui_8h_acd280cda046405b7bf644f21d7dfdf72}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T}~3
+\item 
+\#define \hyperlink{glui_8h_ae338c1175e5bb430d7a14d109daee74a}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T}~\hyperlink{glui_8h_adfbf69707606f0eef8ea90ba90fe105e}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T}
+\item 
+\#define \hyperlink{glui_8h_a69a92f0b8f9f3afd3a418b1a40468283}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+F\+L\+O\+A\+T}~\hyperlink{glui_8h_acd280cda046405b7bf644f21d7dfdf72}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T}
+\item 
+\#define \hyperlink{glui_8h_a3d0b21f502fe01d6712ae224d03e7447}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+I\+N\+T}~\hyperlink{glui_8h_adfbf69707606f0eef8ea90ba90fe105e}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T}
+\item 
+\#define \hyperlink{glui_8h_a68eb6cb7e0331a9fc508e70ff2029764}{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+F\+L\+O\+A\+T}~\hyperlink{glui_8h_acd280cda046405b7bf644f21d7dfdf72}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T}
+\item 
+\#define \hyperlink{glui_8h_a0979dc2879a30144fbcdd1fd117fa749}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+S\+T\+R\+I\+N\+G}~4
+\item 
+\#define \hyperlink{glui_8h_a449c955b030604b7481d10493c7bd55f}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H}~12
+\item 
+\#define \hyperlink{glui_8h_ad0021c6843a6a732d38e24a02c3b354b}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T}~8
+\item 
+\#define \hyperlink{glui_8h_a46eec4a2a1cf32c79806f551e4ebd9fa}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+Y}~2
+\item 
+\#define \hyperlink{glui_8h_af39ed37ad0d15e55cff285341d4500d9}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E}~0
+\item 
+\#define \hyperlink{glui_8h_a35a0851675158e8820fdaa08181c09bd}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P}~1
+\item 
+\#define \hyperlink{glui_8h_a829e0d50c8e8a6f32547189c968778c3}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N}~2
+\item 
+\#define \hyperlink{glui_8h_a86ef6062370e9d438d6ed69330f39ede}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H}~3
+\item 
+\#define \hyperlink{glui_8h_a659e7ef918e2277f973ce7a7a41762ca}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P}~1.\+05f
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{glui_8h_aada824856f7bcf29794719981ebd8f60}{G\+L\+U\+I\+\_\+\+String}
+\item 
+typedef \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$ \hyperlink{glui_8h_a11c8645866aceff55b55af31f4bf4c04}{G\+L\+U\+I\+\_\+\+Update\+\_\+\+C\+B} )(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+typedef \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$ \hyperlink{glui_8h_a8dae0ec6ca9738eb013c8add125086d3}{G\+L\+U\+I\+\_\+\+Control\+\_\+\+C\+B} )(\hyperlink{class_g_l_u_i___control}{G\+L\+U\+I\+\_\+\+Control} $\ast$)
+\item 
+typedef \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$ \hyperlink{glui_8h_a04a3d4228bbb184c4202b2178e9e142b}{Int1\+\_\+\+C\+B} )(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int})
+\item 
+typedef \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$ \hyperlink{glui_8h_aab4303326f838bf185b93c83524af987}{Int2\+\_\+\+C\+B} )(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int})
+\item 
+typedef \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$ \hyperlink{glui_8h_a6990fdc97840c78d17c74d77113b60ad}{Int3\+\_\+\+C\+B} )(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int})
+\item 
+typedef \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void}($\ast$ \hyperlink{glui_8h_a47b7da882646d5a03c1d3bd080434272}{Int4\+\_\+\+C\+B} )(\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int})
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174b}{G\+L\+U\+I\+\_\+\+Glut\+\_\+\+C\+B\+\_\+\+Types} \{ \\*
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba55a0c0d90376a2d35d5275d1ed56cccc}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+R\+E\+S\+H\+A\+P\+E}, 
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba20b061d75ef393ddf7c1ccafa24356ad}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D}, 
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba606ac85cc602d7761c466ff330db58d0}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+D\+I\+S\+P\+L\+A\+Y}, 
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174bad8a7307cd33873722a99b4172df934c8}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+U\+S\+E}, 
+\\*
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174bae37f796c511c78f172ba1c6dee107c0e}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+T\+I\+O\+N}, 
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba142c246fbfb839931cdc7fa16e86e633}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+S\+P\+E\+C\+I\+A\+L}, 
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba21e74834926099cad2d240d5d20ed3ed}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+P\+A\+S\+S\+I\+V\+E\+\_\+\+M\+O\+T\+I\+O\+N}, 
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba0fdd00b81416958c0ba0c02fda98c94a}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+E\+N\+T\+R\+Y}, 
+\\*
+\hyperlink{glui_8h_a05c416e4775154b6ea698b4fdbb3174bae66a733b5e3dc222af656c83c2345222}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+T\+Y}
+ \}
+\item 
+enum \hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797}{Translation\+Codes} \{ \\*
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797ad5fdae32fe196b93fcab3c0a399ba6bb}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+N\+O\+N\+E} = 0, 
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797aeea7f306f0d10957e9c0e43a39444b38}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P}, 
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797a48a020c09558f9fd3033b437acc5404a}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N}, 
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797a47b52401cd6739effcce2817a4edb329}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T}, 
+\\*
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797a3f484d3d3b70b416eacc5bd2a31fbfaa}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+R\+I\+G\+H\+T}, 
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797a760d2da597b4247a706e2548c0cd0bf6}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+L\+E\+F\+T}, 
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797a8f40206a45b41419d487f28a1338b4eb}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+R\+I\+G\+H\+T}, 
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797ab19c6216b511dbdad224394ed526100f}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+E\+F\+T}, 
+\\*
+\hyperlink{glui_8h_af9c9f0b11ec8992179975332333f4797aa13076dac0a79147087ce6e71aa1969b}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+R\+I\+G\+H\+T}
+ \}
+\item 
+enum \hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207}{G\+L\+U\+I\+\_\+\+Std\+Bitmaps\+\_\+\+Codes} \{ \\*
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a111eafe6b9b6c8ce8fab16d6eca4252f}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F} = 0, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a77965d9cc2325787caf632e2979ed7f3}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a198e5c026fb30dcff216c8a40ae49706}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a2eaccf1f5980892dce70492ef0d93419}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N}, 
+\\*
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207af0207ae269cb4b11ab0ea456f93ad893}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+U\+P\+\_\+\+A\+R\+R\+O\+W}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a6b3907175fed5e3a73d201ceffdcd42d}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+D\+O\+W\+N\+\_\+\+A\+R\+R\+O\+W}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207ae1354aeb965cfc7ce196d33d1a7c2706}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+E\+F\+T\+\_\+\+A\+R\+R\+O\+W}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a6f76d830b0a950767c60ed7edf8841f3}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T\+\_\+\+A\+R\+R\+O\+W}, 
+\\*
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207ab52732f2750389e8fb1b35eb97d65f65}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+F\+F}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a08582e1dc0e6f868f74ac5847ae1cf9f}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+N}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a4b98f494e1f5458a48b030fbd180155e}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+F\+F}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a5fe20b6ea758a3d7cf0c1c4557691849}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+N}, 
+\\*
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a235fbe58566ed6ce94d7c18aba7b3edd}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a6893e2721fcd8d392d3f052def60f659}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N\+\_\+\+D\+I\+S}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a4a925e4e0c5e37a538aadff64a95a5e9}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207afabafde2e9d9f142470f8e033da5de2e}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+\_\+\+D\+I\+S}, 
+\\*
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207ad6bc21e791419baf0f843dbab4805b9c}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+D\+I\+S}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207adb755e13fa7ade209af7840990be8ffd}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+D\+I\+S}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207ad646794a0d6185e45904e2a6200b4ce0}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207abc13ba8d9a918a44cd8b64bdc75b11d9}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+D\+O\+W\+N}, 
+\\*
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a82f79fbfaea41d8657a662308e0ddb23}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P\+\_\+\+D\+I\+S}, 
+\hyperlink{glui_8h_a497be656e7f6e5e241a965b7928f3207a7727932dd4a6e3c7eaf5727b978431ba}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+M\+S}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{glui_8h_aada824856f7bcf29794719981ebd8f60}{G\+L\+U\+I\+\_\+\+String} \& \hyperlink{glui_8h_ad3ad9ea44d12ce8a0998bf76371cfc4a}{glui\+\_\+format\+\_\+str} (\hyperlink{glui_8h_aada824856f7bcf29794719981ebd8f60}{G\+L\+U\+I\+\_\+\+String} \&str, const char $\ast$fmt,...)
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glui_8h_a812485a9775d3fe2787cef9fd3f14417}{\+\_\+glut\+Bitmap\+Width\+String} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$\hyperlink{_routine_8cpp_a1e52b0778d1df763fc5b497c26ead7a9}{font}, const char $\ast$\hyperlink{glext_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_afe17239a368aa40fb774ccaaa43d34c3}{\+\_\+glut\+Bitmap\+String} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$\hyperlink{_routine_8cpp_a1e52b0778d1df763fc5b497c26ead7a9}{font}, const char $\ast$\hyperlink{glext_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a02c2a5886dd1faabe8b882da67f77457}{glui\+\_\+display\+\_\+func} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a1798681d4deaa39c807e49c3902fde96}{glui\+\_\+reshape\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a713abae75276598501f75c68917c5e2d}{w}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_afa0fb1b5e976920c0abeff2dca3ed774}{h})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_ae3390518e45a04617135f564021bcebf}{glui\+\_\+keyboard\+\_\+func} (unsigned char key, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a457caba107a71dff1918cb7dd271e8f1}{glui\+\_\+special\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} key, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a6385df2c931519beca286ede9e098f96}{glui\+\_\+mouse\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} button, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} state, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a633765a3cd774bd7521a679eb4a51f2f}{glui\+\_\+motion\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a783f2a1497c9cc9e2f8c45244c20cc5e}{glui\+\_\+passive\+\_\+motion\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_ac1a3c6ebc56cb90a076c62b9192853e8}{glui\+\_\+entry\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} state)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a98726addbd2797b8134ac2b654c3cee6}{glui\+\_\+visibility\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} state)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a6d56019c7f67cab2a97457b11e0b8994}{glui\+\_\+idle\+\_\+func} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_aba8acedae32a786d382d229db7728ee4}{glui\+\_\+parent\+\_\+window\+\_\+reshape\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a713abae75276598501f75c68917c5e2d}{w}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_afa0fb1b5e976920c0abeff2dca3ed774}{h})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a0e54fa9fbe1fdcd982c0dd1d937e4696}{glui\+\_\+parent\+\_\+window\+\_\+keyboard\+\_\+func} (unsigned char key, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_a391c1191451c678e7702e593e74dc5a4}{glui\+\_\+parent\+\_\+window\+\_\+mouse\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{glui_8h_af04ae926023bcd599effef7b6a84aa5d}{glui\+\_\+parent\+\_\+window\+\_\+special\+\_\+func} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} key, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_l_u_i___master___object}{G\+L\+U\+I\+\_\+\+Master\+\_\+\+Object} \hyperlink{glui_8h_a6a78309206f7288082a6df231105f8db}{G\+L\+U\+I\+\_\+\+Master}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{glui_8h_a87be2ae104d9f5c8768b15a4c76a4308}{\index{glui.\+h@{glui.\+h}!\+\_\+\+R\+G\+B\+C\+\_\+@{\+\_\+\+R\+G\+B\+C\+\_\+}}
+\index{\+\_\+\+R\+G\+B\+C\+\_\+@{\+\_\+\+R\+G\+B\+C\+\_\+}!glui.\+h@{glui.\+h}}
+\subsubsection[{\+\_\+\+R\+G\+B\+C\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+R\+G\+B\+C\+\_\+}}\label{glui_8h_a87be2ae104d9f5c8768b15a4c76a4308}
+
+
+Definition at line 89 of file glui.\+h.
+
+\hypertarget{glui_8h_a8390de1c62e036e839ec8150711d6539}{\index{glui.\+h@{glui.\+h}!Byte@{Byte}}
+\index{Byte@{Byte}!glui.\+h@{glui.\+h}}
+\subsubsection[{Byte}]{\setlength{\rightskip}{0pt plus 5cm}\#define Byte~unsigned char}}\label{glui_8h_a8390de1c62e036e839ec8150711d6539}
+
+
+Definition at line 76 of file glui.\+h.
+
+\hypertarget{glui_8h_a3091a06ca7da5c6ab445b1e9765fc21f}{\index{glui.\+h@{glui.\+h}!C\+H\+A\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+Z\+E@{C\+H\+A\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+Z\+E}}
+\index{C\+H\+A\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+Z\+E@{C\+H\+A\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+Z\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{C\+H\+A\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+H\+A\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+Z\+E~128}}\label{glui_8h_a3091a06ca7da5c6ab445b1e9765fc21f}
+Size of the character width hash table for faster lookups. Make sure to keep this a power of two to avoid the slow divide. This is also a speed/memory tradeoff; 128 is enough for low A\+S\+C\+I\+I. 
+
+Definition at line 221 of file glui.\+h.
+
+\hypertarget{glui_8h_ac53f28c12c82f5b18633783514b88e08}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+M\+O\+U\+S\+E@{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+M\+O\+U\+S\+E}}
+\index{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+M\+O\+U\+S\+E@{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+M\+O\+U\+S\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+M\+O\+U\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+M\+O\+U\+S\+E~1}}\label{glui_8h_ac53f28c12c82f5b18633783514b88e08}
+
+
+Definition at line 166 of file glui.\+h.
+
+\hypertarget{glui_8h_a9a119c65546aa59fc3e0ea2c0dd79e2d}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+T\+A\+B@{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+T\+A\+B}}
+\index{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+T\+A\+B@{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+T\+A\+B}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+T\+A\+B}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+A\+C\+T\+I\+V\+A\+T\+E\+\_\+\+T\+A\+B~2}}\label{glui_8h_a9a119c65546aa59fc3e0ea2c0dd79e2d}
+
+
+Definition at line 167 of file glui.\+h.
+
+\hypertarget{glui_8h_a6c6d28eb77e18b769103822f5ab9b01d}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+E\+R@{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+E\+R}}
+\index{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+E\+R@{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+E\+R}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+E\+R~1}}\label{glui_8h_a6c6d28eb77e18b769103822f5ab9b01d}
+
+
+Definition at line 146 of file glui.\+h.
+
+\hypertarget{glui_8h_a44ef7bde91cb3b386f79d8026c116745}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+F\+T}}
+\index{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+F\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+F\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+F\+T~3}}\label{glui_8h_a44ef7bde91cb3b386f79d8026c116745}
+
+
+Definition at line 148 of file glui.\+h.
+
+\hypertarget{glui_8h_acaf2751e09a0b972b9c76fba1233cf7b}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+H\+T~2}}\label{glui_8h_acaf2751e09a0b972b9c76fba1233cf7b}
+
+
+Definition at line 147 of file glui.\+h.
+
+\hypertarget{glui_8h_a6a88b20d0344cd50d166bcb547fd55c8}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E@{G\+L\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E}}
+\index{G\+L\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E@{G\+L\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E~20}}\label{glui_8h_a6a88b20d0344cd50d166bcb547fd55c8}
+
+
+Definition at line 114 of file glui.\+h.
+
+\hypertarget{glui_8h_aec55e9e230093605352ea1eccdece012}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+S\+I\+Z\+E@{G\+L\+U\+I\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+S\+I\+Z\+E}}
+\index{G\+L\+U\+I\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+S\+I\+Z\+E@{G\+L\+U\+I\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+S\+I\+Z\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+S\+I\+Z\+E~13}}\label{glui_8h_aec55e9e230093605352ea1eccdece012}
+
+
+Definition at line 112 of file glui.\+h.
+
+\hypertarget{glui_8h_aba1d7728625b51a41cb5d21565592bb4}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+M\+O\+U\+S\+E\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+M\+O\+U\+S\+E\+D\+O\+W\+N}}
+\index{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+M\+O\+U\+S\+E\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+M\+O\+U\+S\+E\+D\+O\+W\+N}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+M\+O\+U\+S\+E\+D\+O\+W\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+M\+O\+U\+S\+E\+D\+O\+W\+N~1}}\label{glui_8h_aba1d7728625b51a41cb5d21565592bb4}
+
+
+Definition at line 142 of file glui.\+h.
+
+\hypertarget{glui_8h_a39f667da174dffb78dedfe60a6f66157}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+P\+E\+R\+M\+A\+N\+E\+N\+T@{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+P\+E\+R\+M\+A\+N\+E\+N\+T}}
+\index{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+P\+E\+R\+M\+A\+N\+E\+N\+T@{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+P\+E\+R\+M\+A\+N\+E\+N\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+P\+E\+R\+M\+A\+N\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+P\+E\+R\+M\+A\+N\+E\+N\+T~2}}\label{glui_8h_a39f667da174dffb78dedfe60a6f66157}
+
+
+Definition at line 143 of file glui.\+h.
+
+\hypertarget{glui_8h_ae6cbace033fae45e6088bf23b1f72f4a}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+D\+E\+F\+\_\+\+M\+A\+X\+\_\+\+A\+R\+R\+A\+Y@{G\+L\+U\+I\+\_\+\+D\+E\+F\+\_\+\+M\+A\+X\+\_\+\+A\+R\+R\+A\+Y}}
+\index{G\+L\+U\+I\+\_\+\+D\+E\+F\+\_\+\+M\+A\+X\+\_\+\+A\+R\+R\+A\+Y@{G\+L\+U\+I\+\_\+\+D\+E\+F\+\_\+\+M\+A\+X\+\_\+\+A\+R\+R\+A\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+D\+E\+F\+\_\+\+M\+A\+X\+\_\+\+A\+R\+R\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+D\+E\+F\+\_\+\+M\+A\+X\+\_\+\+A\+R\+R\+A\+Y~30}}\label{glui_8h_ae6cbace033fae45e6088bf23b1f72f4a}
+Max \# of els in control's float\+\_\+array 
+
+Definition at line 139 of file glui.\+h.
+
+\hypertarget{glui_8h_a9dad86eb85ef222de91c4bc55ed7d187}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+H\+E\+I\+G\+H\+T~13}}\label{glui_8h_a9dad86eb85ef222de91c4bc55ed7d187}
+
+
+Definition at line 118 of file glui.\+h.
+
+\hypertarget{glui_8h_a116f2b9cdac223e492603353c3dbd28b}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+W\+I\+D\+T\+H~100}}\label{glui_8h_a116f2b9cdac223e492603353c3dbd28b}
+
+
+Definition at line 117 of file glui.\+h.
+
+\hypertarget{glui_8h_a141c46fd6d9fda3c1792505459687f7e}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+C\+K@{G\+L\+U\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+C\+K}}
+\index{G\+L\+U\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+C\+K@{G\+L\+U\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+C\+K}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+C\+K~1}}\label{glui_8h_a141c46fd6d9fda3c1792505459687f7e}
+
+
+Definition at line 183 of file glui.\+h.
+
+\hypertarget{glui_8h_a32ccc3a42c38361bf52d196c52375681}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X~3}}\label{glui_8h_a32ccc3a42c38361bf52d196c52375681}
+
+
+Definition at line 119 of file glui.\+h.
+
+\hypertarget{glui_8h_acd280cda046405b7bf644f21d7dfdf72}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T~3}}\label{glui_8h_acd280cda046405b7bf644f21d7dfdf72}
+
+
+Definition at line 271 of file glui.\+h.
+
+\hypertarget{glui_8h_a5cfe7041fca1c5e7d97e2f7ffed8bccc}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+H\+E\+I\+G\+H\+T~20}}\label{glui_8h_a5cfe7041fca1c5e7d97e2f7ffed8bccc}
+
+
+Definition at line 120 of file glui.\+h.
+
+\hypertarget{glui_8h_adfbf69707606f0eef8ea90ba90fe105e}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T~2}}\label{glui_8h_adfbf69707606f0eef8ea90ba90fe105e}
+
+
+Definition at line 270 of file glui.\+h.
+
+\hypertarget{glui_8h_a761df508fb71b728c0b6cb79874caabf}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+I\+N\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+I\+N\+T\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+I\+N\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+I\+N\+T\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+I\+N\+T\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+I\+N\+T\+\_\+\+W\+I\+D\+T\+H~35}}\label{glui_8h_a761df508fb71b728c0b6cb79874caabf}
+
+
+Definition at line 122 of file glui.\+h.
+
+\hypertarget{glui_8h_aa6b0bc4a2076a067194e28a173d47209}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H~50}}\label{glui_8h_aa6b0bc4a2076a067194e28a173d47209}
+
+
+Definition at line 123 of file glui.\+h.
+
+\hypertarget{glui_8h_a0979dc2879a30144fbcdd1fd117fa749}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+S\+T\+R\+I\+N\+G@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+S\+T\+R\+I\+N\+G}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+S\+T\+R\+I\+N\+G@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+S\+T\+R\+I\+N\+G}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+S\+T\+R\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+S\+T\+R\+I\+N\+G~4}}\label{glui_8h_a0979dc2879a30144fbcdd1fd117fa749}
+
+
+Definition at line 277 of file glui.\+h.
+
+\hypertarget{glui_8h_a5e7e137e5f35f2859b135d8924719d27}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T~1}}\label{glui_8h_a5e7e137e5f35f2859b135d8924719d27}
+
+
+Definition at line 269 of file glui.\+h.
+
+\hypertarget{glui_8h_a360f2c8a053dc37a9d9cbf08e516d541}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H~130}}\label{glui_8h_a360f2c8a053dc37a9d9cbf08e516d541}
+
+
+Definition at line 121 of file glui.\+h.
+
+\hypertarget{glui_8h_afb3707f65fb30349aab8db1124069d57}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+I\+T\+E\+M\+S\+P\+A\+C\+I\+N\+G@{G\+L\+U\+I\+\_\+\+I\+T\+E\+M\+S\+P\+A\+C\+I\+N\+G}}
+\index{G\+L\+U\+I\+\_\+\+I\+T\+E\+M\+S\+P\+A\+C\+I\+N\+G@{G\+L\+U\+I\+\_\+\+I\+T\+E\+M\+S\+P\+A\+C\+I\+N\+G}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+I\+T\+E\+M\+S\+P\+A\+C\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+I\+T\+E\+M\+S\+P\+A\+C\+I\+N\+G~3}}\label{glui_8h_afb3707f65fb30349aab8db1124069d57}
+
+
+Definition at line 111 of file glui.\+h.
+
+\hypertarget{glui_8h_ac968cb6b340a4e1cad7734abc769d934}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+C\+L\+A\+M\+P@{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+C\+L\+A\+M\+P}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+C\+L\+A\+M\+P@{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+C\+L\+A\+M\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+C\+L\+A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+C\+L\+A\+M\+P~1}}\label{glui_8h_ac968cb6b340a4e1cad7734abc769d934}
+
+
+Definition at line 152 of file glui.\+h.
+
+\hypertarget{glui_8h_ad44d409994bb92fb9ec4ab305d1cb0aa}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+N\+O\+N\+E}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+N\+O\+N\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+N\+O\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+N\+O\+N\+E~0}}\label{glui_8h_ad44d409994bb92fb9ec4ab305d1cb0aa}
+
+
+Definition at line 151 of file glui.\+h.
+
+\hypertarget{glui_8h_ab6740f503ec0da20bad0e332ac933cdc}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+W\+R\+A\+P@{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+W\+R\+A\+P}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+W\+R\+A\+P@{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+W\+R\+A\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+W\+R\+A\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+M\+I\+T\+\_\+\+W\+R\+A\+P~2}}\label{glui_8h_ab6740f503ec0da20bad0e332ac933cdc}
+
+
+Definition at line 153 of file glui.\+h.
+
+\hypertarget{glui_8h_a8f63bca352f3705f44f0d7d05ae5509e}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X@{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X@{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X~3}}\label{glui_8h_a8f63bca352f3705f44f0d7d05ae5509e}
+
+
+Definition at line 188 of file glui.\+h.
+
+\hypertarget{glui_8h_a0e30dd91e8f8e395fcd5941c767ee435}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+H\+E\+I\+G\+H\+T~130}}\label{glui_8h_a0e30dd91e8f8e395fcd5941c767ee435}
+
+
+Definition at line 181 of file glui.\+h.
+
+\hypertarget{glui_8h_af0032685963366dc514a16a431c4b8f5}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H~50}}\label{glui_8h_af0032685963366dc514a16a431c4b8f5}
+
+
+Definition at line 189 of file glui.\+h.
+
+\hypertarget{glui_8h_a855be7623092ebce07feccaacf84ee7a}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+S\+T\+\_\+\+W\+I\+D\+T\+H~130}}\label{glui_8h_a855be7623092ebce07feccaacf84ee7a}
+
+
+Definition at line 182 of file glui.\+h.
+
+\hypertarget{glui_8h_ad0ecd7a681c81e1170f384e58a2c8874}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+D\+O\+U\+B\+L\+E@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+D\+O\+U\+B\+L\+E}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+D\+O\+U\+B\+L\+E@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+D\+O\+U\+B\+L\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+D\+O\+U\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+D\+O\+U\+B\+L\+E~4}}\label{glui_8h_ad0ecd7a681c81e1170f384e58a2c8874}
+
+
+Definition at line 175 of file glui.\+h.
+
+\hypertarget{glui_8h_ad8d3969a7ea92ad39c30b99d3db41349}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T~2}}\label{glui_8h_ad8d3969a7ea92ad39c30b99d3db41349}
+
+
+Definition at line 172 of file glui.\+h.
+
+\hypertarget{glui_8h_a89c2467b9b15a830285deecd5d29e6a8}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+R\+R\+A\+Y@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+R\+R\+A\+Y}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+R\+R\+A\+Y@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+R\+R\+A\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+R\+R\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+R\+R\+A\+Y~5}}\label{glui_8h_a89c2467b9b15a830285deecd5d29e6a8}
+
+
+Definition at line 176 of file glui.\+h.
+
+\hypertarget{glui_8h_a0d7b2f6a1ec3224c8573678a53614468}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+I\+N\+T@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+I\+N\+T}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+I\+N\+T@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+I\+N\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+I\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+I\+N\+T~1}}\label{glui_8h_a0d7b2f6a1ec3224c8573678a53614468}
+
+
+Definition at line 171 of file glui.\+h.
+
+\hypertarget{glui_8h_a99e2e28cb420630001221ba49891b319}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+N\+O\+N\+E}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+N\+O\+N\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+N\+O\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+N\+O\+N\+E~0}}\label{glui_8h_a99e2e28cb420630001221ba49891b319}
+
+
+Definition at line 170 of file glui.\+h.
+
+\hypertarget{glui_8h_adf4b57e3b17d012f58b3a4264975cb9f}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+S\+T\+R\+I\+N\+G@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+S\+T\+R\+I\+N\+G}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+S\+T\+R\+I\+N\+G@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+S\+T\+R\+I\+N\+G}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+S\+T\+R\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+S\+T\+R\+I\+N\+G~6}}\label{glui_8h_adf4b57e3b17d012f58b3a4264975cb9f}
+
+
+Definition at line 174 of file glui.\+h.
+
+\hypertarget{glui_8h_a8eaa181b3f014f36c2c946974594caae}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+T\+E\+X\+T@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+T\+E\+X\+T}}
+\index{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+T\+E\+X\+T@{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+T\+E\+X\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+T\+E\+X\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+L\+I\+V\+E\+\_\+\+T\+E\+X\+T~3}}\label{glui_8h_a8eaa181b3f014f36c2c946974594caae}
+
+
+Definition at line 173 of file glui.\+h.
+
+\hypertarget{glui_8h_a650b8fdaf75b0ca2355c3d6922d50ebf}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T~({\bf G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H})+18}}\label{glui_8h_a650b8fdaf75b0ca2355c3d6922d50ebf}
+
+
+Definition at line 131 of file glui.\+h.
+
+\hypertarget{glui_8h_abed695dfee1e6106c9a7a89b0b61b1f8}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H~50}}\label{glui_8h_abed695dfee1e6106c9a7a89b0b61b1f8}
+
+
+Definition at line 130 of file glui.\+h.
+
+\hypertarget{glui_8h_a05263fc189e6ffbb5e48d1ed7ef20ed0}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+\_\+\+T\+O\+P@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+\_\+\+T\+O\+P}}
+\index{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+\_\+\+T\+O\+P@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+\_\+\+T\+O\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+\_\+\+T\+O\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+\_\+\+T\+O\+P~4}}\label{glui_8h_a05263fc189e6ffbb5e48d1ed7ef20ed0}
+
+
+Definition at line 125 of file glui.\+h.
+
+\hypertarget{glui_8h_add54979a7b4391067b8a125ee34f690a}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}}
+\index{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D~1}}\label{glui_8h_add54979a7b4391067b8a125ee34f690a}
+
+
+Definition at line 135 of file glui.\+h.
+
+\hypertarget{glui_8h_a20df52f3926ab5c378bb34454ea2bfd4}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+A\+M\+E\+\_\+\+D\+R\+O\+P@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+A\+M\+E\+\_\+\+D\+R\+O\+P}}
+\index{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+A\+M\+E\+\_\+\+D\+R\+O\+P@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+A\+M\+E\+\_\+\+D\+R\+O\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+A\+M\+E\+\_\+\+D\+R\+O\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+A\+M\+E\+\_\+\+D\+R\+O\+P~8}}\label{glui_8h_a20df52f3926ab5c378bb34454ea2bfd4}
+
+
+Definition at line 124 of file glui.\+h.
+
+\hypertarget{glui_8h_a3e759425f6c317820c13c42aa5ef36be}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+O\+N\+E}}
+\index{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+O\+N\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+O\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+O\+N\+E~0}}\label{glui_8h_a3e759425f6c317820c13c42aa5ef36be}
+Different panel control types 
+
+Definition at line 134 of file glui.\+h.
+
+\hypertarget{glui_8h_a30a175e7e2d5bf3a4d793433928df9d8}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+R\+A\+I\+S\+E\+D@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+R\+A\+I\+S\+E\+D}}
+\index{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+R\+A\+I\+S\+E\+D@{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+R\+A\+I\+S\+E\+D}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+R\+A\+I\+S\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+R\+A\+I\+S\+E\+D~2}}\label{glui_8h_a30a175e7e2d5bf3a4d793433928df9d8}
+
+
+Definition at line 136 of file glui.\+h.
+
+\hypertarget{glui_8h_a42faf109b5de852b95b63a82b70761b1}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E@{G\+L\+U\+I\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E}}
+\index{G\+L\+U\+I\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E@{G\+L\+U\+I\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+S\+I\+Z\+E~13}}\label{glui_8h_a42faf109b5de852b95b63a82b70761b1}
+
+
+Definition at line 113 of file glui.\+h.
+
+\hypertarget{glui_8h_a63b5dea6490c6a6226f09831d50e1c1b}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+H\+E\+I\+G\+H\+T~({\bf G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}+18)}}\label{glui_8h_a63b5dea6490c6a6226f09831d50e1c1b}
+
+
+Definition at line 129 of file glui.\+h.
+
+\hypertarget{glui_8h_aad023a31142d6989d4c45eced3f6e3cb}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+W\+I\+D\+T\+H~50}}\label{glui_8h_aad023a31142d6989d4c45eced3f6e3cb}
+
+
+Definition at line 128 of file glui.\+h.
+
+\hypertarget{glui_8h_a386541b435f687eb3d67a5b26d8837cd}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T~16}}\label{glui_8h_a386541b435f687eb3d67a5b26d8837cd}
+
+
+Definition at line 204 of file glui.\+h.
+
+\hypertarget{glui_8h_a788274f1a6ca9fc4b675875f259b1f73}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H~16}}\label{glui_8h_a788274f1a6ca9fc4b675875f259b1f73}
+
+
+Definition at line 203 of file glui.\+h.
+
+\hypertarget{glui_8h_ae2ffa86f43c659afe875635c83f0a413}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+H\+E\+I\+G\+H\+T~5}}\label{glui_8h_ae2ffa86f43c659afe875635c83f0a413}
+
+
+Definition at line 205 of file glui.\+h.
+
+\hypertarget{glui_8h_a42171c70561f10fecfa94a22d41bcb0c}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+S\+T\+D\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+S\+T\+D\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+S\+T\+D\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+S\+T\+D\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+S\+T\+D\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+B\+O\+X\+\_\+\+S\+T\+D\+\_\+\+H\+E\+I\+G\+H\+T~16}}\label{glui_8h_a42171c70561f10fecfa94a22d41bcb0c}
+
+
+Definition at line 206 of file glui.\+h.
+
+\hypertarget{glui_8h_a593a8d67fb70ca8a908a8847a00a1a96}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P~1.\+05f}}\label{glui_8h_a593a8d67fb70ca8a908a8847a00a1a96}
+
+
+Definition at line 212 of file glui.\+h.
+
+\hypertarget{glui_8h_a68eb6cb7e0331a9fc508e70ff2029764}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+F\+L\+O\+A\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+F\+L\+O\+A\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+F\+L\+O\+A\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+F\+L\+O\+A\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+F\+L\+O\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+F\+L\+O\+A\+T~{\bf G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T}}}\label{glui_8h_a68eb6cb7e0331a9fc508e70ff2029764}
+
+
+Definition at line 275 of file glui.\+h.
+
+\hypertarget{glui_8h_a52ee49f77a81116b7e8c04d11988fbf3}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L~1}}\label{glui_8h_a52ee49f77a81116b7e8c04d11988fbf3}
+
+
+Definition at line 214 of file glui.\+h.
+
+\hypertarget{glui_8h_a3d0b21f502fe01d6712ae224d03e7447}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+I\+N\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+I\+N\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+I\+N\+T@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+I\+N\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+I\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+I\+N\+T~{\bf G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T}}}\label{glui_8h_a3d0b21f502fe01d6712ae224d03e7447}
+
+
+Definition at line 274 of file glui.\+h.
+
+\hypertarget{glui_8h_a1047af9046f816a35899d941c0c803bd}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H~3}}\label{glui_8h_a1047af9046f816a35899d941c0c803bd}
+
+
+Definition at line 210 of file glui.\+h.
+
+\hypertarget{glui_8h_a5c650e4fdae321e3340078bbbe3091e1}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N~2}}\label{glui_8h_a5c650e4fdae321e3340078bbbe3091e1}
+
+
+Definition at line 209 of file glui.\+h.
+
+\hypertarget{glui_8h_a1f061c8adc2191b6897c6fbc504045d1}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E~0}}\label{glui_8h_a1f061c8adc2191b6897c6fbc504045d1}
+
+
+Definition at line 207 of file glui.\+h.
+
+\hypertarget{glui_8h_a38df6317d571c5e5cc1be19a831ebd8d}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+C\+R\+O\+L\+L@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+C\+R\+O\+L\+L}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+C\+R\+O\+L\+L@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+C\+R\+O\+L\+L}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+C\+R\+O\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+C\+R\+O\+L\+L~4}}\label{glui_8h_a38df6317d571c5e5cc1be19a831ebd8d}
+
+
+Definition at line 211 of file glui.\+h.
+
+\hypertarget{glui_8h_a4fa8f9606c18eb038950ae85a0147f40}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P~1}}\label{glui_8h_a4fa8f9606c18eb038950ae85a0147f40}
+
+
+Definition at line 208 of file glui.\+h.
+
+\hypertarget{glui_8h_a97457fd9596bff938facd6ec13b64691}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L}}
+\index{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L@{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+V\+E\+R\+T\+I\+C\+A\+L~0}}\label{glui_8h_a97457fd9596bff938facd6ec13b64691}
+
+
+Definition at line 213 of file glui.\+h.
+
+\hypertarget{glui_8h_a8d63895391f336a19ff6363cfab8bf06}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+H\+E\+I\+G\+H\+T~8}}\label{glui_8h_a8d63895391f336a19ff6363cfab8bf06}
+
+
+Definition at line 116 of file glui.\+h.
+
+\hypertarget{glui_8h_a292692254459c8014035e92f3305890b}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+C\+L\+I\+C\+K@{G\+L\+U\+I\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+C\+L\+I\+C\+K}}
+\index{G\+L\+U\+I\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+C\+L\+I\+C\+K@{G\+L\+U\+I\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+C\+L\+I\+C\+K}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+C\+L\+I\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+C\+L\+I\+C\+K~0}}\label{glui_8h_a292692254459c8014035e92f3305890b}
+
+
+Definition at line 184 of file glui.\+h.
+
+\hypertarget{glui_8h_ad0021c6843a6a732d38e24a02c3b354b}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+H\+E\+I\+G\+H\+T~8}}\label{glui_8h_ad0021c6843a6a732d38e24a02c3b354b}
+
+
+Definition at line 1842 of file glui.\+h.
+
+\hypertarget{glui_8h_a449c955b030604b7481d10493c7bd55f}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+W\+I\+D\+T\+H~12}}\label{glui_8h_a449c955b030604b7481d10493c7bd55f}
+
+
+Definition at line 1841 of file glui.\+h.
+
+\hypertarget{glui_8h_a46eec4a2a1cf32c79806f551e4ebd9fa}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+Y@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+Y}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+Y@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+A\+R\+R\+O\+W\+\_\+\+Y~2}}\label{glui_8h_a46eec4a2a1cf32c79806f551e4ebd9fa}
+
+
+Definition at line 1843 of file glui.\+h.
+
+\hypertarget{glui_8h_a659e7ef918e2277f973ce7a7a41762ca}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+R\+O\+W\+T\+H\+\_\+\+E\+X\+P~1.\+05f}}\label{glui_8h_a659e7ef918e2277f973ce7a7a41762ca}
+
+
+Definition at line 1850 of file glui.\+h.
+
+\hypertarget{glui_8h_a69a92f0b8f9f3afd3a418b1a40468283}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+F\+L\+O\+A\+T@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+F\+L\+O\+A\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+F\+L\+O\+A\+T@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+F\+L\+O\+A\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+F\+L\+O\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+F\+L\+O\+A\+T~{\bf G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+F\+L\+O\+A\+T}}}\label{glui_8h_a69a92f0b8f9f3afd3a418b1a40468283}
+
+
+Definition at line 273 of file glui.\+h.
+
+\hypertarget{glui_8h_ae338c1175e5bb430d7a14d109daee74a}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T~{\bf G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+I\+N\+T}}}\label{glui_8h_ae338c1175e5bb430d7a14d109daee74a}
+
+
+Definition at line 272 of file glui.\+h.
+
+\hypertarget{glui_8h_a86ef6062370e9d438d6ed69330f39ede}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+O\+T\+H~3}}\label{glui_8h_a86ef6062370e9d438d6ed69330f39ede}
+
+
+Definition at line 1848 of file glui.\+h.
+
+\hypertarget{glui_8h_a829e0d50c8e8a6f32547189c968778c3}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+O\+W\+N~2}}\label{glui_8h_a829e0d50c8e8a6f32547189c968778c3}
+
+
+Definition at line 1847 of file glui.\+h.
+
+\hypertarget{glui_8h_af39ed37ad0d15e55cff285341d4500d9}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+N\+E~0}}\label{glui_8h_af39ed37ad0d15e55cff285341d4500d9}
+
+
+Definition at line 1845 of file glui.\+h.
+
+\hypertarget{glui_8h_a35a0851675158e8820fdaa08181c09bd}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P}}
+\index{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P@{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+P~1}}\label{glui_8h_a35a0851675158e8820fdaa08181c09bd}
+
+
+Definition at line 1846 of file glui.\+h.
+
+\hypertarget{glui_8h_a14dd9a70ab84fa829ce7ee9fa632a22a}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+\_\+\+S\+I\+Z\+E@{G\+L\+U\+I\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+\_\+\+S\+I\+Z\+E}}
+\index{G\+L\+U\+I\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+\_\+\+S\+I\+Z\+E@{G\+L\+U\+I\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+\_\+\+S\+I\+Z\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+\_\+\+S\+I\+Z\+E~13}}\label{glui_8h_a14dd9a70ab84fa829ce7ee9fa632a22a}
+
+
+Definition at line 115 of file glui.\+h.
+
+\hypertarget{glui_8h_ae6d1a93a7d7f288439698253725b83e0}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W}}
+\index{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W~((long)(1$<$$<$1))}}\label{glui_8h_ae6d1a93a7d7f288439698253725b83e0}
+
+
+Definition at line 262 of file glui.\+h.
+
+\hypertarget{glui_8h_a7b2f2ad945b56f24f8f21ed05e639423}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+B\+O\+T\+T\+O\+M@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+B\+O\+T\+T\+O\+M}}
+\index{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+B\+O\+T\+T\+O\+M@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+B\+O\+T\+T\+O\+M}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+B\+O\+T\+T\+O\+M}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+B\+O\+T\+T\+O\+M~((long)(1$<$$<$3))}}\label{glui_8h_a7b2f2ad945b56f24f8f21ed05e639423}
+
+
+Definition at line 264 of file glui.\+h.
+
+\hypertarget{glui_8h_ad0fe1088f2af30f44cb8f39f192205b0}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+L\+E\+F\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+L\+E\+F\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+L\+E\+F\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+L\+E\+F\+T~((long)(1$<$$<$4))}}\label{glui_8h_ad0fe1088f2af30f44cb8f39f192205b0}
+
+
+Definition at line 265 of file glui.\+h.
+
+\hypertarget{glui_8h_ae6ec780471374929fa69d0e1a84160e8}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+R\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+R\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+R\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+R\+I\+G\+H\+T~((long)(1$<$$<$5))}}\label{glui_8h_ae6ec780471374929fa69d0e1a84160e8}
+
+
+Definition at line 266 of file glui.\+h.
+
+\hypertarget{glui_8h_a615b334e22b7b8fd8fbb19bee8259f8c}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+T\+O\+P@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+T\+O\+P}}
+\index{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+T\+O\+P@{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+T\+O\+P}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+T\+O\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+S\+U\+B\+W\+I\+N\+D\+O\+W\+\_\+\+T\+O\+P~((long)(1$<$$<$2))}}\label{glui_8h_a615b334e22b7b8fd8fbb19bee8259f8c}
+
+
+Definition at line 263 of file glui.\+h.
+
+\hypertarget{glui_8h_a729b883e874d9f004f18c37e2ad08f83}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+A\+B\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+T\+A\+B\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+T\+A\+B\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+T\+A\+B\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+A\+B\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+A\+B\+\_\+\+W\+I\+D\+T\+H~50 /$\ast$ In {\bf pixels} $\ast$/}}\label{glui_8h_a729b883e874d9f004f18c37e2ad08f83}
+
+
+Definition at line 185 of file glui.\+h.
+
+\hypertarget{glui_8h_a2aef697aa08d50c5e908ce3a25392aac}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X@{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}}
+\index{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X@{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+B\+O\+X\+I\+N\+N\+E\+R\+M\+A\+R\+G\+I\+N\+X~3}}\label{glui_8h_a2aef697aa08d50c5e908ce3a25392aac}
+
+
+Definition at line 186 of file glui.\+h.
+
+\hypertarget{glui_8h_a2d7c201ace92fb4d249e908b6e407872}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+H\+E\+I\+G\+H\+T}}
+\index{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+H\+E\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+H\+E\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+H\+E\+I\+G\+H\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+H\+E\+I\+G\+H\+T~130}}\label{glui_8h_a2d7c201ace92fb4d249e908b6e407872}
+
+
+Definition at line 179 of file glui.\+h.
+
+\hypertarget{glui_8h_a90a11ca8213b3986422addb71600b413}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+M\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+W\+I\+D\+T\+H~50}}\label{glui_8h_a90a11ca8213b3986422addb71600b413}
+
+
+Definition at line 187 of file glui.\+h.
+
+\hypertarget{glui_8h_a6fa27cd9a4bab948c0d1f6e172babfc8}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+W\+I\+D\+T\+H}}
+\index{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+W\+I\+D\+T\+H@{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+W\+I\+D\+T\+H}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+W\+I\+D\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+E\+X\+T\+B\+O\+X\+\_\+\+W\+I\+D\+T\+H~130}}\label{glui_8h_a6fa27cd9a4bab948c0d1f6e172babfc8}
+
+
+Definition at line 180 of file glui.\+h.
+
+\hypertarget{glui_8h_a8bf629d0e442f79a349c59dd2d638636}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+N\+O\+N\+E}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+N\+O\+N\+E}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+N\+O\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+N\+O\+N\+E~0}}\label{glui_8h_a8bf629d0e442f79a349c59dd2d638636}
+
+
+Definition at line 161 of file glui.\+h.
+
+\hypertarget{glui_8h_a9f0b88ea8bf392263eb8052d72cb6e85}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+X@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+X}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+X@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+X}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+X~1}}\label{glui_8h_a9f0b88ea8bf392263eb8052d72cb6e85}
+
+
+Definition at line 162 of file glui.\+h.
+
+\hypertarget{glui_8h_a263d51d6cbc17fc3b5336bd83413a630}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+Y}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+L\+O\+C\+K\+\_\+\+Y~2}}\label{glui_8h_a263d51d6cbc17fc3b5336bd83413a630}
+
+
+Definition at line 163 of file glui.\+h.
+
+\hypertarget{glui_8h_ab23343480641d3e315eb2a4646184923}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X~2}}\label{glui_8h_ab23343480641d3e315eb2a4646184923}
+
+
+Definition at line 158 of file glui.\+h.
+
+\hypertarget{glui_8h_a3cb2692cdc5e3e84490fbb54ddfc3e01}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X\+Y}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+X\+Y~0}}\label{glui_8h_a3cb2692cdc5e3e84490fbb54ddfc3e01}
+
+
+Definition at line 156 of file glui.\+h.
+
+\hypertarget{glui_8h_a7ec779c9d04f35f3f9c2fe09b23890a3}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Y}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Y~3}}\label{glui_8h_a7ec779c9d04f35f3f9c2fe09b23890a3}
+
+
+Definition at line 159 of file glui.\+h.
+
+\hypertarget{glui_8h_a4d4778991d0505a77a04d7645e6a4e3c}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Z@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Z}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Z@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Z}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Z}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+Z~1}}\label{glui_8h_a4d4778991d0505a77a04d7645e6a4e3c}
+
+
+Definition at line 157 of file glui.\+h.
+
+\hypertarget{glui_8h_a8ca6bd25fd585b524f15a09b2397f961}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+E\+\_\+\+C\+O\+L\+O\+R@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+E\+\_\+\+C\+O\+L\+O\+R}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+E\+\_\+\+C\+O\+L\+O\+R@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+E\+\_\+\+C\+O\+L\+O\+R}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+E\+\_\+\+C\+O\+L\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+E\+\_\+\+C\+O\+L\+O\+R~1}}\label{glui_8h_a8ca6bd25fd585b524f15a09b2397f961}
+
+
+Definition at line 193 of file glui.\+h.
+
+\hypertarget{glui_8h_a2cb7d3c0fc33416662c3332f0656c842}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N\+\_\+\+O\+N\+L\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N\+\_\+\+O\+N\+L\+Y}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N\+\_\+\+O\+N\+L\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N\+\_\+\+O\+N\+L\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N\+\_\+\+O\+N\+L\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+H\+I\+L\+D\+R\+E\+N\+\_\+\+O\+N\+L\+Y~16}}\label{glui_8h_a2cb7d3c0fc33416662c3332f0656c842}
+
+
+Definition at line 197 of file glui.\+h.
+
+\hypertarget{glui_8h_ab23ba323d5c1fa92409e0236e234a9b8}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+S@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+S}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+S@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+S}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+S~0}}\label{glui_8h_ab23ba323d5c1fa92409e0236e234a9b8}
+
+
+Definition at line 192 of file glui.\+h.
+
+\hypertarget{glui_8h_a4eba606ea71c5a322a8ace1dce410e25}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+B\+A\+R@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+B\+A\+R}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+B\+A\+R@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+B\+A\+R}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+B\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+B\+A\+R~4}}\label{glui_8h_a4eba606ea71c5a322a8ace1dce410e25}
+
+
+Definition at line 195 of file glui.\+h.
+
+\hypertarget{glui_8h_a78b4b3691515d60d6bf8c2ed5a9def7b}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+E\+E\+P\+E\+S\+T\+\_\+\+B\+A\+R@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+E\+E\+P\+E\+S\+T\+\_\+\+B\+A\+R}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+E\+E\+P\+E\+S\+T\+\_\+\+B\+A\+R@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+E\+E\+P\+E\+S\+T\+\_\+\+B\+A\+R}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+E\+E\+P\+E\+S\+T\+\_\+\+B\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+D\+E\+E\+P\+E\+S\+T\+\_\+\+B\+A\+R~8}}\label{glui_8h_a78b4b3691515d60d6bf8c2ed5a9def7b}
+
+
+Definition at line 196 of file glui.\+h.
+
+\hypertarget{glui_8h_a0d8ad14f7f9b14fafa4e5f21ef849bbe}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y~32}}\label{glui_8h_a0d8ad14f7f9b14fafa4e5f21ef849bbe}
+
+
+Definition at line 198 of file glui.\+h.
+
+\hypertarget{glui_8h_a3224fe720c8735340852f1fb0c58f528}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+B\+A\+R@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+B\+A\+R}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+B\+A\+R@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+B\+A\+R}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+B\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+B\+A\+R~2}}\label{glui_8h_a3224fe720c8735340852f1fb0c58f528}
+
+
+Definition at line 194 of file glui.\+h.
+
+\hypertarget{glui_8h_a1047aea59807c715dd16f8daa7eccc45}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+N\+L\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+N\+L\+Y}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+N\+L\+Y@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+N\+L\+Y}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+N\+L\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+N\+L\+Y~128}}\label{glui_8h_a1047aea59807c715dd16f8daa7eccc45}
+
+
+Definition at line 200 of file glui.\+h.
+
+\hypertarget{glui_8h_a86ae7c6f404dd25d723b438cfafde20a}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+N\+U\+M\+E\+R\+I\+C\+D\+O\+T@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+N\+U\+M\+E\+R\+I\+C\+D\+O\+T}}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+N\+U\+M\+E\+R\+I\+C\+D\+O\+T@{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+N\+U\+M\+E\+R\+I\+C\+D\+O\+T}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+N\+U\+M\+E\+R\+I\+C\+D\+O\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+T\+R\+E\+E\+P\+A\+N\+E\+L\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+N\+U\+M\+E\+R\+I\+C\+D\+O\+T~64}}\label{glui_8h_a86ae7c6f404dd25d723b438cfafde20a}
+
+
+Definition at line 199 of file glui.\+h.
+
+\hypertarget{glui_8h_ad885205c0bfaec18d633545cd3873c90}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N@{G\+L\+U\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}}
+\index{G\+L\+U\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N@{G\+L\+U\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N~2.\+3f    /$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$ Current version $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$/}}\label{glui_8h_ad885205c0bfaec18d633545cd3873c90}
+
+
+Definition at line 65 of file glui.\+h.
+
+\hypertarget{glui_8h_ab87788ff18f5c829d5002dc4fefafda7}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+X\+O\+F\+F@{G\+L\+U\+I\+\_\+\+X\+O\+F\+F}}
+\index{G\+L\+U\+I\+\_\+\+X\+O\+F\+F@{G\+L\+U\+I\+\_\+\+X\+O\+F\+F}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+X\+O\+F\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+X\+O\+F\+F~6}}\label{glui_8h_ab87788ff18f5c829d5002dc4fefafda7}
+
+
+Definition at line 109 of file glui.\+h.
+
+\hypertarget{glui_8h_a833fa6b1f8cd9dc559232a06e8d58e23}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+Y\+O\+F\+F@{G\+L\+U\+I\+\_\+\+Y\+O\+F\+F}}
+\index{G\+L\+U\+I\+\_\+\+Y\+O\+F\+F@{G\+L\+U\+I\+\_\+\+Y\+O\+F\+F}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Y\+O\+F\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+U\+I\+\_\+\+Y\+O\+F\+F~6}}\label{glui_8h_a833fa6b1f8cd9dc559232a06e8d58e23}
+
+
+Definition at line 110 of file glui.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{glui_8h_a8dae0ec6ca9738eb013c8add125086d3}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+Control\+\_\+\+C\+B@{G\+L\+U\+I\+\_\+\+Control\+\_\+\+C\+B}}
+\index{G\+L\+U\+I\+\_\+\+Control\+\_\+\+C\+B@{G\+L\+U\+I\+\_\+\+Control\+\_\+\+C\+B}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Control\+\_\+\+C\+B}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ G\+L\+U\+I\+\_\+\+Control\+\_\+\+C\+B)({\bf G\+L\+U\+I\+\_\+\+Control} $\ast$)}}\label{glui_8h_a8dae0ec6ca9738eb013c8add125086d3}
+
+
+Definition at line 281 of file glui.\+h.
+
+\hypertarget{glui_8h_aada824856f7bcf29794719981ebd8f60}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+String@{G\+L\+U\+I\+\_\+\+String}}
+\index{G\+L\+U\+I\+\_\+\+String@{G\+L\+U\+I\+\_\+\+String}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+String}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf std\+::string} {\bf G\+L\+U\+I\+\_\+\+String}}}\label{glui_8h_aada824856f7bcf29794719981ebd8f60}
+
+
+Definition at line 240 of file glui.\+h.
+
+\hypertarget{glui_8h_a11c8645866aceff55b55af31f4bf4c04}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+Update\+\_\+\+C\+B@{G\+L\+U\+I\+\_\+\+Update\+\_\+\+C\+B}}
+\index{G\+L\+U\+I\+\_\+\+Update\+\_\+\+C\+B@{G\+L\+U\+I\+\_\+\+Update\+\_\+\+C\+B}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Update\+\_\+\+C\+B}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ G\+L\+U\+I\+\_\+\+Update\+\_\+\+C\+B)({\bf int} {\bf id})}}\label{glui_8h_a11c8645866aceff55b55af31f4bf4c04}
+
+
+Definition at line 280 of file glui.\+h.
+
+\hypertarget{glui_8h_a04a3d4228bbb184c4202b2178e9e142b}{\index{glui.\+h@{glui.\+h}!Int1\+\_\+\+C\+B@{Int1\+\_\+\+C\+B}}
+\index{Int1\+\_\+\+C\+B@{Int1\+\_\+\+C\+B}!glui.\+h@{glui.\+h}}
+\subsubsection[{Int1\+\_\+\+C\+B}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ Int1\+\_\+\+C\+B)({\bf int})}}\label{glui_8h_a04a3d4228bbb184c4202b2178e9e142b}
+
+
+Definition at line 282 of file glui.\+h.
+
+\hypertarget{glui_8h_aab4303326f838bf185b93c83524af987}{\index{glui.\+h@{glui.\+h}!Int2\+\_\+\+C\+B@{Int2\+\_\+\+C\+B}}
+\index{Int2\+\_\+\+C\+B@{Int2\+\_\+\+C\+B}!glui.\+h@{glui.\+h}}
+\subsubsection[{Int2\+\_\+\+C\+B}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ Int2\+\_\+\+C\+B)({\bf int}, {\bf int})}}\label{glui_8h_aab4303326f838bf185b93c83524af987}
+
+
+Definition at line 283 of file glui.\+h.
+
+\hypertarget{glui_8h_a6990fdc97840c78d17c74d77113b60ad}{\index{glui.\+h@{glui.\+h}!Int3\+\_\+\+C\+B@{Int3\+\_\+\+C\+B}}
+\index{Int3\+\_\+\+C\+B@{Int3\+\_\+\+C\+B}!glui.\+h@{glui.\+h}}
+\subsubsection[{Int3\+\_\+\+C\+B}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ Int3\+\_\+\+C\+B)({\bf int}, {\bf int}, {\bf int})}}\label{glui_8h_a6990fdc97840c78d17c74d77113b60ad}
+
+
+Definition at line 284 of file glui.\+h.
+
+\hypertarget{glui_8h_a47b7da882646d5a03c1d3bd080434272}{\index{glui.\+h@{glui.\+h}!Int4\+\_\+\+C\+B@{Int4\+\_\+\+C\+B}}
+\index{Int4\+\_\+\+C\+B@{Int4\+\_\+\+C\+B}!glui.\+h@{glui.\+h}}
+\subsubsection[{Int4\+\_\+\+C\+B}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ Int4\+\_\+\+C\+B)({\bf int}, {\bf int}, {\bf int}, {\bf int})}}\label{glui_8h_a47b7da882646d5a03c1d3bd080434272}
+
+
+Definition at line 285 of file glui.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174b}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+Glut\+\_\+\+C\+B\+\_\+\+Types@{G\+L\+U\+I\+\_\+\+Glut\+\_\+\+C\+B\+\_\+\+Types}}
+\index{G\+L\+U\+I\+\_\+\+Glut\+\_\+\+C\+B\+\_\+\+Types@{G\+L\+U\+I\+\_\+\+Glut\+\_\+\+C\+B\+\_\+\+Types}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Glut\+\_\+\+C\+B\+\_\+\+Types}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf G\+L\+U\+I\+\_\+\+Glut\+\_\+\+C\+B\+\_\+\+Types}}}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+R\+E\+S\+H\+A\+P\+E@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+R\+E\+S\+H\+A\+P\+E}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+R\+E\+S\+H\+A\+P\+E@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+R\+E\+S\+H\+A\+P\+E}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba55a0c0d90376a2d35d5275d1ed56cccc}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+R\+E\+S\+H\+A\+P\+E}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba55a0c0d90376a2d35d5275d1ed56cccc}
+}]\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba20b061d75ef393ddf7c1ccafa24356ad}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba20b061d75ef393ddf7c1ccafa24356ad}
+}]\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+D\+I\+S\+P\+L\+A\+Y@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+D\+I\+S\+P\+L\+A\+Y}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+D\+I\+S\+P\+L\+A\+Y@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+D\+I\+S\+P\+L\+A\+Y}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba606ac85cc602d7761c466ff330db58d0}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+D\+I\+S\+P\+L\+A\+Y}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba606ac85cc602d7761c466ff330db58d0}
+}]\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+U\+S\+E@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+U\+S\+E}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+U\+S\+E@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+U\+S\+E}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174bad8a7307cd33873722a99b4172df934c8}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+U\+S\+E}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174bad8a7307cd33873722a99b4172df934c8}
+}]\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+T\+I\+O\+N@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+T\+I\+O\+N}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+T\+I\+O\+N@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+T\+I\+O\+N}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174bae37f796c511c78f172ba1c6dee107c0e}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+M\+O\+T\+I\+O\+N}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174bae37f796c511c78f172ba1c6dee107c0e}
+}]\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+S\+P\+E\+C\+I\+A\+L@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+S\+P\+E\+C\+I\+A\+L}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+S\+P\+E\+C\+I\+A\+L@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+S\+P\+E\+C\+I\+A\+L}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba142c246fbfb839931cdc7fa16e86e633}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+S\+P\+E\+C\+I\+A\+L}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba142c246fbfb839931cdc7fa16e86e633}
+}]\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+P\+A\+S\+S\+I\+V\+E\+\_\+\+M\+O\+T\+I\+O\+N@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+P\+A\+S\+S\+I\+V\+E\+\_\+\+M\+O\+T\+I\+O\+N}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+P\+A\+S\+S\+I\+V\+E\+\_\+\+M\+O\+T\+I\+O\+N@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+P\+A\+S\+S\+I\+V\+E\+\_\+\+M\+O\+T\+I\+O\+N}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba21e74834926099cad2d240d5d20ed3ed}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+P\+A\+S\+S\+I\+V\+E\+\_\+\+M\+O\+T\+I\+O\+N}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba21e74834926099cad2d240d5d20ed3ed}
+}]\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+E\+N\+T\+R\+Y@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+E\+N\+T\+R\+Y}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+E\+N\+T\+R\+Y@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+E\+N\+T\+R\+Y}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba0fdd00b81416958c0ba0c02fda98c94a}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+E\+N\+T\+R\+Y}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174ba0fdd00b81416958c0ba0c02fda98c94a}
+}]\index{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+T\+Y@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+T\+Y}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+T\+Y@{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+T\+Y}}\item[{\em 
+\hypertarget{glui_8h_a05c416e4775154b6ea698b4fdbb3174bae66a733b5e3dc222af656c83c2345222}{G\+L\+U\+I\+\_\+\+G\+L\+U\+T\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+T\+Y}\label{glui_8h_a05c416e4775154b6ea698b4fdbb3174bae66a733b5e3dc222af656c83c2345222}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 94 of file glui.\+h.
+
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+Std\+Bitmaps\+\_\+\+Codes@{G\+L\+U\+I\+\_\+\+Std\+Bitmaps\+\_\+\+Codes}}
+\index{G\+L\+U\+I\+\_\+\+Std\+Bitmaps\+\_\+\+Codes@{G\+L\+U\+I\+\_\+\+Std\+Bitmaps\+\_\+\+Codes}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Std\+Bitmaps\+\_\+\+Codes}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf G\+L\+U\+I\+\_\+\+Std\+Bitmaps\+\_\+\+Codes}}}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a111eafe6b9b6c8ce8fab16d6eca4252f}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a111eafe6b9b6c8ce8fab16d6eca4252f}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a77965d9cc2325787caf632e2979ed7f3}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a77965d9cc2325787caf632e2979ed7f3}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a198e5c026fb30dcff216c8a40ae49706}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a198e5c026fb30dcff216c8a40ae49706}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a2eaccf1f5980892dce70492ef0d93419}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a2eaccf1f5980892dce70492ef0d93419}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+U\+P\+\_\+\+A\+R\+R\+O\+W@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+U\+P\+\_\+\+A\+R\+R\+O\+W}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+U\+P\+\_\+\+A\+R\+R\+O\+W@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+U\+P\+\_\+\+A\+R\+R\+O\+W}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207af0207ae269cb4b11ab0ea456f93ad893}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+U\+P\+\_\+\+A\+R\+R\+O\+W}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207af0207ae269cb4b11ab0ea456f93ad893}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+D\+O\+W\+N\+\_\+\+A\+R\+R\+O\+W@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+D\+O\+W\+N\+\_\+\+A\+R\+R\+O\+W}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+D\+O\+W\+N\+\_\+\+A\+R\+R\+O\+W@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+D\+O\+W\+N\+\_\+\+A\+R\+R\+O\+W}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a6b3907175fed5e3a73d201ceffdcd42d}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+D\+O\+W\+N\+\_\+\+A\+R\+R\+O\+W}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a6b3907175fed5e3a73d201ceffdcd42d}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+E\+F\+T\+\_\+\+A\+R\+R\+O\+W@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+E\+F\+T\+\_\+\+A\+R\+R\+O\+W}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+E\+F\+T\+\_\+\+A\+R\+R\+O\+W@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+E\+F\+T\+\_\+\+A\+R\+R\+O\+W}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207ae1354aeb965cfc7ce196d33d1a7c2706}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+E\+F\+T\+\_\+\+A\+R\+R\+O\+W}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207ae1354aeb965cfc7ce196d33d1a7c2706}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T\+\_\+\+A\+R\+R\+O\+W@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T\+\_\+\+A\+R\+R\+O\+W}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T\+\_\+\+A\+R\+R\+O\+W@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T\+\_\+\+A\+R\+R\+O\+W}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a6f76d830b0a950767c60ed7edf8841f3}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+I\+G\+H\+T\+\_\+\+A\+R\+R\+O\+W}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a6f76d830b0a950767c60ed7edf8841f3}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+F\+F@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+F\+F}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+F\+F@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+F\+F}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207ab52732f2750389e8fb1b35eb97d65f65}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+F\+F}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207ab52732f2750389e8fb1b35eb97d65f65}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+N}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+N}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a08582e1dc0e6f868f74ac5847ae1cf9f}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+O\+N}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a08582e1dc0e6f868f74ac5847ae1cf9f}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+F\+F@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+F\+F}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+F\+F@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+F\+F}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a4b98f494e1f5458a48b030fbd180155e}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+F\+F}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a4b98f494e1f5458a48b030fbd180155e}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+N}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+N}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a5fe20b6ea758a3d7cf0c1c4557691849}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+O\+N}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a5fe20b6ea758a3d7cf0c1c4557691849}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a235fbe58566ed6ce94d7c18aba7b3edd}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a235fbe58566ed6ce94d7c18aba7b3edd}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N\+\_\+\+D\+I\+S}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N\+\_\+\+D\+I\+S}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a6893e2721fcd8d392d3f052def60f659}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+\_\+\+O\+N\+\_\+\+D\+I\+S}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a6893e2721fcd8d392d3f052def60f659}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a4a925e4e0c5e37a538aadff64a95a5e9}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+F\+F\+\_\+\+D\+I\+S}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a4a925e4e0c5e37a538aadff64a95a5e9}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+\_\+\+D\+I\+S}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+\_\+\+D\+I\+S}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207afabafde2e9d9f142470f8e033da5de2e}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+R\+A\+D\+I\+O\+B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+\_\+\+D\+I\+S}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207afabafde2e9d9f142470f8e033da5de2e}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+D\+I\+S}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+D\+I\+S}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207ad6bc21e791419baf0f843dbab4805b9c}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+U\+P\+\_\+\+D\+I\+S}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207ad6bc21e791419baf0f843dbab4805b9c}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+D\+I\+S}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+D\+I\+S}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207adb755e13fa7ade209af7840990be8ffd}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+D\+O\+W\+N\+\_\+\+D\+I\+S}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207adb755e13fa7ade209af7840990be8ffd}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207ad646794a0d6185e45904e2a6200b4ce0}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207ad646794a0d6185e45904e2a6200b4ce0}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+D\+O\+W\+N}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+D\+O\+W\+N}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207abc13ba8d9a918a44cd8b64bdc75b11d9}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+D\+O\+W\+N}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207abc13ba8d9a918a44cd8b64bdc75b11d9}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P\+\_\+\+D\+I\+S}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P\+\_\+\+D\+I\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P\+\_\+\+D\+I\+S}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a82f79fbfaea41d8657a662308e0ddb23}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+U\+P\+\_\+\+D\+I\+S}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a82f79fbfaea41d8657a662308e0ddb23}
+}]\index{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+M\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+M\+S}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+M\+S@{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+M\+S}}\item[{\em 
+\hypertarget{glui_8h_a497be656e7f6e5e241a965b7928f3207a7727932dd4a6e3c7eaf5727b978431ba}{G\+L\+U\+I\+\_\+\+S\+T\+D\+B\+I\+T\+M\+A\+P\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+M\+S}\label{glui_8h_a497be656e7f6e5e241a965b7928f3207a7727932dd4a6e3c7eaf5727b978431ba}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 373 of file glui.\+h.
+
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797}{\index{glui.\+h@{glui.\+h}!Translation\+Codes@{Translation\+Codes}}
+\index{Translation\+Codes@{Translation\+Codes}!glui.\+h@{glui.\+h}}
+\subsubsection[{Translation\+Codes}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Translation\+Codes}}}\label{glui_8h_af9c9f0b11ec8992179975332333f4797}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+N\+O\+N\+E}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+N\+O\+N\+E@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+N\+O\+N\+E}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797ad5fdae32fe196b93fcab3c0a399ba6bb}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+N\+O\+N\+E}\label{glui_8h_af9c9f0b11ec8992179975332333f4797ad5fdae32fe196b93fcab3c0a399ba6bb}
+}]\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797aeea7f306f0d10957e9c0e43a39444b38}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P}\label{glui_8h_af9c9f0b11ec8992179975332333f4797aeea7f306f0d10957e9c0e43a39444b38}
+}]\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797a48a020c09558f9fd3033b437acc5404a}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N}\label{glui_8h_af9c9f0b11ec8992179975332333f4797a48a020c09558f9fd3033b437acc5404a}
+}]\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797a47b52401cd6739effcce2817a4edb329}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T}\label{glui_8h_af9c9f0b11ec8992179975332333f4797a47b52401cd6739effcce2817a4edb329}
+}]\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+R\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+R\+I\+G\+H\+T}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797a3f484d3d3b70b416eacc5bd2a31fbfaa}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+R\+I\+G\+H\+T}\label{glui_8h_af9c9f0b11ec8992179975332333f4797a3f484d3d3b70b416eacc5bd2a31fbfaa}
+}]\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+L\+E\+F\+T}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+L\+E\+F\+T}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797a760d2da597b4247a706e2548c0cd0bf6}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+L\+E\+F\+T}\label{glui_8h_af9c9f0b11ec8992179975332333f4797a760d2da597b4247a706e2548c0cd0bf6}
+}]\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+R\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+R\+I\+G\+H\+T}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797a8f40206a45b41419d487f28a1338b4eb}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+U\+P\+\_\+\+R\+I\+G\+H\+T}\label{glui_8h_af9c9f0b11ec8992179975332333f4797a8f40206a45b41419d487f28a1338b4eb}
+}]\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+E\+F\+T}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+E\+F\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+E\+F\+T}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797ab19c6216b511dbdad224394ed526100f}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+E\+F\+T}\label{glui_8h_af9c9f0b11ec8992179975332333f4797ab19c6216b511dbdad224394ed526100f}
+}]\index{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+R\+I\+G\+H\+T}!glui.\+h@{glui.\+h}}\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+R\+I\+G\+H\+T@{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+R\+I\+G\+H\+T}}\item[{\em 
+\hypertarget{glui_8h_af9c9f0b11ec8992179975332333f4797aa13076dac0a79147087ce6e71aa1969b}{G\+L\+U\+I\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+O\+W\+N\+\_\+\+R\+I\+G\+H\+T}\label{glui_8h_af9c9f0b11ec8992179975332333f4797aa13076dac0a79147087ce6e71aa1969b}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 225 of file glui.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{glui_8h_afe17239a368aa40fb774ccaaa43d34c3}{\index{glui.\+h@{glui.\+h}!\+\_\+glut\+Bitmap\+String@{\+\_\+glut\+Bitmap\+String}}
+\index{\+\_\+glut\+Bitmap\+String@{\+\_\+glut\+Bitmap\+String}!glui.\+h@{glui.\+h}}
+\subsubsection[{\+\_\+glut\+Bitmap\+String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} \+\_\+glut\+Bitmap\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{font, }
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_afe17239a368aa40fb774ccaaa43d34c3}
+\hypertarget{glui_8h_a812485a9775d3fe2787cef9fd3f14417}{\index{glui.\+h@{glui.\+h}!\+\_\+glut\+Bitmap\+Width\+String@{\+\_\+glut\+Bitmap\+Width\+String}}
+\index{\+\_\+glut\+Bitmap\+Width\+String@{\+\_\+glut\+Bitmap\+Width\+String}!glui.\+h@{glui.\+h}}
+\subsubsection[{\+\_\+glut\+Bitmap\+Width\+String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} \+\_\+glut\+Bitmap\+Width\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{font, }
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a812485a9775d3fe2787cef9fd3f14417}
+\hypertarget{glui_8h_a02c2a5886dd1faabe8b882da67f77457}{\index{glui.\+h@{glui.\+h}!glui\+\_\+display\+\_\+func@{glui\+\_\+display\+\_\+func}}
+\index{glui\+\_\+display\+\_\+func@{glui\+\_\+display\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+display\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+display\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a02c2a5886dd1faabe8b882da67f77457}
+\hypertarget{glui_8h_ac1a3c6ebc56cb90a076c62b9192853e8}{\index{glui.\+h@{glui.\+h}!glui\+\_\+entry\+\_\+func@{glui\+\_\+entry\+\_\+func}}
+\index{glui\+\_\+entry\+\_\+func@{glui\+\_\+entry\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+entry\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+entry\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{state}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_ac1a3c6ebc56cb90a076c62b9192853e8}
+\hypertarget{glui_8h_ad3ad9ea44d12ce8a0998bf76371cfc4a}{\index{glui.\+h@{glui.\+h}!glui\+\_\+format\+\_\+str@{glui\+\_\+format\+\_\+str}}
+\index{glui\+\_\+format\+\_\+str@{glui\+\_\+format\+\_\+str}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+format\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+String}\& glui\+\_\+format\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+String} \&}]{str, }
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_ad3ad9ea44d12ce8a0998bf76371cfc4a}
+\hypertarget{glui_8h_a6d56019c7f67cab2a97457b11e0b8994}{\index{glui.\+h@{glui.\+h}!glui\+\_\+idle\+\_\+func@{glui\+\_\+idle\+\_\+func}}
+\index{glui\+\_\+idle\+\_\+func@{glui\+\_\+idle\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+idle\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+idle\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a6d56019c7f67cab2a97457b11e0b8994}
+\hypertarget{glui_8h_ae3390518e45a04617135f564021bcebf}{\index{glui.\+h@{glui.\+h}!glui\+\_\+keyboard\+\_\+func@{glui\+\_\+keyboard\+\_\+func}}
+\index{glui\+\_\+keyboard\+\_\+func@{glui\+\_\+keyboard\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+keyboard\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+keyboard\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_ae3390518e45a04617135f564021bcebf}
+\hypertarget{glui_8h_a633765a3cd774bd7521a679eb4a51f2f}{\index{glui.\+h@{glui.\+h}!glui\+\_\+motion\+\_\+func@{glui\+\_\+motion\+\_\+func}}
+\index{glui\+\_\+motion\+\_\+func@{glui\+\_\+motion\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+motion\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+motion\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a633765a3cd774bd7521a679eb4a51f2f}
+\hypertarget{glui_8h_a6385df2c931519beca286ede9e098f96}{\index{glui.\+h@{glui.\+h}!glui\+\_\+mouse\+\_\+func@{glui\+\_\+mouse\+\_\+func}}
+\index{glui\+\_\+mouse\+\_\+func@{glui\+\_\+mouse\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+mouse\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+mouse\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{button, }
+\item[{{\bf int}}]{state, }
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a6385df2c931519beca286ede9e098f96}
+\hypertarget{glui_8h_a0e54fa9fbe1fdcd982c0dd1d937e4696}{\index{glui.\+h@{glui.\+h}!glui\+\_\+parent\+\_\+window\+\_\+keyboard\+\_\+func@{glui\+\_\+parent\+\_\+window\+\_\+keyboard\+\_\+func}}
+\index{glui\+\_\+parent\+\_\+window\+\_\+keyboard\+\_\+func@{glui\+\_\+parent\+\_\+window\+\_\+keyboard\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+parent\+\_\+window\+\_\+keyboard\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+parent\+\_\+window\+\_\+keyboard\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a0e54fa9fbe1fdcd982c0dd1d937e4696}
+\hypertarget{glui_8h_a391c1191451c678e7702e593e74dc5a4}{\index{glui.\+h@{glui.\+h}!glui\+\_\+parent\+\_\+window\+\_\+mouse\+\_\+func@{glui\+\_\+parent\+\_\+window\+\_\+mouse\+\_\+func}}
+\index{glui\+\_\+parent\+\_\+window\+\_\+mouse\+\_\+func@{glui\+\_\+parent\+\_\+window\+\_\+mouse\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+parent\+\_\+window\+\_\+mouse\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+parent\+\_\+window\+\_\+mouse\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{, }
+\item[{{\bf int}}]{, }
+\item[{{\bf int}}]{, }
+\item[{{\bf int}}]{}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a391c1191451c678e7702e593e74dc5a4}
+\hypertarget{glui_8h_aba8acedae32a786d382d229db7728ee4}{\index{glui.\+h@{glui.\+h}!glui\+\_\+parent\+\_\+window\+\_\+reshape\+\_\+func@{glui\+\_\+parent\+\_\+window\+\_\+reshape\+\_\+func}}
+\index{glui\+\_\+parent\+\_\+window\+\_\+reshape\+\_\+func@{glui\+\_\+parent\+\_\+window\+\_\+reshape\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+parent\+\_\+window\+\_\+reshape\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+parent\+\_\+window\+\_\+reshape\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{w, }
+\item[{{\bf int}}]{h}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_aba8acedae32a786d382d229db7728ee4}
+\hypertarget{glui_8h_af04ae926023bcd599effef7b6a84aa5d}{\index{glui.\+h@{glui.\+h}!glui\+\_\+parent\+\_\+window\+\_\+special\+\_\+func@{glui\+\_\+parent\+\_\+window\+\_\+special\+\_\+func}}
+\index{glui\+\_\+parent\+\_\+window\+\_\+special\+\_\+func@{glui\+\_\+parent\+\_\+window\+\_\+special\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+parent\+\_\+window\+\_\+special\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+parent\+\_\+window\+\_\+special\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{key, }
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_af04ae926023bcd599effef7b6a84aa5d}
+\hypertarget{glui_8h_a783f2a1497c9cc9e2f8c45244c20cc5e}{\index{glui.\+h@{glui.\+h}!glui\+\_\+passive\+\_\+motion\+\_\+func@{glui\+\_\+passive\+\_\+motion\+\_\+func}}
+\index{glui\+\_\+passive\+\_\+motion\+\_\+func@{glui\+\_\+passive\+\_\+motion\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+passive\+\_\+motion\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+passive\+\_\+motion\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a783f2a1497c9cc9e2f8c45244c20cc5e}
+\hypertarget{glui_8h_a1798681d4deaa39c807e49c3902fde96}{\index{glui.\+h@{glui.\+h}!glui\+\_\+reshape\+\_\+func@{glui\+\_\+reshape\+\_\+func}}
+\index{glui\+\_\+reshape\+\_\+func@{glui\+\_\+reshape\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+reshape\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+reshape\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{w, }
+\item[{{\bf int}}]{h}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a1798681d4deaa39c807e49c3902fde96}
+\hypertarget{glui_8h_a457caba107a71dff1918cb7dd271e8f1}{\index{glui.\+h@{glui.\+h}!glui\+\_\+special\+\_\+func@{glui\+\_\+special\+\_\+func}}
+\index{glui\+\_\+special\+\_\+func@{glui\+\_\+special\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+special\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+special\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{key, }
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a457caba107a71dff1918cb7dd271e8f1}
+\hypertarget{glui_8h_a98726addbd2797b8134ac2b654c3cee6}{\index{glui.\+h@{glui.\+h}!glui\+\_\+visibility\+\_\+func@{glui\+\_\+visibility\+\_\+func}}
+\index{glui\+\_\+visibility\+\_\+func@{glui\+\_\+visibility\+\_\+func}!glui.\+h@{glui.\+h}}
+\subsubsection[{glui\+\_\+visibility\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glui\+\_\+visibility\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{state}
+\end{DoxyParamCaption}
+)}}\label{glui_8h_a98726addbd2797b8134ac2b654c3cee6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{glui_8h_a6a78309206f7288082a6df231105f8db}{\index{glui.\+h@{glui.\+h}!G\+L\+U\+I\+\_\+\+Master@{G\+L\+U\+I\+\_\+\+Master}}
+\index{G\+L\+U\+I\+\_\+\+Master@{G\+L\+U\+I\+\_\+\+Master}!glui.\+h@{glui.\+h}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Master}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Master\+\_\+\+Object} G\+L\+U\+I\+\_\+\+Master}}\label{glui_8h_a6a78309206f7288082a6df231105f8db}
+This is the only \hyperlink{class_g_l_u_i___master___object}{G\+L\+U\+I\+\_\+\+Master\+\_\+\+Object} in existence. 

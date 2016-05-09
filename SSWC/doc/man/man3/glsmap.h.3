@@ -1,0 +1,309 @@
+.TH "SSWC/src/GL/glsmap.h" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/GL/glsmap.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <GL/gl\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct _SphereMap \fBSphereMap\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBSphereMapFlags\fP { \fBSMAP_CLEAR_SMAP_TEXTURE\fP = 0x1, \fBSMAP_GENERATE_VIEW_MIPMAPS\fP = 0x2, \fBSMAP_GENERATE_SMAP_MIPMAPS\fP = 0x4, \fBSMAP_GENERATE_MIPMAPS\fP = 0x6 }"
+.br
+.ti -1c
+.RI "enum { \fBSMAP_FRONT\fP = 0, \fBSMAP_TOP\fP = 1, \fBSMAP_BOTTOM\fP = 2, \fBSMAP_LEFT\fP = 3, \fBSMAP_RIGHT\fP = 4, \fBSMAP_BACK\fP = 5 }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSphereMap\fP * \fBsmapCreateSphereMap\fP (\fBSphereMap\fP *shareSmap)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapDestroySphereMap\fP (\fBSphereMap\fP *smap)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapConfigureSphereMapMesh\fP (\fBSphereMap\fP *smap, \fBint\fP steps, \fBint\fP rings, \fBint\fP edgeExtend)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetSphereMapTexObj\fP (\fBSphereMap\fP *smap, \fBGLuint\fP texobj)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetViewTexObj\fP (\fBSphereMap\fP *smap, \fBGLuint\fP texobj)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetViewTexObjs\fP (\fBSphereMap\fP *smap, \fBGLuint\fP texobjs[6])"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetSphereMapTexObj\fP (\fBSphereMap\fP *smap, \fBGLuint\fP *texobj)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetViewTexObj\fP (\fBSphereMap\fP *smap, \fBGLuint\fP *texobj)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetViewTexObjs\fP (\fBSphereMap\fP *smap, \fBGLuint\fP texobjs[6])"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetFlags\fP (\fBSphereMap\fP *smap, \fBSphereMapFlags\fP \fBflags\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetFlags\fP (\fBSphereMap\fP *smap, \fBSphereMapFlags\fP *\fBflags\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetViewOrigin\fP (\fBSphereMap\fP *smap, \fBGLint\fP \fBx\fP, \fBGLint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetSphereMapOrigin\fP (\fBSphereMap\fP *smap, \fBGLint\fP \fBx\fP, \fBGLint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetViewOrigin\fP (\fBSphereMap\fP *smap, \fBGLint\fP *\fBx\fP, \fBGLint\fP *\fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetSphereMapOrigin\fP (\fBSphereMap\fP *smap, \fBGLint\fP *\fBx\fP, \fBGLint\fP *\fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetEye\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP eyex, \fBGLfloat\fP eyey, \fBGLfloat\fP eyez)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetEyeVector\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *eye)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetUp\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP upx, \fBGLfloat\fP upy, \fBGLfloat\fP upz)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetUpVector\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *up)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetObject\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP objx, \fBGLfloat\fP objy, \fBGLfloat\fP objz)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetObjectVector\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *\fBobj\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetEye\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *eyex, \fBGLfloat\fP *eyey, \fBGLfloat\fP *eyez)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetEyeVector\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *eye)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetUp\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *upx, \fBGLfloat\fP *upy, \fBGLfloat\fP *upz)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetUpVector\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *up)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetObject\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *objx, \fBGLfloat\fP *objy, \fBGLfloat\fP *objz)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetObjectVector\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *\fBobj\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetNearFar\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP viewNear, \fBGLfloat\fP viewFar)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetNearFar\fP (\fBSphereMap\fP *smap, \fBGLfloat\fP *viewNear, \fBGLfloat\fP *viewFar)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetSphereMapTexDim\fP (\fBSphereMap\fP *smap, GLsizei texdim)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetViewTexDim\fP (\fBSphereMap\fP *smap, GLsizei texdim)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetSphereMapTexDim\fP (\fBSphereMap\fP *smap, GLsizei *texdim)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetViewTexDim\fP (\fBSphereMap\fP *smap, GLsizei *texdim)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetContextData\fP (\fBSphereMap\fP *smap, \fBvoid\fP *context)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetContextData\fP (\fBSphereMap\fP *smap, \fBvoid\fP **context)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetPositionLightsFunc\fP (\fBSphereMap\fP *smap, \fBvoid\fP(*positionLights)(\fBint\fP view, \fBvoid\fP *context))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapSetDrawViewFunc\fP (\fBSphereMap\fP *smap, \fBvoid\fP(*drawView)(\fBint\fP view, \fBvoid\fP *context))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetPositionLightsFunc\fP (\fBSphereMap\fP *smap, \fBvoid\fP(**positionLights)(\fBint\fP view, \fBvoid\fP *context))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGetDrawViewFunc\fP (\fBSphereMap\fP *smap, \fBvoid\fP(**drawView)(\fBint\fP view, \fBvoid\fP *context))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGenViewTex\fP (\fBSphereMap\fP *smap, \fBint\fP view)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGenViewTexs\fP (\fBSphereMap\fP *smap)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGenSphereMapFromViewTexs\fP (\fBSphereMap\fP *smap)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGenSphereMap\fP (\fBSphereMap\fP *smap)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapGenSphereMapWithOneViewTex\fP (\fBSphereMap\fP *smap)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsmapRvecToSt\fP (float rvec[3], float st[2])"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsmapStToRvec\fP (float *st, float *rvec)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct _SphereMap \fBSphereMap\fP"
+
+.PP
+Definition at line 73 of file glsmap\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "anonymous enum"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISMAP_FRONT \fP\fP
+.TP
+\fB\fISMAP_TOP \fP\fP
+.TP
+\fB\fISMAP_BOTTOM \fP\fP
+.TP
+\fB\fISMAP_LEFT \fP\fP
+.TP
+\fB\fISMAP_RIGHT \fP\fP
+.TP
+\fB\fISMAP_BACK \fP\fP
+.PP
+Definition at line 64 of file glsmap\&.h\&.
+.SS "enum \fBSphereMapFlags\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISMAP_CLEAR_SMAP_TEXTURE \fP\fP
+.TP
+\fB\fISMAP_GENERATE_VIEW_MIPMAPS \fP\fP
+.TP
+\fB\fISMAP_GENERATE_SMAP_MIPMAPS \fP\fP
+.TP
+\fB\fISMAP_GENERATE_MIPMAPS \fP\fP
+.PP
+Definition at line 56 of file glsmap\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP smapConfigureSphereMapMesh (\fBSphereMap\fP *smap, \fBint\fPsteps, \fBint\fPrings, \fBint\fPedgeExtend)"
+
+.SS "\fBSphereMap\fP* smapCreateSphereMap (\fBSphereMap\fP *shareSmap)"
+
+.SS "\fBvoid\fP smapDestroySphereMap (\fBSphereMap\fP *smap)"
+
+.SS "\fBvoid\fP smapGenSphereMap (\fBSphereMap\fP *smap)"
+
+.SS "\fBvoid\fP smapGenSphereMapFromViewTexs (\fBSphereMap\fP *smap)"
+
+.SS "\fBvoid\fP smapGenSphereMapWithOneViewTex (\fBSphereMap\fP *smap)"
+
+.SS "\fBvoid\fP smapGenViewTex (\fBSphereMap\fP *smap, \fBint\fPview)"
+
+.SS "\fBvoid\fP smapGenViewTexs (\fBSphereMap\fP *smap)"
+
+.SS "\fBvoid\fP smapGetContextData (\fBSphereMap\fP *smap, \fBvoid\fP **context)"
+
+.SS "\fBvoid\fP smapGetDrawViewFunc (\fBSphereMap\fP *smap, \fBvoid\fP(**)(\fBint\fP view, \fBvoid\fP *context)drawView)"
+
+.SS "\fBvoid\fP smapGetEye (\fBSphereMap\fP *smap, \fBGLfloat\fP *eyex, \fBGLfloat\fP *eyey, \fBGLfloat\fP *eyez)"
+
+.SS "\fBvoid\fP smapGetEyeVector (\fBSphereMap\fP *smap, \fBGLfloat\fP *eye)"
+
+.SS "\fBvoid\fP smapGetFlags (\fBSphereMap\fP *smap, \fBSphereMapFlags\fP *flags)"
+
+.SS "\fBvoid\fP smapGetNearFar (\fBSphereMap\fP *smap, \fBGLfloat\fP *viewNear, \fBGLfloat\fP *viewFar)"
+
+.SS "\fBvoid\fP smapGetObject (\fBSphereMap\fP *smap, \fBGLfloat\fP *objx, \fBGLfloat\fP *objy, \fBGLfloat\fP *objz)"
+
+.SS "\fBvoid\fP smapGetObjectVector (\fBSphereMap\fP *smap, \fBGLfloat\fP *obj)"
+
+.SS "\fBvoid\fP smapGetPositionLightsFunc (\fBSphereMap\fP *smap, \fBvoid\fP(**)(\fBint\fP view, \fBvoid\fP *context)positionLights)"
+
+.SS "\fBvoid\fP smapGetSphereMapOrigin (\fBSphereMap\fP *smap, \fBGLint\fP *x, \fBGLint\fP *y)"
+
+.SS "\fBvoid\fP smapGetSphereMapTexDim (\fBSphereMap\fP *smap, GLsizei *texdim)"
+
+.SS "\fBvoid\fP smapGetSphereMapTexObj (\fBSphereMap\fP *smap, \fBGLuint\fP *texobj)"
+
+.SS "\fBvoid\fP smapGetUp (\fBSphereMap\fP *smap, \fBGLfloat\fP *upx, \fBGLfloat\fP *upy, \fBGLfloat\fP *upz)"
+
+.SS "\fBvoid\fP smapGetUpVector (\fBSphereMap\fP *smap, \fBGLfloat\fP *up)"
+
+.SS "\fBvoid\fP smapGetViewOrigin (\fBSphereMap\fP *smap, \fBGLint\fP *x, \fBGLint\fP *y)"
+
+.SS "\fBvoid\fP smapGetViewTexDim (\fBSphereMap\fP *smap, GLsizei *texdim)"
+
+.SS "\fBvoid\fP smapGetViewTexObj (\fBSphereMap\fP *smap, \fBGLuint\fP *texobj)"
+
+.SS "\fBvoid\fP smapGetViewTexObjs (\fBSphereMap\fP *smap, \fBGLuint\fPtexobjs[6])"
+
+.SS "\fBint\fP smapRvecToSt (floatrvec[3], floatst[2])"
+
+.SS "\fBvoid\fP smapSetContextData (\fBSphereMap\fP *smap, \fBvoid\fP *context)"
+
+.SS "\fBvoid\fP smapSetDrawViewFunc (\fBSphereMap\fP *smap, \fBvoid\fP(*)(\fBint\fP view, \fBvoid\fP *context)drawView)"
+
+.SS "\fBvoid\fP smapSetEye (\fBSphereMap\fP *smap, \fBGLfloat\fPeyex, \fBGLfloat\fPeyey, \fBGLfloat\fPeyez)"
+
+.SS "\fBvoid\fP smapSetEyeVector (\fBSphereMap\fP *smap, \fBGLfloat\fP *eye)"
+
+.SS "\fBvoid\fP smapSetFlags (\fBSphereMap\fP *smap, \fBSphereMapFlags\fPflags)"
+
+.SS "\fBvoid\fP smapSetNearFar (\fBSphereMap\fP *smap, \fBGLfloat\fPviewNear, \fBGLfloat\fPviewFar)"
+
+.SS "\fBvoid\fP smapSetObject (\fBSphereMap\fP *smap, \fBGLfloat\fPobjx, \fBGLfloat\fPobjy, \fBGLfloat\fPobjz)"
+
+.SS "\fBvoid\fP smapSetObjectVector (\fBSphereMap\fP *smap, \fBGLfloat\fP *obj)"
+
+.SS "\fBvoid\fP smapSetPositionLightsFunc (\fBSphereMap\fP *smap, \fBvoid\fP(*)(\fBint\fP view, \fBvoid\fP *context)positionLights)"
+
+.SS "\fBvoid\fP smapSetSphereMapOrigin (\fBSphereMap\fP *smap, \fBGLint\fPx, \fBGLint\fPy)"
+
+.SS "\fBvoid\fP smapSetSphereMapTexDim (\fBSphereMap\fP *smap, GLsizeitexdim)"
+
+.SS "\fBvoid\fP smapSetSphereMapTexObj (\fBSphereMap\fP *smap, \fBGLuint\fPtexobj)"
+
+.SS "\fBvoid\fP smapSetUp (\fBSphereMap\fP *smap, \fBGLfloat\fPupx, \fBGLfloat\fPupy, \fBGLfloat\fPupz)"
+
+.SS "\fBvoid\fP smapSetUpVector (\fBSphereMap\fP *smap, \fBGLfloat\fP *up)"
+
+.SS "\fBvoid\fP smapSetViewOrigin (\fBSphereMap\fP *smap, \fBGLint\fPx, \fBGLint\fPy)"
+
+.SS "\fBvoid\fP smapSetViewTexDim (\fBSphereMap\fP *smap, GLsizeitexdim)"
+
+.SS "\fBvoid\fP smapSetViewTexObj (\fBSphereMap\fP *smap, \fBGLuint\fPtexobj)"
+
+.SS "\fBvoid\fP smapSetViewTexObjs (\fBSphereMap\fP *smap, \fBGLuint\fPtexobjs[6])"
+
+.SS "\fBvoid\fP smapStToRvec (float *st, float *rvec)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

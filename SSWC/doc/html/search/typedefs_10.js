@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['r',['r',['../glext_8h.html#a42ce7cdc612e53abee15043f80220d97',1,'glext.h']]],
+  ['range',['range',['../glext_8h.html#a73b00379db2c7ac5e30a3aa2954a50ee',1,'glext.h']]],
+  ['rawcountermaxvalue',['rawCounterMaxValue',['../glext_8h.html#a73a85d879bbf46a780ff3af927db1008',1,'glext.h']]],
+  ['readoffset',['readOffset',['../glext_8h.html#a2d6559779f2cdb4d7d405c0c83c4d650',1,'glext.h']]],
+  ['ref',['ref',['../glext_8h.html#ad32bdec748ba376f6c0d2df39ab9a95b',1,'glext.h']]],
+  ['reference',['reference',['../glext_8h.html#a78bc3e2ef8bd3cd29cfa7209810202d1',1,'glext.h']]],
+  ['relativeoffset',['relativeoffset',['../glext_8h.html#a85ce5fba4879e050bfd04277f9c0effe',1,'glext.h']]],
+  ['remainder',['remainder',['../wglext_8h.html#a226a3effbf4b18fa52a40406d23ab396',1,'wglext.h']]],
+  ['renderbuffer',['renderbuffer',['../glext_8h.html#a2de59ce19521dddd661a02a95abc2764',1,'glext.h']]],
+  ['renderbuffers',['renderbuffers',['../glext_8h.html#aa17b802a0d8dde64cb30f5d887be5a22',1,'glext.h']]],
+  ['renderbuffertarget',['renderbuffertarget',['../glext_8h.html#ad4ca76f1378b4a8be4243761c8df68e6',1,'glext.h']]],
+  ['res',['res',['../glext_8h.html#a1dbb21208b9047cc8031ca9c840d3c2f',1,'glext.h']]],
+  ['reset',['reset',['../glext_8h.html#a11158672fb6a3f09183a338ecff59e41',1,'glext.h']]],
+  ['residences',['residences',['../glext_8h.html#a1b73b6faf5e03196654860a3c89c8265',1,'glext.h']]],
+  ['result',['result',['../glext_8h.html#a321ff419cd5252e54cf95e64dc6687ee',1,'glext.h']]],
+  ['returnedspacing',['returnedSpacing',['../glext_8h.html#a99db6d706adaa9ad06c22774393c34de',1,'glext.h']]],
+  ['right',['right',['../glext_8h.html#a5ffadbbacc6b89cf6218bc43b384d3fe',1,'glext.h']]],
+  ['row',['row',['../glext_8h.html#a90d3e7e4182a9630993f640fa0443b0b',1,'glext.h']]],
+  ['rowbufsize',['rowBufSize',['../glext_8h.html#a649a72094f1fdb9a553000e09e80d8c9',1,'glext.h']]]
+];

@@ -1,0 +1,186 @@
+.TH "GLUI_CommandLine" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_CommandLine \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_EditText\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBHIST_SIZE\fP = 100 }"
+.br
+.ti -1c
+.RI "typedef \fBGLUI_EditText\fP \fBSuper\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdeactivate\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual const char * \fBget_history\fP (\fBint\fP command_number) const "
+.br
+.ti -1c
+.RI "virtual \fBGLUI_String\fP & \fBget_history_str\fP (\fBint\fP command_number)"
+.br
+.ti -1c
+.RI "virtual const \fBGLUI_String\fP & \fBget_history_str\fP (\fBint\fP command_number) const "
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBrecall_history\fP (\fBint\fP history_number)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBscroll_history\fP (\fBint\fP direction)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBadd_to_history\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBreset_history\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdump\fP (FILE *out, const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_CommandLine\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBvoid\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_CommandLine\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBGLUI_String\fP > \fBhist_list\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcurr_hist\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBoldest_hist\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBnewest_hist\fP"
+.br
+.ti -1c
+.RI "bool \fBcommit_flag\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 1697 of file glui\&.h\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef \fBGLUI_EditText\fP \fBGLUI_CommandLine::Super\fP"
+
+.PP
+Definition at line 1700 of file glui\&.h\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "anonymous enum"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIHIST_SIZE \fP\fP
+.PP
+Definition at line 1702 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_CommandLine::GLUI_CommandLine (\fBGLUI_Node\fP *parent, const char *name, \fBvoid\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_CommandLine::GLUI_CommandLine (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 1730 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBvoid\fP GLUI_CommandLine::add_to_history (const char *text)\fC [virtual]\fP"
+
+.SS "\fBvoid\fP GLUI_CommandLine::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1732 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_CommandLine::deactivate (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_EditText\fP\&.
+.SS "\fBvoid\fP GLUI_CommandLine::dump (FILE *out, const char *text)"
+
+.SS "virtual const char* GLUI_CommandLine::get_history (\fBint\fPcommand_number) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 1714 of file glui\&.h\&.
+.SS "virtual \fBGLUI_String\fP& GLUI_CommandLine::get_history_str (\fBint\fPcommand_number)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 1716 of file glui\&.h\&.
+.SS "virtual const \fBGLUI_String\fP& GLUI_CommandLine::get_history_str (\fBint\fPcommand_number) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 1718 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_CommandLine::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_EditText\fP\&.
+.SS "virtual \fBvoid\fP GLUI_CommandLine::recall_history (\fBint\fPhistory_number)\fC [virtual]\fP"
+
+.SS "virtual \fBvoid\fP GLUI_CommandLine::reset_history (\fBvoid\fP)\fC [virtual]\fP"
+
+.SS "virtual \fBvoid\fP GLUI_CommandLine::scroll_history (\fBint\fPdirection)\fC [virtual]\fP"
+
+.SS "\fBint\fP GLUI_CommandLine::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_EditText\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool GLUI_CommandLine::commit_flag"
+
+.PP
+Definition at line 1707 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_CommandLine::curr_hist"
+
+.PP
+Definition at line 1704 of file glui\&.h\&.
+.SS "std::vector<\fBGLUI_String\fP> GLUI_CommandLine::hist_list"
+
+.PP
+Definition at line 1703 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_CommandLine::newest_hist"
+
+.PP
+Definition at line 1706 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_CommandLine::oldest_hist"
+
+.PP
+Definition at line 1705 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

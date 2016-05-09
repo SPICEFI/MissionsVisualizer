@@ -1,0 +1,96 @@
+\hypertarget{_a_r_b___multisample_8cpp}{\section{S\+S\+W\+C/src/\+G\+L/\+A\+R\+B\+\_\+\+Multisample.cpp File Reference}
+\label{_a_r_b___multisample_8cpp}\index{S\+S\+W\+C/src/\+G\+L/\+A\+R\+B\+\_\+\+Multisample.\+cpp@{S\+S\+W\+C/src/\+G\+L/\+A\+R\+B\+\_\+\+Multisample.\+cpp}}
+}
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$gl/gl.\+h$>$}\\*
+{\ttfamily \#include $<$gl/glu.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}arb\+\_\+multisample.\+h\char`\"{}}\\*
+Include dependency graph for A\+R\+B\+\_\+\+Multisample.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_a_r_b___multisample_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_a_r_b___multisample_8cpp_ac9792da6e4869780e07504635b3e1a42}{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+A\+R\+B}~0x2041
+\item 
+\#define \hyperlink{_a_r_b___multisample_8cpp_a99289a023da8e683eb7de95543e22c87}{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+A\+R\+B}~0x2042
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_a_r_b___multisample_8cpp_a76fd44e5387468f972f98855bdbbfb06}{W\+G\+Lis\+Extension\+Supported} (const char $\ast$extension)
+\item 
+bool \hyperlink{_a_r_b___multisample_8cpp_aa9c71d7929556d62cb9f2557a59cdc28}{Init\+Multisample} (H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance, H\+W\+N\+D h\+Wnd, P\+I\+X\+E\+L\+F\+O\+R\+M\+A\+T\+D\+E\+S\+C\+R\+I\+P\+T\+O\+R pfd)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_a_r_b___multisample_8cpp_a962f70d8234fe3b6d7b906082a5a82f5}{arb\+Multisample\+Supported} = false
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_a_r_b___multisample_8cpp_a24066f76b39416da011c1b9e55adaf1a}{arb\+Multisample\+Format} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_a_r_b___multisample_8cpp_ac9792da6e4869780e07504635b3e1a42}{\index{A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}!W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+A\+R\+B@{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+A\+R\+B}}
+\index{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+A\+R\+B@{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+A\+R\+B}!A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}}
+\subsubsection[{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+A\+R\+B}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+A\+R\+B~0x2041}}\label{_a_r_b___multisample_8cpp_ac9792da6e4869780e07504635b3e1a42}
+
+
+Definition at line 18 of file A\+R\+B\+\_\+\+Multisample.\+cpp.
+
+\hypertarget{_a_r_b___multisample_8cpp_a99289a023da8e683eb7de95543e22c87}{\index{A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}!W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+A\+R\+B@{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+A\+R\+B}}
+\index{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+A\+R\+B@{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+A\+R\+B}!A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}}
+\subsubsection[{W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+A\+R\+B}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+A\+R\+B~0x2042}}\label{_a_r_b___multisample_8cpp_a99289a023da8e683eb7de95543e22c87}
+
+
+Definition at line 19 of file A\+R\+B\+\_\+\+Multisample.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_a_r_b___multisample_8cpp_aa9c71d7929556d62cb9f2557a59cdc28}{\index{A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}!Init\+Multisample@{Init\+Multisample}}
+\index{Init\+Multisample@{Init\+Multisample}!A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}}
+\subsubsection[{Init\+Multisample}]{\setlength{\rightskip}{0pt plus 5cm}bool Init\+Multisample (
+\begin{DoxyParamCaption}
+\item[{H\+I\+N\+S\+T\+A\+N\+C\+E}]{h\+Instance, }
+\item[{H\+W\+N\+D}]{h\+Wnd, }
+\item[{P\+I\+X\+E\+L\+F\+O\+R\+M\+A\+T\+D\+E\+S\+C\+R\+I\+P\+T\+O\+R}]{pfd}
+\end{DoxyParamCaption}
+)}}\label{_a_r_b___multisample_8cpp_aa9c71d7929556d62cb9f2557a59cdc28}
+
+
+Definition at line 65 of file A\+R\+B\+\_\+\+Multisample.\+cpp.
+
+\hypertarget{_a_r_b___multisample_8cpp_a76fd44e5387468f972f98855bdbbfb06}{\index{A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}!W\+G\+Lis\+Extension\+Supported@{W\+G\+Lis\+Extension\+Supported}}
+\index{W\+G\+Lis\+Extension\+Supported@{W\+G\+Lis\+Extension\+Supported}!A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}}
+\subsubsection[{W\+G\+Lis\+Extension\+Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool W\+G\+Lis\+Extension\+Supported (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{extension}
+\end{DoxyParamCaption}
+)}}\label{_a_r_b___multisample_8cpp_a76fd44e5387468f972f98855bdbbfb06}
+
+
+Definition at line 25 of file A\+R\+B\+\_\+\+Multisample.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_a_r_b___multisample_8cpp_a24066f76b39416da011c1b9e55adaf1a}{\index{A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}!arb\+Multisample\+Format@{arb\+Multisample\+Format}}
+\index{arb\+Multisample\+Format@{arb\+Multisample\+Format}!A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}}
+\subsubsection[{arb\+Multisample\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} arb\+Multisample\+Format = 0}}\label{_a_r_b___multisample_8cpp_a24066f76b39416da011c1b9e55adaf1a}
+
+
+Definition at line 22 of file A\+R\+B\+\_\+\+Multisample.\+cpp.
+
+\hypertarget{_a_r_b___multisample_8cpp_a962f70d8234fe3b6d7b906082a5a82f5}{\index{A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}!arb\+Multisample\+Supported@{arb\+Multisample\+Supported}}
+\index{arb\+Multisample\+Supported@{arb\+Multisample\+Supported}!A\+R\+B\+\_\+\+Multisample.\+cpp@{A\+R\+B\+\_\+\+Multisample.\+cpp}}
+\subsubsection[{arb\+Multisample\+Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool arb\+Multisample\+Supported = false}}\label{_a_r_b___multisample_8cpp_a962f70d8234fe3b6d7b906082a5a82f5}
+
+
+Definition at line 21 of file A\+R\+B\+\_\+\+Multisample.\+cpp.
+

@@ -1,0 +1,248 @@
+.TH "SSWC/src/Routine.cpp" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/Routine.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Windows\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include 'GL\\glut\&.h'\fP
+.br
+\fC#include <gl\\GL\&.h>\fP
+.br
+\fC#include <gl\\GLU\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include 'Program\&.h'\fP
+.br
+\fC#include 'GL\\ARB_Multisample\&.h'\fP
+.br
+\fC#include 'App\&.h'\fP
+.br
+\fC#include 'Scene\&.h'\fP
+.br
+\fC#include 'Font\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCDS_FULLSCREEN\fP   4"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBOOL\fP \fBInitialize\fP (\fBGL_Window\fP *window, \fBKeys\fP *keys)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBUpdate\fP (DWORD milliseconds)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBCreateSkyBox\fP (float \fBx\fP, float \fBy\fP, float \fBz\fP, float \fBwidth\fP, float \fBheight\fP, float \fBlength\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBDraw\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBcenterX\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcenterY\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBprev_x\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBprev_y\fP"
+.br
+.ti -1c
+.RI "\fBglCamera\fP \fBg_Camera\fP"
+.br
+.ti -1c
+.RI "\fBGL_Window\fP * \fBg_window\fP"
+.br
+.ti -1c
+.RI "\fBKeys\fP * \fBg_keys\fP"
+.br
+.ti -1c
+.RI "\fBApp\fP \fBapp\fP"
+.br
+.ti -1c
+.RI "\fBScene\fP \fBSolarSystem\fP"
+.br
+.ti -1c
+.RI "\fBDate\fP \fBt\fP"
+.br
+.ti -1c
+.RI "\fBTGA\fP * \fBskyTexture\fP"
+.br
+.ti -1c
+.RI "\fBHDC\fP \fBinstanceHDC\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBid\fP = -1"
+.br
+.ti -1c
+.RI "\fBint\fP \fBidWhenMove\fP = -1"
+.br
+.ti -1c
+.RI "float \fBg_LightPosition\fP [4] = { 0, 0, 0, 1 }"
+.br
+.ti -1c
+.RI "bool \fBorientationMode\fP = true"
+.br
+.ti -1c
+.RI "bool \fBPLANET_CLICKED\fP = false"
+.br
+.ti -1c
+.RI "bool \fBStopSimulation\fP = false"
+.br
+.ti -1c
+.RI "bool \fBlastFrameSpaceWasPressed\fP = false"
+.br
+.ti -1c
+.RI "bool \fBmoveTimeBack\fP = false"
+.br
+.ti -1c
+.RI "\fBstd::string\fP \fBplanetName\fP"
+.br
+.ti -1c
+.RI "\fBFont\fP \fBfont\fP"
+.br
+.ti -1c
+.RI "\fBFont\fP \fBstandalonePointFont\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CDS_FULLSCREEN   4"
+
+.PP
+Definition at line 24 of file Routine\&.cpp\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP CreateSkyBox (floatx, floaty, floatz, floatwidth, floatheight, floatlength)"
+
+.PP
+Definition at line 255 of file Routine\&.cpp\&.
+.SS "\fBvoid\fP Draw (\fBvoid\fP)"
+
+.PP
+Definition at line 308 of file Routine\&.cpp\&.
+.SS "\fBBOOL\fP Initialize (\fBGL_Window\fP *window, \fBKeys\fP *keys)"
+
+.PP
+Definition at line 56 of file Routine\&.cpp\&.
+.SS "\fBvoid\fP Update (DWORDmilliseconds)"
+
+.PP
+Definition at line 145 of file Routine\&.cpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBApp\fP app"
+
+.PP
+Definition at line 36 of file Routine\&.cpp\&.
+.SS "\fBint\fP centerX"
+
+.PP
+Definition at line 27 of file Routine\&.cpp\&.
+.SS "\fBint\fP centerY"
+
+.PP
+Definition at line 28 of file Routine\&.cpp\&.
+.SS "\fBFont\fP font"
+
+.PP
+Definition at line 53 of file Routine\&.cpp\&.
+.SS "\fBglCamera\fP g_Camera"
+
+.PP
+Definition at line 32 of file Routine\&.cpp\&.
+.SS "\fBKeys\fP* g_keys"
+
+.PP
+Definition at line 34 of file Routine\&.cpp\&.
+.SS "float g_LightPosition[4] = { 0, 0, 0, 1 }"
+
+.PP
+Definition at line 44 of file Routine\&.cpp\&.
+.SS "\fBGL_Window\fP* g_window"
+
+.PP
+Definition at line 33 of file Routine\&.cpp\&.
+.SS "\fBint\fP \fBid\fP = -1"
+
+.PP
+Definition at line 41 of file Routine\&.cpp\&.
+.SS "\fBint\fP idWhenMove = -1"
+
+.PP
+Definition at line 42 of file Routine\&.cpp\&.
+.SS "\fBHDC\fP instanceHDC"
+
+.PP
+Definition at line 40 of file Routine\&.cpp\&.
+.SS "bool lastFrameSpaceWasPressed = false"
+
+.PP
+Definition at line 49 of file Routine\&.cpp\&.
+.SS "bool moveTimeBack = false"
+
+.PP
+Definition at line 50 of file Routine\&.cpp\&.
+.SS "bool orientationMode = true"
+
+.PP
+Definition at line 46 of file Routine\&.cpp\&.
+.SS "bool PLANET_CLICKED = false"
+
+.PP
+Definition at line 47 of file Routine\&.cpp\&.
+.SS "\fBstd::string\fP planetName"
+
+.PP
+Definition at line 52 of file Routine\&.cpp\&.
+.SS "\fBint\fP prev_x"
+
+.PP
+Definition at line 30 of file Routine\&.cpp\&.
+.SS "\fBint\fP prev_y"
+
+.PP
+Definition at line 30 of file Routine\&.cpp\&.
+.SS "\fBTGA\fP* skyTexture"
+
+.PP
+Definition at line 39 of file Routine\&.cpp\&.
+.SS "\fBScene\fP SolarSystem"
+
+.PP
+Definition at line 37 of file Routine\&.cpp\&.
+.SS "\fBFont\fP standalonePointFont"
+
+.PP
+Definition at line 54 of file Routine\&.cpp\&.
+.SS "bool StopSimulation = false"
+
+.PP
+Definition at line 48 of file Routine\&.cpp\&.
+.SS "\fBDate\fP \fBt\fP"
+
+.PP
+Definition at line 38 of file Routine\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

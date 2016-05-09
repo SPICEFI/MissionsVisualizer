@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_trajectory" kind="class" prot="public">
+    <compoundname>Trajectory</compoundname>
+    <includes refid="_trajectory_8h" local="no">Trajectory.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_trajectory_1a7e553e1118e6a4accfacb8fae0d24f2b" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="class_space_object" kindref="compound">SpaceObject</ref> &amp;</type>
+        <definition>const SpaceObject&amp; Trajectory::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="22" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a37e42637b529f9939b499600a07d2660" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_frame" kindref="compound">Frame</ref></type>
+        <definition>Frame Trajectory::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="23" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a8d881aa7724623b0a675a7f3cbe118bc" prot="protected" static="no" mutable="no">
+        <type><ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>LengthUnit Trajectory::unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="24" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1aa0634363940b3bfa6c069a58b89fe975" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="class_space_object" kindref="compound">SpaceObject</ref> *</type>
+        <definition>const SpaceObject* Trajectory::relativeTo</definition>
+        <argsstring></argsstring>
+        <name>relativeTo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a28f0f31968990bc14ef64093f863f15e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Trajectory::staticDefined</definition>
+        <argsstring></argsstring>
+        <name>staticDefined</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="28" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a8a7ff5214ca817280dea38c3f5c62cbf" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_vector3" kindref="compound">Vector3</ref> &gt;</type>
+        <definition>std::vector&lt;Vector3&gt; Trajectory::staticTrajectory</definition>
+        <argsstring></argsstring>
+        <name>staticTrajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1ac51564d2490c6d02fce1b28d67afe8e6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Trajectory::incrementalDefined</definition>
+        <argsstring></argsstring>
+        <name>incrementalDefined</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="31" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a6d2fbd4cfaec29cfdf4f801318a88f3d" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date Trajectory::prevDate</definition>
+        <argsstring></argsstring>
+        <name>prevDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="32" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a78edc3b797f73f84656279d08cb2bd37" prot="protected" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="class_vector3" kindref="compound">Vector3</ref> &gt;</type>
+        <definition>std::deque&lt;Vector3&gt; Trajectory::incrementalTrajectory</definition>
+        <argsstring></argsstring>
+        <name>incrementalTrajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="33" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a37ed928f5e147cf76d702f0aae0f0bee" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date Trajectory::incStartDate</definition>
+        <argsstring></argsstring>
+        <name>incStartDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="34" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a7330cbb6db806aefd41b22fcedb00e83" prot="protected" static="no" mutable="no">
+        <type><ref refid="_quantity_8h_1ab180382d5dc1bcb91259cbd59a5d86fc" kindref="member">Time</ref></type>
+        <definition>Time Trajectory::incHistoryDuration</definition>
+        <argsstring></argsstring>
+        <name>incHistoryDuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="35" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a8894f4a18e771016f5e76d52209e6eee" prot="protected" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int Trajectory::incResolution</definition>
+        <argsstring></argsstring>
+        <name>incResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="36" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a49cef2583b8b87c9d9afe963d381426d" prot="protected" static="no" mutable="no">
+        <type><ref refid="_quantity_8h_1ab180382d5dc1bcb91259cbd59a5d86fc" kindref="member">Time</ref></type>
+        <definition>Time Trajectory::incStepDuration</definition>
+        <argsstring></argsstring>
+        <name>incStepDuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="37" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1ab04d69563f531cfbdf3f61f107592d44" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date Trajectory::nextPointDate</definition>
+        <argsstring></argsstring>
+        <name>nextPointDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="38" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a7cf337f408aa8f27d93c68d40d5030ce" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Trajectory::lineWidth</definition>
+        <argsstring></argsstring>
+        <name>lineWidth</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="40" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a3000185975d15a117e751eb9908593fe" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Trajectory::red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <initializer>= 255.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="41" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1a26301a3b5552b8dabc1b620a426fbcf0" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Trajectory::green</definition>
+        <argsstring></argsstring>
+        <name>green</name>
+        <initializer>= 255.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="42" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trajectory_1aab23c0150b87a4df1564c403ecd17507" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Trajectory::blue</definition>
+        <argsstring></argsstring>
+        <name>blue</name>
+        <initializer>= 255.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="43" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_trajectory_1af06089eb6ef979e970ffea5c27d9d9c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Trajectory::Trajectory</definition>
+        <argsstring>(const SpaceObject &amp;obj, Frame frame, const LengthUnit &amp;unit)</argsstring>
+        <name>Trajectory</name>
+        <param>
+          <type>const <ref refid="class_space_object" kindref="compound">SpaceObject</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="class_frame" kindref="compound">Frame</ref></type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="45" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.cpp" bodystart="4" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1ac673c37025ca5353ad99ab41c936e75d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Trajectory::~Trajectory</definition>
+        <argsstring>()</argsstring>
+        <name>~Trajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="47" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1a8b446ebdbb4e99e0688ba5eff107ad2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Trajectory::SetRelativeTo</definition>
+        <argsstring>(const SpaceObject &amp;obj)</argsstring>
+        <name>SetRelativeTo</name>
+        <param>
+          <type>const <ref refid="class_space_object" kindref="compound">SpaceObject</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="49" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1afbad58d4ab10afa7d50ec213380e4000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Trajectory::SetRelativeToFrameCenter</definition>
+        <argsstring>()</argsstring>
+        <name>SetRelativeToFrameCenter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="50" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1a14dc0715fca73b67deaf3b86855b73d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Trajectory::SetStaticParams</definition>
+        <argsstring>(Date startDate, Date endDate, int resolution)</argsstring>
+        <name>SetStaticParams</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>endDate</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>resolution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="51" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.cpp" bodystart="29" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1a7fd57ddb9ca5afce1aaffb7e6fad66b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Trajectory::SetIncrementalParams</definition>
+        <argsstring>(Date startDate, Time historyDuration, int resolution)</argsstring>
+        <name>SetIncrementalParams</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type><ref refid="_quantity_8h_1ab180382d5dc1bcb91259cbd59a5d86fc" kindref="member">Time</ref></type>
+          <declname>historyDuration</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>resolution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="52" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.cpp" bodystart="41" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1a9386e11e76cd7769447559ca8b6013b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::deque&lt; <ref refid="class_vector3" kindref="compound">Vector3</ref> &gt; &amp;</type>
+        <definition>const std::deque&lt; Vector3 &gt; &amp; Trajectory::GetIncrementalTrajectory</definition>
+        <argsstring>(Date curDate)</argsstring>
+        <name>GetIncrementalTrajectory</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>curDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="54" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.cpp" bodystart="53" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1a6cb4148a8a21abce789f2a0097faf092" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="class_vector3" kindref="compound">Vector3</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt; Vector3 &gt; &amp; Trajectory::GetStaticTrajectory</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStaticTrajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="55" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.cpp" bodystart="72" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1a13373b83b45bb664c3b9b8ef8b108e75" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Trajectory::IncrementalDefined</definition>
+        <argsstring>() const </argsstring>
+        <name>IncrementalDefined</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="57" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1a44237f7a5422f3006b4b2aa64cadbb9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Trajectory::StaticDefined</definition>
+        <argsstring>() const </argsstring>
+        <name>StaticDefined</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="62" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_trajectory_1aa0c329f8981a121d89d142e60146fc12" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date Trajectory::GetFromDate</definition>
+        <argsstring>(Date curDate) const </argsstring>
+        <name>GetFromDate</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>curDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="72" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trajectory_1a46658ecd44caf4b4eb36739d196a48fb" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Trajectory::GetPosition</definition>
+        <argsstring>(Date date, const LengthUnit &amp;unit) const </argsstring>
+        <name>GetPosition</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="81" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="81" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1000">
+        <label>Trajectory</label>
+        <link refid="class_trajectory"/>
+        <childnode refid="1001" relation="usage">
+          <edgelabel>obj</edgelabel>
+          <edgelabel>relativeTo</edgelabel>
+        </childnode>
+        <childnode refid="1002" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+        <childnode refid="1003" relation="usage">
+          <edgelabel>unit</edgelabel>
+        </childnode>
+        <childnode refid="1004" relation="usage">
+          <edgelabel>nextPointDate</edgelabel>
+          <edgelabel>prevDate</edgelabel>
+          <edgelabel>incStartDate</edgelabel>
+        </childnode>
+        <childnode refid="1005" relation="usage">
+          <edgelabel>incHistoryDuration</edgelabel>
+          <edgelabel>incStepDuration</edgelabel>
+        </childnode>
+      </node>
+      <node id="1003">
+        <label>Unit&lt; 1, 0, 0 &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+      <node id="1004">
+        <label>Date</label>
+        <link refid="class_date"/>
+      </node>
+      <node id="1005">
+        <label>Quantity&lt; 0, 1, 0 &gt;</label>
+        <link refid="class_quantity"/>
+      </node>
+      <node id="1002">
+        <label>Frame</label>
+        <link refid="class_frame"/>
+        <childnode refid="1002" relation="usage">
+          <edgelabel>J2000</edgelabel>
+          <edgelabel>ECLIPJ2000</edgelabel>
+        </childnode>
+      </node>
+      <node id="1001">
+        <label>SpaceObject</label>
+        <link refid="class_space_object"/>
+        <childnode refid="1001" relation="usage">
+          <edgelabel>Sun</edgelabel>
+          <edgelabel>SSB</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" line="18" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Trajectory.h" bodystart="17" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_trajectory_1aab23c0150b87a4df1564c403ecd17507" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>blue</name></member>
+      <member refid="class_trajectory_1a37e42637b529f9939b499600a07d2660" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>frame</name></member>
+      <member refid="class_trajectory_1aa0c329f8981a121d89d142e60146fc12" prot="private" virt="non-virtual"><scope>Trajectory</scope><name>GetFromDate</name></member>
+      <member refid="class_trajectory_1a9386e11e76cd7769447559ca8b6013b1" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>GetIncrementalTrajectory</name></member>
+      <member refid="class_trajectory_1a46658ecd44caf4b4eb36739d196a48fb" prot="private" virt="non-virtual"><scope>Trajectory</scope><name>GetPosition</name></member>
+      <member refid="class_trajectory_1a6cb4148a8a21abce789f2a0097faf092" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>GetStaticTrajectory</name></member>
+      <member refid="class_trajectory_1a26301a3b5552b8dabc1b620a426fbcf0" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>green</name></member>
+      <member refid="class_trajectory_1a7330cbb6db806aefd41b22fcedb00e83" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>incHistoryDuration</name></member>
+      <member refid="class_trajectory_1a13373b83b45bb664c3b9b8ef8b108e75" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>IncrementalDefined</name></member>
+      <member refid="class_trajectory_1ac51564d2490c6d02fce1b28d67afe8e6" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>incrementalDefined</name></member>
+      <member refid="class_trajectory_1a78edc3b797f73f84656279d08cb2bd37" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>incrementalTrajectory</name></member>
+      <member refid="class_trajectory_1a8894f4a18e771016f5e76d52209e6eee" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>incResolution</name></member>
+      <member refid="class_trajectory_1a37ed928f5e147cf76d702f0aae0f0bee" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>incStartDate</name></member>
+      <member refid="class_trajectory_1a49cef2583b8b87c9d9afe963d381426d" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>incStepDuration</name></member>
+      <member refid="class_trajectory_1a7cf337f408aa8f27d93c68d40d5030ce" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>lineWidth</name></member>
+      <member refid="class_trajectory_1ab04d69563f531cfbdf3f61f107592d44" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>nextPointDate</name></member>
+      <member refid="class_trajectory_1a7e553e1118e6a4accfacb8fae0d24f2b" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>obj</name></member>
+      <member refid="class_trajectory_1a6d2fbd4cfaec29cfdf4f801318a88f3d" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>prevDate</name></member>
+      <member refid="class_trajectory_1a3000185975d15a117e751eb9908593fe" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>red</name></member>
+      <member refid="class_trajectory_1aa0634363940b3bfa6c069a58b89fe975" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>relativeTo</name></member>
+      <member refid="class_trajectory_1a7fd57ddb9ca5afce1aaffb7e6fad66b0" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>SetIncrementalParams</name></member>
+      <member refid="class_trajectory_1a8b446ebdbb4e99e0688ba5eff107ad2e" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>SetRelativeTo</name></member>
+      <member refid="class_trajectory_1afbad58d4ab10afa7d50ec213380e4000" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>SetRelativeToFrameCenter</name></member>
+      <member refid="class_trajectory_1a14dc0715fca73b67deaf3b86855b73d4" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>SetStaticParams</name></member>
+      <member refid="class_trajectory_1a28f0f31968990bc14ef64093f863f15e" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>staticDefined</name></member>
+      <member refid="class_trajectory_1a44237f7a5422f3006b4b2aa64cadbb9c" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>StaticDefined</name></member>
+      <member refid="class_trajectory_1a8a7ff5214ca817280dea38c3f5c62cbf" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>staticTrajectory</name></member>
+      <member refid="class_trajectory_1af06089eb6ef979e970ffea5c27d9d9c1" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>Trajectory</name></member>
+      <member refid="class_trajectory_1a8d881aa7724623b0a675a7f3cbe118bc" prot="protected" virt="non-virtual"><scope>Trajectory</scope><name>unit</name></member>
+      <member refid="class_trajectory_1ac673c37025ca5353ad99ab41c936e75d" prot="public" virt="non-virtual"><scope>Trajectory</scope><name>~Trajectory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

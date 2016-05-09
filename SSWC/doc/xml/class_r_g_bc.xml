@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_r_g_bc" kind="class" prot="public">
+    <compoundname>RGBc</compoundname>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_g_bc_1a924706b7ae3839bd89d84a41a38ac86a" prot="public" static="no" mutable="no">
+        <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+        <definition>Byte RGBc::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="82" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_g_bc_1a0b4fc208f3eb1d14adbd67a0d7c72843" prot="public" static="no" mutable="no">
+        <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+        <definition>Byte RGBc::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="82" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_g_bc_1a587697e813f12fadbaafea78450dce93" prot="public" static="no" mutable="no">
+        <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+        <definition>Byte RGBc::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="82" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_g_bc_1a60b887d5881c06dcb2ba0d2e75e01855" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void RGBc::set</definition>
+        <argsstring>(Byte r, Byte g, Byte b)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="84" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_g_bc_1aeb6de917bf15dabcde12c50f7e8bfa3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RGBc::RGBc</definition>
+        <argsstring>(void)</argsstring>
+        <name>RGBc</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="86" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_g_bc_1aaa6e6a4e21d3112836924657ea40cb84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RGBc::RGBc</definition>
+        <argsstring>(Byte r, Byte g, Byte b)</argsstring>
+        <name>RGBc</name>
+        <param>
+          <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type><ref refid="glui_8h_1a8390de1c62e036e839ec8150711d6539" kindref="member">Byte</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="87" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="80" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="80" bodyend="88"/>
+    <listofallmembers>
+      <member refid="class_r_g_bc_1a587697e813f12fadbaafea78450dce93" prot="public" virt="non-virtual"><scope>RGBc</scope><name>b</name></member>
+      <member refid="class_r_g_bc_1a0b4fc208f3eb1d14adbd67a0d7c72843" prot="public" virt="non-virtual"><scope>RGBc</scope><name>g</name></member>
+      <member refid="class_r_g_bc_1a924706b7ae3839bd89d84a41a38ac86a" prot="public" virt="non-virtual"><scope>RGBc</scope><name>r</name></member>
+      <member refid="class_r_g_bc_1aeb6de917bf15dabcde12c50f7e8bfa3a" prot="public" virt="non-virtual"><scope>RGBc</scope><name>RGBc</name></member>
+      <member refid="class_r_g_bc_1aaa6e6a4e21d3112836924657ea40cb84" prot="public" virt="non-virtual"><scope>RGBc</scope><name>RGBc</name></member>
+      <member refid="class_r_g_bc_1a60b887d5881c06dcb2ba0d2e75e01855" prot="public" virt="non-virtual"><scope>RGBc</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

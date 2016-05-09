@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_vector3_8h" kind="file">
+    <compoundname>Vector3.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">stdexcept</includes>
+    <includedby refid="_frame_8h" local="yes">SSWC/src/CSpice/Frame.h</includedby>
+    <includedby refid="_space_object_8h" local="yes">SSWC/src/CSpice/SpaceObject.h</includedby>
+    <includedby refid="_vector3_8cpp" local="yes">SSWC/src/Math/Vector3.cpp</includedby>
+    <incdepgraph>
+      <node id="1873">
+        <label>cmath</label>
+      </node>
+      <node id="1874">
+        <label>stdexcept</label>
+      </node>
+      <node id="1872">
+        <label>SSWC/src/Math/Vector3.h</label>
+        <link refid="Vector3.h"/>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1893">
+        <label>SSWC/src/CSpice/Frame.cpp</label>
+        <link refid="_frame_8cpp"/>
+      </node>
+      <node id="1888">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="1885">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="1883">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+      </node>
+      <node id="1891">
+        <label>SSWC/src/CSpice/SpaceBody.cpp</label>
+        <link refid="_space_body_8cpp"/>
+      </node>
+      <node id="1881">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="1882" relation="include">
+        </childnode>
+        <childnode refid="1883" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+      </node>
+      <node id="1882">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="1876">
+        <label>SSWC/src/CSpice/Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+      </node>
+      <node id="1887">
+        <label>SSWC/src/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+      </node>
+      <node id="1879">
+        <label>SSWC/src/App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+      </node>
+      <node id="1886">
+        <label>SSWC/src/Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1880">
+        <label>SSWC/src/App.cpp</label>
+        <link refid="_app_8cpp"/>
+      </node>
+      <node id="1884">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+      <node id="1889">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="_planet_8cpp"/>
+      </node>
+      <node id="1892">
+        <label>SSWC/src/CSpice/SpaceObject.cpp</label>
+        <link refid="_space_object_8cpp"/>
+      </node>
+      <node id="1877">
+        <label>SSWC/src/CSpice/SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1892" relation="include">
+        </childnode>
+      </node>
+      <node id="1890">
+        <label>SSWC/src/CSpice/SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+      </node>
+      <node id="1894">
+        <label>SSWC/src/Math/Vector3.cpp</label>
+        <link refid="_vector3_8cpp"/>
+      </node>
+      <node id="1875">
+        <label>SSWC/src/Math/Vector3.h</label>
+        <link refid="Vector3.h"/>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+      </node>
+      <node id="1878">
+        <label>SSWC/src/CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1879" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_vector3" prot="public">Vector3</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_vector3_8h_1ac286f8f6c9d6ed9817f0f989b0aec100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void RotationMatrix</definition>
+        <argsstring>(float *matrix, const Vector3 &amp;axis, float angle)</argsstring>
+        <name>RotationMatrix</name>
+        <param>
+          <type>float *</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Vector3.h" line="54" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Vector3.cpp" bodystart="7" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//*********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//*********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//******This<sp/>class<sp/>is<sp/>made<sp/>to<sp/>ease<sp/>************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//***********work<sp/>with<sp/>camera******************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//*********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//*********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_vector3" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_vector3" kindref="compound">Vector3</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/><ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/><ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Vector<sp/>coordinates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_1a0f49191f7e001e7f7ae1cb49522118b4" kindref="member">Vector3</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_1a0f49191f7e001e7f7ae1cb49522118b4" kindref="member">Vector3</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_1a0f49191f7e001e7f7ae1cb49522118b4" kindref="member">Vector3</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>ptr);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_1a5545e13e2e2861ece8f14b12a6a8101f" kindref="member">~Vector3</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1a83547b4ef551fd45456a4106c178ca27" kindref="member">Set</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1ab016fd3f3dc962c2c496b61fc78f3610" kindref="member">Assign</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>ptr);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1ab6f156446cbef2ebc0c84d73b8cad23a" kindref="member">Normalise</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1a1e3ec2e499cb73c156ce9bc1198481d2" kindref="member">Length</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1a86513faf42cf06f6c4d379b048a61d6f" kindref="member">MultVecByMatrix</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="glext_8h_1a7b24a3f2f56eb1244ae69dacb4fecb6f" kindref="member">matrix</ref>,<sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//v2<sp/>-<sp/>is<sp/>vector<sp/>v1,<sp/>multiplied<sp/>by<sp/>rotation<sp/>matrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1a310883f49b5c0ffa5d75b83cc0a2b7c0" kindref="member">RotateAroudVec</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>around,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9e06c1f76a20fed54ca742cd25cb02c4" kindref="member">angle</ref>,<sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//v3<sp/>-<sp/>is<sp/>vector<sp/>v1,<sp/>rotated<sp/>around<sp/>v2<sp/>on<sp/>angle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1a8c1f2fa153205aa129aabef7c89cef61" kindref="member">DotProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_vector3_1a49712c84065d54dfd3c93a905db1110b" kindref="member">CrossProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1ae3eee513e7f547d7e88837db44bec737" kindref="member">AngleBetween</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_vector3_1ab30b26971bc8e566d13d2311cc578a3c" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="glext_8h_1a435c176a02c061b43e19bdf7c86cceae" kindref="member">v1</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_vector3_1a5a8b19645bb9837d0b637d6d212d095c" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="glext_8h_1a435c176a02c061b43e19bdf7c86cceae" kindref="member">v1</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="class_vector3_1aedb0fcbe51b139e9299311bce133fe90" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>rVector);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="class_vector3_1ab337fe4b0c5fd44657f42427e265c982" kindref="member">operator*=</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_vector3_1ab8bb1a236776d951a2e43b3ca9448bb2" kindref="member">operator*</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1a7fbc8e9db7df7cf5b49f9f6ff3f73e55" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_vector3_1a96074c1245025a7b6d345a63548033b7" kindref="member">i</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="class_vector3_1a7d95e4d1e3a740c70a4f7d63d0988791" kindref="member">operator+=</ref>(<ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>lVector,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>rVector);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_vector3_1a96074c1245025a7b6d345a63548033b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="class_vector3_1a96074c1245025a7b6d345a63548033b7" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="49" refid="class_vector3_1ab45f6dbb5d5c71c4ef9ffaa6a9cd300f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="class_vector3_1ab45f6dbb5d5c71c4ef9ffaa6a9cd300f" kindref="member">j</ref>;</highlight></codeline>
+<codeline lineno="50" refid="class_vector3_1a659bddc1d76c28562050e2316184cdda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="class_vector3_1a659bddc1d76c28562050e2316184cdda" kindref="member">k</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vector3_8h_1ac286f8f6c9d6ed9817f0f989b0aec100" kindref="member">RotationMatrix</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<ref refid="glext_8h_1a7b24a3f2f56eb1244ae69dacb4fecb6f" kindref="member">matrix</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>axis,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9e06c1f76a20fed54ca742cd25cb02c4" kindref="member">angle</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//creates<sp/>rotation<sp/>matrix<sp/>around<sp/>axis<sp/>on<sp/>angle</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Vector3.h"/>
+  </compounddef>
+</doxygen>

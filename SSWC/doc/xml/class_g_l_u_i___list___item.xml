@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___list___item" kind="class" prot="public">
+    <compoundname>GLUI_List_Item</compoundname>
+    <basecompoundref refid="class_g_l_u_i___node" prot="public" virt="non-virtual">GLUI_Node</basecompoundref>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___list___item_1a8d7db7c4b7dd085352de5d1a6b849da2" prot="public" static="no" mutable="no">
+        <type><ref refid="glui_8h_1aada824856f7bcf29794719981ebd8f60" kindref="member">GLUI_String</ref></type>
+        <definition>GLUI_String GLUI_List_Item::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2083" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2083" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___list___item_1a329b7a460a0e449e4bb0bdc2e8ba519c" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_List_Item::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2084" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2084" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="693">
+        <label>GLUI_List_Item</label>
+        <link refid="class_g_l_u_i___list___item"/>
+        <childnode refid="694" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="695">
+        <label>GLUI_List_Item</label>
+        <link refid="class_g_l_u_i___list___item"/>
+        <childnode refid="696" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="696">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+        <childnode refid="696" relation="usage">
+          <edgelabel>prev_sibling</edgelabel>
+          <edgelabel>next_sibling</edgelabel>
+          <edgelabel>child_head</edgelabel>
+          <edgelabel>parent_node</edgelabel>
+          <edgelabel>child_tail</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="2081" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="2080" bodyend="2085"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___node_1a02cf295c81cebe31c39e95403dbadbc1" prot="protected" virt="non-virtual"><scope>GLUI_List_Item</scope><name>add_child_to_control</name></member>
+      <member refid="class_g_l_u_i___node_1abdcdd643758adab07580124187565fcd" prot="public" virt="virtual"><scope>GLUI_List_Item</scope><name>add_control</name></member>
+      <member refid="class_g_l_u_i___node_1ad9370e7f62e83bb720063d2439f544c2" prot="protected" virt="non-virtual"><scope>GLUI_List_Item</scope><name>child_head</name></member>
+      <member refid="class_g_l_u_i___node_1a971d8e606c1a3442ad9b8681bdb9ed59" prot="protected" virt="non-virtual"><scope>GLUI_List_Item</scope><name>child_tail</name></member>
+      <member refid="class_g_l_u_i___node_1abce29cf0ade68e9e5702025f710cb1e8" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>dump</name></member>
+      <member refid="class_g_l_u_i___node_1a631b094804b887c0d091ece2786543d1" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>first_child</name></member>
+      <member refid="class_g_l_u_i___node_1ace20232965e8d9da8f3d286113d5572a" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>first_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a066e5d80bfb9925bdb034c29da9c844c" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>GLUI_Node</name></member>
+      <member refid="class_g_l_u_i___list___item_1a329b7a460a0e449e4bb0bdc2e8ba519c" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>id</name></member>
+      <member refid="class_g_l_u_i___node_1a4825cdc843f0e2b46d75fe5cb9e8ba35" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>last_child</name></member>
+      <member refid="class_g_l_u_i___node_1a6458e5a6af00ddf2ebb9271c06fa2931" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>last_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a3feadb4b6d58122ff5449adfb4a323bc" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>link_this_to_parent_first</name></member>
+      <member refid="class_g_l_u_i___node_1a28eb5c7bf5a0edf5b7ba2502384c6544" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>link_this_to_parent_last</name></member>
+      <member refid="class_g_l_u_i___node_1ad8d7fd8a437eeec4a72b73064dc954b4" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>link_this_to_sibling_next</name></member>
+      <member refid="class_g_l_u_i___node_1a5825555fc493712a1d6f24235f59f25a" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>link_this_to_sibling_prev</name></member>
+      <member refid="class_g_l_u_i___node_1a7901214f386113b417a25de023476317" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>next</name></member>
+      <member refid="class_g_l_u_i___node_1a2c99ef6a1290035f98871d859d05e890" prot="protected" virt="non-virtual"><scope>GLUI_List_Item</scope><name>next_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a8ed65d447784f6f88bd3e2e2bcac6cdb" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>parent</name></member>
+      <member refid="class_g_l_u_i___node_1a308f39e8a182f499139381840418a573" prot="protected" virt="non-virtual"><scope>GLUI_List_Item</scope><name>parent_node</name></member>
+      <member refid="class_g_l_u_i___node_1a84892bf13144651007640c5f25b51145" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>prev</name></member>
+      <member refid="class_g_l_u_i___node_1afa72f0491ca54ce8d0a0af7049de8049" prot="protected" virt="non-virtual"><scope>GLUI_List_Item</scope><name>prev_sibling</name></member>
+      <member refid="class_g_l_u_i___list___item_1a8d7db7c4b7dd085352de5d1a6b849da2" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>text</name></member>
+      <member refid="class_g_l_u_i___node_1a48b62b12bf8c466fc54fbbbf30183493" prot="public" virt="non-virtual"><scope>GLUI_List_Item</scope><name>unlink</name></member>
+      <member refid="class_g_l_u_i___node_1ae6982edc46ab73963ee8ce9f6d035982" prot="public" virt="virtual"><scope>GLUI_List_Item</scope><name>~GLUI_Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

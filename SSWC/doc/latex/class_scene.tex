@@ -1,0 +1,325 @@
+\hypertarget{class_scene}{\section{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Collaboration diagram for Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=122pt]{class_scene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene} ()
+\item 
+\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_a0f38de768620105c6026743a2bd8a851}{add\+Planet} (\hyperlink{class_planet}{Planet} \&planet)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_a2708a12dc045758611cabc6aad195a4a}{render} (\hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_a67017a8885dec76253de41a72bb4e261}{Mark\+Planet\+With\+I\+D} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}, bool \hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_af5e1d394058db0bf6640222690ea1afe}{Ste\+Clicked\+To\+Planet\+With\+I\+D} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_a1e1e900238cc3e383cb2796530c443dc}{Show\+Info\+About\+Planet\+With\+I\+D} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_ad468e34bb62f2acc253820d883f1c141}{Render\+Planet\+With\+I\+D} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}, \hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\item 
+const \hyperlink{class_planet}{Planet} \& \hyperlink{class_scene_afb89caf734fd0ae76088a766443d87f3}{Find\+Object\+With\+I\+D} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} I\+D)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_a7f103ba316c6047fac315c1bea9e0d2b}{Add\+Planet\+To\+Track\+Distance\+To} (\hyperlink{class_planet}{Planet} \&planet)
+\item 
+float \hyperlink{class_scene_ab5bcf1b4b9bc790e652ccf8ee441c3a2}{Update\+Tracking\+Distances} (\hyperlink{class_vector3}{Vector3} \&scene\+Camera\+Position, \hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_ac0e99f535b07d82bcca3a000da0e76cb}{Add\+Trajectory\+As\+Space\+Object} (const \hyperlink{class_space_object}{Space\+Object} \&\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}, \hyperlink{class_frame}{Frame} frame, \hyperlink{class_date}{Date} starting\+Date)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_a694c16b6f0e804e11c429edbc00f4663}{Add\+Standalone\+Space\+Point} (const \hyperlink{class_space_object}{Space\+Object} \&\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}, \hyperlink{class_font}{Font} \hyperlink{_routine_8cpp_a85d377224c6bd1d2c937ad1635c4a715}{standalone\+Point\+Font})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_ababf385f67b5638a0ea745a832854118}{Render\+Standalone\+Trajectories} (\hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, float line\+Width, float red, float \hyperlink{glext_8h_ac14cda87cf6c751d53b65a3cd41c35a1}{green}, float \hyperlink{glext_8h_a1853b32584a90fa75432925f3e26d0e8}{blue})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_scene_a67b11a489741afa1248b10c7c82dd445}{Render\+Stabdalone\+Space\+Points} (\hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_planet}{Planet} $>$ \hyperlink{class_scene_a9c898688ba4edd96b93c0cf9b6ce4260}{planets}
+\item 
+std\+::vector$<$ \hyperlink{class_trajectory}{Trajectory} $>$ \hyperlink{class_scene_a596bcc7043ee58e60705fa050506347c}{standalone\+Trajectories}
+\item 
+std\+::vector$<$ \hyperlink{class_space_object}{Space\+Object} $>$ \hyperlink{class_scene_ae39b7e0774cc10fc19d6898982ae2a0e}{standalone\+Space\+Points}
+\item 
+float \hyperlink{class_scene_a9e5749b2c90c6376bb86fb9cc2dc3eac}{min\+Distance\+To\+Render\+Full\+Planet}
+\item 
+double \hyperlink{class_scene_a131f85de64b1959b34a2ab49b2e61b7f}{scale} = 0.\+000004f
+\item 
+double \hyperlink{class_scene_ae69efb71a67f64073b2c7b601e59973a}{distance\+Scale} = 0.\+0000004f
+\item 
+\hyperlink{wglext_8h_aaf5a06bd464c6ec72cf68b4819afebe3}{H\+D\+C} \hyperlink{class_scene_a5ec6d8807ffa395ae8f4feda8ccc0560}{hdc}
+\item 
+\hyperlink{class_font}{Font} \hyperlink{class_scene_a1efe4e0081be96c06ad22a682a898310}{font}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Scene.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}{\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\subsubsection[{Scene}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scene_ad10176d75a9cc0da56626f682d083507}
+
+
+Definition at line 4 of file Scene.\+cpp.
+
+\hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}{\index{Scene@{Scene}!````~Scene@{$\sim$\+Scene}}
+\index{````~Scene@{$\sim$\+Scene}!Scene@{Scene}}
+\subsubsection[{$\sim$\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::$\sim$\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}
+
+
+Definition at line 10 of file Scene.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_scene_a0f38de768620105c6026743a2bd8a851}{\index{Scene@{Scene}!add\+Planet@{add\+Planet}}
+\index{add\+Planet@{add\+Planet}!Scene@{Scene}}
+\subsubsection[{add\+Planet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::add\+Planet (
+\begin{DoxyParamCaption}
+\item[{{\bf Planet} \&}]{planet}
+\end{DoxyParamCaption}
+)}}\label{class_scene_a0f38de768620105c6026743a2bd8a851}
+
+
+Definition at line 14 of file Scene.\+cpp.
+
+\hypertarget{class_scene_a7f103ba316c6047fac315c1bea9e0d2b}{\index{Scene@{Scene}!Add\+Planet\+To\+Track\+Distance\+To@{Add\+Planet\+To\+Track\+Distance\+To}}
+\index{Add\+Planet\+To\+Track\+Distance\+To@{Add\+Planet\+To\+Track\+Distance\+To}!Scene@{Scene}}
+\subsubsection[{Add\+Planet\+To\+Track\+Distance\+To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Add\+Planet\+To\+Track\+Distance\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf Planet} \&}]{planet}
+\end{DoxyParamCaption}
+)}}\label{class_scene_a7f103ba316c6047fac315c1bea9e0d2b}
+\hypertarget{class_scene_a694c16b6f0e804e11c429edbc00f4663}{\index{Scene@{Scene}!Add\+Standalone\+Space\+Point@{Add\+Standalone\+Space\+Point}}
+\index{Add\+Standalone\+Space\+Point@{Add\+Standalone\+Space\+Point}!Scene@{Scene}}
+\subsubsection[{Add\+Standalone\+Space\+Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Add\+Standalone\+Space\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{obj, }
+\item[{{\bf Font}}]{standalone\+Point\+Font}
+\end{DoxyParamCaption}
+)}}\label{class_scene_a694c16b6f0e804e11c429edbc00f4663}
+
+
+Definition at line 161 of file Scene.\+cpp.
+
+\hypertarget{class_scene_ac0e99f535b07d82bcca3a000da0e76cb}{\index{Scene@{Scene}!Add\+Trajectory\+As\+Space\+Object@{Add\+Trajectory\+As\+Space\+Object}}
+\index{Add\+Trajectory\+As\+Space\+Object@{Add\+Trajectory\+As\+Space\+Object}!Scene@{Scene}}
+\subsubsection[{Add\+Trajectory\+As\+Space\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Add\+Trajectory\+As\+Space\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{obj, }
+\item[{{\bf Frame}}]{frame, }
+\item[{{\bf Date}}]{starting\+Date}
+\end{DoxyParamCaption}
+)}}\label{class_scene_ac0e99f535b07d82bcca3a000da0e76cb}
+
+
+Definition at line 132 of file Scene.\+cpp.
+
+\hypertarget{class_scene_afb89caf734fd0ae76088a766443d87f3}{\index{Scene@{Scene}!Find\+Object\+With\+I\+D@{Find\+Object\+With\+I\+D}}
+\index{Find\+Object\+With\+I\+D@{Find\+Object\+With\+I\+D}!Scene@{Scene}}
+\subsubsection[{Find\+Object\+With\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Planet} \& Scene\+::\+Find\+Object\+With\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{I\+D}
+\end{DoxyParamCaption}
+)}}\label{class_scene_afb89caf734fd0ae76088a766443d87f3}
+
+
+Definition at line 30 of file Scene.\+cpp.
+
+\hypertarget{class_scene_a67017a8885dec76253de41a72bb4e261}{\index{Scene@{Scene}!Mark\+Planet\+With\+I\+D@{Mark\+Planet\+With\+I\+D}}
+\index{Mark\+Planet\+With\+I\+D@{Mark\+Planet\+With\+I\+D}!Scene@{Scene}}
+\subsubsection[{Mark\+Planet\+With\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Mark\+Planet\+With\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{id, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_scene_a67017a8885dec76253de41a72bb4e261}
+
+
+Definition at line 42 of file Scene.\+cpp.
+
+\hypertarget{class_scene_a2708a12dc045758611cabc6aad195a4a}{\index{Scene@{Scene}!render@{render}}
+\index{render@{render}!Scene@{Scene}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::render (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{t, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{class_scene_a2708a12dc045758611cabc6aad195a4a}
+
+
+Definition at line 20 of file Scene.\+cpp.
+
+\hypertarget{class_scene_ad468e34bb62f2acc253820d883f1c141}{\index{Scene@{Scene}!Render\+Planet\+With\+I\+D@{Render\+Planet\+With\+I\+D}}
+\index{Render\+Planet\+With\+I\+D@{Render\+Planet\+With\+I\+D}!Scene@{Scene}}
+\subsubsection[{Render\+Planet\+With\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Render\+Planet\+With\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{id, }
+\item[{{\bf Date}}]{t, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{class_scene_ad468e34bb62f2acc253820d883f1c141}
+
+
+Definition at line 77 of file Scene.\+cpp.
+
+\hypertarget{class_scene_a67b11a489741afa1248b10c7c82dd445}{\index{Scene@{Scene}!Render\+Stabdalone\+Space\+Points@{Render\+Stabdalone\+Space\+Points}}
+\index{Render\+Stabdalone\+Space\+Points@{Render\+Stabdalone\+Space\+Points}!Scene@{Scene}}
+\subsubsection[{Render\+Stabdalone\+Space\+Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Render\+Stabdalone\+Space\+Points (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{t, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_a67b11a489741afa1248b10c7c82dd445}
+
+
+Definition at line 167 of file Scene.\+cpp.
+
+\hypertarget{class_scene_ababf385f67b5638a0ea745a832854118}{\index{Scene@{Scene}!Render\+Standalone\+Trajectories@{Render\+Standalone\+Trajectories}}
+\index{Render\+Standalone\+Trajectories@{Render\+Standalone\+Trajectories}!Scene@{Scene}}
+\subsubsection[{Render\+Standalone\+Trajectories}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Render\+Standalone\+Trajectories (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{t, }
+\item[{float}]{line\+Width, }
+\item[{float}]{red, }
+\item[{float}]{green, }
+\item[{float}]{blue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_ababf385f67b5638a0ea745a832854118}
+
+
+Definition at line 139 of file Scene.\+cpp.
+
+\hypertarget{class_scene_a1e1e900238cc3e383cb2796530c443dc}{\index{Scene@{Scene}!Show\+Info\+About\+Planet\+With\+I\+D@{Show\+Info\+About\+Planet\+With\+I\+D}}
+\index{Show\+Info\+About\+Planet\+With\+I\+D@{Show\+Info\+About\+Planet\+With\+I\+D}!Scene@{Scene}}
+\subsubsection[{Show\+Info\+About\+Planet\+With\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Show\+Info\+About\+Planet\+With\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{id, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{class_scene_a1e1e900238cc3e383cb2796530c443dc}
+
+
+Definition at line 66 of file Scene.\+cpp.
+
+\hypertarget{class_scene_af5e1d394058db0bf6640222690ea1afe}{\index{Scene@{Scene}!Ste\+Clicked\+To\+Planet\+With\+I\+D@{Ste\+Clicked\+To\+Planet\+With\+I\+D}}
+\index{Ste\+Clicked\+To\+Planet\+With\+I\+D@{Ste\+Clicked\+To\+Planet\+With\+I\+D}!Scene@{Scene}}
+\subsubsection[{Ste\+Clicked\+To\+Planet\+With\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Scene\+::\+Ste\+Clicked\+To\+Planet\+With\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_scene_af5e1d394058db0bf6640222690ea1afe}
+
+
+Definition at line 54 of file Scene.\+cpp.
+
+\hypertarget{class_scene_ab5bcf1b4b9bc790e652ccf8ee441c3a2}{\index{Scene@{Scene}!Update\+Tracking\+Distances@{Update\+Tracking\+Distances}}
+\index{Update\+Tracking\+Distances@{Update\+Tracking\+Distances}!Scene@{Scene}}
+\subsubsection[{Update\+Tracking\+Distances}]{\setlength{\rightskip}{0pt plus 5cm}float Scene\+::\+Update\+Tracking\+Distances (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{scene\+Camera\+Position, }
+\item[{{\bf Date}}]{t, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{class_scene_ab5bcf1b4b9bc790e652ccf8ee441c3a2}
+
+
+Definition at line 97 of file Scene.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_scene_ae69efb71a67f64073b2c7b601e59973a}{\index{Scene@{Scene}!distance\+Scale@{distance\+Scale}}
+\index{distance\+Scale@{distance\+Scale}!Scene@{Scene}}
+\subsubsection[{distance\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}double Scene\+::distance\+Scale = 0.\+0000004f\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_ae69efb71a67f64073b2c7b601e59973a}
+
+
+Definition at line 20 of file Scene.\+h.
+
+\hypertarget{class_scene_a1efe4e0081be96c06ad22a682a898310}{\index{Scene@{Scene}!font@{font}}
+\index{font@{font}!Scene@{Scene}}
+\subsubsection[{font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Font} Scene\+::font\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_a1efe4e0081be96c06ad22a682a898310}
+
+
+Definition at line 23 of file Scene.\+h.
+
+\hypertarget{class_scene_a5ec6d8807ffa395ae8f4feda8ccc0560}{\index{Scene@{Scene}!hdc@{hdc}}
+\index{hdc@{hdc}!Scene@{Scene}}
+\subsubsection[{hdc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+D\+C} Scene\+::hdc\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_a5ec6d8807ffa395ae8f4feda8ccc0560}
+
+
+Definition at line 22 of file Scene.\+h.
+
+\hypertarget{class_scene_a9e5749b2c90c6376bb86fb9cc2dc3eac}{\index{Scene@{Scene}!min\+Distance\+To\+Render\+Full\+Planet@{min\+Distance\+To\+Render\+Full\+Planet}}
+\index{min\+Distance\+To\+Render\+Full\+Planet@{min\+Distance\+To\+Render\+Full\+Planet}!Scene@{Scene}}
+\subsubsection[{min\+Distance\+To\+Render\+Full\+Planet}]{\setlength{\rightskip}{0pt plus 5cm}float Scene\+::min\+Distance\+To\+Render\+Full\+Planet\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_a9e5749b2c90c6376bb86fb9cc2dc3eac}
+
+
+Definition at line 18 of file Scene.\+h.
+
+\hypertarget{class_scene_a9c898688ba4edd96b93c0cf9b6ce4260}{\index{Scene@{Scene}!planets@{planets}}
+\index{planets@{planets}!Scene@{Scene}}
+\subsubsection[{planets}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Planet}$>$ Scene\+::planets\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_a9c898688ba4edd96b93c0cf9b6ce4260}
+
+
+Definition at line 14 of file Scene.\+h.
+
+\hypertarget{class_scene_a131f85de64b1959b34a2ab49b2e61b7f}{\index{Scene@{Scene}!scale@{scale}}
+\index{scale@{scale}!Scene@{Scene}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}double Scene\+::scale = 0.\+000004f\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_a131f85de64b1959b34a2ab49b2e61b7f}
+
+
+Definition at line 19 of file Scene.\+h.
+
+\hypertarget{class_scene_ae39b7e0774cc10fc19d6898982ae2a0e}{\index{Scene@{Scene}!standalone\+Space\+Points@{standalone\+Space\+Points}}
+\index{standalone\+Space\+Points@{standalone\+Space\+Points}!Scene@{Scene}}
+\subsubsection[{standalone\+Space\+Points}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Space\+Object}$>$ Scene\+::standalone\+Space\+Points\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_ae39b7e0774cc10fc19d6898982ae2a0e}
+
+
+Definition at line 16 of file Scene.\+h.
+
+\hypertarget{class_scene_a596bcc7043ee58e60705fa050506347c}{\index{Scene@{Scene}!standalone\+Trajectories@{standalone\+Trajectories}}
+\index{standalone\+Trajectories@{standalone\+Trajectories}!Scene@{Scene}}
+\subsubsection[{standalone\+Trajectories}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Trajectory}$>$ Scene\+::standalone\+Trajectories\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_scene_a596bcc7043ee58e60705fa050506347c}
+
+
+Definition at line 15 of file Scene.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\hyperlink{_scene_8h}{Scene.\+h}\item 
+S\+S\+W\+C/src/\hyperlink{_scene_8cpp}{Scene.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_t_g_a_8cpp" kind="file">
+    <compoundname>TGA.cpp</compoundname>
+    <includes refid="_t_g_a_8h" local="yes">TGA.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstdlib</includes>
+    <incdepgraph>
+      <node id="2270">
+        <label>Windows.h</label>
+      </node>
+      <node id="2272">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="2269">
+        <label>TGA.h</label>
+        <link refid="_t_g_a_8h"/>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2271" relation="include">
+        </childnode>
+        <childnode refid="2272" relation="include">
+        </childnode>
+      </node>
+      <node id="2268">
+        <label>SSWC/src/TGA.cpp</label>
+        <link refid="TGA.cpp"/>
+        <childnode refid="2269" relation="include">
+        </childnode>
+        <childnode refid="2273" relation="include">
+        </childnode>
+        <childnode refid="2274" relation="include">
+        </childnode>
+      </node>
+      <node id="2273">
+        <label>cstdio</label>
+      </node>
+      <node id="2274">
+        <label>cstdlib</label>
+      </node>
+      <node id="2271">
+        <label>gl\GL.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_t_g_a_header" prot="public">TGAHeader</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_t_g_a_8cpp_1af08ec37a8c99d747fb60fa15bc28678b" prot="public" static="no">
+        <name>_CRT_SECURE_NO_WARNINGS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.cpp" line="2" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="_t_g_a_8cpp_1af08ec37a8c99d747fb60fa15bc28678b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_g_a_8h" kindref="compound">TGA.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(1)<sp/>//<sp/>pack<sp/>it<sp/>so<sp/>that<sp/>I<sp/>can<sp/>have<sp/>shorts<sp/>&amp;<sp/>chars<sp/>in<sp/>sequence<sp/>and<sp/>read<sp/>directly<sp/>from<sp/>file<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="struct_t_g_a_header" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_t_g_a_header" kindref="compound">TGAHeader</ref>{</highlight></codeline>
+<codeline lineno="12" refid="struct_t_g_a_header_1aa8452ce11ec3d3f59459dd2c2a799709" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1aa8452ce11ec3d3f59459dd2c2a799709" kindref="member">id_length</ref>;</highlight></codeline>
+<codeline lineno="13" refid="struct_t_g_a_header_1a1ab899cc4033d3c56c97f4c7666ceb47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1a1ab899cc4033d3c56c97f4c7666ceb47" kindref="member">map_type</ref>;</highlight></codeline>
+<codeline lineno="14" refid="struct_t_g_a_header_1ae100ea914ad090f7878a2cae04b39640" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1ae100ea914ad090f7878a2cae04b39640" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="15" refid="struct_t_g_a_header_1a4f186870a13d0825101121f0688f0fc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1a4f186870a13d0825101121f0688f0fc6" kindref="member">map_start</ref>;</highlight></codeline>
+<codeline lineno="16" refid="struct_t_g_a_header_1a9260b0a44a5a33b4abcbf6e0f8c3934c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1a9260b0a44a5a33b4abcbf6e0f8c3934c" kindref="member">map_length</ref>;</highlight></codeline>
+<codeline lineno="17" refid="struct_t_g_a_header_1a12350dee94e8b261256ebc0e34dc3167" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1a12350dee94e8b261256ebc0e34dc3167" kindref="member">map_depth</ref>;</highlight></codeline>
+<codeline lineno="18" refid="struct_t_g_a_header_1a3a210fd7133b1443977ecbed3974516e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1a3a210fd7133b1443977ecbed3974516e" kindref="member">x_origin</ref>;</highlight></codeline>
+<codeline lineno="19" refid="struct_t_g_a_header_1a5dad60cc55161642e2e5b469da05433b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1a5dad60cc55161642e2e5b469da05433b" kindref="member">y_origin</ref>;</highlight></codeline>
+<codeline lineno="20" refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="21" refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="22" refid="struct_t_g_a_header_1a32a4bc2d8730d0cdf7659cd8c49bd83f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1a32a4bc2d8730d0cdf7659cd8c49bd83f" kindref="member">bpp</ref>;</highlight></codeline>
+<codeline lineno="23" refid="struct_t_g_a_header_1ab85bf0dd4e2ae87f173c301348be6220" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_g_a_header_1ab85bf0dd4e2ae87f173c301348be6220" kindref="member">descriptor_bits</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_t_g_a_1ab92285adb2e13ea66e7973ea0a485cf9" refkind="member"><highlight class="normal"><ref refid="class_t_g_a_1ab92285adb2e13ea66e7973ea0a485cf9" kindref="member">TGA::TGA</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>imagePath)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE*<sp/>file<sp/>=<sp/>NULL;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>file<sp/>handle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_g_a_header" kindref="compound">TGAHeader</ref><sp/>header;<sp/></highlight><highlight class="comment">//<sp/>struct<sp/>for<sp/>the<sp/>header<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="glext_8h_1ad2818938351edcd54eba6bd5dce29ac3" kindref="member">pixels</ref>,<sp/>*<ref refid="glext_8h_1a76461e97a098d2c9ae20ac193d3825ae" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>column<sp/>counter,<sp/>row<sp/>counter,<sp/>i<sp/>&amp;<sp/>j<sp/>loop<sp/>counters,<sp/>and<sp/>bytes<sp/>per<sp/>pixel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1f2d7f8147412c43ba2303a56f97ee73" kindref="member">c</ref>,<sp/><ref refid="glext_8h_1a42ce7cdc612e53abee15043f80220d97" kindref="member">r</ref>,<sp/>i,<sp/>j,<sp/>bytespp<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae2b4646468bc89d0ba646f5cf838e051" kindref="member">n</ref>,<sp/>packet_header;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>pixel[4];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>open<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>file<sp/>=<sp/>fopen(imagePath,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read<sp/>the<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>fread(&amp;header,<sp/>18,<sp/>1,<sp/>file);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>bytespp<sp/>=<sp/>header.<ref refid="struct_t_g_a_header_1a32a4bc2d8730d0cdf7659cd8c49bd83f" kindref="member">bpp</ref><sp/>/<sp/>8;<sp/></highlight><highlight class="comment">//<sp/>bytes<sp/>per<sp/>pixel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>pixels<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)malloc(bytespp<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref><sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>header<sp/>type<sp/>2<sp/>is<sp/>uncompressed<sp/>RGB<sp/>data<sp/>without<sp/>a<sp/>color<sp/>map<sp/>/<sp/>pallette</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(header.<ref refid="struct_t_g_a_header_1ae100ea914ad090f7878a2cae04b39640" kindref="member">type</ref><sp/>==<sp/>2)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>seek<sp/>to<sp/>the<sp/>start<sp/>of<sp/>the<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(file,<sp/>header.<ref refid="struct_t_g_a_header_1a4f186870a13d0825101121f0688f0fc6" kindref="member">map_start</ref><sp/>+<sp/>header.<ref refid="struct_t_g_a_header_1a9260b0a44a5a33b4abcbf6e0f8c3934c" kindref="member">map_length</ref><sp/>*<sp/>bytespp<sp/>+<sp/>18,<sp/>SEEK_SET);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read<sp/>the<sp/>pixel<sp/>data<sp/>into<sp/>a<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)malloc(bytespp<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref><sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fread(buffer,<sp/>bytespp,<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref><sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref>,<sp/>file);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>plot<sp/>the<sp/>pixel<sp/>data<sp/>into<sp/>pixels<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(c<sp/>=<sp/>0;<sp/>c<sp/>&lt;<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>;<sp/>c++)<sp/></highlight><highlight class="comment">//<sp/>count<sp/>up<sp/>columns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(r<sp/>=<sp/>0;<sp/>r<sp/>&lt;<sp/>header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref>;<sp/>r++)<sp/></highlight><highlight class="comment">//<sp/>rows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bytespp<sp/>==<sp/>4)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>(header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref><sp/>-<sp/>r<sp/>-<sp/>1)<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>0]<sp/>=</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>2];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>(header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref><sp/>-<sp/>r<sp/>-<sp/>1)<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>1]<sp/>=</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>(header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref><sp/>-<sp/>r<sp/>-<sp/>1)<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>2]<sp/>=</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>0];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>(header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref><sp/>-<sp/>r<sp/>-<sp/>1)<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>3]<sp/>=</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>3];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bytespp<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>(header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref><sp/>-<sp/>r<sp/>-<sp/>1)<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>0]<sp/>=</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>2];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>(header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref><sp/>-<sp/>r<sp/>-<sp/>1)<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>1]<sp/>=</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>(header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref><sp/>-<sp/>r<sp/>-<sp/>1)<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>2]<sp/>=</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>0];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(buffer);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(header.<ref refid="struct_t_g_a_header_1ae100ea914ad090f7878a2cae04b39640" kindref="member">type</ref><sp/>==<sp/>10)<sp/></highlight><highlight class="comment">//<sp/>run<sp/>length<sp/>encoded,<sp/>non<sp/>color<sp/>mapped<sp/>rgb</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>the<sp/>start<sp/>of<sp/>the<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(file,<sp/>header.<ref refid="struct_t_g_a_header_1a4f186870a13d0825101121f0688f0fc6" kindref="member">map_start</ref><sp/>+<sp/>header.<ref refid="struct_t_g_a_header_1a9260b0a44a5a33b4abcbf6e0f8c3934c" kindref="member">map_length</ref><sp/>*<sp/>bytespp<sp/>+<sp/>18,<sp/>SEEK_SET);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>0;<sp/>r<sp/>=<sp/>header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref><sp/>-<sp/>1;<sp/></highlight><highlight class="comment">//<sp/>start<sp/>at<sp/>the<sp/>top<sp/>left</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>work<sp/>through<sp/>the<sp/>bitmap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(r<sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read<sp/>in<sp/>the<sp/>packet<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fread(&amp;packet_header,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(packet_header),<sp/>1,<sp/>file);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>the<sp/>number<sp/>of<sp/>reps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>packet_header<sp/>&amp;<sp/>0x7F;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)pixel)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>!=<sp/>packet_header)<sp/></highlight><highlight class="comment">//<sp/>if<sp/>bit<sp/>=<sp/>1,<sp/>the<sp/>next<sp/>pixel<sp/>repeated<sp/>N<sp/>times</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fread(&amp;pixel,<sp/>bytespp,<sp/>1,<sp/>file);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>loop<sp/>n<sp/>times</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n<sp/>+<sp/>1;<sp/>i++)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>==<sp/>packet_header)<sp/></highlight><highlight class="comment">//<sp/>if<sp/>bit<sp/>=<sp/>0,<sp/>N<sp/>individual<sp/>pixels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fread(&amp;pixel,<sp/>bytespp,<sp/>1,<sp/>file);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bytespp<sp/>==<sp/>4)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>0]<sp/>=</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixel[2];</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>1]<sp/>=</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixel[1];</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>2]<sp/>=</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixel[0];</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>3]<sp/>=</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixel[3];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bytespp<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>0]<sp/>=</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixel[2];</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>1]<sp/>=</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixel[1];</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[(c<sp/>+<sp/>r<sp/>*<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)<sp/>*<sp/>bytespp<sp/>+<sp/>2]<sp/>=</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixel[0];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>move<sp/>to<sp/>the<sp/>next<sp/>pixel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>&gt;=<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>-=<sp/>1;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>close<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>make<sp/>a<sp/>gl<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>glGenTextures(1,<sp/>&amp;<ref refid="class_t_g_a_1aea2ebe250d8cb172ba96d59b3ffb90e6" kindref="member">textureHandle</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture(GL_TEXTURE_2D,<sp/><ref refid="class_t_g_a_1aea2ebe250d8cb172ba96d59b3ffb90e6" kindref="member">textureHandle</ref>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexEnvf(GL_TEXTURE_ENV,<sp/>GL_TEXTURE_ENV_MODE,<sp/>GL_MODULATE);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameterf(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MIN_FILTER,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GL_LINEAR_MIPMAP_NEAREST);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameterf(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MAG_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameterf(GL_TEXTURE_2D,<sp/>GL_TEXTURE_WRAP_S,<sp/>GL_REPEAT);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameterf(GL_TEXTURE_2D,<sp/>GL_TEXTURE_WRAP_T,<sp/>GL_REPEAT);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>gluBuild2DMipmaps(GL_TEXTURE_2D,<sp/>3,<sp/>header.<ref refid="struct_t_g_a_header_1a4ecf23c7b373b578053daed7640919b9" kindref="member">width</ref>,<sp/>header.<ref refid="struct_t_g_a_header_1afd860454068cafca5048f9a9b0c3edc5" kindref="member">height</ref>,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GL_RGB,<sp/>GL_UNSIGNED_BYTE,<sp/>pixels);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>delete<sp/>the<sp/>pixel<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>free(pixels);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="class_t_g_a_1af066c59bff232702fe5505b3a0189dcf" refkind="member"><highlight class="normal"><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/><ref refid="class_t_g_a_1af066c59bff232702fe5505b3a0189dcf" kindref="member">TGA::getTextureHandle</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_t_g_a_1aea2ebe250d8cb172ba96d59b3ffb90e6" kindref="member">textureHandle</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.cpp"/>
+  </compounddef>
+</doxygen>

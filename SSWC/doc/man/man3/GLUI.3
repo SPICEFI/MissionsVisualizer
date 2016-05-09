@@ -1,0 +1,244 @@
+.TH "GLUI" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Main\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBadd_control\fP (\fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBadd_column\fP (\fBint\fP draw_bar=true)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBadd_column_to_panel\fP (\fBGLUI_Panel\fP *panel, \fBint\fP draw_bar=true)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBadd_separator\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBadd_separator_to_panel\fP (\fBGLUI_Panel\fP *panel)"
+.br
+.ti -1c
+.RI "\fBGLUI_RadioGroup\fP * \fBadd_radiogroup\fP (\fBint\fP *live_var=NULL, \fBint\fP user_id=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_RadioGroup\fP * \fBadd_radiogroup_to_panel\fP (\fBGLUI_Panel\fP *panel, \fBint\fP *live_var=NULL, \fBint\fP user_id=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_RadioButton\fP * \fBadd_radiobutton_to_group\fP (\fBGLUI_RadioGroup\fP *\fBgroup\fP, const char *\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Listbox\fP * \fBadd_listbox\fP (const char *\fBname\fP, \fBint\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Listbox\fP * \fBadd_listbox_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBint\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Rotation\fP * \fBadd_rotation\fP (const char *\fBname\fP, float *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Rotation\fP * \fBadd_rotation_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, float *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Translation\fP * \fBadd_translation\fP (const char *\fBname\fP, \fBint\fP trans_type, float *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Translation\fP * \fBadd_translation_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBint\fP trans_type, float *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Checkbox\fP * \fBadd_checkbox\fP (const char *\fBname\fP, \fBint\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Checkbox\fP * \fBadd_checkbox_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBint\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Button\fP * \fBadd_button\fP (const char *\fBname\fP, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Button\fP * \fBadd_button_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_StaticText\fP * \fBadd_statictext\fP (const char *\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_StaticText\fP * \fBadd_statictext_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP * \fBadd_edittext\fP (const char *\fBname\fP, \fBint\fP data_type=\fBGLUI_EDITTEXT_TEXT\fP, \fBvoid\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP * \fBadd_edittext_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBint\fP data_type=\fBGLUI_EDITTEXT_TEXT\fP, \fBvoid\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP * \fBadd_edittext\fP (const char *\fBname\fP, \fBGLUI_String\fP &live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP * \fBadd_edittext_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBGLUI_String\fP &live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Spinner\fP * \fBadd_spinner\fP (const char *\fBname\fP, \fBint\fP data_type=\fBGLUI_SPINNER_INT\fP, \fBvoid\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Spinner\fP * \fBadd_spinner_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBint\fP data_type=\fBGLUI_SPINNER_INT\fP, \fBvoid\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP callback=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Panel\fP * \fBadd_panel\fP (const char *\fBname\fP, \fBint\fP \fBtype\fP=\fBGLUI_PANEL_EMBOSSED\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Panel\fP * \fBadd_panel_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBint\fP \fBtype\fP=\fBGLUI_PANEL_EMBOSSED\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Rollout\fP * \fBadd_rollout\fP (const char *\fBname\fP, \fBint\fP open=true, \fBint\fP \fBtype\fP=\fBGLUI_PANEL_EMBOSSED\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Rollout\fP * \fBadd_rollout_to_panel\fP (\fBGLUI_Panel\fP *panel, const char *\fBname\fP, \fBint\fP open=true, \fBint\fP \fBtype\fP=\fBGLUI_PANEL_EMBOSSED\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_main_gfx_window\fP (\fBint\fP window_id)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_glut_window_id\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBenable\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdisable\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsync_live\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBclose\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBshow\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBhide\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBinit\fP (const char *\fBname\fP, long \fBflags\fP, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBparent_window\fP)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBint\fP \fBadd_control\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBGLUI_Control\fP *control)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+The main user-visible interface object to \fBGLUI\fP\&. 
+.PP
+Definition at line 1435 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBGLUI_Button\fP* GLUI::add_button (const char *name, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Button\fP* GLUI::add_button_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Checkbox\fP* GLUI::add_checkbox (const char *name, \fBint\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Checkbox\fP* GLUI::add_checkbox_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBint\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBvoid\fP GLUI::add_column (\fBint\fPdraw_bar = \fCtrue\fP)"
+
+.SS "\fBvoid\fP GLUI::add_column_to_panel (\fBGLUI_Panel\fP *panel, \fBint\fPdraw_bar = \fCtrue\fP)"
+
+.SS "\fBint\fP GLUI::add_control (\fBGLUI_Control\fP *control)\fC [inline]\fP, \fC [virtual]\fP"
+DEPRECATED interface for creating new \fBGLUI\fP objects 
+.PP
+Reimplemented from \fBGLUI_Node\fP\&.
+.PP
+Definition at line 1439 of file glui\&.h\&.
+.SS "virtual \fBint\fP GLUI::add_control (\fBGLUI_Node\fP *parent, \fBGLUI_Control\fP *control)\fC [inline]\fP, \fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Main\fP\&.
+.PP
+Definition at line 1568 of file glui\&.h\&.
+.SS "\fBGLUI_EditText\fP* GLUI::add_edittext (const char *name, \fBint\fPdata_type = \fC\fBGLUI_EDITTEXT_TEXT\fP\fP, \fBvoid\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_EditText\fP* GLUI::add_edittext (const char *name, \fBGLUI_String\fP &live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_EditText\fP* GLUI::add_edittext_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBint\fPdata_type = \fC\fBGLUI_EDITTEXT_TEXT\fP\fP, \fBvoid\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_EditText\fP* GLUI::add_edittext_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBGLUI_String\fP &live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Listbox\fP* GLUI::add_listbox (const char *name, \fBint\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Listbox\fP* GLUI::add_listbox_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBint\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Panel\fP* GLUI::add_panel (const char *name, \fBint\fPtype = \fC\fBGLUI_PANEL_EMBOSSED\fP\fP)"
+
+.SS "\fBGLUI_Panel\fP* GLUI::add_panel_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBint\fPtype = \fC\fBGLUI_PANEL_EMBOSSED\fP\fP)"
+
+.SS "\fBGLUI_RadioButton\fP* GLUI::add_radiobutton_to_group (\fBGLUI_RadioGroup\fP *group, const char *name)"
+
+.SS "\fBGLUI_RadioGroup\fP* GLUI::add_radiogroup (\fBint\fP *live_var = \fCNULL\fP, \fBint\fPuser_id = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_RadioGroup\fP* GLUI::add_radiogroup_to_panel (\fBGLUI_Panel\fP *panel, \fBint\fP *live_var = \fCNULL\fP, \fBint\fPuser_id = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Rollout\fP* GLUI::add_rollout (const char *name, \fBint\fPopen = \fCtrue\fP, \fBint\fPtype = \fC\fBGLUI_PANEL_EMBOSSED\fP\fP)"
+
+.SS "\fBGLUI_Rollout\fP* GLUI::add_rollout_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBint\fPopen = \fCtrue\fP, \fBint\fPtype = \fC\fBGLUI_PANEL_EMBOSSED\fP\fP)"
+
+.SS "\fBGLUI_Rotation\fP* GLUI::add_rotation (const char *name, float *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Rotation\fP* GLUI::add_rotation_to_panel (\fBGLUI_Panel\fP *panel, const char *name, float *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBvoid\fP GLUI::add_separator (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI::add_separator_to_panel (\fBGLUI_Panel\fP *panel)"
+
+.SS "\fBGLUI_Spinner\fP* GLUI::add_spinner (const char *name, \fBint\fPdata_type = \fC\fBGLUI_SPINNER_INT\fP\fP, \fBvoid\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Spinner\fP* GLUI::add_spinner_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBint\fPdata_type = \fC\fBGLUI_SPINNER_INT\fP\fP, \fBvoid\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_StaticText\fP* GLUI::add_statictext (const char *name)"
+
+.SS "\fBGLUI_StaticText\fP* GLUI::add_statictext_to_panel (\fBGLUI_Panel\fP *panel, const char *name)"
+
+.SS "\fBGLUI_Translation\fP* GLUI::add_translation (const char *name, \fBint\fPtrans_type, float *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBGLUI_Translation\fP* GLUI::add_translation_to_panel (\fBGLUI_Panel\fP *panel, const char *name, \fBint\fPtrans_type, float *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "\fBvoid\fP GLUI::close (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI::disable (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI::enable (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 1536 of file glui\&.h\&.
+.SS "\fBint\fP GLUI::get_glut_window_id (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 1534 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI::hide (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI::init (const char *name, longflags, \fBint\fPx, \fBint\fPy, \fBint\fPparent_window)"
+
+.SS "\fBvoid\fP GLUI::set_main_gfx_window (\fBint\fPwindow_id)"
+Set the window where our widgets should be displayed\&. 
+.SS "\fBvoid\fP GLUI::show (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI::sync_live (\fBvoid\fP)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_a_r_b___multisample_8h" kind="file">
+    <compoundname>ARB_Multisample.h</compoundname>
+    <includes refid="wglext_8h" local="yes">wglext.h</includes>
+    <includes refid="glext_8h" local="yes">glext.h</includes>
+    <incdepgraph>
+      <node id="1676">
+        <label>stddef.h</label>
+      </node>
+      <node id="1674">
+        <label>wglext.h</label>
+        <link refid="wglext_8h"/>
+      </node>
+      <node id="1673">
+        <label>SSWC/src/GL/ARB_Multisample.h</label>
+        <link refid="ARB_Multisample.h"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+      </node>
+      <node id="1675">
+        <label>glext.h</label>
+        <link refid="glext_8h"/>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+      </node>
+      <node id="1677">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_a_r_b___multisample_8h_1a9f048055e693485f8043129463458f94" prot="public" static="no">
+        <name>CHECK_FOR_MULTISAMPLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.h" line="21" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_a_r_b___multisample_8h_1a962f70d8234fe3b6d7b906082a5a82f5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool arbMultisampleSupported</definition>
+        <argsstring></argsstring>
+        <name>arbMultisampleSupported</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.h" line="17" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_a_r_b___multisample_8h_1a24066f76b39416da011c1b9e55adaf1a" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int arbMultisampleFormat</definition>
+        <argsstring></argsstring>
+        <name>arbMultisampleFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.h" line="18" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_r_b___multisample_8h_1aa9c71d7929556d62cb9f2557a59cdc28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InitMultisample</definition>
+        <argsstring>(HINSTANCE hInstance, HWND hWnd, PIXELFORMATDESCRIPTOR pfd)</argsstring>
+        <name>InitMultisample</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hInstance</declname>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>PIXELFORMATDESCRIPTOR</type>
+          <declname>pfd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.h" line="24" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="65" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*====================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>Name:<sp/>ARB_multisample.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/>Author:<sp/>Colt<sp/>&quot;MainRoach&quot;<sp/>McAnlis</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>Date:<sp/>4/29/04</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>Desc:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>contains<sp/>our<sp/>external<sp/>items</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">====================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__ARB_MULTISAMPLE_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ARB_MULTISAMPLE_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wglext_8h" kindref="compound">wglext.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//WGL<sp/>extensions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="glext_8h" kindref="compound">glext.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//GL<sp/>extensions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//Globals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_a_r_b___multisample_8h_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_a_r_b___multisample_8h_1a24066f76b39416da011c1b9e55adaf1a" kindref="member">arbMultisampleFormat</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//If<sp/>you<sp/>don&apos;t<sp/>want<sp/>multisampling,<sp/>set<sp/>this<sp/>to<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_a_r_b___multisample_8h_1a9f048055e693485f8043129463458f94" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHECK_FOR_MULTISAMPLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//to<sp/>check<sp/>for<sp/>our<sp/>sampling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_a_r_b___multisample_8h_1aa9c71d7929556d62cb9f2557a59cdc28" kindref="member">InitMultisample</ref>(HINSTANCE<sp/>hInstance,HWND<sp/>hWnd,PIXELFORMATDESCRIPTOR<sp/>pfd);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.h"/>
+  </compounddef>
+</doxygen>

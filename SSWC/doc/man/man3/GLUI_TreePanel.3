@@ -1,0 +1,222 @@
+.TH "GLUI_TreePanel" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_TreePanel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Panel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_TreePanel\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, bool open=false, \fBint\fP inset=0)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_color\fP (float \fBr\fP, float \fBg\fP, float \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_level_color\fP (float \fBr\fP, float \fBg\fP, float \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_format\fP (\fBint\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Tree\fP * \fBab\fP (const char *\fBname\fP, \fBGLUI_Tree\fP *root=NULL)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBfb\fP (\fBGLUI_Tree\fP *branch=NULL)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdb\fP (\fBGLUI_Tree\fP *branch=NULL)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdescendBranch\fP (\fBGLUI_Panel\fP *root=NULL)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBresetToRoot\fP (\fBGLUI_Panel\fP *new_root=NULL)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBnext\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBrefresh\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBexpand_all\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcollapse_all\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_all\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBinitNode\fP (\fBGLUI_Tree\fP *temp)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBformatNode\fP (\fBGLUI_Tree\fP *temp)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmax_levels\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBnext_id\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBformat\fP"
+.br
+.ti -1c
+.RI "float \fBred\fP"
+.br
+.ti -1c
+.RI "float \fBgreen\fP"
+.br
+.ti -1c
+.RI "float \fBblue\fP"
+.br
+.ti -1c
+.RI "float \fBlred\fP"
+.br
+.ti -1c
+.RI "float \fBlgreen\fP"
+.br
+.ti -1c
+.RI "float \fBlblue\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBroot_children\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Tree\fP * \fBcurr_branch\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Panel\fP * \fBcurr_root\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBuniqueID\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Manages, maintains, and formats a tree of \fBGLUI_Tree\fP objects\&. These are shown in a heirarchical, collapsible display\&.
+.PP
+FIXME: There's an infinite loop in the traversal code (OSL 2006/06) 
+.PP
+Definition at line 1361 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_TreePanel::GLUI_TreePanel (\fBGLUI_Node\fP *parent, const char *name, boolopen = \fCfalse\fP, \fBint\fPinset = \fC0\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBGLUI_Tree\fP* GLUI_TreePanel::ab (const char *name, \fBGLUI_Tree\fP *root = \fCNULL\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::collapse_all (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1409 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_TreePanel::db (\fBGLUI_Tree\fP *branch = \fCNULL\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::descendBranch (\fBGLUI_Panel\fP *root = \fCNULL\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::expand_all (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::fb (\fBGLUI_Tree\fP *branch = \fCNULL\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::formatNode (\fBGLUI_Tree\fP *temp)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::initNode (\fBGLUI_Tree\fP *temp)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::next (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::refresh (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::resetToRoot (\fBGLUI_Panel\fP *new_root = \fCNULL\fP)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::set_color (floatr, floatg, floatb)"
+
+.SS "\fBvoid\fP GLUI_TreePanel::set_format (\fBint\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 1387 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_TreePanel::set_level_color (floatr, floatg, floatb)"
+
+.SS "\fBint\fP GLUI_TreePanel::uniqueID (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1408 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_TreePanel::update_all (\fBvoid\fP)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "float GLUI_TreePanel::blue"
+
+.PP
+Definition at line 1372 of file glui\&.h\&.
+.SS "\fBGLUI_Tree\fP* GLUI_TreePanel::curr_branch"
+
+.PP
+Definition at line 1381 of file glui\&.h\&.
+.SS "\fBGLUI_Panel\fP* GLUI_TreePanel::curr_root"
+
+.PP
+Definition at line 1382 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TreePanel::format"
+
+.PP
+Definition at line 1369 of file glui\&.h\&.
+.SS "float GLUI_TreePanel::green"
+
+.PP
+Definition at line 1371 of file glui\&.h\&.
+.SS "float GLUI_TreePanel::lblue"
+
+.PP
+Definition at line 1375 of file glui\&.h\&.
+.SS "float GLUI_TreePanel::lgreen"
+
+.PP
+Definition at line 1374 of file glui\&.h\&.
+.SS "float GLUI_TreePanel::lred"
+
+.PP
+Definition at line 1373 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TreePanel::max_levels"
+
+.PP
+Definition at line 1367 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TreePanel::next_id"
+
+.PP
+Definition at line 1368 of file glui\&.h\&.
+.SS "float GLUI_TreePanel::red"
+
+.PP
+Definition at line 1370 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_TreePanel::root_children"
+
+.PP
+Definition at line 1376 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

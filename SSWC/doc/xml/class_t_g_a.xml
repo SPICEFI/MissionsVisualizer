@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_t_g_a" kind="class" prot="public">
+    <compoundname>TGA</compoundname>
+    <includes refid="_t_g_a_8h" local="no">TGA.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_t_g_a_1aea2ebe250d8cb172ba96d59b3ffb90e6" prot="protected" static="no" mutable="no">
+        <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref></type>
+        <definition>GLuint TGA::textureHandle</definition>
+        <argsstring></argsstring>
+        <name>textureHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.h" line="10" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_t_g_a_1ab92285adb2e13ea66e7973ea0a485cf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TGA::TGA</definition>
+        <argsstring>(const char *imagePath)</argsstring>
+        <name>TGA</name>
+        <param>
+          <type>const char *</type>
+          <declname>imagePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.h" line="12" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.cpp" bodystart="27" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_g_a_1a6cbc8f2c78c570f28ab35fcbd7c12266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TGA::~TGA</definition>
+        <argsstring>()</argsstring>
+        <name>~TGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_g_a_1af066c59bff232702fe5505b3a0189dcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref></type>
+        <definition>GLuint TGA::getTextureHandle</definition>
+        <argsstring>()</argsstring>
+        <name>getTextureHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.h" line="15" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.cpp" bodystart="168" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.h" line="8" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.h" bodystart="7" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_t_g_a_1af066c59bff232702fe5505b3a0189dcf" prot="public" virt="non-virtual"><scope>TGA</scope><name>getTextureHandle</name></member>
+      <member refid="class_t_g_a_1aea2ebe250d8cb172ba96d59b3ffb90e6" prot="protected" virt="non-virtual"><scope>TGA</scope><name>textureHandle</name></member>
+      <member refid="class_t_g_a_1ab92285adb2e13ea66e7973ea0a485cf9" prot="public" virt="non-virtual"><scope>TGA</scope><name>TGA</name></member>
+      <member refid="class_t_g_a_1a6cbc8f2c78c570f28ab35fcbd7c12266" prot="public" virt="non-virtual"><scope>TGA</scope><name>~TGA</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

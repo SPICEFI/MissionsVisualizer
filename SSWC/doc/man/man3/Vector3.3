@@ -1,0 +1,223 @@
+.TH "Vector3" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Vector3 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Vector3\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector3\fP ()"
+.br
+.ti -1c
+.RI "\fBVector3\fP (float \fBx\fP, float \fBy\fP, float \fBz\fP)"
+.br
+.ti -1c
+.RI "\fBVector3\fP (double *ptr)"
+.br
+.ti -1c
+.RI "\fB~Vector3\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSet\fP (float \fBx\fP, float \fBy\fP, float \fBz\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAssign\fP (double *ptr)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBNormalise\fP ()"
+.br
+.ti -1c
+.RI "float \fBLength\fP () const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBMultVecByMatrix\fP (float *\fBmatrix\fP, \fBVector3\fP &\fBresult\fP) const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBRotateAroudVec\fP (const \fBVector3\fP &around, float \fBangle\fP, \fBVector3\fP &\fBresult\fP) const "
+.br
+.ti -1c
+.RI "float \fBDotProduct\fP (const \fBVector3\fP &rhs) const "
+.br
+.ti -1c
+.RI "\fBVector3\fP \fBCrossProduct\fP (const \fBVector3\fP &rhs) const "
+.br
+.ti -1c
+.RI "float \fBAngleBetween\fP (const \fBVector3\fP &rhs) const "
+.br
+.ti -1c
+.RI "\fBVector3\fP \fBoperator+\fP (const \fBVector3\fP &\fBv1\fP) const "
+.br
+.ti -1c
+.RI "\fBVector3\fP \fBoperator-\fP (const \fBVector3\fP &\fBv1\fP) const "
+.br
+.ti -1c
+.RI "\fBVector3\fP & \fBoperator=\fP (const \fBVector3\fP &rVector)"
+.br
+.ti -1c
+.RI "\fBVector3\fP & \fBoperator*=\fP (float scalar)"
+.br
+.ti -1c
+.RI "\fBVector3\fP \fBoperator*\fP (float scalar) const "
+.br
+.ti -1c
+.RI "float \fBoperator[]\fP (size_t \fBi\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBx\fP"
+.br
+.ti -1c
+.RI "float \fBy\fP"
+.br
+.ti -1c
+.RI "float \fBz\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const \fBVector3\fP & \fBi\fP = \fBVector3\fP(1\&.0f, 0\&.0f, 0\&.0f)"
+.br
+.ti -1c
+.RI "static const \fBVector3\fP & \fBj\fP = \fBVector3\fP(0\&.0f, 1\&.0f, 0\&.0f)"
+.br
+.ti -1c
+.RI "static const \fBVector3\fP & \fBk\fP = \fBVector3\fP(0\&.0f, 0\&.0f, 1\&.0f)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "\fBVector3\fP & \fBoperator+=\fP (\fBVector3\fP &lVector, const \fBVector3\fP &rVector)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 13 of file Vector3\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Vector3::Vector3 ()"
+
+.PP
+Definition at line 26 of file Vector3\&.cpp\&.
+.SS "Vector3::Vector3 (floatx, floaty, floatz)"
+
+.PP
+Definition at line 43 of file Vector3\&.cpp\&.
+.SS "Vector3::Vector3 (double *ptr)"
+
+.PP
+Definition at line 33 of file Vector3\&.cpp\&.
+.SS "Vector3::~Vector3 ()"
+
+.PP
+Definition at line 39 of file Vector3\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "float Vector3::AngleBetween (const \fBVector3\fP &rhs) const"
+
+.PP
+Definition at line 178 of file Vector3\&.cpp\&.
+.SS "\fBvoid\fP Vector3::Assign (double *ptr)"
+
+.PP
+Definition at line 157 of file Vector3\&.cpp\&.
+.SS "\fBVector3\fP Vector3::CrossProduct (const \fBVector3\fP &rhs) const"
+
+.PP
+Definition at line 169 of file Vector3\&.cpp\&.
+.SS "float Vector3::DotProduct (const \fBVector3\fP &rhs) const"
+
+.PP
+Definition at line 164 of file Vector3\&.cpp\&.
+.SS "float Vector3::Length () const"
+
+.PP
+Definition at line 116 of file Vector3\&.cpp\&.
+.SS "\fBvoid\fP Vector3::MultVecByMatrix (float *matrix, \fBVector3\fP &result) const"
+
+.PP
+Definition at line 135 of file Vector3\&.cpp\&.
+.SS "\fBvoid\fP Vector3::Normalise ()"
+
+.PP
+Definition at line 121 of file Vector3\&.cpp\&.
+.SS "\fBVector3\fP Vector3::operator* (floatscalar) const"
+
+.PP
+Definition at line 89 of file Vector3\&.cpp\&.
+.SS "\fBVector3\fP & Vector3::operator*= (floatscalar)"
+
+.PP
+Definition at line 80 of file Vector3\&.cpp\&.
+.SS "\fBVector3\fP Vector3::operator+ (const \fBVector3\fP &v1) const"
+
+.PP
+Definition at line 50 of file Vector3\&.cpp\&.
+.SS "\fBVector3\fP Vector3::operator- (const \fBVector3\fP &v1) const"
+
+.PP
+Definition at line 59 of file Vector3\&.cpp\&.
+.SS "\fBVector3\fP & Vector3::operator= (const \fBVector3\fP &rVector)"
+
+.PP
+Definition at line 68 of file Vector3\&.cpp\&.
+.SS "float Vector3::operator[] (size_ti)"
+
+.PP
+Definition at line 98 of file Vector3\&.cpp\&.
+.SS "\fBvoid\fP Vector3::RotateAroudVec (const \fBVector3\fP &around, floatangle, \fBVector3\fP &result) const"
+
+.PP
+Definition at line 142 of file Vector3\&.cpp\&.
+.SS "\fBvoid\fP Vector3::Set (floatx, floaty, floatz)"
+
+.PP
+Definition at line 150 of file Vector3\&.cpp\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "\fBVector3\fP& operator+= (\fBVector3\fP &lVector, const \fBVector3\fP &rVector)\fC [friend]\fP"
+
+.PP
+Definition at line 126 of file Vector3\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBVector3\fP & Vector3::i = \fBVector3\fP(1\&.0f, 0\&.0f, 0\&.0f)\fC [static]\fP"
+
+.PP
+Definition at line 48 of file Vector3\&.h\&.
+.SS "const \fBVector3\fP & Vector3::j = \fBVector3\fP(0\&.0f, 1\&.0f, 0\&.0f)\fC [static]\fP"
+
+.PP
+Definition at line 49 of file Vector3\&.h\&.
+.SS "const \fBVector3\fP & Vector3::k = \fBVector3\fP(0\&.0f, 0\&.0f, 1\&.0f)\fC [static]\fP"
+
+.PP
+Definition at line 50 of file Vector3\&.h\&.
+.SS "float Vector3::x"
+
+.PP
+Definition at line 16 of file Vector3\&.h\&.
+.SS "float Vector3::y"
+
+.PP
+Definition at line 16 of file Vector3\&.h\&.
+.SS "float Vector3::z"
+
+.PP
+Definition at line 16 of file Vector3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

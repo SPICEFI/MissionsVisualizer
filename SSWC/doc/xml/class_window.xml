@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_window" kind="class" prot="public">
+    <compoundname>Window</compoundname>
+    <includes refid="_window_8h" local="no">Window.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_window_1a5740e9edd6996b01d0c713cc8d84c367" prot="private" static="no" mutable="no">
+        <type>SpiceCell</type>
+        <definition>SpiceCell Window::cell</definition>
+        <argsstring></argsstring>
+        <name>cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="58" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_window_1a74e6087da23d3c24e9fac0245e5ec92c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Window::Window</definition>
+        <argsstring>()</argsstring>
+        <name>Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="46" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.cpp" bodystart="3" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1ac48ed30dd8b28bbad62e5594cdffb0ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Window::Window</definition>
+        <argsstring>(SpiceCell cell)</argsstring>
+        <name>Window</name>
+        <param>
+          <type>SpiceCell</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="47" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.cpp" bodystart="10" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1a3a5893d30ec32e4cd8ae0348e4bdecb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_interval" kindref="compound">Interval</ref> &gt;</type>
+        <definition>std::vector&lt; Interval &gt; Window::GetIntervals</definition>
+        <argsstring>() const </argsstring>
+        <name>GetIntervals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="49" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.cpp" bodystart="19" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1a9efa3014d97ed2c54f80c57cdde663ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Window::IsIncluded</definition>
+        <argsstring>(double point) const </argsstring>
+        <name>IsIncluded</name>
+        <param>
+          <type>double</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="51" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1a4cbe463a91f8accda9eb4cc17b1d0f48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Window::IsIncluded</definition>
+        <argsstring>(double left, double right) const </argsstring>
+        <name>IsIncluded</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="52" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.cpp" bodystart="43" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1a99d07abef9694b58a7b68c80522909f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Window::IsIncluded</definition>
+        <argsstring>(const Interval &amp;interval) const </argsstring>
+        <name>IsIncluded</name>
+        <param>
+          <type>const <ref refid="struct_interval" kindref="compound">Interval</ref> &amp;</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="53" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_window_1aa45d1cf3477180a366044fc95ebf5cd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SpiceCell &amp;</type>
+        <definition>SpiceCell &amp; Window::GetSpiceCell</definition>
+        <argsstring>()</argsstring>
+        <name>GetSpiceCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="55" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="44" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="43" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_window_1a5740e9edd6996b01d0c713cc8d84c367" prot="private" virt="non-virtual"><scope>Window</scope><name>cell</name></member>
+      <member refid="class_window_1a3a5893d30ec32e4cd8ae0348e4bdecb4" prot="public" virt="non-virtual"><scope>Window</scope><name>GetIntervals</name></member>
+      <member refid="class_window_1aa45d1cf3477180a366044fc95ebf5cd7" prot="public" virt="non-virtual"><scope>Window</scope><name>GetSpiceCell</name></member>
+      <member refid="class_window_1a9efa3014d97ed2c54f80c57cdde663ed" prot="public" virt="non-virtual"><scope>Window</scope><name>IsIncluded</name></member>
+      <member refid="class_window_1a4cbe463a91f8accda9eb4cc17b1d0f48" prot="public" virt="non-virtual"><scope>Window</scope><name>IsIncluded</name></member>
+      <member refid="class_window_1a99d07abef9694b58a7b68c80522909f8" prot="public" virt="non-virtual"><scope>Window</scope><name>IsIncluded</name></member>
+      <member refid="class_window_1a74e6087da23d3c24e9fac0245e5ec92c" prot="public" virt="non-virtual"><scope>Window</scope><name>Window</name></member>
+      <member refid="class_window_1ac48ed30dd8b28bbad62e5594cdffb0ca" prot="public" virt="non-virtual"><scope>Window</scope><name>Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

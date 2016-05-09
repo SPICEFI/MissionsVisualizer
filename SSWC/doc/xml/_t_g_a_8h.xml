@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_t_g_a_8h" kind="file">
+    <compoundname>TGA.h</compoundname>
+    <includes local="no">Windows.h</includes>
+    <includes local="no">gl\GL.h</includes>
+    <includes local="no">gl\GLU.h</includes>
+    <includedby refid="_planet_8h" local="yes">SSWC/src/Planet.h</includedby>
+    <includedby refid="_t_g_a_8cpp" local="yes">SSWC/src/TGA.cpp</includedby>
+    <incdepgraph>
+      <node id="2277">
+        <label>Windows.h</label>
+      </node>
+      <node id="2279">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="2276">
+        <label>SSWC/src/TGA.h</label>
+        <link refid="TGA.h"/>
+        <childnode refid="2277" relation="include">
+        </childnode>
+        <childnode refid="2278" relation="include">
+        </childnode>
+        <childnode refid="2279" relation="include">
+        </childnode>
+      </node>
+      <node id="2278">
+        <label>gl\GL.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2288">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="2287">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="2280">
+        <label>SSWC/src/TGA.h</label>
+        <link refid="TGA.h"/>
+        <childnode refid="2281" relation="include">
+        </childnode>
+        <childnode refid="2290" relation="include">
+        </childnode>
+      </node>
+      <node id="2285">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="2286" relation="include">
+        </childnode>
+        <childnode refid="2287" relation="include">
+        </childnode>
+      </node>
+      <node id="2283">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="2284" relation="include">
+        </childnode>
+        <childnode refid="2285" relation="include">
+        </childnode>
+        <childnode refid="2286" relation="include">
+        </childnode>
+      </node>
+      <node id="2284">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="2282">
+        <label>SSWC/src/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="2283" relation="include">
+        </childnode>
+        <childnode refid="2287" relation="include">
+        </childnode>
+        <childnode refid="2288" relation="include">
+        </childnode>
+      </node>
+      <node id="2290">
+        <label>SSWC/src/TGA.cpp</label>
+        <link refid="_t_g_a_8cpp"/>
+      </node>
+      <node id="2281">
+        <label>SSWC/src/Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="2282" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+      </node>
+      <node id="2286">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+      <node id="2289">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="_planet_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_t_g_a" prot="public">TGA</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl\GL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl\GLU.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//class<sp/>to<sp/>load<sp/>tga<sp/>files<sp/>into<sp/>openGL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_t_g_a" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_t_g_a" kindref="compound">TGA</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="class_t_g_a_1aea2ebe250d8cb172ba96d59b3ffb90e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/><ref refid="class_t_g_a_1aea2ebe250d8cb172ba96d59b3ffb90e6" kindref="member">textureHandle</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_t_g_a_1ab92285adb2e13ea66e7973ea0a485cf9" kindref="member">TGA</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>imagePath);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_t_g_a_1a6cbc8f2c78c570f28ab35fcbd7c12266" kindref="member">~TGA</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/><ref refid="class_t_g_a_1af066c59bff232702fe5505b3a0189dcf" kindref="member">getTextureHandle</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/TGA.h"/>
+  </compounddef>
+</doxygen>

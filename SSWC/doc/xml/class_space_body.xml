@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_space_body" kind="class" prot="public">
+    <compoundname>SpaceBody</compoundname>
+    <basecompoundref refid="class_space_object" prot="public" virt="non-virtual">SpaceObject</basecompoundref>
+    <includes refid="_space_body_8h" local="no">SpaceBody.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_space_body_1aac4475090a05b2f6d9c833f071c9bcac" prot="public" static="no">
+        <name>BulkParameter</name>
+        <enumvalue id="class_space_body_1aac4475090a05b2f6d9c833f071c9bcacae59753bed35e0ebfbe10cff15804a89d" prot="public">
+          <name>BP_RADIUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_space_body_1aac4475090a05b2f6d9c833f071c9bcaca35ccbddff5c61ac25c60773423f9bd9d" prot="public">
+          <name>BP_GM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_space_body_1aac4475090a05b2f6d9c833f071c9bcacadb74f3603973fc2f6b212b48b525d634" prot="public">
+          <name>BP_MASS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_space_body_1aac4475090a05b2f6d9c833f071c9bcacaf618c8e50cf91cbd085ce4d337aaac55" prot="public">
+          <name>BP_ACC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_space_body_1aac4475090a05b2f6d9c833f071c9bcacac17b2de205132b2b6b1d64ea099b2059" prot="public">
+          <name>BP_POLE_RA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_space_body_1aac4475090a05b2f6d9c833f071c9bcaca1c310590e6f88be6e339aa6fac74f4d2" prot="public">
+          <name>BP_POLE_DEC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_space_body_1aac4475090a05b2f6d9c833f071c9bcaca97eddf1b8bdd0fbe01972a7b59188a85" prot="public">
+          <name>BP_PM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="15" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" bodystart="14" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_space_body_1a91bf206403f3f1e9e5a940693a27da58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpaceBody::SpaceBody</definition>
+        <argsstring>(long spiceId, const std::string &amp;name=&quot;&quot;)</argsstring>
+        <name>SpaceBody</name>
+        <param>
+          <type>long</type>
+          <declname>spiceId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a92a9cc41eb5c681fa3755bca9ec8ffc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpaceBody::SpaceBody</definition>
+        <argsstring>(const std::string &amp;spiceName, const std::string &amp;name=&quot;&quot;)</argsstring>
+        <name>SpaceBody</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>spiceName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="27" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a4c744f1048b7f3b6a21e56a106791a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpaceBody::SpaceBody</definition>
+        <argsstring>(const SpaceObject &amp;obj)</argsstring>
+        <name>SpaceBody</name>
+        <param>
+          <type>const <ref refid="class_space_object" kindref="compound">SpaceObject</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="28" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a218ec46693291ac05c434322525fb3af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpaceBody::~SpaceBody</definition>
+        <argsstring>()</argsstring>
+        <name>~SpaceBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1abb3a8167a17c31d8aa0a4250ad8ebc2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_space_body" kindref="compound">SpaceBody</ref> *</type>
+        <definition>SpaceBody * SpaceBody::Clone</definition>
+        <argsstring>() const </argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_space_object_1a479f0732cad7fe1f6a1752a1f12eaa7b">Clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="31" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a2d9a7c988b1451e2bf8cdb6ffed70011" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpaceBody::HasIAUFrame</definition>
+        <argsstring>() const </argsstring>
+        <name>HasIAUFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="33" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a88cff28dd1d28613d94b2fc00994316b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_frame" kindref="compound">Frame</ref></type>
+        <definition>Frame SpaceBody::GetIAUFrame</definition>
+        <argsstring>() const </argsstring>
+        <name>GetIAUFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="34" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="51" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a5bf8f002b9e19bedb46f1accf75caaa8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpaceBody::HasDefaultFrame</definition>
+        <argsstring>() const </argsstring>
+        <name>HasDefaultFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="35" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="58" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1ae775f995eaa5a5467d6065be2f98f397" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_frame" kindref="compound">Frame</ref></type>
+        <definition>Frame SpaceBody::GetDefaultFrame</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDefaultFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="36" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="69" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a40614e7d85560093d9260005a310a281" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpaceBody::HasParameter</definition>
+        <argsstring>(BulkParameter param) const </argsstring>
+        <name>HasParameter</name>
+        <param>
+          <type><ref refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcac" kindref="member">BulkParameter</ref></type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="38" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="83" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1aa9c61cb125d77e2fab3db00766db3510" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double SpaceBody::GetSingleDimParam</definition>
+        <argsstring>(BulkParameter param) const </argsstring>
+        <name>GetSingleDimParam</name>
+        <param>
+          <type><ref refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcac" kindref="member">BulkParameter</ref></type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="40" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="119" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a5a846abedc2aa8c89f4beabf186652fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; SpaceBody::GetMultiDimParam</definition>
+        <argsstring>(BulkParameter param) const </argsstring>
+        <name>GetMultiDimParam</name>
+        <param>
+          <type><ref refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcac" kindref="member">BulkParameter</ref></type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="41" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="155" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1ada3282b18f50ad81c02d97a7b0095dee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_quantity_8h_1ae34580a93ad25d119ae1a64ded5aa3b2" kindref="member">Length</ref></type>
+        <definition>Length SpaceBody::GetRadius</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="43" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="197" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a9040b548e16390c7294dcc4b2d5a5d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1a52f38e7d822a46377fde7a02708eedb1" kindref="member">std::array</ref>&lt; <ref refid="_quantity_8h_1ae34580a93ad25d119ae1a64ded5aa3b2" kindref="member">Length</ref>, 3 &gt;</type>
+        <definition>std::array&lt; Length, 3 &gt; SpaceBody::GetRadii</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRadii</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="44" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="204" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1aafaa2bca2b31f390a6c0094d3e36ff61" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_quantity_8h_1a9a85e5d41c1ee35f67f3cc41ad01c417" kindref="member">GravitationalParameter</ref></type>
+        <definition>GravitationalParameter SpaceBody::GetGM</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="45" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="216" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1ab5155fa5d6cc02f1dce20252187ff13d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_quantity_8h_1a4ef88533f12b1ee67a3e0d8630b8ca87" kindref="member">Mass</ref></type>
+        <definition>Mass SpaceBody::GetMass</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="46" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="223" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_space_body_1a32dc9b481fe60576a78d4eab46be2d45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_quantity_8h_1aba4f456ecd43f9c8a095b7f882af47d8" kindref="member">Acceleration</ref></type>
+        <definition>Acceleration SpaceBody::GetSurfaceAcceleration</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSurfaceAcceleration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="47" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="230" bodyend="235"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_space_body_1af88a780d388193a6c5b081fac0de2101" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void SpaceBody::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="50" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="988">
+        <label>SpaceBody</label>
+        <link refid="class_space_body"/>
+        <childnode refid="989" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="989">
+        <label>SpaceObject</label>
+        <link refid="class_space_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="990">
+        <label>SpaceBody</label>
+        <link refid="class_space_body"/>
+        <childnode refid="991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="991">
+        <label>SpaceObject</label>
+        <link refid="class_space_object"/>
+        <childnode refid="991" relation="usage">
+          <edgelabel>Sun</edgelabel>
+          <edgelabel>SSB</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" line="12" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/SpaceBody.h" bodystart="11" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcacaf618c8e50cf91cbd085ce4d337aaac55" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>BP_ACC</name></member>
+      <member refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcaca35ccbddff5c61ac25c60773423f9bd9d" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>BP_GM</name></member>
+      <member refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcacadb74f3603973fc2f6b212b48b525d634" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>BP_MASS</name></member>
+      <member refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcaca97eddf1b8bdd0fbe01972a7b59188a85" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>BP_PM</name></member>
+      <member refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcaca1c310590e6f88be6e339aa6fac74f4d2" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>BP_POLE_DEC</name></member>
+      <member refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcacac17b2de205132b2b6b1d64ea099b2059" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>BP_POLE_RA</name></member>
+      <member refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcacae59753bed35e0ebfbe10cff15804a89d" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>BP_RADIUS</name></member>
+      <member refid="class_space_body_1aac4475090a05b2f6d9c833f071c9bcac" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>BulkParameter</name></member>
+      <member refid="class_space_body_1abb3a8167a17c31d8aa0a4250ad8ebc2a" prot="public" virt="virtual"><scope>SpaceBody</scope><name>Clone</name></member>
+      <member refid="class_space_object_1a980fbd5fe060a425fd0dbaac37879eb0" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>FindChildMassCenterId</name></member>
+      <member refid="class_space_object_1ae7c1493eccfe0e35037e884bc886d164" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>FindChildObjectIds</name></member>
+      <member refid="class_space_object_1a88fb61e9a9c94f262cad1e5fed33e73b" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>FindMoonIds</name></member>
+      <member refid="class_space_object_1a6d9980e2b888bcd13cb393c6cf58e499" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>FindParentObjectId</name></member>
+      <member refid="class_space_object_1a8917a1ebbe125c0a40e857ba6cbca6a3" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetCoverage</name></member>
+      <member refid="class_space_body_1ae775f995eaa5a5467d6065be2f98f397" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetDefaultFrame</name></member>
+      <member refid="class_space_body_1aafaa2bca2b31f390a6c0094d3e36ff61" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetGM</name></member>
+      <member refid="class_space_body_1a88cff28dd1d28613d94b2fc00994316b" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetIAUFrame</name></member>
+      <member refid="class_space_object_1a71e5c1b80aa1a2f512bdbdd0ee186c4d" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetLoadedSpkIds</name></member>
+      <member refid="class_space_body_1ab5155fa5d6cc02f1dce20252187ff13d" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetMass</name></member>
+      <member refid="class_space_body_1a5a846abedc2aa8c89f4beabf186652fd" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetMultiDimParam</name></member>
+      <member refid="class_space_object_1a5f202bec13294119b30e90f54ba2ed7f" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetName</name></member>
+      <member refid="class_space_object_1aa88309b3c2a07ba8884a0f665d1a3c15" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetPosition</name></member>
+      <member refid="class_space_object_1af88472a26b40f422afbe24c17c876cf6" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetPosition</name></member>
+      <member refid="class_space_body_1a9040b548e16390c7294dcc4b2d5a5d58" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetRadii</name></member>
+      <member refid="class_space_body_1ada3282b18f50ad81c02d97a7b0095dee" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetRadius</name></member>
+      <member refid="class_space_body_1aa9c61cb125d77e2fab3db00766db3510" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetSingleDimParam</name></member>
+      <member refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetSpiceId</name></member>
+      <member refid="class_space_object_1aafe0595c55762e7fe30cb9722b45abe5" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetSpiceName</name></member>
+      <member refid="class_space_body_1a32dc9b481fe60576a78d4eab46be2d45" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetSurfaceAcceleration</name></member>
+      <member refid="class_space_object_1ac12ce6edf54d7e93c33aa8a1854d5f82" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetVelocity</name></member>
+      <member refid="class_space_object_1acb8dc5b6d00e516c7eda3e05cc5f213d" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>GetVelocity</name></member>
+      <member refid="class_space_body_1a5bf8f002b9e19bedb46f1accf75caaa8" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>HasDefaultFrame</name></member>
+      <member refid="class_space_body_1a2d9a7c988b1451e2bf8cdb6ffed70011" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>HasIAUFrame</name></member>
+      <member refid="class_space_body_1a40614e7d85560093d9260005a310a281" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>HasParameter</name></member>
+      <member refid="class_space_body_1af88a780d388193a6c5b081fac0de2101" prot="private" virt="non-virtual"><scope>SpaceBody</scope><name>Init</name></member>
+      <member refid="class_space_object_1ac28320427a47945f5a3f55d2d6782ac7" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsBarycenter</name></member>
+      <member refid="class_space_object_1a38d4f7ff4f44e7f0319710984959caa8" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsBarycenter</name></member>
+      <member refid="class_space_object_1ac8010baf561aced8e70fb2fb66a47171" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsBody</name></member>
+      <member refid="class_space_object_1acc1ec4ac4e9cf062695654172c7c143b" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsBody</name></member>
+      <member refid="class_space_object_1af412b21c3066595a80169d413ec8777a" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsMoon</name></member>
+      <member refid="class_space_object_1ac96340e8808d4dd6482190df656275e4" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsMoon</name></member>
+      <member refid="class_space_object_1a9983084aeef5b66ad1867a11af3f6d78" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsPlanet</name></member>
+      <member refid="class_space_object_1a1bf248222724bd97a4cbf7a7a82a924b" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsPlanet</name></member>
+      <member refid="class_space_object_1aee6e2b434bf3b775813c26dfedbf0d8b" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsPlanetaryBarycenter</name></member>
+      <member refid="class_space_object_1a2e9ae0efc7ca822951d5ae6c394a6441" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsPlanetaryBarycenter</name></member>
+      <member refid="class_space_object_1af60d3e96d0d246d9efe821d453472222" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsSSB</name></member>
+      <member refid="class_space_object_1aa8e64576eba8b2d071ab5dd57757abf1" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsSSB</name></member>
+      <member refid="class_space_object_1adf3b4cb454468d8cc3d467c0fe799dcd" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsSun</name></member>
+      <member refid="class_space_object_1a3dc214dd3f78bd07778ee6a899812ee6" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>IsSun</name></member>
+      <member refid="class_space_object_1a6af735f50cde4bb709c82c07d2332c73" prot="protected" virt="non-virtual"><scope>SpaceBody</scope><name>name</name></member>
+      <member refid="class_space_body_1a91bf206403f3f1e9e5a940693a27da58" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>SpaceBody</name></member>
+      <member refid="class_space_body_1a92a9cc41eb5c681fa3755bca9ec8ffc5" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>SpaceBody</name></member>
+      <member refid="class_space_body_1a4c744f1048b7f3b6a21e56a106791a41" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>SpaceBody</name></member>
+      <member refid="class_space_object_1a2b8e7d63a95ad11bdffebb2a99d1a2d9" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>SpaceObject</name></member>
+      <member refid="class_space_object_1a43cc5d5f9207bdf5341e28112aed8285" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>SpaceObject</name></member>
+      <member refid="class_space_object_1a841dd12234c1861d3c1978035c9d7b8d" prot="protected" virt="non-virtual"><scope>SpaceBody</scope><name>spiceId</name></member>
+      <member refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>SSB</name></member>
+      <member refid="class_space_object_1ad047dd22e8dc1ea15bc740d879cde226" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>Sun</name></member>
+      <member refid="class_space_object_1afa92ccf71440611067a3ee0239c060ae" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>ValidateId</name></member>
+      <member refid="class_space_body_1a218ec46693291ac05c434322525fb3af" prot="public" virt="non-virtual"><scope>SpaceBody</scope><name>~SpaceBody</name></member>
+      <member refid="class_space_object_1a60676c3b81a05900eab791eefde444cc" prot="public" virt="virtual"><scope>SpaceBody</scope><name>~SpaceObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

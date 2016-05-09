@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_g_l___window" kind="struct" prot="public">
+    <compoundname>GL_Window</compoundname>
+    <includes refid="_program_8h" local="no">Program.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_l___window_1ad0eed98271ddbfb6ab6cf7f12d7b5d02" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_keys" kindref="compound">Keys</ref> *</type>
+        <definition>Keys* GL_Window::keys</definition>
+        <argsstring></argsstring>
+        <name>keys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="24" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_1a43e3e57bd7ba1d1e98a8bea7b1ca5bfa" prot="public" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND GL_Window::hWnd</definition>
+        <argsstring></argsstring>
+        <name>hWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="25" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_1ac968ec84163d9ff1818a6c7ca6f636ab" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref></type>
+        <definition>HDC GL_Window::hDC</definition>
+        <argsstring></argsstring>
+        <name>hDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_1a529cfea8e49780d88eb095ff56e4bc5e" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1ac592fca28a23754f86edf2739d21068c" kindref="member">HGLRC</ref></type>
+        <definition>HGLRC GL_Window::hRC</definition>
+        <argsstring></argsstring>
+        <name>hRC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="27" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_1a509808116a84e361e12666b2d5b5c62f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_g_l___window_init" kindref="compound">GL_WindowInit</ref></type>
+        <definition>GL_WindowInit GL_Window::init</definition>
+        <argsstring></argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="28" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_1a6b7dc6064a91f6e7ebf071633f43f90d" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref></type>
+        <definition>BOOL GL_Window::isVisible</definition>
+        <argsstring></argsstring>
+        <name>isVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_1af8068e4f9adf4515817a3d72a9cf0d03" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD GL_Window::lastTickCount</definition>
+        <argsstring></argsstring>
+        <name>lastTickCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="30" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="538">
+        <label>Keys</label>
+        <link refid="struct_keys"/>
+      </node>
+      <node id="537">
+        <label>GL_Window</label>
+        <link refid="struct_g_l___window"/>
+        <childnode refid="538" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="539" relation="usage">
+          <edgelabel>init</edgelabel>
+        </childnode>
+      </node>
+      <node id="539">
+        <label>GL_WindowInit</label>
+        <link refid="struct_g_l___window_init"/>
+        <childnode refid="540" relation="usage">
+          <edgelabel>application</edgelabel>
+        </childnode>
+      </node>
+      <node id="540">
+        <label>Application</label>
+        <link refid="struct_application"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="23" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="23" bodyend="31"/>
+    <listofallmembers>
+      <member refid="struct_g_l___window_1ac968ec84163d9ff1818a6c7ca6f636ab" prot="public" virt="non-virtual"><scope>GL_Window</scope><name>hDC</name></member>
+      <member refid="struct_g_l___window_1a529cfea8e49780d88eb095ff56e4bc5e" prot="public" virt="non-virtual"><scope>GL_Window</scope><name>hRC</name></member>
+      <member refid="struct_g_l___window_1a43e3e57bd7ba1d1e98a8bea7b1ca5bfa" prot="public" virt="non-virtual"><scope>GL_Window</scope><name>hWnd</name></member>
+      <member refid="struct_g_l___window_1a509808116a84e361e12666b2d5b5c62f" prot="public" virt="non-virtual"><scope>GL_Window</scope><name>init</name></member>
+      <member refid="struct_g_l___window_1a6b7dc6064a91f6e7ebf071633f43f90d" prot="public" virt="non-virtual"><scope>GL_Window</scope><name>isVisible</name></member>
+      <member refid="struct_g_l___window_1ad0eed98271ddbfb6ab6cf7f12d7b5d02" prot="public" virt="non-virtual"><scope>GL_Window</scope><name>keys</name></member>
+      <member refid="struct_g_l___window_1af8068e4f9adf4515817a3d72a9cf0d03" prot="public" virt="non-virtual"><scope>GL_Window</scope><name>lastTickCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

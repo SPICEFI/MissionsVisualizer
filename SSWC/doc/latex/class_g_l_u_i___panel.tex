@@ -1,0 +1,155 @@
+\hypertarget{class_g_l_u_i___panel}{\section{G\+L\+U\+I\+\_\+\+Panel Class Reference}
+\label{class_g_l_u_i___panel}\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+}
+
+
+{\ttfamily \#include $<$glui.\+h$>$}
+
+
+
+Inheritance diagram for G\+L\+U\+I\+\_\+\+Panel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_l_u_i___panel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+L\+U\+I\+\_\+\+Panel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_l_u_i___panel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_l_u_i___panel_a6a297a441e3f921199347184ded52aca}{G\+L\+U\+I\+\_\+\+Panel} (\hyperlink{class_g_l_u_i___node}{G\+L\+U\+I\+\_\+\+Node} $\ast$\hyperlink{class_g_l_u_i___node_a8ed65d447784f6f88bd3e2e2bcac6cdb}{parent}, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ab7c1afc09f67635c2c376638fcc0db5f}{type}=\hyperlink{glui_8h_add54979a7b4391067b8a125ee34f690a}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D})
+\item 
+\hyperlink{class_g_l_u_i___panel_a8b3bd4012d7a33a9c420a67a58e83a87}{G\+L\+U\+I\+\_\+\+Panel} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___panel_a8038a76f6c88613735f7c65ae9466b0c}{draw} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___panel_a5f76f22a34d3c131e3ace71d24c47d3e}{set\+\_\+name} (const char $\ast$\hyperlink{class_g_l_u_i___control_af0d60e9736f4dbc34e9a536e75876d72}{text})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___panel_aee5e41798d60ac2e4707373be14fd39f}{set\+\_\+type} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} new\+\_\+type)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___panel_ab377b608f9b1006fb67d78e41a1f95d6}{update\+\_\+size} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i___panel_ac8a587cbc0b8640824cbdee00d8a0462}{common\+\_\+init} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} contains a group of related controls. 
+
+Definition at line 1095 of file glui.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_l_u_i___panel_a6a297a441e3f921199347184ded52aca}{\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Panel}]{\setlength{\rightskip}{0pt plus 5cm}G\+L\+U\+I\+\_\+\+Panel\+::\+G\+L\+U\+I\+\_\+\+Panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Node} $\ast$}]{parent, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i___panel_a6a297a441e3f921199347184ded52aca}
+Create a new panel. A panel groups together a set of related controls.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The outer panel our panel is inside; or the main \hyperlink{class_g_l_u_i}{G\+L\+U\+I} object. \\
+\hline
+{\em name} & The string name at the top of our panel. \\
+\hline
+{\em type} & Optional style to display the panel with--G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D by default. G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+R\+A\+I\+S\+E\+D causes the panel to appear higher than the surroundings. G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+N\+O\+N\+E causes the panel's outline to be invisible. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_l_u_i___panel_a8b3bd4012d7a33a9c420a67a58e83a87}{\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\subsubsection[{G\+L\+U\+I\+\_\+\+Panel}]{\setlength{\rightskip}{0pt plus 5cm}G\+L\+U\+I\+\_\+\+Panel\+::\+G\+L\+U\+I\+\_\+\+Panel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_u_i___panel_a8b3bd4012d7a33a9c420a67a58e83a87}
+
+
+Definition at line 1110 of file glui.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_u_i___panel_ac8a587cbc0b8640824cbdee00d8a0462}{\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!common\+\_\+init@{common\+\_\+init}}
+\index{common\+\_\+init@{common\+\_\+init}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\subsubsection[{common\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+\_\+\+Panel\+::common\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_g_l_u_i___panel_ac8a587cbc0b8640824cbdee00d8a0462}
+
+
+Definition at line 1119 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i___panel_a8038a76f6c88613735f7c65ae9466b0c}{\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!draw@{draw}}
+\index{draw@{draw}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+\_\+\+Panel\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___panel_a8038a76f6c88613735f7c65ae9466b0c}
+
+
+Implements \hyperlink{class_g_l_u_i___control_a2eb42d7a7951280ad2fe8c37972bf66a}{G\+L\+U\+I\+\_\+\+Control}.
+
+
+
+Reimplemented in \hyperlink{class_g_l_u_i___tree_a95b179b8d413fc280ef58cb62f9defb2}{G\+L\+U\+I\+\_\+\+Tree}, and \hyperlink{class_g_l_u_i___rollout_ae3ff0bbeb04f22aa5489cf542b6e3fbb}{G\+L\+U\+I\+\_\+\+Rollout}.
+
+\hypertarget{class_g_l_u_i___panel_a5f76f22a34d3c131e3ace71d24c47d3e}{\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!set\+\_\+name@{set\+\_\+name}}
+\index{set\+\_\+name@{set\+\_\+name}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\subsubsection[{set\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+\_\+\+Panel\+::set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___panel_a5f76f22a34d3c131e3ace71d24c47d3e}
+
+
+Reimplemented from \hyperlink{class_g_l_u_i___control_ad1bf0640802de0a40337cdbcf93a5ec6}{G\+L\+U\+I\+\_\+\+Control}.
+
+\hypertarget{class_g_l_u_i___panel_aee5e41798d60ac2e4707373be14fd39f}{\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!set\+\_\+type@{set\+\_\+type}}
+\index{set\+\_\+type@{set\+\_\+type}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\subsubsection[{set\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+\_\+\+Panel\+::set\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{new\+\_\+type}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i___panel_aee5e41798d60ac2e4707373be14fd39f}
+\hypertarget{class_g_l_u_i___panel_ab377b608f9b1006fb67d78e41a1f95d6}{\index{G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}!update\+\_\+size@{update\+\_\+size}}
+\index{update\+\_\+size@{update\+\_\+size}!G\+L\+U\+I\+\_\+\+Panel@{G\+L\+U\+I\+\_\+\+Panel}}
+\subsubsection[{update\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+\_\+\+Panel\+::update\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_u_i___panel_ab377b608f9b1006fb67d78e41a1f95d6}
+
+
+Reimplemented from \hyperlink{class_g_l_u_i___control_a4bfe55acbbf735a7d2ff07d687a481e2}{G\+L\+U\+I\+\_\+\+Control}.
+
+
+
+Reimplemented in \hyperlink{class_g_l_u_i___tree_ae74e9b85940ce63ebac36ef650e845ae}{G\+L\+U\+I\+\_\+\+Tree}, and \hyperlink{class_g_l_u_i___rollout_af6f664a8ca31757bc1e5926d5eaf2827}{G\+L\+U\+I\+\_\+\+Rollout}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+G\+L/\hyperlink{glui_8h}{glui.\+h}\end{DoxyCompactItemize}

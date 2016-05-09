@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_frame_1_1_frame_info" kind="struct" prot="public">
+    <compoundname>Frame::FrameInfo</compoundname>
+    <includes refid="_frame_8h" local="no">Frame.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_frame_1_1_frame_info_1a13df02e5be92dc224b0ed75c2e339fc5" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Frame::FrameInfo::centerId</definition>
+        <argsstring></argsstring>
+        <name>centerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="28" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_frame_1_1_frame_info_1a26a5b5ce9d01a6029fbd2aaf6c77e574" prot="public" static="no" mutable="no">
+        <type><ref refid="class_frame_1ad2f22450377db20233914c9ec0a21df4" kindref="member">FrameType</ref></type>
+        <definition>FrameType Frame::FrameInfo::frameType</definition>
+        <argsstring></argsstring>
+        <name>frameType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_frame_1_1_frame_info_1a26545f9bb7266068c37985694b990192" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Frame::FrameInfo::classId</definition>
+        <argsstring></argsstring>
+        <name>classId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="30" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" line="27" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Frame.h" bodystart="26" bodyend="31"/>
+    <listofallmembers>
+      <member refid="struct_frame_1_1_frame_info_1a13df02e5be92dc224b0ed75c2e339fc5" prot="public" virt="non-virtual"><scope>Frame::FrameInfo</scope><name>centerId</name></member>
+      <member refid="struct_frame_1_1_frame_info_1a26545f9bb7266068c37985694b990192" prot="public" virt="non-virtual"><scope>Frame::FrameInfo</scope><name>classId</name></member>
+      <member refid="struct_frame_1_1_frame_info_1a26a5b5ce9d01a6029fbd2aaf6c77e574" prot="public" virt="non-virtual"><scope>Frame::FrameInfo</scope><name>frameType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

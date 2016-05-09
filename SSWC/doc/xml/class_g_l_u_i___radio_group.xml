@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___radio_group" kind="class" prot="public">
+    <compoundname>GLUI_RadioGroup</compoundname>
+    <basecompoundref refid="class_g_l_u_i___control" prot="public" virt="non-virtual">GLUI_Control</basecompoundref>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___radio_group_1a392b3c55c3951005a573491e5b555f35" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_RadioGroup::num_buttons</definition>
+        <argsstring></argsstring>
+        <name>num_buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1750" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1750" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_l_u_i___radio_group_1ac29a2b338b80e74267efb42f94b380e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_RadioGroup::draw</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>draw</name>
+        <reimplements refid="class_g_l_u_i___control_1a2eb42d7a7951280ad2fe8c37972bf66a">draw</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1752" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___radio_group_1a8a3caea1aa9f603fae4ceab1c4e1b83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_RadioGroup::set_name</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>set_name</name>
+        <reimplements refid="class_g_l_u_i___control_1ad1bf0640802de0a40337cdbcf93a5ec6">set_name</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1753" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___radio_group_1a9dc08156997557c983d402682dd01557" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_RadioGroup::set_int_val</definition>
+        <argsstring>(int int_val)</argsstring>
+        <name>set_int_val</name>
+        <reimplements refid="class_g_l_u_i___control_1a32ef6d11d6c62e344f17268dfb96aad6">set_int_val</reimplements>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>int_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1754" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___radio_group_1ade83c982cd22902440bf1b5dcb3971ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_RadioGroup::set_selected</definition>
+        <argsstring>(int int_val)</argsstring>
+        <name>set_selected</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>int_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1755" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___radio_group_1a5feb3d5983d432a037e7fed7ebd7f3c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_RadioGroup::draw_group</definition>
+        <argsstring>(int translate)</argsstring>
+        <name>draw_group</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>translate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1757" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___radio_group_1a36c19d4c90c003ca6f49de004be96a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_RadioGroup::GLUI_RadioGroup</definition>
+        <argsstring>(GLUI_Node *parent, int *live_var=NULL, int user_id=-1, GLUI_CB callback=GLUI_CB())</argsstring>
+        <name>GLUI_RadioGroup</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>live_var</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>user_id</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref></type>
+          <declname>callback</declname>
+          <defval><ref refid="class_g_l_u_i___c_b" kindref="compound">GLUI_CB</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1759" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___radio_group_1a3fffc4c3273b548ea011ab8d52654317" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_RadioGroup::GLUI_RadioGroup</definition>
+        <argsstring>(void)</argsstring>
+        <name>GLUI_RadioGroup</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1761" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1761" bodyend="1761"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_g_l_u_i___radio_group_1ad10760662aad89d1ee4868abbe5c94e1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_RadioGroup::common_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>common_init</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1764" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1764" bodyend="1775"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="808">
+        <label>GLUI_Control</label>
+        <link refid="class_g_l_u_i___control"/>
+        <childnode refid="809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="809">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+      </node>
+      <node id="807">
+        <label>GLUI_RadioGroup</label>
+        <link refid="class_g_l_u_i___radio_group"/>
+        <childnode refid="808" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="816">
+        <label>RGBc</label>
+        <link refid="class_r_g_bc"/>
+      </node>
+      <node id="811">
+        <label>GLUI_Control</label>
+        <link refid="class_g_l_u_i___control"/>
+        <childnode refid="812" relation="public-inheritance">
+        </childnode>
+        <childnode refid="812" relation="usage">
+          <edgelabel>collapsed_node</edgelabel>
+        </childnode>
+        <childnode refid="813" relation="usage">
+          <edgelabel>callback</edgelabel>
+        </childnode>
+        <childnode refid="814" relation="usage">
+          <edgelabel>glui</edgelabel>
+        </childnode>
+      </node>
+      <node id="817">
+        <label>GLUI_StdBitmaps</label>
+        <link refid="class_g_l_u_i___std_bitmaps"/>
+      </node>
+      <node id="813">
+        <label>GLUI_CB</label>
+        <link refid="class_g_l_u_i___c_b"/>
+      </node>
+      <node id="818">
+        <label>GLUI_Panel</label>
+        <link refid="class_g_l_u_i___panel"/>
+        <childnode refid="811" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="815">
+        <label>GLUI_Main</label>
+        <link refid="class_g_l_u_i___main"/>
+        <childnode refid="812" relation="public-inheritance">
+        </childnode>
+        <childnode refid="811" relation="usage">
+          <edgelabel>active_control</edgelabel>
+          <edgelabel>mouse_over_control</edgelabel>
+        </childnode>
+        <childnode refid="816" relation="usage">
+          <edgelabel>bkgd_color</edgelabel>
+        </childnode>
+        <childnode refid="817" relation="usage">
+          <edgelabel>std_bitmaps</edgelabel>
+        </childnode>
+        <childnode refid="818" relation="usage">
+          <edgelabel>main_panel</edgelabel>
+        </childnode>
+      </node>
+      <node id="812">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+        <childnode refid="812" relation="usage">
+          <edgelabel>prev_sibling</edgelabel>
+          <edgelabel>next_sibling</edgelabel>
+          <edgelabel>child_head</edgelabel>
+          <edgelabel>parent_node</edgelabel>
+          <edgelabel>child_tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="810">
+        <label>GLUI_RadioGroup</label>
+        <link refid="class_g_l_u_i___radio_group"/>
+        <childnode refid="811" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="814">
+        <label>GLUI</label>
+        <link refid="class_g_l_u_i"/>
+        <childnode refid="815" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="1748" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="1747" bodyend="1776"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___control_1af686704718daf4761d17e4da83c03aad" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>activate</name></member>
+      <member refid="class_g_l_u_i___control_1ad285387e771b46fb294935f68e967a77" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>active</name></member>
+      <member refid="class_g_l_u_i___control_1ab9864db034526ddd5bbff94a5fb3ee9b" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>active_type</name></member>
+      <member refid="class_g_l_u_i___node_1a02cf295c81cebe31c39e95403dbadbc1" prot="protected" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>add_child_to_control</name></member>
+      <member refid="class_g_l_u_i___node_1abdcdd643758adab07580124187565fcd" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>add_control</name></member>
+      <member refid="class_g_l_u_i___control_1aa82d73e561e85086c13de6b8d67e9322" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>align</name></member>
+      <member refid="class_g_l_u_i___control_1a5d352c36d6bad2a1eaf9795bba00b7e7" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>alignment</name></member>
+      <member refid="class_g_l_u_i___control_1a96060fe0cc6d537e736dd6eef78e24ab" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>callback</name></member>
+      <member refid="class_g_l_u_i___control_1a2484b0899bd5b56673a73387c9c530a7" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>can_activate</name></member>
+      <member refid="class_g_l_u_i___control_1add5d7aa8efcd213181cf84975661e168" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>can_draw</name></member>
+      <member refid="class_g_l_u_i___control_1ae56ff4899b691fc25332071f8f4c15f3" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>char_width</name></member>
+      <member refid="class_g_l_u_i___control_1a3b24d8c0f29ab6fc2318278543906cb5" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>char_widths</name></member>
+      <member refid="class_g_l_u_i___node_1ad9370e7f62e83bb720063d2439f544c2" prot="protected" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>child_head</name></member>
+      <member refid="class_g_l_u_i___node_1a971d8e606c1a3442ad9b8681bdb9ed59" prot="protected" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>child_tail</name></member>
+      <member refid="class_g_l_u_i___control_1a0f32f9b712ae3233f914d02738c43e7f" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>collapsed_node</name></member>
+      <member refid="class_g_l_u_i___control_1a7a6528f287b80bed5861625eda4e5cad" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>collapsible</name></member>
+      <member refid="class_g_l_u_i___radio_group_1ad10760662aad89d1ee4868abbe5c94e1" prot="protected" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>common_init</name></member>
+      <member refid="class_g_l_u_i___control_1afc9111c158e729b1e1630d4d9cd6ee1a" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>contain_h</name></member>
+      <member refid="class_g_l_u_i___control_1a9d54f7b7c867572debdad16b37867093" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>contain_w</name></member>
+      <member refid="class_g_l_u_i___control_1aa02b20473b2d00e5b95bf36ff941e5bf" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>contain_x</name></member>
+      <member refid="class_g_l_u_i___control_1a6327d4d71e9368bf238c6fddd958649e" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>contain_y</name></member>
+      <member refid="class_g_l_u_i___control_1a9d18764a6cfe25c220c845eff480d4fe" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>deactivate</name></member>
+      <member refid="class_g_l_u_i___control_1a765dcd68a28a3db25bf41c015e28ee18" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>disable</name></member>
+      <member refid="class_g_l_u_i___radio_group_1ac29a2b338b80e74267efb42f94b380e0" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>draw</name></member>
+      <member refid="class_g_l_u_i___control_1aa61812303961384f999c35f128f04c93" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_active_box</name></member>
+      <member refid="class_g_l_u_i___control_1ad1bcdb980c0ccbcbafd7b51a6564ccc0" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_bkgd_box</name></member>
+      <member refid="class_g_l_u_i___control_1a5dff8194089a66651d3729cf7c465644" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_box</name></member>
+      <member refid="class_g_l_u_i___control_1adba9e88ff56a8ea0596e6b1ede3d4b9d" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_box_inwards_outline</name></member>
+      <member refid="class_g_l_u_i___control_1af8bfdf4867b4521fd3c12825e8a150db" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_char</name></member>
+      <member refid="class_g_l_u_i___control_1a1386b942473e028e9204bd1a28e83a6d" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_emboss_box</name></member>
+      <member refid="class_g_l_u_i___radio_group_1a5feb3d5983d432a037e7fed7ebd7f3c0" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_group</name></member>
+      <member refid="class_g_l_u_i___control_1aacacd563742e3e48bc5f27643e4a514c" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_name</name></member>
+      <member refid="class_g_l_u_i___control_1af151f23a66652c7be4a49320d49a3aab" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_recursive</name></member>
+      <member refid="class_g_l_u_i___control_1a05172f3645ac042839036c97e04ea819" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_string</name></member>
+      <member refid="class_g_l_u_i___control_1aba5d462fcca0297c3dbf6a26d0774e4a" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>draw_string</name></member>
+      <member refid="class_g_l_u_i___node_1abce29cf0ade68e9e5702025f710cb1e8" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>dump</name></member>
+      <member refid="class_g_l_u_i___control_1aaadc8fd35d8d40091abe3538af346255" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>enable</name></member>
+      <member refid="class_g_l_u_i___control_1a834202682d00a31a2141eae6709d37e1" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>enabled</name></member>
+      <member refid="class_g_l_u_i___control_1a76fe9cee85c7a296610a73b0ba12aa9c" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>execute_callback</name></member>
+      <member refid="class_g_l_u_i___node_1a631b094804b887c0d091ece2786543d1" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>first_child</name></member>
+      <member refid="class_g_l_u_i___node_1ace20232965e8d9da8f3d286113d5572a" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>first_sibling</name></member>
+      <member refid="class_g_l_u_i___control_1a504f6aff85729e665fa8664d170d9878" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>float_array_size</name></member>
+      <member refid="class_g_l_u_i___control_1a6d2cc0faaa678706939ac775c523871a" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>float_array_val</name></member>
+      <member refid="class_g_l_u_i___control_1ac69b8e62a6f4f16c83b70a64f73d7a1c" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>float_val</name></member>
+      <member refid="class_g_l_u_i___control_1a132273406b5ea6d95cd26501fc2f2027" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>font</name></member>
+      <member refid="class_g_l_u_i___control_1a98f514bf95d29320c175fe1d7d4ef13b" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>get_float_array_val</name></member>
+      <member refid="class_g_l_u_i___control_1a5b4f37b463259dfbf228b34b901a07cc" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>get_float_val</name></member>
+      <member refid="class_g_l_u_i___control_1af659cbe80e9a5bdfd4fbff4366d4ce4f" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>get_font</name></member>
+      <member refid="class_g_l_u_i___control_1a855a5f2c0267a303b39f685284913b40" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>get_id</name></member>
+      <member refid="class_g_l_u_i___control_1a3ee80f39e04a26e38bc5e16f0f8af539" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>get_int_val</name></member>
+      <member refid="class_g_l_u_i___control_1a0cb273fd3dca9fb84809a4d350668c32" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>get_this_column_dims</name></member>
+      <member refid="class_g_l_u_i___control_1ac731aebe26d7eb0b916a9692229f0eb6" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>glui</name></member>
+      <member refid="class_g_l_u_i___control_1a09c6f812cb8b6ba83e15fd96d0018552" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>GLUI_Control</name></member>
+      <member refid="class_g_l_u_i___node_1a066e5d80bfb9925bdb034c29da9c844c" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>GLUI_Node</name></member>
+      <member refid="class_g_l_u_i___radio_group_1a36c19d4c90c003ca6f49de004be96a90" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>GLUI_RadioGroup</name></member>
+      <member refid="class_g_l_u_i___radio_group_1a3fffc4c3273b548ea011ab8d52654317" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>GLUI_RadioGroup</name></member>
+      <member refid="class_g_l_u_i___control_1a058c4f060b70952e6199f1409710ba0b" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>h</name></member>
+      <member refid="class_g_l_u_i___control_1aec1b041f28d8ee36a0241dde827fea21" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>hidden</name></member>
+      <member refid="class_g_l_u_i___control_1ae88270c442111baddf290f4a153caed1" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>hide_internal</name></member>
+      <member refid="class_g_l_u_i___control_1a4eb47a3c2c20c0c24dca192a2eb96c8d" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>idle</name></member>
+      <member refid="class_g_l_u_i___control_1a4d56b92f8b6454c3f64ba6f0ef5470b8" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>init_live</name></member>
+      <member refid="class_g_l_u_i___control_1a4a890b5b5a854b34200b5e63f1069b4e" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>int_val</name></member>
+      <member refid="class_g_l_u_i___control_1ac667bec4efbc9bdbf3e246b4471fb4cb" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>is_container</name></member>
+      <member refid="class_g_l_u_i___control_1a3e4e35edfa04ce71c090bdb849b7642c" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>is_open</name></member>
+      <member refid="class_g_l_u_i___control_1a7f9da8ca7df99bd4cf394a9fd8ce19f1" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>key_handler</name></member>
+      <member refid="class_g_l_u_i___node_1a4825cdc843f0e2b46d75fe5cb9e8ba35" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>last_child</name></member>
+      <member refid="class_g_l_u_i___control_1aa9ebadbed670a1fa061918705083db57" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>last_live_float</name></member>
+      <member refid="class_g_l_u_i___control_1a719177af6b52ae3373d2b3c30430ff58" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>last_live_float_array</name></member>
+      <member refid="class_g_l_u_i___control_1abef31d8d51c8088afd6ac96ec7b596bf" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>last_live_int</name></member>
+      <member refid="class_g_l_u_i___control_1ac77569805eb6ccfce3f4ff1d09c309b6" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>last_live_text</name></member>
+      <member refid="class_g_l_u_i___node_1a6458e5a6af00ddf2ebb9271c06fa2931" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>last_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a3feadb4b6d58122ff5449adfb4a323bc" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>link_this_to_parent_first</name></member>
+      <member refid="class_g_l_u_i___node_1a28eb5c7bf5a0edf5b7ba2502384c6544" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>link_this_to_parent_last</name></member>
+      <member refid="class_g_l_u_i___node_1ad8d7fd8a437eeec4a72b73064dc954b4" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>link_this_to_sibling_next</name></member>
+      <member refid="class_g_l_u_i___node_1a5825555fc493712a1d6f24235f59f25a" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>link_this_to_sibling_prev</name></member>
+      <member refid="class_g_l_u_i___control_1a74977797cf84a38ef78de8c548bc2d25" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>live_inited</name></member>
+      <member refid="class_g_l_u_i___control_1a8ba7cae809a47dd870592aa2cc85483b" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>live_type</name></member>
+      <member refid="class_g_l_u_i___control_1a92b77565168a1d2003bca1c16ac00e8d" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>mouse_down_handler</name></member>
+      <member refid="class_g_l_u_i___control_1a4b44e44c1c455adc7f98c63aeb6aa919" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>mouse_held_down_handler</name></member>
+      <member refid="class_g_l_u_i___control_1ac16c3ff7bef1a64abd36a00aa3d935d8" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>mouse_over</name></member>
+      <member refid="class_g_l_u_i___control_1ac32aad8f69134d03682e34d0488a18f1" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>mouse_up_handler</name></member>
+      <member refid="class_g_l_u_i___control_1aa95b97d50df45335fc33f0af03958eb3" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>name</name></member>
+      <member refid="class_g_l_u_i___control_1a420fb3c5991b6486754ba192f8ab8274" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>needs_idle</name></member>
+      <member refid="class_g_l_u_i___node_1a7901214f386113b417a25de023476317" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>next</name></member>
+      <member refid="class_g_l_u_i___node_1a2c99ef6a1290035f98871d859d05e890" prot="protected" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>next_sibling</name></member>
+      <member refid="class_g_l_u_i___radio_group_1a392b3c55c3951005a573491e5b555f35" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>num_buttons</name></member>
+      <member refid="class_g_l_u_i___control_1ac7417112964d4c5134d4453835a0da99" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>output_live</name></member>
+      <member refid="class_g_l_u_i___control_1a55b244224a7446e7254a9d3b468d4925" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>pack</name></member>
+      <member refid="class_g_l_u_i___control_1a1c9cf8a504998db2393c4d45144eca8d" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>pack_old</name></member>
+      <member refid="class_g_l_u_i___node_1a8ed65d447784f6f88bd3e2e2bcac6cdb" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>parent</name></member>
+      <member refid="class_g_l_u_i___node_1a308f39e8a182f499139381840418a573" prot="protected" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>parent_node</name></member>
+      <member refid="class_g_l_u_i___node_1a84892bf13144651007640c5f25b51145" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>prev</name></member>
+      <member refid="class_g_l_u_i___node_1afa72f0491ca54ce8d0a0af7049de8049" prot="protected" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>prev_sibling</name></member>
+      <member refid="class_g_l_u_i___control_1a0890ea809b8d980695939e1d92a0af47" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>ptr_val</name></member>
+      <member refid="class_g_l_u_i___control_1a7777125cd866884377899df625bad6cd" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>redraw</name></member>
+      <member refid="class_g_l_u_i___control_1aecb4bacd8f4ff12de6ffcecc166d3adc" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>redraw_window</name></member>
+      <member refid="class_g_l_u_i___control_1a49e4d3f46873d156162d9f770b7b3832" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>restore_window</name></member>
+      <member refid="class_g_l_u_i___control_1ad853d2029a306239daa3c9af6c36730d" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>set_alignment</name></member>
+      <member refid="class_g_l_u_i___control_1aa9a1c1e033c0e99e4710dfc4669660f4" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>set_float_array_val</name></member>
+      <member refid="class_g_l_u_i___control_1a231fe69a978a66b858727e50327bcf59" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>set_float_val</name></member>
+      <member refid="class_g_l_u_i___control_1ae317f3c30fbd4cad6bd91523c7e3e6b0" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>set_font</name></member>
+      <member refid="class_g_l_u_i___control_1acc29b79df3861b1910b2a41e0e8d2822" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>set_h</name></member>
+      <member refid="class_g_l_u_i___control_1ad27f17ac45b13fb12d623f269d76db14" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>set_id</name></member>
+      <member refid="class_g_l_u_i___radio_group_1a9dc08156997557c983d402682dd01557" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>set_int_val</name></member>
+      <member refid="class_g_l_u_i___radio_group_1a8a3caea1aa9f603fae4ceab1c4e1b83a" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>set_name</name></member>
+      <member refid="class_g_l_u_i___control_1a9c732d42b7d5e418e59c307ef2d98d5c" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>set_ptr_val</name></member>
+      <member refid="class_g_l_u_i___radio_group_1ade83c982cd22902440bf1b5dcb3971ef" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>set_selected</name></member>
+      <member refid="class_g_l_u_i___control_1a44fab5a8af3c58865bc2cd8bfd596af8" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>set_text</name></member>
+      <member refid="class_g_l_u_i___control_1a091c0c095827c3270b442d9bd3542d50" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>set_to_bkgd_color</name></member>
+      <member refid="class_g_l_u_i___control_1aff3f98acd4b58ba0db35b5889c4006bc" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>set_to_glut_window</name></member>
+      <member refid="class_g_l_u_i___control_1a7f9dde76de0e5fd660dc43695b40c91d" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>set_w</name></member>
+      <member refid="class_g_l_u_i___control_1a023da130fb762f944077c55d90aec839" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>spacebar_mouse_click</name></member>
+      <member refid="class_g_l_u_i___control_1ab08da363df3f3eae867dd5ae61200f23" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>special_handler</name></member>
+      <member refid="class_g_l_u_i___control_1a57ed4e7d0b82e459fb713a9bf29db12b" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>string_width</name></member>
+      <member refid="class_g_l_u_i___control_1a9d129d259e01c1b28f4fc7a7a7830189" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>string_width</name></member>
+      <member refid="class_g_l_u_i___control_1a56a06a9b1272eb0a537ea01a6c002cf8" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>sync_live</name></member>
+      <member refid="class_g_l_u_i___control_1af0d60e9736f4dbc34e9a536e75876d72" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>text</name></member>
+      <member refid="class_g_l_u_i___control_1ae0e46e41b11758295ae0f2d1c9372dda" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>translate_and_draw_front</name></member>
+      <member refid="class_g_l_u_i___control_1a11ae15dcbb0ed5136b471a77eda41266" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>translate_to_origin</name></member>
+      <member refid="class_g_l_u_i___control_1a73192b0fdcaa75eb04d43fa70abe246f" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>unhide_internal</name></member>
+      <member refid="class_g_l_u_i___node_1a48b62b12bf8c466fc54fbbbf30183493" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>unlink</name></member>
+      <member refid="class_g_l_u_i___control_1a4bfe55acbbf735a7d2ff07d687a481e2" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>update_size</name></member>
+      <member refid="class_g_l_u_i___control_1a6c88b7c72b0800f88a5d4cda4868c8b6" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>user_id</name></member>
+      <member refid="class_g_l_u_i___control_1aca82a099b9cbbadb188794cbfb06aa27" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>w</name></member>
+      <member refid="class_g_l_u_i___control_1a42a65c9dbc0690e270a8c0033fbc1845" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>wants_tabs</name></member>
+      <member refid="class_g_l_u_i___control_1a7f0f98737828ad255401f642826fbd7e" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>x_abs</name></member>
+      <member refid="class_g_l_u_i___control_1a853d95e48b8bd6d2bdd41dabc2b1a1a6" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>x_off</name></member>
+      <member refid="class_g_l_u_i___control_1a54a7a5a7c37e5c0e0a3154bac7ddb049" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>y_abs</name></member>
+      <member refid="class_g_l_u_i___control_1af4beca38aaf1aba7f5b4bfa3ccc8b909" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>y_off_bot</name></member>
+      <member refid="class_g_l_u_i___control_1a94fec9974356d3955e3a80e7d06926b9" prot="public" virt="non-virtual"><scope>GLUI_RadioGroup</scope><name>y_off_top</name></member>
+      <member refid="class_g_l_u_i___control_1a8afdc7d81a09fa30a759d5456559e637" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>~GLUI_Control</name></member>
+      <member refid="class_g_l_u_i___node_1ae6982edc46ab73963ee8ce9f6d035982" prot="public" virt="virtual"><scope>GLUI_RadioGroup</scope><name>~GLUI_Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

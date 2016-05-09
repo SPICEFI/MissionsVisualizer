@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_g_l___window_init" kind="struct" prot="public">
+    <compoundname>GL_WindowInit</compoundname>
+    <includes refid="_program_8h" local="no">Program.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_l___window_init_1afde844f257aafdb31bd03338723a2206" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_application" kindref="compound">Application</ref> *</type>
+        <definition>Application* GL_WindowInit::application</definition>
+        <argsstring></argsstring>
+        <name>application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="15" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_init_1a64c652d1fb4e2afa60b30fca91920ed4" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* GL_WindowInit::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="16" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_init_1a1a1c2cd5a8bc6b90987885307c296d9f" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GL_WindowInit::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="17" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_init_1a8413cf084b2d4e7056da68940ab1438e" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GL_WindowInit::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="18" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_init_1aa4220e9602ef12719a010e049a42fcea" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GL_WindowInit::bitsPerPixel</definition>
+        <argsstring></argsstring>
+        <name>bitsPerPixel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="19" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l___window_init_1a217a2406116f019e13094868c1810a32" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref></type>
+        <definition>BOOL GL_WindowInit::isFullScreen</definition>
+        <argsstring></argsstring>
+        <name>isFullScreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="20" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="542">
+        <label>GL_WindowInit</label>
+        <link refid="struct_g_l___window_init"/>
+        <childnode refid="543" relation="usage">
+          <edgelabel>application</edgelabel>
+        </childnode>
+      </node>
+      <node id="543">
+        <label>Application</label>
+        <link refid="struct_application"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="14" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="struct_g_l___window_init_1afde844f257aafdb31bd03338723a2206" prot="public" virt="non-virtual"><scope>GL_WindowInit</scope><name>application</name></member>
+      <member refid="struct_g_l___window_init_1aa4220e9602ef12719a010e049a42fcea" prot="public" virt="non-virtual"><scope>GL_WindowInit</scope><name>bitsPerPixel</name></member>
+      <member refid="struct_g_l___window_init_1a8413cf084b2d4e7056da68940ab1438e" prot="public" virt="non-virtual"><scope>GL_WindowInit</scope><name>height</name></member>
+      <member refid="struct_g_l___window_init_1a217a2406116f019e13094868c1810a32" prot="public" virt="non-virtual"><scope>GL_WindowInit</scope><name>isFullScreen</name></member>
+      <member refid="struct_g_l___window_init_1a64c652d1fb4e2afa60b30fca91920ed4" prot="public" virt="non-virtual"><scope>GL_WindowInit</scope><name>title</name></member>
+      <member refid="struct_g_l___window_init_1a1a1c2cd5a8bc6b90987885307c296d9f" prot="public" virt="non-virtual"><scope>GL_WindowInit</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

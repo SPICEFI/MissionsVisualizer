@@ -1,0 +1,304 @@
+.TH "SSWC/src/GL/tube.h" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/GL/tube.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGLE_API_VERSION\fP   228"
+.br
+.ti -1c
+.RI "#define \fBgleDouble\fP   double"
+.br
+.ti -1c
+.RI "#define \fBTUBE_JN_RAW\fP   0x1"
+.br
+.ti -1c
+.RI "#define \fBTUBE_JN_ANGLE\fP   0x2"
+.br
+.ti -1c
+.RI "#define \fBTUBE_JN_CUT\fP   0x3"
+.br
+.ti -1c
+.RI "#define \fBTUBE_JN_ROUND\fP   0x4"
+.br
+.ti -1c
+.RI "#define \fBTUBE_JN_MASK\fP   0xf    /* mask bits */"
+.br
+.ti -1c
+.RI "#define \fBTUBE_JN_CAP\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBTUBE_NORM_FACET\fP   0x100"
+.br
+.ti -1c
+.RI "#define \fBTUBE_NORM_EDGE\fP   0x200"
+.br
+.ti -1c
+.RI "#define \fBTUBE_NORM_PATH_EDGE\fP   0x400 /* for spiral, lathe, helix primitives */"
+.br
+.ti -1c
+.RI "#define \fBTUBE_NORM_MASK\fP   0xf00    /* mask bits */"
+.br
+.ti -1c
+.RI "#define \fBTUBE_CONTOUR_CLOSED\fP   0x1000"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_ENABLE\fP   0x10000"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_STYLE_MASK\fP   0xff"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_VERTEX_FLAT\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_NORMAL_FLAT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_VERTEX_CYL\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_NORMAL_CYL\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_VERTEX_SPH\fP   5"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_NORMAL_SPH\fP   6"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_VERTEX_MODEL_FLAT\fP   7"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_NORMAL_MODEL_FLAT\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_VERTEX_MODEL_CYL\fP   9"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_NORMAL_MODEL_CYL\fP   10"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_VERTEX_MODEL_SPH\fP   11"
+.br
+.ti -1c
+.RI "#define \fBGLE_TEXTURE_NORMAL_MODEL_SPH\fP   12"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBgleDouble\fP \fBgleAffine\fP [2][3]"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBgleGetJoinStyle\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleSetJoinStyle\fP (\fBint\fP style)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBgleGetNumSlices\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleSetNumSlices\fP (\fBint\fP slices)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglePolyCylinder\fP (\fBint\fP npoints, \fBgleDouble\fP point_array[][3], float color_array[][3], \fBgleDouble\fP radius)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglePolyCone\fP (\fBint\fP npoints, \fBgleDouble\fP point_array[][3], float color_array[][3], \fBgleDouble\fP radius_array[])"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleExtrusion\fP (\fBint\fP ncp, \fBgleDouble\fP contour[][2], \fBgleDouble\fP cont_normal[][2], \fBgleDouble\fP up[3], \fBint\fP npoints, \fBgleDouble\fP point_array[][3], float color_array[][3])"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleTwistExtrusion\fP (\fBint\fP ncp, \fBgleDouble\fP contour[][2], \fBgleDouble\fP cont_normal[][2], \fBgleDouble\fP up[3], \fBint\fP npoints, \fBgleDouble\fP point_array[][3], float color_array[][3], \fBgleDouble\fP twist_array[])"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleSuperExtrusion\fP (\fBint\fP ncp, \fBgleDouble\fP contour[][2], \fBgleDouble\fP cont_normal[][2], \fBgleDouble\fP up[3], \fBint\fP npoints, \fBgleDouble\fP point_array[][3], float color_array[][3], \fBgleDouble\fP xform_array[][2][3])"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleSpiral\fP (\fBint\fP ncp, \fBgleDouble\fP contour[][2], \fBgleDouble\fP cont_normal[][2], \fBgleDouble\fP up[3], \fBgleDouble\fP startRadius, \fBgleDouble\fP drdTheta, \fBgleDouble\fP startZ, \fBgleDouble\fP dzdTheta, \fBgleDouble\fP startXform[2][3], \fBgleDouble\fP dXformdTheta[2][3], \fBgleDouble\fP startTheta, \fBgleDouble\fP sweepTheta)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleLathe\fP (\fBint\fP ncp, \fBgleDouble\fP contour[][2], \fBgleDouble\fP cont_normal[][2], \fBgleDouble\fP up[3], \fBgleDouble\fP startRadius, \fBgleDouble\fP drdTheta, \fBgleDouble\fP startZ, \fBgleDouble\fP dzdTheta, \fBgleDouble\fP startXform[2][3], \fBgleDouble\fP dXformdTheta[2][3], \fBgleDouble\fP startTheta, \fBgleDouble\fP sweepTheta)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleHelicoid\fP (\fBgleDouble\fP rToroid, \fBgleDouble\fP startRadius, \fBgleDouble\fP drdTheta, \fBgleDouble\fP startZ, \fBgleDouble\fP dzdTheta, \fBgleDouble\fP startXform[2][3], \fBgleDouble\fP dXformdTheta[2][3], \fBgleDouble\fP startTheta, \fBgleDouble\fP sweepTheta)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleToroid\fP (\fBgleDouble\fP rToroid, \fBgleDouble\fP startRadius, \fBgleDouble\fP drdTheta, \fBgleDouble\fP startZ, \fBgleDouble\fP dzdTheta, \fBgleDouble\fP startXform[2][3], \fBgleDouble\fP dXformdTheta[2][3], \fBgleDouble\fP startTheta, \fBgleDouble\fP sweepTheta)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleScrew\fP (\fBint\fP ncp, \fBgleDouble\fP contour[][2], \fBgleDouble\fP cont_normal[][2], \fBgleDouble\fP up[3], \fBgleDouble\fP startz, \fBgleDouble\fP endz, \fBgleDouble\fP twist)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgleTextureMode\fP (\fBint\fP \fBmode\fP)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define GLE_API_VERSION   228"
+GLE API revision history:
+.PP
+GLE_API_VERSION is updated to reflect GLE API changes (interface changes, semantic changes, deletions, or additions)\&.
+.PP
+GLE_API_VERSION=228 GLUT 3\&.7 release of GLE\&. 
+.PP
+Definition at line 29 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_ENABLE   0x10000"
+
+.PP
+Definition at line 55 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_NORMAL_CYL   4"
+
+.PP
+Definition at line 60 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_NORMAL_FLAT   2"
+
+.PP
+Definition at line 58 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_NORMAL_MODEL_CYL   10"
+
+.PP
+Definition at line 66 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_NORMAL_MODEL_FLAT   8"
+
+.PP
+Definition at line 64 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_NORMAL_MODEL_SPH   12"
+
+.PP
+Definition at line 68 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_NORMAL_SPH   6"
+
+.PP
+Definition at line 62 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_STYLE_MASK   0xff"
+
+.PP
+Definition at line 56 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_VERTEX_CYL   3"
+
+.PP
+Definition at line 59 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_VERTEX_FLAT   1"
+
+.PP
+Definition at line 57 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_VERTEX_MODEL_CYL   9"
+
+.PP
+Definition at line 65 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_VERTEX_MODEL_FLAT   7"
+
+.PP
+Definition at line 63 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_VERTEX_MODEL_SPH   11"
+
+.PP
+Definition at line 67 of file tube\&.h\&.
+.SS "#define GLE_TEXTURE_VERTEX_SPH   5"
+
+.PP
+Definition at line 61 of file tube\&.h\&.
+.SS "#define gleDouble   double"
+
+.PP
+Definition at line 33 of file tube\&.h\&.
+.SS "#define TUBE_CONTOUR_CLOSED   0x1000"
+
+.PP
+Definition at line 53 of file tube\&.h\&.
+.SS "#define TUBE_JN_ANGLE   0x2"
+
+.PP
+Definition at line 40 of file tube\&.h\&.
+.SS "#define TUBE_JN_CAP   0x10"
+
+.PP
+Definition at line 44 of file tube\&.h\&.
+.SS "#define TUBE_JN_CUT   0x3"
+
+.PP
+Definition at line 41 of file tube\&.h\&.
+.SS "#define TUBE_JN_MASK   0xf    /* mask bits */"
+
+.PP
+Definition at line 43 of file tube\&.h\&.
+.SS "#define TUBE_JN_RAW   0x1"
+
+.PP
+Definition at line 39 of file tube\&.h\&.
+.SS "#define TUBE_JN_ROUND   0x4"
+
+.PP
+Definition at line 42 of file tube\&.h\&.
+.SS "#define TUBE_NORM_EDGE   0x200"
+
+.PP
+Definition at line 48 of file tube\&.h\&.
+.SS "#define TUBE_NORM_FACET   0x100"
+
+.PP
+Definition at line 47 of file tube\&.h\&.
+.SS "#define TUBE_NORM_MASK   0xf00    /* mask bits */"
+
+.PP
+Definition at line 50 of file tube\&.h\&.
+.SS "#define TUBE_NORM_PATH_EDGE   0x400 /* for spiral, lathe, helix primitives */"
+
+.PP
+Definition at line 49 of file tube\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fBgleDouble\fP gleAffine[2][3]"
+
+.PP
+Definition at line 34 of file tube\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP gleExtrusion (\fBint\fPncp, \fBgleDouble\fPcontour[][2], \fBgleDouble\fPcont_normal[][2], \fBgleDouble\fPup[3], \fBint\fPnpoints, \fBgleDouble\fPpoint_array[][3], floatcolor_array[][3])"
+
+.SS "\fBint\fP gleGetJoinStyle (\fBvoid\fP)"
+
+.SS "\fBint\fP gleGetNumSlices (\fBvoid\fP)"
+
+.SS "\fBvoid\fP gleHelicoid (\fBgleDouble\fPrToroid, \fBgleDouble\fPstartRadius, \fBgleDouble\fPdrdTheta, \fBgleDouble\fPstartZ, \fBgleDouble\fPdzdTheta, \fBgleDouble\fPstartXform[2][3], \fBgleDouble\fPdXformdTheta[2][3], \fBgleDouble\fPstartTheta, \fBgleDouble\fPsweepTheta)"
+
+.SS "\fBvoid\fP gleLathe (\fBint\fPncp, \fBgleDouble\fPcontour[][2], \fBgleDouble\fPcont_normal[][2], \fBgleDouble\fPup[3], \fBgleDouble\fPstartRadius, \fBgleDouble\fPdrdTheta, \fBgleDouble\fPstartZ, \fBgleDouble\fPdzdTheta, \fBgleDouble\fPstartXform[2][3], \fBgleDouble\fPdXformdTheta[2][3], \fBgleDouble\fPstartTheta, \fBgleDouble\fPsweepTheta)"
+
+.SS "\fBvoid\fP glePolyCone (\fBint\fPnpoints, \fBgleDouble\fPpoint_array[][3], floatcolor_array[][3], \fBgleDouble\fPradius_array[])"
+
+.SS "\fBvoid\fP glePolyCylinder (\fBint\fPnpoints, \fBgleDouble\fPpoint_array[][3], floatcolor_array[][3], \fBgleDouble\fPradius)"
+
+.SS "\fBvoid\fP gleScrew (\fBint\fPncp, \fBgleDouble\fPcontour[][2], \fBgleDouble\fPcont_normal[][2], \fBgleDouble\fPup[3], \fBgleDouble\fPstartz, \fBgleDouble\fPendz, \fBgleDouble\fPtwist)"
+
+.SS "\fBvoid\fP gleSetJoinStyle (\fBint\fPstyle)"
+
+.SS "\fBvoid\fP gleSetNumSlices (\fBint\fPslices)"
+
+.SS "\fBvoid\fP gleSpiral (\fBint\fPncp, \fBgleDouble\fPcontour[][2], \fBgleDouble\fPcont_normal[][2], \fBgleDouble\fPup[3], \fBgleDouble\fPstartRadius, \fBgleDouble\fPdrdTheta, \fBgleDouble\fPstartZ, \fBgleDouble\fPdzdTheta, \fBgleDouble\fPstartXform[2][3], \fBgleDouble\fPdXformdTheta[2][3], \fBgleDouble\fPstartTheta, \fBgleDouble\fPsweepTheta)"
+
+.SS "\fBvoid\fP gleSuperExtrusion (\fBint\fPncp, \fBgleDouble\fPcontour[][2], \fBgleDouble\fPcont_normal[][2], \fBgleDouble\fPup[3], \fBint\fPnpoints, \fBgleDouble\fPpoint_array[][3], floatcolor_array[][3], \fBgleDouble\fPxform_array[][2][3])"
+
+.SS "\fBvoid\fP gleTextureMode (\fBint\fPmode)"
+
+.SS "\fBvoid\fP gleToroid (\fBgleDouble\fPrToroid, \fBgleDouble\fPstartRadius, \fBgleDouble\fPdrdTheta, \fBgleDouble\fPstartZ, \fBgleDouble\fPdzdTheta, \fBgleDouble\fPstartXform[2][3], \fBgleDouble\fPdXformdTheta[2][3], \fBgleDouble\fPstartTheta, \fBgleDouble\fPsweepTheta)"
+
+.SS "\fBvoid\fP gleTwistExtrusion (\fBint\fPncp, \fBgleDouble\fPcontour[][2], \fBgleDouble\fPcont_normal[][2], \fBgleDouble\fPup[3], \fBint\fPnpoints, \fBgleDouble\fPpoint_array[][3], floatcolor_array[][3], \fBgleDouble\fPtwist_array[])"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

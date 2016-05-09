@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_program_8h" kind="file">
+    <compoundname>Program.h</compoundname>
+    <includes local="no">windows.h</includes>
+    <includes refid="gl_cameara_8h" local="yes">glCameara.h</includes>
+    <includedby refid="_program_8cpp" local="yes">SSWC/src/Program.cpp</includedby>
+    <includedby refid="_routine_8cpp" local="yes">SSWC/src/Routine.cpp</includedby>
+    <incdepgraph>
+      <node id="2111">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2081">
+        <label>iomanip</label>
+      </node>
+      <node id="2068">
+        <label>windows.h</label>
+      </node>
+      <node id="2112">
+        <label>gl/gl.h</label>
+      </node>
+      <node id="2106">
+        <label>CSpice\Date.h</label>
+      </node>
+      <node id="2108">
+        <label>Math\Matrix4x4.h</label>
+      </node>
+      <node id="2105">
+        <label>CSpice\SpaceObject.h</label>
+      </node>
+      <node id="2100">
+        <label>Windows.h</label>
+      </node>
+      <node id="2085">
+        <label>cmath</label>
+      </node>
+      <node id="2091">
+        <label>stdexcept</label>
+      </node>
+      <node id="2078">
+        <label>string</label>
+      </node>
+      <node id="2098">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="2102">
+        <label>TGA.h</label>
+        <link refid="_t_g_a_8h"/>
+        <childnode refid="2100" relation="include">
+        </childnode>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2098" relation="include">
+        </childnode>
+      </node>
+      <node id="2083">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2074" relation="include">
+        </childnode>
+        <childnode refid="2084" relation="include">
+        </childnode>
+      </node>
+      <node id="2080">
+        <label>fstream</label>
+      </node>
+      <node id="2067">
+        <label>SSWC/src/Program.h</label>
+        <link refid="Program.h"/>
+        <childnode refid="2068" relation="include">
+        </childnode>
+        <childnode refid="2069" relation="include">
+        </childnode>
+      </node>
+      <node id="2069">
+        <label>glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="2068" relation="include">
+        </childnode>
+        <childnode refid="2070" relation="include">
+        </childnode>
+        <childnode refid="2071" relation="include">
+        </childnode>
+        <childnode refid="2072" relation="include">
+        </childnode>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2098" relation="include">
+        </childnode>
+        <childnode refid="2099" relation="include">
+        </childnode>
+      </node>
+      <node id="2088">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="2074" relation="include">
+        </childnode>
+        <childnode refid="2089" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+      </node>
+      <node id="2087">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="2074" relation="include">
+        </childnode>
+        <childnode refid="2083" relation="include">
+        </childnode>
+        <childnode refid="2088" relation="include">
+        </childnode>
+        <childnode refid="2086" relation="include">
+        </childnode>
+        <childnode refid="2090" relation="include">
+        </childnode>
+        <childnode refid="2092" relation="include">
+        </childnode>
+      </node>
+      <node id="2099">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="2100" relation="include">
+        </childnode>
+        <childnode refid="2101" relation="include">
+        </childnode>
+        <childnode refid="2071" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2070" relation="include">
+        </childnode>
+      </node>
+      <node id="2074">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="2075" relation="include">
+        </childnode>
+        <childnode refid="2076" relation="include">
+        </childnode>
+      </node>
+      <node id="2072">
+        <label>App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="2073" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2080" relation="include">
+        </childnode>
+        <childnode refid="2081" relation="include">
+        </childnode>
+      </node>
+      <node id="2076">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="2074" relation="include">
+        </childnode>
+        <childnode refid="2077" relation="include">
+        </childnode>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2080" relation="include">
+        </childnode>
+        <childnode refid="2081" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+      </node>
+      <node id="2109">
+        <label>Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="2068" relation="include">
+        </childnode>
+        <childnode refid="2070" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+        <childnode refid="2112" relation="include">
+        </childnode>
+        <childnode refid="2113" relation="include">
+        </childnode>
+        <childnode refid="2078" relation="include">
+        </childnode>
+      </node>
+      <node id="2079">
+        <label>ctime</label>
+      </node>
+      <node id="2089">
+        <label>Time.h</label>
+      </node>
+      <node id="2082">
+        <label>vector</label>
+      </node>
+      <node id="2101">
+        <label>Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="2102" relation="include">
+        </childnode>
+        <childnode refid="2072" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2103" relation="include">
+        </childnode>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2109" relation="include">
+        </childnode>
+      </node>
+      <node id="2096">
+        <label>array</label>
+      </node>
+      <node id="2077">
+        <label>sstream</label>
+      </node>
+      <node id="2103">
+        <label>Trajectory.h</label>
+        <link refid="_trajectory_8h"/>
+        <childnode refid="2068" relation="include">
+        </childnode>
+        <childnode refid="2071" relation="include">
+        </childnode>
+        <childnode refid="2104" relation="include">
+        </childnode>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2098" relation="include">
+        </childnode>
+      </node>
+      <node id="2071">
+        <label>Math\Vector3.h</label>
+      </node>
+      <node id="2070">
+        <label>math.h</label>
+      </node>
+      <node id="2092">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="2093" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+      </node>
+      <node id="2104">
+        <label>Math\Quantity.h</label>
+      </node>
+      <node id="2107">
+        <label>deque</label>
+      </node>
+      <node id="2084">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="2085" relation="include">
+        </childnode>
+        <childnode refid="2078" relation="include">
+        </childnode>
+      </node>
+      <node id="2113">
+        <label>gl/glu.h</label>
+      </node>
+      <node id="2086">
+        <label>SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2074" relation="include">
+        </childnode>
+        <childnode refid="2087" relation="include">
+        </childnode>
+        <childnode refid="2083" relation="include">
+        </childnode>
+        <childnode refid="2088" relation="include">
+        </childnode>
+        <childnode refid="2090" relation="include">
+        </childnode>
+        <childnode refid="2094" relation="include">
+        </childnode>
+      </node>
+      <node id="2095">
+        <label>SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="2086" relation="include">
+        </childnode>
+        <childnode refid="2084" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2096" relation="include">
+        </childnode>
+      </node>
+      <node id="2097">
+        <label>gl\GL.h</label>
+      </node>
+      <node id="2110">
+        <label>stdio.h</label>
+      </node>
+      <node id="2093">
+        <label>cstring</label>
+      </node>
+      <node id="2075">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="2090">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="2085" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+      </node>
+      <node id="2094">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="2085" relation="include">
+        </childnode>
+      </node>
+      <node id="2073">
+        <label>CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="2074" relation="include">
+        </childnode>
+        <childnode refid="2076" relation="include">
+        </childnode>
+        <childnode refid="2083" relation="include">
+        </childnode>
+        <childnode refid="2086" relation="include">
+        </childnode>
+        <childnode refid="2095" relation="include">
+        </childnode>
+        <childnode refid="2087" relation="include">
+        </childnode>
+        <childnode refid="2088" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2116">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="2114">
+        <label>SSWC/src/Program.h</label>
+        <link refid="Program.h"/>
+        <childnode refid="2115" relation="include">
+        </childnode>
+        <childnode refid="2116" relation="include">
+        </childnode>
+      </node>
+      <node id="2115">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_keys" prot="public">Keys</innerclass>
+    <innerclass refid="struct_application" prot="public">Application</innerclass>
+    <innerclass refid="struct_g_l___window_init" prot="public">GL_WindowInit</innerclass>
+    <innerclass refid="struct_g_l___window" prot="public">GL_Window</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_program_8h_1a6c59af730728bf5260ef828aea2eebee" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int mouse_x</definition>
+        <argsstring></argsstring>
+        <name>mouse_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="49" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8h_1ab21653e455bbca86826aa5f628a5fdb2" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int mouse_y</definition>
+        <argsstring></argsstring>
+        <name>mouse_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="50" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8h_1a267464ccc3025f3a57afac78adad6c26" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LEFT_MOUSE_BUTTON_DOWN</definition>
+        <argsstring></argsstring>
+        <name>LEFT_MOUSE_BUTTON_DOWN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="51" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8h_1ab4ee690627521f03271ea0d8ec41b4d6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MOUSE_CHANGED_POSITION</definition>
+        <argsstring></argsstring>
+        <name>MOUSE_CHANGED_POSITION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="52" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_program_8h_1a0fdcd098e981b37c3685361619834b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void TerminateApplication</definition>
+        <argsstring>(GL_Window *window)</argsstring>
+        <name>TerminateApplication</name>
+        <param>
+          <type><ref refid="struct_g_l___window" kindref="compound">GL_Window</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="33" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.cpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8h_1a64336eb1fbbdd65a88ef980e54f8c612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void ToggleFullscreen</definition>
+        <argsstring>(GL_Window *window)</argsstring>
+        <name>ToggleFullscreen</name>
+        <param>
+          <type><ref refid="struct_g_l___window" kindref="compound">GL_Window</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="35" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8h_1aca13ae354e568d47ac6a6f43a11c7cd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void ChangeMode</definition>
+        <argsstring>(GL_Window *window)</argsstring>
+        <name>ChangeMode</name>
+        <param>
+          <type><ref refid="struct_g_l___window" kindref="compound">GL_Window</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="36" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8h_1a9be9795bf9e11906a79fe70732dd7082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref></type>
+        <definition>BOOL Initialize</definition>
+        <argsstring>(GL_Window *window, Keys *keys)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type><ref refid="struct_g_l___window" kindref="compound">GL_Window</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_keys" kindref="compound">Keys</ref> *</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="39" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="56" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8h_1a563d28fec601d6e2ae2ca92e06041d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Deinitialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Deinitialize</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8h_1a702c5734253c48e4765d8aa6d3a75242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Update</definition>
+        <argsstring>(DWORD milliseconds)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>DWORD</type>
+          <declname>milliseconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="43" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="145" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8h_1ae39baa177eafe9cad35d363fc683d77f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Draw</definition>
+        <argsstring>(void)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="45" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="308" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8h_1a90ef51d133daac26d022396bf83737e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Selection</definition>
+        <argsstring>(void)</argsstring>
+        <name>Selection</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Header<sp/>File<sp/>For<sp/>Windows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gl_cameara_8h" kindref="compound">glCameara.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="struct_keys" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Structure<sp/>For<sp/>Keyboard<sp/>Stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref><sp/>keyDown[256];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Holds<sp/>TRUE<sp/>/<sp/>FALSE<sp/>For<sp/>Each<sp/>Key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}<sp/><ref refid="struct_keys" kindref="compound">Keys</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Keys</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="struct_application" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Contains<sp/>Information<sp/>Vital<sp/>To<sp/>Applications</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="struct_application_1a50a4c8fe3389ff7a4bdf984218a77e27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HINSTANCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_application_1a50a4c8fe3389ff7a4bdf984218a77e27" kindref="member">hInstance</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Application<sp/>Instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="struct_application_1aad4aa014a3fa43261622e8779d626637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><ref refid="struct_application_1aad4aa014a3fa43261622e8779d626637" kindref="member">className</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Application<sp/>ClassName</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}<sp/><ref refid="struct_application" kindref="compound">Application</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="struct_g_l___window_init" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Window<sp/>Creation<sp/>Info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="struct_g_l___window_init_1afde844f257aafdb31bd03338723a2206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_application" kindref="compound">Application</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_init_1afde844f257aafdb31bd03338723a2206" kindref="member">application</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Application<sp/>Structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="struct_g_l___window_init_1a64c652d1fb4e2afa60b30fca91920ed4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_init_1a64c652d1fb4e2afa60b30fca91920ed4" kindref="member">title</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Window<sp/>Title</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_g_l___window_init_1a1a1c2cd5a8bc6b90987885307c296d9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_init_1a1a1c2cd5a8bc6b90987885307c296d9f" kindref="member">width</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Width</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="struct_g_l___window_init_1a8413cf084b2d4e7056da68940ab1438e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_init_1a8413cf084b2d4e7056da68940ab1438e" kindref="member">height</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="struct_g_l___window_init_1aa4220e9602ef12719a010e049a42fcea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_init_1aa4220e9602ef12719a010e049a42fcea" kindref="member">bitsPerPixel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Bits<sp/>Per<sp/>Pixel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="struct_g_l___window_init_1a217a2406116f019e13094868c1810a32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_init_1a217a2406116f019e13094868c1810a32" kindref="member">isFullScreen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FullScreen?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/><ref refid="struct_g_l___window_init" kindref="compound">GL_WindowInit</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GL_WindowInit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct_g_l___window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Contains<sp/>Information<sp/>Vital<sp/>To<sp/>A<sp/>Window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="struct_g_l___window_1ad0eed98271ddbfb6ab6cf7f12d7b5d02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_keys" kindref="compound">Keys</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_1ad0eed98271ddbfb6ab6cf7f12d7b5d02" kindref="member">keys</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Key<sp/>Structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="struct_g_l___window_1a43e3e57bd7ba1d1e98a8bea7b1ca5bfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_1a43e3e57bd7ba1d1e98a8bea7b1ca5bfa" kindref="member">hWnd</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Window<sp/>Handle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_g_l___window_1ac968ec84163d9ff1818a6c7ca6f636ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_1ac968ec84163d9ff1818a6c7ca6f636ab" kindref="member">hDC</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Device<sp/>Context</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="struct_g_l___window_1a529cfea8e49780d88eb095ff56e4bc5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1ac592fca28a23754f86edf2739d21068c" kindref="member">HGLRC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_1a529cfea8e49780d88eb095ff56e4bc5e" kindref="member">hRC</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Rendering<sp/>Context</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="struct_g_l___window_1a509808116a84e361e12666b2d5b5c62f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_init" kindref="compound">GL_WindowInit</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_1a509808116a84e361e12666b2d5b5c62f" kindref="member">init</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Window<sp/>Init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_g_l___window_1a6b7dc6064a91f6e7ebf071633f43f90d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_1a6b7dc6064a91f6e7ebf071633f43f90d" kindref="member">isVisible</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Window<sp/>Visible?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_g_l___window_1af8068e4f9adf4515817a3d72a9cf0d03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DWORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_l___window_1af8068e4f9adf4515817a3d72a9cf0d03" kindref="member">lastTickCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Tick<sp/>Counter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/><ref refid="struct_g_l___window" kindref="compound">GL_Window</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GL_Window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1a0fdcd098e981b37c3685361619834b1e" kindref="member">TerminateApplication</ref>(<ref refid="struct_g_l___window" kindref="compound">GL_Window</ref>*<sp/>window);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Terminate<sp/>The<sp/>Application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1a64336eb1fbbdd65a88ef980e54f8c612" kindref="member">ToggleFullscreen</ref>(<ref refid="struct_g_l___window" kindref="compound">GL_Window</ref>*<sp/>window);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Toggle<sp/>Fullscreen<sp/>/<sp/>Windowed<sp/>Mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1aca13ae354e568d47ac6a6f43a11c7cd5" kindref="member">ChangeMode</ref>(<ref refid="struct_g_l___window" kindref="compound">GL_Window</ref>*<sp/>window);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Change<sp/>Between<sp/>Brientation<sp/>And<sp/>Pick<sp/>Modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>Are<sp/>The<sp/>Function<sp/>You<sp/>Must<sp/>Provide</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref><sp/><ref refid="_program_8h_1a9be9795bf9e11906a79fe70732dd7082" kindref="member">Initialize</ref>(<ref refid="struct_g_l___window" kindref="compound">GL_Window</ref>*<sp/>window,<sp/><ref refid="struct_keys" kindref="compound">Keys</ref>*<sp/>keys);<sp/></highlight><highlight class="comment">//<sp/>Performs<sp/>All<sp/>Your<sp/>Initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1a563d28fec601d6e2ae2ca92e06041d1b" kindref="member">Deinitialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Performs<sp/>All<sp/>Your<sp/>DeInitialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1a702c5734253c48e4765d8aa6d3a75242" kindref="member">Update</ref>(DWORD<sp/>milliseconds);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>Motion<sp/>Updates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1ae39baa177eafe9cad35d363fc683d77f" kindref="member">Draw</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>All<sp/>Your<sp/>Scene<sp/>Drawing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1a90ef51d133daac26d022396bf83737e5" kindref="member">Selection</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>Selection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1a6c59af730728bf5260ef828aea2eebee" kindref="member">mouse_x</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1ab21653e455bbca86826aa5f628a5fdb2" kindref="member">mouse_y</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1a267464ccc3025f3a57afac78adad6c26" kindref="member">LEFT_MOUSE_BUTTON_DOWN</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_program_8h_1ab4ee690627521f03271ea0d8ec41b4d6" kindref="member">MOUSE_CHANGED_POSITION</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Program.h"/>
+  </compounddef>
+</doxygen>

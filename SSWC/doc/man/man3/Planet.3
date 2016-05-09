@@ -1,0 +1,189 @@
+.TH "Planet" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Planet \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Planet\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlanet\fP (const \fBSpaceBody\fP &\fBbody\fP, \fBTGA\fP *\fBtexture\fP, const \fBSpaceObject\fP &\fBobj\fP, const \fBFrame\fP &frame, \fBHDC\fP \fBhDC\fP)"
+.br
+.ti -1c
+.RI "\fB~Planet\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetSimpleRenderMode\fP (bool \fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBRender\fP (\fBDate\fP \fBt\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBGetID\fP () const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetMark\fP (bool \fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSetClicked\fP ()"
+.br
+.ti -1c
+.RI "\fBVector3\fP \fBGetPosition\fP (\fBDate\fP \fBt\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.ti -1c
+.RI "double \fBGetRadius\fP (\fBApp\fP &\fBapp\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBShowMessageBoxWithInfo\fP (\fBApp\fP &\fBapp\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSpaceBody\fP \fBbody\fP"
+.br
+.ti -1c
+.RI "\fBTGA\fP * \fBtexture\fP"
+.br
+.ti -1c
+.RI "\fBTrajectory\fP \fBtrajectory\fP"
+.br
+.ti -1c
+.RI "\fBMatrix4x4\fP \fBm\fP"
+.br
+.ti -1c
+.RI "float \fBrotationMatrix\fP [16]"
+.br
+.ti -1c
+.RI "bool \fBsimpleRender\fP = false"
+.br
+.ti -1c
+.RI "bool \fBclicked\fP = false"
+.br
+.ti -1c
+.RI "double \fBscale\fP = 0\&.000004f"
+.br
+.ti -1c
+.RI "double \fBdistanceScale\fP = 0\&.0000004f"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBID\fP"
+.br
+.ti -1c
+.RI "bool \fBmarked\fP"
+.br
+.ti -1c
+.RI "\fBFont\fP \fBfont\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 11 of file Planet\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Planet::Planet (const \fBSpaceBody\fP &body, \fBTGA\fP *texture, const \fBSpaceObject\fP &obj, const \fBFrame\fP &frame, \fBHDC\fPhDC)"
+
+.PP
+Definition at line 9 of file Planet\&.cpp\&.
+.SS "Planet::~Planet ()"
+
+.PP
+Definition at line 24 of file Planet\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBint\fP Planet::GetID () const\fC [inline]\fP"
+
+.PP
+Definition at line 31 of file Planet\&.h\&.
+.SS "\fBVector3\fP Planet::GetPosition (\fBDate\fPt, \fBApp\fP &app)"
+
+.PP
+Definition at line 43 of file Planet\&.cpp\&.
+.SS "double Planet::GetRadius (\fBApp\fP &app)\fC [inline]\fP"
+
+.PP
+Definition at line 38 of file Planet\&.h\&.
+.SS "\fBvoid\fP Planet::Render (\fBDate\fPt, \fBApp\fP &app)"
+
+.PP
+Definition at line 29 of file Planet\&.cpp\&.
+.SS "\fBvoid\fP Planet::SetClicked ()\fC [inline]\fP"
+
+.PP
+Definition at line 35 of file Planet\&.h\&.
+.SS "\fBvoid\fP Planet::SetMark (boolvalue)\fC [inline]\fP"
+
+.PP
+Definition at line 33 of file Planet\&.h\&.
+.SS "\fBvoid\fP Planet::SetSimpleRenderMode (boolvalue)\fC [inline]\fP"
+
+.PP
+Definition at line 29 of file Planet\&.h\&.
+.SS "\fBvoid\fP Planet::ShowMessageBoxWithInfo (\fBApp\fP &app)"
+
+.PP
+Definition at line 160 of file Planet\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBSpaceBody\fP Planet::body"
+
+.PP
+Definition at line 14 of file Planet\&.h\&.
+.SS "bool Planet::clicked = false"
+
+.PP
+Definition at line 20 of file Planet\&.h\&.
+.SS "double Planet::distanceScale = 0\&.0000004f"
+
+.PP
+Definition at line 24 of file Planet\&.h\&.
+.SS "\fBFont\fP Planet::font\fC [protected]\fP"
+
+.PP
+Definition at line 50 of file Planet\&.h\&.
+.SS "\fBint\fP Planet::ID\fC [protected]\fP"
+
+.PP
+Definition at line 48 of file Planet\&.h\&.
+.SS "\fBMatrix4x4\fP Planet::m"
+
+.PP
+Definition at line 17 of file Planet\&.h\&.
+.SS "bool Planet::marked\fC [protected]\fP"
+
+.PP
+Definition at line 49 of file Planet\&.h\&.
+.SS "float Planet::rotationMatrix[16]"
+
+.PP
+Definition at line 18 of file Planet\&.h\&.
+.SS "double Planet::scale = 0\&.000004f"
+
+.PP
+Definition at line 23 of file Planet\&.h\&.
+.SS "bool Planet::simpleRender = false"
+
+.PP
+Definition at line 19 of file Planet\&.h\&.
+.SS "\fBTGA\fP* Planet::texture"
+
+.PP
+Definition at line 15 of file Planet\&.h\&.
+.SS "\fBTrajectory\fP Planet::trajectory"
+
+.PP
+Definition at line 16 of file Planet\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

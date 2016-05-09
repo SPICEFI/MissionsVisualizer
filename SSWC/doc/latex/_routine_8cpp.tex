@@ -1,0 +1,313 @@
+\hypertarget{_routine_8cpp}{\section{S\+S\+W\+C/src/\+Routine.cpp File Reference}
+\label{_routine_8cpp}\index{S\+S\+W\+C/src/\+Routine.\+cpp@{S\+S\+W\+C/src/\+Routine.\+cpp}}
+}
+{\ttfamily \#include $<$Windows.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}G\+L\textbackslash{}glut.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$gl\textbackslash{}\+G\+L.\+h$>$}\\*
+{\ttfamily \#include $<$gl\textbackslash{}\+G\+L\+U.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Program.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\+L\textbackslash{}\+A\+R\+B\+\_\+\+Multisample.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}App.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Scene.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Font.\+h\char`\"{}}\\*
+Include dependency graph for Routine.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_routine_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_routine_8cpp_a57e2e4402b0a1ec39bf04a8247063a5e}{C\+D\+S\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}~4
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a05538ca0e53ef21cb679e6de0fef7f8e}{B\+O\+O\+L} \hyperlink{_routine_8cpp_a9be9795bf9e11906a79fe70732dd7082}{Initialize} (\hyperlink{struct_g_l___window}{G\+L\+\_\+\+Window} $\ast$window, \hyperlink{struct_keys}{Keys} $\ast$keys)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{_routine_8cpp_a702c5734253c48e4765d8aa6d3a75242}{Update} (D\+W\+O\+R\+D milliseconds)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{_routine_8cpp_a35f2f94ccb7adab22c634a5a596089f1}{Create\+Sky\+Box} (float \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, float \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, float \hyperlink{glext_8h_a1483160fae141afea848a5393c286b2b}{z}, float \hyperlink{glext_8h_aa105b18f96e6bc2485cb7f576a7fb9ba}{width}, float \hyperlink{glext_8h_aa214bd63e12f7ddf524c83894fcc69a7}{height}, float \hyperlink{glext_8h_a921fa83f7755f0139c84ba1831417a2e}{length})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{_routine_8cpp_ae39baa177eafe9cad35d363fc683d77f}{Draw} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_routine_8cpp_a2ef9a98c01d810b5c65529f7a96db72c}{center\+X}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_routine_8cpp_a02c5292ed607e9932ef7083772bd1df8}{center\+Y}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_routine_8cpp_a44ff4c01594b69315b77fc6f4de5bf63}{prev\+\_\+x}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_routine_8cpp_ada2a652d657eb2614c738c6a7e7f2788}{prev\+\_\+y}
+\item 
+\hyperlink{classgl_camera}{gl\+Camera} \hyperlink{_routine_8cpp_a0d49ad4ac53415c43ba3e74ea8a2fbf6}{g\+\_\+\+Camera}
+\item 
+\hyperlink{struct_g_l___window}{G\+L\+\_\+\+Window} $\ast$ \hyperlink{_routine_8cpp_a8eb8e78356ceae9f4a7d46916e8dc161}{g\+\_\+window}
+\item 
+\hyperlink{struct_keys}{Keys} $\ast$ \hyperlink{_routine_8cpp_a9efe217743a3aa1f39bef72908d9186a}{g\+\_\+keys}
+\item 
+\hyperlink{class_app}{App} \hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app}
+\item 
+\hyperlink{class_scene}{Scene} \hyperlink{_routine_8cpp_ac1729cf2815b19e1f4ba16755014f1a2}{Solar\+System}
+\item 
+\hyperlink{class_date}{Date} \hyperlink{_routine_8cpp_a93d78c356dc9429a174a02ad1e9c84d0}{t}
+\item 
+\hyperlink{class_t_g_a}{T\+G\+A} $\ast$ \hyperlink{_routine_8cpp_a48a43c28f47001bf5d4085a5c9657007}{sky\+Texture}
+\item 
+\hyperlink{wglext_8h_aaf5a06bd464c6ec72cf68b4819afebe3}{H\+D\+C} \hyperlink{_routine_8cpp_a1da0b24ccf1236c9e02f062548578176}{instance\+H\+D\+C}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_routine_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}{id} = -\/1
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{_routine_8cpp_a1ed5abbc67927ee0b5cc25add2bafb9b}{id\+When\+Move} = -\/1
+\item 
+float \hyperlink{_routine_8cpp_ab7e1c084f44929beed1881b3bb553b28}{g\+\_\+\+Light\+Position} \mbox{[}4\mbox{]} = \{ 0, 0, 0, 1 \}
+\item 
+bool \hyperlink{_routine_8cpp_a3772f1f217df2a7863cc26d1d8a5bbbe}{orientation\+Mode} = true
+\item 
+bool \hyperlink{_routine_8cpp_a532c7e2a4fb116e04903b3f150ceed46}{P\+L\+A\+N\+E\+T\+\_\+\+C\+L\+I\+C\+K\+E\+D} = false
+\item 
+bool \hyperlink{_routine_8cpp_a1b310468f8cf42ae2e37fd789daf75e7}{Stop\+Simulation} = false
+\item 
+bool \hyperlink{_routine_8cpp_a1b3e34c62b41113b2d34ff20a4329937}{last\+Frame\+Space\+Was\+Pressed} = false
+\item 
+bool \hyperlink{_routine_8cpp_acc7a565202a8b90acff6c64fd7844241}{move\+Time\+Back} = false
+\item 
+\hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{_routine_8cpp_a1cc303acbb3ff05d12048e9caaa58081}{planet\+Name}
+\item 
+\hyperlink{class_font}{Font} \hyperlink{_routine_8cpp_a1e52b0778d1df763fc5b497c26ead7a9}{font}
+\item 
+\hyperlink{class_font}{Font} \hyperlink{_routine_8cpp_a85d377224c6bd1d2c937ad1635c4a715}{standalone\+Point\+Font}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_routine_8cpp_a57e2e4402b0a1ec39bf04a8247063a5e}{\index{Routine.\+cpp@{Routine.\+cpp}!C\+D\+S\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N@{C\+D\+S\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}}
+\index{C\+D\+S\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N@{C\+D\+S\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{C\+D\+S\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+D\+S\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N~4}}\label{_routine_8cpp_a57e2e4402b0a1ec39bf04a8247063a5e}
+
+
+Definition at line 24 of file Routine.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_routine_8cpp_a35f2f94ccb7adab22c634a5a596089f1}{\index{Routine.\+cpp@{Routine.\+cpp}!Create\+Sky\+Box@{Create\+Sky\+Box}}
+\index{Create\+Sky\+Box@{Create\+Sky\+Box}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{Create\+Sky\+Box}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Create\+Sky\+Box (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{width, }
+\item[{float}]{height, }
+\item[{float}]{length}
+\end{DoxyParamCaption}
+)}}\label{_routine_8cpp_a35f2f94ccb7adab22c634a5a596089f1}
+
+
+Definition at line 255 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_ae39baa177eafe9cad35d363fc683d77f}{\index{Routine.\+cpp@{Routine.\+cpp}!Draw@{Draw}}
+\index{Draw@{Draw}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{_routine_8cpp_ae39baa177eafe9cad35d363fc683d77f}
+
+
+Definition at line 308 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a9be9795bf9e11906a79fe70732dd7082}{\index{Routine.\+cpp@{Routine.\+cpp}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+O\+L} Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+\_\+\+Window} $\ast$}]{window, }
+\item[{{\bf Keys} $\ast$}]{keys}
+\end{DoxyParamCaption}
+)}}\label{_routine_8cpp_a9be9795bf9e11906a79fe70732dd7082}
+
+
+Definition at line 56 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a702c5734253c48e4765d8aa6d3a75242}{\index{Routine.\+cpp@{Routine.\+cpp}!Update@{Update}}
+\index{Update@{Update}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Update (
+\begin{DoxyParamCaption}
+\item[{D\+W\+O\+R\+D}]{milliseconds}
+\end{DoxyParamCaption}
+)}}\label{_routine_8cpp_a702c5734253c48e4765d8aa6d3a75242}
+
+
+Definition at line 145 of file Routine.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{\index{Routine.\+cpp@{Routine.\+cpp}!app@{app}}
+\index{app@{app}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{app}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App} app}}\label{_routine_8cpp_a05b5a24325d46227633053ca49de6234}
+
+
+Definition at line 36 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a2ef9a98c01d810b5c65529f7a96db72c}{\index{Routine.\+cpp@{Routine.\+cpp}!center\+X@{center\+X}}
+\index{center\+X@{center\+X}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{center\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} center\+X}}\label{_routine_8cpp_a2ef9a98c01d810b5c65529f7a96db72c}
+
+
+Definition at line 27 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a02c5292ed607e9932ef7083772bd1df8}{\index{Routine.\+cpp@{Routine.\+cpp}!center\+Y@{center\+Y}}
+\index{center\+Y@{center\+Y}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{center\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} center\+Y}}\label{_routine_8cpp_a02c5292ed607e9932ef7083772bd1df8}
+
+
+Definition at line 28 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a1e52b0778d1df763fc5b497c26ead7a9}{\index{Routine.\+cpp@{Routine.\+cpp}!font@{font}}
+\index{font@{font}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Font} font}}\label{_routine_8cpp_a1e52b0778d1df763fc5b497c26ead7a9}
+
+
+Definition at line 53 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a0d49ad4ac53415c43ba3e74ea8a2fbf6}{\index{Routine.\+cpp@{Routine.\+cpp}!g\+\_\+\+Camera@{g\+\_\+\+Camera}}
+\index{g\+\_\+\+Camera@{g\+\_\+\+Camera}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{g\+\_\+\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gl\+Camera} g\+\_\+\+Camera}}\label{_routine_8cpp_a0d49ad4ac53415c43ba3e74ea8a2fbf6}
+
+
+Definition at line 32 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a9efe217743a3aa1f39bef72908d9186a}{\index{Routine.\+cpp@{Routine.\+cpp}!g\+\_\+keys@{g\+\_\+keys}}
+\index{g\+\_\+keys@{g\+\_\+keys}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{g\+\_\+keys}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Keys}$\ast$ g\+\_\+keys}}\label{_routine_8cpp_a9efe217743a3aa1f39bef72908d9186a}
+
+
+Definition at line 34 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_ab7e1c084f44929beed1881b3bb553b28}{\index{Routine.\+cpp@{Routine.\+cpp}!g\+\_\+\+Light\+Position@{g\+\_\+\+Light\+Position}}
+\index{g\+\_\+\+Light\+Position@{g\+\_\+\+Light\+Position}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{g\+\_\+\+Light\+Position}]{\setlength{\rightskip}{0pt plus 5cm}float g\+\_\+\+Light\+Position\mbox{[}4\mbox{]} = \{ 0, 0, 0, 1 \}}}\label{_routine_8cpp_ab7e1c084f44929beed1881b3bb553b28}
+
+
+Definition at line 44 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a8eb8e78356ceae9f4a7d46916e8dc161}{\index{Routine.\+cpp@{Routine.\+cpp}!g\+\_\+window@{g\+\_\+window}}
+\index{g\+\_\+window@{g\+\_\+window}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{g\+\_\+window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+\_\+\+Window}$\ast$ g\+\_\+window}}\label{_routine_8cpp_a8eb8e78356ceae9f4a7d46916e8dc161}
+
+
+Definition at line 33 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}{\index{Routine.\+cpp@{Routine.\+cpp}!id@{id}}
+\index{id@{id}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} {\bf id} = -\/1}}\label{_routine_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}
+
+
+Definition at line 41 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a1ed5abbc67927ee0b5cc25add2bafb9b}{\index{Routine.\+cpp@{Routine.\+cpp}!id\+When\+Move@{id\+When\+Move}}
+\index{id\+When\+Move@{id\+When\+Move}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{id\+When\+Move}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} id\+When\+Move = -\/1}}\label{_routine_8cpp_a1ed5abbc67927ee0b5cc25add2bafb9b}
+
+
+Definition at line 42 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a1da0b24ccf1236c9e02f062548578176}{\index{Routine.\+cpp@{Routine.\+cpp}!instance\+H\+D\+C@{instance\+H\+D\+C}}
+\index{instance\+H\+D\+C@{instance\+H\+D\+C}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{instance\+H\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+D\+C} instance\+H\+D\+C}}\label{_routine_8cpp_a1da0b24ccf1236c9e02f062548578176}
+
+
+Definition at line 40 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a1b3e34c62b41113b2d34ff20a4329937}{\index{Routine.\+cpp@{Routine.\+cpp}!last\+Frame\+Space\+Was\+Pressed@{last\+Frame\+Space\+Was\+Pressed}}
+\index{last\+Frame\+Space\+Was\+Pressed@{last\+Frame\+Space\+Was\+Pressed}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{last\+Frame\+Space\+Was\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool last\+Frame\+Space\+Was\+Pressed = false}}\label{_routine_8cpp_a1b3e34c62b41113b2d34ff20a4329937}
+
+
+Definition at line 49 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_acc7a565202a8b90acff6c64fd7844241}{\index{Routine.\+cpp@{Routine.\+cpp}!move\+Time\+Back@{move\+Time\+Back}}
+\index{move\+Time\+Back@{move\+Time\+Back}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{move\+Time\+Back}]{\setlength{\rightskip}{0pt plus 5cm}bool move\+Time\+Back = false}}\label{_routine_8cpp_acc7a565202a8b90acff6c64fd7844241}
+
+
+Definition at line 50 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a3772f1f217df2a7863cc26d1d8a5bbbe}{\index{Routine.\+cpp@{Routine.\+cpp}!orientation\+Mode@{orientation\+Mode}}
+\index{orientation\+Mode@{orientation\+Mode}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{orientation\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool orientation\+Mode = true}}\label{_routine_8cpp_a3772f1f217df2a7863cc26d1d8a5bbbe}
+
+
+Definition at line 46 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a532c7e2a4fb116e04903b3f150ceed46}{\index{Routine.\+cpp@{Routine.\+cpp}!P\+L\+A\+N\+E\+T\+\_\+\+C\+L\+I\+C\+K\+E\+D@{P\+L\+A\+N\+E\+T\+\_\+\+C\+L\+I\+C\+K\+E\+D}}
+\index{P\+L\+A\+N\+E\+T\+\_\+\+C\+L\+I\+C\+K\+E\+D@{P\+L\+A\+N\+E\+T\+\_\+\+C\+L\+I\+C\+K\+E\+D}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{P\+L\+A\+N\+E\+T\+\_\+\+C\+L\+I\+C\+K\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+L\+A\+N\+E\+T\+\_\+\+C\+L\+I\+C\+K\+E\+D = false}}\label{_routine_8cpp_a532c7e2a4fb116e04903b3f150ceed46}
+
+
+Definition at line 47 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a1cc303acbb3ff05d12048e9caaa58081}{\index{Routine.\+cpp@{Routine.\+cpp}!planet\+Name@{planet\+Name}}
+\index{planet\+Name@{planet\+Name}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{planet\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} planet\+Name}}\label{_routine_8cpp_a1cc303acbb3ff05d12048e9caaa58081}
+
+
+Definition at line 52 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a44ff4c01594b69315b77fc6f4de5bf63}{\index{Routine.\+cpp@{Routine.\+cpp}!prev\+\_\+x@{prev\+\_\+x}}
+\index{prev\+\_\+x@{prev\+\_\+x}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{prev\+\_\+x}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} prev\+\_\+x}}\label{_routine_8cpp_a44ff4c01594b69315b77fc6f4de5bf63}
+
+
+Definition at line 30 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_ada2a652d657eb2614c738c6a7e7f2788}{\index{Routine.\+cpp@{Routine.\+cpp}!prev\+\_\+y@{prev\+\_\+y}}
+\index{prev\+\_\+y@{prev\+\_\+y}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{prev\+\_\+y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} prev\+\_\+y}}\label{_routine_8cpp_ada2a652d657eb2614c738c6a7e7f2788}
+
+
+Definition at line 30 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a48a43c28f47001bf5d4085a5c9657007}{\index{Routine.\+cpp@{Routine.\+cpp}!sky\+Texture@{sky\+Texture}}
+\index{sky\+Texture@{sky\+Texture}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{sky\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+G\+A}$\ast$ sky\+Texture}}\label{_routine_8cpp_a48a43c28f47001bf5d4085a5c9657007}
+
+
+Definition at line 39 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_ac1729cf2815b19e1f4ba16755014f1a2}{\index{Routine.\+cpp@{Routine.\+cpp}!Solar\+System@{Solar\+System}}
+\index{Solar\+System@{Solar\+System}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{Solar\+System}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene} Solar\+System}}\label{_routine_8cpp_ac1729cf2815b19e1f4ba16755014f1a2}
+
+
+Definition at line 37 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a85d377224c6bd1d2c937ad1635c4a715}{\index{Routine.\+cpp@{Routine.\+cpp}!standalone\+Point\+Font@{standalone\+Point\+Font}}
+\index{standalone\+Point\+Font@{standalone\+Point\+Font}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{standalone\+Point\+Font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Font} standalone\+Point\+Font}}\label{_routine_8cpp_a85d377224c6bd1d2c937ad1635c4a715}
+
+
+Definition at line 54 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a1b310468f8cf42ae2e37fd789daf75e7}{\index{Routine.\+cpp@{Routine.\+cpp}!Stop\+Simulation@{Stop\+Simulation}}
+\index{Stop\+Simulation@{Stop\+Simulation}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{Stop\+Simulation}]{\setlength{\rightskip}{0pt plus 5cm}bool Stop\+Simulation = false}}\label{_routine_8cpp_a1b310468f8cf42ae2e37fd789daf75e7}
+
+
+Definition at line 48 of file Routine.\+cpp.
+
+\hypertarget{_routine_8cpp_a93d78c356dc9429a174a02ad1e9c84d0}{\index{Routine.\+cpp@{Routine.\+cpp}!t@{t}}
+\index{t@{t}!Routine.\+cpp@{Routine.\+cpp}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} {\bf t}}}\label{_routine_8cpp_a93d78c356dc9429a174a02ad1e9c84d0}
+
+
+Definition at line 38 of file Routine.\+cpp.
+

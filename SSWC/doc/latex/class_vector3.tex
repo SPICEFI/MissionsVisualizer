@@ -1,0 +1,375 @@
+\hypertarget{class_vector3}{\section{Vector3 Class Reference}
+\label{class_vector3}\index{Vector3@{Vector3}}
+}
+
+
+{\ttfamily \#include $<$Vector3.\+h$>$}
+
+
+
+Collaboration diagram for Vector3\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_vector3__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector3_a0f49191f7e001e7f7ae1cb49522118b4}{Vector3} ()
+\item 
+\hyperlink{class_vector3_ad53e22b52babdb90d423601f72467590}{Vector3} (float \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, float \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, float \hyperlink{glext_8h_a1483160fae141afea848a5393c286b2b}{z})
+\item 
+\hyperlink{class_vector3_a3d6a5af145dc779c7d61352f95386bc5}{Vector3} (double $\ast$ptr)
+\item 
+\hyperlink{class_vector3_a5545e13e2e2861ece8f14b12a6a8101f}{$\sim$\+Vector3} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_vector3_a83547b4ef551fd45456a4106c178ca27}{Set} (float \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, float \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, float \hyperlink{glext_8h_a1483160fae141afea848a5393c286b2b}{z})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_vector3_ab016fd3f3dc962c2c496b61fc78f3610}{Assign} (double $\ast$ptr)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_vector3_ab6f156446cbef2ebc0c84d73b8cad23a}{Normalise} ()
+\item 
+float \hyperlink{class_vector3_a1e3ec2e499cb73c156ce9bc1198481d2}{Length} () const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_vector3_a86513faf42cf06f6c4d379b048a61d6f}{Mult\+Vec\+By\+Matrix} (float $\ast$\hyperlink{glext_8h_a7b24a3f2f56eb1244ae69dacb4fecb6f}{matrix}, \hyperlink{class_vector3}{Vector3} \&\hyperlink{glext_8h_a321ff419cd5252e54cf95e64dc6687ee}{result}) const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_vector3_a310883f49b5c0ffa5d75b83cc0a2b7c0}{Rotate\+Aroud\+Vec} (const \hyperlink{class_vector3}{Vector3} \&around, float \hyperlink{glext_8h_a9e06c1f76a20fed54ca742cd25cb02c4}{angle}, \hyperlink{class_vector3}{Vector3} \&\hyperlink{glext_8h_a321ff419cd5252e54cf95e64dc6687ee}{result}) const 
+\item 
+float \hyperlink{class_vector3_a8c1f2fa153205aa129aabef7c89cef61}{Dot\+Product} (const \hyperlink{class_vector3}{Vector3} \&rhs) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_a49712c84065d54dfd3c93a905db1110b}{Cross\+Product} (const \hyperlink{class_vector3}{Vector3} \&rhs) const 
+\item 
+float \hyperlink{class_vector3_ae3eee513e7f547d7e88837db44bec737}{Angle\+Between} (const \hyperlink{class_vector3}{Vector3} \&rhs) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_ab30b26971bc8e566d13d2311cc578a3c}{operator+} (const \hyperlink{class_vector3}{Vector3} \&\hyperlink{glext_8h_a435c176a02c061b43e19bdf7c86cceae}{v1}) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_a5a8b19645bb9837d0b637d6d212d095c}{operator-\/} (const \hyperlink{class_vector3}{Vector3} \&\hyperlink{glext_8h_a435c176a02c061b43e19bdf7c86cceae}{v1}) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_aedb0fcbe51b139e9299311bce133fe90}{operator=} (const \hyperlink{class_vector3}{Vector3} \&r\+Vector)
+\item 
+\hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_ab337fe4b0c5fd44657f42427e265c982}{operator$\ast$=} (float scalar)
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_ab8bb1a236776d951a2e43b3ca9448bb2}{operator$\ast$} (float scalar) const 
+\item 
+float \hyperlink{class_vector3_a7fbc8e9db7df7cf5b49f9f6ff3f73e55}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t \hyperlink{class_vector3_a96074c1245025a7b6d345a63548033b7}{i})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}{x}
+\item 
+float \hyperlink{class_vector3_a86eb35a9fa2d5a49e7fad66a35fa9c13}{y}
+\item 
+float \hyperlink{class_vector3_aa8c9461eb24bd2c364258078811a3e9d}{z}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_a96074c1245025a7b6d345a63548033b7}{i} = \hyperlink{class_vector3}{Vector3}(1.\+0f, 0.\+0f, 0.\+0f)
+\item 
+static const \hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_ab45f6dbb5d5c71c4ef9ffaa6a9cd300f}{j} = \hyperlink{class_vector3}{Vector3}(0.\+0f, 1.\+0f, 0.\+0f)
+\item 
+static const \hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_a659bddc1d76c28562050e2316184cdda}{k} = \hyperlink{class_vector3}{Vector3}(0.\+0f, 0.\+0f, 1.\+0f)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_a7d95e4d1e3a740c70a4f7d63d0988791}{operator+=} (\hyperlink{class_vector3}{Vector3} \&l\+Vector, const \hyperlink{class_vector3}{Vector3} \&r\+Vector)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Vector3.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vector3_a0f49191f7e001e7f7ae1cb49522118b4}{\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection[{Vector3}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\+::\+Vector3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_a0f49191f7e001e7f7ae1cb49522118b4}
+
+
+Definition at line 26 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_ad53e22b52babdb90d423601f72467590}{\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection[{Vector3}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\+::\+Vector3 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_ad53e22b52babdb90d423601f72467590}
+
+
+Definition at line 43 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a3d6a5af145dc779c7d61352f95386bc5}{\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection[{Vector3}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\+::\+Vector3 (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_a3d6a5af145dc779c7d61352f95386bc5}
+
+
+Definition at line 33 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a5545e13e2e2861ece8f14b12a6a8101f}{\index{Vector3@{Vector3}!````~Vector3@{$\sim$\+Vector3}}
+\index{````~Vector3@{$\sim$\+Vector3}!Vector3@{Vector3}}
+\subsubsection[{$\sim$\+Vector3}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\+::$\sim$\+Vector3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_a5545e13e2e2861ece8f14b12a6a8101f}
+
+
+Definition at line 39 of file Vector3.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vector3_ae3eee513e7f547d7e88837db44bec737}{\index{Vector3@{Vector3}!Angle\+Between@{Angle\+Between}}
+\index{Angle\+Between@{Angle\+Between}!Vector3@{Vector3}}
+\subsubsection[{Angle\+Between}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\+::\+Angle\+Between (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_ae3eee513e7f547d7e88837db44bec737}
+
+
+Definition at line 178 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_ab016fd3f3dc962c2c496b61fc78f3610}{\index{Vector3@{Vector3}!Assign@{Assign}}
+\index{Assign@{Assign}!Vector3@{Vector3}}
+\subsubsection[{Assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Vector3\+::\+Assign (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_ab016fd3f3dc962c2c496b61fc78f3610}
+
+
+Definition at line 157 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a49712c84065d54dfd3c93a905db1110b}{\index{Vector3@{Vector3}!Cross\+Product@{Cross\+Product}}
+\index{Cross\+Product@{Cross\+Product}!Vector3@{Vector3}}
+\subsubsection[{Cross\+Product}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\+::\+Cross\+Product (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_a49712c84065d54dfd3c93a905db1110b}
+
+
+Definition at line 169 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a8c1f2fa153205aa129aabef7c89cef61}{\index{Vector3@{Vector3}!Dot\+Product@{Dot\+Product}}
+\index{Dot\+Product@{Dot\+Product}!Vector3@{Vector3}}
+\subsubsection[{Dot\+Product}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\+::\+Dot\+Product (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_a8c1f2fa153205aa129aabef7c89cef61}
+
+
+Definition at line 164 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a1e3ec2e499cb73c156ce9bc1198481d2}{\index{Vector3@{Vector3}!Length@{Length}}
+\index{Length@{Length}!Vector3@{Vector3}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\+::\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_a1e3ec2e499cb73c156ce9bc1198481d2}
+
+
+Definition at line 116 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a86513faf42cf06f6c4d379b048a61d6f}{\index{Vector3@{Vector3}!Mult\+Vec\+By\+Matrix@{Mult\+Vec\+By\+Matrix}}
+\index{Mult\+Vec\+By\+Matrix@{Mult\+Vec\+By\+Matrix}!Vector3@{Vector3}}
+\subsubsection[{Mult\+Vec\+By\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Vector3\+::\+Mult\+Vec\+By\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{matrix, }
+\item[{{\bf Vector3} \&}]{result}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_a86513faf42cf06f6c4d379b048a61d6f}
+
+
+Definition at line 135 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_ab6f156446cbef2ebc0c84d73b8cad23a}{\index{Vector3@{Vector3}!Normalise@{Normalise}}
+\index{Normalise@{Normalise}!Vector3@{Vector3}}
+\subsubsection[{Normalise}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Vector3\+::\+Normalise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_ab6f156446cbef2ebc0c84d73b8cad23a}
+
+
+Definition at line 121 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_ab8bb1a236776d951a2e43b3ca9448bb2}{\index{Vector3@{Vector3}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector3@{Vector3}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_ab8bb1a236776d951a2e43b3ca9448bb2}
+
+
+Definition at line 89 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_ab337fe4b0c5fd44657f42427e265c982}{\index{Vector3@{Vector3}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vector3@{Vector3}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} \& Vector3\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_ab337fe4b0c5fd44657f42427e265c982}
+
+
+Definition at line 80 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_ab30b26971bc8e566d13d2311cc578a3c}{\index{Vector3@{Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector3@{Vector3}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{v1}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_ab30b26971bc8e566d13d2311cc578a3c}
+
+
+Definition at line 50 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a5a8b19645bb9837d0b637d6d212d095c}{\index{Vector3@{Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector3@{Vector3}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{v1}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_a5a8b19645bb9837d0b637d6d212d095c}
+
+
+Definition at line 59 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_aedb0fcbe51b139e9299311bce133fe90}{\index{Vector3@{Vector3}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector3@{Vector3}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} \& Vector3\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{r\+Vector}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_aedb0fcbe51b139e9299311bce133fe90}
+
+
+Definition at line 68 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a7fbc8e9db7df7cf5b49f9f6ff3f73e55}{\index{Vector3@{Vector3}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vector3@{Vector3}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_a7fbc8e9db7df7cf5b49f9f6ff3f73e55}
+
+
+Definition at line 98 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a310883f49b5c0ffa5d75b83cc0a2b7c0}{\index{Vector3@{Vector3}!Rotate\+Aroud\+Vec@{Rotate\+Aroud\+Vec}}
+\index{Rotate\+Aroud\+Vec@{Rotate\+Aroud\+Vec}!Vector3@{Vector3}}
+\subsubsection[{Rotate\+Aroud\+Vec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Vector3\+::\+Rotate\+Aroud\+Vec (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{around, }
+\item[{float}]{angle, }
+\item[{{\bf Vector3} \&}]{result}
+\end{DoxyParamCaption}
+) const}}\label{class_vector3_a310883f49b5c0ffa5d75b83cc0a2b7c0}
+
+
+Definition at line 142 of file Vector3.\+cpp.
+
+\hypertarget{class_vector3_a83547b4ef551fd45456a4106c178ca27}{\index{Vector3@{Vector3}!Set@{Set}}
+\index{Set@{Set}!Vector3@{Vector3}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Vector3\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_a83547b4ef551fd45456a4106c178ca27}
+
+
+Definition at line 150 of file Vector3.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_vector3_a7d95e4d1e3a740c70a4f7d63d0988791}{\index{Vector3@{Vector3}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vector3@{Vector3}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3}\& operator+= (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{l\+Vector, }
+\item[{const {\bf Vector3} \&}]{r\+Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_vector3_a7d95e4d1e3a740c70a4f7d63d0988791}
+
+
+Definition at line 126 of file Vector3.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_vector3_a96074c1245025a7b6d345a63548033b7}{\index{Vector3@{Vector3}!i@{i}}
+\index{i@{i}!Vector3@{Vector3}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3} \& Vector3\+::i = {\bf Vector3}(1.\+0f, 0.\+0f, 0.\+0f)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_vector3_a96074c1245025a7b6d345a63548033b7}
+
+
+Definition at line 48 of file Vector3.\+h.
+
+\hypertarget{class_vector3_ab45f6dbb5d5c71c4ef9ffaa6a9cd300f}{\index{Vector3@{Vector3}!j@{j}}
+\index{j@{j}!Vector3@{Vector3}}
+\subsubsection[{j}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3} \& Vector3\+::j = {\bf Vector3}(0.\+0f, 1.\+0f, 0.\+0f)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_vector3_ab45f6dbb5d5c71c4ef9ffaa6a9cd300f}
+
+
+Definition at line 49 of file Vector3.\+h.
+
+\hypertarget{class_vector3_a659bddc1d76c28562050e2316184cdda}{\index{Vector3@{Vector3}!k@{k}}
+\index{k@{k}!Vector3@{Vector3}}
+\subsubsection[{k}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3} \& Vector3\+::k = {\bf Vector3}(0.\+0f, 0.\+0f, 1.\+0f)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_vector3_a659bddc1d76c28562050e2316184cdda}
+
+
+Definition at line 50 of file Vector3.\+h.
+
+\hypertarget{class_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}{\index{Vector3@{Vector3}!x@{x}}
+\index{x@{x}!Vector3@{Vector3}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\+::x}}\label{class_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}
+
+
+Definition at line 16 of file Vector3.\+h.
+
+\hypertarget{class_vector3_a86eb35a9fa2d5a49e7fad66a35fa9c13}{\index{Vector3@{Vector3}!y@{y}}
+\index{y@{y}!Vector3@{Vector3}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\+::y}}\label{class_vector3_a86eb35a9fa2d5a49e7fad66a35fa9c13}
+
+
+Definition at line 16 of file Vector3.\+h.
+
+\hypertarget{class_vector3_aa8c9461eb24bd2c364258078811a3e9d}{\index{Vector3@{Vector3}!z@{z}}
+\index{z@{z}!Vector3@{Vector3}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\+::z}}\label{class_vector3_aa8c9461eb24bd2c364258078811a3e9d}
+
+
+Definition at line 16 of file Vector3.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+Math/\hyperlink{_vector3_8h}{Vector3.\+h}\item 
+S\+S\+W\+C/src/\+Math/\hyperlink{_vector3_8cpp}{Vector3.\+cpp}\end{DoxyCompactItemize}

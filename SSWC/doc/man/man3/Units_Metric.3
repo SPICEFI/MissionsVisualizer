@@ -1,0 +1,102 @@
+.TH "Units::Metric" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Units::Metric \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Quantity\&.h>\fP
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const \fBLengthUnit\fP \fBcentimeters\fP = \fBLengthUnit::ScaledUnit\fP(0\&.01, \fBUnits::Metric::meters\fP, 'cm')"
+.br
+.ti -1c
+.RI "static const \fBLengthUnit\fP \fBmeters\fP = \fBLengthUnit::BaseUnit\fP('m')"
+.br
+.ti -1c
+.RI "static const \fBLengthUnit\fP \fBkilometers\fP = \fBLengthUnit::ScaledUnit\fP(1000\&.0, \fBUnits::Metric::meters\fP, 'km')"
+.br
+.ti -1c
+.RI "static const \fBMassUnit\fP \fBgrams\fP = \fBMassUnit::ScaledUnit\fP(0\&.001, \fBUnits::Metric::kilograms\fP, 'g')"
+.br
+.ti -1c
+.RI "static const \fBMassUnit\fP \fBkilograms\fP = \fBMassUnit::BaseUnit\fP('kg')"
+.br
+.ti -1c
+.RI "static const \fBMassUnit\fP \fBtons\fP = \fBMassUnit::ScaledUnit\fP(1000\&.0, \fBUnits::Metric::kilograms\fP, 't')"
+.br
+.ti -1c
+.RI "static const \fBVelocityUnit\fP \fBkmph\fP = \fBVelocityUnit::DerivedUnit\fP(\fBUnits::Metric::kilometers\fP, \fBUnits::Common::hours\fP, 'km/\fBh\fP')"
+.br
+.ti -1c
+.RI "static const \fBVelocityUnit\fP \fBkmps\fP = \fBVelocityUnit::DerivedUnit\fP(\fBUnits::Metric::kilometers\fP, \fBUnits::Common::seconds\fP, 'km/\fBs\fP')"
+.br
+.ti -1c
+.RI "static const \fBVelocityUnit\fP \fBmps\fP = \fBVelocityUnit::DerivedUnit\fP(\fBUnits::Metric::meters\fP, \fBUnits::Common::seconds\fP, 'm/\fBs\fP')"
+.br
+.ti -1c
+.RI "static const \fBAccelerationUnit\fP \fBms2\fP = \fBAccelerationUnit::DerivedUnit\fP(\fBUnits::Metric::meters\fP, \fBUnits::Common::seconds\fP, 'm/\fBs\fP^2')"
+.br
+.ti -1c
+.RI "static const 
+.br
+\fBGravitationalParameterUnit\fP \fBgm\fP = \fBGravitationalParameterUnit::DerivedUnit\fP(\fBUnits::Metric::kilometers\fP, \fBUnits::Common::seconds\fP, 'km3/s2')"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 231 of file Quantity\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBLengthUnit\fP Units::Metric::centimeters = \fBLengthUnit::ScaledUnit\fP(0\&.01, \fBUnits::Metric::meters\fP, 'cm')\fC [static]\fP"
+
+.PP
+Definition at line 234 of file Quantity\&.h\&.
+.SS "const \fBGravitationalParameterUnit\fP Units::Metric::gm = \fBGravitationalParameterUnit::DerivedUnit\fP(\fBUnits::Metric::kilometers\fP, \fBUnits::Common::seconds\fP, 'km3/s2')\fC [static]\fP"
+
+.PP
+Definition at line 248 of file Quantity\&.h\&.
+.SS "const \fBMassUnit\fP Units::Metric::grams = \fBMassUnit::ScaledUnit\fP(0\&.001, \fBUnits::Metric::kilograms\fP, 'g')\fC [static]\fP"
+
+.PP
+Definition at line 238 of file Quantity\&.h\&.
+.SS "const \fBMassUnit\fP Units::Metric::kilograms = \fBMassUnit::BaseUnit\fP('kg')\fC [static]\fP"
+
+.PP
+Definition at line 239 of file Quantity\&.h\&.
+.SS "const \fBLengthUnit\fP Units::Metric::kilometers = \fBLengthUnit::ScaledUnit\fP(1000\&.0, \fBUnits::Metric::meters\fP, 'km')\fC [static]\fP"
+
+.PP
+Definition at line 236 of file Quantity\&.h\&.
+.SS "const \fBVelocityUnit\fP Units::Metric::kmph = \fBVelocityUnit::DerivedUnit\fP(\fBUnits::Metric::kilometers\fP, \fBUnits::Common::hours\fP, 'km/\fBh\fP')\fC [static]\fP"
+
+.PP
+Definition at line 242 of file Quantity\&.h\&.
+.SS "const \fBVelocityUnit\fP Units::Metric::kmps = \fBVelocityUnit::DerivedUnit\fP(\fBUnits::Metric::kilometers\fP, \fBUnits::Common::seconds\fP, 'km/\fBs\fP')\fC [static]\fP"
+
+.PP
+Definition at line 243 of file Quantity\&.h\&.
+.SS "const \fBLengthUnit\fP Units::Metric::meters = \fBLengthUnit::BaseUnit\fP('m')\fC [static]\fP"
+
+.PP
+Definition at line 235 of file Quantity\&.h\&.
+.SS "const \fBVelocityUnit\fP Units::Metric::mps = \fBVelocityUnit::DerivedUnit\fP(\fBUnits::Metric::meters\fP, \fBUnits::Common::seconds\fP, 'm/\fBs\fP')\fC [static]\fP"
+
+.PP
+Definition at line 244 of file Quantity\&.h\&.
+.SS "const \fBAccelerationUnit\fP Units::Metric::ms2 = \fBAccelerationUnit::DerivedUnit\fP(\fBUnits::Metric::meters\fP, \fBUnits::Common::seconds\fP, 'm/\fBs\fP^2')\fC [static]\fP"
+
+.PP
+Definition at line 246 of file Quantity\&.h\&.
+.SS "const \fBMassUnit\fP Units::Metric::tons = \fBMassUnit::ScaledUnit\fP(1000\&.0, \fBUnits::Metric::kilograms\fP, 't')\fC [static]\fP"
+
+.PP
+Definition at line 240 of file Quantity\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

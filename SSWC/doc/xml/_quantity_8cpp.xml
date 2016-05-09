@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_quantity_8cpp" kind="file">
+    <compoundname>Quantity.cpp</compoundname>
+    <includes refid="_quantity_8h" local="yes">Quantity.h</includes>
+    <incdepgraph>
+      <node id="1837">
+        <label>SSWC/src/Math/Quantity.cpp</label>
+        <link refid="Quantity.cpp"/>
+        <childnode refid="1838" relation="include">
+        </childnode>
+      </node>
+      <node id="1839">
+        <label>cmath</label>
+      </node>
+      <node id="1840">
+        <label>string</label>
+      </node>
+      <node id="1838">
+        <label>Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_quantity_8cpp_1a8fa258f4864c8e3ce7dd7abfee39860f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double powi</definition>
+        <argsstring>(double val, int exp)</argsstring>
+        <name>powi</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.cpp" line="3" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.cpp" bodystart="3" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_quantity_8h" kindref="compound">Quantity.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_quantity_8h_1a8fa258f4864c8e3ce7dd7abfee39860f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="_quantity_8cpp_1a8fa258f4864c8e3ce7dd7abfee39860f" kindref="member">powi</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exp)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(exp<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(exp<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0<sp/>/<sp/><ref refid="_quantity_8cpp_1a8fa258f4864c8e3ce7dd7abfee39860f" kindref="member">powi</ref>(val,<sp/>-exp);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>power<sp/>=<sp/>0;<sp/>power<sp/>&lt;<sp/>exp;<sp/>power++)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>*=<sp/><ref refid="glext_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Common</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">TimeUnit</ref><sp/><ref refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" kindref="member">Units::Common::seconds</ref><sp/>=<sp/><ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">TimeUnit::BaseUnit</ref>(</highlight><highlight class="stringliteral">&quot;sec&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">TimeUnit</ref><sp/><ref refid="class_units_1_1_common_1ae00592bb8573bd91d034a0b23f4449d6" kindref="member">Units::Common::minutes</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">TimeUnit::ScaledUnit</ref>(60.0,<sp/>Units::Common::seconds,<sp/></highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">TimeUnit</ref><sp/><ref refid="class_units_1_1_common_1a85905b04a8c1fa4058249d06c81828c7" kindref="member">Units::Common::hours</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">TimeUnit::ScaledUnit</ref>(60.0,<sp/>Units::Common::minutes,<sp/></highlight><highlight class="stringliteral">&quot;hr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">TimeUnit</ref><sp/><ref refid="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" kindref="member">Units::Common::days</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">TimeUnit::ScaledUnit</ref>(24.0,<sp/>Units::Common::hours,<sp/></highlight><highlight class="stringliteral">&quot;days&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Metric</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref><sp/><ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">Units::Metric::meters</ref><sp/>=<sp/><ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">LengthUnit::BaseUnit</ref>(</highlight><highlight class="stringliteral">&quot;m&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref><sp/><ref refid="class_units_1_1_metric_1a74dbbff37b76b1265ad6ca64168798b0" kindref="member">Units::Metric::centimeters</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(0.01,<sp/>Units::Metric::meters,<sp/></highlight><highlight class="stringliteral">&quot;cm&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref><sp/><ref refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" kindref="member">Units::Metric::kilometers</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(1000.0,<sp/>Units::Metric::meters,<sp/></highlight><highlight class="stringliteral">&quot;km&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref><sp/><ref refid="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" kindref="member">Units::Metric::kilograms</ref><sp/>=<sp/><ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">MassUnit::BaseUnit</ref>(</highlight><highlight class="stringliteral">&quot;kg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref><sp/><ref refid="class_units_1_1_metric_1a88cdf60341e6f6d7013018cdc1c26ec6" kindref="member">Units::Metric::grams</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(0.001,<sp/>Units::Metric::kilograms,<sp/></highlight><highlight class="stringliteral">&quot;g&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref><sp/><ref refid="class_units_1_1_metric_1a6795221af474ecd8907538c4ee3505ca" kindref="member">Units::Metric::tons</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(1000.0,<sp/>Units::Metric::kilograms,<sp/></highlight><highlight class="stringliteral">&quot;t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">VelocityUnit</ref><sp/><ref refid="class_units_1_1_metric_1ae1c8538c908650861579c9ac0b66457d" kindref="member">Units::Metric::kmph</ref><sp/>=<sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">VelocityUnit::DerivedUnit</ref>(Units::Metric::kilometers,<sp/>Units::Common::hours,<sp/></highlight><highlight class="stringliteral">&quot;km/h&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">VelocityUnit</ref><sp/><ref refid="class_units_1_1_metric_1ae30e1438d1f93d6d08901e1fe9b31919" kindref="member">Units::Metric::kmps</ref><sp/>=<sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">VelocityUnit::DerivedUnit</ref>(Units::Metric::kilometers,<sp/>Units::Common::seconds,<sp/></highlight><highlight class="stringliteral">&quot;km/s&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">VelocityUnit</ref><sp/><ref refid="class_units_1_1_metric_1af960d1782d357569275d856dc28ed895" kindref="member">Units::Metric::mps</ref><sp/>=<sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">VelocityUnit::DerivedUnit</ref>(Units::Metric::meters,<sp/>Units::Common::seconds,<sp/></highlight><highlight class="stringliteral">&quot;m/s&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">AccelerationUnit</ref><sp/><ref refid="class_units_1_1_metric_1a172a4a3ec21992ffee09794cf07f9563" kindref="member">Units::Metric::ms2</ref><sp/>=<sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">AccelerationUnit::DerivedUnit</ref>(Units::Metric::meters,<sp/>Units::Common::seconds,<sp/></highlight><highlight class="stringliteral">&quot;m/s^2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Imperial</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref><sp/><ref refid="class_units_1_1_imperial_1ab94938e29c6ad2bfd28576401a580fc7" kindref="member">Units::Imperial::inches</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(0.0254,<sp/>Units::Metric::meters,<sp/></highlight><highlight class="stringliteral">&quot;in&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref><sp/><ref refid="class_units_1_1_imperial_1aa9b2921928f73582aec2467ba60bb625" kindref="member">Units::Imperial::feet</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(0.3048,<sp/>Units::Metric::meters,<sp/></highlight><highlight class="stringliteral">&quot;ft&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref><sp/><ref refid="class_units_1_1_imperial_1ae2bee79b25bd5888d7e6b454a057cb66" kindref="member">Units::Imperial::yards</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(3.0,<sp/>Units::Imperial::feet,<sp/></highlight><highlight class="stringliteral">&quot;yd&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref><sp/><ref refid="class_units_1_1_imperial_1a3ccc983d656c0b984f7b269d6e6c3625" kindref="member">Units::Imperial::miles</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(5280.0,<sp/>Units::Imperial::feet,<sp/></highlight><highlight class="stringliteral">&quot;mi&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref><sp/><ref refid="class_units_1_1_imperial_1a25954e93175ecbf7c8dcc870e6c01dd4" kindref="member">Units::Imperial::pounds</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(453.59237,<sp/>Units::Metric::grams,<sp/></highlight><highlight class="stringliteral">&quot;lb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref><sp/><ref refid="class_units_1_1_imperial_1af866267c1b81518be69261c840d1e201" kindref="member">Units::Imperial::ounces</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(1.0/16.0,<sp/>Units::Imperial::pounds,<sp/></highlight><highlight class="stringliteral">&quot;oz&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref><sp/><ref refid="class_units_1_1_imperial_1aa704afada0bf66bfb942b92b880e425e" kindref="member">Units::Imperial::tons</ref><sp/>=<sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(2240.0,<sp/>Units::Imperial::pounds,<sp/></highlight><highlight class="stringliteral">&quot;t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">VelocityUnit</ref><sp/><ref refid="class_units_1_1_imperial_1aa16979886192a537b02c2421701c8e25" kindref="member">Units::Imperial::mph</ref><sp/>=<sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">VelocityUnit::DerivedUnit</ref>(Units::Imperial::miles,<sp/>Units::Common::hours,<sp/></highlight><highlight class="stringliteral">&quot;mph&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Common</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">GravitationalParameterUnit</ref><sp/><ref refid="class_units_1_1_metric_1a8e5b74eb410af1d26aadb0adfb77dc21" kindref="member">Units::Metric::gm</ref><sp/>=<sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">GravitationalParameterUnit::DerivedUnit</ref>(Units::Metric::kilometers,<sp/>Units::Common::seconds,<sp/></highlight><highlight class="stringliteral">&quot;km3/s2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.cpp"/>
+  </compounddef>
+</doxygen>

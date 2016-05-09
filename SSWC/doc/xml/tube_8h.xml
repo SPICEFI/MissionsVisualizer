@@ -1,0 +1,1094 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="tube_8h" kind="file">
+    <compoundname>tube.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="tube_8h_1a9de6dddb4a0a064a8cb406c8336a24b1" prot="public" static="no">
+        <name>GLE_API_VERSION</name>
+        <initializer>228</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GLE API revision history:</para><para>GLE_API_VERSION is updated to reflect GLE API changes (interface changes, semantic changes, deletions, or additions).</para><para>GLE_API_VERSION=228 GLUT 3.7 release of GLE. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="29" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" prot="public" static="no">
+        <name>gleDouble</name>
+        <initializer>double</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="33" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a785078ecc5f271e5c7f1cbae0e883c05" prot="public" static="no">
+        <name>TUBE_JN_RAW</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="39" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a567e0415209ae5b59230a56346d84e2c" prot="public" static="no">
+        <name>TUBE_JN_ANGLE</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="40" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a0047ec2c6733cfd459df0ea4c19a91c4" prot="public" static="no">
+        <name>TUBE_JN_CUT</name>
+        <initializer>0x3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="41" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a76c15a8f331249f6669c64fe8d122802" prot="public" static="no">
+        <name>TUBE_JN_ROUND</name>
+        <initializer>0x4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="42" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1aacd092525f23134be5543ff2324e3a42" prot="public" static="no">
+        <name>TUBE_JN_MASK</name>
+        <initializer>0xf    /* mask bits */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="43" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a169fdce85916e45c4358f87903fab682" prot="public" static="no">
+        <name>TUBE_JN_CAP</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="44" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a0d9ff892883eee48246b0c4ee45fd27f" prot="public" static="no">
+        <name>TUBE_NORM_FACET</name>
+        <initializer>0x100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="47" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1acee27fad87c79188b137dfbcdbff82cb" prot="public" static="no">
+        <name>TUBE_NORM_EDGE</name>
+        <initializer>0x200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="48" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1ac99b028571d21df7ca03dccb32447baa" prot="public" static="no">
+        <name>TUBE_NORM_PATH_EDGE</name>
+        <initializer>0x400 /* for spiral, lathe, helix primitives */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="49" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a94520cb52d7e23e465e8ff1ba44a8024" prot="public" static="no">
+        <name>TUBE_NORM_MASK</name>
+        <initializer>0xf00    /* mask bits */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="50" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a57036545c364ce854f273b20b1d6bc82" prot="public" static="no">
+        <name>TUBE_CONTOUR_CLOSED</name>
+        <initializer>0x1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="53" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a61b16b3a129bc93443db79a575f92829" prot="public" static="no">
+        <name>GLE_TEXTURE_ENABLE</name>
+        <initializer>0x10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="55" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1ade0f181b0ca2f9f420ae30335756b3d3" prot="public" static="no">
+        <name>GLE_TEXTURE_STYLE_MASK</name>
+        <initializer>0xff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="56" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a7fbfa3244aa20375cf6031b398f6b298" prot="public" static="no">
+        <name>GLE_TEXTURE_VERTEX_FLAT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="57" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1aadd05fa7a817b7bd9f78dbe601167484" prot="public" static="no">
+        <name>GLE_TEXTURE_NORMAL_FLAT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="58" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1acae0e8ab50d56ed61dbbeec8d846c705" prot="public" static="no">
+        <name>GLE_TEXTURE_VERTEX_CYL</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="59" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1aa051baaf33c0aca8e2534f92f0178b64" prot="public" static="no">
+        <name>GLE_TEXTURE_NORMAL_CYL</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="60" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a687ff2bbbb774fe698d945243b5e8b82" prot="public" static="no">
+        <name>GLE_TEXTURE_VERTEX_SPH</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="61" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1ae4e452730961c1b33a6edd1d2e58b5c0" prot="public" static="no">
+        <name>GLE_TEXTURE_NORMAL_SPH</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="62" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1ab3654d249d055c768a378e5a5c4608ed" prot="public" static="no">
+        <name>GLE_TEXTURE_VERTEX_MODEL_FLAT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="63" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a3d433245ce45ddc01df3e28a352eec78" prot="public" static="no">
+        <name>GLE_TEXTURE_NORMAL_MODEL_FLAT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="64" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a276662dc21bc0de5e6256aa4c0381b9c" prot="public" static="no">
+        <name>GLE_TEXTURE_VERTEX_MODEL_CYL</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="65" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1aa7d01138d935450c7b352b6ad00e9ce6" prot="public" static="no">
+        <name>GLE_TEXTURE_NORMAL_MODEL_CYL</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="66" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1a17bb04f5162edff90ad803686bd8ca78" prot="public" static="no">
+        <name>GLE_TEXTURE_VERTEX_MODEL_SPH</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="67" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tube_8h_1ab838b21fbbac2f686ac671b15168dce6" prot="public" static="no">
+        <name>GLE_TEXTURE_NORMAL_MODEL_SPH</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="68" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="tube_8h_1acbf16062767e3844d21ac8211443aa8f" prot="public" static="no">
+        <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+        <definition>typedef gleDouble gleAffine[2][3]</definition>
+        <argsstring>[2][3]</argsstring>
+        <name>gleAffine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="34" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tube_8h_1a38cf36ee9b6ef4bfcc25184b81768390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int gleGetJoinStyle</definition>
+        <argsstring>(void)</argsstring>
+        <name>gleGetJoinStyle</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a0d4935d69cdee5ba6585f723d2443492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleSetJoinStyle</definition>
+        <argsstring>(int style)</argsstring>
+        <name>gleSetJoinStyle</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a5e5c53b4896179e7e3aebb2289e80c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int gleGetNumSlices</definition>
+        <argsstring>(void)</argsstring>
+        <name>gleGetNumSlices</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a3ab8274d65d7f502cd458bfbaefc3230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleSetNumSlices</definition>
+        <argsstring>(int slices)</argsstring>
+        <name>gleSetNumSlices</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>slices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1aebfb824754e7bc2d31876049f7b8bb34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glePolyCylinder</definition>
+        <argsstring>(int npoints, gleDouble point_array[][3], float color_array[][3], gleDouble radius)</argsstring>
+        <name>glePolyCylinder</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>npoints</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>point_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>color_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a9a36c82bd02f7cab0fac083561370822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glePolyCone</definition>
+        <argsstring>(int npoints, gleDouble point_array[][3], float color_array[][3], gleDouble radius_array[])</argsstring>
+        <name>glePolyCone</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>npoints</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>point_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>color_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>radius_array</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a51f5fac37d515364de4e9be8d8b2d03d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleExtrusion</definition>
+        <argsstring>(int ncp, gleDouble contour[][2], gleDouble cont_normal[][2], gleDouble up[3], int npoints, gleDouble point_array[][3], float color_array[][3])</argsstring>
+        <name>gleExtrusion</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>ncp</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>contour</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>cont_normal</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>up</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>npoints</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>point_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>color_array</declname>
+          <array>[][3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a40728b7d625ead4e924e4b900fcb9eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleTwistExtrusion</definition>
+        <argsstring>(int ncp, gleDouble contour[][2], gleDouble cont_normal[][2], gleDouble up[3], int npoints, gleDouble point_array[][3], float color_array[][3], gleDouble twist_array[])</argsstring>
+        <name>gleTwistExtrusion</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>ncp</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>contour</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>cont_normal</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>up</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>npoints</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>point_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>color_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>twist_array</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1acd89e2373a5e5869a59ca0a73f1ea670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleSuperExtrusion</definition>
+        <argsstring>(int ncp, gleDouble contour[][2], gleDouble cont_normal[][2], gleDouble up[3], int npoints, gleDouble point_array[][3], float color_array[][3], gleDouble xform_array[][2][3])</argsstring>
+        <name>gleSuperExtrusion</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>ncp</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>contour</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>cont_normal</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>up</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>npoints</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>point_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>color_array</declname>
+          <array>[][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>xform_array</declname>
+          <array>[][2][3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1acf059cf3557628570317b7108ae06fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleSpiral</definition>
+        <argsstring>(int ncp, gleDouble contour[][2], gleDouble cont_normal[][2], gleDouble up[3], gleDouble startRadius, gleDouble drdTheta, gleDouble startZ, gleDouble dzdTheta, gleDouble startXform[2][3], gleDouble dXformdTheta[2][3], gleDouble startTheta, gleDouble sweepTheta)</argsstring>
+        <name>gleSpiral</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>ncp</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>contour</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>cont_normal</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>up</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startRadius</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>drdTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startZ</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>dzdTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startXform</declname>
+          <array>[2][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>dXformdTheta</declname>
+          <array>[2][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>sweepTheta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a2de0d4067ed5dcab066ca708d2161371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleLathe</definition>
+        <argsstring>(int ncp, gleDouble contour[][2], gleDouble cont_normal[][2], gleDouble up[3], gleDouble startRadius, gleDouble drdTheta, gleDouble startZ, gleDouble dzdTheta, gleDouble startXform[2][3], gleDouble dXformdTheta[2][3], gleDouble startTheta, gleDouble sweepTheta)</argsstring>
+        <name>gleLathe</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>ncp</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>contour</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>cont_normal</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>up</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startRadius</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>drdTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startZ</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>dzdTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startXform</declname>
+          <array>[2][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>dXformdTheta</declname>
+          <array>[2][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>sweepTheta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a3550c1319800e49b967b5ca077b9616f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleHelicoid</definition>
+        <argsstring>(gleDouble rToroid, gleDouble startRadius, gleDouble drdTheta, gleDouble startZ, gleDouble dzdTheta, gleDouble startXform[2][3], gleDouble dXformdTheta[2][3], gleDouble startTheta, gleDouble sweepTheta)</argsstring>
+        <name>gleHelicoid</name>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>rToroid</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startRadius</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>drdTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startZ</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>dzdTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startXform</declname>
+          <array>[2][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>dXformdTheta</declname>
+          <array>[2][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>sweepTheta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a8bfafeeabe5aec050cf3f891e0376148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleToroid</definition>
+        <argsstring>(gleDouble rToroid, gleDouble startRadius, gleDouble drdTheta, gleDouble startZ, gleDouble dzdTheta, gleDouble startXform[2][3], gleDouble dXformdTheta[2][3], gleDouble startTheta, gleDouble sweepTheta)</argsstring>
+        <name>gleToroid</name>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>rToroid</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startRadius</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>drdTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startZ</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>dzdTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startXform</declname>
+          <array>[2][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>dXformdTheta</declname>
+          <array>[2][3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startTheta</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>sweepTheta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1a841d8a45fc934369eaa5bf2604318120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleScrew</definition>
+        <argsstring>(int ncp, gleDouble contour[][2], gleDouble cont_normal[][2], gleDouble up[3], gleDouble startz, gleDouble endz, gleDouble twist)</argsstring>
+        <name>gleScrew</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>ncp</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>contour</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>cont_normal</declname>
+          <array>[][2]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>up</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>startz</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>endz</declname>
+        </param>
+        <param>
+          <type><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref></type>
+          <declname>twist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tube_8h_1ae3a68ef9eba1a4c7125f922a7d45f770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void gleTextureMode</definition>
+        <argsstring>(int mode)</argsstring>
+        <name>gleTextureMode</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h" line="194" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>tube.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FUNCTION:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Tubing<sp/>and<sp/>Extrusion<sp/>header<sp/>file.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>provides<sp/>protypes<sp/>and<sp/>defines<sp/>for<sp/>the<sp/>extrusion<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>and<sp/>tubing<sp/>primitives.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>HISTORY:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Linas<sp/>Vepstas<sp/>1990,<sp/>1991</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__TUBE_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TUBE_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#ifndef<sp/>GLE_API_VERSION<sp/><sp/></highlight><highlight class="comment">/*<sp/>allow<sp/>this<sp/>to<sp/>be<sp/>overriden<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="tube_8h_1a9de6dddb4a0a064a8cb406c8336a24b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_API_VERSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>228</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>some<sp/>types<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleDouble<sp/>double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="tube_8h_1acbf16062767e3844d21ac8211443aa8f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/><ref refid="tube_8h_1acbf16062767e3844d21ac8211443aa8f" kindref="member">gleAffine</ref>[2][3];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>======================================================<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>defines<sp/>for<sp/>tubing<sp/>join<sp/>styles<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="tube_8h_1a785078ecc5f271e5c7f1cbae0e883c05" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_JN_RAW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="tube_8h_1a567e0415209ae5b59230a56346d84e2c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_JN_ANGLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="tube_8h_1a0047ec2c6733cfd459df0ea4c19a91c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_JN_CUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="tube_8h_1a76c15a8f331249f6669c64fe8d122802" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_JN_ROUND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="tube_8h_1aacd092525f23134be5543ff2324e3a42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_JN_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xf<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>mask<sp/>bits<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="tube_8h_1a169fdce85916e45c4358f87903fab682" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_JN_CAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>determine<sp/>how<sp/>normal<sp/>vectors<sp/>are<sp/>to<sp/>be<sp/>handled<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="tube_8h_1a0d9ff892883eee48246b0c4ee45fd27f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_NORM_FACET<sp/><sp/><sp/><sp/><sp/><sp/>0x100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="tube_8h_1acee27fad87c79188b137dfbcdbff82cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_NORM_EDGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="tube_8h_1ac99b028571d21df7ca03dccb32447baa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_NORM_PATH_EDGE<sp/><sp/>0x400<sp/></highlight><highlight class="comment">/*<sp/>for<sp/>spiral,<sp/>lathe,<sp/>helix<sp/>primitives<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="tube_8h_1a94520cb52d7e23e465e8ff1ba44a8024" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_NORM_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xf00<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>mask<sp/>bits<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>closed<sp/>or<sp/>open<sp/>countours<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="tube_8h_1a57036545c364ce854f273b20b1d6bc82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_CONTOUR_CLOSED<sp/>0x1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="tube_8h_1a61b16b3a129bc93443db79a575f92829" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_ENABLE<sp/><sp/>0x10000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="tube_8h_1ade0f181b0ca2f9f420ae30335756b3d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_STYLE_MASK<sp/><sp/>0xff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="tube_8h_1a7fbfa3244aa20375cf6031b398f6b298" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_VERTEX_FLAT<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="tube_8h_1aadd05fa7a817b7bd9f78dbe601167484" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_NORMAL_FLAT<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="tube_8h_1acae0e8ab50d56ed61dbbeec8d846c705" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_VERTEX_CYL<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="tube_8h_1aa051baaf33c0aca8e2534f92f0178b64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_NORMAL_CYL<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="tube_8h_1a687ff2bbbb774fe698d945243b5e8b82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_VERTEX_SPH<sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="tube_8h_1ae4e452730961c1b33a6edd1d2e58b5c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_NORMAL_SPH<sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="tube_8h_1ab3654d249d055c768a378e5a5c4608ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_VERTEX_MODEL_FLAT<sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="tube_8h_1a3d433245ce45ddc01df3e28a352eec78" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_NORMAL_MODEL_FLAT<sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="tube_8h_1a276662dc21bc0de5e6256aa4c0381b9c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_VERTEX_MODEL_CYL<sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="tube_8h_1aa7d01138d935450c7b352b6ad00e9ce6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_NORMAL_MODEL_CYL<sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="tube_8h_1a17bb04f5162edff90ad803686bd8ca78" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_VERTEX_MODEL_SPH<sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="tube_8h_1ab838b21fbbac2f686ac671b15168dce6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLE_TEXTURE_NORMAL_MODEL_SPH<sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GL_32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>HACK<sp/>for<sp/>GL<sp/>3.2<sp/>--<sp/>needed<sp/>because<sp/>no<sp/>way<sp/>to<sp/>tell<sp/>if<sp/>lighting<sp/>is<sp/>on.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TUBE_LIGHTING_ON<sp/><sp/><sp/><sp/>0x80000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleExtrusion<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extrusion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleSetJoinStyle<sp/><sp/><sp/><sp/><sp/>setjoinstyle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleGetJoinStyle<sp/><sp/><sp/><sp/><sp/>getjoinstyle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glePolyCone<sp/><sp/><sp/><sp/><sp/>polycone</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glePolyCylinder<sp/><sp/><sp/><sp/><sp/>polycylinder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleSuperExtrusion<sp/><sp/><sp/>super_extrusion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleTwistExtrusion<sp/><sp/><sp/>twist_extrusion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleSpiral<sp/><sp/><sp/><sp/><sp/><sp/><sp/>spiral</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleLathe<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lathe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleHelicoid<sp/><sp/><sp/><sp/><sp/>helicoid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleToroid<sp/><sp/><sp/><sp/><sp/><sp/><sp/>toroid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gleScrew<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screw</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GL_32<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a38cf36ee9b6ef4bfcc25184b81768390" kindref="member">gleGetJoinStyle</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a0d4935d69cdee5ba6585f723d2443492" kindref="member">gleSetJoinStyle</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>style);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>bitwise<sp/>OR<sp/>of<sp/>flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a5e5c53b4896179e7e3aebb2289e80c46" kindref="member">gleGetNumSlices</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a3ab8274d65d7f502cd458bfbaefc3230" kindref="member">gleSetNumSlices</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slices);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>draw<sp/>polyclinder,<sp/>specified<sp/>as<sp/>a<sp/>polyline<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1aebfb824754e7bc2d31876049f7b8bb34" kindref="member">glePolyCylinder</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npoints,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>num<sp/>points<sp/>in<sp/>polyline<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>point_array[][3],<sp/><sp/></highlight><highlight class="comment">/*<sp/>polyline<sp/>vertces<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>color_array[][3],<sp/><sp/></highlight><highlight class="comment">/*<sp/>colors<sp/>at<sp/>polyline<sp/>verts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>radius);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>radius<sp/>of<sp/>polycylinder<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>draw<sp/>polycone,<sp/>specified<sp/>as<sp/>a<sp/>polyline<sp/>with<sp/>radii<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a9a36c82bd02f7cab0fac083561370822" kindref="member">glePolyCone</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npoints,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>numpoints<sp/>in<sp/>poly-line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>point_array[][3],<sp/><sp/></highlight><highlight class="comment">/*<sp/>polyline<sp/>vertices<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>color_array[][3],<sp/><sp/></highlight><highlight class="comment">/*<sp/>colors<sp/>at<sp/>polyline<sp/>verts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>radius_array[]);<sp/></highlight><highlight class="comment">/*<sp/>cone<sp/>radii<sp/>at<sp/>polyline<sp/>verts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>extrude<sp/>arbitrary<sp/>2D<sp/>contour<sp/>along<sp/>arbitrary<sp/>3D<sp/>path<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a51f5fac37d515364de4e9be8d8b2d03d" kindref="member">gleExtrusion</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncp,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>contour<sp/>points<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>contour[][2],<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>cont_normal[][2],<sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>normals<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>up[3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>up<sp/>vector<sp/>for<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npoints,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>numpoints<sp/>in<sp/>poly-line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>point_array[][3],<sp/></highlight><highlight class="comment">/*<sp/>polyline<sp/>vertices<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>color_array[][3]);<sp/></highlight><highlight class="comment">/*<sp/>colors<sp/>at<sp/>polyline<sp/>verts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>extrude<sp/>2D<sp/>contour,<sp/>specifying<sp/>local<sp/>rotations<sp/>(twists)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a40728b7d625ead4e924e4b900fcb9eaf" kindref="member">gleTwistExtrusion</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncp,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>contour<sp/>points<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>contour[][2],<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>cont_normal[][2],<sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>normals<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>up[3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>up<sp/>vector<sp/>for<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npoints,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>numpoints<sp/>in<sp/>poly-line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>point_array[][3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>polyline<sp/>vertices<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>color_array[][3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>color<sp/>at<sp/>polyline<sp/>verts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>twist_array[]);<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>countour<sp/>twists<sp/>(in<sp/>degrees)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>extrude<sp/>2D<sp/>contour,<sp/>specifying<sp/>local<sp/>affine<sp/>tranformations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1acd89e2373a5e5869a59ca0a73f1ea670" kindref="member">gleSuperExtrusion</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncp,<sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>contour<sp/>points<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>contour[][2],<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>cont_normal[][2],<sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>normals<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>up[3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>up<sp/>vector<sp/>for<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npoints,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>numpoints<sp/>in<sp/>poly-line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>point_array[][3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>polyline<sp/>vertices<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>color_array[][3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>color<sp/>at<sp/>polyline<sp/>verts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>xform_array[][2][3]);<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>xforms<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>spiral<sp/>moves<sp/>contour<sp/>along<sp/>helical<sp/>path<sp/>by<sp/>parallel<sp/>transport<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1acf059cf3557628570317b7108ae06fa3" kindref="member">gleSpiral</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncp,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>contour<sp/>points<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>contour[][2],<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>cont_normal[][2],<sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>normals<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>up[3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>up<sp/>vector<sp/>for<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startRadius,<sp/></highlight><highlight class="comment">/*<sp/>spiral<sp/>starts<sp/>in<sp/>x-y<sp/>plane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>drdTheta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>in<sp/>radius<sp/>per<sp/>revolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startZ,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>z<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>dzdTheta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>in<sp/>Z<sp/>per<sp/>revolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startXform[2][3],<sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>contour<sp/>affine<sp/>xform<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>dXformdTheta[2][3],<sp/></highlight><highlight class="comment">/*<sp/>tangent<sp/>change<sp/>xform<sp/>per<sp/>revoln<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startTheta,<sp/><sp/></highlight><highlight class="comment">/*<sp/>start<sp/>angle<sp/>in<sp/>x-y<sp/>plane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>sweepTheta);<sp/></highlight><highlight class="comment">/*<sp/>degrees<sp/>to<sp/>spiral<sp/>around<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>lathe<sp/>moves<sp/>contour<sp/>along<sp/>helical<sp/>path<sp/>by<sp/>helically<sp/>shearing<sp/>3D<sp/>space<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a2de0d4067ed5dcab066ca708d2161371" kindref="member">gleLathe</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncp,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>contour<sp/>points<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>contour[][2],<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>cont_normal[][2],<sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>normals<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>up[3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>up<sp/>vector<sp/>for<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startRadius,<sp/></highlight><highlight class="comment">/*<sp/>spiral<sp/>starts<sp/>in<sp/>x-y<sp/>plane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>drdTheta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>in<sp/>radius<sp/>per<sp/>revolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startZ,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>z<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>dzdTheta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>in<sp/>Z<sp/>per<sp/>revolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startXform[2][3],<sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>contour<sp/>affine<sp/>xform<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>dXformdTheta[2][3],<sp/></highlight><highlight class="comment">/*<sp/>tangent<sp/>change<sp/>xform<sp/>per<sp/>revoln<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startTheta,<sp/><sp/></highlight><highlight class="comment">/*<sp/>start<sp/>angle<sp/>in<sp/>x-y<sp/>plane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>sweepTheta);<sp/></highlight><highlight class="comment">/*<sp/>degrees<sp/>to<sp/>spiral<sp/>around<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>similar<sp/>to<sp/>spiral,<sp/>except<sp/>contour<sp/>is<sp/>a<sp/>circle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a3550c1319800e49b967b5ca077b9616f" kindref="member">gleHelicoid</ref><sp/>(<ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>rToroid,<sp/></highlight><highlight class="comment">/*<sp/>circle<sp/>contour<sp/>(torus)<sp/>radius<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startRadius,<sp/></highlight><highlight class="comment">/*<sp/>spiral<sp/>starts<sp/>in<sp/>x-y<sp/>plane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>drdTheta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>in<sp/>radius<sp/>per<sp/>revolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startZ,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>z<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>dzdTheta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>in<sp/>Z<sp/>per<sp/>revolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startXform[2][3],<sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>contour<sp/>affine<sp/>xform<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>dXformdTheta[2][3],<sp/></highlight><highlight class="comment">/*<sp/>tangent<sp/>change<sp/>xform<sp/>per<sp/>revoln<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startTheta,<sp/><sp/></highlight><highlight class="comment">/*<sp/>start<sp/>angle<sp/>in<sp/>x-y<sp/>plane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>sweepTheta);<sp/></highlight><highlight class="comment">/*<sp/>degrees<sp/>to<sp/>spiral<sp/>around<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>similar<sp/>to<sp/>lathe,<sp/>except<sp/>contour<sp/>is<sp/>a<sp/>circle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a8bfafeeabe5aec050cf3f891e0376148" kindref="member">gleToroid</ref><sp/>(<ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>rToroid,<sp/></highlight><highlight class="comment">/*<sp/>circle<sp/>contour<sp/>(torus)<sp/>radius<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startRadius,<sp/></highlight><highlight class="comment">/*<sp/>spiral<sp/>starts<sp/>in<sp/>x-y<sp/>plane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>drdTheta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>in<sp/>radius<sp/>per<sp/>revolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startZ,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>z<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>dzdTheta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>change<sp/>in<sp/>Z<sp/>per<sp/>revolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startXform[2][3],<sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>contour<sp/>affine<sp/>xform<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>dXformdTheta[2][3],<sp/></highlight><highlight class="comment">/*<sp/>tangent<sp/>change<sp/>xform<sp/>per<sp/>revoln<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startTheta,<sp/><sp/></highlight><highlight class="comment">/*<sp/>start<sp/>angle<sp/>in<sp/>x-y<sp/>plane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>sweepTheta);<sp/></highlight><highlight class="comment">/*<sp/>degrees<sp/>to<sp/>spiral<sp/>around<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>draws<sp/>a<sp/>screw<sp/>shape<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1a841d8a45fc934369eaa5bf2604318120" kindref="member">gleScrew</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncp,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>contour<sp/>points<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>contour[][2],<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>cont_normal[][2],<sp/></highlight><highlight class="comment">/*<sp/>2D<sp/>contour<sp/>normals<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>up[3],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>up<sp/>vector<sp/>for<sp/>contour<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>startz,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>start<sp/>of<sp/>segment<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>endz,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>segment<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tube_8h_1a7a5ac253b5bacac0f18a7503390e7604" kindref="member">gleDouble</ref><sp/>twist);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>rotations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tube_8h_1ae3a68ef9eba1a4c7125f922a7d45f770" kindref="member">gleTextureMode</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1e71d9c196e4683cc06c4b54d53f7ef5" kindref="member">mode</ref>);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__TUBE_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>==================<sp/>END<sp/>OF<sp/>FILE<sp/>=======================<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/tube.h"/>
+  </compounddef>
+</doxygen>

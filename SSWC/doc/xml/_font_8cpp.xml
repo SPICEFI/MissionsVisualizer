@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_font_8cpp" kind="file">
+    <compoundname>Font.cpp</compoundname>
+    <includes refid="_font_8h" local="yes">Font.h</includes>
+    <incdepgraph>
+      <node id="1635">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1632">
+        <label>windows.h</label>
+      </node>
+      <node id="1636">
+        <label>gl/gl.h</label>
+      </node>
+      <node id="1638">
+        <label>string</label>
+      </node>
+      <node id="1631">
+        <label>Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="1632" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1634" relation="include">
+        </childnode>
+        <childnode refid="1635" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1637" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+      </node>
+      <node id="1633">
+        <label>math.h</label>
+      </node>
+      <node id="1630">
+        <label>SSWC/src/Font.cpp</label>
+        <link refid="Font.cpp"/>
+        <childnode refid="1631" relation="include">
+        </childnode>
+      </node>
+      <node id="1637">
+        <label>gl/glu.h</label>
+      </node>
+      <node id="1634">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_font_8h" kindref="compound">Font.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_font_1a4e6a119206f505522100221c1fafde45" refkind="member"><highlight class="normal"><ref refid="class_font_1a4e6a119206f505522100221c1fafde45" kindref="member">Font::Font</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_font_1affe779785f1d6e69d4c4e46996201d7d" refkind="member"><highlight class="normal"><ref refid="class_font_1a4e6a119206f505522100221c1fafde45" kindref="member">Font::Font</ref>(<ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref><sp/><ref refid="wglext_8h_1a3ad0eade1f425b718bd6461c1ef31af8" kindref="member">hDC</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa214bd63e12f7ddf524c83894fcc69a7" kindref="member">height</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleOfEscapement,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>orientationAngle,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fontWeight,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>italic,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>underline,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>strikeout,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>charsetIdentifyer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputQuality,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="glext_8h_1ab669695d2be97b71fa1439607bfb92a6" kindref="member">fontName</ref>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>base<sp/>=<sp/>glGenLists(</highlight><highlight class="comment">/*96*/</highlight><highlight class="normal">256);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>font<sp/>=<sp/>CreateFont(height,<sp/>width,<sp/>angleOfEscapement,<sp/>orientationAngle,<sp/>fontWeight,<sp/>italic,<sp/>underline,<sp/>strikeout,<sp/>charsetIdentifyer,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OUT_TT_PRECIS,<sp/>CLIP_DEFAULT_PRECIS,<sp/>outputQuality,<sp/>FF_DONTCARE<sp/>|<sp/>DEFAULT_PITCH,<sp/>fontName.c_str());</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>oldfont<sp/>=<sp/>(HFONT)SelectObject(hDC,<sp/>font);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Selects<sp/>The<sp/>Font<sp/>We<sp/>Want</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>wglUseFontBitmaps(hDC,<sp/></highlight><highlight class="comment">/*32*/</highlight><highlight class="normal">0,<sp/></highlight><highlight class="comment">/*96*/</highlight><highlight class="normal">255,<sp/>base);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Builds<sp/>96<sp/>Characters<sp/>Starting<sp/>At<sp/>Character<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>SelectObject(hDC,<sp/>oldfont);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Selects<sp/>The<sp/>Font<sp/>We<sp/>Want</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>DeleteObject(font);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Delete<sp/>The<sp/>Font</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_font_1a134aaa2f78af0c12d3ce504957169768" refkind="member"><highlight class="normal"><ref refid="class_font_1a134aaa2f78af0c12d3ce504957169768" kindref="member">Font::~Font</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_font_1abc5d95a4605278837b3f6697f6499dc1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_font_1abc5d95a4605278837b3f6697f6499dc1" kindref="member">Font::glPrint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>...)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>text[256];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Holds<sp/>Our<sp/>String</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>va_list<sp/>ap;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>To<sp/>List<sp/>Of<sp/>Arguments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fmt<sp/>==<sp/>NULL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>There&apos;s<sp/>No<sp/>Text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>Nothing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>va_start(ap,<sp/>fmt);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parses<sp/>The<sp/>String<sp/>For<sp/>Variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>vsprintf(text,<sp/>fmt,<sp/>ap);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>And<sp/>Converts<sp/>Symbols<sp/>To<sp/>Actual<sp/>Numbers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>va_end(ap);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Results<sp/>Are<sp/>Stored<sp/>In<sp/>Text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>glPushAttrib(GL_LIST_BIT);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pushes<sp/>The<sp/>Display<sp/>List<sp/>Bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>glListBase(base</highlight><highlight class="comment">/*-32*/</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sets<sp/>The<sp/>Base<sp/>Character<sp/>to<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>glCallLists(strlen(text),<sp/>GL_UNSIGNED_BYTE,<sp/>text);<sp/><sp/></highlight><highlight class="comment">//<sp/>Draws<sp/>The<sp/>Display<sp/>List<sp/>Text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>glPopAttrib();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pops<sp/>The<sp/>Display<sp/>List<sp/>Bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.cpp"/>
+  </compounddef>
+</doxygen>

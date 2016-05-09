@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___c_b" kind="class" prot="public">
+    <compoundname>GLUI_CB</compoundname>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___c_b_1a31077fa4a1c6dda5450bf2f74eda7f25" prot="private" static="no" mutable="no">
+        <type><ref refid="glui_8h_1a11c8645866aceff55b55af31f4bf4c04" kindref="member">GLUI_Update_CB</ref></type>
+        <definition>GLUI_Update_CB GLUI_CB::idCB</definition>
+        <argsstring></argsstring>
+        <name>idCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="307" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___c_b_1a2b1791f9b22c3c61d03125c3c4c58fbf" prot="private" static="no" mutable="no">
+        <type><ref refid="glui_8h_1a8dae0ec6ca9738eb013c8add125086d3" kindref="member">GLUI_Control_CB</ref></type>
+        <definition>GLUI_Control_CB GLUI_CB::objCB</definition>
+        <argsstring></argsstring>
+        <name>objCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="308" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_l_u_i___c_b_1a5ff7e75c1425d0e148afa9c461772ae2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_CB::GLUI_CB</definition>
+        <argsstring>()</argsstring>
+        <name>GLUI_CB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="297" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="297" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___c_b_1a8ee9a7b49fe15afb89985e2218ac17de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_CB::GLUI_CB</definition>
+        <argsstring>(GLUI_Update_CB cb)</argsstring>
+        <name>GLUI_CB</name>
+        <param>
+          <type><ref refid="glui_8h_1a11c8645866aceff55b55af31f4bf4c04" kindref="member">GLUI_Update_CB</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="298" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="298" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___c_b_1ab2c48ce5142f91878323797b9ea9472c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_CB::GLUI_CB</definition>
+        <argsstring>(GLUI_Control_CB cb)</argsstring>
+        <name>GLUI_CB</name>
+        <param>
+          <type><ref refid="glui_8h_1a8dae0ec6ca9738eb013c8add125086d3" kindref="member">GLUI_Control_CB</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="299" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="299" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___c_b_1a3677d6a872540cd82d4ba1add46a16eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_CB::operator()</definition>
+        <argsstring>(GLUI_Control *ctrl) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___control" kindref="compound">GLUI_Control</ref> *</type>
+          <declname>ctrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This control just activated. Fire our callback. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___c_b_1acd93cfbb08c758e75ca38b6caff9131d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GLUI_CB::operator!</definition>
+        <argsstring>() const </argsstring>
+        <name>operator!</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="304" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="304" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___c_b_1a181c6390f944b9db42de829b83eae7ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_CB::operator bool</definition>
+        <argsstring>() const </argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="305" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="305" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Callback Adapter Class Allows us to support different types of callbacks; like a GLUI_Update_CB function pointer<ndash/>which takes an int; and a GLUI_Control_CB function pointer<ndash/>which takes a GUI_Control object. </para>    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="295" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="294" bodyend="309"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___c_b_1a5ff7e75c1425d0e148afa9c461772ae2" prot="public" virt="non-virtual"><scope>GLUI_CB</scope><name>GLUI_CB</name></member>
+      <member refid="class_g_l_u_i___c_b_1a8ee9a7b49fe15afb89985e2218ac17de" prot="public" virt="non-virtual"><scope>GLUI_CB</scope><name>GLUI_CB</name></member>
+      <member refid="class_g_l_u_i___c_b_1ab2c48ce5142f91878323797b9ea9472c" prot="public" virt="non-virtual"><scope>GLUI_CB</scope><name>GLUI_CB</name></member>
+      <member refid="class_g_l_u_i___c_b_1a31077fa4a1c6dda5450bf2f74eda7f25" prot="private" virt="non-virtual"><scope>GLUI_CB</scope><name>idCB</name></member>
+      <member refid="class_g_l_u_i___c_b_1a2b1791f9b22c3c61d03125c3c4c58fbf" prot="private" virt="non-virtual"><scope>GLUI_CB</scope><name>objCB</name></member>
+      <member refid="class_g_l_u_i___c_b_1a181c6390f944b9db42de829b83eae7ac" prot="public" virt="non-virtual"><scope>GLUI_CB</scope><name>operator bool</name></member>
+      <member refid="class_g_l_u_i___c_b_1acd93cfbb08c758e75ca38b6caff9131d" prot="public" virt="non-virtual"><scope>GLUI_CB</scope><name>operator!</name></member>
+      <member refid="class_g_l_u_i___c_b_1a3677d6a872540cd82d4ba1add46a16eb" prot="public" virt="non-virtual"><scope>GLUI_CB</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

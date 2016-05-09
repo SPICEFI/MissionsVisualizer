@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_52a4f56b9293bdd5cce92c620f22dcf4" kind="dir">
+    <compoundname>SSWC/src/Math</compoundname>
+    <innerfile refid="_matrix4x4_8cpp">Matrix4x4.cpp</innerfile>
+    <innerfile refid="_matrix4x4_8h">Matrix4x4.h</innerfile>
+    <innerfile refid="_quantity_8cpp">Quantity.cpp</innerfile>
+    <innerfile refid="_quantity_8h">Quantity.h</innerfile>
+    <innerfile refid="_vector3_8cpp">Vector3.cpp</innerfile>
+    <innerfile refid="_vector3_8h">Vector3.h</innerfile>
+    <innerfile refid="_vector3_t_8cpp">Vector3T.cpp</innerfile>
+    <innerfile refid="_vector3_t_8h">Vector3T.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,524 @@
+\hypertarget{class_space_object}{\section{Space\+Object Class Reference}
+\label{class_space_object}\index{Space\+Object@{Space\+Object}}
+}
+
+
+{\ttfamily \#include $<$Space\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Space\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{class_space_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Space\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_space_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_space_object_a2b8e7d63a95ad11bdffebb2a99d1a2d9}{Space\+Object} (long \hyperlink{class_space_object_a841dd12234c1861d3c1978035c9d7b8d}{spice\+Id}, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}=\char`\"{}\char`\"{})
+\item 
+\hyperlink{class_space_object_a43cc5d5f9207bdf5341e28112aed8285}{Space\+Object} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&spice\+Name, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}=\char`\"{}\char`\"{})
+\item 
+virtual \hyperlink{class_space_object_a60676c3b81a05900eab791eefde444cc}{$\sim$\+Space\+Object} ()
+\item 
+virtual \hyperlink{class_space_object}{Space\+Object} $\ast$ \hyperlink{class_space_object_a479f0732cad7fe1f6a1752a1f12eaa7b}{Clone} () const 
+\item 
+long \hyperlink{class_space_object_a25a8be2d3fd0d272d9060981cff3121f}{Get\+Spice\+Id} () const 
+\item 
+\hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{class_space_object_aafe0595c55762e7fe30cb9722b45abe5}{Get\+Spice\+Name} () const 
+\item 
+const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \& \hyperlink{class_space_object_a5f202bec13294119b30e90f54ba2ed7f}{Get\+Name} () const 
+\item 
+\hyperlink{class_vector3_t}{Vector3\+T}$<$ \hyperlink{_quantity_8h_ae34580a93ad25d119ae1a64ded5aa3b2}{Length} $>$ \hyperlink{class_space_object_aa88309b3c2a07ba8884a0f665d1a3c15}{Get\+Position} (const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_space_object}{Space\+Object} \&relative\+To, const \hyperlink{class_frame}{Frame} \&frame) const 
+\item 
+\hyperlink{class_vector3_t}{Vector3\+T}$<$ \hyperlink{_quantity_8h_ae34580a93ad25d119ae1a64ded5aa3b2}{Length} $>$ \hyperlink{class_space_object_af88472a26b40f422afbe24c17c876cf6}{Get\+Position} (const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_frame}{Frame} \&frame) const 
+\item 
+\hyperlink{class_vector3_t}{Vector3\+T}$<$ \hyperlink{_quantity_8h_a97d9cd61ce134def151c1ed0867b0708}{Velocity} $>$ \hyperlink{class_space_object_ac12ce6edf54d7e93c33aa8a1854d5f82}{Get\+Velocity} (const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_space_object}{Space\+Object} \&relative\+To, const \hyperlink{class_frame}{Frame} \&frame) const 
+\item 
+\hyperlink{class_vector3_t}{Vector3\+T}$<$ \hyperlink{_quantity_8h_a97d9cd61ce134def151c1ed0867b0708}{Velocity} $>$ \hyperlink{class_space_object_acb8dc5b6d00e516c7eda3e05cc5f213d}{Get\+Velocity} (const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_frame}{Frame} \&frame) const 
+\item 
+\hyperlink{class_window}{Window} \hyperlink{class_space_object_a8917a1ebbe125c0a40e857ba6cbca6a3}{Get\+Coverage} () const 
+\item 
+bool \hyperlink{class_space_object_ac28320427a47945f5a3f55d2d6782ac7}{Is\+Barycenter} () const 
+\item 
+bool \hyperlink{class_space_object_aee6e2b434bf3b775813c26dfedbf0d8b}{Is\+Planetary\+Barycenter} () const 
+\item 
+bool \hyperlink{class_space_object_af60d3e96d0d246d9efe821d453472222}{Is\+S\+S\+B} () const 
+\item 
+bool \hyperlink{class_space_object_a9983084aeef5b66ad1867a11af3f6d78}{Is\+Planet} () const 
+\item 
+bool \hyperlink{class_space_object_af412b21c3066595a80169d413ec8777a}{Is\+Moon} () const 
+\item 
+bool \hyperlink{class_space_object_ac8010baf561aced8e70fb2fb66a47171}{Is\+Body} () const 
+\item 
+bool \hyperlink{class_space_object_adf3b4cb454468d8cc3d467c0fe799dcd}{Is\+Sun} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_space_object_afa92ccf71440611067a3ee0239c060ae}{Validate\+Id} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static bool \hyperlink{class_space_object_a38d4f7ff4f44e7f0319710984959caa8}{Is\+Barycenter} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static bool \hyperlink{class_space_object_a2e9ae0efc7ca822951d5ae6c394a6441}{Is\+Planetary\+Barycenter} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static bool \hyperlink{class_space_object_aa8e64576eba8b2d071ab5dd57757abf1}{Is\+S\+S\+B} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static bool \hyperlink{class_space_object_a1bf248222724bd97a4cbf7a7a82a924b}{Is\+Planet} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static bool \hyperlink{class_space_object_ac96340e8808d4dd6482190df656275e4}{Is\+Moon} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static bool \hyperlink{class_space_object_acc1ec4ac4e9cf062695654172c7c143b}{Is\+Body} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static bool \hyperlink{class_space_object_a3dc214dd3f78bd07778ee6a899812ee6}{Is\+Sun} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static std\+::vector$<$ long $>$ \hyperlink{class_space_object_ae7c1493eccfe0e35037e884bc886d164}{Find\+Child\+Object\+Ids} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}, bool include\+Mass\+Center=true)
+\item 
+static long \hyperlink{class_space_object_a980fbd5fe060a425fd0dbaac37879eb0}{Find\+Child\+Mass\+Center\+Id} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static std\+::vector$<$ long $>$ \hyperlink{class_space_object_a88fb61e9a9c94f262cad1e5fed33e73b}{Find\+Moon\+Ids} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static long \hyperlink{class_space_object_a6d9980e2b888bcd13cb393c6cf58e499}{Find\+Parent\+Object\+Id} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static std\+::vector$<$ long $>$ \hyperlink{class_space_object_a71e5c1b80aa1a2f512bdbdd0ee186c4d}{Get\+Loaded\+Spk\+Ids} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{class_space_object}{Space\+Object} \hyperlink{class_space_object_a2f4df46723472a248a030275dbfba9bb}{S\+S\+B} = \hyperlink{class_space_object}{Space\+Object}(\hyperlink{_space_object_8h_ad899257c67a52e10a59baf8d8eb1d474}{S\+S\+B\+\_\+\+S\+P\+I\+C\+E\+\_\+\+I\+D}, \char`\"{}Solar System Barycenter\char`\"{})
+\item 
+static const \hyperlink{class_space_object}{Space\+Object} \hyperlink{class_space_object_ad047dd22e8dc1ea15bc740d879cde226}{Sun} = \hyperlink{class_space_object}{Space\+Object}(\hyperlink{_space_object_8h_a70a62dce03c8c66364745759b836f902}{S\+U\+N\+\_\+\+S\+P\+I\+C\+E\+\_\+\+I\+D}, \char`\"{}Sun\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{class_space_object_a841dd12234c1861d3c1978035c9d7b8d}{spice\+Id}
+\item 
+\hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{class_space_object_a6af735f50cde4bb709c82c07d2332c73}{name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Space\+Object.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_space_object_a2b8e7d63a95ad11bdffebb2a99d1a2d9}{\index{Space\+Object@{Space\+Object}!Space\+Object@{Space\+Object}}
+\index{Space\+Object@{Space\+Object}!Space\+Object@{Space\+Object}}
+\subsubsection[{Space\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Space\+Object\+::\+Space\+Object (
+\begin{DoxyParamCaption}
+\item[{long}]{spice\+Id, }
+\item[{const {\bf std\+::string} \&}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_space_object_a2b8e7d63a95ad11bdffebb2a99d1a2d9}
+
+
+Definition at line 3 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a43cc5d5f9207bdf5341e28112aed8285}{\index{Space\+Object@{Space\+Object}!Space\+Object@{Space\+Object}}
+\index{Space\+Object@{Space\+Object}!Space\+Object@{Space\+Object}}
+\subsubsection[{Space\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Space\+Object\+::\+Space\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{spice\+Name, }
+\item[{const {\bf std\+::string} \&}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_space_object_a43cc5d5f9207bdf5341e28112aed8285}
+
+
+Definition at line 8 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a60676c3b81a05900eab791eefde444cc}{\index{Space\+Object@{Space\+Object}!````~Space\+Object@{$\sim$\+Space\+Object}}
+\index{````~Space\+Object@{$\sim$\+Space\+Object}!Space\+Object@{Space\+Object}}
+\subsubsection[{$\sim$\+Space\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Space\+Object\+::$\sim$\+Space\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_space_object_a60676c3b81a05900eab791eefde444cc}
+
+
+Definition at line 37 of file Space\+Object.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_space_object_a479f0732cad7fe1f6a1752a1f12eaa7b}{\index{Space\+Object@{Space\+Object}!Clone@{Clone}}
+\index{Clone@{Clone}!Space\+Object@{Space\+Object}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space\+Object} $\ast$ Space\+Object\+::\+Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_space_object_a479f0732cad7fe1f6a1752a1f12eaa7b}
+
+
+Reimplemented in \hyperlink{class_space_body_abb3a8167a17c31d8aa0a4250ad8ebc2a}{Space\+Body}.
+
+
+
+Definition at line 42 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a980fbd5fe060a425fd0dbaac37879eb0}{\index{Space\+Object@{Space\+Object}!Find\+Child\+Mass\+Center\+Id@{Find\+Child\+Mass\+Center\+Id}}
+\index{Find\+Child\+Mass\+Center\+Id@{Find\+Child\+Mass\+Center\+Id}!Space\+Object@{Space\+Object}}
+\subsubsection[{Find\+Child\+Mass\+Center\+Id}]{\setlength{\rightskip}{0pt plus 5cm}long Space\+Object\+::\+Find\+Child\+Mass\+Center\+Id (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a980fbd5fe060a425fd0dbaac37879eb0}
+
+
+Definition at line 265 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_ae7c1493eccfe0e35037e884bc886d164}{\index{Space\+Object@{Space\+Object}!Find\+Child\+Object\+Ids@{Find\+Child\+Object\+Ids}}
+\index{Find\+Child\+Object\+Ids@{Find\+Child\+Object\+Ids}!Space\+Object@{Space\+Object}}
+\subsubsection[{Find\+Child\+Object\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ long $>$ Space\+Object\+::\+Find\+Child\+Object\+Ids (
+\begin{DoxyParamCaption}
+\item[{long}]{id, }
+\item[{bool}]{include\+Mass\+Center = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_ae7c1493eccfe0e35037e884bc886d164}
+
+
+Definition at line 234 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a88fb61e9a9c94f262cad1e5fed33e73b}{\index{Space\+Object@{Space\+Object}!Find\+Moon\+Ids@{Find\+Moon\+Ids}}
+\index{Find\+Moon\+Ids@{Find\+Moon\+Ids}!Space\+Object@{Space\+Object}}
+\subsubsection[{Find\+Moon\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ long $>$ Space\+Object\+::\+Find\+Moon\+Ids (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a88fb61e9a9c94f262cad1e5fed33e73b}
+
+
+Definition at line 275 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a6d9980e2b888bcd13cb393c6cf58e499}{\index{Space\+Object@{Space\+Object}!Find\+Parent\+Object\+Id@{Find\+Parent\+Object\+Id}}
+\index{Find\+Parent\+Object\+Id@{Find\+Parent\+Object\+Id}!Space\+Object@{Space\+Object}}
+\subsubsection[{Find\+Parent\+Object\+Id}]{\setlength{\rightskip}{0pt plus 5cm}long Space\+Object\+::\+Find\+Parent\+Object\+Id (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a6d9980e2b888bcd13cb393c6cf58e499}
+
+
+Definition at line 285 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a8917a1ebbe125c0a40e857ba6cbca6a3}{\index{Space\+Object@{Space\+Object}!Get\+Coverage@{Get\+Coverage}}
+\index{Get\+Coverage@{Get\+Coverage}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Coverage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window} Space\+Object\+::\+Get\+Coverage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_a8917a1ebbe125c0a40e857ba6cbca6a3}
+
+
+Definition at line 118 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a71e5c1b80aa1a2f512bdbdd0ee186c4d}{\index{Space\+Object@{Space\+Object}!Get\+Loaded\+Spk\+Ids@{Get\+Loaded\+Spk\+Ids}}
+\index{Get\+Loaded\+Spk\+Ids@{Get\+Loaded\+Spk\+Ids}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Loaded\+Spk\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ long $>$ Space\+Object\+::\+Get\+Loaded\+Spk\+Ids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a71e5c1b80aa1a2f512bdbdd0ee186c4d}
+
+
+Definition at line 301 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a5f202bec13294119b30e90f54ba2ed7f}{\index{Space\+Object@{Space\+Object}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf std\+::string} \& Space\+Object\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_a5f202bec13294119b30e90f54ba2ed7f}
+
+
+Definition at line 61 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_aa88309b3c2a07ba8884a0f665d1a3c15}{\index{Space\+Object@{Space\+Object}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\+T}$<$ {\bf Length} $>$ Space\+Object\+::\+Get\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Space\+Object} \&}]{relative\+To, }
+\item[{const {\bf Frame} \&}]{frame}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_aa88309b3c2a07ba8884a0f665d1a3c15}
+
+
+Definition at line 66 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_af88472a26b40f422afbe24c17c876cf6}{\index{Space\+Object@{Space\+Object}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\+T}$<$ {\bf Length} $>$ Space\+Object\+::\+Get\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Frame} \&}]{frame}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_af88472a26b40f422afbe24c17c876cf6}
+
+
+Definition at line 84 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a25a8be2d3fd0d272d9060981cff3121f}{\index{Space\+Object@{Space\+Object}!Get\+Spice\+Id@{Get\+Spice\+Id}}
+\index{Get\+Spice\+Id@{Get\+Spice\+Id}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Spice\+Id}]{\setlength{\rightskip}{0pt plus 5cm}long Space\+Object\+::\+Get\+Spice\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_a25a8be2d3fd0d272d9060981cff3121f}
+
+
+Definition at line 47 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_aafe0595c55762e7fe30cb9722b45abe5}{\index{Space\+Object@{Space\+Object}!Get\+Spice\+Name@{Get\+Spice\+Name}}
+\index{Get\+Spice\+Name@{Get\+Spice\+Name}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Spice\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} Space\+Object\+::\+Get\+Spice\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_aafe0595c55762e7fe30cb9722b45abe5}
+
+
+Definition at line 52 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_ac12ce6edf54d7e93c33aa8a1854d5f82}{\index{Space\+Object@{Space\+Object}!Get\+Velocity@{Get\+Velocity}}
+\index{Get\+Velocity@{Get\+Velocity}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\+T}$<$ {\bf Velocity} $>$ Space\+Object\+::\+Get\+Velocity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Space\+Object} \&}]{relative\+To, }
+\item[{const {\bf Frame} \&}]{frame}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_ac12ce6edf54d7e93c33aa8a1854d5f82}
+
+
+Definition at line 91 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_acb8dc5b6d00e516c7eda3e05cc5f213d}{\index{Space\+Object@{Space\+Object}!Get\+Velocity@{Get\+Velocity}}
+\index{Get\+Velocity@{Get\+Velocity}!Space\+Object@{Space\+Object}}
+\subsubsection[{Get\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\+T}$<$ {\bf Velocity} $>$ Space\+Object\+::\+Get\+Velocity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Frame} \&}]{frame}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_acb8dc5b6d00e516c7eda3e05cc5f213d}
+
+
+Definition at line 111 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_ac28320427a47945f5a3f55d2d6782ac7}{\index{Space\+Object@{Space\+Object}!Is\+Barycenter@{Is\+Barycenter}}
+\index{Is\+Barycenter@{Is\+Barycenter}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Barycenter}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Barycenter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_ac28320427a47945f5a3f55d2d6782ac7}
+
+
+Definition at line 134 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a38d4f7ff4f44e7f0319710984959caa8}{\index{Space\+Object@{Space\+Object}!Is\+Barycenter@{Is\+Barycenter}}
+\index{Is\+Barycenter@{Is\+Barycenter}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Barycenter}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Barycenter (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a38d4f7ff4f44e7f0319710984959caa8}
+
+
+Definition at line 178 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_ac8010baf561aced8e70fb2fb66a47171}{\index{Space\+Object@{Space\+Object}!Is\+Body@{Is\+Body}}
+\index{Is\+Body@{Is\+Body}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Body}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_ac8010baf561aced8e70fb2fb66a47171}
+
+
+Definition at line 159 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_acc1ec4ac4e9cf062695654172c7c143b}{\index{Space\+Object@{Space\+Object}!Is\+Body@{Is\+Body}}
+\index{Is\+Body@{Is\+Body}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Body}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Body (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_acc1ec4ac4e9cf062695654172c7c143b}
+
+
+Definition at line 218 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_af412b21c3066595a80169d413ec8777a}{\index{Space\+Object@{Space\+Object}!Is\+Moon@{Is\+Moon}}
+\index{Is\+Moon@{Is\+Moon}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Moon}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Moon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_af412b21c3066595a80169d413ec8777a}
+
+
+Definition at line 154 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_ac96340e8808d4dd6482190df656275e4}{\index{Space\+Object@{Space\+Object}!Is\+Moon@{Is\+Moon}}
+\index{Is\+Moon@{Is\+Moon}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Moon}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Moon (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_ac96340e8808d4dd6482190df656275e4}
+
+
+Definition at line 210 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a9983084aeef5b66ad1867a11af3f6d78}{\index{Space\+Object@{Space\+Object}!Is\+Planet@{Is\+Planet}}
+\index{Is\+Planet@{Is\+Planet}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Planet}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Planet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_a9983084aeef5b66ad1867a11af3f6d78}
+
+
+Definition at line 149 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a1bf248222724bd97a4cbf7a7a82a924b}{\index{Space\+Object@{Space\+Object}!Is\+Planet@{Is\+Planet}}
+\index{Is\+Planet@{Is\+Planet}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Planet}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Planet (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a1bf248222724bd97a4cbf7a7a82a924b}
+
+
+Definition at line 202 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_aee6e2b434bf3b775813c26dfedbf0d8b}{\index{Space\+Object@{Space\+Object}!Is\+Planetary\+Barycenter@{Is\+Planetary\+Barycenter}}
+\index{Is\+Planetary\+Barycenter@{Is\+Planetary\+Barycenter}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Planetary\+Barycenter}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Planetary\+Barycenter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_aee6e2b434bf3b775813c26dfedbf0d8b}
+
+
+Definition at line 139 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a2e9ae0efc7ca822951d5ae6c394a6441}{\index{Space\+Object@{Space\+Object}!Is\+Planetary\+Barycenter@{Is\+Planetary\+Barycenter}}
+\index{Is\+Planetary\+Barycenter@{Is\+Planetary\+Barycenter}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Planetary\+Barycenter}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Planetary\+Barycenter (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a2e9ae0efc7ca822951d5ae6c394a6441}
+
+
+Definition at line 186 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_af60d3e96d0d246d9efe821d453472222}{\index{Space\+Object@{Space\+Object}!Is\+S\+S\+B@{Is\+S\+S\+B}}
+\index{Is\+S\+S\+B@{Is\+S\+S\+B}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+S\+S\+B}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+S\+S\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_af60d3e96d0d246d9efe821d453472222}
+
+
+Definition at line 144 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_aa8e64576eba8b2d071ab5dd57757abf1}{\index{Space\+Object@{Space\+Object}!Is\+S\+S\+B@{Is\+S\+S\+B}}
+\index{Is\+S\+S\+B@{Is\+S\+S\+B}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+S\+S\+B}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+S\+S\+B (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_aa8e64576eba8b2d071ab5dd57757abf1}
+
+
+Definition at line 194 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_adf3b4cb454468d8cc3d467c0fe799dcd}{\index{Space\+Object@{Space\+Object}!Is\+Sun@{Is\+Sun}}
+\index{Is\+Sun@{Is\+Sun}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Sun}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Sun (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_space_object_adf3b4cb454468d8cc3d467c0fe799dcd}
+
+
+Definition at line 164 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_a3dc214dd3f78bd07778ee6a899812ee6}{\index{Space\+Object@{Space\+Object}!Is\+Sun@{Is\+Sun}}
+\index{Is\+Sun@{Is\+Sun}!Space\+Object@{Space\+Object}}
+\subsubsection[{Is\+Sun}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Is\+Sun (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a3dc214dd3f78bd07778ee6a899812ee6}
+
+
+Definition at line 226 of file Space\+Object.\+cpp.
+
+\hypertarget{class_space_object_afa92ccf71440611067a3ee0239c060ae}{\index{Space\+Object@{Space\+Object}!Validate\+Id@{Validate\+Id}}
+\index{Validate\+Id@{Validate\+Id}!Space\+Object@{Space\+Object}}
+\subsubsection[{Validate\+Id}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\+Object\+::\+Validate\+Id (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_afa92ccf71440611067a3ee0239c060ae}
+
+
+Definition at line 169 of file Space\+Object.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_space_object_a6af735f50cde4bb709c82c07d2332c73}{\index{Space\+Object@{Space\+Object}!name@{name}}
+\index{name@{name}!Space\+Object@{Space\+Object}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} Space\+Object\+::name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_space_object_a6af735f50cde4bb709c82c07d2332c73}
+
+
+Definition at line 72 of file Space\+Object.\+h.
+
+\hypertarget{class_space_object_a841dd12234c1861d3c1978035c9d7b8d}{\index{Space\+Object@{Space\+Object}!spice\+Id@{spice\+Id}}
+\index{spice\+Id@{spice\+Id}!Space\+Object@{Space\+Object}}
+\subsubsection[{spice\+Id}]{\setlength{\rightskip}{0pt plus 5cm}long Space\+Object\+::spice\+Id\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_space_object_a841dd12234c1861d3c1978035c9d7b8d}
+
+
+Definition at line 71 of file Space\+Object.\+h.
+
+\hypertarget{class_space_object_a2f4df46723472a248a030275dbfba9bb}{\index{Space\+Object@{Space\+Object}!S\+S\+B@{S\+S\+B}}
+\index{S\+S\+B@{S\+S\+B}!Space\+Object@{Space\+Object}}
+\subsubsection[{S\+S\+B}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Space\+Object} Space\+Object\+::\+S\+S\+B = {\bf Space\+Object}({\bf S\+S\+B\+\_\+\+S\+P\+I\+C\+E\+\_\+\+I\+D}, \char`\"{}Solar System Barycenter\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_a2f4df46723472a248a030275dbfba9bb}
+
+
+Definition at line 75 of file Space\+Object.\+h.
+
+\hypertarget{class_space_object_ad047dd22e8dc1ea15bc740d879cde226}{\index{Space\+Object@{Space\+Object}!Sun@{Sun}}
+\index{Sun@{Sun}!Space\+Object@{Space\+Object}}
+\subsubsection[{Sun}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Space\+Object} Space\+Object\+::\+Sun = {\bf Space\+Object}({\bf S\+U\+N\+\_\+\+S\+P\+I\+C\+E\+\_\+\+I\+D}, \char`\"{}Sun\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}}\label{class_space_object_ad047dd22e8dc1ea15bc740d879cde226}
+
+
+Definition at line 76 of file Space\+Object.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_space_object_8h}{Space\+Object.\+h}\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_space_object_8cpp}{Space\+Object.\+cpp}\end{DoxyCompactItemize}

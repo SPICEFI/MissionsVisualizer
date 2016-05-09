@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_cosmo_point_8h" kind="file">
+    <compoundname>CosmoPoint.h</compoundname>
+    <includes local="yes">Math\Vector3.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="_cosmo_point_8cpp" local="yes">SSWC/src/CosmoPoint.cpp</includedby>
+    <incdepgraph>
+      <node id="1230">
+        <label>SSWC/src/CosmoPoint.h</label>
+        <link refid="CosmoPoint.h"/>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+      </node>
+      <node id="1232">
+        <label>string.h</label>
+      </node>
+      <node id="1231">
+        <label>Math\Vector3.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1233">
+        <label>SSWC/src/CosmoPoint.h</label>
+        <link refid="CosmoPoint.h"/>
+        <childnode refid="1234" relation="include">
+        </childnode>
+      </node>
+      <node id="1234">
+        <label>SSWC/src/CosmoPoint.cpp</label>
+        <link refid="_cosmo_point_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_cosmo_point" prot="public">CosmoPoint</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Math\Vector3.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_cosmo_point" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cosmo_point" kindref="compound">CosmoPoint</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7" refid="class_cosmo_point_1a3927ca95564570083312401e1f10aaaa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_cosmo_point_1a3927ca95564570083312401e1f10aaaa" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="8" refid="class_cosmo_point_1a902bd391f682c0d60924bb43758e49f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_cosmo_point_1a902bd391f682c0d60924bb43758e49f5" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_cosmo_point_1a4f8ea23c00479e2dce987e0db8b8a621" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="class_cosmo_point_1a4f8ea23c00479e2dce987e0db8b8a621" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_cosmo_point_1ab20d9a18d306ee9e268cc248493d50c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="class_cosmo_point_1ab20d9a18d306ee9e268cc248493d50c3" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cosmo_point_1a3ed8019debc8234f8a2d89227ecef8cf" kindref="member">CosmoPoint</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cosmo_point_1afc5c4495696cb761c688510b396f4700" kindref="member">~CosmoPoint</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cosmo_point_1a1543df6d5876e97a1b01fd6458ad4022" kindref="member">Initialize</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="class_cosmo_point_1a3927ca95564570083312401e1f10aaaa" kindref="member">position</ref><sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="class_cosmo_point_1a902bd391f682c0d60924bb43758e49f5" kindref="member">velocity</ref><sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="class_cosmo_point_1ab20d9a18d306ee9e268cc248493d50c3" kindref="member">description</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cosmo_point" kindref="compound">CosmoPoint</ref>&amp;<sp/><ref refid="class_cosmo_point_1ab838e5d61a68cebbec67ce06f9030c57" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_cosmo_point" kindref="compound">CosmoPoint</ref>&amp;<sp/>rPoint);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CosmoPoint.h"/>
+  </compounddef>
+</doxygen>

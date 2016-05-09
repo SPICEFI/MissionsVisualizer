@@ -1,0 +1,134 @@
+.TH "glCamera" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+glCamera \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glCameara\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBglCamera\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBPositionCamera\fP (const \fBVector3\fP &\fBposition\fP, const \fBVector3\fP &\fBviewVec\fP, const \fBVector3\fP &\fBupVec\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBRotateAroundPoint\fP (\fBVector3\fP center, float \fBx\fP, float \fBy\fP, float \fBz\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBMoveCamera\fP (float velocity)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBStrafe\fP (float \fBspeed\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBRotate\fP (float \fBangle\fP, float \fBx\fP, float \fBy\fP, float \fBz\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsetViewByMouse\fP (\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBUpdate\fP (\fBint\fP \fBcenterX\fP, \fBint\fP \fBcenterY\fP, bool \fBorientationMode\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBFocusOnPlanet\fP (\fBPlanet\fP &planet, \fBDate\fP \fBt\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBRetrieveObjectID\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP, \fBScene\fP scene, \fBDate\fP \fBt\fP, \fBApp\fP &\fBapp\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVector3\fP \fBviewVec\fP"
+.br
+.ti -1c
+.RI "\fBVector3\fP \fBupVec\fP"
+.br
+.ti -1c
+.RI "\fBVector3\fP \fBposition\fP"
+.br
+.ti -1c
+.RI "\fBVector3\fP \fBstrafeVec\fP"
+.br
+.ti -1c
+.RI "float \fBspeed\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 11 of file glCameara\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "glCamera::glCamera ()"
+
+.PP
+Definition at line 9 of file glCamera\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP glCamera::FocusOnPlanet (\fBPlanet\fP &planet, \fBDate\fPt, \fBApp\fP &app)"
+
+.PP
+Definition at line 204 of file glCamera\&.cpp\&.
+.SS "\fBvoid\fP glCamera::MoveCamera (floatvelocity)"
+
+.PP
+Definition at line 24 of file glCamera\&.cpp\&.
+.SS "\fBvoid\fP glCamera::PositionCamera (const \fBVector3\fP &position, const \fBVector3\fP &viewVec, const \fBVector3\fP &upVec)"
+
+.PP
+Definition at line 17 of file glCamera\&.cpp\&.
+.SS "\fBint\fP glCamera::RetrieveObjectID (\fBint\fPx, \fBint\fPy, \fBint\fPwidth, \fBint\fPheight, \fBScene\fPscene, \fBDate\fPt, \fBApp\fP &app)"
+
+.PP
+Definition at line 158 of file glCamera\&.cpp\&.
+.SS "\fBvoid\fP glCamera::Rotate (floatangle, floatx, floaty, floatz)"
+
+.PP
+Definition at line 47 of file glCamera\&.cpp\&.
+.SS "\fBvoid\fP glCamera::RotateAroundPoint (\fBVector3\fPcenter, floatx, floaty, floatz)"
+
+.SS "\fBvoid\fP glCamera::setViewByMouse (\fBint\fPwidth, \fBint\fPheight)"
+
+.PP
+Definition at line 72 of file glCamera\&.cpp\&.
+.SS "\fBvoid\fP glCamera::Strafe (floatspeed)"
+
+.PP
+Definition at line 135 of file glCamera\&.cpp\&.
+.SS "\fBvoid\fP glCamera::Update (\fBint\fPcenterX, \fBint\fPcenterY, boolorientationMode)"
+
+.PP
+Definition at line 142 of file glCamera\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBVector3\fP glCamera::position"
+
+.PP
+Definition at line 16 of file glCameara\&.h\&.
+.SS "float glCamera::speed"
+
+.PP
+Definition at line 19 of file glCameara\&.h\&.
+.SS "\fBVector3\fP glCamera::strafeVec"
+
+.PP
+Definition at line 17 of file glCameara\&.h\&.
+.SS "\fBVector3\fP glCamera::upVec"
+
+.PP
+Definition at line 15 of file glCameara\&.h\&.
+.SS "\fBVector3\fP glCamera::viewVec"
+
+.PP
+Definition at line 14 of file glCameara\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

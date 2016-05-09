@@ -1,0 +1,144 @@
+\hypertarget{_c_spice_util_8h}{\section{S\+S\+W\+C/src/\+C\+Spice/\+C\+Spice\+Util.h File Reference}
+\label{_c_spice_util_8h}\index{S\+S\+W\+C/src/\+C\+Spice/\+C\+Spice\+Util.\+h@{S\+S\+W\+C/src/\+C\+Spice/\+C\+Spice\+Util.\+h}}
+}
+{\ttfamily \#include \char`\"{}C\+Spice\+Core.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for C\+Spice\+Util.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_c_spice_util_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_c_spice_util_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_kernel_data}{Kernel\+Data}
+\item 
+class \hyperlink{class_c_spice_util}{C\+Spice\+Util}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_c_spice_util_8h_adfb67f0e2d00a734172c7e1209d6b4ac}{C\+S\+P\+I\+C\+E\+\_\+\+A\+S\+S\+E\+R\+T}(expression)
+\item 
+\#define \hyperlink{_c_spice_util_8h_a577253e4af2ad3dc78d6c92bb10fc8ea}{K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+T\+H}~1024
+\item 
+\#define \hyperlink{_c_spice_util_8h_ad93de85db11984da5352b6aefd181dc0}{K\+E\+R\+N\+E\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+E\+N\+G\+T\+H}~32
+\item 
+\#define \hyperlink{_c_spice_util_8h_a8b7c5a53a0928405937a87253ecc317b}{K\+E\+R\+N\+E\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+L\+E\+N\+G\+T\+H}~1024
+\item 
+\#define \hyperlink{_c_spice_util_8h_a4b6e9d8bbaf5a3115f411fc869700666}{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+L\+L}~128
+\item 
+\#define \hyperlink{_c_spice_util_8h_a3410399cbfc3216c370a214a25e38316}{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}~512
+\item 
+\#define \hyperlink{_c_spice_util_8h_aa95b9a8eb124b853687f6f2a346a3a7d}{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+A\+R\+G\+E}~2048
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_c_spice_util_8h_a3410399cbfc3216c370a214a25e38316}{\index{C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}!C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T@{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}}
+\index{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T@{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}!C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}}
+\subsubsection[{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T~512}}\label{_c_spice_util_8h_a3410399cbfc3216c370a214a25e38316}
+
+
+Definition at line 36 of file C\+Spice\+Util.\+h.
+
+\hypertarget{_c_spice_util_8h_aa95b9a8eb124b853687f6f2a346a3a7d}{\index{C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}!C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+A\+R\+G\+E@{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+A\+R\+G\+E}}
+\index{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+A\+R\+G\+E@{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+A\+R\+G\+E}!C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}}
+\subsubsection[{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+A\+R\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+A\+R\+G\+E~2048}}\label{_c_spice_util_8h_aa95b9a8eb124b853687f6f2a346a3a7d}
+
+
+Definition at line 37 of file C\+Spice\+Util.\+h.
+
+\hypertarget{_c_spice_util_8h_a4b6e9d8bbaf5a3115f411fc869700666}{\index{C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}!C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+L\+L@{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+L\+L}}
+\index{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+L\+L@{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+L\+L}!C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}}
+\subsubsection[{C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+E\+L\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+L\+L~128}}\label{_c_spice_util_8h_a4b6e9d8bbaf5a3115f411fc869700666}
+
+
+Definition at line 35 of file C\+Spice\+Util.\+h.
+
+\hypertarget{_c_spice_util_8h_adfb67f0e2d00a734172c7e1209d6b4ac}{\index{C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}!C\+S\+P\+I\+C\+E\+\_\+\+A\+S\+S\+E\+R\+T@{C\+S\+P\+I\+C\+E\+\_\+\+A\+S\+S\+E\+R\+T}}
+\index{C\+S\+P\+I\+C\+E\+\_\+\+A\+S\+S\+E\+R\+T@{C\+S\+P\+I\+C\+E\+\_\+\+A\+S\+S\+E\+R\+T}!C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}}
+\subsubsection[{C\+S\+P\+I\+C\+E\+\_\+\+A\+S\+S\+E\+R\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+S\+P\+I\+C\+E\+\_\+\+A\+S\+S\+E\+R\+T(
+\begin{DoxyParamCaption}
+\item[{}]{expression}
+\end{DoxyParamCaption}
+)}}\label{_c_spice_util_8h_adfb67f0e2d00a734172c7e1209d6b4ac}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(\textcolor{keyword}{true})                                                                                                                                                                        
+      \(\backslash\)
+    \{                                                                                                                                                                               
+      \(\backslash\)
+        if(failed\_c())                                                                                                                                                              
+      \(\backslash\)
+        \{                                                                                                                                                                           
+      \(\backslash\)
+            std::stringstream errorStr;                                                                                                                                             
+      \(\backslash\)
+            errorStr << \textcolor{stringliteral}{"CSpice error in "} << \_\_FILE\_\_ << \textcolor{stringliteral}{" (line "} << \_\_LINE\_\_ << \textcolor{stringliteral}{"): Error flag was set
+       prior to function call: "} << \hyperlink{class_c_spice_util_aeb94a04c72d380e3d2ed82b93ea2ab8f}{CSpiceUtil::GetShortErrorMessage}();          
+      \hyperlink{class_c_spice_util_ad91e1b9618b9514d4cfd516a446a7e11}{\(\backslash\)}
+\hyperlink{class_c_spice_util_ad91e1b9618b9514d4cfd516a446a7e11}{            CSpiceUtil::SignalError}(errorStr.str());                                                                                                                              
+      \(\backslash\)
+        \}                                                                                                                                                                           
+      \(\backslash\)
+        expression;                                                                                                                                                                 
+      \(\backslash\)
+        if(failed\_c())                                                                                                                                                              
+      \(\backslash\)
+        \{                                                                                                                                                                           
+      \(\backslash\)
+            std::stringstream errorStr;                                                                                                                                             
+      \(\backslash\)
+            errorStr << \textcolor{stringliteral}{"CSpice error in "} << \_\_FILE\_\_ << \textcolor{stringliteral}{" (line "} << \_\_LINE\_\_ << \textcolor{stringliteral}{"): "} << 
+      \hyperlink{class_c_spice_util_aeb94a04c72d380e3d2ed82b93ea2ab8f}{CSpiceUtil::GetShortErrorMessage}();                                                     
+      \hyperlink{class_c_spice_util_ad91e1b9618b9514d4cfd516a446a7e11}{\(\backslash\)}
+\hyperlink{class_c_spice_util_ad91e1b9618b9514d4cfd516a446a7e11}{            CSpiceUtil::SignalError}(errorStr.str());                                                                                                                              
+      \(\backslash\)
+        \}                                                                                                                                                                           
+      \(\backslash\)
+    \}                                                                                                                                                                               
+      \(\backslash\)
+    else                                                                                                                                                                            
+      \(\backslash\)
+        (\hyperlink{glext_8h_a46df6112013cf583e82b25cebd5cb499}{void})0
+\end{DoxyCode}
+
+
+Definition at line 11 of file C\+Spice\+Util.\+h.
+
+\hypertarget{_c_spice_util_8h_a577253e4af2ad3dc78d6c92bb10fc8ea}{\index{C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}!K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+T\+H@{K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+T\+H}}
+\index{K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+T\+H@{K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+T\+H}!C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}}
+\subsubsection[{K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+T\+H~1024}}\label{_c_spice_util_8h_a577253e4af2ad3dc78d6c92bb10fc8ea}
+
+
+Definition at line 31 of file C\+Spice\+Util.\+h.
+
+\hypertarget{_c_spice_util_8h_a8b7c5a53a0928405937a87253ecc317b}{\index{C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}!K\+E\+R\+N\+E\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+L\+E\+N\+G\+T\+H@{K\+E\+R\+N\+E\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+L\+E\+N\+G\+T\+H}}
+\index{K\+E\+R\+N\+E\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+L\+E\+N\+G\+T\+H@{K\+E\+R\+N\+E\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+L\+E\+N\+G\+T\+H}!C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}}
+\subsubsection[{K\+E\+R\+N\+E\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\+E\+R\+N\+E\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+L\+E\+N\+G\+T\+H~1024}}\label{_c_spice_util_8h_a8b7c5a53a0928405937a87253ecc317b}
+
+
+Definition at line 33 of file C\+Spice\+Util.\+h.
+
+\hypertarget{_c_spice_util_8h_ad93de85db11984da5352b6aefd181dc0}{\index{C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}!K\+E\+R\+N\+E\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+E\+N\+G\+T\+H@{K\+E\+R\+N\+E\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+E\+N\+G\+T\+H}}
+\index{K\+E\+R\+N\+E\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+E\+N\+G\+T\+H@{K\+E\+R\+N\+E\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+E\+N\+G\+T\+H}!C\+Spice\+Util.\+h@{C\+Spice\+Util.\+h}}
+\subsubsection[{K\+E\+R\+N\+E\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\+E\+R\+N\+E\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+E\+N\+G\+T\+H~32}}\label{_c_spice_util_8h_ad93de85db11984da5352b6aefd181dc0}
+
+
+Definition at line 32 of file C\+Spice\+Util.\+h.
+

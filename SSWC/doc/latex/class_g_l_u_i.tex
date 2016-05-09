@@ -1,0 +1,512 @@
+\hypertarget{class_g_l_u_i}{\section{G\+L\+U\+I Class Reference}
+\label{class_g_l_u_i}\index{G\+L\+U\+I@{G\+L\+U\+I}}
+}
+
+
+{\ttfamily \#include $<$glui.\+h$>$}
+
+
+
+Inheritance diagram for G\+L\+U\+I\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_g_l_u_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+L\+U\+I\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_l_u_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i_a94398f830a14babcd93ac109082a221e}{add\+\_\+control} (\hyperlink{class_g_l_u_i___control}{G\+L\+U\+I\+\_\+\+Control} $\ast$control)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_a371273c28159a52e474d953101b462c8}{add\+\_\+column} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} draw\+\_\+bar=true)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_a4c9f42cf5ac0a3a859533f44211ea023}{add\+\_\+column\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} draw\+\_\+bar=true)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_a373d1d3fe27388c71d6d1b8767eb6590}{add\+\_\+separator} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_aba9244b448b4b38e7c45ef95f7b1763a}{add\+\_\+separator\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel)
+\item 
+\hyperlink{class_g_l_u_i___radio_group}{G\+L\+U\+I\+\_\+\+Radio\+Group} $\ast$ \hyperlink{class_g_l_u_i_ae192f21b47b98c6496914638b74ea894}{add\+\_\+radiogroup} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} user\+\_\+id=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___radio_group}{G\+L\+U\+I\+\_\+\+Radio\+Group} $\ast$ \hyperlink{class_g_l_u_i_ab6932d87d07a56e2508a8fdc5f448124}{add\+\_\+radiogroup\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} user\+\_\+id=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___radio_button}{G\+L\+U\+I\+\_\+\+Radio\+Button} $\ast$ \hyperlink{class_g_l_u_i_a7744834cfb1a489e1c4ef8de9fef0efa}{add\+\_\+radiobutton\+\_\+to\+\_\+group} (\hyperlink{class_g_l_u_i___radio_group}{G\+L\+U\+I\+\_\+\+Radio\+Group} $\ast$\hyperlink{glext_8h_a69cec9b28d037f2272131b4fcd148620}{group}, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name})
+\item 
+\hyperlink{class_g_l_u_i___listbox}{G\+L\+U\+I\+\_\+\+Listbox} $\ast$ \hyperlink{class_g_l_u_i_ad018fa077accdc1eac92b470df84b6ba}{add\+\_\+listbox} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___listbox}{G\+L\+U\+I\+\_\+\+Listbox} $\ast$ \hyperlink{class_g_l_u_i_af0254ec412cac9d379343e652f671799}{add\+\_\+listbox\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___rotation}{G\+L\+U\+I\+\_\+\+Rotation} $\ast$ \hyperlink{class_g_l_u_i_a96888da63ec5600e7b962e98066e89eb}{add\+\_\+rotation} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, float $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___rotation}{G\+L\+U\+I\+\_\+\+Rotation} $\ast$ \hyperlink{class_g_l_u_i_ace8fb93ba123c09dcb5d0bbe721f02de}{add\+\_\+rotation\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, float $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___translation}{G\+L\+U\+I\+\_\+\+Translation} $\ast$ \hyperlink{class_g_l_u_i_a627ddf622951e9d00e5804922ab76032}{add\+\_\+translation} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} trans\+\_\+type, float $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___translation}{G\+L\+U\+I\+\_\+\+Translation} $\ast$ \hyperlink{class_g_l_u_i_a5919dbd7390b1566659edfa21e2db758}{add\+\_\+translation\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} trans\+\_\+type, float $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___checkbox}{G\+L\+U\+I\+\_\+\+Checkbox} $\ast$ \hyperlink{class_g_l_u_i_ac72e36bbd637e4832f1e2f8b1e5c2e19}{add\+\_\+checkbox} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___checkbox}{G\+L\+U\+I\+\_\+\+Checkbox} $\ast$ \hyperlink{class_g_l_u_i_ace92f3923a991af8e371c3c1e7ec4f5b}{add\+\_\+checkbox\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___button}{G\+L\+U\+I\+\_\+\+Button} $\ast$ \hyperlink{class_g_l_u_i_a7566d52c3181c92de8b2039aefd88b1e}{add\+\_\+button} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___button}{G\+L\+U\+I\+\_\+\+Button} $\ast$ \hyperlink{class_g_l_u_i_af9039fe3c9c23f316426a654ea309383}{add\+\_\+button\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___static_text}{G\+L\+U\+I\+\_\+\+Static\+Text} $\ast$ \hyperlink{class_g_l_u_i_ac654d6d6e0f7ace0694ac6641654f04f}{add\+\_\+statictext} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name})
+\item 
+\hyperlink{class_g_l_u_i___static_text}{G\+L\+U\+I\+\_\+\+Static\+Text} $\ast$ \hyperlink{class_g_l_u_i_a5b60d2e5161b9b8027c833c85888d59e}{add\+\_\+statictext\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name})
+\item 
+\hyperlink{class_g_l_u_i___edit_text}{G\+L\+U\+I\+\_\+\+Edit\+Text} $\ast$ \hyperlink{class_g_l_u_i_a5b1c456923b46d885a3419aead41cd9b}{add\+\_\+edittext} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} data\+\_\+type=\hyperlink{glui_8h_a5e7e137e5f35f2859b135d8924719d27}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T}, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___edit_text}{G\+L\+U\+I\+\_\+\+Edit\+Text} $\ast$ \hyperlink{class_g_l_u_i_ac58a5a8fd9a741e8c238bb1df21b0467}{add\+\_\+edittext\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} data\+\_\+type=\hyperlink{glui_8h_a5e7e137e5f35f2859b135d8924719d27}{G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T}, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___edit_text}{G\+L\+U\+I\+\_\+\+Edit\+Text} $\ast$ \hyperlink{class_g_l_u_i_a465a9611a5b646e26f9381df579ef26e}{add\+\_\+edittext} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{glui_8h_aada824856f7bcf29794719981ebd8f60}{G\+L\+U\+I\+\_\+\+String} \&live\+\_\+var, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___edit_text}{G\+L\+U\+I\+\_\+\+Edit\+Text} $\ast$ \hyperlink{class_g_l_u_i_ae152efe28d88ea69afb52e53f6918190}{add\+\_\+edittext\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{glui_8h_aada824856f7bcf29794719981ebd8f60}{G\+L\+U\+I\+\_\+\+String} \&live\+\_\+var, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___spinner}{G\+L\+U\+I\+\_\+\+Spinner} $\ast$ \hyperlink{class_g_l_u_i_a2da5634b39065c58d1677beb529bd1a3}{add\+\_\+spinner} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} data\+\_\+type=\hyperlink{glui_8h_ae338c1175e5bb430d7a14d109daee74a}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T}, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___spinner}{G\+L\+U\+I\+\_\+\+Spinner} $\ast$ \hyperlink{class_g_l_u_i_a0404acbf84029ccaa28c3f7336c36aac}{add\+\_\+spinner\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} data\+\_\+type=\hyperlink{glui_8h_ae338c1175e5bb430d7a14d109daee74a}{G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T}, \hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} $\ast$live\+\_\+var=N\+U\+L\+L, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}=-\/1, \hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B} callback=\hyperlink{class_g_l_u_i___c_b}{G\+L\+U\+I\+\_\+\+C\+B}())
+\item 
+\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$ \hyperlink{class_g_l_u_i_a3b8ffd87d2340041a5a5fab58dbf04d7}{add\+\_\+panel} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ab7c1afc09f67635c2c376638fcc0db5f}{type}=\hyperlink{glui_8h_add54979a7b4391067b8a125ee34f690a}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D})
+\item 
+\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$ \hyperlink{class_g_l_u_i_aadaa36a373fccc04c87993724b998c70}{add\+\_\+panel\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ab7c1afc09f67635c2c376638fcc0db5f}{type}=\hyperlink{glui_8h_add54979a7b4391067b8a125ee34f690a}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D})
+\item 
+\hyperlink{class_g_l_u_i___rollout}{G\+L\+U\+I\+\_\+\+Rollout} $\ast$ \hyperlink{class_g_l_u_i_afc1608e235e405b93ea3d346f8036528}{add\+\_\+rollout} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} open=true, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ab7c1afc09f67635c2c376638fcc0db5f}{type}=\hyperlink{glui_8h_add54979a7b4391067b8a125ee34f690a}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D})
+\item 
+\hyperlink{class_g_l_u_i___rollout}{G\+L\+U\+I\+\_\+\+Rollout} $\ast$ \hyperlink{class_g_l_u_i_a4b979713558760e30b4a2faa79a2bb9e}{add\+\_\+rollout\+\_\+to\+\_\+panel} (\hyperlink{class_g_l_u_i___panel}{G\+L\+U\+I\+\_\+\+Panel} $\ast$panel, const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} open=true, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ab7c1afc09f67635c2c376638fcc0db5f}{type}=\hyperlink{glui_8h_add54979a7b4391067b8a125ee34f690a}{G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_adbf3736dbd0334a33677eae1a4baa8b9}{set\+\_\+main\+\_\+gfx\+\_\+window} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} window\+\_\+id)
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i_abf85807ffaab858e84c4e06924fad0da}{get\+\_\+glut\+\_\+window\+\_\+id} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_abb1c2dc07fbe72c58f4d9340980168a1}{enable} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_a0007f929ed29394f37b6032578929878}{disable} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_a0be00b9a4f51c8d37a90ff1258c0fc76}{sync\+\_\+live} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_a3d37cab3ab684fd10e2f79dd9dcf7d27}{close} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_a1e1ca1995e99922caae9e7df493187f9}{show} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_g_l_u_i_a30c59771996d05b301caea963051e7bc}{hide} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i_a130870067b12b7228da501dae36be013}{init} (const char $\ast$\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}, long \hyperlink{glext_8h_aa9459b47e7388437191d2d9a69c10d98}{flags}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_ad77deca22f617d3f0e0eb786445689fc}{x}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a9298c7ad619074f5285b32c6b72bfdea}{y}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i___main_a70e6e1ec266281f272954fcc42f85087}{parent\+\_\+window})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_g_l_u_i_a293fdf48459c281e466781ec9c559c21}{add\+\_\+control} (\hyperlink{class_g_l_u_i___node}{G\+L\+U\+I\+\_\+\+Node} $\ast$\hyperlink{class_g_l_u_i___node_a8ed65d447784f6f88bd3e2e2bcac6cdb}{parent}, \hyperlink{class_g_l_u_i___control}{G\+L\+U\+I\+\_\+\+Control} $\ast$control)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The main user-\/visible interface object to \hyperlink{class_g_l_u_i}{G\+L\+U\+I}. 
+
+Definition at line 1435 of file glui.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_u_i_a7566d52c3181c92de8b2039aefd88b1e}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+button@{add\+\_\+button}}
+\index{add\+\_\+button@{add\+\_\+button}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Button}$\ast$ G\+L\+U\+I\+::add\+\_\+button (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a7566d52c3181c92de8b2039aefd88b1e}
+\hypertarget{class_g_l_u_i_af9039fe3c9c23f316426a654ea309383}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+button\+\_\+to\+\_\+panel@{add\+\_\+button\+\_\+to\+\_\+panel}}
+\index{add\+\_\+button\+\_\+to\+\_\+panel@{add\+\_\+button\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+button\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Button}$\ast$ G\+L\+U\+I\+::add\+\_\+button\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_af9039fe3c9c23f316426a654ea309383}
+\hypertarget{class_g_l_u_i_ac72e36bbd637e4832f1e2f8b1e5c2e19}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+checkbox@{add\+\_\+checkbox}}
+\index{add\+\_\+checkbox@{add\+\_\+checkbox}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+checkbox}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Checkbox}$\ast$ G\+L\+U\+I\+::add\+\_\+checkbox (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ac72e36bbd637e4832f1e2f8b1e5c2e19}
+\hypertarget{class_g_l_u_i_ace92f3923a991af8e371c3c1e7ec4f5b}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+checkbox\+\_\+to\+\_\+panel@{add\+\_\+checkbox\+\_\+to\+\_\+panel}}
+\index{add\+\_\+checkbox\+\_\+to\+\_\+panel@{add\+\_\+checkbox\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+checkbox\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Checkbox}$\ast$ G\+L\+U\+I\+::add\+\_\+checkbox\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ace92f3923a991af8e371c3c1e7ec4f5b}
+\hypertarget{class_g_l_u_i_a371273c28159a52e474d953101b462c8}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+column@{add\+\_\+column}}
+\index{add\+\_\+column@{add\+\_\+column}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+column}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::add\+\_\+column (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{draw\+\_\+bar = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a371273c28159a52e474d953101b462c8}
+\hypertarget{class_g_l_u_i_a4c9f42cf5ac0a3a859533f44211ea023}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+column\+\_\+to\+\_\+panel@{add\+\_\+column\+\_\+to\+\_\+panel}}
+\index{add\+\_\+column\+\_\+to\+\_\+panel@{add\+\_\+column\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+column\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::add\+\_\+column\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{{\bf int}}]{draw\+\_\+bar = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a4c9f42cf5ac0a3a859533f44211ea023}
+\hypertarget{class_g_l_u_i_a94398f830a14babcd93ac109082a221e}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+control@{add\+\_\+control}}
+\index{add\+\_\+control@{add\+\_\+control}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+control}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} G\+L\+U\+I\+::add\+\_\+control (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Control} $\ast$}]{control}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_g_l_u_i_a94398f830a14babcd93ac109082a221e}
+D\+E\+P\+R\+E\+C\+A\+T\+E\+D interface for creating new \hyperlink{class_g_l_u_i}{G\+L\+U\+I} objects 
+
+Reimplemented from \hyperlink{class_g_l_u_i___node_abdcdd643758adab07580124187565fcd}{G\+L\+U\+I\+\_\+\+Node}.
+
+
+
+Definition at line 1439 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i_a293fdf48459c281e466781ec9c559c21}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+control@{add\+\_\+control}}
+\index{add\+\_\+control@{add\+\_\+control}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+control}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf int} G\+L\+U\+I\+::add\+\_\+control (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Node} $\ast$}]{parent, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+Control} $\ast$}]{control}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_g_l_u_i_a293fdf48459c281e466781ec9c559c21}
+
+
+Reimplemented from \hyperlink{class_g_l_u_i___main_aa18b473f6cf75095c12c4edecaf856a3}{G\+L\+U\+I\+\_\+\+Main}.
+
+
+
+Definition at line 1568 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i_a5b1c456923b46d885a3419aead41cd9b}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+edittext@{add\+\_\+edittext}}
+\index{add\+\_\+edittext@{add\+\_\+edittext}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+edittext}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Edit\+Text}$\ast$ G\+L\+U\+I\+::add\+\_\+edittext (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{data\+\_\+type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T}}, }
+\item[{{\bf void} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a5b1c456923b46d885a3419aead41cd9b}
+\hypertarget{class_g_l_u_i_a465a9611a5b646e26f9381df579ef26e}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+edittext@{add\+\_\+edittext}}
+\index{add\+\_\+edittext@{add\+\_\+edittext}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+edittext}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Edit\+Text}$\ast$ G\+L\+U\+I\+::add\+\_\+edittext (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+String} \&}]{live\+\_\+var, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a465a9611a5b646e26f9381df579ef26e}
+\hypertarget{class_g_l_u_i_ac58a5a8fd9a741e8c238bb1df21b0467}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+edittext\+\_\+to\+\_\+panel@{add\+\_\+edittext\+\_\+to\+\_\+panel}}
+\index{add\+\_\+edittext\+\_\+to\+\_\+panel@{add\+\_\+edittext\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+edittext\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Edit\+Text}$\ast$ G\+L\+U\+I\+::add\+\_\+edittext\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{data\+\_\+type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+E\+D\+I\+T\+T\+E\+X\+T\+\_\+\+T\+E\+X\+T}}, }
+\item[{{\bf void} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ac58a5a8fd9a741e8c238bb1df21b0467}
+\hypertarget{class_g_l_u_i_ae152efe28d88ea69afb52e53f6918190}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+edittext\+\_\+to\+\_\+panel@{add\+\_\+edittext\+\_\+to\+\_\+panel}}
+\index{add\+\_\+edittext\+\_\+to\+\_\+panel@{add\+\_\+edittext\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+edittext\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Edit\+Text}$\ast$ G\+L\+U\+I\+::add\+\_\+edittext\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+String} \&}]{live\+\_\+var, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ae152efe28d88ea69afb52e53f6918190}
+\hypertarget{class_g_l_u_i_ad018fa077accdc1eac92b470df84b6ba}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+listbox@{add\+\_\+listbox}}
+\index{add\+\_\+listbox@{add\+\_\+listbox}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+listbox}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Listbox}$\ast$ G\+L\+U\+I\+::add\+\_\+listbox (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ad018fa077accdc1eac92b470df84b6ba}
+\hypertarget{class_g_l_u_i_af0254ec412cac9d379343e652f671799}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+listbox\+\_\+to\+\_\+panel@{add\+\_\+listbox\+\_\+to\+\_\+panel}}
+\index{add\+\_\+listbox\+\_\+to\+\_\+panel@{add\+\_\+listbox\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+listbox\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Listbox}$\ast$ G\+L\+U\+I\+::add\+\_\+listbox\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_af0254ec412cac9d379343e652f671799}
+\hypertarget{class_g_l_u_i_a3b8ffd87d2340041a5a5fab58dbf04d7}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+panel@{add\+\_\+panel}}
+\index{add\+\_\+panel@{add\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Panel}$\ast$ G\+L\+U\+I\+::add\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a3b8ffd87d2340041a5a5fab58dbf04d7}
+\hypertarget{class_g_l_u_i_aadaa36a373fccc04c87993724b998c70}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+panel\+\_\+to\+\_\+panel@{add\+\_\+panel\+\_\+to\+\_\+panel}}
+\index{add\+\_\+panel\+\_\+to\+\_\+panel@{add\+\_\+panel\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+panel\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Panel}$\ast$ G\+L\+U\+I\+::add\+\_\+panel\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_aadaa36a373fccc04c87993724b998c70}
+\hypertarget{class_g_l_u_i_a7744834cfb1a489e1c4ef8de9fef0efa}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+radiobutton\+\_\+to\+\_\+group@{add\+\_\+radiobutton\+\_\+to\+\_\+group}}
+\index{add\+\_\+radiobutton\+\_\+to\+\_\+group@{add\+\_\+radiobutton\+\_\+to\+\_\+group}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+radiobutton\+\_\+to\+\_\+group}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Radio\+Button}$\ast$ G\+L\+U\+I\+::add\+\_\+radiobutton\+\_\+to\+\_\+group (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Radio\+Group} $\ast$}]{group, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a7744834cfb1a489e1c4ef8de9fef0efa}
+\hypertarget{class_g_l_u_i_ae192f21b47b98c6496914638b74ea894}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+radiogroup@{add\+\_\+radiogroup}}
+\index{add\+\_\+radiogroup@{add\+\_\+radiogroup}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+radiogroup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Radio\+Group}$\ast$ G\+L\+U\+I\+::add\+\_\+radiogroup (
+\begin{DoxyParamCaption}
+\item[{{\bf int} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{user\+\_\+id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ae192f21b47b98c6496914638b74ea894}
+\hypertarget{class_g_l_u_i_ab6932d87d07a56e2508a8fdc5f448124}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+radiogroup\+\_\+to\+\_\+panel@{add\+\_\+radiogroup\+\_\+to\+\_\+panel}}
+\index{add\+\_\+radiogroup\+\_\+to\+\_\+panel@{add\+\_\+radiogroup\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+radiogroup\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Radio\+Group}$\ast$ G\+L\+U\+I\+::add\+\_\+radiogroup\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{{\bf int} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{user\+\_\+id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ab6932d87d07a56e2508a8fdc5f448124}
+\hypertarget{class_g_l_u_i_afc1608e235e405b93ea3d346f8036528}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+rollout@{add\+\_\+rollout}}
+\index{add\+\_\+rollout@{add\+\_\+rollout}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+rollout}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Rollout}$\ast$ G\+L\+U\+I\+::add\+\_\+rollout (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{open = {\ttfamily true}, }
+\item[{{\bf int}}]{type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_afc1608e235e405b93ea3d346f8036528}
+\hypertarget{class_g_l_u_i_a4b979713558760e30b4a2faa79a2bb9e}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+rollout\+\_\+to\+\_\+panel@{add\+\_\+rollout\+\_\+to\+\_\+panel}}
+\index{add\+\_\+rollout\+\_\+to\+\_\+panel@{add\+\_\+rollout\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+rollout\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Rollout}$\ast$ G\+L\+U\+I\+::add\+\_\+rollout\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{open = {\ttfamily true}, }
+\item[{{\bf int}}]{type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+P\+A\+N\+E\+L\+\_\+\+E\+M\+B\+O\+S\+S\+E\+D}}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a4b979713558760e30b4a2faa79a2bb9e}
+\hypertarget{class_g_l_u_i_a96888da63ec5600e7b962e98066e89eb}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+rotation@{add\+\_\+rotation}}
+\index{add\+\_\+rotation@{add\+\_\+rotation}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Rotation}$\ast$ G\+L\+U\+I\+::add\+\_\+rotation (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{float $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a96888da63ec5600e7b962e98066e89eb}
+\hypertarget{class_g_l_u_i_ace8fb93ba123c09dcb5d0bbe721f02de}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+rotation\+\_\+to\+\_\+panel@{add\+\_\+rotation\+\_\+to\+\_\+panel}}
+\index{add\+\_\+rotation\+\_\+to\+\_\+panel@{add\+\_\+rotation\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+rotation\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Rotation}$\ast$ G\+L\+U\+I\+::add\+\_\+rotation\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{float $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ace8fb93ba123c09dcb5d0bbe721f02de}
+\hypertarget{class_g_l_u_i_a373d1d3fe27388c71d6d1b8767eb6590}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+separator@{add\+\_\+separator}}
+\index{add\+\_\+separator@{add\+\_\+separator}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+separator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::add\+\_\+separator (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a373d1d3fe27388c71d6d1b8767eb6590}
+\hypertarget{class_g_l_u_i_aba9244b448b4b38e7c45ef95f7b1763a}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+separator\+\_\+to\+\_\+panel@{add\+\_\+separator\+\_\+to\+\_\+panel}}
+\index{add\+\_\+separator\+\_\+to\+\_\+panel@{add\+\_\+separator\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+separator\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::add\+\_\+separator\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_aba9244b448b4b38e7c45ef95f7b1763a}
+\hypertarget{class_g_l_u_i_a2da5634b39065c58d1677beb529bd1a3}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+spinner@{add\+\_\+spinner}}
+\index{add\+\_\+spinner@{add\+\_\+spinner}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+spinner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Spinner}$\ast$ G\+L\+U\+I\+::add\+\_\+spinner (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{data\+\_\+type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T}}, }
+\item[{{\bf void} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a2da5634b39065c58d1677beb529bd1a3}
+\hypertarget{class_g_l_u_i_a0404acbf84029ccaa28c3f7336c36aac}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+spinner\+\_\+to\+\_\+panel@{add\+\_\+spinner\+\_\+to\+\_\+panel}}
+\index{add\+\_\+spinner\+\_\+to\+\_\+panel@{add\+\_\+spinner\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+spinner\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Spinner}$\ast$ G\+L\+U\+I\+::add\+\_\+spinner\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{data\+\_\+type = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+S\+P\+I\+N\+N\+E\+R\+\_\+\+I\+N\+T}}, }
+\item[{{\bf void} $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a0404acbf84029ccaa28c3f7336c36aac}
+\hypertarget{class_g_l_u_i_ac654d6d6e0f7ace0694ac6641654f04f}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+statictext@{add\+\_\+statictext}}
+\index{add\+\_\+statictext@{add\+\_\+statictext}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+statictext}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Static\+Text}$\ast$ G\+L\+U\+I\+::add\+\_\+statictext (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_ac654d6d6e0f7ace0694ac6641654f04f}
+\hypertarget{class_g_l_u_i_a5b60d2e5161b9b8027c833c85888d59e}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+statictext\+\_\+to\+\_\+panel@{add\+\_\+statictext\+\_\+to\+\_\+panel}}
+\index{add\+\_\+statictext\+\_\+to\+\_\+panel@{add\+\_\+statictext\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+statictext\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Static\+Text}$\ast$ G\+L\+U\+I\+::add\+\_\+statictext\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a5b60d2e5161b9b8027c833c85888d59e}
+\hypertarget{class_g_l_u_i_a627ddf622951e9d00e5804922ab76032}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+translation@{add\+\_\+translation}}
+\index{add\+\_\+translation@{add\+\_\+translation}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Translation}$\ast$ G\+L\+U\+I\+::add\+\_\+translation (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{trans\+\_\+type, }
+\item[{float $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a627ddf622951e9d00e5804922ab76032}
+\hypertarget{class_g_l_u_i_a5919dbd7390b1566659edfa21e2db758}{\index{G\+L\+U\+I@{G\+L\+U\+I}!add\+\_\+translation\+\_\+to\+\_\+panel@{add\+\_\+translation\+\_\+to\+\_\+panel}}
+\index{add\+\_\+translation\+\_\+to\+\_\+panel@{add\+\_\+translation\+\_\+to\+\_\+panel}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{add\+\_\+translation\+\_\+to\+\_\+panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+U\+I\+\_\+\+Translation}$\ast$ G\+L\+U\+I\+::add\+\_\+translation\+\_\+to\+\_\+panel (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+U\+I\+\_\+\+Panel} $\ast$}]{panel, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf int}}]{trans\+\_\+type, }
+\item[{float $\ast$}]{live\+\_\+var = {\ttfamily NULL}, }
+\item[{{\bf int}}]{id = {\ttfamily -\/1}, }
+\item[{{\bf G\+L\+U\+I\+\_\+\+C\+B}}]{callback = {\ttfamily {\bf G\+L\+U\+I\+\_\+\+C\+B}()}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a5919dbd7390b1566659edfa21e2db758}
+\hypertarget{class_g_l_u_i_a3d37cab3ab684fd10e2f79dd9dcf7d27}{\index{G\+L\+U\+I@{G\+L\+U\+I}!close@{close}}
+\index{close@{close}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::close (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a3d37cab3ab684fd10e2f79dd9dcf7d27}
+\hypertarget{class_g_l_u_i_a0007f929ed29394f37b6032578929878}{\index{G\+L\+U\+I@{G\+L\+U\+I}!disable@{disable}}
+\index{disable@{disable}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{disable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::disable (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a0007f929ed29394f37b6032578929878}
+\hypertarget{class_g_l_u_i_abb1c2dc07fbe72c58f4d9340980168a1}{\index{G\+L\+U\+I@{G\+L\+U\+I}!enable@{enable}}
+\index{enable@{enable}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::enable (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_u_i_abb1c2dc07fbe72c58f4d9340980168a1}
+
+
+Definition at line 1536 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i_abf85807ffaab858e84c4e06924fad0da}{\index{G\+L\+U\+I@{G\+L\+U\+I}!get\+\_\+glut\+\_\+window\+\_\+id@{get\+\_\+glut\+\_\+window\+\_\+id}}
+\index{get\+\_\+glut\+\_\+window\+\_\+id@{get\+\_\+glut\+\_\+window\+\_\+id}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{get\+\_\+glut\+\_\+window\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} G\+L\+U\+I\+::get\+\_\+glut\+\_\+window\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_u_i_abf85807ffaab858e84c4e06924fad0da}
+
+
+Definition at line 1534 of file glui.\+h.
+
+\hypertarget{class_g_l_u_i_a30c59771996d05b301caea963051e7bc}{\index{G\+L\+U\+I@{G\+L\+U\+I}!hide@{hide}}
+\index{hide@{hide}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{hide}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::hide (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a30c59771996d05b301caea963051e7bc}
+\hypertarget{class_g_l_u_i_a130870067b12b7228da501dae36be013}{\index{G\+L\+U\+I@{G\+L\+U\+I}!init@{init}}
+\index{init@{init}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} G\+L\+U\+I\+::init (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{long}]{flags, }
+\item[{{\bf int}}]{x, }
+\item[{{\bf int}}]{y, }
+\item[{{\bf int}}]{parent\+\_\+window}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a130870067b12b7228da501dae36be013}
+\hypertarget{class_g_l_u_i_adbf3736dbd0334a33677eae1a4baa8b9}{\index{G\+L\+U\+I@{G\+L\+U\+I}!set\+\_\+main\+\_\+gfx\+\_\+window@{set\+\_\+main\+\_\+gfx\+\_\+window}}
+\index{set\+\_\+main\+\_\+gfx\+\_\+window@{set\+\_\+main\+\_\+gfx\+\_\+window}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{set\+\_\+main\+\_\+gfx\+\_\+window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::set\+\_\+main\+\_\+gfx\+\_\+window (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{window\+\_\+id}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_adbf3736dbd0334a33677eae1a4baa8b9}
+Set the window where our widgets should be displayed. \hypertarget{class_g_l_u_i_a1e1ca1995e99922caae9e7df493187f9}{\index{G\+L\+U\+I@{G\+L\+U\+I}!show@{show}}
+\index{show@{show}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::show (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a1e1ca1995e99922caae9e7df493187f9}
+\hypertarget{class_g_l_u_i_a0be00b9a4f51c8d37a90ff1258c0fc76}{\index{G\+L\+U\+I@{G\+L\+U\+I}!sync\+\_\+live@{sync\+\_\+live}}
+\index{sync\+\_\+live@{sync\+\_\+live}!G\+L\+U\+I@{G\+L\+U\+I}}
+\subsubsection[{sync\+\_\+live}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\+L\+U\+I\+::sync\+\_\+live (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_u_i_a0be00b9a4f51c8d37a90ff1258c0fc76}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+G\+L/\hyperlink{glui_8h}{glui.\+h}\end{DoxyCompactItemize}

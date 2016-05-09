@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_window_8h" kind="file">
+    <compoundname>Window.h</compoundname>
+    <includes refid="_c_spice_core_8h" local="yes">CSpiceCore.h</includes>
+    <includes local="yes">Time.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_frame_8h" local="yes">SSWC/src/CSpice/Frame.h</includedby>
+    <includedby refid="_space_object_8h" local="yes">SSWC/src/CSpice/SpaceObject.h</includedby>
+    <includedby refid="_c_spice_8h" local="yes">SSWC/src/CSpice/CSpice.h</includedby>
+    <includedby refid="_window_8cpp" local="yes">SSWC/src/CSpice/Window.cpp</includedby>
+    <incdepgraph>
+      <node id="1607">
+        <label>iomanip</label>
+      </node>
+      <node id="1604">
+        <label>string</label>
+      </node>
+      <node id="1606">
+        <label>fstream</label>
+      </node>
+      <node id="1599">
+        <label>SSWC/src/CSpice/Window.h</label>
+        <link refid="Window.h"/>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+      </node>
+      <node id="1600">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1602">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+      </node>
+      <node id="1605">
+        <label>ctime</label>
+      </node>
+      <node id="1609">
+        <label>Time.h</label>
+      </node>
+      <node id="1608">
+        <label>vector</label>
+      </node>
+      <node id="1603">
+        <label>sstream</label>
+      </node>
+      <node id="1601">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1628">
+        <label>SSWC/src/CSpice/Frame.cpp</label>
+        <link refid="_frame_8cpp"/>
+      </node>
+      <node id="1623">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="1620">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="1618">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="1619" relation="include">
+        </childnode>
+        <childnode refid="1620" relation="include">
+        </childnode>
+      </node>
+      <node id="1626">
+        <label>SSWC/src/CSpice/SpaceBody.cpp</label>
+        <link refid="_space_body_8cpp"/>
+      </node>
+      <node id="1616">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="1617" relation="include">
+        </childnode>
+        <childnode refid="1618" relation="include">
+        </childnode>
+        <childnode refid="1619" relation="include">
+        </childnode>
+      </node>
+      <node id="1610">
+        <label>SSWC/src/CSpice/Window.h</label>
+        <link refid="Window.h"/>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+      </node>
+      <node id="1617">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="1611">
+        <label>SSWC/src/CSpice/Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+      </node>
+      <node id="1622">
+        <label>SSWC/src/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="1616" relation="include">
+        </childnode>
+        <childnode refid="1620" relation="include">
+        </childnode>
+        <childnode refid="1623" relation="include">
+        </childnode>
+      </node>
+      <node id="1614">
+        <label>SSWC/src/App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1615" relation="include">
+        </childnode>
+        <childnode refid="1616" relation="include">
+        </childnode>
+        <childnode refid="1621" relation="include">
+        </childnode>
+        <childnode refid="1620" relation="include">
+        </childnode>
+      </node>
+      <node id="1629">
+        <label>SSWC/src/CSpice/Window.cpp</label>
+        <link refid="_window_8cpp"/>
+      </node>
+      <node id="1621">
+        <label>SSWC/src/Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1622" relation="include">
+        </childnode>
+        <childnode refid="1624" relation="include">
+        </childnode>
+      </node>
+      <node id="1615">
+        <label>SSWC/src/App.cpp</label>
+        <link refid="_app_8cpp"/>
+      </node>
+      <node id="1619">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+      <node id="1624">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="_planet_8cpp"/>
+      </node>
+      <node id="1627">
+        <label>SSWC/src/CSpice/SpaceObject.cpp</label>
+        <link refid="_space_object_8cpp"/>
+      </node>
+      <node id="1612">
+        <label>SSWC/src/CSpice/SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1625" relation="include">
+        </childnode>
+        <childnode refid="1627" relation="include">
+        </childnode>
+      </node>
+      <node id="1625">
+        <label>SSWC/src/CSpice/SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1626" relation="include">
+        </childnode>
+      </node>
+      <node id="1613">
+        <label>SSWC/src/CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1614" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_interval" prot="public">Interval</innerclass>
+    <innerclass refid="class_window" prot="public">Window</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_window_8h_1ae677c101e1f6254463534547b4ab65b1" prot="public" static="no">
+        <name>WINDOW_MAX_INTERVALS</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="8" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_spice_core_8h" kindref="compound">CSpiceCore.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Time.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_window_8h_1ae677c101e1f6254463534547b4ab65b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WINDOW_MAX_INTERVALS<sp/>1024</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="struct_interval" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_interval" kindref="compound">Interval</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="struct_interval_1a697fae538798f95fcaf3b087b042d3c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_interval_1a697fae538798f95fcaf3b087b042d3c9" kindref="member">Interval</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a85b8f6c07fbc1fb5d77c2ae090f21995" kindref="member">left</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ffadbbacc6b89cf6218bc43b384d3fe" kindref="member">right</ref>)<sp/>:<sp/>left(0.0),<sp/>right(0.0)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_interval_1a63d19f70bebd9ebd2c9c5e1df1d9ae85" kindref="member">Set</ref>(left,<sp/>right);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="struct_interval_1a63d19f70bebd9ebd2c9c5e1df1d9ae85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_interval_1a63d19f70bebd9ebd2c9c5e1df1d9ae85" kindref="member">Set</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a85b8f6c07fbc1fb5d77c2ae090f21995" kindref="member">left</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ffadbbacc6b89cf6218bc43b384d3fe" kindref="member">right</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(left<sp/>&gt;<sp/>right)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;left<sp/>=<sp/>left;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;right<sp/>=<sp/>right;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_interval_1ad8e2de09f19621527f200134e87cd5ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_interval_1ad8e2de09f19621527f200134e87cd5ad" kindref="member">GetLeft</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="30"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a85b8f6c07fbc1fb5d77c2ae090f21995" kindref="member">left</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="struct_interval_1a19a12cecf3455887d9a1e1c9e18f2aa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_interval_1a19a12cecf3455887d9a1e1c9e18f2aa6" kindref="member">GetRight</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="34"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ffadbbacc6b89cf6218bc43b384d3fe" kindref="member">right</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a85b8f6c07fbc1fb5d77c2ae090f21995" kindref="member">left</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ffadbbacc6b89cf6218bc43b384d3fe" kindref="member">right</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_window" kindref="compound">Window</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_window_1a74e6087da23d3c24e9fac0245e5ec92c" kindref="member">Window</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_window_1a74e6087da23d3c24e9fac0245e5ec92c" kindref="member">Window</ref>(SpiceCell<sp/>cell);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Interval&gt;<sp/><ref refid="class_window_1a3a5893d30ec32e4cd8ae0348e4bdecb4" kindref="member">GetIntervals</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_window_1a9efa3014d97ed2c54f80c57cdde663ed" kindref="member">IsIncluded</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_window_1a9efa3014d97ed2c54f80c57cdde663ed" kindref="member">IsIncluded</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a85b8f6c07fbc1fb5d77c2ae090f21995" kindref="member">left</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ffadbbacc6b89cf6218bc43b384d3fe" kindref="member">right</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_window_1a9efa3014d97ed2c54f80c57cdde663ed" kindref="member">IsIncluded</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_interval" kindref="compound">Interval</ref>&amp;<sp/>interval)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceCell&amp;<sp/><ref refid="class_window_1aa45d1cf3477180a366044fc95ebf5cd7" kindref="member">GetSpiceCell</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiceCell<sp/>cell;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h"/>
+  </compounddef>
+</doxygen>

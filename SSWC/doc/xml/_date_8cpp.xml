@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_date_8cpp" kind="file">
+    <compoundname>Date.cpp</compoundname>
+    <includes refid="_date_8h" local="yes">Date.h</includes>
+    <incdepgraph>
+      <node id="1363">
+        <label>iomanip</label>
+      </node>
+      <node id="1366">
+        <label>cmath</label>
+      </node>
+      <node id="1356">
+        <label>string</label>
+      </node>
+      <node id="1355">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="1356" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+      </node>
+      <node id="1362">
+        <label>fstream</label>
+      </node>
+      <node id="1354">
+        <label>SSWC/src/CSpice/Date.cpp</label>
+        <link refid="Date.cpp"/>
+        <childnode refid="1355" relation="include">
+        </childnode>
+      </node>
+      <node id="1357">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+      </node>
+      <node id="1361">
+        <label>ctime</label>
+      </node>
+      <node id="1364">
+        <label>vector</label>
+      </node>
+      <node id="1360">
+        <label>sstream</label>
+      </node>
+      <node id="1365">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+      </node>
+      <node id="1358">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_date_8h" kindref="compound">Date.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_date_1a02e14e792c9a84dec9f7108d0c3b40c2" refkind="member"><highlight class="normal"><ref refid="class_date_1a02e14e792c9a84dec9f7108d0c3b40c2" kindref="member">Date::Date</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>et)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>etTime<sp/>=<sp/>et;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_date_1af909b4fc8d85c6feb129709441f6af5a" refkind="member"><highlight class="normal"><ref refid="class_date_1a02e14e792c9a84dec9f7108d0c3b40c2" kindref="member">Date::Date</ref>(<ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>str)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(str2et_c(str.c_str(),<sp/>&amp;etTime));</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_date_1af5e52ad40ec03035f98ddd4bd5bfc2fd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_date_1af5e52ad40ec03035f98ddd4bd5bfc2fd" kindref="member">Date::AsDouble</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="14"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>etTime;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_date_1ac952bc2fedfc299de91758e32b487810" refkind="member"><highlight class="normal"><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="class_date_1ac952bc2fedfc299de91758e32b487810" kindref="member">Date::AsString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1ae2d3db041c6004a67047659b42f73a44" kindref="member">format</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="19"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>timeStr[<ref refid="_date_8h_1a611ff8045e34b4cf0776853cbb571511" kindref="member">FORMAT_STRING_BUFFER</ref>];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_spice_util_8h_1adfb67f0e2d00a734172c7e1209d6b4ac" kindref="member">CSPICE_ASSERT</ref>(timout_c(etTime,<sp/>format.c_str(),<sp/><ref refid="_date_8h_1a611ff8045e34b4cf0776853cbb571511" kindref="member">FORMAT_STRING_BUFFER</ref>,<sp/>timeStr));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>(timeStr);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Date.cpp"/>
+  </compounddef>
+</doxygen>

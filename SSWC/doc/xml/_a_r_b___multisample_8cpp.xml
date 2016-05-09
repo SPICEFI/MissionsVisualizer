@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_a_r_b___multisample_8cpp" kind="file">
+    <compoundname>ARB_Multisample.cpp</compoundname>
+    <includes local="no">windows.h</includes>
+    <includes local="no">gl/gl.h</includes>
+    <includes local="no">gl/glu.h</includes>
+    <includes local="yes">arb_multisample.h</includes>
+    <incdepgraph>
+      <node id="1667">
+        <label>SSWC/src/GL/ARB_Multisample.cpp</label>
+        <link refid="ARB_Multisample.cpp"/>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+      </node>
+      <node id="1668">
+        <label>windows.h</label>
+      </node>
+      <node id="1669">
+        <label>gl/gl.h</label>
+      </node>
+      <node id="1671">
+        <label>arb_multisample.h</label>
+      </node>
+      <node id="1670">
+        <label>gl/glu.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_a_r_b___multisample_8cpp_1ac9792da6e4869780e07504635b3e1a42" prot="public" static="no">
+        <name>WGL_SAMPLE_BUFFERS_ARB</name>
+        <initializer>0x2041</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" line="18" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_r_b___multisample_8cpp_1a99289a023da8e683eb7de95543e22c87" prot="public" static="no">
+        <name>WGL_SAMPLES_ARB</name>
+        <initializer>0x2042</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" line="19" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool arbMultisampleSupported</definition>
+        <argsstring></argsstring>
+        <name>arbMultisampleSupported</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" line="21" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_a_r_b___multisample_8cpp_1a24066f76b39416da011c1b9e55adaf1a" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int arbMultisampleFormat</definition>
+        <argsstring></argsstring>
+        <name>arbMultisampleFormat</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" line="22" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_r_b___multisample_8cpp_1a76fd44e5387468f972f98855bdbbfb06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WGLisExtensionSupported</definition>
+        <argsstring>(const char *extension)</argsstring>
+        <name>WGLisExtensionSupported</name>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" line="25" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="25" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_r_b___multisample_8cpp_1aa9c71d7929556d62cb9f2557a59cdc28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InitMultisample</definition>
+        <argsstring>(HINSTANCE hInstance, HWND hWnd, PIXELFORMATDESCRIPTOR pfd)</argsstring>
+        <name>InitMultisample</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hInstance</declname>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>PIXELFORMATDESCRIPTOR</type>
+          <declname>pfd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" line="65" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp" bodystart="65" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*========================================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Name:<sp/><sp/><sp/>ARB_multisample.cpp</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>Author:<sp/>Colt<sp/>&quot;MainRoach&quot;<sp/>McAnlis</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>Date:<sp/><sp/><sp/>4/29/04</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Desc:<sp/><sp/><sp/>This<sp/>file<sp/>contains<sp/>the<sp/>context<sp/>to<sp/>load<sp/>a<sp/>WGL<sp/>extension<sp/>from<sp/>a<sp/>string</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>As<sp/>well<sp/>as<sp/>collect<sp/>the<sp/>sample<sp/>format<sp/>available<sp/>based<sp/>upon<sp/>the<sp/>graphics<sp/>card.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">========================================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl/gl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl/glu.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;arb_multisample.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Declairations<sp/>We&apos;ll<sp/>Use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_a_r_b___multisample_8cpp_1ac9792da6e4869780e07504635b3e1a42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WGL_SAMPLE_BUFFERS_ARB<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2041</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_a_r_b___multisample_8cpp_1a99289a023da8e683eb7de95543e22c87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WGL_SAMPLES_ARB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2042</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_a_r_b___multisample_8h_1a962f70d8234fe3b6d7b906082a5a82f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22" refid="_a_r_b___multisample_8h_1a24066f76b39416da011c1b9e55adaf1a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a24066f76b39416da011c1b9e55adaf1a" kindref="member">arbMultisampleFormat</ref><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WGLisExtensionSupported:<sp/>This<sp/>Is<sp/>A<sp/>Form<sp/>Of<sp/>The<sp/>Extension<sp/>For<sp/>WGL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_a_r_b___multisample_8cpp_1a76fd44e5387468f972f98855bdbbfb06" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_a_r_b___multisample_8cpp_1a76fd44e5387468f972f98855bdbbfb06" kindref="member">WGLisExtensionSupported</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*extension)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>extlen<sp/>=<sp/>strlen(extension);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*supported<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Try<sp/>To<sp/>Use<sp/>wglGetExtensionStringARB<sp/>On<sp/>Current<sp/>DC,<sp/>If<sp/>Possible</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>PROC<sp/>wglGetExtString<sp/>=<sp/>wglGetProcAddress(</highlight><highlight class="stringliteral">&quot;wglGetExtensionsStringARB&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wglGetExtString)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>supported<sp/>=<sp/>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*(__stdcall*)(<ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref>))wglGetExtString)(wglGetCurrentDC());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>That<sp/>Failed,<sp/>Try<sp/>Standard<sp/>Opengl<sp/>Extensions<sp/>String</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(supported<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>supported<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)glGetString(GL_EXTENSIONS);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>That<sp/>Failed<sp/>Too,<sp/>Must<sp/>Be<sp/>No<sp/>Extensions<sp/>Supported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(supported<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Begin<sp/>Examination<sp/>At<sp/>Start<sp/>Of<sp/>String,<sp/>Increment<sp/>By<sp/>1<sp/>On<sp/>False<sp/>Match</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref><sp/>=<sp/>supported;<sp/>;<sp/><ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref>++)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Advance<sp/>p<sp/>Up<sp/>To<sp/>The<sp/>Next<sp/>Possible<sp/>Match</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref><sp/>=<sp/>strstr(<ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref>,<sp/>extension);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>Match</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>Sure<sp/>That<sp/>Match<sp/>Is<sp/>At<sp/>The<sp/>Start<sp/>Of<sp/>The<sp/>String<sp/>Or<sp/>That</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>Previous<sp/>Char<sp/>Is<sp/>A<sp/>Space,<sp/>Or<sp/>Else<sp/>We<sp/>Could<sp/>Accidentally</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Match<sp/>&quot;wglFunkywglExtension&quot;<sp/>With<sp/>&quot;wglExtension&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Also,<sp/>Make<sp/>Sure<sp/>That<sp/>The<sp/>Following<sp/>Character<sp/>Is<sp/>Space<sp/>Or<sp/>NULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Or<sp/>Else<sp/>&quot;wglExtensionTwo&quot;<sp/>Might<sp/>Match<sp/>&quot;wglExtension&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref>==supported<sp/>||<sp/><ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref>[-1]==</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>(<ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref>[extlen]==</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>||<sp/><ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref>[extlen]==</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Match</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>InitMultisample:<sp/>Used<sp/>To<sp/>Query<sp/>The<sp/>Multisample<sp/>Frequencies</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_a_r_b___multisample_8h_1aa9c71d7929556d62cb9f2557a59cdc28" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_a_r_b___multisample_8cpp_1aa9c71d7929556d62cb9f2557a59cdc28" kindref="member">InitMultisample</ref>(HINSTANCE<sp/>hInstance,HWND<sp/>hWnd,PIXELFORMATDESCRIPTOR<sp/>pfd)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>See<sp/>If<sp/>The<sp/>String<sp/>Exists<sp/>In<sp/>WGL!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_a_r_b___multisample_8cpp_1a76fd44e5387468f972f98855bdbbfb06" kindref="member">WGLisExtensionSupported</ref>(</highlight><highlight class="stringliteral">&quot;WGL_ARB_multisample&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>Our<sp/>Pixel<sp/>Format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>PFNWGLCHOOSEPIXELFORMATARBPROC<sp/>wglChoosePixelFormatARB<sp/>=<sp/>(PFNWGLCHOOSEPIXELFORMATARBPROC)wglGetProcAddress(</highlight><highlight class="stringliteral">&quot;wglChoosePixelFormatARB&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!wglChoosePixelFormatARB)<sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>Our<sp/>Current<sp/>Device<sp/>Context</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref><sp/><ref refid="wglext_8h_1a3ad0eade1f425b718bd6461c1ef31af8" kindref="member">hDC</ref><sp/>=<sp/>GetDC(hWnd);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>pixelFormat;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>valid;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a27e741d83d43f1ecddfe8b256a6e4355" kindref="member">UINT</ref><sp/><sp/><sp/><sp/>numFormats;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/>fAttributes[]<sp/>=<sp/>{0,0};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>These<sp/>Attributes<sp/>Are<sp/>The<sp/>Bits<sp/>We<sp/>Want<sp/>To<sp/>Test<sp/>For<sp/>In<sp/>Our<sp/>Sample</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Everything<sp/>Is<sp/>Pretty<sp/>Standard,<sp/>The<sp/>Only<sp/>One<sp/>We<sp/>Want<sp/>To<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Really<sp/>Focus<sp/>On<sp/>Is<sp/>The<sp/>SAMPLE<sp/>BUFFERS<sp/>ARB<sp/>And<sp/>WGL<sp/>SAMPLES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>These<sp/>Two<sp/>Are<sp/>Going<sp/>To<sp/>Do<sp/>The<sp/>Main<sp/>Testing<sp/>For<sp/>Whether<sp/>Or<sp/>Not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>Support<sp/>Multisampling<sp/>On<sp/>This<sp/>Hardware.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iAttributes[]<sp/>=</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a9b0723a3d7c302c78c2c225a142e6e84" kindref="member">WGL_DRAW_TO_WINDOW_ARB</ref>,GL_TRUE,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1afddc80fbff35c1f270613b83090eca85" kindref="member">WGL_SUPPORT_OPENGL_ARB</ref>,GL_TRUE,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a131f3cc56b5489a6fd8f7efa556634ea" kindref="member">WGL_ACCELERATION_ARB</ref>,<ref refid="wglext_8h_1ac7e61d450f6af6ffd08143f33421958e" kindref="member">WGL_FULL_ACCELERATION_ARB</ref>,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1af979369c958742bf188a9dc993886b0f" kindref="member">WGL_COLOR_BITS_ARB</ref>,24,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a5d54c3606cc49e80cb6420b145a2119a" kindref="member">WGL_ALPHA_BITS_ARB</ref>,8,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a75b1340d23a385c2b1ce88a303930820" kindref="member">WGL_DEPTH_BITS_ARB</ref>,16,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a0adda3bf0bcae1b1f66094f4331570bd" kindref="member">WGL_STENCIL_BITS_ARB</ref>,0,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wglext_8h_1a8acd69a2be1c4ed51226145c520ecbe5" kindref="member">WGL_DOUBLE_BUFFER_ARB</ref>,GL_TRUE,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1ac9792da6e4869780e07504635b3e1a42" kindref="member">WGL_SAMPLE_BUFFERS_ARB</ref>,GL_TRUE,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a99289a023da8e683eb7de95543e22c87" kindref="member">WGL_SAMPLES_ARB</ref>,8,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,0</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>We<sp/>Check<sp/>To<sp/>See<sp/>If<sp/>We<sp/>Can<sp/>Get<sp/>A<sp/>Pixel<sp/>Format<sp/>For<sp/>4<sp/>Samples</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>valid<sp/>=<sp/>wglChoosePixelFormatARB(hDC,iAttributes,fAttributes,1,&amp;pixelFormat,&amp;numFormats);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>We<sp/>Returned<sp/>True,<sp/>And<sp/>Our<sp/>Format<sp/>Count<sp/>Is<sp/>Greater<sp/>Than<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(valid<sp/>&amp;&amp;<sp/>numFormats<sp/>&gt;=<sp/>1)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a24066f76b39416da011c1b9e55adaf1a" kindref="member">arbMultisampleFormat</ref><sp/>=<sp/>pixelFormat;<sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Our<sp/>Pixel<sp/>Format<sp/>With<sp/>4<sp/>Samples<sp/>Failed,<sp/>Test<sp/>For<sp/>2<sp/>Samples</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>iAttributes[19]<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>valid<sp/>=<sp/>wglChoosePixelFormatARB(hDC,iAttributes,fAttributes,1,&amp;pixelFormat,&amp;numFormats);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(valid<sp/>&amp;&amp;<sp/>numFormats<sp/>&gt;=<sp/>1)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a24066f76b39416da011c1b9e55adaf1a" kindref="member">arbMultisampleFormat</ref><sp/>=<sp/>pixelFormat;<sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>The<sp/>Valid<sp/>Format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><ref refid="_a_r_b___multisample_8cpp_1a962f70d8234fe3b6d7b906082a5a82f5" kindref="member">arbMultisampleSupported</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/ARB_Multisample.cpp"/>
+  </compounddef>
+</doxygen>

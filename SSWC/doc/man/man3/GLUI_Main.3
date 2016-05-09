@@ -1,0 +1,562 @@
+.TH "GLUI_Main" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Main \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Node\fP\&.
+.PP
+Inherited by \fBGLUI\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBadjust_glut_xy\fP (\fBint\fP &\fBx\fP, \fBint\fP &\fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBactivate_control\fP (\fBGLUI_Control\fP *control, \fBint\fP how)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBalign_controls\fP (\fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdeactivate_current_control\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_raised_box\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBw\fP, \fBint\fP \fBh\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_lowered_box\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP, \fBint\fP \fBw\fP, \fBint\fP \fBh\fP)"
+.br
+.ti -1c
+.RI "bool \fBshould_redraw_now\fP (\fBGLUI_Control\fP *ctl)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBset_current_draw_buffer\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBrestore_draw_buffer\fP (\fBint\fP buffer_state)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBrefresh\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBpost_update_main_gfx\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBpack_controls\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBclose_internal\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcheck_subwindow_position\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_ortho_projection\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_viewport\fP ()"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_glut_window_id\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_StdBitmaps\fP \fBstd_bitmaps\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_String\fP \fBwindow_name\fP"
+.br
+.ti -1c
+.RI "\fBRGBc\fP \fBbkgd_color\fP"
+.br
+.ti -1c
+.RI "float \fBbkgd_color_f\fP [3]"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBfont\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcurr_modifiers\fP"
+.br
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBbuffer_mode_t\fP { \fBbuffer_front\fP =1, \fBbuffer_back\fP =2 }"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBfind_control\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBfind_next_control\fP (\fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBfind_next_control_rec\fP (\fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBfind_next_control_\fP (\fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBfind_prev_control\fP (\fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcreate_standalone_window\fP (const char *\fBname\fP, \fBint\fP \fBx\fP=-1, \fBint\fP \fBy\fP=-1)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcreate_subwindow\fP (\fBint\fP \fBparent\fP, \fBint\fP window_alignment)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsetup_default_glut_callbacks\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBmouse\fP (\fBint\fP button, \fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBkeyboard\fP (unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBspecial\fP (\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBpassive_motion\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBreshape\fP (\fBint\fP \fBw\fP, \fBint\fP \fBh\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBvisibility\fP (\fBint\fP state)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBmotion\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBentry\fP (\fBint\fP state)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdisplay\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBidle\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBneeds_idle\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBadd_control\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBGLUI_Main\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmain_gfx_window_id\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_button_down\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBglut_window_id\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtop_level_glut_window_id\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBactive_control\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBmouse_over_control\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Panel\fP * \fBmain_panel\fP"
+.br
+.ti -1c
+.RI "\fBbuffer_mode_t\fP \fBbuffer_mode\fP"
+.br
+.RI "\fICurrent drawing mode\&. \fP"
+.ti -1c
+.RI "\fBint\fP \fBcurr_cursor\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBw\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBh\fP"
+.br
+.ti -1c
+.RI "long \fBflags\fP"
+.br
+.ti -1c
+.RI "bool \fBclosing\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBparent_window\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBglui_id\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_mouse_CB\fP )(\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_keyboard_CB\fP )(unsigned char, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_special_CB\fP )(\fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_reshape_CB\fP )(\fBint\fP, \fBint\fP)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBGLUI_Control\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Rotation\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Translation\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Master_Object\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_mouse_func\fP (\fBint\fP button, \fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_keyboard_func\fP (unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_special_func\fP (\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_passive_motion_func\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_reshape_func\fP (\fBint\fP \fBw\fP, \fBint\fP \fBh\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_visibility_func\fP (\fBint\fP state)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_motion_func\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_entry_func\fP (\fBint\fP state)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_display_func\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_idle_func\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_parent_window_reshape_func\fP (\fBint\fP \fBw\fP, \fBint\fP \fBh\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_parent_window_keyboard_func\fP (unsigned char, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_parent_window_special_func\fP (\fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_parent_window_mouse_func\fP (\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A \fBGLUI_Main\fP handles GLUT events for one window, routing them to the appropriate controls\&. The central user-visible 'GLUI' class inherits from this class; users should not allocate GLUT_Main objects\&.
+.PP
+There's a separate \fBGLUI_Main\fP object for:
+.IP "\(bu" 2
+Each top-level window with GUI stuff in it\&.
+.PP
+.PP
+Each 'subwindow' of another top-level window\&.
+.PP
+All the \fBGLUI_Main\fP objects are listed in GLUI_Master\&.gluis\&. A better name for this class might be 'GLUI_Environment'; this class provides the window-level context for every control\&. 
+.PP
+Definition at line 607 of file glui\&.h\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBGLUI_Main::buffer_mode_t\fP\fC [protected]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIbuffer_front \fP\fP
+Draw updated controls directly to screen\&. 
+.TP
+\fB\fIbuffer_back \fP\fP
+Double buffering: postpone updates until next redraw\&. 
+.PP
+Definition at line 644 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Main::GLUI_Main (\fBvoid\fP)\fC [protected]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Main::activate_control (\fBGLUI_Control\fP *control, \fBint\fPhow)"
+
+.SS "virtual \fBint\fP GLUI_Main::add_control (\fBGLUI_Node\fP *parent, \fBGLUI_Control\fP *control)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI\fP\&.
+.SS "\fBvoid\fP GLUI_Main::adjust_glut_xy (\fBint\fP &x, \fBint\fP &y)\fC [inline]\fP"
+
+.PP
+Definition at line 703 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Main::align_controls (\fBGLUI_Control\fP *control)"
+
+.SS "\fBvoid\fP GLUI_Main::check_subwindow_position ()"
+
+.SS "\fBvoid\fP GLUI_Main::close_internal ()"
+
+.SS "\fBvoid\fP GLUI_Main::create_standalone_window (const char *name, \fBint\fPx = \fC-1\fP, \fBint\fPy = \fC-1\fP)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::create_subwindow (\fBint\fPparent, \fBint\fPwindow_alignment)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::deactivate_current_control (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Main::display (\fBvoid\fP)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::draw_lowered_box (\fBint\fPx, \fBint\fPy, \fBint\fPw, \fBint\fPh)"
+Draw a 3D-look pushed-in box around this rectangle 
+.SS "\fBvoid\fP GLUI_Main::draw_raised_box (\fBint\fPx, \fBint\fPy, \fBint\fPw, \fBint\fPh)"
+Draw a 3D-look pushed-out box around this rectangle 
+.SS "\fBvoid\fP GLUI_Main::entry (\fBint\fPstate)\fC [protected]\fP"
+
+.SS "\fBGLUI_Control\fP* GLUI_Main::find_control (\fBint\fPx, \fBint\fPy)\fC [protected]\fP"
+
+.SS "\fBGLUI_Control\fP* GLUI_Main::find_next_control (\fBGLUI_Control\fP *control)\fC [protected]\fP"
+
+.SS "\fBGLUI_Control\fP* GLUI_Main::find_next_control_ (\fBGLUI_Control\fP *control)\fC [protected]\fP"
+
+.SS "\fBGLUI_Control\fP* GLUI_Main::find_next_control_rec (\fBGLUI_Control\fP *control)\fC [protected]\fP"
+
+.SS "\fBGLUI_Control\fP* GLUI_Main::find_prev_control (\fBGLUI_Control\fP *control)\fC [protected]\fP"
+
+.SS "\fBint\fP GLUI_Main::get_glut_window_id (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 739 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Main::idle (\fBvoid\fP)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::keyboard (unsigned charkey, \fBint\fPx, \fBint\fPy)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::motion (\fBint\fPx, \fBint\fPy)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::mouse (\fBint\fPbutton, \fBint\fPstate, \fBint\fPx, \fBint\fPy)\fC [protected]\fP"
+
+.SS "\fBint\fP GLUI_Main::needs_idle (\fBvoid\fP)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::pack_controls ()"
+Recompute the sizes and positions of all controls 
+.SS "\fBvoid\fP GLUI_Main::passive_motion (\fBint\fPx, \fBint\fPy)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::post_update_main_gfx ()"
+Redraw the main graphics window 
+.SS "\fBvoid\fP GLUI_Main::refresh ()"
+Pack, resize the window, and redraw all the controls\&. 
+.SS "\fBvoid\fP GLUI_Main::reshape (\fBint\fPw, \fBint\fPh)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::restore_draw_buffer (\fBint\fPbuffer_state)"
+Go back to using this draw buffer\&. Undoes set_current_draw_buffer\&. 
+.SS "\fBint\fP GLUI_Main::set_current_draw_buffer ()"
+Switch to the appropriate draw buffer now\&. Returns the old draw buffer\&. This routine should probably only be called from inside the GLUI_DrawingSentinal, in glui_internal_control\&.h 
+.SS "\fBvoid\fP GLUI_Main::set_ortho_projection ()"
+
+.SS "\fBvoid\fP GLUI_Main::set_viewport ()"
+
+.SS "\fBvoid\fP GLUI_Main::setup_default_glut_callbacks (\fBvoid\fP)\fC [protected]\fP"
+
+.SS "bool GLUI_Main::should_redraw_now (\fBGLUI_Control\fP *ctl)"
+Return true if this control should redraw itself immediately (front buffer); Or queue up a redraw and return false if it shouldn't (back buffer)\&. 
+.SS "\fBvoid\fP GLUI_Main::special (\fBint\fPkey, \fBint\fPx, \fBint\fPy)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Main::visibility (\fBint\fPstate)\fC [protected]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBGLUI\fP\fC [friend]\fP"
+
+.PP
+Definition at line 614 of file glui\&.h\&.
+.SS "friend class \fBGLUI_Control\fP\fC [friend]\fP"
+
+.PP
+Definition at line 611 of file glui\&.h\&.
+.SS "\fBvoid\fP glui_display_func (\fBvoid\fP)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_entry_func (\fBint\fPstate)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_idle_func (\fBvoid\fP)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_keyboard_func (unsigned charkey, \fBint\fPx, \fBint\fPy)\fC [friend]\fP"
+
+.SS "friend class \fBGLUI_Master_Object\fP\fC [friend]\fP"
+
+.PP
+Definition at line 615 of file glui\&.h\&.
+.SS "\fBvoid\fP glui_motion_func (\fBint\fPx, \fBint\fPy)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_mouse_func (\fBint\fPbutton, \fBint\fPstate, \fBint\fPx, \fBint\fPy)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_parent_window_keyboard_func (unsignedchar, \fBint\fP, \fBint\fP)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_parent_window_mouse_func (\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_parent_window_reshape_func (\fBint\fPw, \fBint\fPh)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_parent_window_special_func (\fBint\fP, \fBint\fP, \fBint\fP)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_passive_motion_func (\fBint\fPx, \fBint\fPy)\fC [friend]\fP"
+
+.SS "\fBvoid\fP glui_reshape_func (\fBint\fPw, \fBint\fPh)\fC [friend]\fP"
+
+.SS "friend class \fBGLUI_Rotation\fP\fC [friend]\fP"
+
+.PP
+Definition at line 612 of file glui\&.h\&.
+.SS "\fBvoid\fP glui_special_func (\fBint\fPkey, \fBint\fPx, \fBint\fPy)\fC [friend]\fP"
+
+.SS "friend class \fBGLUI_Translation\fP\fC [friend]\fP"
+
+.PP
+Definition at line 613 of file glui\&.h\&.
+.SS "\fBvoid\fP glui_visibility_func (\fBint\fPstate)\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGLUI_Control\fP* GLUI_Main::active_control\fC [protected]\fP"
+
+.PP
+Definition at line 641 of file glui\&.h\&.
+.SS "\fBRGBc\fP GLUI_Main::bkgd_color"
+
+.PP
+Definition at line 697 of file glui\&.h\&.
+.SS "float GLUI_Main::bkgd_color_f[3]"
+
+.PP
+Definition at line 698 of file glui\&.h\&.
+.SS "\fBbuffer_mode_t\fP GLUI_Main::buffer_mode\fC [protected]\fP"
+
+.PP
+Current drawing mode\&. 
+.PP
+Definition at line 648 of file glui\&.h\&.
+.SS "bool GLUI_Main::closing\fC [protected]\fP"
+
+.PP
+Definition at line 652 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::curr_cursor\fC [protected]\fP"
+
+.PP
+Definition at line 649 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::curr_modifiers"
+
+.PP
+Definition at line 701 of file glui\&.h\&.
+.SS "long GLUI_Main::flags\fC [protected]\fP"
+
+.PP
+Definition at line 651 of file glui\&.h\&.
+.SS "\fBvoid\fP* GLUI_Main::font"
+
+.PP
+Definition at line 700 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::glui_id\fC [protected]\fP"
+
+.PP
+Definition at line 654 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Main::glut_keyboard_CB)(unsigned char, \fBint\fP, \fBint\fP)\fC [protected]\fP"
+
+.PP
+Definition at line 680 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Main::glut_mouse_CB)(\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)\fC [protected]\fP"
+
+.PP
+Definition at line 679 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Main::glut_reshape_CB)(\fBint\fP, \fBint\fP)\fC [protected]\fP"
+
+.PP
+Definition at line 682 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Main::glut_special_CB)(\fBint\fP, \fBint\fP, \fBint\fP)\fC [protected]\fP"
+
+.PP
+Definition at line 681 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::glut_window_id\fC [protected]\fP"
+
+.PP
+Definition at line 639 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::h\fC [protected]\fP"
+
+.PP
+Definition at line 650 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::main_gfx_window_id\fC [protected]\fP"
+
+.PP
+Definition at line 637 of file glui\&.h\&.
+.SS "\fBGLUI_Panel\fP* GLUI_Main::main_panel\fC [protected]\fP"
+
+.PP
+Definition at line 643 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::mouse_button_down\fC [protected]\fP"
+
+.PP
+Definition at line 638 of file glui\&.h\&.
+.SS "\fBGLUI_Control\fP* GLUI_Main::mouse_over_control\fC [protected]\fP"
+
+.PP
+Definition at line 642 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::parent_window\fC [protected]\fP"
+
+.PP
+Definition at line 653 of file glui\&.h\&.
+.SS "\fBGLUI_StdBitmaps\fP GLUI_Main::std_bitmaps"
+
+.PP
+Definition at line 695 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::top_level_glut_window_id\fC [protected]\fP"
+
+.PP
+Definition at line 640 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Main::w\fC [protected]\fP"
+
+.PP
+Definition at line 650 of file glui\&.h\&.
+.SS "\fBGLUI_String\fP GLUI_Main::window_name"
+
+.PP
+Definition at line 696 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

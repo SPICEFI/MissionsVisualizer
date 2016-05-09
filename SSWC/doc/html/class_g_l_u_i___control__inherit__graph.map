@@ -1,0 +1,25 @@
+<map id="GLUI_Control" name="GLUI_Control">
+<area shape="rect" id="node3" href="$class_g_l_u_i___button.html" title="GLUI_Button" alt="" coords="331,5,429,32"/>
+<area shape="rect" id="node4" href="$class_g_l_u_i___checkbox.html" title="GLUI_Checkbox" alt="" coords="321,56,439,83"/>
+<area shape="rect" id="node5" href="$class_g_l_u_i___column.html" title="GLUI_Column" alt="" coords="327,107,433,133"/>
+<area shape="rect" id="node6" href="$class_g_l_u_i___edit_text.html" title="GLUI_EditText" alt="" coords="325,157,435,184"/>
+<area shape="rect" id="node8" href="$class_g_l_u_i___list.html" title="GLUI_List" alt="" coords="339,208,421,235"/>
+<area shape="rect" id="node9" href="$class_g_l_u_i___listbox.html" title="GLUI_Listbox" alt="" coords="329,259,431,285"/>
+<area shape="rect" id="node10" href="$class_g_l_u_i___mouse___interaction.html" title="GLUI_Mouse_Interaction" alt="" coords="297,309,463,336"/>
+<area shape="rect" id="node13" href="$class_g_l_u_i___panel.html" title="GLUI_Panel" alt="" coords="333,360,427,387"/>
+<area shape="rect" id="node18" href="$class_g_l_u_i___radio_button.html" title="GLUI_RadioButton" alt="" coords="314,411,446,437"/>
+<area shape="rect" id="node19" href="$class_g_l_u_i___radio_group.html" title="GLUI_RadioGroup" alt="" coords="315,461,445,488"/>
+<area shape="rect" id="node20" href="$class_g_l_u_i___scrollbar.html" title="GLUI_Scrollbar" alt="" coords="325,512,435,539"/>
+<area shape="rect" id="node21" href="$class_g_l_u_i___separator.html" title="GLUI_Separator" alt="" coords="322,563,438,589"/>
+<area shape="rect" id="node22" href="$class_g_l_u_i___spinner.html" title="GLUI_Spinner" alt="" coords="328,613,432,640"/>
+<area shape="rect" id="node23" href="$class_g_l_u_i___static_text.html" title="GLUI_StaticText" alt="" coords="320,664,440,691"/>
+<area shape="rect" id="node24" href="$class_g_l_u_i___text_box.html" title="GLUI_TextBox" alt="" coords="325,715,435,741"/>
+<area shape="rect" id="node2" href="$class_g_l_u_i___node.html" title="GLUI_Node" alt="" coords="5,360,96,387"/>
+<area shape="rect" id="node7" href="$class_g_l_u_i___command_line.html" title="GLUI_CommandLine" alt="" coords="512,157,656,184"/>
+<area shape="rect" id="node11" href="$class_g_l_u_i___rotation.html" title="GLUI_Rotation" alt="" coords="529,233,639,260"/>
+<area shape="rect" id="node12" href="$class_g_l_u_i___translation.html" title="GLUI_Translation" alt="" coords="522,284,646,311"/>
+<area shape="rect" id="node14" href="$class_g_l_u_i___file_browser.html" title="GLUI_FileBrowser" alt="" coords="519,335,649,361"/>
+<area shape="rect" id="node15" href="$class_g_l_u_i___rollout.html" title="GLUI_Rollout" alt="" coords="533,385,635,412"/>
+<area shape="rect" id="node16" href="$class_g_l_u_i___tree.html" title="GLUI_Tree" alt="" coords="541,436,627,463"/>
+<area shape="rect" id="node17" href="$class_g_l_u_i___tree_panel.html" title="GLUI_TreePanel" alt="" coords="525,487,643,513"/>
+</map>

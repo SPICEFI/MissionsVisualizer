@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_units_1_1_metric" kind="class" prot="public">
+    <compoundname>Units::Metric</compoundname>
+    <includes refid="_quantity_8h" local="no">Quantity.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_units_1_1_metric_1a74dbbff37b76b1265ad6ca64168798b0" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>const LengthUnit Units::Metric::centimeters</definition>
+        <argsstring></argsstring>
+        <name>centimeters</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(0.01, <ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">Units::Metric::meters</ref>, &quot;cm&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="234" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>const LengthUnit Units::Metric::meters</definition>
+        <argsstring></argsstring>
+        <name>meters</name>
+        <initializer>= <ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">LengthUnit::BaseUnit</ref>(&quot;m&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="235" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>const LengthUnit Units::Metric::kilometers</definition>
+        <argsstring></argsstring>
+        <name>kilometers</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">LengthUnit::ScaledUnit</ref>(1000.0, <ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">Units::Metric::meters</ref>, &quot;km&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="236" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1a88cdf60341e6f6d7013018cdc1c26ec6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" kindref="member">MassUnit</ref></type>
+        <definition>const MassUnit Units::Metric::grams</definition>
+        <argsstring></argsstring>
+        <name>grams</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(0.001, <ref refid="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" kindref="member">Units::Metric::kilograms</ref>, &quot;g&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="238" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" kindref="member">MassUnit</ref></type>
+        <definition>const MassUnit Units::Metric::kilograms</definition>
+        <argsstring></argsstring>
+        <name>kilograms</name>
+        <initializer>= <ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">MassUnit::BaseUnit</ref>(&quot;kg&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="239" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1a6795221af474ecd8907538c4ee3505ca" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" kindref="member">MassUnit</ref></type>
+        <definition>const MassUnit Units::Metric::tons</definition>
+        <argsstring></argsstring>
+        <name>tons</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">MassUnit::ScaledUnit</ref>(1000.0, <ref refid="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" kindref="member">Units::Metric::kilograms</ref>, &quot;t&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="240" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1ae1c8538c908650861579c9ac0b66457d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a4130b5cf107e9890a06c6c06bbfa7da3" kindref="member">VelocityUnit</ref></type>
+        <definition>const VelocityUnit Units::Metric::kmph</definition>
+        <argsstring></argsstring>
+        <name>kmph</name>
+        <initializer>= <ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">VelocityUnit::DerivedUnit</ref>(<ref refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" kindref="member">Units::Metric::kilometers</ref>, <ref refid="class_units_1_1_common_1a85905b04a8c1fa4058249d06c81828c7" kindref="member">Units::Common::hours</ref>, &quot;km/<ref refid="glext_8h_1afa0fb1b5e976920c0abeff2dca3ed774" kindref="member">h</ref>&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="242" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1ae30e1438d1f93d6d08901e1fe9b31919" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a4130b5cf107e9890a06c6c06bbfa7da3" kindref="member">VelocityUnit</ref></type>
+        <definition>const VelocityUnit Units::Metric::kmps</definition>
+        <argsstring></argsstring>
+        <name>kmps</name>
+        <initializer>= <ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">VelocityUnit::DerivedUnit</ref>(<ref refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" kindref="member">Units::Metric::kilometers</ref>, <ref refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" kindref="member">Units::Common::seconds</ref>, &quot;km/<ref refid="glext_8h_1a4af680a6c683f88ed67b76f207f2e6e4" kindref="member">s</ref>&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="243" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1af960d1782d357569275d856dc28ed895" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1a4130b5cf107e9890a06c6c06bbfa7da3" kindref="member">VelocityUnit</ref></type>
+        <definition>const VelocityUnit Units::Metric::mps</definition>
+        <argsstring></argsstring>
+        <name>mps</name>
+        <initializer>= <ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">VelocityUnit::DerivedUnit</ref>(<ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">Units::Metric::meters</ref>, <ref refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" kindref="member">Units::Common::seconds</ref>, &quot;m/<ref refid="glext_8h_1a4af680a6c683f88ed67b76f207f2e6e4" kindref="member">s</ref>&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="244" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1a172a4a3ec21992ffee09794cf07f9563" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1aa1729851532d88933ff921f24a0bce3b" kindref="member">AccelerationUnit</ref></type>
+        <definition>const AccelerationUnit Units::Metric::ms2</definition>
+        <argsstring></argsstring>
+        <name>ms2</name>
+        <initializer>= <ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">AccelerationUnit::DerivedUnit</ref>(<ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">Units::Metric::meters</ref>, <ref refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" kindref="member">Units::Common::seconds</ref>, &quot;m/<ref refid="glext_8h_1a4af680a6c683f88ed67b76f207f2e6e4" kindref="member">s</ref>^2&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="246" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_metric_1a8e5b74eb410af1d26aadb0adfb77dc21" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1ac250a56b26235a8dc9d44fbbeabe2024" kindref="member">GravitationalParameterUnit</ref></type>
+        <definition>const GravitationalParameterUnit Units::Metric::gm</definition>
+        <argsstring></argsstring>
+        <name>gm</name>
+        <initializer>= <ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">GravitationalParameterUnit::DerivedUnit</ref>(<ref refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" kindref="member">Units::Metric::kilometers</ref>, <ref refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" kindref="member">Units::Common::seconds</ref>, &quot;km3/s2&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="248" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="967">
+        <label>Units::Metric</label>
+        <link refid="class_units_1_1_metric"/>
+        <childnode refid="968" relation="usage">
+          <edgelabel>tons</edgelabel>
+          <edgelabel>kilograms</edgelabel>
+          <edgelabel>centimeters</edgelabel>
+          <edgelabel>kmps</edgelabel>
+          <edgelabel>gm</edgelabel>
+          <edgelabel>grams</edgelabel>
+          <edgelabel>ms2</edgelabel>
+          <edgelabel>mps</edgelabel>
+          <edgelabel>kmph</edgelabel>
+          <edgelabel>kilometers</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="968">
+        <label>Unit&lt; length, time, mass &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="232" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="231" bodyend="249"/>
+    <listofallmembers>
+      <member refid="class_units_1_1_metric_1a74dbbff37b76b1265ad6ca64168798b0" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>centimeters</name></member>
+      <member refid="class_units_1_1_metric_1a8e5b74eb410af1d26aadb0adfb77dc21" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>gm</name></member>
+      <member refid="class_units_1_1_metric_1a88cdf60341e6f6d7013018cdc1c26ec6" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>grams</name></member>
+      <member refid="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>kilograms</name></member>
+      <member refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>kilometers</name></member>
+      <member refid="class_units_1_1_metric_1ae1c8538c908650861579c9ac0b66457d" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>kmph</name></member>
+      <member refid="class_units_1_1_metric_1ae30e1438d1f93d6d08901e1fe9b31919" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>kmps</name></member>
+      <member refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>meters</name></member>
+      <member refid="class_units_1_1_metric_1af960d1782d357569275d856dc28ed895" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>mps</name></member>
+      <member refid="class_units_1_1_metric_1a172a4a3ec21992ffee09794cf07f9563" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>ms2</name></member>
+      <member refid="class_units_1_1_metric_1a6795221af474ecd8907538c4ee3505ca" prot="public" virt="non-virtual"><scope>Units::Metric</scope><name>tons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

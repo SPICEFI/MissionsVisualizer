@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_45a149d3440f65a452bd86e9e08b49b8" kind="dir">
+    <compoundname>SSWC/src/CSpice</compoundname>
+    <innerfile refid="_c_spice_8cpp">CSpice.cpp</innerfile>
+    <innerfile refid="_c_spice_8h">CSpice.h</innerfile>
+    <innerfile refid="_c_spice_core_8cpp">CSpiceCore.cpp</innerfile>
+    <innerfile refid="_c_spice_core_8h">CSpiceCore.h</innerfile>
+    <innerfile refid="_c_spice_util_8cpp">CSpiceUtil.cpp</innerfile>
+    <innerfile refid="_c_spice_util_8h">CSpiceUtil.h</innerfile>
+    <innerfile refid="_date_8cpp">Date.cpp</innerfile>
+    <innerfile refid="_date_8h">Date.h</innerfile>
+    <innerfile refid="_frame_8cpp">Frame.cpp</innerfile>
+    <innerfile refid="_frame_8h">Frame.h</innerfile>
+    <innerfile refid="_space_body_8cpp">SpaceBody.cpp</innerfile>
+    <innerfile refid="_space_body_8h">SpaceBody.h</innerfile>
+    <innerfile refid="_space_object_8cpp">SpaceObject.cpp</innerfile>
+    <innerfile refid="_space_object_8h">SpaceObject.h</innerfile>
+    <innerfile refid="_window_8cpp">Window.cpp</innerfile>
+    <innerfile refid="_window_8h">Window.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/"/>
+  </compounddef>
+</doxygen>

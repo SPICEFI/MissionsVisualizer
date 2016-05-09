@@ -1,0 +1,266 @@
+\hypertarget{class_date}{\section{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+}
+
+
+{\ttfamily \#include $<$Date.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_a02e14e792c9a84dec9f7108d0c3b40c2}{Date} (double et=0.\+0)
+\item 
+\hyperlink{class_date_af909b4fc8d85c6feb129709441f6af5a}{Date} (\hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} str)
+\item 
+double \hyperlink{class_date_af5e52ad40ec03035f98ddd4bd5bfc2fd}{As\+Double} () const 
+\item 
+\hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{class_date_ac952bc2fedfc299de91758e32b487810}{As\+String} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ae2d3db041c6004a67047659b42f73a44}{format}=\char`\"{}Mon D\+D Y\+Y\+Y\+Y H\+R\+:\+M\+N\+:\+S\+C (U\+T\+C+0) \+::U\+T\+C+0\char`\"{}) const 
+\item 
+\hyperlink{class_date}{Date} \hyperlink{class_date_a4728290c236875c0a0e909da57a732d1}{operator+} (double rhs) const 
+\item 
+\hyperlink{class_date}{Date} \hyperlink{class_date_a818a7809eb6a6c3c07e4f5e82fe32b2b}{operator-\/} (double rhs) const 
+\item 
+double \hyperlink{class_date_afa16e15bccb6a129ad4bec5aeff20967}{operator-\/} (const \hyperlink{class_date}{Date} \&rhs) const 
+\item 
+\hyperlink{class_date}{Date} \& \hyperlink{class_date_aa276629ba1fd2b5afce12aa79e638f5b}{operator+=} (double rhs)
+\item 
+\hyperlink{class_date}{Date} \& \hyperlink{class_date_a4e423fd26befbc87937e2eb1a62c9d96}{operator-\/=} (double rhs)
+\item 
+bool \hyperlink{class_date_a94ad75126c7edce05cad11c59ccc2136}{operator$<$} (const \hyperlink{class_date}{Date} \&rhs) const 
+\item 
+bool \hyperlink{class_date_a572f2eae7edfbb96c7556cb1b63c517a}{operator$>$} (const \hyperlink{class_date}{Date} \&rhs) const 
+\item 
+\hyperlink{class_date}{Date} \hyperlink{class_date_a6d1901bc7ac1a1edbb3d027c40d954d5}{operator+} (const \hyperlink{_quantity_8h_ab180382d5dc1bcb91259cbd59a5d86fc}{Time} \&rhs) const 
+\item 
+\hyperlink{class_date}{Date} \hyperlink{class_date_a1d4f191e7ce6148681b0683e2fb45c3b}{operator-\/} (const \hyperlink{_quantity_8h_ab180382d5dc1bcb91259cbd59a5d86fc}{Time} \&rhs) const 
+\item 
+\hyperlink{class_date}{Date} \& \hyperlink{class_date_ad1f5746ec11616030cf1cffe32be53ca}{operator+=} (const \hyperlink{_quantity_8h_ab180382d5dc1bcb91259cbd59a5d86fc}{Time} \&rhs)
+\item 
+\hyperlink{class_date}{Date} \& \hyperlink{class_date_a5b0bc159e3dfe925972077b520a3a429}{operator-\/=} (const \hyperlink{_quantity_8h_ab180382d5dc1bcb91259cbd59a5d86fc}{Time} \&rhs)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{class_date_ae6f7ae7f25f297a2edbf3145384fc94b}{second}
+\item 
+static const double \hyperlink{class_date_a755e333674657a63fdc2a7228ea24972}{minute}
+\item 
+static const double \hyperlink{class_date_a04e609f92a81379120b83438324da63e}{hour}
+\item 
+static const double \hyperlink{class_date_afdaf71438c0ef71ac7772abbcb65064e}{day}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Date.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_date_a02e14e792c9a84dec9f7108d0c3b40c2}{\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection[{Date}]{\setlength{\rightskip}{0pt plus 5cm}Date\+::\+Date (
+\begin{DoxyParamCaption}
+\item[{double}]{et = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}}\label{class_date_a02e14e792c9a84dec9f7108d0c3b40c2}
+
+
+Definition at line 3 of file Date.\+cpp.
+
+\hypertarget{class_date_af909b4fc8d85c6feb129709441f6af5a}{\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection[{Date}]{\setlength{\rightskip}{0pt plus 5cm}Date\+::\+Date (
+\begin{DoxyParamCaption}
+\item[{{\bf std\+::string}}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_date_af909b4fc8d85c6feb129709441f6af5a}
+
+
+Definition at line 8 of file Date.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_date_af5e52ad40ec03035f98ddd4bd5bfc2fd}{\index{Date@{Date}!As\+Double@{As\+Double}}
+\index{As\+Double@{As\+Double}!Date@{Date}}
+\subsubsection[{As\+Double}]{\setlength{\rightskip}{0pt plus 5cm}double Date\+::\+As\+Double (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_date_af5e52ad40ec03035f98ddd4bd5bfc2fd}
+
+
+Definition at line 13 of file Date.\+cpp.
+
+\hypertarget{class_date_ac952bc2fedfc299de91758e32b487810}{\index{Date@{Date}!As\+String@{As\+String}}
+\index{As\+String@{As\+String}!Date@{Date}}
+\subsubsection[{As\+String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} Date\+::\+As\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{format = {\ttfamily \char`\"{}Mon~DD~YYYY~HR\+:MN\+:SC~(UTC+0)~\+:\+:UTC+0\char`\"{}}}
+\end{DoxyParamCaption}
+) const}}\label{class_date_ac952bc2fedfc299de91758e32b487810}
+
+
+Definition at line 18 of file Date.\+cpp.
+
+\hypertarget{class_date_a4728290c236875c0a0e909da57a732d1}{\index{Date@{Date}!operator+@{operator+}}
+\index{operator+@{operator+}!Date@{Date}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Date\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{double}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_a4728290c236875c0a0e909da57a732d1}
+
+
+Definition at line 19 of file Date.\+h.
+
+\hypertarget{class_date_a6d1901bc7ac1a1edbb3d027c40d954d5}{\index{Date@{Date}!operator+@{operator+}}
+\index{operator+@{operator+}!Date@{Date}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Date\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_a6d1901bc7ac1a1edbb3d027c40d954d5}
+
+
+Definition at line 49 of file Date.\+h.
+
+\hypertarget{class_date_aa276629ba1fd2b5afce12aa79e638f5b}{\index{Date@{Date}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Date@{Date}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date}\& Date\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{double}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_aa276629ba1fd2b5afce12aa79e638f5b}
+
+
+Definition at line 31 of file Date.\+h.
+
+\hypertarget{class_date_ad1f5746ec11616030cf1cffe32be53ca}{\index{Date@{Date}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Date@{Date}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date}\& Date\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_ad1f5746ec11616030cf1cffe32be53ca}
+
+
+Definition at line 57 of file Date.\+h.
+
+\hypertarget{class_date_a818a7809eb6a6c3c07e4f5e82fe32b2b}{\index{Date@{Date}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Date@{Date}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Date\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{double}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_a818a7809eb6a6c3c07e4f5e82fe32b2b}
+
+
+Definition at line 23 of file Date.\+h.
+
+\hypertarget{class_date_afa16e15bccb6a129ad4bec5aeff20967}{\index{Date@{Date}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Date@{Date}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}double Date\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_afa16e15bccb6a129ad4bec5aeff20967}
+
+
+Definition at line 27 of file Date.\+h.
+
+\hypertarget{class_date_a1d4f191e7ce6148681b0683e2fb45c3b}{\index{Date@{Date}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Date@{Date}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Date\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_a1d4f191e7ce6148681b0683e2fb45c3b}
+
+
+Definition at line 53 of file Date.\+h.
+
+\hypertarget{class_date_a4e423fd26befbc87937e2eb1a62c9d96}{\index{Date@{Date}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Date@{Date}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date}\& Date\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{double}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_a4e423fd26befbc87937e2eb1a62c9d96}
+
+
+Definition at line 36 of file Date.\+h.
+
+\hypertarget{class_date_a5b0bc159e3dfe925972077b520a3a429}{\index{Date@{Date}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Date@{Date}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date}\& Date\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_a5b0bc159e3dfe925972077b520a3a429}
+
+
+Definition at line 63 of file Date.\+h.
+
+\hypertarget{class_date_a94ad75126c7edce05cad11c59ccc2136}{\index{Date@{Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Date@{Date}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_a94ad75126c7edce05cad11c59ccc2136}
+
+
+Definition at line 41 of file Date.\+h.
+
+\hypertarget{class_date_a572f2eae7edfbb96c7556cb1b63c517a}{\index{Date@{Date}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Date@{Date}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_date_a572f2eae7edfbb96c7556cb1b63c517a}
+
+
+Definition at line 45 of file Date.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_date_afdaf71438c0ef71ac7772abbcb65064e}{\index{Date@{Date}!day@{day}}
+\index{day@{day}!Date@{Date}}
+\subsubsection[{day}]{\setlength{\rightskip}{0pt plus 5cm}const double Date\+::day\hspace{0.3cm}{\ttfamily [static]}}}\label{class_date_afdaf71438c0ef71ac7772abbcb65064e}
+
+
+Definition at line 74 of file Date.\+h.
+
+\hypertarget{class_date_a04e609f92a81379120b83438324da63e}{\index{Date@{Date}!hour@{hour}}
+\index{hour@{hour}!Date@{Date}}
+\subsubsection[{hour}]{\setlength{\rightskip}{0pt plus 5cm}const double Date\+::hour\hspace{0.3cm}{\ttfamily [static]}}}\label{class_date_a04e609f92a81379120b83438324da63e}
+
+
+Definition at line 73 of file Date.\+h.
+
+\hypertarget{class_date_a755e333674657a63fdc2a7228ea24972}{\index{Date@{Date}!minute@{minute}}
+\index{minute@{minute}!Date@{Date}}
+\subsubsection[{minute}]{\setlength{\rightskip}{0pt plus 5cm}const double Date\+::minute\hspace{0.3cm}{\ttfamily [static]}}}\label{class_date_a755e333674657a63fdc2a7228ea24972}
+
+
+Definition at line 72 of file Date.\+h.
+
+\hypertarget{class_date_ae6f7ae7f25f297a2edbf3145384fc94b}{\index{Date@{Date}!second@{second}}
+\index{second@{second}!Date@{Date}}
+\subsubsection[{second}]{\setlength{\rightskip}{0pt plus 5cm}const double Date\+::second\hspace{0.3cm}{\ttfamily [static]}}}\label{class_date_ae6f7ae7f25f297a2edbf3145384fc94b}
+
+
+Definition at line 71 of file Date.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_date_8h}{Date.\+h}\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_date_8cpp}{Date.\+cpp}\end{DoxyCompactItemize}

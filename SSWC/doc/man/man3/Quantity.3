@@ -1,0 +1,168 @@
+.TH "Quantity< length, time, mass >" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Quantity< length, time, mass > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Quantity\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQuantity\fP ()"
+.br
+.ti -1c
+.RI "\fBQuantity\fP (double \fBvalue\fP, const \fBCurrentUnit\fP &unit=\fBCurrentUnit::BaseUnit\fP())"
+.br
+.ti -1c
+.RI "double \fBValueIn\fP (const \fBCurrentUnit\fP &\fBref\fP) const "
+.br
+.ti -1c
+.RI "double \fBValueInBase\fP () const "
+.br
+.ti -1c
+.RI "\fBThisQuantity\fP & \fBoperator+=\fP (const \fBThisQuantity\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBThisQuantity\fP & \fBoperator-=\fP (const \fBThisQuantity\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBThisQuantity\fP & \fBoperator*=\fP (double rhs)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator+\fP (const \fBQuantity\fP &lhs, const \fBQuantity\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator-\fP (const \fBQuantity\fP &op)"
+.br
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator-\fP (const \fBQuantity\fP &lhs, const \fBQuantity\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator*\fP (const \fBQuantity\fP &lhs, double rhs)"
+.br
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator*\fP (double lhs, const \fBQuantity\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator*\fP (const \fBQuantity\fP &lhs, \fBint\fP rhs)"
+.br
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator*\fP (\fBint\fP lhs, const \fBQuantity\fP &rhs)"
+.br
+.ti -1c
+.RI "double \fBoperator/\fP (const \fBQuantity\fP &lhs, const \fBQuantity\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator/\fP (const \fBQuantity\fP &lhs, double rhs)"
+.br
+.ti -1c
+.RI "\fBQuantity\fP \fBoperator/\fP (const \fBQuantity\fP &lhs, \fBint\fP rhs)"
+.br
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBQuantity\fP &lhs, const \fBQuantity\fP &rhs)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBQuantity\fP &lhs, const \fBQuantity\fP &rhs)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<int length, int time, int mass>class Quantity< length, time, mass >"
+
+.PP
+Definition at line 108 of file Quantity\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<int length, int time, int mass> \fBQuantity\fP< \fBlength\fP, time, mass >::\fBQuantity\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 114 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP< \fBlength\fP, time, mass >::\fBQuantity\fP (doublevalue, const \fBCurrentUnit\fP &unit = \fC\fBCurrentUnit::BaseUnit\fP()\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 118 of file Quantity\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<int length, int time, int mass> \fBThisQuantity\fP& \fBQuantity\fP< \fBlength\fP, time, mass >::operator*= (doublerhs)\fC [inline]\fP"
+
+.PP
+Definition at line 144 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBThisQuantity\fP& \fBQuantity\fP< \fBlength\fP, time, mass >::operator+= (const \fBThisQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [inline]\fP"
+
+.PP
+Definition at line 132 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBThisQuantity\fP& \fBQuantity\fP< \fBlength\fP, time, mass >::operator-= (const \fBThisQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [inline]\fP"
+
+.PP
+Definition at line 138 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> double \fBQuantity\fP< \fBlength\fP, time, mass >::ValueIn (const \fBCurrentUnit\fP &ref) const\fC [inline]\fP"
+
+.PP
+Definition at line 123 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> double \fBQuantity\fP< \fBlength\fP, time, mass >::ValueInBase () const\fC [inline]\fP"
+
+.PP
+Definition at line 127 of file Quantity\&.h\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator* (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, doublerhs)\fC [friend]\fP"
+
+.PP
+Definition at line 176 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator* (doublelhs, const \fBQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 180 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator* (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, \fBint\fPrhs)\fC [friend]\fP"
+
+.PP
+Definition at line 184 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator* (\fBint\fPlhs, const \fBQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 188 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator+ (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, const \fBQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 162 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator- (const \fBQuantity\fP< \fBlength\fP, time, mass > &op)\fC [friend]\fP"
+
+.PP
+Definition at line 168 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator- (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, const \fBQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 172 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> double operator/ (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, const \fBQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 192 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator/ (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, doublerhs)\fC [friend]\fP"
+
+.PP
+Definition at line 196 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> \fBQuantity\fP operator/ (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, \fBint\fPrhs)\fC [friend]\fP"
+
+.PP
+Definition at line 200 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> bool operator< (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, const \fBQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 208 of file Quantity\&.h\&.
+.SS "template<int length, int time, int mass> bool operator> (const \fBQuantity\fP< \fBlength\fP, time, mass > &lhs, const \fBQuantity\fP< \fBlength\fP, time, mass > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 204 of file Quantity\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

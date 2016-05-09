@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_app_1_1_default_units" kind="struct" prot="public">
+    <compoundname>App::DefaultUnits</compoundname>
+    <includes refid="_app_8h" local="no">App.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_app_1_1_default_units_1ad54dce1ee4af8f666579130f55034506" prot="public" static="no" mutable="no">
+        <type><ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref></type>
+        <definition>LengthUnit App::DefaultUnits::lengthUnit</definition>
+        <argsstring></argsstring>
+        <name>lengthUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" line="25" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_1_1_default_units_1a828b643678f6cc966772f1cfdb74b7d5" prot="public" static="no" mutable="no">
+        <type><ref refid="_quantity_8h_1a4130b5cf107e9890a06c6c06bbfa7da3" kindref="member">VelocityUnit</ref></type>
+        <definition>VelocityUnit App::DefaultUnits::velocityUnit</definition>
+        <argsstring></argsstring>
+        <name>velocityUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_1_1_default_units_1a6fd33188cebaa3e473af9d9b265624da" prot="public" static="no" mutable="no">
+        <type><ref refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" kindref="member">MassUnit</ref></type>
+        <definition>MassUnit App::DefaultUnits::massUnit</definition>
+        <argsstring></argsstring>
+        <name>massUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" line="27" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_1_1_default_units_1a7803c87c80c03066c6d4737781edc50d" prot="public" static="no" mutable="no">
+        <type><ref refid="_quantity_8h_1aa1729851532d88933ff921f24a0bce3b" kindref="member">AccelerationUnit</ref></type>
+        <definition>AccelerationUnit App::DefaultUnits::accUnit</definition>
+        <argsstring></argsstring>
+        <name>accUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" line="28" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_1_1_default_units_1a134222849fbe7070dc8a2471b8d2afb5" prot="public" static="no" mutable="no">
+        <type><ref refid="_quantity_8h_1ac250a56b26235a8dc9d44fbbeabe2024" kindref="member">GravitationalParameterUnit</ref></type>
+        <definition>GravitationalParameterUnit App::DefaultUnits::gmUnit</definition>
+        <argsstring></argsstring>
+        <name>gmUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="525">
+        <label>Unit&lt; 3,-2, 0 &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+      <node id="524">
+        <label>App::DefaultUnits</label>
+        <link refid="struct_app_1_1_default_units"/>
+        <childnode refid="525" relation="usage">
+          <edgelabel>gmUnit</edgelabel>
+        </childnode>
+        <childnode refid="526" relation="usage">
+          <edgelabel>velocityUnit</edgelabel>
+        </childnode>
+        <childnode refid="527" relation="usage">
+          <edgelabel>accUnit</edgelabel>
+        </childnode>
+        <childnode refid="528" relation="usage">
+          <edgelabel>massUnit</edgelabel>
+        </childnode>
+        <childnode refid="529" relation="usage">
+          <edgelabel>lengthUnit</edgelabel>
+        </childnode>
+      </node>
+      <node id="527">
+        <label>Unit&lt; 1,-2, 0 &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+      <node id="529">
+        <label>Unit&lt; 1, 0, 0 &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+      <node id="528">
+        <label>Unit&lt; 0, 0, 1 &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+      <node id="526">
+        <label>Unit&lt; 1,-1, 0 &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" line="24" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/App.h" bodystart="23" bodyend="30"/>
+    <listofallmembers>
+      <member refid="struct_app_1_1_default_units_1a7803c87c80c03066c6d4737781edc50d" prot="public" virt="non-virtual"><scope>App::DefaultUnits</scope><name>accUnit</name></member>
+      <member refid="struct_app_1_1_default_units_1a134222849fbe7070dc8a2471b8d2afb5" prot="public" virt="non-virtual"><scope>App::DefaultUnits</scope><name>gmUnit</name></member>
+      <member refid="struct_app_1_1_default_units_1ad54dce1ee4af8f666579130f55034506" prot="public" virt="non-virtual"><scope>App::DefaultUnits</scope><name>lengthUnit</name></member>
+      <member refid="struct_app_1_1_default_units_1a6fd33188cebaa3e473af9d9b265624da" prot="public" virt="non-virtual"><scope>App::DefaultUnits</scope><name>massUnit</name></member>
+      <member refid="struct_app_1_1_default_units_1a828b643678f6cc966772f1cfdb74b7d5" prot="public" virt="non-virtual"><scope>App::DefaultUnits</scope><name>velocityUnit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

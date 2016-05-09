@@ -1,0 +1,155 @@
+.TH "GLUI_Mouse_Interaction" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Mouse_Interaction \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.PP
+Inherited by \fBGLUI_Rotation\fP, and \fBGLUI_Translation\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_active_area\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBiaction_mouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)=0"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBiaction_mouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)=0"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBiaction_mouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)=0"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBiaction_special_handler\fP (\fBint\fP key, \fBint\fP modifiers)=0"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBiaction_draw_active_area_persp\fP (\fBvoid\fP)=0"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBiaction_draw_active_area_ortho\fP (\fBvoid\fP)=0"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBiaction_dump\fP (FILE *output)=0"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBiaction_init\fP (\fBvoid\fP)=0"
+.br
+.ti -1c
+.RI "\fBGLUI_Mouse_Interaction\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBdraw_active_area_only\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This is the superclass of translation and rotation widgets\&. 
+.PP
+Definition at line 2390 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Mouse_Interaction::GLUI_Mouse_Interaction (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2415 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Mouse_Interaction::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Mouse_Interaction::draw_active_area (\fBvoid\fP)"
+
+.SS "virtual \fBvoid\fP GLUI_Mouse_Interaction::iaction_draw_active_area_ortho (\fBvoid\fP)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Translation\fP, and \fBGLUI_Rotation\fP\&.
+.SS "virtual \fBvoid\fP GLUI_Mouse_Interaction::iaction_draw_active_area_persp (\fBvoid\fP)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Translation\fP, and \fBGLUI_Rotation\fP\&.
+.SS "virtual \fBvoid\fP GLUI_Mouse_Interaction::iaction_dump (FILE *output)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Translation\fP, and \fBGLUI_Rotation\fP\&.
+.SS "virtual \fBvoid\fP GLUI_Mouse_Interaction::iaction_init (\fBvoid\fP)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Translation\fP, and \fBGLUI_Rotation\fP\&.
+.SS "virtual \fBint\fP GLUI_Mouse_Interaction::iaction_mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Translation\fP, and \fBGLUI_Rotation\fP\&.
+.SS "virtual \fBint\fP GLUI_Mouse_Interaction::iaction_mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Translation\fP, and \fBGLUI_Rotation\fP\&.
+.SS "virtual \fBint\fP GLUI_Mouse_Interaction::iaction_mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Translation\fP, and \fBGLUI_Rotation\fP\&.
+.SS "virtual \fBint\fP GLUI_Mouse_Interaction::iaction_special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Translation\fP, and \fBGLUI_Rotation\fP\&.
+.SS "\fBint\fP GLUI_Mouse_Interaction::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Mouse_Interaction::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Mouse_Interaction::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Mouse_Interaction::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Mouse_Interaction::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBint\fP GLUI_Mouse_Interaction::draw_active_area_only"
+
+.PP
+Definition at line 2394 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

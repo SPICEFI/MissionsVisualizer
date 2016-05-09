@@ -1,0 +1,52 @@
+.TH "GLUI_StdBitmaps" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_StdBitmaps \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_StdBitmaps\fP ()"
+.br
+.ti -1c
+.RI "\fB~GLUI_StdBitmaps\fP ()"
+.br
+.ti -1c
+.RI "\fBint\fP \fBwidth\fP (\fBint\fP \fBn\fP) const "
+.br
+.ti -1c
+.RI "\fBint\fP \fBheight\fP (\fBint\fP \fBn\fP) const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBn\fP, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP) const "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Keeps an array of \fBGLUI_Bitmap\fP objects to represent all the images used in the UI: checkboxes, arrows, etc\&. 
+.PP
+Definition at line 441 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_StdBitmaps::GLUI_StdBitmaps ()"
+
+.SS "GLUI_StdBitmaps::~GLUI_StdBitmaps ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_StdBitmaps::draw (\fBint\fPn, \fBint\fPx, \fBint\fPy) const"
+Draw the n'th standard bitmap (one of the enums listed in GLUI_StdBitmaps_Codes) at pixel corner (x,y)\&. 
+.SS "\fBint\fP GLUI_StdBitmaps::height (\fBint\fPn) const"
+Return the height (in pixels) of the n'th standard bitmap\&. 
+.SS "\fBint\fP GLUI_StdBitmaps::width (\fBint\fPn) const"
+Return the width (in pixels) of the n'th standard bitmap\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_matrix4x4_8h" kind="file">
+    <compoundname>Matrix4x4.h</compoundname>
+    <includes local="no">cstring</includes>
+    <includes local="no">stdexcept</includes>
+    <includedby refid="_frame_8h" local="yes">SSWC/src/CSpice/Frame.h</includedby>
+    <includedby refid="_matrix4x4_8cpp" local="yes">SSWC/src/Math/Matrix4x4.cpp</includedby>
+    <incdepgraph>
+      <node id="1816">
+        <label>stdexcept</label>
+      </node>
+      <node id="1814">
+        <label>SSWC/src/Math/Matrix4x4.h</label>
+        <link refid="Matrix4x4.h"/>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+      </node>
+      <node id="1815">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1835">
+        <label>SSWC/src/CSpice/Frame.cpp</label>
+        <link refid="_frame_8cpp"/>
+      </node>
+      <node id="1830">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="1836">
+        <label>SSWC/src/Math/Matrix4x4.cpp</label>
+        <link refid="_matrix4x4_8cpp"/>
+      </node>
+      <node id="1827">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="1825">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+      </node>
+      <node id="1833">
+        <label>SSWC/src/CSpice/SpaceBody.cpp</label>
+        <link refid="_space_body_8cpp"/>
+      </node>
+      <node id="1823">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+      </node>
+      <node id="1824">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="1818">
+        <label>SSWC/src/CSpice/Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+      </node>
+      <node id="1829">
+        <label>SSWC/src/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+      </node>
+      <node id="1821">
+        <label>SSWC/src/App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+      </node>
+      <node id="1828">
+        <label>SSWC/src/Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+      </node>
+      <node id="1822">
+        <label>SSWC/src/App.cpp</label>
+        <link refid="_app_8cpp"/>
+      </node>
+      <node id="1817">
+        <label>SSWC/src/Math/Matrix4x4.h</label>
+        <link refid="Matrix4x4.h"/>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+      </node>
+      <node id="1826">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+      <node id="1831">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="_planet_8cpp"/>
+      </node>
+      <node id="1834">
+        <label>SSWC/src/CSpice/SpaceObject.cpp</label>
+        <link refid="_space_object_8cpp"/>
+      </node>
+      <node id="1819">
+        <label>SSWC/src/CSpice/SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+      <node id="1832">
+        <label>SSWC/src/CSpice/SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+      </node>
+      <node id="1820">
+        <label>SSWC/src/CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1821" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_matrix4x4" prot="public">Matrix4x4</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_matrix4x4_8h_1ac25189db92959bff3c6c2adf4c34b50a" prot="public" static="no">
+        <name>DIM</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="6" column="9" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_matrix4x4_8h_1ac25189db92959bff3c6c2adf4c34b50a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIM<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_matrix4x4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_matrix4x4_1a714a467ba7f85f88ebe3897b5e3580be" kindref="member">Matrix4x4</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_matrix4x4_1a714a467ba7f85f88ebe3897b5e3580be" kindref="member">Matrix4x4</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="glext_8h_1a11941354c1d09e70ec63bde35fc79d4f" kindref="member">m</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_matrix4x4_1a714a467ba7f85f88ebe3897b5e3580be" kindref="member">Matrix4x4</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m[<ref refid="_matrix4x4_8h_1ac25189db92959bff3c6c2adf4c34b50a" kindref="member">DIM</ref>][<ref refid="_matrix4x4_8h_1ac25189db92959bff3c6c2adf4c34b50a" kindref="member">DIM</ref>]);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_matrix4x4_1a714a467ba7f85f88ebe3897b5e3580be" kindref="member">Matrix4x4</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m11,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m12,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m13,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m14,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m21,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m22,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m23,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m24,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m31,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m32,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m33,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m34,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m41,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m42,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m43,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m44);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4_1acb07f122201caa230eccaeb1688a7bb2" kindref="member">Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>m);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4_1acb07f122201caa230eccaeb1688a7bb2" kindref="member">Set</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a90d3e7e4182a9630993f640fa0443b0b" kindref="member">row</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4_1a2fa8d389f00e100783d96dca2841dcd9" kindref="member">Get</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4_1a1ac1a48d82ace2c2ac98c2bb86ff7b5f" kindref="member">GetRowMajor</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>m)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4_1a5868dcbb00ef438b651a90ac0950f93c" kindref="member">GetColumnMajor</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>m)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4_1a3cfb5cb29c3afa4bff1514fdfd1551c0" kindref="member">IsRowColCorrect</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a7b24a3f2f56eb1244ae69dacb4fecb6f" kindref="member">matrix</ref>[<ref refid="_matrix4x4_8h_1ac25189db92959bff3c6c2adf4c34b50a" kindref="member">DIM</ref>][<ref refid="_matrix4x4_8h_1ac25189db92959bff3c6c2adf4c34b50a" kindref="member">DIM</ref>];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="class_matrix4x4_1acd4066dd53c9d97a6675f5f63736387b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref><sp/><ref refid="class_matrix4x4_1acd4066dd53c9d97a6675f5f63736387b" kindref="member">Identity</ref>;</highlight></codeline>
+<codeline lineno="33" refid="class_matrix4x4_1aa29a050d95415f55095e0a95cdca03c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref><sp/><ref refid="class_matrix4x4_1aa29a050d95415f55095e0a95cdca03c7" kindref="member">Zero</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h"/>
+  </compounddef>
+</doxygen>

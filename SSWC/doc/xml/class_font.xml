@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_font" kind="class" prot="public">
+    <compoundname>Font</compoundname>
+    <includes refid="_font_8h" local="no">Font.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_font_1ae42e77c98bffa7851587bf2059bcfe6f" prot="private" static="no" mutable="no">
+        <type><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref></type>
+        <definition>GLuint Font::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="13" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_font_1a4239eb7a63fa7abd406488d1f467bda0" prot="private" static="no" mutable="no">
+        <type>HFONT</type>
+        <definition>HFONT Font::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="14" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_font_1abf05d6ef1ed31fc6c2e555fc45dcb2b9" prot="private" static="no" mutable="no">
+        <type>HFONT</type>
+        <definition>HFONT Font::oldfont</definition>
+        <argsstring></argsstring>
+        <name>oldfont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="15" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_font_1a4e6a119206f505522100221c1fafde45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Font::Font</definition>
+        <argsstring>()</argsstring>
+        <name>Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="18" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.cpp" bodystart="4" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_font_1affe779785f1d6e69d4c4e46996201d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Font::Font</definition>
+        <argsstring>(HDC hDCint, int height=-24, int width=-10, float angleOfEscapement=0, float orientationAngle=0, int fontWeight=FW_BOLD, bool italic=false, bool underline=false, bool strikeout=false, int charsetIdentifyer=ANSI_CHARSET, int outputQuality=ANTIALIASED_QUALITY, std::string fontName=&quot;Courier New&quot;)</argsstring>
+        <name>Font</name>
+        <param>
+          <type><ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref></type>
+          <declname>hDCint</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>height</declname>
+          <defval>-24</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>width</declname>
+          <defval>-10</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angleOfEscapement</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>orientationAngle</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>fontWeight</declname>
+          <defval>FW_BOLD</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>italic</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>underline</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>strikeout</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>charsetIdentifyer</declname>
+          <defval>ANSI_CHARSET</defval>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>outputQuality</declname>
+          <defval>ANTIALIASED_QUALITY</defval>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>fontName</declname>
+          <defval>&quot;Courier New&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="20" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.cpp" bodystart="9" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_font_1a134aaa2f78af0c12d3ce504957169768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Font::~Font</definition>
+        <argsstring>()</argsstring>
+        <name>~Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="24" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_font_1af5da83acec19907e2481da2126e077bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Font::KillFont</definition>
+        <argsstring>()</argsstring>
+        <name>KillFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_font_1abc5d95a4605278837b3f6697f6499dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Font::glPrint</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>glPrint</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="27" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.cpp" bodystart="28" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" line="11" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Font.h" bodystart="10" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_font_1ae42e77c98bffa7851587bf2059bcfe6f" prot="private" virt="non-virtual"><scope>Font</scope><name>base</name></member>
+      <member refid="class_font_1a4239eb7a63fa7abd406488d1f467bda0" prot="private" virt="non-virtual"><scope>Font</scope><name>font</name></member>
+      <member refid="class_font_1a4e6a119206f505522100221c1fafde45" prot="public" virt="non-virtual"><scope>Font</scope><name>Font</name></member>
+      <member refid="class_font_1affe779785f1d6e69d4c4e46996201d7d" prot="public" virt="non-virtual"><scope>Font</scope><name>Font</name></member>
+      <member refid="class_font_1abc5d95a4605278837b3f6697f6499dc1" prot="public" virt="non-virtual"><scope>Font</scope><name>glPrint</name></member>
+      <member refid="class_font_1af5da83acec19907e2481da2126e077bc" prot="public" virt="non-virtual"><scope>Font</scope><name>KillFont</name></member>
+      <member refid="class_font_1abf05d6ef1ed31fc6c2e555fc45dcb2b9" prot="private" virt="non-virtual"><scope>Font</scope><name>oldfont</name></member>
+      <member refid="class_font_1a134aaa2f78af0c12d3ce504957169768" prot="public" virt="non-virtual"><scope>Font</scope><name>~Font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

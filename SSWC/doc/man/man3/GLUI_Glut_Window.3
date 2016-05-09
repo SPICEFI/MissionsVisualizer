@@ -1,0 +1,111 @@
+.TH "GLUI_Glut_Window" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Glut_Window \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Node\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Glut_Window\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBglut_window_id\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_keyboard_CB\fP )(unsigned char, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_special_CB\fP )(\fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_reshape_CB\fP )(\fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_passive_motion_CB\fP )(\fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_mouse_CB\fP )(\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_visibility_CB\fP )(\fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_motion_CB\fP )(\fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_display_CB\fP )(\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBglut_entry_CB\fP )(\fBint\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A top-level window\&. The GLUI_Master GLUT callback can route events to the callbacks in this class, for arbitrary use by external users\&. (see \fBGLUI_Master_Object::set_glutKeyboardFunc\fP)\&.
+.PP
+This entire approach seems to be superceded by the 'subwindow' flavor of \fBGLUI\fP\&. 
+.PP
+Definition at line 569 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Glut_Window::GLUI_Glut_Window ()"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_display_CB)(\fBvoid\fP)"
+
+.PP
+Definition at line 584 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_entry_CB)(\fBint\fP)"
+
+.PP
+Definition at line 585 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_keyboard_CB)(unsigned char, \fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 577 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_motion_CB)(\fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 583 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_mouse_CB)(\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 581 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_passive_motion_CB)(\fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 580 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_reshape_CB)(\fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 579 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_special_CB)(\fBint\fP, \fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 578 of file glui\&.h\&.
+.SS "\fBvoid\fP(* GLUI_Glut_Window::glut_visibility_CB)(\fBint\fP)"
+
+.PP
+Definition at line 582 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Glut_Window::glut_window_id"
+
+.PP
+Definition at line 574 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

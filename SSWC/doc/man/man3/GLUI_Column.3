@@ -1,0 +1,69 @@
+.TH "GLUI_Column" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Column \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Column\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBint\fP draw_bar=true)"
+.br
+.ti -1c
+.RI "\fBGLUI_Column\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A \fBGLUI_Column\fP object separates all previous controls from subsequent controls with a vertical bar\&. 
+.PP
+Definition at line 1061 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Column::GLUI_Column (\fBGLUI_Node\fP *parent, \fBint\fPdraw_bar = \fCtrue\fP)"
+Create a new column, which separates the previous controls from subsequent controls\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP The panel our object is inside; or the main \fBGLUI\fP object\&. 
+.br
+\fIdraw_bar\fP If true, draw a visible bar between new and old controls\&. 
+.RE
+.PP
+
+.SS "GLUI_Column::GLUI_Column (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 1074 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Column::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1077 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Column::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

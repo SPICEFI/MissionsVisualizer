@@ -1,0 +1,119 @@
+.TH "GLUI_FileBrowser" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_FileBrowser \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Panel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_FileBrowser\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP frame_type=\fBGLUI_PANEL_EMBOSSED\fP, \fBint\fP \fBuser_id\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBfbreaddir\fP (const char *)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_w\fP (\fBint\fP \fBw\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_h\fP (\fBint\fP \fBh\fP)"
+.br
+.ti -1c
+.RI "const char * \fBget_file\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_allow_change_dir\fP (\fBint\fP \fBc\fP)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBvoid\fP \fBdir_list_callback\fP (\fBGLUI_Control\fP *)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_List\fP * \fBlist\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_String\fP \fBcurrent_dir\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A list of files the user can select from\&. 
+.PP
+Definition at line 1139 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_FileBrowser::GLUI_FileBrowser (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPframe_type = \fC\fBGLUI_PANEL_EMBOSSED\fP\fP, \fBint\fPuser_id = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+Create a new list of files the user can select from\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP The panel our object is inside; or the main \fBGLUI\fP object\&. 
+.br
+\fIname\fP Prompt to give to the user at the top of the file browser\&. 
+.br
+\fIframe_type\fP Optional style to display the panel with--GLUI_PANEL_EMBOSSED by default\&. GLUI_PANEL_RAISED causes the panel to appear higher than the surroundings\&. GLUI_PANEL_NONE causes the panel's outline to be invisible\&. 
+.br
+\fIid\fP Optional ID number, to pass to the optional callback function\&. 
+.br
+\fIcallback\fP Optional callback function, taking either the int ID or control\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_FileBrowser::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1171 of file glui\&.h\&.
+.SS "static \fBvoid\fP GLUI_FileBrowser::dir_list_callback (\fBGLUI_Control\fP *)\fC [static]\fP"
+
+.SS "\fBvoid\fP GLUI_FileBrowser::fbreaddir (const char *)"
+
+.SS "const char* GLUI_FileBrowser::get_file ()\fC [inline]\fP"
+
+.PP
+Definition at line 1167 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_FileBrowser::set_allow_change_dir (\fBint\fPc)\fC [inline]\fP"
+
+.PP
+Definition at line 1168 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_FileBrowser::set_h (\fBint\fPh)"
+
+.SS "\fBvoid\fP GLUI_FileBrowser::set_w (\fBint\fPw)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGLUI_String\fP GLUI_FileBrowser::current_dir"
+
+.PP
+Definition at line 1160 of file glui\&.h\&.
+.SS "\fBGLUI_List\fP* GLUI_FileBrowser::list"
+
+.PP
+Definition at line 1159 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

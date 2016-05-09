@@ -1,0 +1,145 @@
+.TH "SSWC/src/Math/Quantity.h" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/Math/Quantity.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cmath>\fP
+.br
+\fC#include <string>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBUnit< length, time, mass >\fP"
+.br
+.ti -1c
+.RI "class \fBQuantity< length, time, mass >\fP"
+.br
+.ti -1c
+.RI "class \fBUnits::Metric\fP"
+.br
+.ti -1c
+.RI "class \fBUnits::Imperial\fP"
+.br
+.ti -1c
+.RI "class \fBUnits::Common\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBUnits\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBQuantity\fP< 1, 0, 0 > \fBLength\fP"
+.br
+.ti -1c
+.RI "typedef \fBQuantity\fP< 0, 1, 0 > \fBTime\fP"
+.br
+.ti -1c
+.RI "typedef \fBQuantity\fP< 0, 0, 1 > \fBMass\fP"
+.br
+.ti -1c
+.RI "typedef \fBQuantity\fP< 1,-1, 0 > \fBVelocity\fP"
+.br
+.ti -1c
+.RI "typedef \fBQuantity\fP< 1,-2, 0 > \fBAcceleration\fP"
+.br
+.ti -1c
+.RI "typedef \fBQuantity\fP< 3,-2, 0 > \fBGravitationalParameter\fP"
+.br
+.ti -1c
+.RI "typedef \fBUnit\fP< 1, 0, 0 > \fBLengthUnit\fP"
+.br
+.ti -1c
+.RI "typedef \fBUnit\fP< 0, 1, 0 > \fBTimeUnit\fP"
+.br
+.ti -1c
+.RI "typedef \fBUnit\fP< 0, 0, 1 > \fBMassUnit\fP"
+.br
+.ti -1c
+.RI "typedef \fBUnit\fP< 1,-1, 0 > \fBVelocityUnit\fP"
+.br
+.ti -1c
+.RI "typedef \fBUnit\fP< 1,-2, 0 > \fBAccelerationUnit\fP"
+.br
+.ti -1c
+.RI "typedef \fBUnit\fP< 3,-2, 0 > \fBGravitationalParameterUnit\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBpowi\fP (double \fBval\fP, \fBint\fP exp)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fBQuantity\fP<1, -2, 0> \fBAcceleration\fP"
+
+.PP
+Definition at line 219 of file Quantity\&.h\&.
+.SS "typedef \fBUnit\fP<1, -2, 0> \fBAccelerationUnit\fP"
+
+.PP
+Definition at line 226 of file Quantity\&.h\&.
+.SS "typedef \fBQuantity\fP<3, -2, 0> \fBGravitationalParameter\fP"
+
+.PP
+Definition at line 220 of file Quantity\&.h\&.
+.SS "typedef \fBUnit\fP<3, -2, 0> \fBGravitationalParameterUnit\fP"
+
+.PP
+Definition at line 227 of file Quantity\&.h\&.
+.SS "typedef \fBQuantity\fP<1, 0, 0> \fBLength\fP"
+
+.PP
+Definition at line 215 of file Quantity\&.h\&.
+.SS "typedef \fBUnit\fP<1, 0, 0> \fBLengthUnit\fP"
+
+.PP
+Definition at line 222 of file Quantity\&.h\&.
+.SS "typedef \fBQuantity\fP<0, 0, 1> \fBMass\fP"
+
+.PP
+Definition at line 217 of file Quantity\&.h\&.
+.SS "typedef \fBUnit\fP<0, 0, 1> \fBMassUnit\fP"
+
+.PP
+Definition at line 224 of file Quantity\&.h\&.
+.SS "typedef \fBQuantity\fP<0, 1, 0> \fBTime\fP"
+
+.PP
+Definition at line 216 of file Quantity\&.h\&.
+.SS "typedef \fBUnit\fP<0, 1, 0> \fBTimeUnit\fP"
+
+.PP
+Definition at line 223 of file Quantity\&.h\&.
+.SS "typedef \fBQuantity\fP<1, -1, 0> \fBVelocity\fP"
+
+.PP
+Definition at line 218 of file Quantity\&.h\&.
+.SS "typedef \fBUnit\fP<1, -1, 0> \fBVelocityUnit\fP"
+
+.PP
+Definition at line 225 of file Quantity\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "double powi (doubleval, \fBint\fPexp)"
+
+.PP
+Definition at line 3 of file Quantity\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

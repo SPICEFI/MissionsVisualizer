@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_planet_8cpp" kind="file">
+    <compoundname>Planet.cpp</compoundname>
+    <includes refid="_planet_8h" local="yes">Planet.h</includes>
+    <includes local="no">sstream</includes>
+    <incdepgraph>
+      <node id="1960">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1933">
+        <label>iomanip</label>
+      </node>
+      <node id="1950">
+        <label>windows.h</label>
+      </node>
+      <node id="1961">
+        <label>gl/gl.h</label>
+      </node>
+      <node id="1954">
+        <label>CSpice\Date.h</label>
+      </node>
+      <node id="1956">
+        <label>Math\Matrix4x4.h</label>
+      </node>
+      <node id="1953">
+        <label>CSpice\SpaceObject.h</label>
+      </node>
+      <node id="1921">
+        <label>Windows.h</label>
+      </node>
+      <node id="1937">
+        <label>cmath</label>
+      </node>
+      <node id="1943">
+        <label>stdexcept</label>
+      </node>
+      <node id="1930">
+        <label>string</label>
+      </node>
+      <node id="1923">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="1920">
+        <label>TGA.h</label>
+        <link refid="_t_g_a_8h"/>
+        <childnode refid="1921" relation="include">
+        </childnode>
+        <childnode refid="1922" relation="include">
+        </childnode>
+        <childnode refid="1923" relation="include">
+        </childnode>
+      </node>
+      <node id="1935">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1936" relation="include">
+        </childnode>
+      </node>
+      <node id="1932">
+        <label>fstream</label>
+      </node>
+      <node id="1940">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1941" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+      </node>
+      <node id="1939">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1935" relation="include">
+        </childnode>
+        <childnode refid="1940" relation="include">
+        </childnode>
+        <childnode refid="1938" relation="include">
+        </childnode>
+        <childnode refid="1942" relation="include">
+        </childnode>
+        <childnode refid="1944" relation="include">
+        </childnode>
+      </node>
+      <node id="1926">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="1927" relation="include">
+        </childnode>
+        <childnode refid="1928" relation="include">
+        </childnode>
+      </node>
+      <node id="1924">
+        <label>App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1925" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1931" relation="include">
+        </childnode>
+        <childnode refid="1932" relation="include">
+        </childnode>
+        <childnode refid="1933" relation="include">
+        </childnode>
+      </node>
+      <node id="1928">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1929" relation="include">
+        </childnode>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1931" relation="include">
+        </childnode>
+        <childnode refid="1932" relation="include">
+        </childnode>
+        <childnode refid="1933" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+      </node>
+      <node id="1957">
+        <label>Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="1950" relation="include">
+        </childnode>
+        <childnode refid="1958" relation="include">
+        </childnode>
+        <childnode refid="1959" relation="include">
+        </childnode>
+        <childnode refid="1960" relation="include">
+        </childnode>
+        <childnode refid="1961" relation="include">
+        </childnode>
+        <childnode refid="1962" relation="include">
+        </childnode>
+        <childnode refid="1930" relation="include">
+        </childnode>
+      </node>
+      <node id="1931">
+        <label>ctime</label>
+      </node>
+      <node id="1941">
+        <label>Time.h</label>
+      </node>
+      <node id="1934">
+        <label>vector</label>
+      </node>
+      <node id="1919">
+        <label>Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1920" relation="include">
+        </childnode>
+        <childnode refid="1924" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+        <childnode refid="1949" relation="include">
+        </childnode>
+        <childnode refid="1956" relation="include">
+        </childnode>
+        <childnode refid="1957" relation="include">
+        </childnode>
+      </node>
+      <node id="1948">
+        <label>array</label>
+      </node>
+      <node id="1929">
+        <label>sstream</label>
+      </node>
+      <node id="1949">
+        <label>Trajectory.h</label>
+        <link refid="_trajectory_8h"/>
+        <childnode refid="1950" relation="include">
+        </childnode>
+        <childnode refid="1951" relation="include">
+        </childnode>
+        <childnode refid="1952" relation="include">
+        </childnode>
+        <childnode refid="1953" relation="include">
+        </childnode>
+        <childnode refid="1954" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+        <childnode refid="1955" relation="include">
+        </childnode>
+        <childnode refid="1922" relation="include">
+        </childnode>
+        <childnode refid="1923" relation="include">
+        </childnode>
+      </node>
+      <node id="1951">
+        <label>Math\Vector3.h</label>
+      </node>
+      <node id="1958">
+        <label>math.h</label>
+      </node>
+      <node id="1944">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="1945" relation="include">
+        </childnode>
+        <childnode refid="1943" relation="include">
+        </childnode>
+      </node>
+      <node id="1918">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="Planet.cpp"/>
+        <childnode refid="1919" relation="include">
+        </childnode>
+        <childnode refid="1929" relation="include">
+        </childnode>
+      </node>
+      <node id="1952">
+        <label>Math\Quantity.h</label>
+      </node>
+      <node id="1955">
+        <label>deque</label>
+      </node>
+      <node id="1936">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="1937" relation="include">
+        </childnode>
+        <childnode refid="1930" relation="include">
+        </childnode>
+      </node>
+      <node id="1962">
+        <label>gl/glu.h</label>
+      </node>
+      <node id="1938">
+        <label>SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1939" relation="include">
+        </childnode>
+        <childnode refid="1935" relation="include">
+        </childnode>
+        <childnode refid="1940" relation="include">
+        </childnode>
+        <childnode refid="1942" relation="include">
+        </childnode>
+        <childnode refid="1946" relation="include">
+        </childnode>
+      </node>
+      <node id="1947">
+        <label>SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1938" relation="include">
+        </childnode>
+        <childnode refid="1936" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+        <childnode refid="1948" relation="include">
+        </childnode>
+      </node>
+      <node id="1922">
+        <label>gl\GL.h</label>
+      </node>
+      <node id="1959">
+        <label>stdio.h</label>
+      </node>
+      <node id="1945">
+        <label>cstring</label>
+      </node>
+      <node id="1927">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="1942">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="1937" relation="include">
+        </childnode>
+        <childnode refid="1943" relation="include">
+        </childnode>
+      </node>
+      <node id="1946">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="1937" relation="include">
+        </childnode>
+      </node>
+      <node id="1925">
+        <label>CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1928" relation="include">
+        </childnode>
+        <childnode refid="1935" relation="include">
+        </childnode>
+        <childnode refid="1938" relation="include">
+        </childnode>
+        <childnode refid="1947" relation="include">
+        </childnode>
+        <childnode refid="1939" relation="include">
+        </childnode>
+        <childnode refid="1940" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_planet_8h" kindref="compound">Planet.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>scale<sp/>=<sp/>0.0004f;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>scale<sp/>=<sp/>0.00000003f;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>extraScale<sp/>=<sp/>0.00004f;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>distanceScale<sp/>=<sp/>0.00000003f;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_planet_1a02ba902d9d51b174b4c57403f1638495" refkind="member"><highlight class="normal"><ref refid="class_planet_1a02ba902d9d51b174b4c57403f1638495" kindref="member">Planet::Planet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_body" kindref="compound">SpaceBody</ref>&amp;<sp/>body,<sp/><ref refid="class_t_g_a" kindref="compound">TGA</ref>*<sp/><ref refid="glext_8h_1ab21590c4736d1459a5a0674a42b5a655" kindref="member">texture</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_frame" kindref="compound">Frame</ref>&amp;<sp/>frame,<sp/><ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref><sp/>hdc)<sp/>:body(body),<sp/>trajectory(obj,<sp/>frame,<sp/>Units::Metric::kilometers)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;texture<sp/>=<sp/><ref refid="class_planet_1abe80bd4546d0c412fdb14bd831e035df" kindref="member">texture</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_planet_1aa0ecbff60832f5532799b452fa45783d" kindref="member">ID</ref><sp/>=<sp/>body.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_planet_1a0e7b5b758400af733e7a06380ff4cf84" kindref="member">marked</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_planet_1a7a9f21f63faf830b6bbbbec3e0ac668c" kindref="member">font</ref><sp/>=<sp/><ref refid="class_font" kindref="compound">Font</ref>(hdc);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(body.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>()<sp/>==<sp/>399)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>(</highlight><highlight class="stringliteral">&quot;Mar<sp/>29<sp/>2016<sp/>01:03:52.99996036291100000<sp/>(UTC+0)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">Time</ref><sp/>time(10,<sp/><ref refid="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" kindref="member">Units::Common::days</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_planet_1aa5996da28b63251a27728cc07f233234" kindref="member">trajectory</ref>.<ref refid="class_trajectory_1a14dc0715fca73b67deaf3b86855b73d4" kindref="member">SetStaticParams</ref>(t<sp/>-<sp/>time,<sp/>t<sp/>+<sp/>time,<sp/>100);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_planet_1aaa1aaed9d4ef90b4836531edb7b18e0a" refkind="member"><highlight class="normal"><ref refid="class_planet_1aaa1aaed9d4ef90b4836531edb7b18e0a" kindref="member">Planet::~Planet</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_planet_1a938d62dd26e9fc747bbc9eb7ab8fa177" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_planet_1a938d62dd26e9fc747bbc9eb7ab8fa177" kindref="member">Planet::Render</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>()<sp/>==<sp/><ref refid="_space_object_8h_1a70a62dce03c8c66364745759b836f902" kindref="member">SUN_SPICE_ID</ref>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glDisable(GL_LIGHT0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RenderObject(t,<sp/>app);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glEnable(GL_LIGHT0);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RenderObject(t,<sp/>app);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_planet_1ae7360bf0dbe27e47a2425c09587e3461" refkind="member"><highlight class="normal"><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/><ref refid="class_planet_1ae7360bf0dbe27e47a2425c09587e3461" kindref="member">Planet::GetPosition</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T &lt;Length&gt;</ref><sp/>pos<sp/>=<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_object_1aa88309b3c2a07ba8884a0f665d1a3c15" kindref="member">GetPosition</ref>(t,<sp/><ref refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" kindref="member">SpaceObject::SSB</ref>,<sp/>app.<ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">GetReferenceFrame</ref>());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>position(pos.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>,<sp/>pos.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>,<sp/>pos.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Planet::RenderObject(<ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if<sp/>(simpleRender)</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>0.000002f;</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>0.00000004f;</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHT0);</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(marked){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>scale<sp/>=<sp/>0.00005f;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}else{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>scale<sp/>=<sp/>0.00004f;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//#pragma<sp/>region<sp/>CHECK_IF_SUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>if<sp/>(body.GetSpiceId()<sp/>==<sp/>SUN_SPICE_ID){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>0.0000004f;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Object_Positioning</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T &lt;Length&gt;</ref><sp/>pos<sp/>=<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_object_1aa88309b3c2a07ba8884a0f665d1a3c15" kindref="member">GetPosition</ref>(t,<sp/><ref refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" kindref="member">SpaceObject::SSB</ref>,<sp/>app.<ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">GetReferenceFrame</ref>());</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>position(pos.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>,<sp/>pos.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>,<sp/>pos.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_frame" kindref="compound">Frame</ref><sp/>bodyFrame<sp/>=<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_body_1ae775f995eaa5a5467d6065be2f98f397" kindref="member">GetDefaultFrame</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref>&amp;<sp/><ref refid="glext_8h_1a7b24a3f2f56eb1244ae69dacb4fecb6f" kindref="member">matrix</ref><sp/>=<sp/>bodyFrame.<ref refid="class_frame_1a4862be40cebae8c367031baf2ca6dc8b" kindref="member">GetTransformationMatrix</ref>(t,<sp/>app.<ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">GetReferenceFrame</ref>());</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>matrix.<ref refid="class_matrix4x4_1a5868dcbb00ef438b651a90ac0950f93c" kindref="member">GetColumnMajor</ref>(<ref refid="class_planet_1adc07c8cd520fd4dac2c646c30085c65b" kindref="member">rotationMatrix</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>DRAW_INFO_BILLBOARD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_planet_1abeda08386455b0aae9f55b4623f89200" kindref="member">clicked</ref>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">Length</ref><sp/>radius<sp/>=<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_body_1ada3282b18f50ad81c02d97a7b0095dee" kindref="member">GetRadius</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DrawBillboard(position,<sp/>radius.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/><ref refid="glext_8h_1a281421b881aa7a1266842b73a3bc7655" kindref="member">scale</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>glPushName(<ref refid="class_planet_1aa0ecbff60832f5532799b452fa45783d" kindref="member">ID</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>glPushMatrix();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Trajectory_Rendering</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture(GL_TEXTURE_2D,<sp/><ref refid="glext_8h_1ab21590c4736d1459a5a0674a42b5a655" kindref="member">texture</ref>-&gt;getTextureHandle());</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>()<sp/>==<sp/>399)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RenderTrajectory(t);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>glTranslatef(position.x,<sp/>position.y,<sp/>position.z);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>glMultMatrixf(<ref refid="class_planet_1adc07c8cd520fd4dac2c646c30085c65b" kindref="member">rotationMatrix</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Render_As_Glu_Sphere</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_planet_1a0e7b5b758400af733e7a06380ff4cf84" kindref="member">marked</ref>)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glDisable(GL_LIGHT0);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture(GL_TEXTURE_2D,<sp/><ref refid="glext_8h_1ab21590c4736d1459a5a0674a42b5a655" kindref="member">texture</ref>-&gt;getTextureHandle());</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//render<sp/>as<sp/>a<sp/>GLU<sp/>sphere<sp/>quadric<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>GLUquadricObj*<sp/>quadric<sp/>=<sp/>gluNewQuadric();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>gluQuadricTexture(quadric,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>gluQuadricNormals(quadric,<sp/>GLU_SMOOTH);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">Length</ref><sp/>radius<sp/>=<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_body_1ada3282b18f50ad81c02d97a7b0095dee" kindref="member">GetRadius</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>gluSphere(quadric,<sp/>radius.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/><ref refid="glext_8h_1a281421b881aa7a1266842b73a3bc7655" kindref="member">scale</ref>,<sp/>30,<sp/>30);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>gluDeleteQuadric(quadric);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Planet_Info_Writing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3f(255.0,<sp/>255.0,<sp/>255.0);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="glext_8h_1a41a8247b39e9cdb744299c3331ca3453" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_planet_1a0e7b5b758400af733e7a06380ff4cf84" kindref="member">marked</ref>)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>strs;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Position:<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>pos.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>&lt;&lt;<sp/>app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>().<ref refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" kindref="member">str</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>pos.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>().<ref refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" kindref="member">str</ref>()<sp/>&lt;&lt;<sp/><sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>pos.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>&lt;&lt;<sp/>app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>().<ref refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" kindref="member">str</ref>()<sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>app.<ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">GetReferenceFrame</ref>().<ref refid="class_frame_1afc3c2fb53313f43fd6b906cd5423145e" kindref="member">GetName</ref>()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_object_1a5f202bec13294119b30e90f54ba2ed7f" kindref="member">GetName</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>strs.str();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_object_1a5f202bec13294119b30e90f54ba2ed7f" kindref="member">GetName</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>glRasterPos3f(0,<sp/>0,<sp/>radius.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/>1.1<sp/>*<sp/><ref refid="glext_8h_1a281421b881aa7a1266842b73a3bc7655" kindref="member">scale</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_planet_1a7a9f21f63faf830b6bbbbec3e0ac668c" kindref="member">font</ref>.<ref refid="class_font_1abc5d95a4605278837b3f6697f6499dc1" kindref="member">glPrint</ref>(data.c_str());</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>glPopMatrix();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>glPopName();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHT0);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Planet::DrawBillboard(<ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>planetPosition,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>radius)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="class_planet_1aa50208f541563334226c4e6ddcd5994f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_planet_1aa50208f541563334226c4e6ddcd5994f" kindref="member">Planet::ShowMessageBoxWithInfo</ref>(<ref refid="class_app" kindref="compound">App</ref>&amp;<sp/>app)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>strs;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>strs<sp/>&lt;&lt;<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_body_1ada3282b18f50ad81c02d97a7b0095dee" kindref="member">GetRadius</ref>().<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>&lt;&lt;<sp/>app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>().<ref refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" kindref="member">str</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>str<sp/>=<sp/>strs.str();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="glext_8h_1a1dbb21208b9047cc8031ca9c840d3c2f" kindref="member">res</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Name:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_object_1a5f202bec13294119b30e90f54ba2ed7f" kindref="member">GetName</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\nRadius:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>strs.str(<ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>());</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>strs.clear();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>str.clear();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>strs<sp/>&lt;&lt;<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_body_1ab5155fa5d6cc02f1dce20252187ff13d" kindref="member">GetMass</ref>().<ref refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" kindref="member">ValueInBase</ref>()<sp/>&lt;&lt;<sp/>app.<ref refid="class_app_1acf7486b4787ea7fe43abae0d166dfb5c" kindref="member">MassUnit</ref>().<ref refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" kindref="member">str</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>=<sp/>strs.str();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;Mass:<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/>+<sp/>str;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>strs.str(<ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>());</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>strs.clear();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>str.clear();</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>strs<sp/>&lt;&lt;<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_body_1aafaa2bca2b31f390a6c0094d3e36ff61" kindref="member">GetGM</ref>().<ref refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" kindref="member">ValueInBase</ref>()<sp/>&lt;&lt;<sp/>app.<ref refid="class_app_1a8487d93c3f260c9fc94f2ca40b526035" kindref="member">GMUnit</ref>().<ref refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" kindref="member">str</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>=<sp/>strs.str();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;Gravitational<sp/>Parameter:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>strs.str(<ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>());</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>strs.clear();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>str.clear();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>strs<sp/>&lt;&lt;<sp/><ref refid="class_planet_1a31ab1654dd709417ec574489f3ff9449" kindref="member">body</ref>.<ref refid="class_space_body_1a32dc9b481fe60576a78d4eab46be2d45" kindref="member">GetSurfaceAcceleration</ref>().<ref refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" kindref="member">ValueInBase</ref>()<sp/>&lt;&lt;<sp/>app.<ref refid="class_app_1a6227e7123ec66f2de575c3e8f8ad8380" kindref="member">AccelerationUnit</ref>().<ref refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" kindref="member">str</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>str<sp/>=<sp/>strs.str();</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;Surface<sp/>Acceleration:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>MessageBox(NULL,<sp/>res.c_str(),<sp/></highlight><highlight class="stringliteral">&quot;Information&quot;</highlight><highlight class="normal">,<sp/>MB_OK);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Planet::RenderTrajectory(<ref refid="class_date" kindref="compound">Date</ref><sp/>t,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lineWidth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>red,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ac14cda87cf6c751d53b65a3cd41c35a1" kindref="member">green</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1853b32584a90fa75432925f3e26d0e8" kindref="member">blue</ref>)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>glLineWidth(lineWidth);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3f(red,<sp/>green,<sp/>blue);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_LINE_STRIP);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LINE_SMOOTH);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_planet_1aa5996da28b63251a27728cc07f233234" kindref="member">trajectory</ref>.<ref refid="class_trajectory_1a44237f7a5422f3006b4b2aa64cadbb9c" kindref="member">StaticDefined</ref>())</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector3&gt;&amp;<sp/><ref refid="glext_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref><sp/>=<sp/><ref refid="class_planet_1aa5996da28b63251a27728cc07f233234" kindref="member">trajectory</ref>.<ref refid="class_trajectory_1a6cb4148a8a21abce789f2a0097faf092" kindref="member">GetStaticTrajectory</ref>();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>path.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex3f(path.at(i).x<sp/>*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>,<sp/>path.at(i).y<sp/>*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>,<sp/>path.at(i).z<sp/>*<sp/><ref refid="class_planet_1a233de9f5467dd01708a6ea14fadeb057" kindref="member">distanceScale</ref>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>glDisable(GL_LINE_SMOOTH);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Planet.cpp"/>
+  </compounddef>
+</doxygen>

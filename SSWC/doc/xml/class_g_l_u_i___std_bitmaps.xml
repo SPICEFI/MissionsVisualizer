@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___std_bitmaps" kind="class" prot="public">
+    <compoundname>GLUI_StdBitmaps</compoundname>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___std_bitmaps_1ab7ec075f449d37281f24154a24c60e85" prot="private" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___bitmap" kindref="compound">GLUI_Bitmap</ref></type>
+        <definition>GLUI_Bitmap GLUI_StdBitmaps::bitmaps[GLUI_STDBITMAP_NUM_ITEMS]</definition>
+        <argsstring>[GLUI_STDBITMAP_NUM_ITEMS]</argsstring>
+        <name>bitmaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="458" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_l_u_i___std_bitmaps_1a37cf47766c3dd9eedd84360f017d5a5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_StdBitmaps::GLUI_StdBitmaps</definition>
+        <argsstring>()</argsstring>
+        <name>GLUI_StdBitmaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="444" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___std_bitmaps_1a56439178a037e91a701450feb69f2474" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_StdBitmaps::~GLUI_StdBitmaps</definition>
+        <argsstring>()</argsstring>
+        <name>~GLUI_StdBitmaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="445" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___std_bitmaps_1ad3a2b8300692f83de6329545f716597f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_StdBitmaps::width</definition>
+        <argsstring>(int n) const </argsstring>
+        <name>width</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the width (in pixels) of the n&apos;th standard bitmap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="448" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___std_bitmaps_1a300ea4a965d0b80777bcc7e0e7117dd8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLUI_StdBitmaps::height</definition>
+        <argsstring>(int n) const </argsstring>
+        <name>height</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the height (in pixels) of the n&apos;th standard bitmap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="450" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___std_bitmaps_1ae073d4320cc030a1d0a7032d54334838" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_StdBitmaps::draw</definition>
+        <argsstring>(int n, int x, int y) const </argsstring>
+        <name>draw</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw the n&apos;th standard bitmap (one of the enums listed in GLUI_StdBitmaps_Codes) at pixel corner (x,y). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="455" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Keeps an array of <ref refid="class_g_l_u_i___bitmap" kindref="compound">GLUI_Bitmap</ref> objects to represent all the images used in the UI: checkboxes, arrows, etc. </para>    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="442" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="441" bodyend="459"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___std_bitmaps_1ab7ec075f449d37281f24154a24c60e85" prot="private" virt="non-virtual"><scope>GLUI_StdBitmaps</scope><name>bitmaps</name></member>
+      <member refid="class_g_l_u_i___std_bitmaps_1ae073d4320cc030a1d0a7032d54334838" prot="public" virt="non-virtual"><scope>GLUI_StdBitmaps</scope><name>draw</name></member>
+      <member refid="class_g_l_u_i___std_bitmaps_1a37cf47766c3dd9eedd84360f017d5a5e" prot="public" virt="non-virtual"><scope>GLUI_StdBitmaps</scope><name>GLUI_StdBitmaps</name></member>
+      <member refid="class_g_l_u_i___std_bitmaps_1a300ea4a965d0b80777bcc7e0e7117dd8" prot="public" virt="non-virtual"><scope>GLUI_StdBitmaps</scope><name>height</name></member>
+      <member refid="class_g_l_u_i___std_bitmaps_1ad3a2b8300692f83de6329545f716597f" prot="public" virt="non-virtual"><scope>GLUI_StdBitmaps</scope><name>width</name></member>
+      <member refid="class_g_l_u_i___std_bitmaps_1a56439178a037e91a701450feb69f2474" prot="public" virt="non-virtual"><scope>GLUI_StdBitmaps</scope><name>~GLUI_StdBitmaps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

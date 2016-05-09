@@ -1,0 +1,124 @@
+.TH "SSWC/src/Program.h" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/Program.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <windows\&.h>\fP
+.br
+\fC#include 'glCameara\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBKeys\fP"
+.br
+.ti -1c
+.RI "struct \fBApplication\fP"
+.br
+.ti -1c
+.RI "struct \fBGL_WindowInit\fP"
+.br
+.ti -1c
+.RI "struct \fBGL_Window\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBTerminateApplication\fP (\fBGL_Window\fP *window)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBToggleFullscreen\fP (\fBGL_Window\fP *window)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBChangeMode\fP (\fBGL_Window\fP *window)"
+.br
+.ti -1c
+.RI "\fBBOOL\fP \fBInitialize\fP (\fBGL_Window\fP *window, \fBKeys\fP *keys)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBDeinitialize\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBUpdate\fP (DWORD milliseconds)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBDraw\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSelection\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmouse_x\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_y\fP"
+.br
+.ti -1c
+.RI "bool \fBLEFT_MOUSE_BUTTON_DOWN\fP"
+.br
+.ti -1c
+.RI "bool \fBMOUSE_CHANGED_POSITION\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP ChangeMode (\fBGL_Window\fP *window)"
+
+.PP
+Definition at line 38 of file Program\&.cpp\&.
+.SS "\fBvoid\fP Deinitialize (\fBvoid\fP)"
+
+.SS "\fBvoid\fP Draw (\fBvoid\fP)"
+
+.PP
+Definition at line 308 of file Routine\&.cpp\&.
+.SS "\fBBOOL\fP Initialize (\fBGL_Window\fP *window, \fBKeys\fP *keys)"
+
+.PP
+Definition at line 56 of file Routine\&.cpp\&.
+.SS "\fBvoid\fP Selection (\fBvoid\fP)"
+
+.SS "\fBvoid\fP TerminateApplication (\fBGL_Window\fP *window)"
+
+.PP
+Definition at line 27 of file Program\&.cpp\&.
+.SS "\fBvoid\fP ToggleFullscreen (\fBGL_Window\fP *window)"
+
+.PP
+Definition at line 33 of file Program\&.cpp\&.
+.SS "\fBvoid\fP Update (DWORDmilliseconds)"
+
+.PP
+Definition at line 145 of file Routine\&.cpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "bool LEFT_MOUSE_BUTTON_DOWN"
+
+.PP
+Definition at line 21 of file Program\&.cpp\&.
+.SS "bool MOUSE_CHANGED_POSITION"
+
+.PP
+Definition at line 22 of file Program\&.cpp\&.
+.SS "\fBint\fP mouse_x"
+
+.PP
+Definition at line 16 of file Program\&.cpp\&.
+.SS "\fBint\fP mouse_y"
+
+.PP
+Definition at line 16 of file Program\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_c_spice_util" kind="class" prot="public">
+    <compoundname>CSpiceUtil</compoundname>
+    <includes refid="_c_spice_util_8h" local="no">CSpiceUtil.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_c_spice_util_1abca7b6c0fcb708c04d664aed30d82226" prot="private" static="yes" mutable="no">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string CSpiceUtil::logFile</definition>
+        <argsstring></argsstring>
+        <name>logFile</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="70" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_c_spice_util_1a1bc23133b0aa142ccc71d5fd85d0e609" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void CSpiceUtil::SetErrorHandlingParams</definition>
+        <argsstring>(const std::string &amp;action, const std::string &amp;device)</argsstring>
+        <name>SetErrorHandlingParams</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="49" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="3" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1af1b073c99197ec2a2d22772e3a86d30d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void CSpiceUtil::SetLoggingFile</definition>
+        <argsstring>(const std::string &amp;file)</argsstring>
+        <name>SetLoggingFile</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="50" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1a0940aa96ffa3ef14f0ea2510c4163710" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void CSpiceUtil::LoadKernel</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>LoadKernel</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="52" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1a596f67731f91d55c8bb9b57e9ccb9c3d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_kernel_data" kindref="compound">KernelData</ref> &gt;</type>
+        <definition>std::vector&lt; KernelData &gt; CSpiceUtil::GetLoadedKernels</definition>
+        <argsstring>(const std::string &amp;type=&quot;ALL&quot;)</argsstring>
+        <name>GetLoadedKernels</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>type</declname>
+          <defval>&quot;ALL&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="53" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="31" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1aeb94a04c72d380e3d2ed82b93ea2ab8f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string CSpiceUtil::GetShortErrorMessage</definition>
+        <argsstring>()</argsstring>
+        <name>GetShortErrorMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="55" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1a9f5342e5699102d1f8ab772c43229a1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string CSpiceUtil::GetExplainErrorMessage</definition>
+        <argsstring>()</argsstring>
+        <name>GetExplainErrorMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="56" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="68" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1a22c2279dc23954b16e54261cad31ed9f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string CSpiceUtil::GetLongErrorMessage</definition>
+        <argsstring>()</argsstring>
+        <name>GetLongErrorMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="57" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1aec756d470ac2d41a2b66f096783350d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string CSpiceUtil::GetTraceback</definition>
+        <argsstring>()</argsstring>
+        <name>GetTraceback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="58" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1ad91e1b9618b9514d4cfd516a446a7e11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void CSpiceUtil::SignalError</definition>
+        <argsstring>(const std::string &amp;errorMsg)</argsstring>
+        <name>SignalError</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>errorMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="60" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="92" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1a8ee7a37df1a51e2cdfe2681fbd57fdbc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void CSpiceUtil::LogError</definition>
+        <argsstring>(const std::string &amp;extraMsg)</argsstring>
+        <name>LogError</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>extraMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="61" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="99" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1ab48e656441c984750f672468e19d99d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void CSpiceUtil::ResetErrorFlag</definition>
+        <argsstring>()</argsstring>
+        <name>ResetErrorFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="63" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1ab25fa56cd04c09b14f79c0f6fc8fe41b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt; long &gt; CSpiceUtil::IntCellToVector</definition>
+        <argsstring>(SpiceCell cell)</argsstring>
+        <name>IntCellToVector</name>
+        <param>
+          <type>SpiceCell</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="65" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="133" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_spice_util_1aaa992f2f108a00da3b758207514a1a0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; CSpiceUtil::DoubleCellToVector</definition>
+        <argsstring>(SpiceCell cell)</argsstring>
+        <name>DoubleCellToVector</name>
+        <param>
+          <type>SpiceCell</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="66" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.cpp" bodystart="151" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" line="47" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/CSpiceUtil.h" bodystart="46" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_c_spice_util_1aaa992f2f108a00da3b758207514a1a0b" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>DoubleCellToVector</name></member>
+      <member refid="class_c_spice_util_1a9f5342e5699102d1f8ab772c43229a1c" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>GetExplainErrorMessage</name></member>
+      <member refid="class_c_spice_util_1a596f67731f91d55c8bb9b57e9ccb9c3d" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>GetLoadedKernels</name></member>
+      <member refid="class_c_spice_util_1a22c2279dc23954b16e54261cad31ed9f" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>GetLongErrorMessage</name></member>
+      <member refid="class_c_spice_util_1aeb94a04c72d380e3d2ed82b93ea2ab8f" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>GetShortErrorMessage</name></member>
+      <member refid="class_c_spice_util_1aec756d470ac2d41a2b66f096783350d7" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>GetTraceback</name></member>
+      <member refid="class_c_spice_util_1ab25fa56cd04c09b14f79c0f6fc8fe41b" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>IntCellToVector</name></member>
+      <member refid="class_c_spice_util_1a0940aa96ffa3ef14f0ea2510c4163710" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>LoadKernel</name></member>
+      <member refid="class_c_spice_util_1a8ee7a37df1a51e2cdfe2681fbd57fdbc" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>LogError</name></member>
+      <member refid="class_c_spice_util_1abca7b6c0fcb708c04d664aed30d82226" prot="private" virt="non-virtual"><scope>CSpiceUtil</scope><name>logFile</name></member>
+      <member refid="class_c_spice_util_1ab48e656441c984750f672468e19d99d3" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>ResetErrorFlag</name></member>
+      <member refid="class_c_spice_util_1a1bc23133b0aa142ccc71d5fd85d0e609" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>SetErrorHandlingParams</name></member>
+      <member refid="class_c_spice_util_1af1b073c99197ec2a2d22772e3a86d30d" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>SetLoggingFile</name></member>
+      <member refid="class_c_spice_util_1ad91e1b9618b9514d4cfd516a446a7e11" prot="public" virt="non-virtual"><scope>CSpiceUtil</scope><name>SignalError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

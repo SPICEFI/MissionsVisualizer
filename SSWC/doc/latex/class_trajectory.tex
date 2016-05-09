@@ -1,0 +1,342 @@
+\hypertarget{class_trajectory}{\section{Trajectory Class Reference}
+\label{class_trajectory}\index{Trajectory@{Trajectory}}
+}
+
+
+{\ttfamily \#include $<$Trajectory.\+h$>$}
+
+
+
+Collaboration diagram for Trajectory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trajectory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trajectory_af06089eb6ef979e970ffea5c27d9d9c1}{Trajectory} (const \hyperlink{class_space_object}{Space\+Object} \&\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}, \hyperlink{class_frame}{Frame} \hyperlink{class_trajectory_a37e42637b529f9939b499600a07d2660}{frame}, const \hyperlink{_quantity_8h_afb62d6d68e6cd2c62c96aa8c3aeb7d1f}{Length\+Unit} \&\hyperlink{class_trajectory_a8d881aa7724623b0a675a7f3cbe118bc}{unit})
+\item 
+\hyperlink{class_trajectory_ac673c37025ca5353ad99ab41c936e75d}{$\sim$\+Trajectory} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_trajectory_a8b446ebdbb4e99e0688ba5eff107ad2e}{Set\+Relative\+To} (const \hyperlink{class_space_object}{Space\+Object} \&\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_trajectory_afbad58d4ab10afa7d50ec213380e4000}{Set\+Relative\+To\+Frame\+Center} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_trajectory_a14dc0715fca73b67deaf3b86855b73d4}{Set\+Static\+Params} (\hyperlink{class_date}{Date} start\+Date, \hyperlink{class_date}{Date} end\+Date, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} resolution)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_trajectory_a7fd57ddb9ca5afce1aaffb7e6fad66b0}{Set\+Incremental\+Params} (\hyperlink{class_date}{Date} start\+Date, \hyperlink{_quantity_8h_ab180382d5dc1bcb91259cbd59a5d86fc}{Time} history\+Duration, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} resolution)
+\item 
+const std\+::deque$<$ \hyperlink{class_vector3}{Vector3} $>$ \& \hyperlink{class_trajectory_a9386e11e76cd7769447559ca8b6013b1}{Get\+Incremental\+Trajectory} (\hyperlink{class_date}{Date} cur\+Date)
+\item 
+const std\+::vector$<$ \hyperlink{class_vector3}{Vector3} $>$ \& \hyperlink{class_trajectory_a6cb4148a8a21abce789f2a0097faf092}{Get\+Static\+Trajectory} () const 
+\item 
+bool \hyperlink{class_trajectory_a13373b83b45bb664c3b9b8ef8b108e75}{Incremental\+Defined} () const 
+\item 
+bool \hyperlink{class_trajectory_a44237f7a5422f3006b4b2aa64cadbb9c}{Static\+Defined} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_space_object}{Space\+Object} \& \hyperlink{class_trajectory_a7e553e1118e6a4accfacb8fae0d24f2b}{obj}
+\item 
+\hyperlink{class_frame}{Frame} \hyperlink{class_trajectory_a37e42637b529f9939b499600a07d2660}{frame}
+\item 
+\hyperlink{_quantity_8h_afb62d6d68e6cd2c62c96aa8c3aeb7d1f}{Length\+Unit} \hyperlink{class_trajectory_a8d881aa7724623b0a675a7f3cbe118bc}{unit}
+\item 
+const \hyperlink{class_space_object}{Space\+Object} $\ast$ \hyperlink{class_trajectory_aa0634363940b3bfa6c069a58b89fe975}{relative\+To}
+\item 
+bool \hyperlink{class_trajectory_a28f0f31968990bc14ef64093f863f15e}{static\+Defined}
+\item 
+std\+::vector$<$ \hyperlink{class_vector3}{Vector3} $>$ \hyperlink{class_trajectory_a8a7ff5214ca817280dea38c3f5c62cbf}{static\+Trajectory}
+\item 
+bool \hyperlink{class_trajectory_ac51564d2490c6d02fce1b28d67afe8e6}{incremental\+Defined}
+\item 
+\hyperlink{class_date}{Date} \hyperlink{class_trajectory_a6d2fbd4cfaec29cfdf4f801318a88f3d}{prev\+Date}
+\item 
+std\+::deque$<$ \hyperlink{class_vector3}{Vector3} $>$ \hyperlink{class_trajectory_a78edc3b797f73f84656279d08cb2bd37}{incremental\+Trajectory}
+\item 
+\hyperlink{class_date}{Date} \hyperlink{class_trajectory_a37ed928f5e147cf76d702f0aae0f0bee}{inc\+Start\+Date}
+\item 
+\hyperlink{_quantity_8h_ab180382d5dc1bcb91259cbd59a5d86fc}{Time} \hyperlink{class_trajectory_a7330cbb6db806aefd41b22fcedb00e83}{inc\+History\+Duration}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_trajectory_a8894f4a18e771016f5e76d52209e6eee}{inc\+Resolution}
+\item 
+\hyperlink{_quantity_8h_ab180382d5dc1bcb91259cbd59a5d86fc}{Time} \hyperlink{class_trajectory_a49cef2583b8b87c9d9afe963d381426d}{inc\+Step\+Duration}
+\item 
+\hyperlink{class_date}{Date} \hyperlink{class_trajectory_ab04d69563f531cfbdf3f61f107592d44}{next\+Point\+Date}
+\item 
+float \hyperlink{class_trajectory_a7cf337f408aa8f27d93c68d40d5030ce}{line\+Width} = 1.\+0f
+\item 
+float \hyperlink{class_trajectory_a3000185975d15a117e751eb9908593fe}{red} = 255.\+0f
+\item 
+float \hyperlink{class_trajectory_a26301a3b5552b8dabc1b620a426fbcf0}{green} = 255.\+0f
+\item 
+float \hyperlink{class_trajectory_aab23c0150b87a4df1564c403ecd17507}{blue} = 255.\+0f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Trajectory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_trajectory_af06089eb6ef979e970ffea5c27d9d9c1}{\index{Trajectory@{Trajectory}!Trajectory@{Trajectory}}
+\index{Trajectory@{Trajectory}!Trajectory@{Trajectory}}
+\subsubsection[{Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}Trajectory\+::\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{obj, }
+\item[{{\bf Frame}}]{frame, }
+\item[{const {\bf Length\+Unit} \&}]{unit}
+\end{DoxyParamCaption}
+)}}\label{class_trajectory_af06089eb6ef979e970ffea5c27d9d9c1}
+
+
+Definition at line 4 of file Trajectory.\+cpp.
+
+\hypertarget{class_trajectory_ac673c37025ca5353ad99ab41c936e75d}{\index{Trajectory@{Trajectory}!````~Trajectory@{$\sim$\+Trajectory}}
+\index{````~Trajectory@{$\sim$\+Trajectory}!Trajectory@{Trajectory}}
+\subsubsection[{$\sim$\+Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}Trajectory\+::$\sim$\+Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_trajectory_ac673c37025ca5353ad99ab41c936e75d}
+
+
+Definition at line 47 of file Trajectory.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_trajectory_a9386e11e76cd7769447559ca8b6013b1}{\index{Trajectory@{Trajectory}!Get\+Incremental\+Trajectory@{Get\+Incremental\+Trajectory}}
+\index{Get\+Incremental\+Trajectory@{Get\+Incremental\+Trajectory}!Trajectory@{Trajectory}}
+\subsubsection[{Get\+Incremental\+Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::deque$<$ {\bf Vector3} $>$ \& Trajectory\+::\+Get\+Incremental\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{cur\+Date}
+\end{DoxyParamCaption}
+)}}\label{class_trajectory_a9386e11e76cd7769447559ca8b6013b1}
+
+
+Definition at line 53 of file Trajectory.\+cpp.
+
+\hypertarget{class_trajectory_a6cb4148a8a21abce789f2a0097faf092}{\index{Trajectory@{Trajectory}!Get\+Static\+Trajectory@{Get\+Static\+Trajectory}}
+\index{Get\+Static\+Trajectory@{Get\+Static\+Trajectory}!Trajectory@{Trajectory}}
+\subsubsection[{Get\+Static\+Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ {\bf Vector3} $>$ \& Trajectory\+::\+Get\+Static\+Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_trajectory_a6cb4148a8a21abce789f2a0097faf092}
+
+
+Definition at line 72 of file Trajectory.\+cpp.
+
+\hypertarget{class_trajectory_a13373b83b45bb664c3b9b8ef8b108e75}{\index{Trajectory@{Trajectory}!Incremental\+Defined@{Incremental\+Defined}}
+\index{Incremental\+Defined@{Incremental\+Defined}!Trajectory@{Trajectory}}
+\subsubsection[{Incremental\+Defined}]{\setlength{\rightskip}{0pt plus 5cm}bool Trajectory\+::\+Incremental\+Defined (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_trajectory_a13373b83b45bb664c3b9b8ef8b108e75}
+
+
+Definition at line 57 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a7fd57ddb9ca5afce1aaffb7e6fad66b0}{\index{Trajectory@{Trajectory}!Set\+Incremental\+Params@{Set\+Incremental\+Params}}
+\index{Set\+Incremental\+Params@{Set\+Incremental\+Params}!Trajectory@{Trajectory}}
+\subsubsection[{Set\+Incremental\+Params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Trajectory\+::\+Set\+Incremental\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{start\+Date, }
+\item[{{\bf Time}}]{history\+Duration, }
+\item[{{\bf int}}]{resolution}
+\end{DoxyParamCaption}
+)}}\label{class_trajectory_a7fd57ddb9ca5afce1aaffb7e6fad66b0}
+
+
+Definition at line 41 of file Trajectory.\+cpp.
+
+\hypertarget{class_trajectory_a8b446ebdbb4e99e0688ba5eff107ad2e}{\index{Trajectory@{Trajectory}!Set\+Relative\+To@{Set\+Relative\+To}}
+\index{Set\+Relative\+To@{Set\+Relative\+To}!Trajectory@{Trajectory}}
+\subsubsection[{Set\+Relative\+To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Trajectory\+::\+Set\+Relative\+To (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Object} \&}]{obj}
+\end{DoxyParamCaption}
+)}}\label{class_trajectory_a8b446ebdbb4e99e0688ba5eff107ad2e}
+
+
+Definition at line 19 of file Trajectory.\+cpp.
+
+\hypertarget{class_trajectory_afbad58d4ab10afa7d50ec213380e4000}{\index{Trajectory@{Trajectory}!Set\+Relative\+To\+Frame\+Center@{Set\+Relative\+To\+Frame\+Center}}
+\index{Set\+Relative\+To\+Frame\+Center@{Set\+Relative\+To\+Frame\+Center}!Trajectory@{Trajectory}}
+\subsubsection[{Set\+Relative\+To\+Frame\+Center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Trajectory\+::\+Set\+Relative\+To\+Frame\+Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trajectory_afbad58d4ab10afa7d50ec213380e4000}
+
+
+Definition at line 24 of file Trajectory.\+cpp.
+
+\hypertarget{class_trajectory_a14dc0715fca73b67deaf3b86855b73d4}{\index{Trajectory@{Trajectory}!Set\+Static\+Params@{Set\+Static\+Params}}
+\index{Set\+Static\+Params@{Set\+Static\+Params}!Trajectory@{Trajectory}}
+\subsubsection[{Set\+Static\+Params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Trajectory\+::\+Set\+Static\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{start\+Date, }
+\item[{{\bf Date}}]{end\+Date, }
+\item[{{\bf int}}]{resolution}
+\end{DoxyParamCaption}
+)}}\label{class_trajectory_a14dc0715fca73b67deaf3b86855b73d4}
+
+
+Definition at line 29 of file Trajectory.\+cpp.
+
+\hypertarget{class_trajectory_a44237f7a5422f3006b4b2aa64cadbb9c}{\index{Trajectory@{Trajectory}!Static\+Defined@{Static\+Defined}}
+\index{Static\+Defined@{Static\+Defined}!Trajectory@{Trajectory}}
+\subsubsection[{Static\+Defined}]{\setlength{\rightskip}{0pt plus 5cm}bool Trajectory\+::\+Static\+Defined (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_trajectory_a44237f7a5422f3006b4b2aa64cadbb9c}
+
+
+Definition at line 62 of file Trajectory.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_trajectory_aab23c0150b87a4df1564c403ecd17507}{\index{Trajectory@{Trajectory}!blue@{blue}}
+\index{blue@{blue}!Trajectory@{Trajectory}}
+\subsubsection[{blue}]{\setlength{\rightskip}{0pt plus 5cm}float Trajectory\+::blue = 255.\+0f\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_aab23c0150b87a4df1564c403ecd17507}
+
+
+Definition at line 43 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a37e42637b529f9939b499600a07d2660}{\index{Trajectory@{Trajectory}!frame@{frame}}
+\index{frame@{frame}!Trajectory@{Trajectory}}
+\subsubsection[{frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Frame} Trajectory\+::frame\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a37e42637b529f9939b499600a07d2660}
+
+
+Definition at line 23 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a26301a3b5552b8dabc1b620a426fbcf0}{\index{Trajectory@{Trajectory}!green@{green}}
+\index{green@{green}!Trajectory@{Trajectory}}
+\subsubsection[{green}]{\setlength{\rightskip}{0pt plus 5cm}float Trajectory\+::green = 255.\+0f\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a26301a3b5552b8dabc1b620a426fbcf0}
+
+
+Definition at line 42 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a7330cbb6db806aefd41b22fcedb00e83}{\index{Trajectory@{Trajectory}!inc\+History\+Duration@{inc\+History\+Duration}}
+\index{inc\+History\+Duration@{inc\+History\+Duration}!Trajectory@{Trajectory}}
+\subsubsection[{inc\+History\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time} Trajectory\+::inc\+History\+Duration\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a7330cbb6db806aefd41b22fcedb00e83}
+
+
+Definition at line 35 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_ac51564d2490c6d02fce1b28d67afe8e6}{\index{Trajectory@{Trajectory}!incremental\+Defined@{incremental\+Defined}}
+\index{incremental\+Defined@{incremental\+Defined}!Trajectory@{Trajectory}}
+\subsubsection[{incremental\+Defined}]{\setlength{\rightskip}{0pt plus 5cm}bool Trajectory\+::incremental\+Defined\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_ac51564d2490c6d02fce1b28d67afe8e6}
+
+
+Definition at line 31 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a78edc3b797f73f84656279d08cb2bd37}{\index{Trajectory@{Trajectory}!incremental\+Trajectory@{incremental\+Trajectory}}
+\index{incremental\+Trajectory@{incremental\+Trajectory}!Trajectory@{Trajectory}}
+\subsubsection[{incremental\+Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}std\+::deque$<${\bf Vector3}$>$ Trajectory\+::incremental\+Trajectory\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a78edc3b797f73f84656279d08cb2bd37}
+
+
+Definition at line 33 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a8894f4a18e771016f5e76d52209e6eee}{\index{Trajectory@{Trajectory}!inc\+Resolution@{inc\+Resolution}}
+\index{inc\+Resolution@{inc\+Resolution}!Trajectory@{Trajectory}}
+\subsubsection[{inc\+Resolution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Trajectory\+::inc\+Resolution\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a8894f4a18e771016f5e76d52209e6eee}
+
+
+Definition at line 36 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a37ed928f5e147cf76d702f0aae0f0bee}{\index{Trajectory@{Trajectory}!inc\+Start\+Date@{inc\+Start\+Date}}
+\index{inc\+Start\+Date@{inc\+Start\+Date}!Trajectory@{Trajectory}}
+\subsubsection[{inc\+Start\+Date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Trajectory\+::inc\+Start\+Date\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a37ed928f5e147cf76d702f0aae0f0bee}
+
+
+Definition at line 34 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a49cef2583b8b87c9d9afe963d381426d}{\index{Trajectory@{Trajectory}!inc\+Step\+Duration@{inc\+Step\+Duration}}
+\index{inc\+Step\+Duration@{inc\+Step\+Duration}!Trajectory@{Trajectory}}
+\subsubsection[{inc\+Step\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time} Trajectory\+::inc\+Step\+Duration\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a49cef2583b8b87c9d9afe963d381426d}
+
+
+Definition at line 37 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a7cf337f408aa8f27d93c68d40d5030ce}{\index{Trajectory@{Trajectory}!line\+Width@{line\+Width}}
+\index{line\+Width@{line\+Width}!Trajectory@{Trajectory}}
+\subsubsection[{line\+Width}]{\setlength{\rightskip}{0pt plus 5cm}float Trajectory\+::line\+Width = 1.\+0f\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a7cf337f408aa8f27d93c68d40d5030ce}
+
+
+Definition at line 40 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_ab04d69563f531cfbdf3f61f107592d44}{\index{Trajectory@{Trajectory}!next\+Point\+Date@{next\+Point\+Date}}
+\index{next\+Point\+Date@{next\+Point\+Date}!Trajectory@{Trajectory}}
+\subsubsection[{next\+Point\+Date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Trajectory\+::next\+Point\+Date\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_ab04d69563f531cfbdf3f61f107592d44}
+
+
+Definition at line 38 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a7e553e1118e6a4accfacb8fae0d24f2b}{\index{Trajectory@{Trajectory}!obj@{obj}}
+\index{obj@{obj}!Trajectory@{Trajectory}}
+\subsubsection[{obj}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Space\+Object}\& Trajectory\+::obj\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a7e553e1118e6a4accfacb8fae0d24f2b}
+
+
+Definition at line 22 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a6d2fbd4cfaec29cfdf4f801318a88f3d}{\index{Trajectory@{Trajectory}!prev\+Date@{prev\+Date}}
+\index{prev\+Date@{prev\+Date}!Trajectory@{Trajectory}}
+\subsubsection[{prev\+Date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Trajectory\+::prev\+Date\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a6d2fbd4cfaec29cfdf4f801318a88f3d}
+
+
+Definition at line 32 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a3000185975d15a117e751eb9908593fe}{\index{Trajectory@{Trajectory}!red@{red}}
+\index{red@{red}!Trajectory@{Trajectory}}
+\subsubsection[{red}]{\setlength{\rightskip}{0pt plus 5cm}float Trajectory\+::red = 255.\+0f\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a3000185975d15a117e751eb9908593fe}
+
+
+Definition at line 41 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_aa0634363940b3bfa6c069a58b89fe975}{\index{Trajectory@{Trajectory}!relative\+To@{relative\+To}}
+\index{relative\+To@{relative\+To}!Trajectory@{Trajectory}}
+\subsubsection[{relative\+To}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Space\+Object}$\ast$ Trajectory\+::relative\+To\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_aa0634363940b3bfa6c069a58b89fe975}
+
+
+Definition at line 26 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a28f0f31968990bc14ef64093f863f15e}{\index{Trajectory@{Trajectory}!static\+Defined@{static\+Defined}}
+\index{static\+Defined@{static\+Defined}!Trajectory@{Trajectory}}
+\subsubsection[{static\+Defined}]{\setlength{\rightskip}{0pt plus 5cm}bool Trajectory\+::static\+Defined\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a28f0f31968990bc14ef64093f863f15e}
+
+
+Definition at line 28 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a8a7ff5214ca817280dea38c3f5c62cbf}{\index{Trajectory@{Trajectory}!static\+Trajectory@{static\+Trajectory}}
+\index{static\+Trajectory@{static\+Trajectory}!Trajectory@{Trajectory}}
+\subsubsection[{static\+Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Vector3}$>$ Trajectory\+::static\+Trajectory\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a8a7ff5214ca817280dea38c3f5c62cbf}
+
+
+Definition at line 29 of file Trajectory.\+h.
+
+\hypertarget{class_trajectory_a8d881aa7724623b0a675a7f3cbe118bc}{\index{Trajectory@{Trajectory}!unit@{unit}}
+\index{unit@{unit}!Trajectory@{Trajectory}}
+\subsubsection[{unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Length\+Unit} Trajectory\+::unit\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_trajectory_a8d881aa7724623b0a675a7f3cbe118bc}
+
+
+Definition at line 24 of file Trajectory.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\hyperlink{_trajectory_8h}{Trajectory.\+h}\item 
+S\+S\+W\+C/src/\hyperlink{_trajectory_8cpp}{Trajectory.\+cpp}\end{DoxyCompactItemize}

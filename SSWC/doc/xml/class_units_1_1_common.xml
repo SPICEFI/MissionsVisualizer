@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_units_1_1_common" kind="class" prot="public">
+    <compoundname>Units::Common</compoundname>
+    <includes refid="_quantity_8h" local="no">Quantity.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1ad9301a6dca9ca8d1452914698bfdf893" kindref="member">TimeUnit</ref></type>
+        <definition>const TimeUnit Units::Common::seconds</definition>
+        <argsstring></argsstring>
+        <name>seconds</name>
+        <initializer>= <ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">TimeUnit::BaseUnit</ref>(&quot;sec&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="269" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_common_1ae00592bb8573bd91d034a0b23f4449d6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1ad9301a6dca9ca8d1452914698bfdf893" kindref="member">TimeUnit</ref></type>
+        <definition>const TimeUnit Units::Common::minutes</definition>
+        <argsstring></argsstring>
+        <name>minutes</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">TimeUnit::ScaledUnit</ref>(60.0, <ref refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" kindref="member">Units::Common::seconds</ref>, &quot;min&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="270" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_common_1a85905b04a8c1fa4058249d06c81828c7" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1ad9301a6dca9ca8d1452914698bfdf893" kindref="member">TimeUnit</ref></type>
+        <definition>const TimeUnit Units::Common::hours</definition>
+        <argsstring></argsstring>
+        <name>hours</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">TimeUnit::ScaledUnit</ref>(60.0, <ref refid="class_units_1_1_common_1ae00592bb8573bd91d034a0b23f4449d6" kindref="member">Units::Common::minutes</ref>, &quot;hr&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="271" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="_quantity_8h_1ad9301a6dca9ca8d1452914698bfdf893" kindref="member">TimeUnit</ref></type>
+        <definition>const TimeUnit Units::Common::days</definition>
+        <argsstring></argsstring>
+        <name>days</name>
+        <initializer>= <ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">TimeUnit::ScaledUnit</ref>(24.0, <ref refid="class_units_1_1_common_1a85905b04a8c1fa4058249d06c81828c7" kindref="member">Units::Common::hours</ref>, &quot;days&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="272" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="514">
+        <label>Units::Common</label>
+        <link refid="class_units_1_1_common"/>
+        <childnode refid="515" relation="usage">
+          <edgelabel>days</edgelabel>
+          <edgelabel>hours</edgelabel>
+          <edgelabel>seconds</edgelabel>
+          <edgelabel>minutes</edgelabel>
+        </childnode>
+      </node>
+      <node id="515">
+        <label>Unit&lt; length, time, mass &gt;</label>
+        <link refid="class_unit"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="267" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="266" bodyend="273"/>
+    <listofallmembers>
+      <member refid="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" prot="public" virt="non-virtual"><scope>Units::Common</scope><name>days</name></member>
+      <member refid="class_units_1_1_common_1a85905b04a8c1fa4058249d06c81828c7" prot="public" virt="non-virtual"><scope>Units::Common</scope><name>hours</name></member>
+      <member refid="class_units_1_1_common_1ae00592bb8573bd91d034a0b23f4449d6" prot="public" virt="non-virtual"><scope>Units::Common</scope><name>minutes</name></member>
+      <member refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" prot="public" virt="non-virtual"><scope>Units::Common</scope><name>seconds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

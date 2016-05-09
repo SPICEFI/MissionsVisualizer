@@ -1,0 +1,398 @@
+.TH "GLUI_EditText" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_EditText \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.PP
+Inherited by \fBGLUI_CommandLine\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBactivate\fP (\fBint\fP how)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdeactivate\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_over\fP (\fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfind_word_break\fP (\fBint\fP \fBstart\fP, \fBint\fP direction)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsubstring_width\fP (\fBint\fP \fBstart\fP, \fBint\fP \fBend\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBclear_substring\fP (\fBint\fP \fBstart\fP, \fBint\fP \fBend\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfind_insertion_pt\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBupdate_substring_bounds\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_and_draw_text\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_text\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_insertion_pt\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_numeric_text\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_x_offsets\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_float_limits\fP (float low, float high, \fBint\fP limit_type=\fBGLUI_LIMIT_CLAMP\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_int_limits\fP (\fBint\fP low, \fBint\fP high, \fBint\fP limit_type=\fBGLUI_LIMIT_CLAMP\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_float_val\fP (float new_val)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_int_val\fP (\fBint\fP new_val)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_text\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_text\fP (const \fBGLUI_String\fP &\fBs\fP)"
+.br
+.ti -1c
+.RI "const char * \fBget_text\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdump\fP (FILE *out, const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP text_type=\fBGLUI_EDITTEXT_TEXT\fP, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP *live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, float *live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, char *live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBstd::string\fP &live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP text_type, \fBvoid\fP *live_var, \fBint\fP \fBid\fP, \fBGLUI_CB\fP \fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBhas_limits\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdata_type\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_String\fP \fBorig_text\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBinsertion_pt\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtitle_x_offset\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtext_x_offset\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsubstring_start\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsubstring_end\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsel_start\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsel_end\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBnum_periods\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_insertion_pt\fP"
+.br
+.ti -1c
+.RI "float \fBfloat_low\fP"
+.br
+.ti -1c
+.RI "float \fBfloat_high\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBint_low\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBint_high\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Spinner\fP * \fBspinner\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdebug\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdraw_text_only\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_construct\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBdata_type\fP, \fBint\fP \fBlive_type\fP, \fBvoid\fP *live_var, \fBint\fP \fBid\fP, \fBGLUI_CB\fP \fBcallback\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 1579 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_EditText::GLUI_EditText (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPtext_type = \fC\fBGLUI_EDITTEXT_TEXT\fP\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_EditText::GLUI_EditText (\fBGLUI_Node\fP *parent, const char *name, \fBint\fP *live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_EditText::GLUI_EditText (\fBGLUI_Node\fP *parent, const char *name, float *live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_EditText::GLUI_EditText (\fBGLUI_Node\fP *parent, const char *name, char *live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_EditText::GLUI_EditText (\fBGLUI_Node\fP *parent, const char *name, \fBstd::string\fP &live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_EditText::GLUI_EditText (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPtext_type, \fBvoid\fP *live_var, \fBint\fPid, \fBGLUI_CB\fPcallback)"
+
+.SS "GLUI_EditText::GLUI_EditText (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 1661 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_EditText::activate (\fBint\fPhow)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_EditText::clear_substring (\fBint\fPstart, \fBint\fPend)"
+
+.SS "\fBvoid\fP GLUI_EditText::common_construct (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPdata_type, \fBint\fPlive_type, \fBvoid\fP *live_var, \fBint\fPid, \fBGLUI_CB\fPcallback)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_EditText::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1664 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_EditText::deactivate (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.PP
+Reimplemented in \fBGLUI_CommandLine\fP\&.
+.SS "\fBvoid\fP GLUI_EditText::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_EditText::draw_insertion_pt (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_EditText::draw_text (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_EditText::dump (FILE *out, const char *text)"
+
+.SS "\fBint\fP GLUI_EditText::find_insertion_pt (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBint\fP GLUI_EditText::find_word_break (\fBint\fPstart, \fBint\fPdirection)"
+
+.SS "const char* GLUI_EditText::get_text ()\fC [inline]\fP"
+
+.PP
+Definition at line 1631 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.PP
+Reimplemented in \fBGLUI_CommandLine\fP\&.
+.SS "\fBint\fP GLUI_EditText::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_EditText::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_EditText::mouse_over (\fBint\fPstate, \fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_EditText::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_EditText::set_float_limits (floatlow, floathigh, \fBint\fPlimit_type = \fC\fBGLUI_LIMIT_CLAMP\fP\fP)"
+
+.SS "\fBvoid\fP GLUI_EditText::set_float_val (floatnew_val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_EditText::set_int_limits (\fBint\fPlow, \fBint\fPhigh, \fBint\fPlimit_type = \fC\fBGLUI_LIMIT_CLAMP\fP\fP)"
+
+.SS "\fBvoid\fP GLUI_EditText::set_int_val (\fBint\fPnew_val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_EditText::set_numeric_text (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_EditText::set_text (const char *t)\fC [virtual]\fP"
+Writes live variable 
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_EditText::set_text (const \fBGLUI_String\fP &s)\fC [inline]\fP"
+
+.PP
+Definition at line 1630 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.PP
+Reimplemented in \fBGLUI_CommandLine\fP\&.
+.SS "\fBint\fP GLUI_EditText::substring_width (\fBint\fPstart, \fBint\fPend)"
+
+.SS "\fBvoid\fP GLUI_EditText::update_and_draw_text (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_EditText::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_EditText::update_substring_bounds (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_EditText::update_x_offsets (\fBvoid\fP)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBint\fP GLUI_EditText::data_type"
+
+.PP
+Definition at line 1583 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::debug"
+
+.PP
+Definition at line 1596 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::draw_text_only"
+
+.PP
+Definition at line 1597 of file glui\&.h\&.
+.SS "float GLUI_EditText::float_high"
+
+.PP
+Definition at line 1593 of file glui\&.h\&.
+.SS "float GLUI_EditText::float_low"
+
+.PP
+Definition at line 1593 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::has_limits"
+
+.PP
+Definition at line 1582 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::insertion_pt"
+
+.PP
+Definition at line 1585 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::int_high"
+
+.PP
+Definition at line 1594 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::int_low"
+
+.PP
+Definition at line 1594 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::last_insertion_pt"
+
+.PP
+Definition at line 1592 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::num_periods"
+
+.PP
+Definition at line 1591 of file glui\&.h\&.
+.SS "\fBGLUI_String\fP GLUI_EditText::orig_text"
+
+.PP
+Definition at line 1584 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::sel_end"
+
+.PP
+Definition at line 1590 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::sel_start"
+
+.PP
+Definition at line 1590 of file glui\&.h\&.
+.SS "\fBGLUI_Spinner\fP* GLUI_EditText::spinner"
+
+.PP
+Definition at line 1595 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::substring_end"
+
+.PP
+Definition at line 1589 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::substring_start"
+
+.PP
+Definition at line 1588 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::text_x_offset"
+
+.PP
+Definition at line 1587 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_EditText::title_x_offset"
+
+.PP
+Definition at line 1586 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

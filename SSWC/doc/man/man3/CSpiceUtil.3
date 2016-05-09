@@ -1,0 +1,114 @@
+.TH "CSpiceUtil" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CSpiceUtil \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CSpiceUtil\&.h>\fP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBvoid\fP \fBSetErrorHandlingParams\fP (const \fBstd::string\fP &action, const \fBstd::string\fP &device)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBSetLoggingFile\fP (const \fBstd::string\fP &file)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBLoadKernel\fP (const \fBstd::string\fP &\fBpath\fP)"
+.br
+.ti -1c
+.RI "static std::vector< \fBKernelData\fP > \fBGetLoadedKernels\fP (const \fBstd::string\fP &\fBtype\fP='ALL')"
+.br
+.ti -1c
+.RI "static \fBstd::string\fP \fBGetShortErrorMessage\fP ()"
+.br
+.ti -1c
+.RI "static \fBstd::string\fP \fBGetExplainErrorMessage\fP ()"
+.br
+.ti -1c
+.RI "static \fBstd::string\fP \fBGetLongErrorMessage\fP ()"
+.br
+.ti -1c
+.RI "static \fBstd::string\fP \fBGetTraceback\fP ()"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBSignalError\fP (const \fBstd::string\fP &errorMsg)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBLogError\fP (const \fBstd::string\fP &extraMsg)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBResetErrorFlag\fP ()"
+.br
+.ti -1c
+.RI "static std::vector< long > \fBIntCellToVector\fP (SpiceCell cell)"
+.br
+.ti -1c
+.RI "static std::vector< double > \fBDoubleCellToVector\fP (SpiceCell cell)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 46 of file CSpiceUtil\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::vector< double > CSpiceUtil::DoubleCellToVector (SpiceCellcell)\fC [static]\fP"
+
+.PP
+Definition at line 151 of file CSpiceUtil\&.cpp\&.
+.SS "\fBstd::string\fP CSpiceUtil::GetExplainErrorMessage ()\fC [static]\fP"
+
+.PP
+Definition at line 68 of file CSpiceUtil\&.cpp\&.
+.SS "std::vector< \fBKernelData\fP > CSpiceUtil::GetLoadedKernels (const \fBstd::string\fP &type = \fC'ALL'\fP)\fC [static]\fP"
+
+.PP
+Definition at line 31 of file CSpiceUtil\&.cpp\&.
+.SS "\fBstd::string\fP CSpiceUtil::GetLongErrorMessage ()\fC [static]\fP"
+
+.PP
+Definition at line 76 of file CSpiceUtil\&.cpp\&.
+.SS "\fBstd::string\fP CSpiceUtil::GetShortErrorMessage ()\fC [static]\fP"
+
+.PP
+Definition at line 60 of file CSpiceUtil\&.cpp\&.
+.SS "\fBstd::string\fP CSpiceUtil::GetTraceback ()\fC [static]\fP"
+
+.PP
+Definition at line 84 of file CSpiceUtil\&.cpp\&.
+.SS "std::vector< long > CSpiceUtil::IntCellToVector (SpiceCellcell)\fC [static]\fP"
+
+.PP
+Definition at line 133 of file CSpiceUtil\&.cpp\&.
+.SS "\fBvoid\fP CSpiceUtil::LoadKernel (const \fBstd::string\fP &path)\fC [static]\fP"
+
+.PP
+Definition at line 26 of file CSpiceUtil\&.cpp\&.
+.SS "\fBvoid\fP CSpiceUtil::LogError (const \fBstd::string\fP &extraMsg)\fC [static]\fP"
+
+.PP
+Definition at line 99 of file CSpiceUtil\&.cpp\&.
+.SS "\fBvoid\fP CSpiceUtil::ResetErrorFlag ()\fC [static]\fP"
+
+.PP
+Definition at line 128 of file CSpiceUtil\&.cpp\&.
+.SS "\fBvoid\fP CSpiceUtil::SetErrorHandlingParams (const \fBstd::string\fP &action, const \fBstd::string\fP &device)\fC [static]\fP"
+
+.PP
+Definition at line 3 of file CSpiceUtil\&.cpp\&.
+.SS "\fBvoid\fP CSpiceUtil::SetLoggingFile (const \fBstd::string\fP &file)\fC [static]\fP"
+
+.PP
+Definition at line 21 of file CSpiceUtil\&.cpp\&.
+.SS "\fBvoid\fP CSpiceUtil::SignalError (const \fBstd::string\fP &errorMsg = \fC''\fP)\fC [static]\fP"
+
+.PP
+Definition at line 92 of file CSpiceUtil\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

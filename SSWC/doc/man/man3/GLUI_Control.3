@@ -1,0 +1,752 @@
+.TH "GLUI_Control" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Control \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Node\fP\&.
+.PP
+Inherited by \fBGLUI_Button\fP, \fBGLUI_Checkbox\fP, \fBGLUI_Column\fP, \fBGLUI_EditText\fP, \fBGLUI_List\fP, \fBGLUI_Listbox\fP, \fBGLUI_Mouse_Interaction\fP, \fBGLUI_Panel\fP, \fBGLUI_RadioButton\fP, \fBGLUI_RadioGroup\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_Separator\fP, \fBGLUI_Spinner\fP, \fBGLUI_StaticText\fP, and \fBGLUI_TextBox\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBvoid\fP \fBset_name\fP (const char *\fBstring\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBset_int_val\fP (\fBint\fP new_int)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBset_float_val\fP (float new_float)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBset_ptr_val\fP (\fBvoid\fP *new_ptr)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBset_float_array_val\fP (float *array_ptr)"
+.br
+.ti -1c
+.RI "virtual float \fBget_float_val\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBget_int_val\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBget_float_array_val\fP (float *array_ptr)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBget_id\fP (\fBvoid\fP) const "
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBset_id\fP (\fBint\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBidle\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBmouse_over\fP (\fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBenable\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBdisable\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBactivate\fP (\fBint\fP how)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBdeactivate\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBhide_internal\fP (\fBint\fP recurse)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBunhide_internal\fP (\fBint\fP recurse)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcan_draw\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBredraw\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBredraw_window\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBalign\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBpack\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBpack_old\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_recursive\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBset_to_glut_window\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBrestore_window\fP (\fBint\fP orig)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBtranslate_and_draw_front\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBtranslate_to_origin\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)=0"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_font\fP (\fBvoid\fP *new_font)"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBget_font\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBstring_width\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBstring_width\fP (const \fBGLUI_String\fP &str)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBchar_width\fP (char \fBc\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_name\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_box_inwards_outline\fP (\fBint\fP x_min, \fBint\fP x_max, \fBint\fP y_min, \fBint\fP y_max)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_box\fP (\fBint\fP x_min, \fBint\fP x_max, \fBint\fP y_min, \fBint\fP y_max, float \fBr\fP, float \fBg\fP, float \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_bkgd_box\fP (\fBint\fP x_min, \fBint\fP x_max, \fBint\fP y_min, \fBint\fP y_max)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_emboss_box\fP (\fBint\fP x_min, \fBint\fP x_max, \fBint\fP y_min, \fBint\fP y_max)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_string\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_string\fP (const \fBGLUI_String\fP &\fBs\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_char\fP (char \fBc\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_active_box\fP (\fBint\fP x_min, \fBint\fP x_max, \fBint\fP y_min, \fBint\fP y_max)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_to_bkgd_color\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_w\fP (\fBint\fP new_w)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_h\fP (\fBint\fP new_w)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_alignment\fP (\fBint\fP new_align)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsync_live\fP (\fBint\fP recurse, \fBint\fP \fBdraw\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBinit_live\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBoutput_live\fP (\fBint\fP update_main_gfx)"
+.br
+.ti -1c
+.RI "virtual \fBvoid\fP \fBset_text\fP (const char *\fBt\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBexecute_callback\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBget_this_column_dims\fP (\fBint\fP *col_x, \fBint\fP *col_y, \fBint\fP *col_w, \fBint\fP *col_h, \fBint\fP *col_x_off, \fBint\fP *col_y_off)"
+.br
+.ti -1c
+.RI "virtual bool \fBneeds_idle\fP (\fBvoid\fP) const "
+.br
+.ti -1c
+.RI "virtual bool \fBwants_tabs\fP () const "
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~GLUI_Control\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBw\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBh\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBx_abs\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBy_abs\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBx_off\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBy_off_top\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBy_off_bot\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcontain_x\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcontain_y\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcontain_w\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcontain_h\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBactive_type\fP"
+.br
+.RI "\fI'GLUI_CONTROL_ACTIVE_\&.\&.\&.' \fP"
+.ti -1c
+.RI "bool \fBactive\fP"
+.br
+.RI "\fIIf true, we've got the focus\&. \fP"
+.ti -1c
+.RI "bool \fBcan_activate\fP"
+.br
+.RI "\fIIf false, remove from tab order\&. \fP"
+.ti -1c
+.RI "bool \fBspacebar_mouse_click\fP"
+.br
+.RI "\fISpacebar simulates click\&. \fP"
+.ti -1c
+.RI "long \fBuser_id\fP"
+.br
+.RI "\fIInteger to pass to callback function\&. \fP"
+.ti -1c
+.RI "\fBGLUI_CB\fP \fBcallback\fP"
+.br
+.RI "\fIUser callback function, or NULL\&. \fP"
+.ti -1c
+.RI "float \fBfloat_val\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBint_val\fP"
+.br
+.ti -1c
+.RI "float \fBfloat_array_val\fP [\fBGLUI_DEF_MAX_ARRAY\fP]"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfloat_array_size\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_String\fP \fBtext\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBptr_val\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlive_type\fP"
+.br
+.ti -1c
+.RI "bool \fBlive_inited\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_live_int\fP"
+.br
+.ti -1c
+.RI "float \fBlast_live_float\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_String\fP \fBlast_live_text\fP"
+.br
+.ti -1c
+.RI "float \fBlast_live_float_array\fP [\fBGLUI_DEF_MAX_ARRAY\fP]"
+.br
+.ti -1c
+.RI "\fBGLUI\fP * \fBglui\fP"
+.br
+.ti -1c
+.RI "bool \fBis_container\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBalignment\fP"
+.br
+.ti -1c
+.RI "bool \fBenabled\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_String\fP \fBname\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP * \fBfont\fP"
+.br
+.ti -1c
+.RI "bool \fBcollapsible\fP"
+.br
+.ti -1c
+.RI "bool \fBis_open\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP \fBcollapsed_node\fP"
+.br
+.ti -1c
+.RI "bool \fBhidden\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBchar_widths\fP [\fBCHAR_WIDTH_HASH_SIZE\fP][2]"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+All the GUI objects inherit from \fBGLUI_Control\fP: buttons, checkboxes, labels, edit boxes, scrollbars, etc\&. Most of the work of this class is in routing events, like keystrokes, mouseclicks, redraws, and sizing events\&.
+.PP
+Yes, this is a huge and hideous class\&. It needs to be split up into simpler subobjects\&. None of the data members should be directly accessed by users (they should be protected, not public); only subclasses\&. 
+.PP
+Definition at line 759 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Control::GLUI_Control (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 905 of file glui\&.h\&.
+.SS "virtual GLUI_Control::~GLUI_Control ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBvoid\fP GLUI_Control::activate (\fBint\fPhow)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_List\fP, \fBGLUI_TextBox\fP, and \fBGLUI_EditText\fP\&.
+.PP
+Definition at line 839 of file glui\&.h\&.
+.SS "virtual \fBvoid\fP GLUI_Control::align (\fBvoid\fP)\fC [virtual]\fP"
+
+.SS "\fBint\fP GLUI_Control::can_draw (\fBvoid\fP)\fC [inline]\fP"
+Return true if it currently makes sense to draw this class\&. 
+.PP
+Definition at line 847 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::char_width (charc)"
+
+.SS "virtual \fBvoid\fP GLUI_Control::deactivate (\fBvoid\fP)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_List\fP, \fBGLUI_TextBox\fP, \fBGLUI_CommandLine\fP, and \fBGLUI_EditText\fP\&.
+.PP
+Definition at line 840 of file glui\&.h\&.
+.SS "virtual \fBvoid\fP GLUI_Control::disable (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_TextBox\fP\&.
+.SS "virtual \fBvoid\fP GLUI_Control::draw (\fBint\fPx, \fBint\fPy)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGLUI_Mouse_Interaction\fP, \fBGLUI_Listbox\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_List\fP, \fBGLUI_TextBox\fP, \fBGLUI_StaticText\fP, \fBGLUI_Spinner\fP, \fBGLUI_Separator\fP, \fBGLUI_RadioButton\fP, \fBGLUI_RadioGroup\fP, \fBGLUI_EditText\fP, \fBGLUI_Tree\fP, \fBGLUI_Rollout\fP, \fBGLUI_Panel\fP, \fBGLUI_Column\fP, \fBGLUI_Checkbox\fP, and \fBGLUI_Button\fP\&.
+.SS "\fBvoid\fP GLUI_Control::draw_active_box (\fBint\fPx_min, \fBint\fPx_max, \fBint\fPy_min, \fBint\fPy_max)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_bkgd_box (\fBint\fPx_min, \fBint\fPx_max, \fBint\fPy_min, \fBint\fPy_max)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_box (\fBint\fPx_min, \fBint\fPx_max, \fBint\fPy_min, \fBint\fPy_max, floatr, floatg, floatb)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_box_inwards_outline (\fBint\fPx_min, \fBint\fPx_max, \fBint\fPy_min, \fBint\fPy_max)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_char (charc)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_emboss_box (\fBint\fPx_min, \fBint\fPx_max, \fBint\fPy_min, \fBint\fPy_max)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_name (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_recursive (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_string (const char *text)"
+
+.SS "\fBvoid\fP GLUI_Control::draw_string (const \fBGLUI_String\fP &s)\fC [inline]\fP"
+
+.PP
+Definition at line 885 of file glui\&.h\&.
+.SS "virtual \fBvoid\fP GLUI_Control::enable (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_TextBox\fP\&.
+.SS "\fBvoid\fP GLUI_Control::execute_callback (\fBvoid\fP)"
+
+.SS "virtual \fBvoid\fP GLUI_Control::get_float_array_val (float *array_ptr)\fC [virtual]\fP"
+
+.SS "virtual float GLUI_Control::get_float_val (\fBvoid\fP)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Spinner\fP\&.
+.PP
+Definition at line 821 of file glui\&.h\&.
+.SS "\fBvoid\fP* GLUI_Control::get_font (\fBvoid\fP)"
+
+.SS "virtual \fBint\fP GLUI_Control::get_id (\fBvoid\fP) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Tree\fP\&.
+.PP
+Definition at line 824 of file glui\&.h\&.
+.SS "virtual \fBint\fP GLUI_Control::get_int_val (\fBvoid\fP)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Spinner\fP\&.
+.PP
+Definition at line 822 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Control::get_this_column_dims (\fBint\fP *col_x, \fBint\fP *col_y, \fBint\fP *col_w, \fBint\fP *col_h, \fBint\fP *col_x_off, \fBint\fP *col_y_off)"
+
+.SS "\fBvoid\fP GLUI_Control::hide_internal (\fBint\fPrecurse)"
+Hide (shrink into a rollout) and unhide (expose from a rollout) 
+.SS "virtual \fBvoid\fP GLUI_Control::idle (\fBvoid\fP)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Rotation\fP, \fBGLUI_Scrollbar\fP, and \fBGLUI_Spinner\fP\&.
+.PP
+Definition at line 834 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Control::init_live (\fBvoid\fP)"
+
+.SS "virtual \fBint\fP GLUI_Control::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Listbox\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_List\fP, \fBGLUI_TextBox\fP, \fBGLUI_Spinner\fP, \fBGLUI_CommandLine\fP, \fBGLUI_EditText\fP, \fBGLUI_Checkbox\fP, and \fBGLUI_Button\fP\&.
+.PP
+Definition at line 830 of file glui\&.h\&.
+.SS "virtual \fBint\fP GLUI_Control::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Mouse_Interaction\fP, \fBGLUI_Listbox\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_List\fP, \fBGLUI_TextBox\fP, \fBGLUI_Spinner\fP, \fBGLUI_RadioButton\fP, \fBGLUI_EditText\fP, \fBGLUI_Tree\fP, \fBGLUI_Rollout\fP, \fBGLUI_Checkbox\fP, and \fBGLUI_Button\fP\&.
+.PP
+Definition at line 827 of file glui\&.h\&.
+.SS "virtual \fBint\fP GLUI_Control::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Mouse_Interaction\fP, \fBGLUI_Listbox\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_List\fP, \fBGLUI_TextBox\fP, \fBGLUI_Spinner\fP, \fBGLUI_RadioButton\fP, \fBGLUI_EditText\fP, \fBGLUI_Tree\fP, \fBGLUI_Rollout\fP, \fBGLUI_Checkbox\fP, and \fBGLUI_Button\fP\&.
+.PP
+Definition at line 829 of file glui\&.h\&.
+.SS "virtual \fBint\fP GLUI_Control::mouse_over (\fBint\fPstate, \fBint\fPx, \fBint\fPy)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Listbox\fP, \fBGLUI_List\fP, \fBGLUI_TextBox\fP, and \fBGLUI_EditText\fP\&.
+.PP
+Definition at line 835 of file glui\&.h\&.
+.SS "virtual \fBint\fP GLUI_Control::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Mouse_Interaction\fP, \fBGLUI_Listbox\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_List\fP, \fBGLUI_TextBox\fP, \fBGLUI_Spinner\fP, \fBGLUI_RadioButton\fP, \fBGLUI_EditText\fP, \fBGLUI_Tree\fP, \fBGLUI_Rollout\fP, \fBGLUI_Checkbox\fP, and \fBGLUI_Button\fP\&.
+.PP
+Definition at line 828 of file glui\&.h\&.
+.SS "virtual bool GLUI_Control::needs_idle (\fBvoid\fP) const\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Rotation\fP, \fBGLUI_Scrollbar\fP, and \fBGLUI_Spinner\fP\&.
+.SS "\fBvoid\fP GLUI_Control::output_live (\fBint\fPupdate_main_gfx)"
+
+.SS "\fBvoid\fP GLUI_Control::pack (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_Control::pack_old (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_Control::redraw (\fBvoid\fP)"
+Redraw this control\&. In single-buffering mode (drawing to GL_FRONT), this is just a call to translate_and_draw_front (after a \fBcan_draw()\fP check)\&. In double-buffering mode (drawing to GL_BACK), this queues up a redraw and returns false, since you shouldn't draw yet\&. 
+.SS "\fBvoid\fP GLUI_Control::redraw_window (\fBvoid\fP)"
+Redraw everybody in our window\&. 
+.SS "\fBvoid\fP GLUI_Control::restore_window (\fBint\fPorig)"
+
+.SS "\fBvoid\fP GLUI_Control::set_alignment (\fBint\fPnew_align)"
+
+.SS "virtual \fBvoid\fP GLUI_Control::set_float_array_val (float *array_ptr)\fC [virtual]\fP"
+
+.SS "virtual \fBvoid\fP GLUI_Control::set_float_val (floatnew_float)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Scrollbar\fP, \fBGLUI_Spinner\fP, and \fBGLUI_EditText\fP\&.
+.PP
+Definition at line 817 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Control::set_font (\fBvoid\fP *new_font)"
+
+.SS "\fBvoid\fP GLUI_Control::set_h (\fBint\fPnew_w)"
+
+.SS "virtual \fBvoid\fP GLUI_Control::set_id (\fBint\fPid)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Tree\fP\&.
+.PP
+Definition at line 825 of file glui\&.h\&.
+.SS "virtual \fBvoid\fP GLUI_Control::set_int_val (\fBint\fPnew_int)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Listbox\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_Spinner\fP, \fBGLUI_RadioGroup\fP, \fBGLUI_EditText\fP, and \fBGLUI_Checkbox\fP\&.
+.PP
+Definition at line 816 of file glui\&.h\&.
+.SS "virtual \fBvoid\fP GLUI_Control::set_name (const char *string)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_RadioGroup\fP, and \fBGLUI_Panel\fP\&.
+.SS "virtual \fBvoid\fP GLUI_Control::set_ptr_val (\fBvoid\fP *new_ptr)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 818 of file glui\&.h\&.
+.SS "virtual \fBvoid\fP GLUI_Control::set_text (const char *t)\fC [inline]\fP, \fC [virtual]\fP"
+Writes live variable 
+.PP
+Reimplemented in \fBGLUI_TextBox\fP, \fBGLUI_StaticText\fP, and \fBGLUI_EditText\fP\&.
+.PP
+Definition at line 897 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Control::set_to_bkgd_color (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI_Control::set_to_glut_window (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Control::set_w (\fBint\fPnew_w)"
+
+.SS "virtual \fBint\fP GLUI_Control::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Mouse_Interaction\fP, \fBGLUI_Listbox\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_List\fP, \fBGLUI_TextBox\fP, \fBGLUI_Spinner\fP, \fBGLUI_CommandLine\fP, and \fBGLUI_EditText\fP\&.
+.PP
+Definition at line 831 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::string_width (const char *text)"
+
+.SS "\fBint\fP GLUI_Control::string_width (const \fBGLUI_String\fP &str)\fC [inline]\fP"
+
+.PP
+Definition at line 873 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Control::sync_live (\fBint\fPrecurse, \fBint\fPdraw)"
+
+.SS "\fBvoid\fP GLUI_Control::translate_and_draw_front (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Control::translate_to_origin (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 867 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Control::unhide_internal (\fBint\fPrecurse)"
+
+.SS "virtual \fBvoid\fP GLUI_Control::update_size (\fBvoid\fP)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_Mouse_Interaction\fP, \fBGLUI_Listbox\fP, \fBGLUI_Scrollbar\fP, \fBGLUI_List\fP, \fBGLUI_TextBox\fP, \fBGLUI_StaticText\fP, \fBGLUI_Spinner\fP, \fBGLUI_RadioButton\fP, \fBGLUI_EditText\fP, \fBGLUI_Tree\fP, \fBGLUI_Rollout\fP, \fBGLUI_Panel\fP, \fBGLUI_Checkbox\fP, and \fBGLUI_Button\fP\&.
+.PP
+Definition at line 833 of file glui\&.h\&.
+.SS "virtual bool GLUI_Control::wants_tabs (\fBvoid\fP) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGLUI_TextBox\fP\&.
+.PP
+Definition at line 903 of file glui\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool GLUI_Control::active"
+
+.PP
+If true, we've got the focus\&. 
+.PP
+Definition at line 776 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::active_type"
+
+.PP
+'GLUI_CONTROL_ACTIVE_\&.\&.\&.' 'activation' for tabbing between controls\&. 
+.PP
+Definition at line 775 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::alignment"
+
+.PP
+Definition at line 804 of file glui\&.h\&.
+.SS "\fBGLUI_CB\fP GLUI_Control::callback"
+
+.PP
+User callback function, or NULL\&. 
+.PP
+Definition at line 782 of file glui\&.h\&.
+.SS "bool GLUI_Control::can_activate"
+
+.PP
+If false, remove from tab order\&. 
+.PP
+Definition at line 777 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::char_widths[\fBCHAR_WIDTH_HASH_SIZE\fP][2]"
+
+.PP
+Definition at line 811 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP GLUI_Control::collapsed_node"
+
+.PP
+Definition at line 809 of file glui\&.h\&.
+.SS "bool GLUI_Control::collapsible"
+
+.PP
+Definition at line 808 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::contain_h"
+
+.PP
+Definition at line 769 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::contain_w"
+
+.PP
+Definition at line 769 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::contain_x"
+
+.PP
+Definition at line 768 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::contain_y"
+
+.PP
+Definition at line 768 of file glui\&.h\&.
+.SS "bool GLUI_Control::enabled"
+Is this control grayed out? 
+.PP
+Definition at line 805 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::float_array_size"
+
+.PP
+Definition at line 788 of file glui\&.h\&.
+.SS "float GLUI_Control::float_array_val[\fBGLUI_DEF_MAX_ARRAY\fP]"
+
+.PP
+Definition at line 787 of file glui\&.h\&.
+.SS "float GLUI_Control::float_val"
+Variable value storage Our float value 
+.PP
+Definition at line 785 of file glui\&.h\&.
+.SS "\fBvoid\fP* GLUI_Control::font"
+Our glutbitmap font 
+.PP
+Definition at line 807 of file glui\&.h\&.
+.SS "\fBGLUI\fP* GLUI_Control::glui"
+Properties of our control Our containing event handler (NEVER NULL during event processing!) 
+.PP
+Definition at line 802 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::h"
+
+.PP
+Definition at line 764 of file glui\&.h\&.
+.SS "bool GLUI_Control::hidden"
+
+.PP
+Definition at line 810 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::int_val"
+Our integer value 
+.PP
+Definition at line 786 of file glui\&.h\&.
+.SS "bool GLUI_Control::is_container"
+Is this a container class (e\&.g\&., panel) 
+.PP
+Definition at line 803 of file glui\&.h\&.
+.SS "bool GLUI_Control::is_open"
+
+.PP
+Definition at line 808 of file glui\&.h\&.
+.SS "float GLUI_Control::last_live_float"
+
+.PP
+Definition at line 797 of file glui\&.h\&.
+.SS "float GLUI_Control::last_live_float_array[\fBGLUI_DEF_MAX_ARRAY\fP]"
+
+.PP
+Definition at line 799 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::last_live_int"
+
+.PP
+Definition at line 796 of file glui\&.h\&.
+.SS "\fBGLUI_String\fP GLUI_Control::last_live_text"
+
+.PP
+Definition at line 798 of file glui\&.h\&.
+.SS "bool GLUI_Control::live_inited"
+
+.PP
+Definition at line 794 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::live_type"
+
+.PP
+Definition at line 793 of file glui\&.h\&.
+.SS "\fBGLUI_String\fP GLUI_Control::name"
+The name of this control 
+.PP
+Definition at line 806 of file glui\&.h\&.
+.SS "\fBvoid\fP* GLUI_Control::ptr_val"
+'Live variable' updating A pointer to the user's live variable value 
+.PP
+Definition at line 792 of file glui\&.h\&.
+.SS "bool GLUI_Control::spacebar_mouse_click"
+
+.PP
+Spacebar simulates click\&. 
+.PP
+Definition at line 778 of file glui\&.h\&.
+.SS "\fBGLUI_String\fP GLUI_Control::text"
+The text inside this control 
+.PP
+Definition at line 789 of file glui\&.h\&.
+.SS "long GLUI_Control::user_id"
+
+.PP
+Integer to pass to callback function\&. Callbacks 
+.PP
+Definition at line 781 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::w"
+Onscreen coordinates 
+.PP
+Definition at line 764 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::x_abs"
+
+.PP
+Definition at line 765 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::x_off"
+
+.PP
+Definition at line 766 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::y_abs"
+
+.PP
+Definition at line 765 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::y_off_bot"
+
+.PP
+Definition at line 766 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Control::y_off_top"
+
+.PP
+Definition at line 766 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

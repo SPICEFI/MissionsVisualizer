@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classgl_camera" kind="class" prot="public">
+    <compoundname>glCamera</compoundname>
+    <includes refid="gl_cameara_8h" local="no">glCameara.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 glCamera::viewVec</definition>
+        <argsstring></argsstring>
+        <name>viewVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="14" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" prot="public" static="no" mutable="no">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 glCamera::upVec</definition>
+        <argsstring></argsstring>
+        <name>upVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="15" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 glCamera::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="16" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgl_camera_1a8d5190bd0b8078e6b653904f9fc84687" prot="public" static="no" mutable="no">
+        <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 glCamera::strafeVec</definition>
+        <argsstring></argsstring>
+        <name>strafeVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="17" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float glCamera::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="19" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgl_camera_1a8339c3cd03f2c15ea28cc4f7d473d3cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>glCamera::glCamera</definition>
+        <argsstring>()</argsstring>
+        <name>glCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="21" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1aefdc27e4f845a5c3610044c78068f802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::PositionCamera</definition>
+        <argsstring>(const Vector3 &amp;position, const Vector3 &amp;viewVec, const Vector3 &amp;upVec)</argsstring>
+        <name>PositionCamera</name>
+        <param>
+          <type>const <ref refid="class_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>viewVec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>upVec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="23" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1ad14659710098d9f0db8211c7681243b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::RotateAroundPoint</definition>
+        <argsstring>(Vector3 center, float x, float y, float z)</argsstring>
+        <name>RotateAroundPoint</name>
+        <param>
+          <type><ref refid="class_vector3" kindref="compound">Vector3</ref></type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1ac5785ab7420408b165ad7a48aaab1a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::MoveCamera</definition>
+        <argsstring>(float velocity)</argsstring>
+        <name>MoveCamera</name>
+        <param>
+          <type>float</type>
+          <declname>velocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1a31b34555bdea70f380fe6810b6be24ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::Strafe</definition>
+        <argsstring>(float speed)</argsstring>
+        <name>Strafe</name>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="27" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="135" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::Rotate</definition>
+        <argsstring>(float angle, float x, float y, float z)</argsstring>
+        <name>Rotate</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="28" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="47" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1ab5c79ab0c78257e824f10bef3efbf61a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::setViewByMouse</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>setViewByMouse</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="72" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1a1ab1368aaf700ab1a4c38f4332a4fc0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::Update</definition>
+        <argsstring>(int centerX, int centerY, bool orientationMode)</argsstring>
+        <name>Update</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>centerX</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>centerY</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>orientationMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="31" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="142" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1a7ad65ff247a29468cb939474e4c07c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::FocusOnPlanet</definition>
+        <argsstring>(Planet &amp;planet, Date t, App &amp;app)</argsstring>
+        <name>FocusOnPlanet</name>
+        <param>
+          <type><ref refid="class_planet" kindref="compound">Planet</ref> &amp;</type>
+          <declname>planet</declname>
+        </param>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="class_app" kindref="compound">App</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="32" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1a1be4621c5b94b057920b3a2a27adb99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int glCamera::RetrieveObjectID</definition>
+        <argsstring>(int x, int y, int width, int height, Scene scene, Date t, App &amp;app)</argsstring>
+        <name>RetrieveObjectID</name>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="class_scene" kindref="compound">Scene</ref></type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="class_app" kindref="compound">App</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="35" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="158" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgl_camera_1a1dfa848ba5b6d88f42e4b8c0f4c28c23" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::transformOrientation</definition>
+        <argsstring>()</argsstring>
+        <name>transformOrientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="38" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="35" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classgl_camera_1acd35fb92548e357d2f1b99f31e9c4d01" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void glCamera::transformTranslation</definition>
+        <argsstring>()</argsstring>
+        <name>transformTranslation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="39" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="545">
+        <label>glCamera</label>
+        <link refid="classgl_camera"/>
+        <childnode refid="546" relation="usage">
+          <edgelabel>viewVec</edgelabel>
+          <edgelabel>upVec</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>strafeVec</edgelabel>
+        </childnode>
+      </node>
+      <node id="546">
+        <label>Vector3</label>
+        <link refid="class_vector3"/>
+        <childnode refid="546" relation="usage">
+          <edgelabel>i</edgelabel>
+          <edgelabel>j</edgelabel>
+          <edgelabel>k</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" line="12" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCameara.h" bodystart="11" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classgl_camera_1a7ad65ff247a29468cb939474e4c07c4b" prot="public" virt="non-virtual"><scope>glCamera</scope><name>FocusOnPlanet</name></member>
+      <member refid="classgl_camera_1a8339c3cd03f2c15ea28cc4f7d473d3cd" prot="public" virt="non-virtual"><scope>glCamera</scope><name>glCamera</name></member>
+      <member refid="classgl_camera_1ac5785ab7420408b165ad7a48aaab1a3a" prot="public" virt="non-virtual"><scope>glCamera</scope><name>MoveCamera</name></member>
+      <member refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" prot="public" virt="non-virtual"><scope>glCamera</scope><name>position</name></member>
+      <member refid="classgl_camera_1aefdc27e4f845a5c3610044c78068f802" prot="public" virt="non-virtual"><scope>glCamera</scope><name>PositionCamera</name></member>
+      <member refid="classgl_camera_1a1be4621c5b94b057920b3a2a27adb99b" prot="public" virt="non-virtual"><scope>glCamera</scope><name>RetrieveObjectID</name></member>
+      <member refid="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" prot="public" virt="non-virtual"><scope>glCamera</scope><name>Rotate</name></member>
+      <member refid="classgl_camera_1ad14659710098d9f0db8211c7681243b7" prot="public" virt="non-virtual"><scope>glCamera</scope><name>RotateAroundPoint</name></member>
+      <member refid="classgl_camera_1ab5c79ab0c78257e824f10bef3efbf61a" prot="public" virt="non-virtual"><scope>glCamera</scope><name>setViewByMouse</name></member>
+      <member refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" prot="public" virt="non-virtual"><scope>glCamera</scope><name>speed</name></member>
+      <member refid="classgl_camera_1a31b34555bdea70f380fe6810b6be24ed" prot="public" virt="non-virtual"><scope>glCamera</scope><name>Strafe</name></member>
+      <member refid="classgl_camera_1a8d5190bd0b8078e6b653904f9fc84687" prot="public" virt="non-virtual"><scope>glCamera</scope><name>strafeVec</name></member>
+      <member refid="classgl_camera_1a1dfa848ba5b6d88f42e4b8c0f4c28c23" prot="private" virt="non-virtual"><scope>glCamera</scope><name>transformOrientation</name></member>
+      <member refid="classgl_camera_1acd35fb92548e357d2f1b99f31e9c4d01" prot="private" virt="non-virtual"><scope>glCamera</scope><name>transformTranslation</name></member>
+      <member refid="classgl_camera_1a1ab1368aaf700ab1a4c38f4332a4fc0e" prot="public" virt="non-virtual"><scope>glCamera</scope><name>Update</name></member>
+      <member refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" prot="public" virt="non-virtual"><scope>glCamera</scope><name>upVec</name></member>
+      <member refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" prot="public" virt="non-virtual"><scope>glCamera</scope><name>viewVec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

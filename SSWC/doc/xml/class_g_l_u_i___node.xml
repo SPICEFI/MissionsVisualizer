@@ -1,0 +1,601 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_g_l_u_i___node" kind="class" prot="public">
+    <compoundname>GLUI_Node</compoundname>
+    <derivedcompoundref refid="class_g_l_u_i___control" prot="public" virt="non-virtual">GLUI_Control</derivedcompoundref>
+    <derivedcompoundref refid="class_g_l_u_i___glut___window" prot="public" virt="non-virtual">GLUI_Glut_Window</derivedcompoundref>
+    <derivedcompoundref refid="class_g_l_u_i___list___item" prot="public" virt="non-virtual">GLUI_List_Item</derivedcompoundref>
+    <derivedcompoundref refid="class_g_l_u_i___listbox___item" prot="public" virt="non-virtual">GLUI_Listbox_Item</derivedcompoundref>
+    <derivedcompoundref refid="class_g_l_u_i___main" prot="public" virt="non-virtual">GLUI_Main</derivedcompoundref>
+    <includes refid="glui_8h" local="no">glui.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_g_l_u_i___node_1a5cd4411266c4ef47da626d8efdf1138e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GLUI_Tree</definition>
+        <argsstring></argsstring>
+        <name>GLUI_Tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="329" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_g_l_u_i___node_1a342e7f489f8666a8156fb18bd0ea0d2e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GLUI_Rollout</definition>
+        <argsstring></argsstring>
+        <name>GLUI_Rollout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="330" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_g_l_u_i___node_1a97e15a1bec3e5f03f25594cb1d690fee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GLUI_Main</definition>
+        <argsstring></argsstring>
+        <name>GLUI_Main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="331" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_g_l_u_i___node_1a308f39e8a182f499139381840418a573" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::parent_node</definition>
+        <argsstring></argsstring>
+        <name>parent_node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="359" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___node_1ad9370e7f62e83bb720063d2439f544c2" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::child_head</definition>
+        <argsstring></argsstring>
+        <name>child_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="360" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___node_1a971d8e606c1a3442ad9b8681bdb9ed59" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::child_tail</definition>
+        <argsstring></argsstring>
+        <name>child_tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="361" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___node_1a2c99ef6a1290035f98871d859d05e890" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::next_sibling</definition>
+        <argsstring></argsstring>
+        <name>next_sibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="362" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_l_u_i___node_1afa72f0491ca54ce8d0a0af7049de8049" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::prev_sibling</definition>
+        <argsstring></argsstring>
+        <name>prev_sibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="363" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_l_u_i___node_1a066e5d80bfb9925bdb034c29da9c844c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLUI_Node::GLUI_Node</definition>
+        <argsstring>()</argsstring>
+        <name>GLUI_Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1ae6982edc46ab73963ee8ce9f6d035982" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual GLUI_Node::~GLUI_Node</definition>
+        <argsstring>()</argsstring>
+        <name>~GLUI_Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="335" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="335" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1ace20232965e8d9da8f3d286113d5572a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::first_sibling</definition>
+        <argsstring>()</argsstring>
+        <name>first_sibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a6458e5a6af00ddf2ebb9271c06fa2931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::last_sibling</definition>
+        <argsstring>()</argsstring>
+        <name>last_sibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a84892bf13144651007640c5f25b51145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::prev</definition>
+        <argsstring>()</argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="339" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a7901214f386113b417a25de023476317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a631b094804b887c0d091ece2786543d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::first_child</definition>
+        <argsstring>()</argsstring>
+        <name>first_child</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="342" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="342" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a4825cdc843f0e2b46d75fe5cb9e8ba35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::last_child</definition>
+        <argsstring>()</argsstring>
+        <name>last_child</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="343" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="343" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a8ed65d447784f6f88bd3e2e2bcac6cdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+        <definition>GLUI_Node* GLUI_Node::parent</definition>
+        <argsstring>()</argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="344" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="344" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1abdcdd643758adab07580124187565fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>virtual int GLUI_Node::add_control</definition>
+        <argsstring>(GLUI_Control *control)</argsstring>
+        <name>add_control</name>
+        <reimplementedby refid="class_g_l_u_i_1a94398f830a14babcd93ac109082a221e">add_control</reimplementedby>
+        <param>
+          <type><ref refid="class_g_l_u_i___control" kindref="compound">GLUI_Control</ref> *</type>
+          <declname>control</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Link in a new child control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a28eb5c7bf5a0edf5b7ba2502384c6544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Node::link_this_to_parent_last</definition>
+        <argsstring>(GLUI_Node *parent)</argsstring>
+        <name>link_this_to_parent_last</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="349" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a3feadb4b6d58122ff5449adfb4a323bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Node::link_this_to_parent_first</definition>
+        <argsstring>(GLUI_Node *parent)</argsstring>
+        <name>link_this_to_parent_first</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="350" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1ad8d7fd8a437eeec4a72b73064dc954b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Node::link_this_to_sibling_next</definition>
+        <argsstring>(GLUI_Node *sibling)</argsstring>
+        <name>link_this_to_sibling_next</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>sibling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="351" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a5825555fc493712a1d6f24235f59f25a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Node::link_this_to_sibling_prev</definition>
+        <argsstring>(GLUI_Node *sibling)</argsstring>
+        <name>link_this_to_sibling_prev</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>sibling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="352" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1a48b62b12bf8c466fc54fbbbf30183493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Node::unlink</definition>
+        <argsstring>()</argsstring>
+        <name>unlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="353" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_l_u_i___node_1abce29cf0ade68e9e5702025f710cb1e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void GLUI_Node::dump</definition>
+        <argsstring>(FILE *out, const char *name)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>FILE *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="355" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_g_l_u_i___node_1a02cf295c81cebe31c39e95403dbadbc1" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>static void GLUI_Node::add_child_to_control</definition>
+        <argsstring>(GLUI_Node *parent, GLUI_Control *child)</argsstring>
+        <name>add_child_to_control</name>
+        <param>
+          <type><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="class_g_l_u_i___control" kindref="compound">GLUI_Control</ref> *</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="358" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> is a node in a sort of tree of <ref refid="class_g_l_u_i" kindref="compound">GLUI</ref> controls. Each <ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref> has a list of siblings (in a circular list) and a linked list of children.</para><para>Everything onscreen is a <ref refid="class_g_l_u_i___node" kindref="compound">GLUI_Node</ref><ndash/>windows, buttons, etc. The nodes are traversed for event processing, sizing, redraws, etc. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="765">
+        <label>GLUI_TreePanel</label>
+        <link refid="class_g_l_u_i___tree_panel"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>GLUI_Spinner</label>
+        <link refid="class_g_l_u_i___spinner"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>GLUI_Control</label>
+        <link refid="class_g_l_u_i___control"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="760">
+        <label>GLUI_Translation</label>
+        <link refid="class_g_l_u_i___translation"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="766">
+        <label>GLUI_RadioButton</label>
+        <link refid="class_g_l_u_i___radio_button"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="754">
+        <label>GLUI_EditText</label>
+        <link refid="class_g_l_u_i___edit_text"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="764">
+        <label>GLUI_Tree</label>
+        <link refid="class_g_l_u_i___tree"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>GLUI_CommandLine</label>
+        <link refid="class_g_l_u_i___command_line"/>
+        <childnode refid="754" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="761">
+        <label>GLUI_Panel</label>
+        <link refid="class_g_l_u_i___panel"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>GLUI_Listbox</label>
+        <link refid="class_g_l_u_i___listbox"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="752">
+        <label>GLUI_Checkbox</label>
+        <link refid="class_g_l_u_i___checkbox"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="751">
+        <label>GLUI_Button</label>
+        <link refid="class_g_l_u_i___button"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>GLUI_TextBox</label>
+        <link refid="class_g_l_u_i___text_box"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>GLUI_Column</label>
+        <link refid="class_g_l_u_i___column"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="774">
+        <label>GLUI_List_Item</label>
+        <link refid="class_g_l_u_i___list___item"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>GLUI_Rollout</label>
+        <link refid="class_g_l_u_i___rollout"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>GLUI_Rotation</label>
+        <link refid="class_g_l_u_i___rotation"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="758">
+        <label>GLUI_Mouse_Interaction</label>
+        <link refid="class_g_l_u_i___mouse___interaction"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>GLUI_Separator</label>
+        <link refid="class_g_l_u_i___separator"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="776">
+        <label>GLUI_Main</label>
+        <link refid="class_g_l_u_i___main"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="762">
+        <label>GLUI_FileBrowser</label>
+        <link refid="class_g_l_u_i___file_browser"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>GLUI_Scrollbar</label>
+        <link refid="class_g_l_u_i___scrollbar"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="749">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+      </node>
+      <node id="775">
+        <label>GLUI_Listbox_Item</label>
+        <link refid="class_g_l_u_i___listbox___item"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>GLUI_RadioGroup</label>
+        <link refid="class_g_l_u_i___radio_group"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>GLUI_Glut_Window</label>
+        <link refid="class_g_l_u_i___glut___window"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="756">
+        <label>GLUI_List</label>
+        <link refid="class_g_l_u_i___list"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>GLUI</label>
+        <link refid="class_g_l_u_i"/>
+        <childnode refid="776" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="771">
+        <label>GLUI_StaticText</label>
+        <link refid="class_g_l_u_i___static_text"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="778">
+        <label>GLUI_Node</label>
+        <link refid="class_g_l_u_i___node"/>
+        <childnode refid="778" relation="usage">
+          <edgelabel>prev_sibling</edgelabel>
+          <edgelabel>next_sibling</edgelabel>
+          <edgelabel>child_head</edgelabel>
+          <edgelabel>parent_node</edgelabel>
+          <edgelabel>child_tail</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" line="328" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/glui.h" bodystart="327" bodyend="364"/>
+    <listofallmembers>
+      <member refid="class_g_l_u_i___node_1a02cf295c81cebe31c39e95403dbadbc1" prot="protected" virt="non-virtual"><scope>GLUI_Node</scope><name>add_child_to_control</name></member>
+      <member refid="class_g_l_u_i___node_1abdcdd643758adab07580124187565fcd" prot="public" virt="virtual"><scope>GLUI_Node</scope><name>add_control</name></member>
+      <member refid="class_g_l_u_i___node_1ad9370e7f62e83bb720063d2439f544c2" prot="protected" virt="non-virtual"><scope>GLUI_Node</scope><name>child_head</name></member>
+      <member refid="class_g_l_u_i___node_1a971d8e606c1a3442ad9b8681bdb9ed59" prot="protected" virt="non-virtual"><scope>GLUI_Node</scope><name>child_tail</name></member>
+      <member refid="class_g_l_u_i___node_1abce29cf0ade68e9e5702025f710cb1e8" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>dump</name></member>
+      <member refid="class_g_l_u_i___node_1a631b094804b887c0d091ece2786543d1" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>first_child</name></member>
+      <member refid="class_g_l_u_i___node_1ace20232965e8d9da8f3d286113d5572a" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>first_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a97e15a1bec3e5f03f25594cb1d690fee" prot="private" virt="non-virtual"><scope>GLUI_Node</scope><name>GLUI_Main</name></member>
+      <member refid="class_g_l_u_i___node_1a066e5d80bfb9925bdb034c29da9c844c" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>GLUI_Node</name></member>
+      <member refid="class_g_l_u_i___node_1a342e7f489f8666a8156fb18bd0ea0d2e" prot="private" virt="non-virtual"><scope>GLUI_Node</scope><name>GLUI_Rollout</name></member>
+      <member refid="class_g_l_u_i___node_1a5cd4411266c4ef47da626d8efdf1138e" prot="private" virt="non-virtual"><scope>GLUI_Node</scope><name>GLUI_Tree</name></member>
+      <member refid="class_g_l_u_i___node_1a4825cdc843f0e2b46d75fe5cb9e8ba35" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>last_child</name></member>
+      <member refid="class_g_l_u_i___node_1a6458e5a6af00ddf2ebb9271c06fa2931" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>last_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a3feadb4b6d58122ff5449adfb4a323bc" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>link_this_to_parent_first</name></member>
+      <member refid="class_g_l_u_i___node_1a28eb5c7bf5a0edf5b7ba2502384c6544" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>link_this_to_parent_last</name></member>
+      <member refid="class_g_l_u_i___node_1ad8d7fd8a437eeec4a72b73064dc954b4" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>link_this_to_sibling_next</name></member>
+      <member refid="class_g_l_u_i___node_1a5825555fc493712a1d6f24235f59f25a" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>link_this_to_sibling_prev</name></member>
+      <member refid="class_g_l_u_i___node_1a7901214f386113b417a25de023476317" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>next</name></member>
+      <member refid="class_g_l_u_i___node_1a2c99ef6a1290035f98871d859d05e890" prot="protected" virt="non-virtual"><scope>GLUI_Node</scope><name>next_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a8ed65d447784f6f88bd3e2e2bcac6cdb" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>parent</name></member>
+      <member refid="class_g_l_u_i___node_1a308f39e8a182f499139381840418a573" prot="protected" virt="non-virtual"><scope>GLUI_Node</scope><name>parent_node</name></member>
+      <member refid="class_g_l_u_i___node_1a84892bf13144651007640c5f25b51145" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>prev</name></member>
+      <member refid="class_g_l_u_i___node_1afa72f0491ca54ce8d0a0af7049de8049" prot="protected" virt="non-virtual"><scope>GLUI_Node</scope><name>prev_sibling</name></member>
+      <member refid="class_g_l_u_i___node_1a48b62b12bf8c466fc54fbbbf30183493" prot="public" virt="non-virtual"><scope>GLUI_Node</scope><name>unlink</name></member>
+      <member refid="class_g_l_u_i___node_1ae6982edc46ab73963ee8ce9f6d035982" prot="public" virt="virtual"><scope>GLUI_Node</scope><name>~GLUI_Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

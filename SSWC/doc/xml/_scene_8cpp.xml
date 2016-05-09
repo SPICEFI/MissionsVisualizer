@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_scene_8cpp" kind="file">
+    <compoundname>Scene.cpp</compoundname>
+    <includes refid="_scene_8h" local="yes">Scene.h</includes>
+    <incdepgraph>
+      <node id="2212">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2185">
+        <label>iomanip</label>
+      </node>
+      <node id="2169">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="Scene.cpp"/>
+        <childnode refid="2170" relation="include">
+        </childnode>
+      </node>
+      <node id="2202">
+        <label>windows.h</label>
+      </node>
+      <node id="2213">
+        <label>gl/gl.h</label>
+      </node>
+      <node id="2206">
+        <label>CSpice\Date.h</label>
+      </node>
+      <node id="2208">
+        <label>Math\Matrix4x4.h</label>
+      </node>
+      <node id="2205">
+        <label>CSpice\SpaceObject.h</label>
+      </node>
+      <node id="2171">
+        <label>Windows.h</label>
+      </node>
+      <node id="2189">
+        <label>cmath</label>
+      </node>
+      <node id="2195">
+        <label>stdexcept</label>
+      </node>
+      <node id="2182">
+        <label>string</label>
+      </node>
+      <node id="2175">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="2173">
+        <label>TGA.h</label>
+        <link refid="_t_g_a_8h"/>
+        <childnode refid="2171" relation="include">
+        </childnode>
+        <childnode refid="2174" relation="include">
+        </childnode>
+        <childnode refid="2175" relation="include">
+        </childnode>
+      </node>
+      <node id="2187">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="2182" relation="include">
+        </childnode>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2188" relation="include">
+        </childnode>
+      </node>
+      <node id="2184">
+        <label>fstream</label>
+      </node>
+      <node id="2192">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2193" relation="include">
+        </childnode>
+        <childnode refid="2186" relation="include">
+        </childnode>
+      </node>
+      <node id="2191">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2187" relation="include">
+        </childnode>
+        <childnode refid="2192" relation="include">
+        </childnode>
+        <childnode refid="2190" relation="include">
+        </childnode>
+        <childnode refid="2194" relation="include">
+        </childnode>
+        <childnode refid="2196" relation="include">
+        </childnode>
+      </node>
+      <node id="2170">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="2171" relation="include">
+        </childnode>
+        <childnode refid="2172" relation="include">
+        </childnode>
+        <childnode refid="2203" relation="include">
+        </childnode>
+        <childnode refid="2186" relation="include">
+        </childnode>
+        <childnode refid="2174" relation="include">
+        </childnode>
+        <childnode refid="2210" relation="include">
+        </childnode>
+      </node>
+      <node id="2178">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2180" relation="include">
+        </childnode>
+      </node>
+      <node id="2176">
+        <label>App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="2177" relation="include">
+        </childnode>
+        <childnode refid="2186" relation="include">
+        </childnode>
+        <childnode refid="2182" relation="include">
+        </childnode>
+        <childnode refid="2183" relation="include">
+        </childnode>
+        <childnode refid="2184" relation="include">
+        </childnode>
+        <childnode refid="2185" relation="include">
+        </childnode>
+      </node>
+      <node id="2180">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2181" relation="include">
+        </childnode>
+        <childnode refid="2182" relation="include">
+        </childnode>
+        <childnode refid="2183" relation="include">
+        </childnode>
+        <childnode refid="2184" relation="include">
+        </childnode>
+        <childnode refid="2185" relation="include">
+        </childnode>
+        <childnode refid="2186" relation="include">
+        </childnode>
+      </node>
+      <node id="2209">
+        <label>Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="2202" relation="include">
+        </childnode>
+        <childnode refid="2210" relation="include">
+        </childnode>
+        <childnode refid="2211" relation="include">
+        </childnode>
+        <childnode refid="2212" relation="include">
+        </childnode>
+        <childnode refid="2213" relation="include">
+        </childnode>
+        <childnode refid="2214" relation="include">
+        </childnode>
+        <childnode refid="2182" relation="include">
+        </childnode>
+      </node>
+      <node id="2183">
+        <label>ctime</label>
+      </node>
+      <node id="2193">
+        <label>Time.h</label>
+      </node>
+      <node id="2186">
+        <label>vector</label>
+      </node>
+      <node id="2172">
+        <label>Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="2173" relation="include">
+        </childnode>
+        <childnode refid="2176" relation="include">
+        </childnode>
+        <childnode refid="2186" relation="include">
+        </childnode>
+        <childnode refid="2201" relation="include">
+        </childnode>
+        <childnode refid="2208" relation="include">
+        </childnode>
+        <childnode refid="2209" relation="include">
+        </childnode>
+      </node>
+      <node id="2200">
+        <label>array</label>
+      </node>
+      <node id="2181">
+        <label>sstream</label>
+      </node>
+      <node id="2201">
+        <label>Trajectory.h</label>
+        <link refid="_trajectory_8h"/>
+        <childnode refid="2202" relation="include">
+        </childnode>
+        <childnode refid="2203" relation="include">
+        </childnode>
+        <childnode refid="2204" relation="include">
+        </childnode>
+        <childnode refid="2205" relation="include">
+        </childnode>
+        <childnode refid="2206" relation="include">
+        </childnode>
+        <childnode refid="2186" relation="include">
+        </childnode>
+        <childnode refid="2207" relation="include">
+        </childnode>
+        <childnode refid="2174" relation="include">
+        </childnode>
+        <childnode refid="2175" relation="include">
+        </childnode>
+      </node>
+      <node id="2203">
+        <label>Math\Vector3.h</label>
+      </node>
+      <node id="2210">
+        <label>math.h</label>
+      </node>
+      <node id="2196">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="2197" relation="include">
+        </childnode>
+        <childnode refid="2195" relation="include">
+        </childnode>
+      </node>
+      <node id="2204">
+        <label>Math\Quantity.h</label>
+      </node>
+      <node id="2207">
+        <label>deque</label>
+      </node>
+      <node id="2188">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="2189" relation="include">
+        </childnode>
+        <childnode refid="2182" relation="include">
+        </childnode>
+      </node>
+      <node id="2214">
+        <label>gl/glu.h</label>
+      </node>
+      <node id="2190">
+        <label>SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="2182" relation="include">
+        </childnode>
+        <childnode refid="2186" relation="include">
+        </childnode>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2191" relation="include">
+        </childnode>
+        <childnode refid="2187" relation="include">
+        </childnode>
+        <childnode refid="2192" relation="include">
+        </childnode>
+        <childnode refid="2194" relation="include">
+        </childnode>
+        <childnode refid="2198" relation="include">
+        </childnode>
+      </node>
+      <node id="2199">
+        <label>SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="2190" relation="include">
+        </childnode>
+        <childnode refid="2188" relation="include">
+        </childnode>
+        <childnode refid="2186" relation="include">
+        </childnode>
+        <childnode refid="2200" relation="include">
+        </childnode>
+      </node>
+      <node id="2174">
+        <label>gl\GL.h</label>
+      </node>
+      <node id="2211">
+        <label>stdio.h</label>
+      </node>
+      <node id="2197">
+        <label>cstring</label>
+      </node>
+      <node id="2179">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="2194">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="2189" relation="include">
+        </childnode>
+        <childnode refid="2195" relation="include">
+        </childnode>
+      </node>
+      <node id="2198">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="2189" relation="include">
+        </childnode>
+      </node>
+      <node id="2177">
+        <label>CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2180" relation="include">
+        </childnode>
+        <childnode refid="2187" relation="include">
+        </childnode>
+        <childnode refid="2190" relation="include">
+        </childnode>
+        <childnode refid="2199" relation="include">
+        </childnode>
+        <childnode refid="2191" relation="include">
+        </childnode>
+        <childnode refid="2192" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_scene_8cpp_1a841bbc73af7643a685a4eb08c92b9c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CalculateDistanceBetween</definition>
+        <argsstring>(Vector3 &amp;first, Vector3 &amp;second)</argsstring>
+        <name>CalculateDistanceBetween</name>
+        <param>
+          <type><ref refid="class_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="class_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Scene.cpp" line="89" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Scene.cpp" bodystart="89" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_scene_8h" kindref="compound">Scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_scene_1ad10176d75a9cc0da56626f682d083507" refkind="member"><highlight class="normal"><ref refid="class_scene_1ad10176d75a9cc0da56626f682d083507" kindref="member">Scene::Scene</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9e5749b2c90c6376bb86fb9cc2dc3eac" kindref="member">minDistanceToRenderFullPlanet</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_scene_1a3b8cec2e32546713915f8c6303c951f1" refkind="member"><highlight class="normal"><ref refid="class_scene_1a3b8cec2e32546713915f8c6303c951f1" kindref="member">Scene::~Scene</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_scene_1a0f38de768620105c6026743a2bd8a851" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1a0f38de768620105c6026743a2bd8a851" kindref="member">Scene::addPlanet</ref>(<ref refid="class_planet" kindref="compound">Planet</ref>&amp;<sp/>planet)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.push_back(<sp/>planet<sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_scene_1a2708a12dc045758611cabc6aad195a4a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1a2708a12dc045758611cabc6aad195a4a" kindref="member">Scene::render</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.at(i).Render(t,<sp/>app);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_scene_1ababf385f67b5638a0ea745a832854118" kindref="member">RenderStandaloneTrajectories</ref>(t,<sp/>1,<sp/>1,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_scene_1a67b11a489741afa1248b10c7c82dd445" kindref="member">RenderStabdaloneSpacePoints</ref>(t,<sp/>app);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_scene_1afb89caf734fd0ae76088a766443d87f3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_planet" kindref="compound">Planet</ref>&amp;<sp/><ref refid="class_scene_1afb89caf734fd0ae76088a766443d87f3" kindref="member">Scene::FindObjectWithID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempID<sp/>=<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].GetID();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tempID<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_scene_1a67017a8885dec76253de41a72bb4e261" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1a67017a8885dec76253de41a72bb4e261" kindref="member">Scene::MarkPlanetWithID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a79169be77d7e02a24f68a5bfe627dc29" kindref="member">value</ref>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempID<sp/>=<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].GetID();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tempID<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].SetMark(value);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_scene_1af5e1d394058db0bf6640222690ea1afe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1af5e1d394058db0bf6640222690ea1afe" kindref="member">Scene::SteClickedToPlanetWithID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*,bool<sp/>value*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempID<sp/>=<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].GetID();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tempID<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].SetClicked(</highlight><highlight class="comment">/*value*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_scene_1a1e1e900238cc3e383cb2796530c443dc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1a1e1e900238cc3e383cb2796530c443dc" kindref="member">Scene::ShowInfoAboutPlanetWithID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempID<sp/>=<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].GetID();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tempID<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].ShowMessageBoxWithInfo(app);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77" refid="class_scene_1ad468e34bb62f2acc253820d883f1c141" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1ad468e34bb62f2acc253820d883f1c141" kindref="member">Scene::RenderPlanetWithID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempID<sp/>=<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].GetID();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tempID<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].Render(t,<sp/>app);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_scene_8cpp_1a841bbc73af7643a685a4eb08c92b9c7d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_scene_8cpp_1a841bbc73af7643a685a4eb08c92b9c7d" kindref="member">CalculateDistanceBetween</ref>(<ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="glext_8h_1ada771a798be00a696d20928c9a3371e7" kindref="member">first</ref>,<sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>second)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1dbb21208b9047cc8031ca9c840d3c2f" kindref="member">res</ref><sp/>=<sp/>sqrtf((second.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref><sp/>-<sp/>first.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>)*(second.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref><sp/>-<sp/>first.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>)<sp/>+<sp/>(second.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref><sp/>-<sp/>first.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>)*(second.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref><sp/>-<sp/>first.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>)<sp/>+</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(second.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref><sp/>-<sp/>first.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>)*(second.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref><sp/>-<sp/>first.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1dbb21208b9047cc8031ca9c840d3c2f" kindref="member">res</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_scene_1ab5bcf1b4b9bc790e652ccf8ee441c3a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_scene_1ab5bcf1b4b9bc790e652ccf8ee441c3a2" kindref="member">Scene::UpdateTrackingDistances</ref>(<ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>sceneCameraPosition,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>planetPos;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dis<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minDis<sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minDisPlanetID<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>planetPos<sp/>=<sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>[i].GetPosition(t,<sp/>app);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dis<sp/>=<sp/><ref refid="_scene_8cpp_1a841bbc73af7643a685a4eb08c92b9c7d" kindref="member">CalculateDistanceBetween</ref>(sceneCameraPosition,<sp/>planetPos);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dis<sp/>&gt;<sp/><ref refid="class_scene_1a9e5749b2c90c6376bb86fb9cc2dc3eac" kindref="member">minDistanceToRenderFullPlanet</ref>)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.at(i).SetSimpleRenderMode(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_scene_1a9c898688ba4edd96b93c0cf9b6ce4260" kindref="member">planets</ref>.at(i).SetSimpleRenderMode(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dis<sp/>&lt;<sp/>minDis)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minDis<sp/>=<sp/>dis;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minDisPlanetID<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*double<sp/>res<sp/>=<sp/>10<sp/>*<sp/>planets.at(minDisPlanetID).GetRadius(app);</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(minDis<sp/>&lt;<sp/>res)</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>planets.at(minDisPlanetID).SetMark(true);</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>0.004f;</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>planets.at(minDisPlanetID).SetMark(false);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.03f;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="class_scene_1ac0e99f535b07d82bcca3a000da0e76cb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1ac0e99f535b07d82bcca3a000da0e76cb" kindref="member">Scene::AddTrajectoryAsSpaceObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>,<sp/><ref refid="class_frame" kindref="compound">Frame</ref><sp/>frame,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>startingDate)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_scene_1a596bcc7043ee58e60705fa050506347c" kindref="member">standaloneTrajectories</ref>.push_back(<ref refid="class_trajectory" kindref="compound">Trajectory</ref>(obj,<sp/>frame,<sp/><ref refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" kindref="member">Units::Metric::kilometers</ref>));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">Time</ref><sp/>time(10,<sp/><ref refid="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" kindref="member">Units::Common::days</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_scene_1a596bcc7043ee58e60705fa050506347c" kindref="member">standaloneTrajectories</ref>.at(<ref refid="class_scene_1a596bcc7043ee58e60705fa050506347c" kindref="member">standaloneTrajectories</ref>.size()<sp/>-<sp/>1).SetIncrementalParams(startingDate,<sp/>time,<sp/>1000);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="class_scene_1ababf385f67b5638a0ea745a832854118" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1ababf385f67b5638a0ea745a832854118" kindref="member">Scene::RenderStandaloneTrajectories</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lineWidth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>red,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ac14cda87cf6c751d53b65a3cd41c35a1" kindref="member">green</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1853b32584a90fa75432925f3e26d0e8" kindref="member">blue</ref>)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1a596bcc7043ee58e60705fa050506347c" kindref="member">standaloneTrajectories</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glLineWidth(lineWidth);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glColor3f(red,<sp/>green,<sp/>blue);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glBegin(GL_LINE_STRIP);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glEnable(GL_LINE_SMOOTH);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_scene_1a596bcc7043ee58e60705fa050506347c" kindref="member">standaloneTrajectories</ref>[i].IncrementalDefined())</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::deque&lt;Vector3&gt;&amp;<sp/><ref refid="glext_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref><sp/>=<sp/><ref refid="class_scene_1a596bcc7043ee58e60705fa050506347c" kindref="member">standaloneTrajectories</ref>[i].GetIncrementalTrajectory(t);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>path.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex3f(path.at(i).x<sp/>*<sp/><ref refid="class_scene_1ae69efb71a67f64073b2c7b601e59973a" kindref="member">distanceScale</ref>,<sp/>path.at(i).y<sp/>*<sp/><ref refid="class_scene_1ae69efb71a67f64073b2c7b601e59973a" kindref="member">distanceScale</ref>,<sp/>path.at(i).z<sp/>*<sp/><ref refid="class_scene_1ae69efb71a67f64073b2c7b601e59973a" kindref="member">distanceScale</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glDisable(GL_LINE_SMOOTH);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="class_scene_1a694c16b6f0e804e11c429edbc00f4663" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1a694c16b6f0e804e11c429edbc00f4663" kindref="member">Scene::AddStandaloneSpacePoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>,<sp/><ref refid="class_font" kindref="compound">Font</ref><sp/><ref refid="_routine_8cpp_1a85d377224c6bd1d2c937ad1635c4a715" kindref="member">standalonePointFont</ref>)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_scene_1ae39b7e0774cc10fc19d6898982ae2a0e" kindref="member">standaloneSpacePoints</ref>.push_back(obj);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_scene_1a1efe4e0081be96c06ad22a682a898310" kindref="member">font</ref><sp/>=<sp/><ref refid="_routine_8cpp_1a85d377224c6bd1d2c937ad1635c4a715" kindref="member">standalonePointFont</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="class_scene_1a67b11a489741afa1248b10c7c82dd445" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scene_1a67b11a489741afa1248b10c7c82dd445" kindref="member">Scene::RenderStabdaloneSpacePoints</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_scene_1ae39b7e0774cc10fc19d6898982ae2a0e" kindref="member">standaloneSpacePoints</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glColor3f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glPointSize(7.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glEnable(GL_POINT_SMOOTH);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glBegin(GL_POINTS);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector3_t" kindref="compound">Vector3T &lt;Length&gt;</ref><sp/>pos<sp/>=<sp/><ref refid="class_scene_1ae39b7e0774cc10fc19d6898982ae2a0e" kindref="member">standaloneSpacePoints</ref>.at(i).GetPosition(t,<sp/><ref refid="class_space_object_1a2f4df46723472a248a030275dbfba9bb" kindref="member">SpaceObject::SSB</ref>,<sp/>app.<ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">GetReferenceFrame</ref>());</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>position(pos.<ref refid="class_vector3_t_1aa61f9e6d2239f9d69c281a1440792379" kindref="member">x</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())*<sp/><ref refid="class_scene_1ae69efb71a67f64073b2c7b601e59973a" kindref="member">distanceScale</ref>,<sp/>pos.<ref refid="class_vector3_t_1a73c0800c5d08a252de7b03c97accb9ee" kindref="member">y</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/><ref refid="class_scene_1ae69efb71a67f64073b2c7b601e59973a" kindref="member">distanceScale</ref>,<sp/>pos.<ref refid="class_vector3_t_1a591f9ca70ccc639c62790797d3edaa39" kindref="member">z</ref>.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(app.<ref refid="class_app_1ad04c66a48bfdbf61b6683b450708a8c7" kindref="member">LengthUnit</ref>())<sp/>*<sp/><ref refid="class_scene_1ae69efb71a67f64073b2c7b601e59973a" kindref="member">distanceScale</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex3d(position.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/>position.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/>position.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glColor3f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glRasterPos3f(position.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/>position.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/>position.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_scene_1a1efe4e0081be96c06ad22a682a898310" kindref="member">font</ref>.<ref refid="class_font_1abc5d95a4605278837b3f6697f6499dc1" kindref="member">glPrint</ref>(<ref refid="class_scene_1ae39b7e0774cc10fc19d6898982ae2a0e" kindref="member">standaloneSpacePoints</ref>.at(i).GetName().c_str());</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Scene.cpp"/>
+  </compounddef>
+</doxygen>

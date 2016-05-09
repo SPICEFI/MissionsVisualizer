@@ -1,0 +1,51 @@
+.TH "Units::Common" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Units::Common \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Quantity\&.h>\fP
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const \fBTimeUnit\fP \fBseconds\fP = \fBTimeUnit::BaseUnit\fP('sec')"
+.br
+.ti -1c
+.RI "static const \fBTimeUnit\fP \fBminutes\fP = \fBTimeUnit::ScaledUnit\fP(60\&.0, \fBUnits::Common::seconds\fP, 'min')"
+.br
+.ti -1c
+.RI "static const \fBTimeUnit\fP \fBhours\fP = \fBTimeUnit::ScaledUnit\fP(60\&.0, \fBUnits::Common::minutes\fP, 'hr')"
+.br
+.ti -1c
+.RI "static const \fBTimeUnit\fP \fBdays\fP = \fBTimeUnit::ScaledUnit\fP(24\&.0, \fBUnits::Common::hours\fP, 'days')"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 266 of file Quantity\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBTimeUnit\fP Units::Common::days = \fBTimeUnit::ScaledUnit\fP(24\&.0, \fBUnits::Common::hours\fP, 'days')\fC [static]\fP"
+
+.PP
+Definition at line 272 of file Quantity\&.h\&.
+.SS "const \fBTimeUnit\fP Units::Common::hours = \fBTimeUnit::ScaledUnit\fP(60\&.0, \fBUnits::Common::minutes\fP, 'hr')\fC [static]\fP"
+
+.PP
+Definition at line 271 of file Quantity\&.h\&.
+.SS "const \fBTimeUnit\fP Units::Common::minutes = \fBTimeUnit::ScaledUnit\fP(60\&.0, \fBUnits::Common::seconds\fP, 'min')\fC [static]\fP"
+
+.PP
+Definition at line 270 of file Quantity\&.h\&.
+.SS "const \fBTimeUnit\fP Units::Common::seconds = \fBTimeUnit::BaseUnit\fP('sec')\fC [static]\fP"
+
+.PP
+Definition at line 269 of file Quantity\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

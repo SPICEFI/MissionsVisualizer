@@ -1,0 +1,1151 @@
+.TH "SSWC/src/GL/glui.h" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/GL/glui.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'GL\\glut\&.h'\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <cstdio>\fP
+.br
+\fC#include <cstring>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBRGBc\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_CB\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Node\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Bitmap\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_StdBitmaps\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Master_Object\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Glut_Window\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Main\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Control\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Button\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Checkbox\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Column\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Panel\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_FileBrowser\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Rollout\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Tree\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_TreePanel\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_EditText\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_CommandLine\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_RadioGroup\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_RadioButton\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Separator\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Spinner\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_StaticText\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_TextBox\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_List_Item\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_List\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Scrollbar\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Listbox_Item\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Listbox\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Mouse_Interaction\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Rotation\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Translation\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGLUI_VERSION\fP   2\&.3f    /********** Current version **********/"
+.br
+.ti -1c
+.RI "#define \fBByte\fP   unsigned char"
+.br
+.ti -1c
+.RI "#define \fB_RGBC_\fP"
+.br
+.ti -1c
+.RI "#define \fBGLUI_XOFF\fP   6"
+.br
+.ti -1c
+.RI "#define \fBGLUI_YOFF\fP   6"
+.br
+.ti -1c
+.RI "#define \fBGLUI_ITEMSPACING\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_CHECKBOX_SIZE\fP   13"
+.br
+.ti -1c
+.RI "#define \fBGLUI_RADIOBUTTON_SIZE\fP   13"
+.br
+.ti -1c
+.RI "#define \fBGLUI_BUTTON_SIZE\fP   20"
+.br
+.ti -1c
+.RI "#define \fBGLUI_STATICTEXT_SIZE\fP   13"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SEPARATOR_HEIGHT\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLUI_DEFAULT_CONTROL_WIDTH\fP   100"
+.br
+.ti -1c
+.RI "#define \fBGLUI_DEFAULT_CONTROL_HEIGHT\fP   13"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_BOXINNERMARGINX\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_HEIGHT\fP   20"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_WIDTH\fP   130"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_MIN_INT_WIDTH\fP   35"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_MIN_TEXT_WIDTH\fP   50"
+.br
+.ti -1c
+.RI "#define \fBGLUI_PANEL_NAME_DROP\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLUI_PANEL_EMBOSS_TOP\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUI_ROTATION_WIDTH\fP   50"
+.br
+.ti -1c
+.RI "#define \fBGLUI_ROTATION_HEIGHT\fP   (\fBGLUI_ROTATION_WIDTH\fP+18)"
+.br
+.ti -1c
+.RI "#define \fBGLUI_MOUSE_INTERACTION_WIDTH\fP   50"
+.br
+.ti -1c
+.RI "#define \fBGLUI_MOUSE_INTERACTION_HEIGHT\fP   (\fBGLUI_MOUSE_INTERACTION_WIDTH\fP)+18"
+.br
+.ti -1c
+.RI "#define \fBGLUI_PANEL_NONE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_PANEL_EMBOSSED\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_PANEL_RAISED\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_DEF_MAX_ARRAY\fP   30"
+.br
+.ti -1c
+.RI "#define \fBGLUI_CONTROL_ACTIVE_MOUSEDOWN\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_CONTROL_ACTIVE_PERMANENT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_ALIGN_CENTER\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_ALIGN_RIGHT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_ALIGN_LEFT\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIMIT_NONE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIMIT_CLAMP\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIMIT_WRAP\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TRANSLATION_XY\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TRANSLATION_Z\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TRANSLATION_X\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TRANSLATION_Y\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TRANSLATION_LOCK_NONE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TRANSLATION_LOCK_X\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TRANSLATION_LOCK_Y\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_ACTIVATE_MOUSE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_ACTIVATE_TAB\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIVE_NONE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIVE_INT\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIVE_FLOAT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIVE_TEXT\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIVE_STRING\fP   6"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIVE_DOUBLE\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIVE_FLOAT_ARRAY\fP   5"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TEXTBOX_HEIGHT\fP   130"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TEXTBOX_WIDTH\fP   130"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIST_HEIGHT\fP   130"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIST_WIDTH\fP   130"
+.br
+.ti -1c
+.RI "#define \fBGLUI_DOUBLE_CLICK\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SINGLE_CLICK\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TAB_WIDTH\fP   50 /* In \fBpixels\fP */"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TEXTBOX_BOXINNERMARGINX\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TEXTBOX_MIN_TEXT_WIDTH\fP   50"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIST_BOXINNERMARGINX\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_LIST_MIN_TEXT_WIDTH\fP   50"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_DEFAULTS\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_ALTERNATE_COLOR\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_ENABLE_BAR\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_DISABLE_BAR\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_DISABLE_DEEPEST_BAR\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_CONNECT_CHILDREN_ONLY\fP   16"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_DISPLAY_HIERARCHY\fP   32"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_HIERARCHY_NUMERICDOT\fP   64"
+.br
+.ti -1c
+.RI "#define \fBGLUI_TREEPANEL_HIERARCHY_LEVEL_ONLY\fP   128"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_ARROW_WIDTH\fP   16"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_ARROW_HEIGHT\fP   16"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_BOX_MIN_HEIGHT\fP   5"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_BOX_STD_HEIGHT\fP   16"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_STATE_NONE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_STATE_UP\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_STATE_DOWN\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_STATE_BOTH\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_STATE_SCROLL\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_DEFAULT_GROWTH_EXP\fP   1\&.05f"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_VERTICAL\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_HORIZONTAL\fP   1"
+.br
+.ti -1c
+.RI "#define \fBCHAR_WIDTH_HASH_SIZE\fP   128"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SUBWINDOW\fP   ((long)(1<<1))"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SUBWINDOW_TOP\fP   ((long)(1<<2))"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SUBWINDOW_BOTTOM\fP   ((long)(1<<3))"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SUBWINDOW_LEFT\fP   ((long)(1<<4))"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SUBWINDOW_RIGHT\fP   ((long)(1<<5))"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_TEXT\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_INT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_FLOAT\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_INT\fP   \fBGLUI_EDITTEXT_INT\fP"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_FLOAT\fP   \fBGLUI_EDITTEXT_FLOAT\fP"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_INT\fP   \fBGLUI_EDITTEXT_INT\fP"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SCROLL_FLOAT\fP   \fBGLUI_EDITTEXT_FLOAT\fP"
+.br
+.ti -1c
+.RI "#define \fBGLUI_EDITTEXT_STRING\fP   4"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_ARROW_WIDTH\fP   12"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_ARROW_HEIGHT\fP   8"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_ARROW_Y\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_STATE_NONE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_STATE_UP\fP   1"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_STATE_DOWN\fP   2"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_STATE_BOTH\fP   3"
+.br
+.ti -1c
+.RI "#define \fBGLUI_SPINNER_DEFAULT_GROWTH_EXP\fP   1\&.05f"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBstd::string\fP \fBGLUI_String\fP"
+.br
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLUI_Update_CB\fP )(\fBint\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLUI_Control_CB\fP )(\fBGLUI_Control\fP *)"
+.br
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBInt1_CB\fP )(\fBint\fP)"
+.br
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBInt2_CB\fP )(\fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBInt3_CB\fP )(\fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBInt4_CB\fP )(\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBGLUI_Glut_CB_Types\fP { \fBGLUI_GLUT_RESHAPE\fP, \fBGLUI_GLUT_KEYBOARD\fP, \fBGLUI_GLUT_DISPLAY\fP, \fBGLUI_GLUT_MOUSE\fP, \fBGLUI_GLUT_MOTION\fP, \fBGLUI_GLUT_SPECIAL\fP, \fBGLUI_GLUT_PASSIVE_MOTION\fP, \fBGLUI_GLUT_ENTRY\fP, \fBGLUI_GLUT_VISIBILITY\fP }"
+.br
+.ti -1c
+.RI "enum \fBTranslationCodes\fP { \fBGLUI_TRANSLATION_MOUSE_NONE\fP = 0, \fBGLUI_TRANSLATION_MOUSE_UP\fP, \fBGLUI_TRANSLATION_MOUSE_DOWN\fP, \fBGLUI_TRANSLATION_MOUSE_LEFT\fP, \fBGLUI_TRANSLATION_MOUSE_RIGHT\fP, \fBGLUI_TRANSLATION_MOUSE_UP_LEFT\fP, \fBGLUI_TRANSLATION_MOUSE_UP_RIGHT\fP, \fBGLUI_TRANSLATION_MOUSE_DOWN_LEFT\fP, \fBGLUI_TRANSLATION_MOUSE_DOWN_RIGHT\fP }"
+.br
+.ti -1c
+.RI "enum \fBGLUI_StdBitmaps_Codes\fP { \fBGLUI_STDBITMAP_CHECKBOX_OFF\fP = 0, \fBGLUI_STDBITMAP_CHECKBOX_ON\fP, \fBGLUI_STDBITMAP_RADIOBUTTON_OFF\fP, \fBGLUI_STDBITMAP_RADIOBUTTON_ON\fP, \fBGLUI_STDBITMAP_UP_ARROW\fP, \fBGLUI_STDBITMAP_DOWN_ARROW\fP, \fBGLUI_STDBITMAP_LEFT_ARROW\fP, \fBGLUI_STDBITMAP_RIGHT_ARROW\fP, \fBGLUI_STDBITMAP_SPINNER_UP_OFF\fP, \fBGLUI_STDBITMAP_SPINNER_UP_ON\fP, \fBGLUI_STDBITMAP_SPINNER_DOWN_OFF\fP, \fBGLUI_STDBITMAP_SPINNER_DOWN_ON\fP, \fBGLUI_STDBITMAP_CHECKBOX_OFF_DIS\fP, \fBGLUI_STDBITMAP_CHECKBOX_ON_DIS\fP, \fBGLUI_STDBITMAP_RADIOBUTTON_OFF_DIS\fP, \fBGLUI_STDBITMAP_RADIOBUTTON_ON_DIS\fP, \fBGLUI_STDBITMAP_SPINNER_UP_DIS\fP, \fBGLUI_STDBITMAP_SPINNER_DOWN_DIS\fP, \fBGLUI_STDBITMAP_LISTBOX_UP\fP, \fBGLUI_STDBITMAP_LISTBOX_DOWN\fP, \fBGLUI_STDBITMAP_LISTBOX_UP_DIS\fP, \fBGLUI_STDBITMAP_NUM_ITEMS\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_String\fP & \fBglui_format_str\fP (\fBGLUI_String\fP &str, const char *fmt,\&.\&.\&.)"
+.br
+.ti -1c
+.RI "\fBint\fP \fB_glutBitmapWidthString\fP (\fBvoid\fP *\fBfont\fP, const char *\fBs\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fB_glutBitmapString\fP (\fBvoid\fP *\fBfont\fP, const char *\fBs\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_display_func\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_reshape_func\fP (\fBint\fP \fBw\fP, \fBint\fP \fBh\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_keyboard_func\fP (unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_special_func\fP (\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_mouse_func\fP (\fBint\fP button, \fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_motion_func\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_passive_motion_func\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_entry_func\fP (\fBint\fP state)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_visibility_func\fP (\fBint\fP state)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_idle_func\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_parent_window_reshape_func\fP (\fBint\fP \fBw\fP, \fBint\fP \fBh\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_parent_window_keyboard_func\fP (unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_parent_window_mouse_func\fP (\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_parent_window_special_func\fP (\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Master_Object\fP \fBGLUI_Master\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define _RGBC_"
+
+.PP
+Definition at line 89 of file glui\&.h\&.
+.SS "#define Byte   unsigned char"
+
+.PP
+Definition at line 76 of file glui\&.h\&.
+.SS "#define CHAR_WIDTH_HASH_SIZE   128"
+Size of the character width hash table for faster lookups\&. Make sure to keep this a power of two to avoid the slow divide\&. This is also a speed/memory tradeoff; 128 is enough for low ASCII\&. 
+.PP
+Definition at line 221 of file glui\&.h\&.
+.SS "#define GLUI_ACTIVATE_MOUSE   1"
+
+.PP
+Definition at line 166 of file glui\&.h\&.
+.SS "#define GLUI_ACTIVATE_TAB   2"
+
+.PP
+Definition at line 167 of file glui\&.h\&.
+.SS "#define GLUI_ALIGN_CENTER   1"
+
+.PP
+Definition at line 146 of file glui\&.h\&.
+.SS "#define GLUI_ALIGN_LEFT   3"
+
+.PP
+Definition at line 148 of file glui\&.h\&.
+.SS "#define GLUI_ALIGN_RIGHT   2"
+
+.PP
+Definition at line 147 of file glui\&.h\&.
+.SS "#define GLUI_BUTTON_SIZE   20"
+
+.PP
+Definition at line 114 of file glui\&.h\&.
+.SS "#define GLUI_CHECKBOX_SIZE   13"
+
+.PP
+Definition at line 112 of file glui\&.h\&.
+.SS "#define GLUI_CONTROL_ACTIVE_MOUSEDOWN   1"
+
+.PP
+Definition at line 142 of file glui\&.h\&.
+.SS "#define GLUI_CONTROL_ACTIVE_PERMANENT   2"
+
+.PP
+Definition at line 143 of file glui\&.h\&.
+.SS "#define GLUI_DEF_MAX_ARRAY   30"
+Max # of els in control's float_array 
+.PP
+Definition at line 139 of file glui\&.h\&.
+.SS "#define GLUI_DEFAULT_CONTROL_HEIGHT   13"
+
+.PP
+Definition at line 118 of file glui\&.h\&.
+.SS "#define GLUI_DEFAULT_CONTROL_WIDTH   100"
+
+.PP
+Definition at line 117 of file glui\&.h\&.
+.SS "#define GLUI_DOUBLE_CLICK   1"
+
+.PP
+Definition at line 183 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_BOXINNERMARGINX   3"
+
+.PP
+Definition at line 119 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_FLOAT   3"
+
+.PP
+Definition at line 271 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_HEIGHT   20"
+
+.PP
+Definition at line 120 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_INT   2"
+
+.PP
+Definition at line 270 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_MIN_INT_WIDTH   35"
+
+.PP
+Definition at line 122 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_MIN_TEXT_WIDTH   50"
+
+.PP
+Definition at line 123 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_STRING   4"
+
+.PP
+Definition at line 277 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_TEXT   1"
+
+.PP
+Definition at line 269 of file glui\&.h\&.
+.SS "#define GLUI_EDITTEXT_WIDTH   130"
+
+.PP
+Definition at line 121 of file glui\&.h\&.
+.SS "#define GLUI_ITEMSPACING   3"
+
+.PP
+Definition at line 111 of file glui\&.h\&.
+.SS "#define GLUI_LIMIT_CLAMP   1"
+
+.PP
+Definition at line 152 of file glui\&.h\&.
+.SS "#define GLUI_LIMIT_NONE   0"
+
+.PP
+Definition at line 151 of file glui\&.h\&.
+.SS "#define GLUI_LIMIT_WRAP   2"
+
+.PP
+Definition at line 153 of file glui\&.h\&.
+.SS "#define GLUI_LIST_BOXINNERMARGINX   3"
+
+.PP
+Definition at line 188 of file glui\&.h\&.
+.SS "#define GLUI_LIST_HEIGHT   130"
+
+.PP
+Definition at line 181 of file glui\&.h\&.
+.SS "#define GLUI_LIST_MIN_TEXT_WIDTH   50"
+
+.PP
+Definition at line 189 of file glui\&.h\&.
+.SS "#define GLUI_LIST_WIDTH   130"
+
+.PP
+Definition at line 182 of file glui\&.h\&.
+.SS "#define GLUI_LIVE_DOUBLE   4"
+
+.PP
+Definition at line 175 of file glui\&.h\&.
+.SS "#define GLUI_LIVE_FLOAT   2"
+
+.PP
+Definition at line 172 of file glui\&.h\&.
+.SS "#define GLUI_LIVE_FLOAT_ARRAY   5"
+
+.PP
+Definition at line 176 of file glui\&.h\&.
+.SS "#define GLUI_LIVE_INT   1"
+
+.PP
+Definition at line 171 of file glui\&.h\&.
+.SS "#define GLUI_LIVE_NONE   0"
+
+.PP
+Definition at line 170 of file glui\&.h\&.
+.SS "#define GLUI_LIVE_STRING   6"
+
+.PP
+Definition at line 174 of file glui\&.h\&.
+.SS "#define GLUI_LIVE_TEXT   3"
+
+.PP
+Definition at line 173 of file glui\&.h\&.
+.SS "#define GLUI_MOUSE_INTERACTION_HEIGHT   (\fBGLUI_MOUSE_INTERACTION_WIDTH\fP)+18"
+
+.PP
+Definition at line 131 of file glui\&.h\&.
+.SS "#define GLUI_MOUSE_INTERACTION_WIDTH   50"
+
+.PP
+Definition at line 130 of file glui\&.h\&.
+.SS "#define GLUI_PANEL_EMBOSS_TOP   4"
+
+.PP
+Definition at line 125 of file glui\&.h\&.
+.SS "#define GLUI_PANEL_EMBOSSED   1"
+
+.PP
+Definition at line 135 of file glui\&.h\&.
+.SS "#define GLUI_PANEL_NAME_DROP   8"
+
+.PP
+Definition at line 124 of file glui\&.h\&.
+.SS "#define GLUI_PANEL_NONE   0"
+Different panel control types 
+.PP
+Definition at line 134 of file glui\&.h\&.
+.SS "#define GLUI_PANEL_RAISED   2"
+
+.PP
+Definition at line 136 of file glui\&.h\&.
+.SS "#define GLUI_RADIOBUTTON_SIZE   13"
+
+.PP
+Definition at line 113 of file glui\&.h\&.
+.SS "#define GLUI_ROTATION_HEIGHT   (\fBGLUI_ROTATION_WIDTH\fP+18)"
+
+.PP
+Definition at line 129 of file glui\&.h\&.
+.SS "#define GLUI_ROTATION_WIDTH   50"
+
+.PP
+Definition at line 128 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_ARROW_HEIGHT   16"
+
+.PP
+Definition at line 204 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_ARROW_WIDTH   16"
+
+.PP
+Definition at line 203 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_BOX_MIN_HEIGHT   5"
+
+.PP
+Definition at line 205 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_BOX_STD_HEIGHT   16"
+
+.PP
+Definition at line 206 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_DEFAULT_GROWTH_EXP   1\&.05f"
+
+.PP
+Definition at line 212 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_FLOAT   \fBGLUI_EDITTEXT_FLOAT\fP"
+
+.PP
+Definition at line 275 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_HORIZONTAL   1"
+
+.PP
+Definition at line 214 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_INT   \fBGLUI_EDITTEXT_INT\fP"
+
+.PP
+Definition at line 274 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_STATE_BOTH   3"
+
+.PP
+Definition at line 210 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_STATE_DOWN   2"
+
+.PP
+Definition at line 209 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_STATE_NONE   0"
+
+.PP
+Definition at line 207 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_STATE_SCROLL   4"
+
+.PP
+Definition at line 211 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_STATE_UP   1"
+
+.PP
+Definition at line 208 of file glui\&.h\&.
+.SS "#define GLUI_SCROLL_VERTICAL   0"
+
+.PP
+Definition at line 213 of file glui\&.h\&.
+.SS "#define GLUI_SEPARATOR_HEIGHT   8"
+
+.PP
+Definition at line 116 of file glui\&.h\&.
+.SS "#define GLUI_SINGLE_CLICK   0"
+
+.PP
+Definition at line 184 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_ARROW_HEIGHT   8"
+
+.PP
+Definition at line 1842 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_ARROW_WIDTH   12"
+
+.PP
+Definition at line 1841 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_ARROW_Y   2"
+
+.PP
+Definition at line 1843 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_DEFAULT_GROWTH_EXP   1\&.05f"
+
+.PP
+Definition at line 1850 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_FLOAT   \fBGLUI_EDITTEXT_FLOAT\fP"
+
+.PP
+Definition at line 273 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_INT   \fBGLUI_EDITTEXT_INT\fP"
+
+.PP
+Definition at line 272 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_STATE_BOTH   3"
+
+.PP
+Definition at line 1848 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_STATE_DOWN   2"
+
+.PP
+Definition at line 1847 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_STATE_NONE   0"
+
+.PP
+Definition at line 1845 of file glui\&.h\&.
+.SS "#define GLUI_SPINNER_STATE_UP   1"
+
+.PP
+Definition at line 1846 of file glui\&.h\&.
+.SS "#define GLUI_STATICTEXT_SIZE   13"
+
+.PP
+Definition at line 115 of file glui\&.h\&.
+.SS "#define GLUI_SUBWINDOW   ((long)(1<<1))"
+
+.PP
+Definition at line 262 of file glui\&.h\&.
+.SS "#define GLUI_SUBWINDOW_BOTTOM   ((long)(1<<3))"
+
+.PP
+Definition at line 264 of file glui\&.h\&.
+.SS "#define GLUI_SUBWINDOW_LEFT   ((long)(1<<4))"
+
+.PP
+Definition at line 265 of file glui\&.h\&.
+.SS "#define GLUI_SUBWINDOW_RIGHT   ((long)(1<<5))"
+
+.PP
+Definition at line 266 of file glui\&.h\&.
+.SS "#define GLUI_SUBWINDOW_TOP   ((long)(1<<2))"
+
+.PP
+Definition at line 263 of file glui\&.h\&.
+.SS "#define GLUI_TAB_WIDTH   50 /* In \fBpixels\fP */"
+
+.PP
+Definition at line 185 of file glui\&.h\&.
+.SS "#define GLUI_TEXTBOX_BOXINNERMARGINX   3"
+
+.PP
+Definition at line 186 of file glui\&.h\&.
+.SS "#define GLUI_TEXTBOX_HEIGHT   130"
+
+.PP
+Definition at line 179 of file glui\&.h\&.
+.SS "#define GLUI_TEXTBOX_MIN_TEXT_WIDTH   50"
+
+.PP
+Definition at line 187 of file glui\&.h\&.
+.SS "#define GLUI_TEXTBOX_WIDTH   130"
+
+.PP
+Definition at line 180 of file glui\&.h\&.
+.SS "#define GLUI_TRANSLATION_LOCK_NONE   0"
+
+.PP
+Definition at line 161 of file glui\&.h\&.
+.SS "#define GLUI_TRANSLATION_LOCK_X   1"
+
+.PP
+Definition at line 162 of file glui\&.h\&.
+.SS "#define GLUI_TRANSLATION_LOCK_Y   2"
+
+.PP
+Definition at line 163 of file glui\&.h\&.
+.SS "#define GLUI_TRANSLATION_X   2"
+
+.PP
+Definition at line 158 of file glui\&.h\&.
+.SS "#define GLUI_TRANSLATION_XY   0"
+
+.PP
+Definition at line 156 of file glui\&.h\&.
+.SS "#define GLUI_TRANSLATION_Y   3"
+
+.PP
+Definition at line 159 of file glui\&.h\&.
+.SS "#define GLUI_TRANSLATION_Z   1"
+
+.PP
+Definition at line 157 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_ALTERNATE_COLOR   1"
+
+.PP
+Definition at line 193 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_CONNECT_CHILDREN_ONLY   16"
+
+.PP
+Definition at line 197 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_DEFAULTS   0"
+
+.PP
+Definition at line 192 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_DISABLE_BAR   4"
+
+.PP
+Definition at line 195 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_DISABLE_DEEPEST_BAR   8"
+
+.PP
+Definition at line 196 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_DISPLAY_HIERARCHY   32"
+
+.PP
+Definition at line 198 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_ENABLE_BAR   2"
+
+.PP
+Definition at line 194 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_HIERARCHY_LEVEL_ONLY   128"
+
+.PP
+Definition at line 200 of file glui\&.h\&.
+.SS "#define GLUI_TREEPANEL_HIERARCHY_NUMERICDOT   64"
+
+.PP
+Definition at line 199 of file glui\&.h\&.
+.SS "#define GLUI_VERSION   2\&.3f    /********** Current version **********/"
+
+.PP
+Definition at line 65 of file glui\&.h\&.
+.SS "#define GLUI_XOFF   6"
+
+.PP
+Definition at line 109 of file glui\&.h\&.
+.SS "#define GLUI_YOFF   6"
+
+.PP
+Definition at line 110 of file glui\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fBvoid\fP(* GLUI_Control_CB)(\fBGLUI_Control\fP *)"
+
+.PP
+Definition at line 281 of file glui\&.h\&.
+.SS "typedef \fBstd::string\fP \fBGLUI_String\fP"
+
+.PP
+Definition at line 240 of file glui\&.h\&.
+.SS "typedef \fBvoid\fP(* GLUI_Update_CB)(\fBint\fP \fBid\fP)"
+
+.PP
+Definition at line 280 of file glui\&.h\&.
+.SS "typedef \fBvoid\fP(* Int1_CB)(\fBint\fP)"
+
+.PP
+Definition at line 282 of file glui\&.h\&.
+.SS "typedef \fBvoid\fP(* Int2_CB)(\fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 283 of file glui\&.h\&.
+.SS "typedef \fBvoid\fP(* Int3_CB)(\fBint\fP, \fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 284 of file glui\&.h\&.
+.SS "typedef \fBvoid\fP(* Int4_CB)(\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)"
+
+.PP
+Definition at line 285 of file glui\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBGLUI_Glut_CB_Types\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIGLUI_GLUT_RESHAPE \fP\fP
+.TP
+\fB\fIGLUI_GLUT_KEYBOARD \fP\fP
+.TP
+\fB\fIGLUI_GLUT_DISPLAY \fP\fP
+.TP
+\fB\fIGLUI_GLUT_MOUSE \fP\fP
+.TP
+\fB\fIGLUI_GLUT_MOTION \fP\fP
+.TP
+\fB\fIGLUI_GLUT_SPECIAL \fP\fP
+.TP
+\fB\fIGLUI_GLUT_PASSIVE_MOTION \fP\fP
+.TP
+\fB\fIGLUI_GLUT_ENTRY \fP\fP
+.TP
+\fB\fIGLUI_GLUT_VISIBILITY \fP\fP
+.PP
+Definition at line 94 of file glui\&.h\&.
+.SS "enum \fBGLUI_StdBitmaps_Codes\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIGLUI_STDBITMAP_CHECKBOX_OFF \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_CHECKBOX_ON \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_RADIOBUTTON_OFF \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_RADIOBUTTON_ON \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_UP_ARROW \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_DOWN_ARROW \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_LEFT_ARROW \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_RIGHT_ARROW \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_SPINNER_UP_OFF \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_SPINNER_UP_ON \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_SPINNER_DOWN_OFF \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_SPINNER_DOWN_ON \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_CHECKBOX_OFF_DIS \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_CHECKBOX_ON_DIS \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_RADIOBUTTON_OFF_DIS \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_RADIOBUTTON_ON_DIS \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_SPINNER_UP_DIS \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_SPINNER_DOWN_DIS \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_LISTBOX_UP \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_LISTBOX_DOWN \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_LISTBOX_UP_DIS \fP\fP
+.TP
+\fB\fIGLUI_STDBITMAP_NUM_ITEMS \fP\fP
+.PP
+Definition at line 373 of file glui\&.h\&.
+.SS "enum \fBTranslationCodes\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_NONE \fP\fP
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_UP \fP\fP
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_DOWN \fP\fP
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_LEFT \fP\fP
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_RIGHT \fP\fP
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_UP_LEFT \fP\fP
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_UP_RIGHT \fP\fP
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_DOWN_LEFT \fP\fP
+.TP
+\fB\fIGLUI_TRANSLATION_MOUSE_DOWN_RIGHT \fP\fP
+.PP
+Definition at line 225 of file glui\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP _glutBitmapString (\fBvoid\fP *font, const char *s)"
+
+.SS "\fBint\fP _glutBitmapWidthString (\fBvoid\fP *font, const char *s)"
+
+.SS "\fBvoid\fP glui_display_func (\fBvoid\fP)"
+
+.SS "\fBvoid\fP glui_entry_func (\fBint\fPstate)"
+
+.SS "\fBGLUI_String\fP& glui_format_str (\fBGLUI_String\fP &str, const char *fmt, \&.\&.\&.)"
+
+.SS "\fBvoid\fP glui_idle_func (\fBvoid\fP)"
+
+.SS "\fBvoid\fP glui_keyboard_func (unsigned charkey, \fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP glui_motion_func (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP glui_mouse_func (\fBint\fPbutton, \fBint\fPstate, \fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP glui_parent_window_keyboard_func (unsigned charkey, \fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP glui_parent_window_mouse_func (\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)"
+
+.SS "\fBvoid\fP glui_parent_window_reshape_func (\fBint\fPw, \fBint\fPh)"
+
+.SS "\fBvoid\fP glui_parent_window_special_func (\fBint\fPkey, \fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP glui_passive_motion_func (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP glui_reshape_func (\fBint\fPw, \fBint\fPh)"
+
+.SS "\fBvoid\fP glui_special_func (\fBint\fPkey, \fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP glui_visibility_func (\fBint\fPstate)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBGLUI_Master_Object\fP GLUI_Master"
+This is the only \fBGLUI_Master_Object\fP in existence\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

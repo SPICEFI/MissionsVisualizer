@@ -1,0 +1,174 @@
+.TH "Vector3T< T >" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Vector3T< T > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Vector3T\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector3T\fP ()"
+.br
+.ti -1c
+.RI "\fBVector3T\fP (const T &\fBx\fP, const T &\fBy\fP, const T &\fBz\fP)"
+.br
+.ti -1c
+.RI "\fBVector3T\fP (const T *pv)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSet\fP (const T &\fBx\fP, const T &\fBy\fP, const T &\fBz\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBAssign\fP (const T *pv)"
+.br
+.ti -1c
+.RI "T \fBLength\fP () const "
+.br
+.ti -1c
+.RI "T & \fBoperator+=\fP (const \fBVector3T\fP &rhs)"
+.br
+.ti -1c
+.RI "T & \fBoperator-=\fP (const \fBVector3T\fP &rhs)"
+.br
+.ti -1c
+.RI "T & \fBoperator*=\fP (double rhs)"
+.br
+.ti -1c
+.RI "T & \fBoperator/=\fP (double rhs)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "T \fBx\fP"
+.br
+.ti -1c
+.RI "T \fBy\fP"
+.br
+.ti -1c
+.RI "T \fBz\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "T \fBoperator+\fP (const \fBVector3T\fP &lhs, const \fBVector3T\fP &rhs)"
+.br
+.ti -1c
+.RI "T \fBoperator-\fP (const \fBVector3T\fP &lhs, const \fBVector3T\fP &rhs)"
+.br
+.ti -1c
+.RI "T \fBoperator-\fP (const \fBVector3T\fP &op)"
+.br
+.ti -1c
+.RI "T \fBoperator*\fP (double lhs, const \fBVector3T\fP &rhs)"
+.br
+.ti -1c
+.RI "T \fBoperator*\fP (const \fBVector3T\fP &lhs, double rhs)"
+.br
+.ti -1c
+.RI "T \fBoperator/\fP (const \fBVector3T\fP &lhs, double rhs)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename T>class Vector3T< T >"
+
+.PP
+Definition at line 6 of file Vector3T\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename T> \fBVector3T\fP< T >::\fBVector3T\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 9 of file Vector3T\&.h\&.
+.SS "template<typename T> \fBVector3T\fP< T >::\fBVector3T\fP (const T &x, const T &y, const T &z)\fC [inline]\fP"
+
+.PP
+Definition at line 13 of file Vector3T\&.h\&.
+.SS "template<typename T> \fBVector3T\fP< T >::\fBVector3T\fP (const T *pv)\fC [inline]\fP"
+
+.PP
+Definition at line 17 of file Vector3T\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T> \fBvoid\fP \fBVector3T\fP< T >::Assign (const T *pv)\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file Vector3T\&.h\&.
+.SS "template<typename T> T \fBVector3T\fP< T >::\fBLength\fP () const\fC [inline]\fP"
+
+.PP
+Definition at line 35 of file Vector3T\&.h\&.
+.SS "template<typename T> T& \fBVector3T\fP< T >::operator*= (doublerhs)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file Vector3T\&.h\&.
+.SS "template<typename T> T& \fBVector3T\fP< T >::operator+= (const \fBVector3T\fP< T > &rhs)\fC [inline]\fP"
+
+.PP
+Definition at line 50 of file Vector3T\&.h\&.
+.SS "template<typename T> T& \fBVector3T\fP< T >::operator-= (const \fBVector3T\fP< T > &rhs)\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file Vector3T\&.h\&.
+.SS "template<typename T> T& \fBVector3T\fP< T >::operator/= (doublerhs)\fC [inline]\fP"
+
+.PP
+Definition at line 70 of file Vector3T\&.h\&.
+.SS "template<typename T> \fBvoid\fP \fBVector3T\fP< T >::Set (const T &x, const T &y, const T &z)\fC [inline]\fP"
+
+.PP
+Definition at line 22 of file Vector3T\&.h\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "template<typename T> T operator* (doublelhs, const \fBVector3T\fP< T > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 96 of file Vector3T\&.h\&.
+.SS "template<typename T> T operator* (const \fBVector3T\fP< T > &lhs, doublerhs)\fC [friend]\fP"
+
+.PP
+Definition at line 104 of file Vector3T\&.h\&.
+.SS "template<typename T> T operator+ (const \fBVector3T\fP< T > &lhs, const \fBVector3T\fP< T > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 80 of file Vector3T\&.h\&.
+.SS "template<typename T> T operator- (const \fBVector3T\fP< T > &lhs, const \fBVector3T\fP< T > &rhs)\fC [friend]\fP"
+
+.PP
+Definition at line 88 of file Vector3T\&.h\&.
+.SS "template<typename T> T operator- (const \fBVector3T\fP< T > &op)\fC [friend]\fP"
+
+.PP
+Definition at line 92 of file Vector3T\&.h\&.
+.SS "template<typename T> T operator/ (const \fBVector3T\fP< T > &lhs, doublerhs)\fC [friend]\fP"
+
+.PP
+Definition at line 108 of file Vector3T\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename T> T \fBVector3T\fP< T >::\fBx\fP"
+
+.PP
+Definition at line 76 of file Vector3T\&.h\&.
+.SS "template<typename T> T \fBVector3T\fP< T >::\fBy\fP"
+
+.PP
+Definition at line 77 of file Vector3T\&.h\&.
+.SS "template<typename T> T \fBVector3T\fP< T >::\fBz\fP"
+
+.PP
+Definition at line 78 of file Vector3T\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

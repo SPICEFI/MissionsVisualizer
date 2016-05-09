@@ -1,0 +1,115 @@
+.TH "Matrix4x4" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Matrix4x4 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Matrix4x4\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMatrix4x4\fP ()"
+.br
+.ti -1c
+.RI "\fBMatrix4x4\fP (const float *\fBm\fP)"
+.br
+.ti -1c
+.RI "\fBMatrix4x4\fP (const float \fBm\fP[\fBDIM\fP][\fBDIM\fP])"
+.br
+.ti -1c
+.RI "\fBMatrix4x4\fP (float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSet\fP (const float *\fBm\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSet\fP (size_t \fBrow\fP, size_t col, float \fBval\fP)"
+.br
+.ti -1c
+.RI "float \fBGet\fP (size_t \fBrow\fP, size_t col) const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBGetRowMajor\fP (float *\fBm\fP) const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBGetColumnMajor\fP (float *\fBm\fP) const "
+.br
+.ti -1c
+.RI "bool \fBIsRowColCorrect\fP (size_t \fBrow\fP, size_t col) const "
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const \fBMatrix4x4\fP \fBIdentity\fP = \fBMatrix4x4\fP(1\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 1\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 1\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 1\&.0f)"
+.br
+.ti -1c
+.RI "static const \fBMatrix4x4\fP \fBZero\fP = \fBMatrix4x4\fP()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file Matrix4x4\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Matrix4x4::Matrix4x4 ()"
+
+.PP
+Definition at line 6 of file Matrix4x4\&.cpp\&.
+.SS "Matrix4x4::Matrix4x4 (const float *m)"
+
+.PP
+Definition at line 17 of file Matrix4x4\&.cpp\&.
+.SS "Matrix4x4::Matrix4x4 (const floatm[DIM][DIM])"
+
+.PP
+Definition at line 22 of file Matrix4x4\&.cpp\&.
+.SS "Matrix4x4::Matrix4x4 (floatm11, floatm12, floatm13, floatm14, floatm21, floatm22, floatm23, floatm24, floatm31, floatm32, floatm33, floatm34, floatm41, floatm42, floatm43, floatm44)"
+
+.PP
+Definition at line 27 of file Matrix4x4\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "float Matrix4x4::Get (size_trow, size_tcol) const"
+
+.PP
+Definition at line 53 of file Matrix4x4\&.cpp\&.
+.SS "\fBvoid\fP Matrix4x4::GetColumnMajor (float *m) const"
+
+.PP
+Definition at line 78 of file Matrix4x4\&.cpp\&.
+.SS "\fBvoid\fP Matrix4x4::GetRowMajor (float *m) const"
+
+.PP
+Definition at line 61 of file Matrix4x4\&.cpp\&.
+.SS "bool Matrix4x4::IsRowColCorrect (size_trow, size_tcol) const"
+
+.PP
+Definition at line 93 of file Matrix4x4\&.cpp\&.
+.SS "\fBvoid\fP Matrix4x4::Set (const float *m)"
+
+.PP
+Definition at line 40 of file Matrix4x4\&.cpp\&.
+.SS "\fBvoid\fP Matrix4x4::Set (size_trow, size_tcol, floatval)"
+
+.PP
+Definition at line 45 of file Matrix4x4\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBMatrix4x4\fP Matrix4x4::Identity = \fBMatrix4x4\fP(1\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 1\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 1\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 0\&.0f, 1\&.0f)\fC [static]\fP"
+
+.PP
+Definition at line 32 of file Matrix4x4\&.h\&.
+.SS "const \fBMatrix4x4\fP Matrix4x4::Zero = \fBMatrix4x4\fP()\fC [static]\fP"
+
+.PP
+Definition at line 33 of file Matrix4x4\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

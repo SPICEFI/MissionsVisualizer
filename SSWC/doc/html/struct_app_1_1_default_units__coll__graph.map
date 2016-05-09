@@ -1,0 +1,7 @@
+<map id="App::DefaultUnits" name="App::DefaultUnits">
+<area shape="rect" id="node2" href="$class_unit.html" title="Unit\&lt; 3,&#45;2, 0 \&gt;" alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node3" href="$class_unit.html" title="Unit\&lt; 1,&#45;1, 0 \&gt;" alt="" coords="136,5,243,32"/>
+<area shape="rect" id="node4" href="$class_unit.html" title="Unit\&lt; 1,&#45;2, 0 \&gt;" alt="" coords="267,5,373,32"/>
+<area shape="rect" id="node5" href="$class_unit.html" title="Unit\&lt; 0, 0, 1 \&gt;" alt="" coords="397,5,504,32"/>
+<area shape="rect" id="node6" href="$class_unit.html" title="Unit\&lt; 1, 0, 0 \&gt;" alt="" coords="528,5,635,32"/>
+</map>

@@ -1,0 +1,260 @@
+.TH "GLUI_Master_Object" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Master_Object \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Master_Object\fP ()"
+.br
+.ti -1c
+.RI "\fB~GLUI_Master_Object\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_Glut_Window\fP * \fBfind_glut_window\fP (\fBint\fP window_id)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutIdleFunc\fP (\fBvoid\fP(*\fBf\fP)(\fBvoid\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_left_button_glut_menu_control\fP (\fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutReshapeFunc\fP (\fBvoid\fP(*\fBf\fP)(\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutKeyboardFunc\fP (\fBvoid\fP(*\fBf\fP)(unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutSpecialFunc\fP (\fBvoid\fP(*\fBf\fP)(\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutMouseFunc\fP (\fBvoid\fP(*\fBf\fP)(\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutDisplayFunc\fP (\fBvoid\fP(*\fBf\fP)(\fBvoid\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutTimerFunc\fP (unsigned \fBint\fP millis, \fBvoid\fP(*\fBf\fP)(\fBint\fP \fBvalue\fP), \fBint\fP \fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutOverlayDisplayFunc\fP (\fBvoid\fP(*\fBf\fP)(\fBvoid\fP))"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutSpaceballMotionFunc\fP (\fBInt3_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutSpaceballRotateFunc\fP (\fBInt3_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutSpaceballButtonFunc\fP (\fBInt2_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutTabletMotionFunc\fP (\fBInt2_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutTabletButtonFunc\fP (\fBInt4_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutMenuStatusFunc\fP (\fBInt3_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutMenuStateFunc\fP (\fBInt1_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutButtonBoxFunc\fP (\fBInt2_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_glutDialsFunc\fP (\fBInt2_CB\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI\fP * \fBcreate_glui\fP (const char *\fBname\fP, long \fBflags\fP=0, \fBint\fP \fBx\fP=-1, \fBint\fP \fBy\fP=-1)"
+.br
+.ti -1c
+.RI "\fBGLUI\fP * \fBcreate_glui_subwindow\fP (\fBint\fP parent_window, long \fBflags\fP=0)"
+.br
+.ti -1c
+.RI "\fBGLUI\fP * \fBfind_glui_by_window_id\fP (\fBint\fP window_id)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBget_viewport_area\fP (\fBint\fP *\fBx\fP, \fBint\fP *\fBy\fP, \fBint\fP *\fBw\fP, \fBint\fP *\fBh\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBauto_set_viewport\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBclose_all\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsync_live_all\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBreshape\fP ()"
+.br
+.ti -1c
+.RI "float \fBget_version\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBglui_setIdleFuncIfNecessary\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Node\fP \fBgluis\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBactive_control\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Control\fP * \fBcurr_left_button_glut_menu\fP"
+.br
+.ti -1c
+.RI "\fBGLUI\fP * \fBactive_control_glui\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBglui_id_counter\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBglui_idle_func\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The master manages our interaction with GLUT\&. There's only one \fBGLUI_Master_Object\fP\&. 
+.PP
+Definition at line 471 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Master_Object::GLUI_Master_Object ()"
+
+.SS "GLUI_Master_Object::~GLUI_Master_Object ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Master_Object::auto_set_viewport ()"
+
+.SS "\fBvoid\fP GLUI_Master_Object::close_all ()"
+
+.SS "\fBGLUI\fP* GLUI_Master_Object::create_glui (const char *name, longflags = \fC0\fP, \fBint\fPx = \fC-1\fP, \fBint\fPy = \fC-1\fP)"
+
+.SS "\fBGLUI\fP* GLUI_Master_Object::create_glui_subwindow (\fBint\fPparent_window, longflags = \fC0\fP)"
+
+.SS "\fBGLUI\fP* GLUI_Master_Object::find_glui_by_window_id (\fBint\fPwindow_id)"
+
+.SS "\fBGLUI_Glut_Window\fP* GLUI_Master_Object::find_glut_window (\fBint\fPwindow_id)"
+
+.SS "float GLUI_Master_Object::get_version ()\fC [inline]\fP"
+
+.PP
+Definition at line 539 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::get_viewport_area (\fBint\fP *x, \fBint\fP *y, \fBint\fP *w, \fBint\fP *h)"
+
+.SS "\fBvoid\fP GLUI_Master_Object::glui_setIdleFuncIfNecessary (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Master_Object::reshape ()"
+
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutButtonBoxFunc (\fBInt2_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 525 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutDialsFunc (\fBInt2_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 526 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutDisplayFunc (\fBvoid\fP(*)(\fBvoid\fP)f)\fC [inline]\fP"
+
+.PP
+Definition at line 513 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutIdleFunc (\fBvoid\fP(*)(\fBvoid\fP)f)"
+
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutKeyboardFunc (\fBvoid\fP(*)(unsigned char key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)f)"
+
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutMenuStateFunc (\fBInt1_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 524 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutMenuStatusFunc (\fBInt3_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 523 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutMouseFunc (\fBvoid\fP(*)(\fBint\fP, \fBint\fP, \fBint\fP, \fBint\fP)f)"
+
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutOverlayDisplayFunc (\fBvoid\fP(*)(\fBvoid\fP)f)\fC [inline]\fP"
+
+.PP
+Definition at line 516 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutReshapeFunc (\fBvoid\fP(*)(\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)f)"
+
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutSpaceballButtonFunc (\fBInt2_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 519 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutSpaceballMotionFunc (\fBInt3_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 517 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutSpaceballRotateFunc (\fBInt3_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 518 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutSpecialFunc (\fBvoid\fP(*)(\fBint\fP key, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)f)"
+
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutTabletButtonFunc (\fBInt4_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 521 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutTabletMotionFunc (\fBInt2_CB\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 520 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_glutTimerFunc (unsigned \fBint\fPmillis, \fBvoid\fP(*)(\fBint\fP \fBvalue\fP)f, \fBint\fPvalue)\fC [inline]\fP"
+
+.PP
+Definition at line 514 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Master_Object::set_left_button_glut_menu_control (\fBGLUI_Control\fP *control)"
+
+.SS "\fBvoid\fP GLUI_Master_Object::sync_live_all ()"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "\fBvoid\fP glui_idle_func ()\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGLUI_Control\fP* GLUI_Master_Object::active_control"
+
+.PP
+Definition at line 482 of file glui\&.h\&.
+.SS "\fBGLUI\fP* GLUI_Master_Object::active_control_glui"
+
+.PP
+Definition at line 483 of file glui\&.h\&.
+.SS "\fBGLUI_Control\fP * GLUI_Master_Object::curr_left_button_glut_menu"
+
+.PP
+Definition at line 482 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Master_Object::glui_id_counter"
+
+.PP
+Definition at line 484 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP GLUI_Master_Object::gluis"
+
+.PP
+Definition at line 481 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

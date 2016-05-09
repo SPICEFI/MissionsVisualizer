@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_961917a5199deb9164b76f7ea45e3aab" kind="dir">
+    <compoundname>SSWC/src</compoundname>
+    <innerdir refid="dir_45a149d3440f65a452bd86e9e08b49b8">SSWC/src/CSpice</innerdir>
+    <innerdir refid="dir_59e1c34e21989a855ade2a1abb9ec157">SSWC/src/GL</innerdir>
+    <innerdir refid="dir_52a4f56b9293bdd5cce92c620f22dcf4">SSWC/src/Math</innerdir>
+    <innerfile refid="_app_8cpp">App.cpp</innerfile>
+    <innerfile refid="_app_8h">App.h</innerfile>
+    <innerfile refid="_cosmo_point_8cpp">CosmoPoint.cpp</innerfile>
+    <innerfile refid="_cosmo_point_8h">CosmoPoint.h</innerfile>
+    <innerfile refid="_font_8cpp">Font.cpp</innerfile>
+    <innerfile refid="_font_8h">Font.h</innerfile>
+    <innerfile refid="ft2build_8h">ft2build.h</innerfile>
+    <innerfile refid="ftoption_8h">ftoption.h</innerfile>
+    <innerfile refid="gl_cameara_8h">glCameara.h</innerfile>
+    <innerfile refid="gl_camera_8cpp">glCamera.cpp</innerfile>
+    <innerfile refid="_planet_8cpp">Planet.cpp</innerfile>
+    <innerfile refid="_planet_8h">Planet.h</innerfile>
+    <innerfile refid="_program_8cpp">Program.cpp</innerfile>
+    <innerfile refid="_program_8h">Program.h</innerfile>
+    <innerfile refid="_routine_8cpp">Routine.cpp</innerfile>
+    <innerfile refid="_scene_8cpp">Scene.cpp</innerfile>
+    <innerfile refid="_scene_8h">Scene.h</innerfile>
+    <innerfile refid="_t_g_a_8cpp">TGA.cpp</innerfile>
+    <innerfile refid="_t_g_a_8h">TGA.h</innerfile>
+    <innerfile refid="_trajectory_8cpp">Trajectory.cpp</innerfile>
+    <innerfile refid="_trajectory_8h">Trajectory.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/"/>
+  </compounddef>
+</doxygen>

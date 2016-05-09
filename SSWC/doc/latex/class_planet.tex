@@ -1,0 +1,291 @@
+\hypertarget{class_planet}{\section{Planet Class Reference}
+\label{class_planet}\index{Planet@{Planet}}
+}
+
+
+{\ttfamily \#include $<$Planet.\+h$>$}
+
+
+
+Collaboration diagram for Planet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_planet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_planet_a02ba902d9d51b174b4c57403f1638495}{Planet} (const \hyperlink{class_space_body}{Space\+Body} \&\hyperlink{class_planet_a31ab1654dd709417ec574489f3ff9449}{body}, \hyperlink{class_t_g_a}{T\+G\+A} $\ast$\hyperlink{glext_8h_ab21590c4736d1459a5a0674a42b5a655}{texture}, const \hyperlink{class_space_object}{Space\+Object} \&\hyperlink{glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}, const \hyperlink{class_frame}{Frame} \&frame, \hyperlink{wglext_8h_aaf5a06bd464c6ec72cf68b4819afebe3}{H\+D\+C} \hyperlink{wglext_8h_a3ad0eade1f425b718bd6461c1ef31af8}{h\+D\+C})
+\item 
+\hyperlink{class_planet_aaa1aaed9d4ef90b4836531edb7b18e0a}{$\sim$\+Planet} ()
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_planet_a5e2be16561d2a5f687dc1928afa9a783}{Set\+Simple\+Render\+Mode} (bool \hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_planet_a938d62dd26e9fc747bbc9eb7ab8fa177}{Render} (\hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_planet_a0675007fd8f528fb0614c224faf87d84}{Get\+I\+D} () const 
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_planet_aeaf472f68af81e148fd429e366f85150}{Set\+Mark} (bool \hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_planet_a83ded8fa3ef34e76649cc68fcb9af217}{Set\+Clicked} ()
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_planet_ae7360bf0dbe27e47a2425c09587e3461}{Get\+Position} (\hyperlink{class_date}{Date} \hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, \hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\item 
+double \hyperlink{class_planet_ab77012071c79fec77e23f9f6e95241c5}{Get\+Radius} (\hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{class_planet_aa50208f541563334226c4e6ddcd5994f}{Show\+Message\+Box\+With\+Info} (\hyperlink{class_app}{App} \&\hyperlink{_routine_8cpp_a05b5a24325d46227633053ca49de6234}{app})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_space_body}{Space\+Body} \hyperlink{class_planet_a31ab1654dd709417ec574489f3ff9449}{body}
+\item 
+\hyperlink{class_t_g_a}{T\+G\+A} $\ast$ \hyperlink{class_planet_abe80bd4546d0c412fdb14bd831e035df}{texture}
+\item 
+\hyperlink{class_trajectory}{Trajectory} \hyperlink{class_planet_aa5996da28b63251a27728cc07f233234}{trajectory}
+\item 
+\hyperlink{class_matrix4x4}{Matrix4x4} \hyperlink{class_planet_aba2872d5b503c1f36436bc7e05b27b51}{m}
+\item 
+float \hyperlink{class_planet_adc07c8cd520fd4dac2c646c30085c65b}{rotation\+Matrix} \mbox{[}16\mbox{]}
+\item 
+bool \hyperlink{class_planet_a0d455048a88b3c681a0f1480802445f8}{simple\+Render} = false
+\item 
+bool \hyperlink{class_planet_abeda08386455b0aae9f55b4623f89200}{clicked} = false
+\item 
+double \hyperlink{class_planet_a43314ec05b89111f6a3a1787cb9f8af3}{scale} = 0.\+000004f
+\item 
+double \hyperlink{class_planet_a233de9f5467dd01708a6ea14fadeb057}{distance\+Scale} = 0.\+0000004f
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{class_planet_aa0ecbff60832f5532799b452fa45783d}{I\+D}
+\item 
+bool \hyperlink{class_planet_a0e7b5b758400af733e7a06380ff4cf84}{marked}
+\item 
+\hyperlink{class_font}{Font} \hyperlink{class_planet_a7a9f21f63faf830b6bbbbec3e0ac668c}{font}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Planet.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_planet_a02ba902d9d51b174b4c57403f1638495}{\index{Planet@{Planet}!Planet@{Planet}}
+\index{Planet@{Planet}!Planet@{Planet}}
+\subsubsection[{Planet}]{\setlength{\rightskip}{0pt plus 5cm}Planet\+::\+Planet (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space\+Body} \&}]{body, }
+\item[{{\bf T\+G\+A} $\ast$}]{texture, }
+\item[{const {\bf Space\+Object} \&}]{obj, }
+\item[{const {\bf Frame} \&}]{frame, }
+\item[{{\bf H\+D\+C}}]{h\+D\+C}
+\end{DoxyParamCaption}
+)}}\label{class_planet_a02ba902d9d51b174b4c57403f1638495}
+
+
+Definition at line 9 of file Planet.\+cpp.
+
+\hypertarget{class_planet_aaa1aaed9d4ef90b4836531edb7b18e0a}{\index{Planet@{Planet}!````~Planet@{$\sim$\+Planet}}
+\index{````~Planet@{$\sim$\+Planet}!Planet@{Planet}}
+\subsubsection[{$\sim$\+Planet}]{\setlength{\rightskip}{0pt plus 5cm}Planet\+::$\sim$\+Planet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_planet_aaa1aaed9d4ef90b4836531edb7b18e0a}
+
+
+Definition at line 24 of file Planet.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_planet_a0675007fd8f528fb0614c224faf87d84}{\index{Planet@{Planet}!Get\+I\+D@{Get\+I\+D}}
+\index{Get\+I\+D@{Get\+I\+D}!Planet@{Planet}}
+\subsubsection[{Get\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Planet\+::\+Get\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_planet_a0675007fd8f528fb0614c224faf87d84}
+
+
+Definition at line 31 of file Planet.\+h.
+
+\hypertarget{class_planet_ae7360bf0dbe27e47a2425c09587e3461}{\index{Planet@{Planet}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Planet@{Planet}}
+\subsubsection[{Get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Planet\+::\+Get\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{t, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{class_planet_ae7360bf0dbe27e47a2425c09587e3461}
+
+
+Definition at line 43 of file Planet.\+cpp.
+
+\hypertarget{class_planet_ab77012071c79fec77e23f9f6e95241c5}{\index{Planet@{Planet}!Get\+Radius@{Get\+Radius}}
+\index{Get\+Radius@{Get\+Radius}!Planet@{Planet}}
+\subsubsection[{Get\+Radius}]{\setlength{\rightskip}{0pt plus 5cm}double Planet\+::\+Get\+Radius (
+\begin{DoxyParamCaption}
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_planet_ab77012071c79fec77e23f9f6e95241c5}
+
+
+Definition at line 38 of file Planet.\+h.
+
+\hypertarget{class_planet_a938d62dd26e9fc747bbc9eb7ab8fa177}{\index{Planet@{Planet}!Render@{Render}}
+\index{Render@{Render}!Planet@{Planet}}
+\subsubsection[{Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Planet\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{t, }
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{class_planet_a938d62dd26e9fc747bbc9eb7ab8fa177}
+
+
+Definition at line 29 of file Planet.\+cpp.
+
+\hypertarget{class_planet_a83ded8fa3ef34e76649cc68fcb9af217}{\index{Planet@{Planet}!Set\+Clicked@{Set\+Clicked}}
+\index{Set\+Clicked@{Set\+Clicked}!Planet@{Planet}}
+\subsubsection[{Set\+Clicked}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Planet\+::\+Set\+Clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_planet_a83ded8fa3ef34e76649cc68fcb9af217}
+
+
+Definition at line 35 of file Planet.\+h.
+
+\hypertarget{class_planet_aeaf472f68af81e148fd429e366f85150}{\index{Planet@{Planet}!Set\+Mark@{Set\+Mark}}
+\index{Set\+Mark@{Set\+Mark}!Planet@{Planet}}
+\subsubsection[{Set\+Mark}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Planet\+::\+Set\+Mark (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_planet_aeaf472f68af81e148fd429e366f85150}
+
+
+Definition at line 33 of file Planet.\+h.
+
+\hypertarget{class_planet_a5e2be16561d2a5f687dc1928afa9a783}{\index{Planet@{Planet}!Set\+Simple\+Render\+Mode@{Set\+Simple\+Render\+Mode}}
+\index{Set\+Simple\+Render\+Mode@{Set\+Simple\+Render\+Mode}!Planet@{Planet}}
+\subsubsection[{Set\+Simple\+Render\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Planet\+::\+Set\+Simple\+Render\+Mode (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_planet_a5e2be16561d2a5f687dc1928afa9a783}
+
+
+Definition at line 29 of file Planet.\+h.
+
+\hypertarget{class_planet_aa50208f541563334226c4e6ddcd5994f}{\index{Planet@{Planet}!Show\+Message\+Box\+With\+Info@{Show\+Message\+Box\+With\+Info}}
+\index{Show\+Message\+Box\+With\+Info@{Show\+Message\+Box\+With\+Info}!Planet@{Planet}}
+\subsubsection[{Show\+Message\+Box\+With\+Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Planet\+::\+Show\+Message\+Box\+With\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf App} \&}]{app}
+\end{DoxyParamCaption}
+)}}\label{class_planet_aa50208f541563334226c4e6ddcd5994f}
+
+
+Definition at line 160 of file Planet.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_planet_a31ab1654dd709417ec574489f3ff9449}{\index{Planet@{Planet}!body@{body}}
+\index{body@{body}!Planet@{Planet}}
+\subsubsection[{body}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space\+Body} Planet\+::body}}\label{class_planet_a31ab1654dd709417ec574489f3ff9449}
+
+
+Definition at line 14 of file Planet.\+h.
+
+\hypertarget{class_planet_abeda08386455b0aae9f55b4623f89200}{\index{Planet@{Planet}!clicked@{clicked}}
+\index{clicked@{clicked}!Planet@{Planet}}
+\subsubsection[{clicked}]{\setlength{\rightskip}{0pt plus 5cm}bool Planet\+::clicked = false}}\label{class_planet_abeda08386455b0aae9f55b4623f89200}
+
+
+Definition at line 20 of file Planet.\+h.
+
+\hypertarget{class_planet_a233de9f5467dd01708a6ea14fadeb057}{\index{Planet@{Planet}!distance\+Scale@{distance\+Scale}}
+\index{distance\+Scale@{distance\+Scale}!Planet@{Planet}}
+\subsubsection[{distance\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}double Planet\+::distance\+Scale = 0.\+0000004f}}\label{class_planet_a233de9f5467dd01708a6ea14fadeb057}
+
+
+Definition at line 24 of file Planet.\+h.
+
+\hypertarget{class_planet_a7a9f21f63faf830b6bbbbec3e0ac668c}{\index{Planet@{Planet}!font@{font}}
+\index{font@{font}!Planet@{Planet}}
+\subsubsection[{font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Font} Planet\+::font\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_planet_a7a9f21f63faf830b6bbbbec3e0ac668c}
+
+
+Definition at line 50 of file Planet.\+h.
+
+\hypertarget{class_planet_aa0ecbff60832f5532799b452fa45783d}{\index{Planet@{Planet}!I\+D@{I\+D}}
+\index{I\+D@{I\+D}!Planet@{Planet}}
+\subsubsection[{I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Planet\+::\+I\+D\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_planet_aa0ecbff60832f5532799b452fa45783d}
+
+
+Definition at line 48 of file Planet.\+h.
+
+\hypertarget{class_planet_aba2872d5b503c1f36436bc7e05b27b51}{\index{Planet@{Planet}!m@{m}}
+\index{m@{m}!Planet@{Planet}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4x4} Planet\+::m}}\label{class_planet_aba2872d5b503c1f36436bc7e05b27b51}
+
+
+Definition at line 17 of file Planet.\+h.
+
+\hypertarget{class_planet_a0e7b5b758400af733e7a06380ff4cf84}{\index{Planet@{Planet}!marked@{marked}}
+\index{marked@{marked}!Planet@{Planet}}
+\subsubsection[{marked}]{\setlength{\rightskip}{0pt plus 5cm}bool Planet\+::marked\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_planet_a0e7b5b758400af733e7a06380ff4cf84}
+
+
+Definition at line 49 of file Planet.\+h.
+
+\hypertarget{class_planet_adc07c8cd520fd4dac2c646c30085c65b}{\index{Planet@{Planet}!rotation\+Matrix@{rotation\+Matrix}}
+\index{rotation\+Matrix@{rotation\+Matrix}!Planet@{Planet}}
+\subsubsection[{rotation\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}float Planet\+::rotation\+Matrix\mbox{[}16\mbox{]}}}\label{class_planet_adc07c8cd520fd4dac2c646c30085c65b}
+
+
+Definition at line 18 of file Planet.\+h.
+
+\hypertarget{class_planet_a43314ec05b89111f6a3a1787cb9f8af3}{\index{Planet@{Planet}!scale@{scale}}
+\index{scale@{scale}!Planet@{Planet}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}double Planet\+::scale = 0.\+000004f}}\label{class_planet_a43314ec05b89111f6a3a1787cb9f8af3}
+
+
+Definition at line 23 of file Planet.\+h.
+
+\hypertarget{class_planet_a0d455048a88b3c681a0f1480802445f8}{\index{Planet@{Planet}!simple\+Render@{simple\+Render}}
+\index{simple\+Render@{simple\+Render}!Planet@{Planet}}
+\subsubsection[{simple\+Render}]{\setlength{\rightskip}{0pt plus 5cm}bool Planet\+::simple\+Render = false}}\label{class_planet_a0d455048a88b3c681a0f1480802445f8}
+
+
+Definition at line 19 of file Planet.\+h.
+
+\hypertarget{class_planet_abe80bd4546d0c412fdb14bd831e035df}{\index{Planet@{Planet}!texture@{texture}}
+\index{texture@{texture}!Planet@{Planet}}
+\subsubsection[{texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+G\+A}$\ast$ Planet\+::texture}}\label{class_planet_abe80bd4546d0c412fdb14bd831e035df}
+
+
+Definition at line 15 of file Planet.\+h.
+
+\hypertarget{class_planet_aa5996da28b63251a27728cc07f233234}{\index{Planet@{Planet}!trajectory@{trajectory}}
+\index{trajectory@{trajectory}!Planet@{Planet}}
+\subsubsection[{trajectory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Trajectory} Planet\+::trajectory}}\label{class_planet_aa5996da28b63251a27728cc07f233234}
+
+
+Definition at line 16 of file Planet.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\hyperlink{_planet_8h}{Planet.\+h}\item 
+S\+S\+W\+C/src/\hyperlink{_planet_8cpp}{Planet.\+cpp}\end{DoxyCompactItemize}

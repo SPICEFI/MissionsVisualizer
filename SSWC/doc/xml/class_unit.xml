@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_unit" kind="class" prot="public">
+    <compoundname>Unit</compoundname>
+    <includes refid="_quantity_8h" local="no">Quantity.h</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <declname>length</declname>
+        <defname>length</defname>
+      </param>
+      <param>
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <declname>time</declname>
+        <defname>time</defname>
+      </param>
+      <param>
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <declname>mass</declname>
+        <defname>mass</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_unit_1a4b0a2c9465b3a8c4a75b1dd4a43fab86" prot="private" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; <ref refid="glext_8h_1a921fa83f7755f0139c84ba1831417a2e" kindref="member">length</ref>, time, mass &gt;</type>
+        <definition>typedef Unit&lt;length, time, mass&gt; Unit&lt; length, time, mass &gt;::ThisUnit</definition>
+        <argsstring></argsstring>
+        <name>ThisUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="11" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_unit_1a190f12219afa5f447b2b0ce9ace1f9c2" prot="private" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 1, 0, 0 &gt;</type>
+        <definition>typedef Unit&lt;1, 0, 0&gt; Unit&lt; length, time, mass &gt;::LengthUnit</definition>
+        <argsstring></argsstring>
+        <name>LengthUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="13" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_unit_1aa406d0fc36a2314a60bcbf77a49e20dd" prot="private" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 0, 0, 1 &gt;</type>
+        <definition>typedef Unit&lt;0, 0, 1&gt; Unit&lt; length, time, mass &gt;::MassUnit</definition>
+        <argsstring></argsstring>
+        <name>MassUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="14" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_unit_1ae9519e4a7dc3efe5aa12671c25af71be" prot="private" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 0, 1, 0 &gt;</type>
+        <definition>typedef Unit&lt;0, 1, 0&gt; Unit&lt; length, time, mass &gt;::TimeUnit</definition>
+        <argsstring></argsstring>
+        <name>TimeUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="15" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unit_1ab3e40ac3d67f2aeec55a0e498e4f2835" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Unit&lt; length, time, mass &gt;::multiplier</definition>
+        <argsstring></argsstring>
+        <name>multiplier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="103" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_1a0833c0795d7e35987ca77ffc8e20bedf" prot="private" static="no" mutable="no">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string Unit&lt; length, time, mass &gt;::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="104" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unit_1aa2102921ecd21d9938707db58e4df964" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unit" kindref="compound">ThisUnit</ref></type>
+        <definition>static ThisUnit Unit&lt; length, time, mass &gt;::BaseUnit</definition>
+        <argsstring>(const std::string &amp;label=&quot;&quot;)</argsstring>
+        <name>BaseUnit</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="18" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unit" kindref="compound">ThisUnit</ref></type>
+        <definition>static ThisUnit Unit&lt; length, time, mass &gt;::ScaledUnit</definition>
+        <argsstring>(double multiplier, const ThisUnit &amp;ref=ThisUnit(), const std::string &amp;label=&quot;&quot;)</argsstring>
+        <name>ScaledUnit</name>
+        <param>
+          <type>double</type>
+          <declname>multiplier</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">ThisUnit</ref> &amp;</type>
+          <declname>ref</declname>
+          <defval><ref refid="class_unit" kindref="compound">ThisUnit</ref>()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="22" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unit" kindref="compound">ThisUnit</ref></type>
+        <definition>static ThisUnit Unit&lt; length, time, mass &gt;::DerivedUnit</definition>
+        <argsstring>(const LengthUnit &amp;lengthUnit, const TimeUnit &amp;timeUnit, const MassUnit &amp;massUnit, const std::string &amp;label=&quot;&quot;)</argsstring>
+        <name>DerivedUnit</name>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">LengthUnit</ref> &amp;</type>
+          <declname>lengthUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">TimeUnit</ref> &amp;</type>
+          <declname>timeUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">MassUnit</ref> &amp;</type>
+          <declname>massUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="26" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1ab06f5f16f209acf9edf464eab887147d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unit" kindref="compound">ThisUnit</ref></type>
+        <definition>static ThisUnit Unit&lt; length, time, mass &gt;::DerivedUnit</definition>
+        <argsstring>(const LengthUnit &amp;lengthUnit, const TimeUnit &amp;timeUnit, const std::string &amp;label=&quot;&quot;)</argsstring>
+        <name>DerivedUnit</name>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">LengthUnit</ref> &amp;</type>
+          <declname>lengthUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">TimeUnit</ref> &amp;</type>
+          <declname>timeUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="36" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1a5d25b24d83374e3955347683fac527b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unit" kindref="compound">ThisUnit</ref></type>
+        <definition>static ThisUnit Unit&lt; length, time, mass &gt;::DerivedUnit</definition>
+        <argsstring>(const TimeUnit &amp;timeUnit, const MassUnit &amp;massUnit, const std::string &amp;label=&quot;&quot;)</argsstring>
+        <name>DerivedUnit</name>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">TimeUnit</ref> &amp;</type>
+          <declname>timeUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">MassUnit</ref> &amp;</type>
+          <declname>massUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="40" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1a49e42c94a0eaca0f7aee6ccfc100796a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unit" kindref="compound">ThisUnit</ref></type>
+        <definition>static ThisUnit Unit&lt; length, time, mass &gt;::DerivedUnit</definition>
+        <argsstring>(const LengthUnit &amp;lengthUnit, const MassUnit &amp;massUnit, const std::string &amp;label=&quot;&quot;)</argsstring>
+        <name>DerivedUnit</name>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">LengthUnit</ref> &amp;</type>
+          <declname>lengthUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">MassUnit</ref> &amp;</type>
+          <declname>massUnit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="44" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1acf57b62d40c90ed9fa71375374dc3eb6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double Unit&lt; length, time, mass &gt;::Convert</definition>
+        <argsstring>(double value, const ThisUnit &amp;from, const ThisUnit &amp;to)</argsstring>
+        <name>Convert</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">ThisUnit</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">ThisUnit</ref> &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="87" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="87" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unit_1a135a7f1e0f7e1163c4f4f312b45cdc83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Unit&lt; length, time, mass &gt;::Unit</definition>
+        <argsstring>(const std::string &amp;label=&quot;&quot;)</argsstring>
+        <name>Unit</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="53" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1abc965c27239020bcaa506a923567ac4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Unit&lt; length, time, mass &gt;::GetMultiplier</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMultiplier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="72" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1a7874709adb65fd349a7fc2511c2f843c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Unit&lt; length, time, mass &gt;::SetLabel</definition>
+        <argsstring>(const std::string &amp;label)</argsstring>
+        <name>SetLabel</name>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="77" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1ac4e0cec1f68ac214f1cc050501597899" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+        <definition>const std::string&amp; Unit&lt; length, time, mass &gt;::str</definition>
+        <argsstring>() const </argsstring>
+        <name>str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="82" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unit_1ac82d7116d9bf345a4e2a36e6eb34df8e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Unit&lt; length, time, mass &gt;::Unit</definition>
+        <argsstring>(double multiplier, const std::string &amp;label)</argsstring>
+        <name>Unit</name>
+        <param>
+          <type>double</type>
+          <declname>multiplier</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="59" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1aeb499e45e5cd03f9ff9e1bae15852865" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Unit&lt; length, time, mass &gt;::Unit</definition>
+        <argsstring>(double multiplier, const ThisUnit &amp;ref, const std::string &amp;label)</argsstring>
+        <name>Unit</name>
+        <param>
+          <type>double</type>
+          <declname>multiplier</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_unit" kindref="compound">ThisUnit</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="64" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="64" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_1ad84289de45d44237805234f41a313386" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Unit&lt; length, time, mass &gt;::Construct</definition>
+        <argsstring>(double multiplier, const std::string &amp;label)</argsstring>
+        <name>Construct</name>
+        <param>
+          <type>double</type>
+          <declname>multiplier</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="96" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="96" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="10" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="9" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_unit_1aa2102921ecd21d9938707db58e4df964" prot="public" virt="non-virtual"><scope>Unit</scope><name>BaseUnit</name></member>
+      <member refid="class_unit_1ad84289de45d44237805234f41a313386" prot="private" virt="non-virtual"><scope>Unit</scope><name>Construct</name></member>
+      <member refid="class_unit_1acf57b62d40c90ed9fa71375374dc3eb6" prot="public" virt="non-virtual"><scope>Unit</scope><name>Convert</name></member>
+      <member refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" prot="public" virt="non-virtual"><scope>Unit</scope><name>DerivedUnit</name></member>
+      <member refid="class_unit_1ab06f5f16f209acf9edf464eab887147d" prot="public" virt="non-virtual"><scope>Unit</scope><name>DerivedUnit</name></member>
+      <member refid="class_unit_1a5d25b24d83374e3955347683fac527b9" prot="public" virt="non-virtual"><scope>Unit</scope><name>DerivedUnit</name></member>
+      <member refid="class_unit_1a49e42c94a0eaca0f7aee6ccfc100796a" prot="public" virt="non-virtual"><scope>Unit</scope><name>DerivedUnit</name></member>
+      <member refid="class_unit_1abc965c27239020bcaa506a923567ac4f" prot="public" virt="non-virtual"><scope>Unit</scope><name>GetMultiplier</name></member>
+      <member refid="class_unit_1a0833c0795d7e35987ca77ffc8e20bedf" prot="private" virt="non-virtual"><scope>Unit</scope><name>label</name></member>
+      <member refid="class_unit_1a190f12219afa5f447b2b0ce9ace1f9c2" prot="private" virt="non-virtual"><scope>Unit</scope><name>LengthUnit</name></member>
+      <member refid="class_unit_1aa406d0fc36a2314a60bcbf77a49e20dd" prot="private" virt="non-virtual"><scope>Unit</scope><name>MassUnit</name></member>
+      <member refid="class_unit_1ab3e40ac3d67f2aeec55a0e498e4f2835" prot="private" virt="non-virtual"><scope>Unit</scope><name>multiplier</name></member>
+      <member refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" prot="public" virt="non-virtual"><scope>Unit</scope><name>ScaledUnit</name></member>
+      <member refid="class_unit_1a7874709adb65fd349a7fc2511c2f843c" prot="public" virt="non-virtual"><scope>Unit</scope><name>SetLabel</name></member>
+      <member refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" prot="public" virt="non-virtual"><scope>Unit</scope><name>str</name></member>
+      <member refid="class_unit_1a4b0a2c9465b3a8c4a75b1dd4a43fab86" prot="private" virt="non-virtual"><scope>Unit</scope><name>ThisUnit</name></member>
+      <member refid="class_unit_1ae9519e4a7dc3efe5aa12671c25af71be" prot="private" virt="non-virtual"><scope>Unit</scope><name>TimeUnit</name></member>
+      <member refid="class_unit_1a135a7f1e0f7e1163c4f4f312b45cdc83" prot="public" virt="non-virtual"><scope>Unit</scope><name>Unit</name></member>
+      <member refid="class_unit_1ac82d7116d9bf345a4e2a36e6eb34df8e" prot="private" virt="non-virtual"><scope>Unit</scope><name>Unit</name></member>
+      <member refid="class_unit_1aeb499e45e5cd03f9ff9e1bae15852865" prot="private" virt="non-virtual"><scope>Unit</scope><name>Unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

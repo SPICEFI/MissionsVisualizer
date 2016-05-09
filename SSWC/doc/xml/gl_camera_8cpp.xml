@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="gl_camera_8cpp" kind="file">
+    <compoundname>glCamera.cpp</compoundname>
+    <includes refid="gl_cameara_8h" local="yes">glCameara.h</includes>
+    <incdepgraph>
+      <node id="1805">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1775">
+        <label>iomanip</label>
+      </node>
+      <node id="1763">
+        <label>windows.h</label>
+      </node>
+      <node id="1806">
+        <label>gl/gl.h</label>
+      </node>
+      <node id="1800">
+        <label>CSpice\Date.h</label>
+      </node>
+      <node id="1802">
+        <label>Math\Matrix4x4.h</label>
+      </node>
+      <node id="1799">
+        <label>CSpice\SpaceObject.h</label>
+      </node>
+      <node id="1794">
+        <label>Windows.h</label>
+      </node>
+      <node id="1779">
+        <label>cmath</label>
+      </node>
+      <node id="1785">
+        <label>stdexcept</label>
+      </node>
+      <node id="1772">
+        <label>string</label>
+      </node>
+      <node id="1792">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="1796">
+        <label>TGA.h</label>
+        <link refid="_t_g_a_8h"/>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1792" relation="include">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="1772" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+      </node>
+      <node id="1774">
+        <label>fstream</label>
+      </node>
+      <node id="1762">
+        <label>glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1792" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+      </node>
+      <node id="1782">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+      </node>
+      <node id="1761">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="glCamera.cpp"/>
+        <childnode refid="1762" relation="include">
+        </childnode>
+      </node>
+      <node id="1781">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+        <childnode refid="1786" relation="include">
+        </childnode>
+      </node>
+      <node id="1793">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+      </node>
+      <node id="1768">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="1769" relation="include">
+        </childnode>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1766">
+        <label>App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1772" relation="include">
+        </childnode>
+        <childnode refid="1773" relation="include">
+        </childnode>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1775" relation="include">
+        </childnode>
+      </node>
+      <node id="1770">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1771" relation="include">
+        </childnode>
+        <childnode refid="1772" relation="include">
+        </childnode>
+        <childnode refid="1773" relation="include">
+        </childnode>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+      </node>
+      <node id="1803">
+        <label>Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+        <childnode refid="1806" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1772" relation="include">
+        </childnode>
+      </node>
+      <node id="1773">
+        <label>ctime</label>
+      </node>
+      <node id="1783">
+        <label>Time.h</label>
+      </node>
+      <node id="1776">
+        <label>vector</label>
+      </node>
+      <node id="1795">
+        <label>Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+      </node>
+      <node id="1790">
+        <label>array</label>
+      </node>
+      <node id="1771">
+        <label>sstream</label>
+      </node>
+      <node id="1797">
+        <label>Trajectory.h</label>
+        <link refid="_trajectory_8h"/>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1800" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1792" relation="include">
+        </childnode>
+      </node>
+      <node id="1765">
+        <label>Math\Vector3.h</label>
+      </node>
+      <node id="1764">
+        <label>math.h</label>
+      </node>
+      <node id="1786">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="1787" relation="include">
+        </childnode>
+        <childnode refid="1785" relation="include">
+        </childnode>
+      </node>
+      <node id="1798">
+        <label>Math\Quantity.h</label>
+      </node>
+      <node id="1801">
+        <label>deque</label>
+      </node>
+      <node id="1778">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="1779" relation="include">
+        </childnode>
+        <childnode refid="1772" relation="include">
+        </childnode>
+      </node>
+      <node id="1807">
+        <label>gl/glu.h</label>
+      </node>
+      <node id="1780">
+        <label>SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1772" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1781" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+        <childnode refid="1788" relation="include">
+        </childnode>
+      </node>
+      <node id="1789">
+        <label>SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1790" relation="include">
+        </childnode>
+      </node>
+      <node id="1791">
+        <label>gl\GL.h</label>
+      </node>
+      <node id="1804">
+        <label>stdio.h</label>
+      </node>
+      <node id="1787">
+        <label>cstring</label>
+      </node>
+      <node id="1769">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="1784">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="1779" relation="include">
+        </childnode>
+        <childnode refid="1785" relation="include">
+        </childnode>
+      </node>
+      <node id="1788">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="1779" relation="include">
+        </childnode>
+      </node>
+      <node id="1767">
+        <label>CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1770" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1789" relation="include">
+        </childnode>
+        <childnode refid="1781" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gl_camera_8cpp_1a1457f2b17df44af6a915be160fe76650" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool modeWasChanged</definition>
+        <argsstring></argsstring>
+        <name>modeWasChanged</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" line="5" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gl_camera_8cpp_1a80d402d10e8341004c0caf10133b80ab" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp" line="7" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gl_cameara_8h" kindref="compound">glCameara.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="gl_camera_8cpp_1a1457f2b17df44af6a915be160fe76650" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="gl_camera_8cpp_1a1457f2b17df44af6a915be160fe76650" kindref="member">modeWasChanged</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="gl_camera_8cpp_1a80d402d10e8341004c0caf10133b80ab" kindref="member">scale</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classgl_camera_1a8339c3cd03f2c15ea28cc4f7d473d3cd" refkind="member"><highlight class="normal"><ref refid="classgl_camera_1a8339c3cd03f2c15ea28cc4f7d473d3cd" kindref="member">glCamera::glCamera</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref><sp/>=<sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>(0.0,<sp/>0.0,<sp/>0.0);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>=<sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>(0.0,<sp/>1.0,<sp/>0.0);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref><sp/>=<sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>(0.0,<sp/>0.0,<sp/>1.0);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref><sp/>=<sp/>0.03f;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classgl_camera_1aefdc27e4f845a5c3610044c78068f802" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1aefdc27e4f845a5c3610044c78068f802" kindref="member">glCamera::PositionCamera</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>viewVec,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>&amp;<sp/>upVec)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;position<sp/>=<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;viewVec<sp/>=<sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;upVec<sp/>=<sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classgl_camera_1ac5785ab7420408b165ad7a48aaab1a3a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1ac5785ab7420408b165ad7a48aaab1a3a" kindref="member">glCamera::MoveCamera</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>velocity)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>velocity<sp/>*=<sp/><ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>vVec<sp/>=<sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>-<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Here<sp/>we<sp/>get<sp/>vector<sp/>of<sp/>our<sp/>view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>vVec.<ref refid="class_vector3_1ab6f156446cbef2ebc0c84d73b8cad23a" kindref="member">Normalise</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>position<sp/>+=<sp/>vVec<sp/>*<sp/>velocity;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>+=<sp/>vVec<sp/>*<sp/>velocity;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>glCamera::transformOrientation()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>gluLookAt(<ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref>.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref>.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref>.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>glCamera::transformTranslation()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>glTranslatef(-<ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/>-<ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/>-<ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" kindref="member">glCamera::Rotate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9e06c1f76a20fed54ca742cd25cb02c4" kindref="member">angle</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>newView;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>curView;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>curView<sp/>=<sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>-<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cosTheta<sp/>=<sp/>(float)cos(angle);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sinTheta<sp/>=<sp/>(float)sin(angle);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref><sp/>=<sp/>(cosTheta<sp/>+<sp/>(1<sp/>-<sp/>cosTheta)<sp/>*<sp/>x<sp/>*<sp/>x)<sp/>*<sp/>curView.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref><sp/>+=<sp/>((1<sp/>-<sp/>cosTheta)<sp/>*<sp/>x<sp/>*<sp/>y<sp/>-<sp/>z<sp/>*<sp/>sinTheta)<sp/>*<sp/>curView.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref><sp/>+=<sp/>((1<sp/>-<sp/>cosTheta)<sp/>*<sp/>x<sp/>*<sp/>z<sp/>+<sp/>y<sp/>*<sp/>sinTheta)<sp/>*<sp/>curView.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref><sp/>=<sp/>((1<sp/>-<sp/>cosTheta)<sp/>*<sp/>x<sp/>*<sp/>y<sp/>+<sp/>z<sp/>*<sp/>sinTheta)<sp/>*<sp/>curView.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref><sp/>+=<sp/>(cosTheta<sp/>+<sp/>(1<sp/>-<sp/>cosTheta)<sp/>*<sp/>y<sp/>*<sp/>y)<sp/>*<sp/>curView.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref><sp/>+=<sp/>((1<sp/>-<sp/>cosTheta)<sp/>*<sp/>y<sp/>*<sp/>z<sp/>-<sp/>x<sp/>*<sp/>sinTheta)<sp/>*<sp/>curView.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref><sp/>=<sp/>((1<sp/>-<sp/>cosTheta)<sp/>*<sp/>x<sp/>*<sp/>z<sp/>-<sp/>y<sp/>*<sp/>sinTheta)<sp/><sp/><sp/>*<sp/>curView.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref><sp/>+=<sp/>((1<sp/>-<sp/>cosTheta)<sp/>*<sp/>y<sp/>*<sp/>z<sp/>+<sp/>x<sp/>*<sp/>sinTheta)<sp/><sp/><sp/>*<sp/>curView.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>newView.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref><sp/>+=<sp/>(cosTheta<sp/>+<sp/>(1<sp/>-<sp/>cosTheta)<sp/>*<sp/>z<sp/>*<sp/>z)<sp/><sp/><sp/>*<sp/>curView.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>=<sp/>position<sp/>+<sp/>newView;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classgl_camera_1ab5c79ab0c78257e824f10bef3efbf61a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1ab5c79ab0c78257e824f10bef3efbf61a" kindref="member">glCamera::setViewByMouse</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>middleX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>middleY)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>POINT<sp/>mousePos;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>middleX<sp/>=<sp/>width<sp/>&gt;&gt;<sp/>1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>middleY<sp/>=<sp/>height<sp/>&gt;&gt;<sp/>1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="gl_camera_8cpp_1a1457f2b17df44af6a915be160fe76650" kindref="member">modeWasChanged</ref>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetCursorPos(middleX,<sp/>middleY);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleY<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleZ<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentRotX<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>GetCursorPos(&amp;mousePos);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((mousePos.x<sp/>==<sp/>middleX)<sp/>&amp;&amp;<sp/>(mousePos.y<sp/>==<sp/>middleY))</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>SetCursorPos(middleX,<sp/>middleY);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>angleY<sp/>=<sp/>(float)((middleX<sp/>-<sp/>mousePos.x))<sp/>/<sp/>1000.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>angleZ<sp/>=<sp/>(float)((middleY<sp/>-<sp/>mousePos.y))<sp/>/<sp/>1000.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lastRotX<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>lastRotX<sp/>=<sp/>currentRotX;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(currentRotX<sp/>&gt;<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentRotX<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lastRotX<sp/>!=<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>vAxis<sp/>=<sp/>(<ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>-<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>).CrossProduct(<ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vAxis.<ref refid="class_vector3_1ab6f156446cbef2ebc0c84d73b8cad23a" kindref="member">Normalise</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" kindref="member">Rotate</ref>(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref><sp/>-<sp/>lastRotX,<sp/>vAxis.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/>vAxis.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/>vAxis.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(currentRotX<sp/>&lt;<sp/>-1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentRotX<sp/>=<sp/>-1.0f;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lastRotX<sp/>!=<sp/>-1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>vAxis<sp/>=<sp/>(<ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>-<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>).CrossProduct(<ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vAxis.<ref refid="class_vector3_1ab6f156446cbef2ebc0c84d73b8cad23a" kindref="member">Normalise</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" kindref="member">Rotate</ref>(-1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref><sp/>-<sp/>lastRotX,<sp/>vAxis.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/>vAxis.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/>vAxis.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector3" kindref="compound">Vector3</ref><sp/>vAxis<sp/>=<sp/>(<ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>-<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>).CrossProduct(<ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vAxis.<ref refid="class_vector3_1ab6f156446cbef2ebc0c84d73b8cad23a" kindref="member">Normalise</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" kindref="member">Rotate</ref>(angleZ,<sp/>vAxis.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/>vAxis.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/>vAxis.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a72ee7df8a391d2ce1be6cc997131143f" kindref="member">Rotate</ref>(angleY,<sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>.<ref refid="class_vector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>.<ref refid="class_vector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/><ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>.<ref refid="class_vector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="classgl_camera_1a31b34555bdea70f380fe6810b6be24ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a31b34555bdea70f380fe6810b6be24ed" kindref="member">glCamera::Strafe</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>velocity)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>velocity<sp/>*=<sp/><ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref><sp/>+=<sp/><ref refid="classgl_camera_1a8d5190bd0b8078e6b653904f9fc84687" kindref="member">strafeVec</ref><sp/>*<sp/>velocity;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>+=<sp/><ref refid="classgl_camera_1a8d5190bd0b8078e6b653904f9fc84687" kindref="member">strafeVec</ref><sp/>*<sp/>velocity;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="classgl_camera_1a1ab1368aaf700ab1a4c38f4332a4fc0e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a1ab1368aaf700ab1a4c38f4332a4fc0e" kindref="member">glCamera::Update</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_program_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a8d5190bd0b8078e6b653904f9fc84687" kindref="member">strafeVec</ref><sp/>=<sp/>(<ref refid="classgl_camera_1a2d6263fab021ec81f9f13582f8bdcb9b" kindref="member">viewVec</ref><sp/>-<sp/><ref refid="classgl_camera_1a4e7a84b7ccc0840f436d9792c5429c2b" kindref="member">position</ref>).CrossProduct(<ref refid="classgl_camera_1a361375f29cfc87acae069ec5b45f56f4" kindref="member">upVec</ref>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1a8d5190bd0b8078e6b653904f9fc84687" kindref="member">strafeVec</ref>.<ref refid="class_vector3_1ab6f156446cbef2ebc0c84d73b8cad23a" kindref="member">Normalise</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(orientationMode)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgl_camera_1ab5c79ab0c78257e824f10bef3efbf61a" kindref="member">setViewByMouse</ref>(centerX,<sp/>centerY);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_camera_8cpp_1a1457f2b17df44af6a915be160fe76650" kindref="member">modeWasChanged</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_camera_8cpp_1a1457f2b17df44af6a915be160fe76650" kindref="member">modeWasChanged</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>transformOrientation();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>transformTranslation();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="classgl_camera_1a1be4621c5b94b057920b3a2a27adb99b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a1be4621c5b94b057920b3a2a27adb99b" kindref="member">glCamera::RetrieveObjectID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa214bd63e12f7ddf524c83894fcc69a7" kindref="member">height</ref>,<sp/><ref refid="class_scene" kindref="compound">Scene</ref><sp/>scene,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>objectsFound<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>viewportCoordinates[4]<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/>selectBuffer[32]<sp/>=<sp/>{<sp/>0<sp/>};</highlight><highlight class="comment">//Array<sp/>for<sp/>storing<sp/>ID<sp/>of<sp/>objects<sp/>which<sp/>were<sp/>clicked<sp/>32<sp/>is<sp/>Opengl<sp/>requriments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>glSelectBuffer(32,<sp/>selectBuffer);</highlight><highlight class="comment">//Register<sp/>buffer<sp/>for<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>glGetIntegerv(GL_VIEWPORT,<sp/>viewportCoordinates);</highlight><highlight class="comment">//To<sp/>get<sp/>current<sp/>viewport<sp/>coordinates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>glMatrixMode(GL_PROJECTION);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>glPushMatrix();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>glRenderMode(GL_SELECT);</highlight><highlight class="comment">//Render<sp/>objects<sp/>without<sp/>framebiffer<sp/>changes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>glLoadIdentity();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>gluPickMatrix(x,<sp/>viewportCoordinates[3]<sp/>-<sp/>y,<sp/>2,<sp/>2,<sp/>viewportCoordinates);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>gluPerspective(60.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>(<ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref>)(width)<sp/>/<sp/>(<ref refid="glext_8h_1afb586952866409c82b50c9995210cd03" kindref="member">GLfloat</ref>)(height),<sp/>0.01<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>500.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>glMatrixMode(GL_MODELVIEW);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>scene.<ref refid="class_scene_1a2708a12dc045758611cabc6aad195a4a" kindref="member">render</ref>(t,<sp/>app);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>objectsFound<sp/>=<sp/>glRenderMode(GL_RENDER);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>glMatrixMode(GL_PROJECTION);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>glPopMatrix();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>glMatrixMode(GL_MODELVIEW);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(objectsFound<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a2f0c8cd5c21f9fcbd931c3f48bc90dfc" kindref="member">GLuint</ref><sp/>lowestDepth<sp/>=<sp/>selectBuffer[1];</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selectedObject<sp/>=<sp/>selectBuffer[3];</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>objectsFound;<sp/>i++)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(selectBuffer[(i<sp/>*<sp/>4)<sp/>+<sp/>1]<sp/>&lt;<sp/>lowestDepth)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lowestDepth<sp/>=<sp/>selectBuffer[(i<sp/>*<sp/>4)<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selectedObject<sp/>=<sp/>selectBuffer[(i<sp/>*<sp/>4)<sp/>+<sp/>3];</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>selectedObject;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="classgl_camera_1a7ad65ff247a29468cb939474e4c07c4b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgl_camera_1a7ad65ff247a29468cb939474e4c07c4b" kindref="member">glCamera::FocusOnPlanet</ref>(<ref refid="class_planet" kindref="compound">Planet</ref>&amp;<sp/>planet,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="glext_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/><ref refid="class_app" kindref="compound">App</ref>&amp;<sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/glCamera.cpp"/>
+  </compounddef>
+</doxygen>

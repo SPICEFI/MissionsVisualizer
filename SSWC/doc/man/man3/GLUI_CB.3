@@ -1,0 +1,67 @@
+.TH "GLUI_CB" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_CB \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_CB\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_CB\fP (\fBGLUI_Update_CB\fP cb)"
+.br
+.ti -1c
+.RI "\fBGLUI_CB\fP (\fBGLUI_Control_CB\fP cb)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBoperator()\fP (\fBGLUI_Control\fP *ctrl) const "
+.br
+.ti -1c
+.RI "bool \fBoperator!\fP () const "
+.br
+.ti -1c
+.RI "\fBoperator bool\fP () const "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Callback Adapter Class Allows us to support different types of callbacks; like a GLUI_Update_CB function pointer--which takes an int; and a GLUI_Control_CB function pointer--which takes a GUI_Control object\&. 
+.PP
+Definition at line 294 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_CB::GLUI_CB ()\fC [inline]\fP"
+
+.PP
+Definition at line 297 of file glui\&.h\&.
+.SS "GLUI_CB::GLUI_CB (\fBGLUI_Update_CB\fPcb)\fC [inline]\fP"
+
+.PP
+Definition at line 298 of file glui\&.h\&.
+.SS "GLUI_CB::GLUI_CB (\fBGLUI_Control_CB\fPcb)\fC [inline]\fP"
+
+.PP
+Definition at line 299 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "GLUI_CB::operator bool () const\fC [inline]\fP"
+
+.PP
+Definition at line 305 of file glui\&.h\&.
+.SS "bool GLUI_CB::operator! () const\fC [inline]\fP"
+
+.PP
+Definition at line 304 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_CB::operator() (\fBGLUI_Control\fP *ctrl) const"
+This control just activated\&. Fire our callback\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

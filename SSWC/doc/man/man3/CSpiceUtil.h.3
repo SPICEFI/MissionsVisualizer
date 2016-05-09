@@ -1,0 +1,112 @@
+.TH "SSWC/src/CSpice/CSpiceUtil.h" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/CSpice/CSpiceUtil.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'CSpiceCore\&.h'\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <ctime>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <iomanip>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBKernelData\fP"
+.br
+.ti -1c
+.RI "class \fBCSpiceUtil\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCSPICE_ASSERT\fP(expression)"
+.br
+.ti -1c
+.RI "#define \fBKERNEL_FILENAME_LENGTH\fP   1024"
+.br
+.ti -1c
+.RI "#define \fBKERNEL_TYPE_LENGTH\fP   32"
+.br
+.ti -1c
+.RI "#define \fBKERNEL_SOURCE_LENGTH\fP   1024"
+.br
+.ti -1c
+.RI "#define \fBCELL_SIZE_SMALL\fP   128"
+.br
+.ti -1c
+.RI "#define \fBCELL_SIZE_DEFAULT\fP   512"
+.br
+.ti -1c
+.RI "#define \fBCELL_SIZE_LARGE\fP   2048"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CELL_SIZE_DEFAULT   512"
+
+.PP
+Definition at line 36 of file CSpiceUtil\&.h\&.
+.SS "#define CELL_SIZE_LARGE   2048"
+
+.PP
+Definition at line 37 of file CSpiceUtil\&.h\&.
+.SS "#define CELL_SIZE_SMALL   128"
+
+.PP
+Definition at line 35 of file CSpiceUtil\&.h\&.
+.SS "#define CSPICE_ASSERT(expression)"
+\fBValue:\fP
+.PP
+.nf
+if(true)                                                                                                                                                                     \
+    {                                                                                                                                                                               \
+        if(failed_c())                                                                                                                                                              \
+        {                                                                                                                                                                           \
+            std::stringstream errorStr;                                                                                                                                             \
+            errorStr << "CSpice error in " << __FILE__ << " (line " << __LINE__ << "): Error flag was set prior to function call: " << CSpiceUtil::GetShortErrorMessage();          \\
+			CSpiceUtil::SignalError(errorStr\&.str());                                                                                                                              \
+        }                                                                                                                                                                           \
+        expression;                                                                                                                                                                 \
+        if(failed_c())                                                                                                                                                              \
+        {                                                                                                                                                                           \
+            std::stringstream errorStr;                                                                                                                                             \
+            errorStr << "CSpice error in " << __FILE__ << " (line " << __LINE__ << "): " << CSpiceUtil::GetShortErrorMessage();                                                     \\
+			CSpiceUtil::SignalError(errorStr\&.str());                                                                                                                              \
+        }                                                                                                                                                                           \
+    }                                                                                                                                                                               \
+    else                                                                                                                                                                            \
+        (void)0
+.fi
+.PP
+Definition at line 11 of file CSpiceUtil\&.h\&.
+.SS "#define KERNEL_FILENAME_LENGTH   1024"
+
+.PP
+Definition at line 31 of file CSpiceUtil\&.h\&.
+.SS "#define KERNEL_SOURCE_LENGTH   1024"
+
+.PP
+Definition at line 33 of file CSpiceUtil\&.h\&.
+.SS "#define KERNEL_TYPE_LENGTH   32"
+
+.PP
+Definition at line 32 of file CSpiceUtil\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

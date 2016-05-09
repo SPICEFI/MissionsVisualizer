@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_quantity_8h" kind="file">
+    <compoundname>Quantity.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">string</includes>
+    <includedby refid="_date_8h" local="yes">SSWC/src/CSpice/Date.h</includedby>
+    <includedby refid="_space_body_8h" local="yes">SSWC/src/CSpice/SpaceBody.h</includedby>
+    <includedby refid="_quantity_8cpp" local="yes">SSWC/src/Math/Quantity.cpp</includedby>
+    <incdepgraph>
+      <node id="1843">
+        <label>cmath</label>
+      </node>
+      <node id="1844">
+        <label>string</label>
+      </node>
+      <node id="1842">
+        <label>SSWC/src/Math/Quantity.h</label>
+        <link refid="Quantity.h"/>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1844" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1864">
+        <label>SSWC/src/CSpice/Frame.cpp</label>
+        <link refid="_frame_8cpp"/>
+      </node>
+      <node id="1857">
+        <label>SSWC/src/Scene.cpp</label>
+        <link refid="_scene_8cpp"/>
+      </node>
+      <node id="1866">
+        <label>SSWC/src/Math/Quantity.cpp</label>
+        <link refid="_quantity_8cpp"/>
+      </node>
+      <node id="1854">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="_routine_8cpp"/>
+      </node>
+      <node id="1846">
+        <label>SSWC/src/CSpice/Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+        <childnode refid="1865" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>SSWC/src/Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+      </node>
+      <node id="1862">
+        <label>SSWC/src/CSpice/SpaceBody.cpp</label>
+        <link refid="_space_body_8cpp"/>
+      </node>
+      <node id="1850">
+        <label>SSWC/src/glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+      </node>
+      <node id="1865">
+        <label>SSWC/src/CSpice/Date.cpp</label>
+        <link refid="_date_8cpp"/>
+      </node>
+      <node id="1851">
+        <label>SSWC/src/glCamera.cpp</label>
+        <link refid="gl_camera_8cpp"/>
+      </node>
+      <node id="1859">
+        <label>SSWC/src/CSpice/Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="1860" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1864" relation="include">
+        </childnode>
+      </node>
+      <node id="1856">
+        <label>SSWC/src/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1848">
+        <label>SSWC/src/App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+      </node>
+      <node id="1855">
+        <label>SSWC/src/Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1858" relation="include">
+        </childnode>
+      </node>
+      <node id="1849">
+        <label>SSWC/src/App.cpp</label>
+        <link refid="_app_8cpp"/>
+      </node>
+      <node id="1853">
+        <label>SSWC/src/Program.cpp</label>
+        <link refid="_program_8cpp"/>
+      </node>
+      <node id="1858">
+        <label>SSWC/src/Planet.cpp</label>
+        <link refid="_planet_8cpp"/>
+      </node>
+      <node id="1845">
+        <label>SSWC/src/Math/Quantity.h</label>
+        <link refid="Quantity.h"/>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+        <childnode refid="1866" relation="include">
+        </childnode>
+      </node>
+      <node id="1863">
+        <label>SSWC/src/CSpice/SpaceObject.cpp</label>
+        <link refid="_space_object_8cpp"/>
+      </node>
+      <node id="1860">
+        <label>SSWC/src/CSpice/SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+      </node>
+      <node id="1861">
+        <label>SSWC/src/CSpice/SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+      </node>
+      <node id="1847">
+        <label>SSWC/src/CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="1848" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_unit" prot="public">Unit</innerclass>
+    <innerclass refid="class_quantity" prot="public">Quantity</innerclass>
+    <innerclass refid="class_units_1_1_metric" prot="public">Units::Metric</innerclass>
+    <innerclass refid="class_units_1_1_imperial" prot="public">Units::Imperial</innerclass>
+    <innerclass refid="class_units_1_1_common" prot="public">Units::Common</innerclass>
+    <innernamespace refid="namespace_units">Units</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_quantity_8h_1ae34580a93ad25d119ae1a64ded5aa3b2" prot="public" static="no">
+        <type><ref refid="class_quantity" kindref="compound">Quantity</ref>&lt; 1, 0, 0 &gt;</type>
+        <definition>typedef Quantity&lt;1, 0, 0&gt; Length</definition>
+        <argsstring></argsstring>
+        <name>Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="215" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1ab180382d5dc1bcb91259cbd59a5d86fc" prot="public" static="no">
+        <type><ref refid="class_quantity" kindref="compound">Quantity</ref>&lt; 0, 1, 0 &gt;</type>
+        <definition>typedef Quantity&lt;0, 1, 0&gt; Time</definition>
+        <argsstring></argsstring>
+        <name>Time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="216" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1a4ef88533f12b1ee67a3e0d8630b8ca87" prot="public" static="no">
+        <type><ref refid="class_quantity" kindref="compound">Quantity</ref>&lt; 0, 0, 1 &gt;</type>
+        <definition>typedef Quantity&lt;0, 0, 1&gt; Mass</definition>
+        <argsstring></argsstring>
+        <name>Mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="217" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1a97d9cd61ce134def151c1ed0867b0708" prot="public" static="no">
+        <type><ref refid="class_quantity" kindref="compound">Quantity</ref>&lt; 1,-1, 0 &gt;</type>
+        <definition>typedef Quantity&lt;1, -1, 0&gt; Velocity</definition>
+        <argsstring></argsstring>
+        <name>Velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="218" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1aba4f456ecd43f9c8a095b7f882af47d8" prot="public" static="no">
+        <type><ref refid="class_quantity" kindref="compound">Quantity</ref>&lt; 1,-2, 0 &gt;</type>
+        <definition>typedef Quantity&lt;1, -2, 0&gt; Acceleration</definition>
+        <argsstring></argsstring>
+        <name>Acceleration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="219" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1a9a85e5d41c1ee35f67f3cc41ad01c417" prot="public" static="no">
+        <type><ref refid="class_quantity" kindref="compound">Quantity</ref>&lt; 3,-2, 0 &gt;</type>
+        <definition>typedef Quantity&lt;3, -2, 0&gt; GravitationalParameter</definition>
+        <argsstring></argsstring>
+        <name>GravitationalParameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="220" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" prot="public" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 1, 0, 0 &gt;</type>
+        <definition>typedef Unit&lt;1, 0, 0&gt; LengthUnit</definition>
+        <argsstring></argsstring>
+        <name>LengthUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="222" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1ad9301a6dca9ca8d1452914698bfdf893" prot="public" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 0, 1, 0 &gt;</type>
+        <definition>typedef Unit&lt;0, 1, 0&gt; TimeUnit</definition>
+        <argsstring></argsstring>
+        <name>TimeUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="223" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" prot="public" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 0, 0, 1 &gt;</type>
+        <definition>typedef Unit&lt;0, 0, 1&gt; MassUnit</definition>
+        <argsstring></argsstring>
+        <name>MassUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="224" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1a4130b5cf107e9890a06c6c06bbfa7da3" prot="public" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 1,-1, 0 &gt;</type>
+        <definition>typedef Unit&lt;1, -1, 0&gt; VelocityUnit</definition>
+        <argsstring></argsstring>
+        <name>VelocityUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="225" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1aa1729851532d88933ff921f24a0bce3b" prot="public" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 1,-2, 0 &gt;</type>
+        <definition>typedef Unit&lt;1, -2, 0&gt; AccelerationUnit</definition>
+        <argsstring></argsstring>
+        <name>AccelerationUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="226" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_quantity_8h_1ac250a56b26235a8dc9d44fbbeabe2024" prot="public" static="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref>&lt; 3,-2, 0 &gt;</type>
+        <definition>typedef Unit&lt;3, -2, 0&gt; GravitationalParameterUnit</definition>
+        <argsstring></argsstring>
+        <name>GravitationalParameterUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="227" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_quantity_8h_1a8fa258f4864c8e3ce7dd7abfee39860f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double powi</definition>
+        <argsstring>(double val, int exp)</argsstring>
+        <name>powi</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="6" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.cpp" bodystart="3" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="_quantity_8h_1a8fa258f4864c8e3ce7dd7abfee39860f" kindref="member">powi</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exp);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mass&gt;</highlight></codeline>
+<codeline lineno="9" refid="class_unit" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unit" kindref="compound">Unit</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit&lt;length, time, mass&gt;</ref><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit&lt;1, 0, 0&gt;</ref><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit&lt;0, 0, 1&gt;</ref><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit&lt;0, 1, 0&gt;</ref><sp/><ref refid="class_unit" kindref="compound">TimeUnit</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="class_unit_1aa2102921ecd21d9938707db58e4df964" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref><sp/><ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">BaseUnit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref>(<ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22" refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref><sp/><ref refid="class_unit_1aa44ac3044c0cdb834cd220652e5d1c40" kindref="member">ScaledUnit</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>multiplier,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref>&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref><sp/>=<sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref>(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref>(multiplier,<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>,<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26" refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref><sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">DerivedUnit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref>&amp;<sp/>lengthUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">TimeUnit</ref>&amp;<sp/>timeUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref>&amp;<sp/>massUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>totalMultiplier<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>totalMultiplier<sp/>*=<sp/><ref refid="_quantity_8h_1a8fa258f4864c8e3ce7dd7abfee39860f" kindref="member">powi</ref>(lengthUnit.<ref refid="class_unit_1abc965c27239020bcaa506a923567ac4f" kindref="member">GetMultiplier</ref>(),<sp/><ref refid="glext_8h_1a921fa83f7755f0139c84ba1831417a2e" kindref="member">length</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>totalMultiplier<sp/>*=<sp/><ref refid="_quantity_8h_1a8fa258f4864c8e3ce7dd7abfee39860f" kindref="member">powi</ref>(timeUnit.<ref refid="class_unit_1abc965c27239020bcaa506a923567ac4f" kindref="member">GetMultiplier</ref>(),<sp/>time);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>totalMultiplier<sp/>*=<sp/><ref refid="_quantity_8h_1a8fa258f4864c8e3ce7dd7abfee39860f" kindref="member">powi</ref>(massUnit.<ref refid="class_unit_1abc965c27239020bcaa506a923567ac4f" kindref="member">GetMultiplier</ref>(),<sp/>mass);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref>(totalMultiplier,<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36" refid="class_unit_1ab06f5f16f209acf9edf464eab887147d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref><sp/><ref refid="class_unit_1ab06f5f16f209acf9edf464eab887147d" kindref="member">DerivedUnit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref>&amp;<sp/>lengthUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">TimeUnit</ref>&amp;<sp/>timeUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">DerivedUnit</ref>(lengthUnit,<sp/>timeUnit,<sp/><ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">MassUnit::BaseUnit</ref>(),<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40" refid="class_unit_1a5d25b24d83374e3955347683fac527b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref><sp/><ref refid="class_unit_1a5d25b24d83374e3955347683fac527b9" kindref="member">DerivedUnit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">TimeUnit</ref>&amp;<sp/>timeUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref>&amp;<sp/>massUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">DerivedUnit</ref>(<ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">LengthUnit::BaseUnit</ref>(),<sp/>timeUnit,<sp/>massUnit,<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44" refid="class_unit_1a49e42c94a0eaca0f7aee6ccfc100796a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref><sp/><ref refid="class_unit_1a49e42c94a0eaca0f7aee6ccfc100796a" kindref="member">DerivedUnit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">LengthUnit</ref>&amp;<sp/>lengthUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">MassUnit</ref>&amp;<sp/>massUnit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_unit_1a62b5aa1a4619ce98223eb728f91cf28d" kindref="member">DerivedUnit</ref>(lengthUnit,<sp/><ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">TimeUnit::BaseUnit</ref>(),<sp/>massUnit,<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//static<sp/>ThisUnit<sp/>DerivedUnit(const<sp/>MassUnit&amp;<sp/>massUnit,<sp/>const<sp/>std::string&amp;<sp/>label<sp/>=<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>return<sp/>DerivedUnit(LengthUnit::BaseUnit(),<sp/>TimeUnit::BaseUnit(),<sp/>massUnit,<sp/>label);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_unit_1a135a7f1e0f7e1163c4f4f312b45cdc83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_unit_1a135a7f1e0f7e1163c4f4f312b45cdc83" kindref="member">Unit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>constructs<sp/>base<sp/>unit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Construct(1.0,<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_unit_1a135a7f1e0f7e1163c4f4f312b45cdc83" kindref="member">Unit</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>multiplier,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Construct(multiplier,<sp/>label);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_unit_1a135a7f1e0f7e1163c4f4f312b45cdc83" kindref="member">Unit</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>multiplier,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ThisUnit&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="glext_8h_1a9371a1f53f8067997cd15aaf657c62d0" kindref="member">label</ref>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rmultiplier<sp/>=<sp/>ref.GetMultiplier();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Construct(multiplier<sp/>*<sp/>rmultiplier,<sp/>label);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72" refid="class_unit_1abc965c27239020bcaa506a923567ac4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_unit_1abc965c27239020bcaa506a923567ac4f" kindref="member">GetMultiplier</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="73"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>multiplier;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_unit_1a7874709adb65fd349a7fc2511c2f843c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unit_1a7874709adb65fd349a7fc2511c2f843c" kindref="member">SetLabel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/>label)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;label<sp/>=<sp/>label;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/><ref refid="class_unit_1ac4e0cec1f68ac214f1cc050501597899" kindref="member">str</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="83"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;label;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="class_unit_1acf57b62d40c90ed9fa71375374dc3eb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_unit_1acf57b62d40c90ed9fa71375374dc3eb6" kindref="member">Convert</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a79169be77d7e02a24f68a5bfe627dc29" kindref="member">value</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref>&amp;<sp/>from,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">ThisUnit</ref>&amp;<sp/>to)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fmultiplier<sp/>=<sp/>from.<ref refid="class_unit_1abc965c27239020bcaa506a923567ac4f" kindref="member">GetMultiplier</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tmultiplier<sp/>=<sp/>to.<ref refid="class_unit_1abc965c27239020bcaa506a923567ac4f" kindref="member">GetMultiplier</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>*<sp/>(fmultiplier<sp/>/<sp/>tmultiplier);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Construct(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>multiplier,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/>label)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;multiplier<sp/>=<sp/>multiplier;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;label<sp/>=<sp/>label;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>multiplier;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>label;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mass&gt;</highlight></codeline>
+<codeline lineno="108" refid="class_quantity" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_quantity" kindref="compound">Quantity</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit&lt;length, time, mass&gt;</ref><sp/><ref refid="class_unit" kindref="compound">CurrentUnit</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity&lt;length, time, mass&gt;</ref><sp/><ref refid="class_quantity" kindref="compound">ThisQuantity</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114" refid="class_quantity_1a9afc7e790ade60a644248a2654986443" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity_1a9afc7e790ade60a644248a2654986443" kindref="member">Quantity</ref>()</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Construct(0.0,<sp/><ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">CurrentUnit::BaseUnit</ref>());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118" refid="class_quantity_1ab4e1d4f62c6622bd0d7fcac6cc9b017f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity_1ab4e1d4f62c6622bd0d7fcac6cc9b017f" kindref="member">Quantity</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a79169be77d7e02a24f68a5bfe627dc29" kindref="member">value</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">CurrentUnit</ref>&amp;<sp/>unit<sp/>=<sp/><ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">CurrentUnit::BaseUnit</ref>())</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Construct(value,<sp/>unit);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">CurrentUnit</ref>&amp;<sp/><ref refid="glext_8h_1ad32bdec748ba376f6c0d2df39ab9a95b" kindref="member">ref</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_unit_1acf57b62d40c90ed9fa71375374dc3eb6" kindref="member">Unit&lt;length, time, mass&gt;::Convert</ref>(value,<sp/>unit,<sp/>ref);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127" refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" kindref="member">ValueInBase</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="128"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(<ref refid="class_unit_1aa2102921ecd21d9938707db58e4df964" kindref="member">CurrentUnit::BaseUnit</ref>());</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="class_quantity_1a87ccb1a4f7497d0ccc96d70cae6755c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">ThisQuantity</ref>&amp;<sp/><ref refid="class_quantity_1a87ccb1a4f7497d0ccc96d70cae6755c2" kindref="member">operator+=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">ThisQuantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>+=<sp/>rhs.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(unit);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138" refid="class_quantity_1a2b505bf1f41b7eadca3a1e31ff229890" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">ThisQuantity</ref>&amp;<sp/><ref refid="class_quantity_1a2b505bf1f41b7eadca3a1e31ff229890" kindref="member">operator-=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">ThisQuantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>-=<sp/>rhs.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(unit);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144" refid="class_quantity_1acc1223e048130a379766f1d9114059a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quantity" kindref="compound">ThisQuantity</ref>&amp;<sp/><ref refid="class_quantity_1acc1223e048130a379766f1d9114059a9" kindref="member">operator*=</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>*=<sp/>rhs;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Construct(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CurrentUnit&amp;<sp/>unit)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;value<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;unit<sp/>=<sp/>unit;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>CurrentUnit<sp/>unit;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="class_quantity_1a1c68095ddfc203efce7f3ed41201776a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1a1c68095ddfc203efce7f3ed41201776a" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>newValue<sp/>=<sp/>lhs.value<sp/>+<sp/>rhs.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(lhs.unit);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_quantity_1a9afc7e790ade60a644248a2654986443" kindref="member">Quantity</ref>(newValue,<sp/>lhs.unit);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168" refid="class_quantity_1ade9517aad39396b026fef2a9e3a07109" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1ade9517aad39396b026fef2a9e3a07109" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>op)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1.0)<sp/>*<sp/>op;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172" refid="class_quantity_1aa95dcd341dbd3088d0d451a22f304e91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1aa95dcd341dbd3088d0d451a22f304e91" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs<sp/>+<sp/>(-rhs);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176" refid="class_quantity_1a4b4d61d8c308af6bdc227edde9ed8dab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1a4b4d61d8c308af6bdc227edde9ed8dab" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_quantity_1a9afc7e790ade60a644248a2654986443" kindref="member">Quantity</ref>(lhs.value<sp/>*<sp/>rhs,<sp/>lhs.unit);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180" refid="class_quantity_1ac10cb0e95f6975a75e363b671869a95b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1ac10cb0e95f6975a75e363b671869a95b" kindref="member">operator*</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rhs<sp/>*<sp/>lhs;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184" refid="class_quantity_1a73939bdd44776dba5b3652bc577cd83f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1a73939bdd44776dba5b3652bc577cd83f" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs<sp/>*<sp/>(double)rhs;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188" refid="class_quantity_1a44071727bbb3ed92bc06746591cd57a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1a44071727bbb3ed92bc06746591cd57a6" kindref="member">operator*</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rhs<sp/>*<sp/>lhs;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192" refid="class_quantity_1a16eb8208745256ec0ce18ff9fbb1b9c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_quantity_1a16eb8208745256ec0ce18ff9fbb1b9c6" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.value<sp/>/<sp/>rhs.<ref refid="class_quantity_1af5aafbb8de9a913f79fcb0c80fc76d5a" kindref="member">ValueIn</ref>(lhs.unit);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196" refid="class_quantity_1acc56b1ddf2b51862365c0be55f1a5ed7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1acc56b1ddf2b51862365c0be55f1a5ed7" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs<sp/>*<sp/>(1.0<sp/>/<sp/>rhs);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200" refid="class_quantity_1aa4257bcbc5cc3225088b2ca4979bd7af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref><sp/><ref refid="class_quantity_1aa4257bcbc5cc3225088b2ca4979bd7af" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rhs)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs<sp/>/<sp/>(double)rhs;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204" refid="class_quantity_1af182aef223e19064c8062b061b3e1249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_quantity_1af182aef223e19064c8062b061b3e1249" kindref="member">operator&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.<ref refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" kindref="member">ValueInBase</ref>()<sp/>&gt;<sp/>rhs.<ref refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" kindref="member">ValueInBase</ref>();</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208" refid="class_quantity_1ac1a25fbfab188a02c2ef9c5989ee133e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_quantity_1ac1a25fbfab188a02c2ef9c5989ee133e" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.<ref refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" kindref="member">ValueInBase</ref>()<sp/>&lt;<sp/>rhs.<ref refid="class_quantity_1a0bda6b05016d15deaa35f4ddf3ffd71f" kindref="member">ValueInBase</ref>();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="_quantity_8h_1ae34580a93ad25d119ae1a64ded5aa3b2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity&lt;1, 0, 0&gt;</ref><sp/><ref refid="_quantity_8h_1ae34580a93ad25d119ae1a64ded5aa3b2" kindref="member">Length</ref>;</highlight></codeline>
+<codeline lineno="216" refid="_quantity_8h_1ab180382d5dc1bcb91259cbd59a5d86fc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity&lt;0, 1, 0&gt;</ref><sp/><ref refid="_quantity_8h_1ab180382d5dc1bcb91259cbd59a5d86fc" kindref="member">Time</ref>;</highlight></codeline>
+<codeline lineno="217" refid="_quantity_8h_1a4ef88533f12b1ee67a3e0d8630b8ca87" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity&lt;0, 0, 1&gt;</ref><sp/><ref refid="_quantity_8h_1a4ef88533f12b1ee67a3e0d8630b8ca87" kindref="member">Mass</ref>;</highlight></codeline>
+<codeline lineno="218" refid="_quantity_8h_1a97d9cd61ce134def151c1ed0867b0708" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_quantity" kindref="compound">Quantity</ref>&lt;1,<sp/>-1,<sp/>0&gt;<sp/><ref refid="_quantity_8h_1a97d9cd61ce134def151c1ed0867b0708" kindref="member">Velocity</ref>;</highlight></codeline>
+<codeline lineno="219" refid="_quantity_8h_1aba4f456ecd43f9c8a095b7f882af47d8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Quantity&lt;1,<sp/>-2,<sp/>0&gt;<sp/><ref refid="_quantity_8h_1aba4f456ecd43f9c8a095b7f882af47d8" kindref="member">Acceleration</ref>;</highlight></codeline>
+<codeline lineno="220" refid="_quantity_8h_1a9a85e5d41c1ee35f67f3cc41ad01c417" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Quantity&lt;3,<sp/>-2,<sp/>0&gt;<sp/><ref refid="_quantity_8h_1a9a85e5d41c1ee35f67f3cc41ad01c417" kindref="member">GravitationalParameter</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit&lt;1, 0, 0&gt;</ref><sp/><ref refid="_quantity_8h_1afb62d6d68e6cd2c62c96aa8c3aeb7d1f" kindref="member">LengthUnit</ref>;</highlight></codeline>
+<codeline lineno="223" refid="_quantity_8h_1ad9301a6dca9ca8d1452914698bfdf893" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit&lt;0, 1, 0&gt;</ref><sp/><ref refid="_quantity_8h_1ad9301a6dca9ca8d1452914698bfdf893" kindref="member">TimeUnit</ref>;</highlight></codeline>
+<codeline lineno="224" refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit&lt;0, 0, 1&gt;</ref><sp/><ref refid="_quantity_8h_1a2dde25127542e6a5fcf7c085269b8963" kindref="member">MassUnit</ref>;</highlight></codeline>
+<codeline lineno="225" refid="_quantity_8h_1a4130b5cf107e9890a06c6c06bbfa7da3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_unit" kindref="compound">Unit</ref>&lt;1,<sp/>-1,<sp/>0&gt;<sp/><ref refid="_quantity_8h_1a4130b5cf107e9890a06c6c06bbfa7da3" kindref="member">VelocityUnit</ref>;</highlight></codeline>
+<codeline lineno="226" refid="_quantity_8h_1aa1729851532d88933ff921f24a0bce3b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Unit&lt;1,<sp/>-2,<sp/>0&gt;<sp/><ref refid="_quantity_8h_1aa1729851532d88933ff921f24a0bce3b" kindref="member">AccelerationUnit</ref>;</highlight></codeline>
+<codeline lineno="227" refid="_quantity_8h_1ac250a56b26235a8dc9d44fbbeabe2024" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Unit&lt;3,<sp/>-2,<sp/>0&gt;<sp/><ref refid="_quantity_8h_1ac250a56b26235a8dc9d44fbbeabe2024" kindref="member">GravitationalParameterUnit</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="namespace_units" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Units</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="231" refid="class_units_1_1_metric" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_units_1_1_metric" kindref="compound">Metric</ref></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="234" refid="class_units_1_1_metric_1a74dbbff37b76b1265ad6ca64168798b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LengthUnit<sp/><ref refid="class_units_1_1_metric_1a74dbbff37b76b1265ad6ca64168798b0" kindref="member">centimeters</ref>;</highlight></codeline>
+<codeline lineno="235" refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LengthUnit<sp/><ref refid="class_units_1_1_metric_1a74b4e02c4b56750866bb289784d964ba" kindref="member">meters</ref>;</highlight></codeline>
+<codeline lineno="236" refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LengthUnit<sp/><ref refid="class_units_1_1_metric_1a75f22b48abbb71b6fa08adf183565a9a" kindref="member">kilometers</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="class_units_1_1_metric_1a88cdf60341e6f6d7013018cdc1c26ec6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MassUnit<sp/><ref refid="class_units_1_1_metric_1a88cdf60341e6f6d7013018cdc1c26ec6" kindref="member">grams</ref>;</highlight></codeline>
+<codeline lineno="239" refid="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MassUnit<sp/><ref refid="class_units_1_1_metric_1a99628d80b8989197ae87ed949d06a89a" kindref="member">kilograms</ref>;</highlight></codeline>
+<codeline lineno="240" refid="class_units_1_1_metric_1a6795221af474ecd8907538c4ee3505ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MassUnit<sp/><ref refid="class_units_1_1_metric_1a6795221af474ecd8907538c4ee3505ca" kindref="member">tons</ref>;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="class_units_1_1_metric_1ae1c8538c908650861579c9ac0b66457d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VelocityUnit<sp/><ref refid="class_units_1_1_metric_1ae1c8538c908650861579c9ac0b66457d" kindref="member">kmph</ref>;</highlight></codeline>
+<codeline lineno="243" refid="class_units_1_1_metric_1ae30e1438d1f93d6d08901e1fe9b31919" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VelocityUnit<sp/><ref refid="class_units_1_1_metric_1ae30e1438d1f93d6d08901e1fe9b31919" kindref="member">kmps</ref>;</highlight></codeline>
+<codeline lineno="244" refid="class_units_1_1_metric_1af960d1782d357569275d856dc28ed895" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VelocityUnit<sp/><ref refid="class_units_1_1_metric_1af960d1782d357569275d856dc28ed895" kindref="member">mps</ref>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="class_units_1_1_metric_1a172a4a3ec21992ffee09794cf07f9563" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AccelerationUnit<sp/><ref refid="class_units_1_1_metric_1a172a4a3ec21992ffee09794cf07f9563" kindref="member">ms2</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="class_units_1_1_metric_1a8e5b74eb410af1d26aadb0adfb77dc21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GravitationalParameterUnit<sp/><ref refid="class_units_1_1_metric_1a8e5b74eb410af1d26aadb0adfb77dc21" kindref="member">gm</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="class_units_1_1_imperial" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_units_1_1_imperial" kindref="compound">Imperial</ref></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="254" refid="class_units_1_1_imperial_1ab94938e29c6ad2bfd28576401a580fc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LengthUnit<sp/><ref refid="class_units_1_1_imperial_1ab94938e29c6ad2bfd28576401a580fc7" kindref="member">inches</ref>;</highlight></codeline>
+<codeline lineno="255" refid="class_units_1_1_imperial_1aa9b2921928f73582aec2467ba60bb625" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LengthUnit<sp/><ref refid="class_units_1_1_imperial_1aa9b2921928f73582aec2467ba60bb625" kindref="member">feet</ref>;</highlight></codeline>
+<codeline lineno="256" refid="class_units_1_1_imperial_1ae2bee79b25bd5888d7e6b454a057cb66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LengthUnit<sp/><ref refid="class_units_1_1_imperial_1ae2bee79b25bd5888d7e6b454a057cb66" kindref="member">yards</ref>;</highlight></codeline>
+<codeline lineno="257" refid="class_units_1_1_imperial_1a3ccc983d656c0b984f7b269d6e6c3625" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LengthUnit<sp/><ref refid="class_units_1_1_imperial_1a3ccc983d656c0b984f7b269d6e6c3625" kindref="member">miles</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="class_units_1_1_imperial_1af866267c1b81518be69261c840d1e201" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MassUnit<sp/><ref refid="class_units_1_1_imperial_1af866267c1b81518be69261c840d1e201" kindref="member">ounces</ref>;</highlight></codeline>
+<codeline lineno="260" refid="class_units_1_1_imperial_1a25954e93175ecbf7c8dcc870e6c01dd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MassUnit<sp/><ref refid="class_units_1_1_imperial_1a25954e93175ecbf7c8dcc870e6c01dd4" kindref="member">pounds</ref>;</highlight></codeline>
+<codeline lineno="261" refid="class_units_1_1_imperial_1aa704afada0bf66bfb942b92b880e425e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MassUnit<sp/><ref refid="class_units_1_1_imperial_1aa704afada0bf66bfb942b92b880e425e" kindref="member">tons</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="class_units_1_1_imperial_1aa16979886192a537b02c2421701c8e25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VelocityUnit<sp/><ref refid="class_units_1_1_imperial_1aa16979886192a537b02c2421701c8e25" kindref="member">mph</ref>;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="class_units_1_1_common" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_units_1_1_common" kindref="compound">Common</ref></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="269" refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TimeUnit<sp/><ref refid="class_units_1_1_common_1a0cc948d0fded9699abb22295119fff7b" kindref="member">seconds</ref>;</highlight></codeline>
+<codeline lineno="270" refid="class_units_1_1_common_1ae00592bb8573bd91d034a0b23f4449d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TimeUnit<sp/><ref refid="class_units_1_1_common_1ae00592bb8573bd91d034a0b23f4449d6" kindref="member">minutes</ref>;</highlight></codeline>
+<codeline lineno="271" refid="class_units_1_1_common_1a85905b04a8c1fa4058249d06c81828c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TimeUnit<sp/><ref refid="class_units_1_1_common_1a85905b04a8c1fa4058249d06c81828c7" kindref="member">hours</ref>;</highlight></codeline>
+<codeline lineno="272" refid="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TimeUnit<sp/><ref refid="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" kindref="member">days</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h"/>
+  </compounddef>
+</doxygen>

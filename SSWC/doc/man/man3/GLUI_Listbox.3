@@ -1,0 +1,226 @@
+.TH "GLUI_Listbox" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Listbox \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_over\fP (\fBint\fP state, \fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_int_val\fP (\fBint\fP new_val)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdump\fP (FILE *output)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBadd_item\fP (\fBint\fP \fBid\fP, const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdelete_item\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdelete_item\fP (\fBint\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBsort_items\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdo_selection\fP (\fBint\fP item)"
+.br
+.ti -1c
+.RI "\fBGLUI_Listbox_Item\fP * \fBget_item_ptr\fP (const char *\fBtext\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Listbox_Item\fP * \fBget_item_ptr\fP (\fBint\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "\fBGLUI_Listbox\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP *live_var=NULL, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Listbox\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_String\fP \fBcurr_text\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Listbox_Item\fP \fBitems_list\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdepressed\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBorig_value\fP"
+.br
+.ti -1c
+.RI "bool \fBcurrently_inside\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtext_x_offset\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBtitle_x_offset\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBglut_menu_id\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBrecalculate_item_width\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.ti -1c
+.RI "\fB~GLUI_Listbox\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 2320 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Listbox::GLUI_Listbox (\fBGLUI_Node\fP *parent, const char *name, \fBint\fP *live_var = \fCNULL\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_Listbox::GLUI_Listbox (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 2359 of file glui\&.h\&.
+.SS "GLUI_Listbox::~GLUI_Listbox ()\fC [protected]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBint\fP GLUI_Listbox::add_item (\fBint\fPid, const char *text)"
+
+.SS "\fBvoid\fP GLUI_Listbox::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 2364 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Listbox::delete_item (const char *text)"
+
+.SS "\fBint\fP GLUI_Listbox::delete_item (\fBint\fPid)"
+
+.SS "\fBint\fP GLUI_Listbox::do_selection (\fBint\fPitem)"
+
+.SS "\fBvoid\fP GLUI_Listbox::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Listbox::dump (FILE *output)"
+
+.SS "\fBGLUI_Listbox_Item\fP* GLUI_Listbox::get_item_ptr (const char *text)"
+
+.SS "\fBGLUI_Listbox_Item\fP* GLUI_Listbox::get_item_ptr (\fBint\fPid)"
+
+.SS "\fBint\fP GLUI_Listbox::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Listbox::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Listbox::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Listbox::mouse_over (\fBint\fPstate, \fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Listbox::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "bool GLUI_Listbox::recalculate_item_width (\fBvoid\fP)\fC [protected]\fP"
+Change w and return true if we need to be widened to fit the current item\&. 
+.SS "\fBvoid\fP GLUI_Listbox::set_int_val (\fBint\fPnew_val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Listbox::sort_items (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI_Listbox::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Listbox::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGLUI_String\fP GLUI_Listbox::curr_text"
+
+.PP
+Definition at line 2323 of file glui\&.h\&.
+.SS "bool GLUI_Listbox::currently_inside"
+
+.PP
+Definition at line 2328 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Listbox::depressed"
+
+.PP
+Definition at line 2325 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Listbox::glut_menu_id"
+
+.PP
+Definition at line 2330 of file glui\&.h\&.
+.SS "\fBGLUI_Listbox_Item\fP GLUI_Listbox::items_list"
+
+.PP
+Definition at line 2324 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Listbox::orig_value"
+
+.PP
+Definition at line 2327 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Listbox::text_x_offset"
+
+.PP
+Definition at line 2329 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Listbox::title_x_offset"
+
+.PP
+Definition at line 2329 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

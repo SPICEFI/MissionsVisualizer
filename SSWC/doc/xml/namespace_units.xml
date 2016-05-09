@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespace_units" kind="namespace">
+    <compoundname>Units</compoundname>
+    <innerclass refid="class_units_1_1_common" prot="public">Units::Common</innerclass>
+    <innerclass refid="class_units_1_1_imperial" prot="public">Units::Imperial</innerclass>
+    <innerclass refid="class_units_1_1_metric" prot="public">Units::Metric</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Quantity.h" line="230" column="1"/>
+  </compounddef>
+</doxygen>

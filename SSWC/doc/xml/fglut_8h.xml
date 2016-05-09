@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="fglut_8h" kind="file">
+    <compoundname>fglut.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="fglut_8h_1a2abc2d62e34d7f03a4f023e6728338a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>C</type>
+        <definition>C Copyright</definition>
+        <argsstring>(c) Mark J.Kilgard</argsstring>
+        <name>Copyright</name>
+        <param>
+          <type><ref refid="glext_8h_1a1f2d7f8147412c43ba2303a56f97ee73" kindref="member">c</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/fglut.h" line="2" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">C<sp/><sp/><ref refid="fglut_8h_1a2abc2d62e34d7f03a4f023e6728338a8" kindref="member">Copyright</ref><sp/>(<ref refid="glext_8h_1a1f2d7f8147412c43ba2303a56f97ee73" kindref="member">c</ref>)<sp/>Mark<sp/>J.<sp/>Kilgard,<sp/>1994.</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">C<sp/><sp/>This<sp/><ref refid="glext_8h_1ab55c179cd6c84b3f5ddc11d9da0f55b4" kindref="member">program</ref><sp/>is<sp/>freely<sp/>distributable<sp/>without<sp/>licensing<sp/>fees</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">C<sp/><sp/>and<sp/>is<sp/>provided<sp/>without<sp/>guarantee<sp/>or<sp/>warrantee<sp/>expressed<sp/>or</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">C<sp/><sp/>implied.<sp/><sp/>This<sp/><ref refid="glext_8h_1ab55c179cd6c84b3f5ddc11d9da0f55b4" kindref="member">program</ref><sp/>is<sp/>-not-<sp/><ref refid="glext_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref><sp/>the<sp/>public<sp/>domain.</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">C<sp/><sp/>GLUT<sp/>Fortran<sp/>header<sp/>file</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">C<sp/><sp/>display<sp/><ref refid="glext_8h_1a1e71d9c196e4683cc06c4b54d53f7ef5" kindref="member">mode</ref><sp/>bit<sp/>masks</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1af72a6f59f18e560f3ee70b9feb40eeb5" kindref="member">GLUT_RGB</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1af72a6f59f18e560f3ee70b9feb40eeb5" kindref="member">GLUT_RGB</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a9766fe825112d4042a731effa96e9ed7" kindref="member">GLUT_RGBA</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a9766fe825112d4042a731effa96e9ed7" kindref="member">GLUT_RGBA</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a27cb2be9915eb425610664a7daeec74a" kindref="member">GLUT_INDEX</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a27cb2be9915eb425610664a7daeec74a" kindref="member">GLUT_INDEX</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a3d45cc54fd3274143881a0633600709f" kindref="member">GLUT_SINGLE</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a3d45cc54fd3274143881a0633600709f" kindref="member">GLUT_SINGLE</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a199f7f46cadfb6a94b2b7095f3ff3428" kindref="member">GLUT_DOUBLE</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a199f7f46cadfb6a94b2b7095f3ff3428" kindref="member">GLUT_DOUBLE</ref><sp/>=<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a43896fd591995b08379ec5d945c6b9ca" kindref="member">GLUT_ACCUM</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a43896fd591995b08379ec5d945c6b9ca" kindref="member">GLUT_ACCUM</ref><sp/>=<sp/>4<sp/>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a2d492a7606bd5c29f2ba12bb194b5866" kindref="member">GLUT_ALPHA</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a2d492a7606bd5c29f2ba12bb194b5866" kindref="member">GLUT_ALPHA</ref><sp/>=<sp/>8<sp/>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a82a20e99a815f32f5f936971e2fa5651" kindref="member">GLUT_DEPTH</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a82a20e99a815f32f5f936971e2fa5651" kindref="member">GLUT_DEPTH</ref><sp/>=<sp/>16<sp/>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1af8f7a79dc36c44f922225d9109196403" kindref="member">GLUT_STENCIL</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1af8f7a79dc36c44f922225d9109196403" kindref="member">GLUT_STENCIL</ref><sp/>=<sp/>32<sp/>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a3f15e21c2a814e8db3d00ec1e9f58d71" kindref="member">GLUT_MULTISAMPLE</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a3f15e21c2a814e8db3d00ec1e9f58d71" kindref="member">GLUT_MULTISAMPLE</ref><sp/>=<sp/>128<sp/>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a0cd1ad5ec8468b9a0cdd4158e791dc19" kindref="member">GLUT_STEREO</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a0cd1ad5ec8468b9a0cdd4158e791dc19" kindref="member">GLUT_STEREO</ref><sp/>=<sp/>256<sp/>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">C<sp/><sp/>mouse<sp/>buttons</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a889091fa01fbf2f7d4d6f86b5028b54b" kindref="member">GLUT_LEFT_BUTTON</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a889091fa01fbf2f7d4d6f86b5028b54b" kindref="member">GLUT_LEFT_BUTTON</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a99af895d2ade59903d17dc05167fc2e9" kindref="member">GLUT_MIDDLE_BUTTON</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a99af895d2ade59903d17dc05167fc2e9" kindref="member">GLUT_MIDDLE_BUTTON</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ada993ed7a1ceee11b1c3326b8b15dbf3" kindref="member">GLUT_RIGHT_BUTTON</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ada993ed7a1ceee11b1c3326b8b15dbf3" kindref="member">GLUT_RIGHT_BUTTON</ref><sp/>=<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">C<sp/><sp/>mouse<sp/>button<sp/>callback<sp/>state</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a30d72298588fe4f6204e9f6d86f955b3" kindref="member">GLUT_DOWN</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a30d72298588fe4f6204e9f6d86f955b3" kindref="member">GLUT_DOWN</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a1afddf27f2001b4e65470a41bdde30d9" kindref="member">GLUT_UP</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a1afddf27f2001b4e65470a41bdde30d9" kindref="member">GLUT_UP</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">C<sp/><sp/>special<sp/>key<sp/>callback<sp/><ref refid="glext_8h_1a0aa8cf39c79d294b1d9f4daef5020bec" kindref="member">values</ref></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1af63cc7b29a12af0955c42dea87829736" kindref="member">GLUT_KEY_F1</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1af63cc7b29a12af0955c42dea87829736" kindref="member">GLUT_KEY_F1</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1acb72407f62b6cfc4faac1b9d79da2623" kindref="member">GLUT_KEY_F2</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1acb72407f62b6cfc4faac1b9d79da2623" kindref="member">GLUT_KEY_F2</ref><sp/>=<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a9680619e50bb1ec577e2e36be50c8b90" kindref="member">GLUT_KEY_F3</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a9680619e50bb1ec577e2e36be50c8b90" kindref="member">GLUT_KEY_F3</ref><sp/>=<sp/>3<sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ae8d810517559c68a5f62456d2b77425a" kindref="member">GLUT_KEY_F4</ref></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ae8d810517559c68a5f62456d2b77425a" kindref="member">GLUT_KEY_F4</ref><sp/>=<sp/>4<sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a996d079f4f3f3a8c7c6a01ca6db9258b" kindref="member">GLUT_KEY_F5</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a996d079f4f3f3a8c7c6a01ca6db9258b" kindref="member">GLUT_KEY_F5</ref><sp/>=<sp/>5<sp/>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a14ff110c3b644cf9072d37197fa0a34e" kindref="member">GLUT_KEY_F6</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a14ff110c3b644cf9072d37197fa0a34e" kindref="member">GLUT_KEY_F6</ref><sp/>=<sp/>6<sp/>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a0cb22cbc1ac854e2c8a1a5f6ae04665c" kindref="member">GLUT_KEY_F7</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a0cb22cbc1ac854e2c8a1a5f6ae04665c" kindref="member">GLUT_KEY_F7</ref><sp/>=<sp/>7<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aac707cfc5f4e56de1ea98466be5ea5ad" kindref="member">GLUT_KEY_F8</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aac707cfc5f4e56de1ea98466be5ea5ad" kindref="member">GLUT_KEY_F8</ref><sp/>=<sp/>8<sp/>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aadc9265d666b1bc3827ba25570f18cf4" kindref="member">GLUT_KEY_F9</ref></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aadc9265d666b1bc3827ba25570f18cf4" kindref="member">GLUT_KEY_F9</ref><sp/>=<sp/>9<sp/>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aa0945fa7982b39eefa42014700f483c9" kindref="member">GLUT_KEY_F10</ref></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aa0945fa7982b39eefa42014700f483c9" kindref="member">GLUT_KEY_F10</ref><sp/>=<sp/>10<sp/>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a9ff68b79b29283e2602c936b5c3aefc5" kindref="member">GLUT_KEY_F11</ref></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a9ff68b79b29283e2602c936b5c3aefc5" kindref="member">GLUT_KEY_F11</ref><sp/>=<sp/>11<sp/>)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a29817688a1c9f26fd697d811da48e223" kindref="member">GLUT_KEY_F12</ref></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a29817688a1c9f26fd697d811da48e223" kindref="member">GLUT_KEY_F12</ref><sp/>=<sp/>12<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1abb193c04e62c29184751e2055fda89f5" kindref="member">GLUT_KEY_LEFT</ref></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1abb193c04e62c29184751e2055fda89f5" kindref="member">GLUT_KEY_LEFT</ref><sp/>=<sp/>100<sp/>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ada7f412e1ab4f271da990a217aca5b73" kindref="member">GLUT_KEY_UP</ref></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ada7f412e1ab4f271da990a217aca5b73" kindref="member">GLUT_KEY_UP</ref><sp/>=<sp/>101<sp/>)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a19beda7d173600127ee540aee53dd081" kindref="member">GLUT_KEY_RIGHT</ref></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a19beda7d173600127ee540aee53dd081" kindref="member">GLUT_KEY_RIGHT</ref><sp/>=<sp/>102<sp/>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1acf185aebae7f4bee9d4e95e0e889baa7" kindref="member">GLUT_KEY_DOWN</ref></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1acf185aebae7f4bee9d4e95e0e889baa7" kindref="member">GLUT_KEY_DOWN</ref><sp/>=<sp/>103<sp/>)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a28093e59b0ac1a1a25790fe45413db52" kindref="member">GLUT_KEY_PAGE_UP</ref></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a28093e59b0ac1a1a25790fe45413db52" kindref="member">GLUT_KEY_PAGE_UP</ref><sp/>=<sp/>104<sp/>)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ada3e1475a629486163f75867350cddb4" kindref="member">GLUT_KEY_PAGE_DOWN</ref></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ada3e1475a629486163f75867350cddb4" kindref="member">GLUT_KEY_PAGE_DOWN</ref><sp/>=<sp/>105<sp/>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1adf559535a9b6a83e60e19b503cbd8267" kindref="member">GLUT_KEY_HOME</ref></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1adf559535a9b6a83e60e19b503cbd8267" kindref="member">GLUT_KEY_HOME</ref><sp/>=<sp/>106<sp/>)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a8e90fbfbeea6c49891e022e07c9de056" kindref="member">GLUT_KEY_END</ref></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a8e90fbfbeea6c49891e022e07c9de056" kindref="member">GLUT_KEY_END</ref><sp/>=<sp/>107<sp/>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a73eebf3d2d1ccd5ce867a608e0e2a751" kindref="member">GLUT_KEY_INSERT</ref></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a73eebf3d2d1ccd5ce867a608e0e2a751" kindref="member">GLUT_KEY_INSERT</ref><sp/>=<sp/>108<sp/>)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">C<sp/><sp/>entry/exit<sp/>callback<sp/>state</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1af581f17fc90ea8883fb28a0ec26c889d" kindref="member">GLUT_LEFT</ref></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1af581f17fc90ea8883fb28a0ec26c889d" kindref="member">GLUT_LEFT</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a2442615bbc9f806206f3c0334fe73181" kindref="member">GLUT_ENTERED</ref></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a2442615bbc9f806206f3c0334fe73181" kindref="member">GLUT_ENTERED</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">C<sp/><sp/>menu<sp/><ref refid="glext_8h_1afb85c5d9b1bce96aa3b530d581194d1a" kindref="member">usage</ref><sp/>callback<sp/>state</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a52f844a404adac32c0754da123b1d471" kindref="member">GLUT_MENU_NOT_IN_USE</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a52f844a404adac32c0754da123b1d471" kindref="member">GLUT_MENU_NOT_IN_USE</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a4559f0cb6963c422c3cd87b998e42f4b" kindref="member">GLUT_MENU_IN_USE</ref></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a4559f0cb6963c422c3cd87b998e42f4b" kindref="member">GLUT_MENU_IN_USE</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">C<sp/><sp/>visibility<sp/>callback<sp/>state</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a64a22710d37c8674704e90fc2010c950" kindref="member">GLUT_NOT_VISIBLE</ref></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a64a22710d37c8674704e90fc2010c950" kindref="member">GLUT_NOT_VISIBLE</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a7037cf658e4512296cef256c020f0fdb" kindref="member">GLUT_VISIBLE</ref></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a7037cf658e4512296cef256c020f0fdb" kindref="member">GLUT_VISIBLE</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">C<sp/><sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref><sp/><ref refid="glext_8h_1a57f14e05b1900f16a2da82ade47d0c6d" kindref="member">index</ref><sp/>component<sp/>selection<sp/><ref refid="glext_8h_1a0aa8cf39c79d294b1d9f4daef5020bec" kindref="member">values</ref></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aef848f2d576af78e59be7201d45ea4ec" kindref="member">GLUT_RED</ref></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aef848f2d576af78e59be7201d45ea4ec" kindref="member">GLUT_RED</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a3e31e620fa555ee3a0667a04827a7d0c" kindref="member">GLUT_GREEN</ref></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a3e31e620fa555ee3a0667a04827a7d0c" kindref="member">GLUT_GREEN</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a074d38dfa1098ff10e371902adb0b8ed" kindref="member">GLUT_BLUE</ref></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a074d38dfa1098ff10e371902adb0b8ed" kindref="member">GLUT_BLUE</ref><sp/>=<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">C<sp/><sp/>XXX<sp/>Unfortunately,<sp/>SGI&apos;<ref refid="glext_8h_1a4af680a6c683f88ed67b76f207f2e6e4" kindref="member">s</ref><sp/>Fortran<sp/>compiler<sp/>links<sp/>with</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">C<sp/><sp/>EXTERNAL<sp/><ref refid="glext_8h_1a41a8247b39e9cdb744299c3331ca3453" kindref="member">data</ref><sp/>even<sp/>if<sp/>it<sp/>is<sp/>not<sp/>used.<sp/><sp/>This<sp/>defeats</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">C<sp/><sp/>the<sp/>purpose<sp/>of<sp/>GLUT<sp/>naming<sp/>fonts<sp/>via<sp/>opaque<sp/>symbols.</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">C<sp/><sp/>This<sp/>means<sp/>GLUT<sp/>Fortran<sp/>programmers<sp/>should<sp/>explicitly</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">C<sp/><sp/>declared<sp/>EXTERNAL<sp/>GLUT<sp/>fonts<sp/><ref refid="glext_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref><sp/>subroutines<sp/>where</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">C<sp/><sp/>the<sp/>fonts<sp/>are<sp/>used.</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">C<sp/><sp/>stroke<sp/><ref refid="_routine_8cpp_1a1e52b0778d1df763fc5b497c26ead7a9" kindref="member">font</ref><sp/>opaque<sp/><ref refid="glext_8h_1a339b9616ddcfbc036f0258f8dcdd8902" kindref="member">names</ref></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1a8c868e8790fc8d62e4d6a3923cb2c007" kindref="member">GLUT_STROKE_ROMAN</ref></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1a6d845b04aa17e263c96e07b95872b404" kindref="member">GLUT_STROKE_MONO_ROMAN</ref></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">C<sp/><sp/><ref refid="glext_8h_1a6068a789bc2c3cc8cbe16e3280544c9d" kindref="member">bitmap</ref><sp/><ref refid="_routine_8cpp_1a1e52b0778d1df763fc5b497c26ead7a9" kindref="member">font</ref><sp/>opaque<sp/><ref refid="glext_8h_1a339b9616ddcfbc036f0258f8dcdd8902" kindref="member">names</ref></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1abd22ae2e12348f35e2822d9e23aa50de" kindref="member">GLUT_BITMAP_9_BY_15</ref></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1a19b58769a20dd6fb34e6b5a2ecd42c2a" kindref="member">GLUT_BITMAP_8_BY_13</ref></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1ab570839ce3413815606992f14dc9a9d4" kindref="member">GLUT_BITMAP_TIMES_ROMAN_10</ref></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1a3a5b5a835fb02e6a681b8092fe25cc8c" kindref="member">GLUT_BITMAP_TIMES_ROMAN_24</ref></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1ac11db7b9af4fb9c1b2e37be43728f34d" kindref="member">GLUT_BITMAP_HELVETICA_10</ref></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1a7148f404947be386e4a4cbd2ec84d15e" kindref="member">GLUT_BITMAP_HELVETICA_12</ref></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>external<sp/><ref refid="glut_8h_1aa2733cf18efd2cf595fe00e2eef5fd46" kindref="member">GLUT_BITMAP_HELVETICA_18</ref></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">C<sp/><sp/><ref refid="glut_8h_1abd40aee768daba380caf8d1d72d655b3" kindref="member">glutGet</ref><sp/>parameters</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1afd840a4550534860f84493c99889444c" kindref="member">GLUT_WINDOW_X</ref></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1afd840a4550534860f84493c99889444c" kindref="member">GLUT_WINDOW_X</ref><sp/>=<sp/>100<sp/>)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1af96c91347385211c5fc8c4e480e724bf" kindref="member">GLUT_WINDOW_Y</ref></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1af96c91347385211c5fc8c4e480e724bf" kindref="member">GLUT_WINDOW_Y</ref><sp/>=<sp/>101<sp/>)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a0f3be11b8fee187ebb7404d963c7d31e" kindref="member">GLUT_WINDOW_WIDTH</ref></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a0f3be11b8fee187ebb7404d963c7d31e" kindref="member">GLUT_WINDOW_WIDTH</ref><sp/>=<sp/>102<sp/>)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aa59ab5701b62782baab5d05e71d646ab" kindref="member">GLUT_WINDOW_HEIGHT</ref></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aa59ab5701b62782baab5d05e71d646ab" kindref="member">GLUT_WINDOW_HEIGHT</ref><sp/>=<sp/>103<sp/>)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a3a9c3935e7ddf12b8a70a7f5df3626c1" kindref="member">GLUT_WINDOW_BUFFER_SIZE</ref></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a3a9c3935e7ddf12b8a70a7f5df3626c1" kindref="member">GLUT_WINDOW_BUFFER_SIZE</ref><sp/>=<sp/>104<sp/>)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1adb9314f66a8f824f71322454decee406" kindref="member">GLUT_WINDOW_STENCIL_SIZE</ref></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1adb9314f66a8f824f71322454decee406" kindref="member">GLUT_WINDOW_STENCIL_SIZE</ref><sp/>=<sp/>105<sp/>)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a75550c7d5af9c48876449d0a1a2cb399" kindref="member">GLUT_WINDOW_DEPTH_SIZE</ref></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a75550c7d5af9c48876449d0a1a2cb399" kindref="member">GLUT_WINDOW_DEPTH_SIZE</ref><sp/>=<sp/>106<sp/>)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a44509f72b4642ec2eec721327cd1fb7f" kindref="member">GLUT_WINDOW_RED_SIZE</ref></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a44509f72b4642ec2eec721327cd1fb7f" kindref="member">GLUT_WINDOW_RED_SIZE</ref><sp/>=<sp/>107<sp/>)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a3ab3056f0fe86d066fa89af6cde18ed8" kindref="member">GLUT_WINDOW_GREEN_SIZE</ref></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a3ab3056f0fe86d066fa89af6cde18ed8" kindref="member">GLUT_WINDOW_GREEN_SIZE</ref><sp/>=<sp/>108<sp/>)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1abdf4e98e2114bc0707239ea8019a9be9" kindref="member">GLUT_WINDOW_BLUE_SIZE</ref></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1abdf4e98e2114bc0707239ea8019a9be9" kindref="member">GLUT_WINDOW_BLUE_SIZE</ref><sp/>=<sp/>109<sp/>)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a57d82d9d76b5c6f5f8e7d3466609399e" kindref="member">GLUT_WINDOW_ALPHA_SIZE</ref></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a57d82d9d76b5c6f5f8e7d3466609399e" kindref="member">GLUT_WINDOW_ALPHA_SIZE</ref><sp/>=<sp/>110<sp/>)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a2110a2aecd5d4ad7a104a0b9477a3629" kindref="member">GLUT_WINDOW_ACCUM_RED_SIZE</ref></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a2110a2aecd5d4ad7a104a0b9477a3629" kindref="member">GLUT_WINDOW_ACCUM_RED_SIZE</ref><sp/>=<sp/>111<sp/>)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aafbd9803c6c09cefc820bc0d9646c4a4" kindref="member">GLUT_WINDOW_ACCUM_GREEN_SIZE</ref></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aafbd9803c6c09cefc820bc0d9646c4a4" kindref="member">GLUT_WINDOW_ACCUM_GREEN_SIZE</ref><sp/>=<sp/>112<sp/>)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a74844f3c9ea2afa20a81638a45049ad9" kindref="member">GLUT_WINDOW_ACCUM_BLUE_SIZE</ref></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a74844f3c9ea2afa20a81638a45049ad9" kindref="member">GLUT_WINDOW_ACCUM_BLUE_SIZE</ref><sp/>=<sp/>113<sp/>)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a253794e453f452508d170c62ac34e638" kindref="member">GLUT_WINDOW_ACCUM_ALPHA_SIZE</ref></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a253794e453f452508d170c62ac34e638" kindref="member">GLUT_WINDOW_ACCUM_ALPHA_SIZE</ref><sp/>=<sp/>114<sp/>)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a9209d34d3fb3805e395878acd78e2f02" kindref="member">GLUT_WINDOW_DOUBLEBUFFER</ref></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a9209d34d3fb3805e395878acd78e2f02" kindref="member">GLUT_WINDOW_DOUBLEBUFFER</ref><sp/>=<sp/>115<sp/>)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a3b538c911c396c95b24c4a59be27ab3b" kindref="member">GLUT_WINDOW_RGBA</ref></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a3b538c911c396c95b24c4a59be27ab3b" kindref="member">GLUT_WINDOW_RGBA</ref><sp/>=<sp/>116<sp/>)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a724c63b0ab39db859a2a3a7b1212db8f" kindref="member">GLUT_WINDOW_PARENT</ref></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a724c63b0ab39db859a2a3a7b1212db8f" kindref="member">GLUT_WINDOW_PARENT</ref><sp/>=<sp/>117<sp/>)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a3c4cc1eb509c112a06d2b727b4a4845a" kindref="member">GLUT_WINDOW_NUM_CHILDREN</ref></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a3c4cc1eb509c112a06d2b727b4a4845a" kindref="member">GLUT_WINDOW_NUM_CHILDREN</ref><sp/>=<sp/>118<sp/>)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a02eae1e68c788e930924f1b1f36f5169" kindref="member">GLUT_WINDOW_COLORMAP_SIZE</ref></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a02eae1e68c788e930924f1b1f36f5169" kindref="member">GLUT_WINDOW_COLORMAP_SIZE</ref><sp/>=<sp/>119<sp/>)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ab45baab849e18a8dc86cb230d8582436" kindref="member">GLUT_WINDOW_NUM_SAMPLES</ref></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ab45baab849e18a8dc86cb230d8582436" kindref="member">GLUT_WINDOW_NUM_SAMPLES</ref><sp/>=<sp/>120<sp/>)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a37c7f9ceeb75ab4f4a02da02b0f50d4b" kindref="member">GLUT_WINDOW_STEREO</ref></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a37c7f9ceeb75ab4f4a02da02b0f50d4b" kindref="member">GLUT_WINDOW_STEREO</ref><sp/>=<sp/>121<sp/>)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a887e0ff085061db7bf3daaa3d079f7e4" kindref="member">GLUT_WINDOW_CURSOR</ref></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a887e0ff085061db7bf3daaa3d079f7e4" kindref="member">GLUT_WINDOW_CURSOR</ref><sp/>=<sp/>122<sp/>)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a6b65bdffe7a0842ddeb96e7df24bc052" kindref="member">GLUT_SCREEN_WIDTH</ref></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a6b65bdffe7a0842ddeb96e7df24bc052" kindref="member">GLUT_SCREEN_WIDTH</ref><sp/>=<sp/>200<sp/>)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ab886a3d74de701fd9a6d225f440d7600" kindref="member">GLUT_SCREEN_HEIGHT</ref></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ab886a3d74de701fd9a6d225f440d7600" kindref="member">GLUT_SCREEN_HEIGHT</ref><sp/>=<sp/>201<sp/>)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a118f8271d40bf215c6893e2b78651c0c" kindref="member">GLUT_SCREEN_WIDTH_MM</ref></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a118f8271d40bf215c6893e2b78651c0c" kindref="member">GLUT_SCREEN_WIDTH_MM</ref><sp/>=<sp/>202<sp/>)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a48916f3cd0b6a8805b4de3c72efad0e3" kindref="member">GLUT_SCREEN_HEIGHT_MM</ref></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a48916f3cd0b6a8805b4de3c72efad0e3" kindref="member">GLUT_SCREEN_HEIGHT_MM</ref><sp/>=<sp/>203<sp/>)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a81c9244e4286cf9ef3326e8197e3aae0" kindref="member">GLUT_MENU_NUM_ITEMS</ref></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a81c9244e4286cf9ef3326e8197e3aae0" kindref="member">GLUT_MENU_NUM_ITEMS</ref><sp/>=<sp/>300<sp/>)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a679ca1a9f339a7cbced60f89e0fc8925" kindref="member">GLUT_DISPLAY_MODE_POSSIBLE</ref></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a679ca1a9f339a7cbced60f89e0fc8925" kindref="member">GLUT_DISPLAY_MODE_POSSIBLE</ref><sp/>=<sp/>400<sp/>)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a7627ed8c6224d6389f30cabcf7cda967" kindref="member">GLUT_INIT_WINDOW_X</ref></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a7627ed8c6224d6389f30cabcf7cda967" kindref="member">GLUT_INIT_WINDOW_X</ref><sp/>=<sp/>500<sp/>)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a8c3a6de14aa9b522d6a9c4993da064fb" kindref="member">GLUT_INIT_WINDOW_Y</ref></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a8c3a6de14aa9b522d6a9c4993da064fb" kindref="member">GLUT_INIT_WINDOW_Y</ref><sp/>=<sp/>501<sp/>)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a792dacbe7ae1d6d0cda0f1cc8fce6e9e" kindref="member">GLUT_INIT_WINDOW_WIDTH</ref></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a792dacbe7ae1d6d0cda0f1cc8fce6e9e" kindref="member">GLUT_INIT_WINDOW_WIDTH</ref><sp/>=<sp/>502<sp/>)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1abf9ae3b75dae2531ade9cec68b0da41a" kindref="member">GLUT_INIT_WINDOW_HEIGHT</ref></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1abf9ae3b75dae2531ade9cec68b0da41a" kindref="member">GLUT_INIT_WINDOW_HEIGHT</ref><sp/>=<sp/>503<sp/>)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a9f12a56b38000f6bc663aed7f5dbf803" kindref="member">GLUT_INIT_DISPLAY_MODE</ref></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a9f12a56b38000f6bc663aed7f5dbf803" kindref="member">GLUT_INIT_DISPLAY_MODE</ref><sp/>=<sp/>504<sp/>)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a9a38f125fd6a5ca22bfbae59d5654146" kindref="member">GLUT_ELAPSED_TIME</ref></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a9a38f125fd6a5ca22bfbae59d5654146" kindref="member">GLUT_ELAPSED_TIME</ref><sp/>=<sp/>700<sp/>)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">C<sp/><sp/><ref refid="glut_8h_1ac7c4d003fb132e36a87eb6b34fdcd80a" kindref="member">glutDeviceGet</ref><sp/>parameters</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1afc9f178dce8da5d750839f8607986706" kindref="member">GLUT_HAS_KEYBOARD</ref></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1afc9f178dce8da5d750839f8607986706" kindref="member">GLUT_HAS_KEYBOARD</ref><sp/>=<sp/>600<sp/>)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a4d860760b75e8ba688820a8917f54aa6" kindref="member">GLUT_HAS_MOUSE</ref></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a4d860760b75e8ba688820a8917f54aa6" kindref="member">GLUT_HAS_MOUSE</ref><sp/>=<sp/>601<sp/>)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ac6f10f5ba7fa1db4236ff4350cbece04" kindref="member">GLUT_HAS_SPACEBALL</ref></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ac6f10f5ba7fa1db4236ff4350cbece04" kindref="member">GLUT_HAS_SPACEBALL</ref><sp/>=<sp/>602<sp/>)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a118efbf04d3b594b7fca68920254d2fe" kindref="member">GLUT_HAS_DIAL_AND_BUTTON_BOX</ref></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a118efbf04d3b594b7fca68920254d2fe" kindref="member">GLUT_HAS_DIAL_AND_BUTTON_BOX</ref><sp/>=<sp/>603<sp/>)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ab909efdd1d504d879e958b36dedc2173" kindref="member">GLUT_HAS_TABLET</ref></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ab909efdd1d504d879e958b36dedc2173" kindref="member">GLUT_HAS_TABLET</ref><sp/>=<sp/>604<sp/>)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a202d9c83876fe0b87d1af980463caefa" kindref="member">GLUT_NUM_MOUSE_BUTTONS</ref></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a202d9c83876fe0b87d1af980463caefa" kindref="member">GLUT_NUM_MOUSE_BUTTONS</ref><sp/>=<sp/>605<sp/>)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aa4ff5141791cc3999281dcdb1fadc4a5" kindref="member">GLUT_NUM_SPACEBALL_BUTTONS</ref></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aa4ff5141791cc3999281dcdb1fadc4a5" kindref="member">GLUT_NUM_SPACEBALL_BUTTONS</ref><sp/>=<sp/>606<sp/>)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1af5f59269acd5687125d7c3c7b6e3fd35" kindref="member">GLUT_NUM_BUTTON_BOX_BUTTONS</ref></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1af5f59269acd5687125d7c3c7b6e3fd35" kindref="member">GLUT_NUM_BUTTON_BOX_BUTTONS</ref><sp/>=<sp/>607<sp/>)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a494de5ea1c0624bd31f8aa3ea919494b" kindref="member">GLUT_NUM_DIALS</ref></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a494de5ea1c0624bd31f8aa3ea919494b" kindref="member">GLUT_NUM_DIALS</ref><sp/>=<sp/>608<sp/>)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aee4d8f95dfd13e13f762c3a081c6036a" kindref="member">GLUT_NUM_TABLET_BUTTONS</ref></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aee4d8f95dfd13e13f762c3a081c6036a" kindref="member">GLUT_NUM_TABLET_BUTTONS</ref><sp/>=<sp/>609<sp/>)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">C<sp/><sp/><ref refid="glut_8h_1afbd4a231dc6caa67854ff5ebbc0cc747" kindref="member">glutLayerGet</ref><sp/>parameters</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a7bebe6fa7f34719ba4d19d94f4445049" kindref="member">GLUT_OVERLAY_POSSIBLE</ref></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a7bebe6fa7f34719ba4d19d94f4445049" kindref="member">GLUT_OVERLAY_POSSIBLE</ref><sp/>=<sp/>800<sp/>)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a088ca8b3e257d80ac16f956d62de0e67" kindref="member">GLUT_LAYER_IN_USE</ref></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a088ca8b3e257d80ac16f956d62de0e67" kindref="member">GLUT_LAYER_IN_USE</ref><sp/>=<sp/>801<sp/>)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a9500fab96177bfe4fce8d66b6ae516d6" kindref="member">GLUT_HAS_OVERLAY</ref></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a9500fab96177bfe4fce8d66b6ae516d6" kindref="member">GLUT_HAS_OVERLAY</ref><sp/>=<sp/>802<sp/>)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a99aa25e36a0b01c418a79ce1219dbf56" kindref="member">GLUT_TRANSPARENT_INDEX</ref></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a99aa25e36a0b01c418a79ce1219dbf56" kindref="member">GLUT_TRANSPARENT_INDEX</ref><sp/>=<sp/>803<sp/>)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a6c8c766cfc7dd33026befb89de05b49f" kindref="member">GLUT_NORMAL_DAMAGED</ref></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a6c8c766cfc7dd33026befb89de05b49f" kindref="member">GLUT_NORMAL_DAMAGED</ref><sp/>=<sp/>804<sp/>)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a27e1cc27b271dac2d0c51a1ff9d0ae06" kindref="member">GLUT_OVERLAY_DAMAGED</ref></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a27e1cc27b271dac2d0c51a1ff9d0ae06" kindref="member">GLUT_OVERLAY_DAMAGED</ref><sp/>=<sp/>805<sp/>)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal">C<sp/><sp/><ref refid="glut_8h_1a7769bbfcc0b20f9af06a6aa285a560fc" kindref="member">glutUseLayer</ref><sp/>parameters</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a35a0cdb606dff93c9b200d08f65f110c" kindref="member">GLUT_NORMAL</ref></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a35a0cdb606dff93c9b200d08f65f110c" kindref="member">GLUT_NORMAL</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a955e05a13f7604768eef710f3d872b39" kindref="member">GLUT_OVERLAY</ref></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a955e05a13f7604768eef710f3d872b39" kindref="member">GLUT_OVERLAY</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal">C<sp/><sp/><ref refid="glut_8h_1a8f1bd37bec58dfbee7ba43ef7248f6bd" kindref="member">glutGetModifiers</ref><sp/>return<sp/><ref refid="glext_8h_1ae1838b9db98fcca9cd79d66954101c9f" kindref="member">mask</ref></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a074ada7313052bd2a64a65dbfba76e33" kindref="member">GLUT_ACTIVE_SHIFT</ref></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a074ada7313052bd2a64a65dbfba76e33" kindref="member">GLUT_ACTIVE_SHIFT</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a67d60a193db259524360cfb6b39a0c82" kindref="member">GLUT_ACTIVE_CTRL</ref></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a67d60a193db259524360cfb6b39a0c82" kindref="member">GLUT_ACTIVE_CTRL</ref><sp/>=<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a37fa1ad406c601777f4b9d64319fa20c" kindref="member">GLUT_ACTIVE_ALT</ref></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a37fa1ad406c601777f4b9d64319fa20c" kindref="member">GLUT_ACTIVE_ALT</ref><sp/>=<sp/>4<sp/>)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal">C<sp/><sp/><ref refid="glut_8h_1a0dab5d07b0964d6945349c408c0f4b50" kindref="member">glutSetCursor</ref><sp/>parameters</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a530956f6af4109bbf423edc44d99af6e" kindref="member">GLUT_CURSOR_RIGHT_ARROW</ref></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a530956f6af4109bbf423edc44d99af6e" kindref="member">GLUT_CURSOR_RIGHT_ARROW</ref><sp/>=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aa6a025062db4baaeef55877f5e76346d" kindref="member">GLUT_CURSOR_LEFT_ARROW</ref></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aa6a025062db4baaeef55877f5e76346d" kindref="member">GLUT_CURSOR_LEFT_ARROW</ref><sp/>=<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ade986ae64d50da64a4febd740259a286" kindref="member">GLUT_CURSOR_INFO</ref></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ade986ae64d50da64a4febd740259a286" kindref="member">GLUT_CURSOR_INFO</ref><sp/>=<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a81a013ad9d0ca13d92e4736375ae7ad1" kindref="member">GLUT_CURSOR_DESTROY</ref></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a81a013ad9d0ca13d92e4736375ae7ad1" kindref="member">GLUT_CURSOR_DESTROY</ref><sp/>=<sp/>3<sp/>)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1abbb0d0f6aa73cfa15856ee183846f794" kindref="member">GLUT_CURSOR_HELP</ref></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1abbb0d0f6aa73cfa15856ee183846f794" kindref="member">GLUT_CURSOR_HELP</ref><sp/>=<sp/>4<sp/>)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ac28acff8776266f8ae7e1d4f8d82d62f" kindref="member">GLUT_CURSOR_CYCLE</ref></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ac28acff8776266f8ae7e1d4f8d82d62f" kindref="member">GLUT_CURSOR_CYCLE</ref><sp/>=<sp/>5<sp/>)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a5cc671426e10120f1d8c4a6844269cb1" kindref="member">GLUT_CURSOR_SPRAY</ref></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a5cc671426e10120f1d8c4a6844269cb1" kindref="member">GLUT_CURSOR_SPRAY</ref><sp/>=<sp/>6<sp/>)</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a510bc737668232ba061f8740b6b48bc8" kindref="member">GLUT_CURSOR_WAIT</ref></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a510bc737668232ba061f8740b6b48bc8" kindref="member">GLUT_CURSOR_WAIT</ref><sp/>=<sp/>7<sp/>)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a639f8771f4ccdfb8f028c81d840f9d4f" kindref="member">GLUT_CURSOR_TEXT</ref></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a639f8771f4ccdfb8f028c81d840f9d4f" kindref="member">GLUT_CURSOR_TEXT</ref><sp/>=<sp/>8<sp/>)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a34f28d1c6c7a9b566ed65760b7abe5f0" kindref="member">GLUT_CURSOR_CROSSHAIR</ref></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a34f28d1c6c7a9b566ed65760b7abe5f0" kindref="member">GLUT_CURSOR_CROSSHAIR</ref><sp/>=<sp/>9<sp/>)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a0348dfb00fee4e121ba0b9dbeb775883" kindref="member">GLUT_CURSOR_UP_DOWN</ref></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a0348dfb00fee4e121ba0b9dbeb775883" kindref="member">GLUT_CURSOR_UP_DOWN</ref><sp/>=<sp/>10<sp/>)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a071ef1aafcf8d354a0418d1408ac344d" kindref="member">GLUT_CURSOR_LEFT_RIGHT</ref></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a071ef1aafcf8d354a0418d1408ac344d" kindref="member">GLUT_CURSOR_LEFT_RIGHT</ref><sp/>=<sp/>11<sp/>)</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a146e07be459e49d23b5f9de6d4d1e287" kindref="member">GLUT_CURSOR_TOP_SIDE</ref></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a146e07be459e49d23b5f9de6d4d1e287" kindref="member">GLUT_CURSOR_TOP_SIDE</ref><sp/>=<sp/>12<sp/>)</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1af757d463504a3523d7bd485fc2d27297" kindref="member">GLUT_CURSOR_BOTTOM_SIDE</ref></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1af757d463504a3523d7bd485fc2d27297" kindref="member">GLUT_CURSOR_BOTTOM_SIDE</ref><sp/>=<sp/>13<sp/>)</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a304db09d1c4e39e7837d42ff8864c5f7" kindref="member">GLUT_CURSOR_LEFT_SIDE</ref></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a304db09d1c4e39e7837d42ff8864c5f7" kindref="member">GLUT_CURSOR_LEFT_SIDE</ref><sp/>=<sp/>14<sp/>)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aee778fd5e4df79e02e4df89ff4a6e223" kindref="member">GLUT_CURSOR_RIGHT_SIDE</ref></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aee778fd5e4df79e02e4df89ff4a6e223" kindref="member">GLUT_CURSOR_RIGHT_SIDE</ref><sp/>=<sp/>15<sp/>)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a189b7b54f88e48c838597695e80ee39c" kindref="member">GLUT_CURSOR_TOP_LEFT_CORNER</ref></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a189b7b54f88e48c838597695e80ee39c" kindref="member">GLUT_CURSOR_TOP_LEFT_CORNER</ref><sp/>=<sp/>16<sp/>)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aa678faed809a40e29999796f0d5e7498" kindref="member">GLUT_CURSOR_TOP_RIGHT_CORNER</ref></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aa678faed809a40e29999796f0d5e7498" kindref="member">GLUT_CURSOR_TOP_RIGHT_CORNER</ref><sp/>=<sp/>17<sp/>)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a1bd3a12e71f61b89c1ea2f099048cdf0" kindref="member">GLUT_CURSOR_BOTTOM_RIGHT_CORNER</ref></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a1bd3a12e71f61b89c1ea2f099048cdf0" kindref="member">GLUT_CURSOR_BOTTOM_RIGHT_CORNER</ref><sp/>=<sp/>18<sp/>)</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1ac3d56e72d9d67368344d00d2c4b11904" kindref="member">GLUT_CURSOR_BOTTOM_LEFT_CORNER</ref></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1ac3d56e72d9d67368344d00d2c4b11904" kindref="member">GLUT_CURSOR_BOTTOM_LEFT_CORNER</ref><sp/>=<sp/>19<sp/>)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1aafa2626801284529c4d55007b47e20f4" kindref="member">GLUT_CURSOR_INHERIT</ref></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1aafa2626801284529c4d55007b47e20f4" kindref="member">GLUT_CURSOR_INHERIT</ref><sp/>=<sp/>100<sp/>)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1a8ba21c7c933925c5d9a1e64180c14023" kindref="member">GLUT_CURSOR_NONE</ref></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1a8ba21c7c933925c5d9a1e64180c14023" kindref="member">GLUT_CURSOR_NONE</ref><sp/>=<sp/>101<sp/>)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/><ref refid="glut_8h_1af4d3eefea3797a4a06e652e90e17a938" kindref="member">GLUT_CURSOR_FULL_CROSSHAIR</ref></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>parameter<sp/>(<sp/><ref refid="glut_8h_1af4d3eefea3797a4a06e652e90e17a938" kindref="member">GLUT_CURSOR_FULL_CROSSHAIR</ref><sp/>=<sp/>102<sp/>)</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal">C<sp/><sp/>GLUT<sp/>functions</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/>glutcreatewindow</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/>glutcreatesubwindow</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/>glutgetwindow</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/>glutcreatemenu</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/>glutgetmenu</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>real<sp/>glutgetcolor</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/>glutget</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/>glutdeviceget</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>integer*4<sp/>glutextensionsupported</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal">C<sp/><sp/>GLUT<sp/>NULL<sp/><ref refid="glext_8h_1ad977737dfc9a274a62741b9500c49a32" kindref="member">name</ref></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>external<sp/>glutnull</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/GL/fglut.h"/>
+  </compounddef>
+</doxygen>

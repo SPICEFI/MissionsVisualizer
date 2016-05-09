@@ -1,0 +1,389 @@
+\hypertarget{class_frame}{\section{Frame Class Reference}
+\label{class_frame}\index{Frame@{Frame}}
+}
+
+
+{\ttfamily \#include $<$Frame.\+h$>$}
+
+
+
+Collaboration diagram for Frame\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_frame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_frame_1_1_frame_info}{Frame\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_frame_ad2f22450377db20233914c9ec0a21df4}{Frame\+Type} \{ \\*
+\hyperlink{class_frame_ad2f22450377db20233914c9ec0a21df4ac73961ac9e615a4da4339c8e20fe92ef}{F\+T\+\_\+\+I\+N\+E\+R\+T\+I\+A\+L} = 1, 
+\hyperlink{class_frame_ad2f22450377db20233914c9ec0a21df4a03c1983206078ccc3fd8c290a5d63019}{F\+T\+\_\+\+P\+C\+K}, 
+\hyperlink{class_frame_ad2f22450377db20233914c9ec0a21df4a4438b3590992adb7e998575e686a995b}{F\+T\+\_\+\+C\+K}, 
+\hyperlink{class_frame_ad2f22450377db20233914c9ec0a21df4a3a52c9b5914442b7ca49e20720257800}{F\+T\+\_\+\+T\+K}, 
+\\*
+\hyperlink{class_frame_ad2f22450377db20233914c9ec0a21df4ad682b0691e051ce65913fdf42d4be1af}{F\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_frame_affeadc282e1d1b07d51918add4b48fbf}{Frame} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} spice\+Id, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}=\char`\"{}\char`\"{})
+\item 
+\hyperlink{class_frame_a7254d330d38d6d454f5a77777d8f1bcb}{Frame} (const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&spice\+Name, const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \&\hyperlink{glext_8h_ad977737dfc9a274a62741b9500c49a32}{name}=\char`\"{}\char`\"{})
+\item 
+\hyperlink{class_frame_abec8c7bccdfc88cb4da137caae9f73d6}{$\sim$\+Frame} ()
+\item 
+long \hyperlink{class_frame_a679aa287b6474930b7c1682f3a9ceb14}{Get\+Spice\+Id} () const 
+\item 
+\hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \hyperlink{class_frame_ad7596949a1ff9c2d1dd837e730f6aefc}{Get\+Spice\+Name} () const 
+\item 
+const \hyperlink{glext_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std\+::string} \& \hyperlink{class_frame_afc3c2fb53313f43fd6b906cd5423145e}{Get\+Name} () const 
+\item 
+\hyperlink{struct_frame_1_1_frame_info}{Frame\+Info} \hyperlink{class_frame_a676a0342efbbafb23ef5366e02843b15}{Get\+Frame\+Info} () const 
+\item 
+const \hyperlink{class_space_object}{Space\+Object} \& \hyperlink{class_frame_ad41c119171bcaebc84a9c5e0daea6c92}{Get\+Center\+Object} () const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_frame_a9fac9191222fbcf79954b5cb4fe8a181}{Transform\+Vector} (const \hyperlink{class_vector3}{Vector3} \&vec, const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_frame}{Frame} \&\hyperlink{glext_8h_ad32bdec748ba376f6c0d2df39ab9a95b}{ref}) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_frame_ac8195fe92d18baac95813e2bf751f533}{Axis\+X} (const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_frame}{Frame} \&\hyperlink{glext_8h_ad32bdec748ba376f6c0d2df39ab9a95b}{ref}) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_frame_a5ed0a2188dc255484b793ae5288c36c0}{Axis\+Y} (const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_frame}{Frame} \&\hyperlink{glext_8h_ad32bdec748ba376f6c0d2df39ab9a95b}{ref}) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_frame_a89ebe688b416263f06f2393151194e77}{Axis\+Z} (const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_frame}{Frame} \&\hyperlink{glext_8h_ad32bdec748ba376f6c0d2df39ab9a95b}{ref}) const 
+\item 
+\hyperlink{class_matrix4x4}{Matrix4x4} \hyperlink{class_frame_a4862be40cebae8c367031baf2ca6dc8b}{Get\+Transformation\+Matrix} (const \hyperlink{class_date}{Date} \&\hyperlink{glext_8h_a7d65d00ca3b0630d9b5c52df855b19f5}{t}, const \hyperlink{class_frame}{Frame} \&\hyperlink{glext_8h_ad32bdec748ba376f6c0d2df39ab9a95b}{ref}) const 
+\item 
+bool \hyperlink{class_frame_afbf0802e2374c57dd80f754bd0c232da}{Has\+Available\+Data} () const 
+\item 
+bool \hyperlink{class_frame_af03488c8a8eb25e55725b1af7c379671}{Has\+Limited\+Coverage} () const 
+\item 
+\hyperlink{class_window}{Window} \hyperlink{class_frame_a54fe03adc618817f27c43738ca77ccf8}{Get\+Coverage} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_frame_a2530927116bf3b764862623c518d274e}{Validate\+Id} (long \hyperlink{glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id})
+\item 
+static long \hyperlink{class_frame_a33201e744d6593f2294bfb57bcb448d9}{Make\+Frame\+Id} (\hyperlink{class_frame_ad2f22450377db20233914c9ec0a21df4}{Frame\+Type} \hyperlink{glext_8h_ab7c1afc09f67635c2c376638fcc0db5f}{type}, long class\+Id)
+\item 
+static std\+::vector$<$ long $>$ \hyperlink{class_frame_af143d92b7e9c07d2db5aec79b89ac1b2}{Get\+Built\+In\+Ids} ()
+\item 
+static std\+::vector$<$ long $>$ \hyperlink{class_frame_a80d4a5985129beb4d8010f072def67d7}{Get\+Pool\+Ids} ()
+\item 
+static std\+::vector$<$ long $>$ \hyperlink{class_frame_ac5865bd9a4b0f8904b059fc005311971}{Get\+Loaded\+Pck\+Ids} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{class_frame}{Frame} \hyperlink{class_frame_a83f98b1d0aa72dca955fd91752e6b499}{J2000} = \hyperlink{class_frame}{Frame}(\char`\"{}J2000\char`\"{})
+\item 
+static const \hyperlink{class_frame}{Frame} \hyperlink{class_frame_af25db3f51bb9838c9bce46d30e663331}{E\+C\+L\+I\+P\+J2000} = \hyperlink{class_frame}{Frame}(\char`\"{}E\+C\+L\+I\+P\+J2000\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Frame.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_frame_ad2f22450377db20233914c9ec0a21df4}{\index{Frame@{Frame}!Frame\+Type@{Frame\+Type}}
+\index{Frame\+Type@{Frame\+Type}!Frame@{Frame}}
+\subsubsection[{Frame\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Frame\+::\+Frame\+Type}}}\label{class_frame_ad2f22450377db20233914c9ec0a21df4}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\+T\+\_\+\+I\+N\+E\+R\+T\+I\+A\+L@{F\+T\+\_\+\+I\+N\+E\+R\+T\+I\+A\+L}!Frame@{Frame}}\index{Frame@{Frame}!F\+T\+\_\+\+I\+N\+E\+R\+T\+I\+A\+L@{F\+T\+\_\+\+I\+N\+E\+R\+T\+I\+A\+L}}\item[{\em 
+\hypertarget{class_frame_ad2f22450377db20233914c9ec0a21df4ac73961ac9e615a4da4339c8e20fe92ef}{F\+T\+\_\+\+I\+N\+E\+R\+T\+I\+A\+L}\label{class_frame_ad2f22450377db20233914c9ec0a21df4ac73961ac9e615a4da4339c8e20fe92ef}
+}]\index{F\+T\+\_\+\+P\+C\+K@{F\+T\+\_\+\+P\+C\+K}!Frame@{Frame}}\index{Frame@{Frame}!F\+T\+\_\+\+P\+C\+K@{F\+T\+\_\+\+P\+C\+K}}\item[{\em 
+\hypertarget{class_frame_ad2f22450377db20233914c9ec0a21df4a03c1983206078ccc3fd8c290a5d63019}{F\+T\+\_\+\+P\+C\+K}\label{class_frame_ad2f22450377db20233914c9ec0a21df4a03c1983206078ccc3fd8c290a5d63019}
+}]\index{F\+T\+\_\+\+C\+K@{F\+T\+\_\+\+C\+K}!Frame@{Frame}}\index{Frame@{Frame}!F\+T\+\_\+\+C\+K@{F\+T\+\_\+\+C\+K}}\item[{\em 
+\hypertarget{class_frame_ad2f22450377db20233914c9ec0a21df4a4438b3590992adb7e998575e686a995b}{F\+T\+\_\+\+C\+K}\label{class_frame_ad2f22450377db20233914c9ec0a21df4a4438b3590992adb7e998575e686a995b}
+}]\index{F\+T\+\_\+\+T\+K@{F\+T\+\_\+\+T\+K}!Frame@{Frame}}\index{Frame@{Frame}!F\+T\+\_\+\+T\+K@{F\+T\+\_\+\+T\+K}}\item[{\em 
+\hypertarget{class_frame_ad2f22450377db20233914c9ec0a21df4a3a52c9b5914442b7ca49e20720257800}{F\+T\+\_\+\+T\+K}\label{class_frame_ad2f22450377db20233914c9ec0a21df4a3a52c9b5914442b7ca49e20720257800}
+}]\index{F\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C@{F\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C}!Frame@{Frame}}\index{Frame@{Frame}!F\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C@{F\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C}}\item[{\em 
+\hypertarget{class_frame_ad2f22450377db20233914c9ec0a21df4ad682b0691e051ce65913fdf42d4be1af}{F\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C}\label{class_frame_ad2f22450377db20233914c9ec0a21df4ad682b0691e051ce65913fdf42d4be1af}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 17 of file Frame.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_frame_affeadc282e1d1b07d51918add4b48fbf}{\index{Frame@{Frame}!Frame@{Frame}}
+\index{Frame@{Frame}!Frame@{Frame}}
+\subsubsection[{Frame}]{\setlength{\rightskip}{0pt plus 5cm}Frame\+::\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{spice\+Id, }
+\item[{const {\bf std\+::string} \&}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_frame_affeadc282e1d1b07d51918add4b48fbf}
+
+
+Definition at line 6 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a7254d330d38d6d454f5a77777d8f1bcb}{\index{Frame@{Frame}!Frame@{Frame}}
+\index{Frame@{Frame}!Frame@{Frame}}
+\subsubsection[{Frame}]{\setlength{\rightskip}{0pt plus 5cm}Frame\+::\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\+::string} \&}]{spice\+Name, }
+\item[{const {\bf std\+::string} \&}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_frame_a7254d330d38d6d454f5a77777d8f1bcb}
+
+
+Definition at line 11 of file Frame.\+cpp.
+
+\hypertarget{class_frame_abec8c7bccdfc88cb4da137caae9f73d6}{\index{Frame@{Frame}!````~Frame@{$\sim$\+Frame}}
+\index{````~Frame@{$\sim$\+Frame}!Frame@{Frame}}
+\subsubsection[{$\sim$\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}Frame\+::$\sim$\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_frame_abec8c7bccdfc88cb4da137caae9f73d6}
+
+
+Definition at line 34 of file Frame.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_frame_ac8195fe92d18baac95813e2bf751f533}{\index{Frame@{Frame}!Axis\+X@{Axis\+X}}
+\index{Axis\+X@{Axis\+X}!Frame@{Frame}}
+\subsubsection[{Axis\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Frame\+::\+Axis\+X (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Frame} \&}]{ref}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_ac8195fe92d18baac95813e2bf751f533}
+
+
+Definition at line 93 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a5ed0a2188dc255484b793ae5288c36c0}{\index{Frame@{Frame}!Axis\+Y@{Axis\+Y}}
+\index{Axis\+Y@{Axis\+Y}!Frame@{Frame}}
+\subsubsection[{Axis\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Frame\+::\+Axis\+Y (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Frame} \&}]{ref}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_a5ed0a2188dc255484b793ae5288c36c0}
+
+
+Definition at line 98 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a89ebe688b416263f06f2393151194e77}{\index{Frame@{Frame}!Axis\+Z@{Axis\+Z}}
+\index{Axis\+Z@{Axis\+Z}!Frame@{Frame}}
+\subsubsection[{Axis\+Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Frame\+::\+Axis\+Z (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Frame} \&}]{ref}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_a89ebe688b416263f06f2393151194e77}
+
+
+Definition at line 103 of file Frame.\+cpp.
+
+\hypertarget{class_frame_af143d92b7e9c07d2db5aec79b89ac1b2}{\index{Frame@{Frame}!Get\+Built\+In\+Ids@{Get\+Built\+In\+Ids}}
+\index{Get\+Built\+In\+Ids@{Get\+Built\+In\+Ids}!Frame@{Frame}}
+\subsubsection[{Get\+Built\+In\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ long $>$ Frame\+::\+Get\+Built\+In\+Ids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_frame_af143d92b7e9c07d2db5aec79b89ac1b2}
+
+
+Definition at line 190 of file Frame.\+cpp.
+
+\hypertarget{class_frame_ad41c119171bcaebc84a9c5e0daea6c92}{\index{Frame@{Frame}!Get\+Center\+Object@{Get\+Center\+Object}}
+\index{Get\+Center\+Object@{Get\+Center\+Object}!Frame@{Frame}}
+\subsubsection[{Get\+Center\+Object}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Space\+Object} \& Frame\+::\+Get\+Center\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_ad41c119171bcaebc84a9c5e0daea6c92}
+
+
+Definition at line 74 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a54fe03adc618817f27c43738ca77ccf8}{\index{Frame@{Frame}!Get\+Coverage@{Get\+Coverage}}
+\index{Get\+Coverage@{Get\+Coverage}!Frame@{Frame}}
+\subsubsection[{Get\+Coverage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window} Frame\+::\+Get\+Coverage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_a54fe03adc618817f27c43738ca77ccf8}
+
+
+Definition at line 151 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a676a0342efbbafb23ef5366e02843b15}{\index{Frame@{Frame}!Get\+Frame\+Info@{Get\+Frame\+Info}}
+\index{Get\+Frame\+Info@{Get\+Frame\+Info}!Frame@{Frame}}
+\subsubsection[{Get\+Frame\+Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Frame\+::\+Frame\+Info} Frame\+::\+Get\+Frame\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_a676a0342efbbafb23ef5366e02843b15}
+
+
+Definition at line 57 of file Frame.\+cpp.
+
+\hypertarget{class_frame_ac5865bd9a4b0f8904b059fc005311971}{\index{Frame@{Frame}!Get\+Loaded\+Pck\+Ids@{Get\+Loaded\+Pck\+Ids}}
+\index{Get\+Loaded\+Pck\+Ids@{Get\+Loaded\+Pck\+Ids}!Frame@{Frame}}
+\subsubsection[{Get\+Loaded\+Pck\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ long $>$ Frame\+::\+Get\+Loaded\+Pck\+Ids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_frame_ac5865bd9a4b0f8904b059fc005311971}
+
+
+Definition at line 204 of file Frame.\+cpp.
+
+\hypertarget{class_frame_afc3c2fb53313f43fd6b906cd5423145e}{\index{Frame@{Frame}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Frame@{Frame}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf std\+::string} \& Frame\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_afc3c2fb53313f43fd6b906cd5423145e}
+
+
+Definition at line 52 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a80d4a5985129beb4d8010f072def67d7}{\index{Frame@{Frame}!Get\+Pool\+Ids@{Get\+Pool\+Ids}}
+\index{Get\+Pool\+Ids@{Get\+Pool\+Ids}!Frame@{Frame}}
+\subsubsection[{Get\+Pool\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ long $>$ Frame\+::\+Get\+Pool\+Ids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_frame_a80d4a5985129beb4d8010f072def67d7}
+
+
+Definition at line 197 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a679aa287b6474930b7c1682f3a9ceb14}{\index{Frame@{Frame}!Get\+Spice\+Id@{Get\+Spice\+Id}}
+\index{Get\+Spice\+Id@{Get\+Spice\+Id}!Frame@{Frame}}
+\subsubsection[{Get\+Spice\+Id}]{\setlength{\rightskip}{0pt plus 5cm}long Frame\+::\+Get\+Spice\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_a679aa287b6474930b7c1682f3a9ceb14}
+
+
+Definition at line 39 of file Frame.\+cpp.
+
+\hypertarget{class_frame_ad7596949a1ff9c2d1dd837e730f6aefc}{\index{Frame@{Frame}!Get\+Spice\+Name@{Get\+Spice\+Name}}
+\index{Get\+Spice\+Name@{Get\+Spice\+Name}!Frame@{Frame}}
+\subsubsection[{Get\+Spice\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+::string} Frame\+::\+Get\+Spice\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_ad7596949a1ff9c2d1dd837e730f6aefc}
+
+
+Definition at line 44 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a4862be40cebae8c367031baf2ca6dc8b}{\index{Frame@{Frame}!Get\+Transformation\+Matrix@{Get\+Transformation\+Matrix}}
+\index{Get\+Transformation\+Matrix@{Get\+Transformation\+Matrix}!Frame@{Frame}}
+\subsubsection[{Get\+Transformation\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4x4} Frame\+::\+Get\+Transformation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Frame} \&}]{ref}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_a4862be40cebae8c367031baf2ca6dc8b}
+
+
+Definition at line 108 of file Frame.\+cpp.
+
+\hypertarget{class_frame_afbf0802e2374c57dd80f754bd0c232da}{\index{Frame@{Frame}!Has\+Available\+Data@{Has\+Available\+Data}}
+\index{Has\+Available\+Data@{Has\+Available\+Data}!Frame@{Frame}}
+\subsubsection[{Has\+Available\+Data}]{\setlength{\rightskip}{0pt plus 5cm}bool Frame\+::\+Has\+Available\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_afbf0802e2374c57dd80f754bd0c232da}
+
+
+Definition at line 128 of file Frame.\+cpp.
+
+\hypertarget{class_frame_af03488c8a8eb25e55725b1af7c379671}{\index{Frame@{Frame}!Has\+Limited\+Coverage@{Has\+Limited\+Coverage}}
+\index{Has\+Limited\+Coverage@{Has\+Limited\+Coverage}!Frame@{Frame}}
+\subsubsection[{Has\+Limited\+Coverage}]{\setlength{\rightskip}{0pt plus 5cm}bool Frame\+::\+Has\+Limited\+Coverage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_af03488c8a8eb25e55725b1af7c379671}
+
+
+Definition at line 142 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a33201e744d6593f2294bfb57bcb448d9}{\index{Frame@{Frame}!Make\+Frame\+Id@{Make\+Frame\+Id}}
+\index{Make\+Frame\+Id@{Make\+Frame\+Id}!Frame@{Frame}}
+\subsubsection[{Make\+Frame\+Id}]{\setlength{\rightskip}{0pt plus 5cm}long Frame\+::\+Make\+Frame\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Frame\+Type}}]{type, }
+\item[{long}]{class\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_frame_a33201e744d6593f2294bfb57bcb448d9}
+
+
+Definition at line 179 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a9fac9191222fbcf79954b5cb4fe8a181}{\index{Frame@{Frame}!Transform\+Vector@{Transform\+Vector}}
+\index{Transform\+Vector@{Transform\+Vector}!Frame@{Frame}}
+\subsubsection[{Transform\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Frame\+::\+Transform\+Vector (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{vec, }
+\item[{const {\bf Date} \&}]{t, }
+\item[{const {\bf Frame} \&}]{ref}
+\end{DoxyParamCaption}
+) const}}\label{class_frame_a9fac9191222fbcf79954b5cb4fe8a181}
+
+
+Definition at line 79 of file Frame.\+cpp.
+
+\hypertarget{class_frame_a2530927116bf3b764862623c518d274e}{\index{Frame@{Frame}!Validate\+Id@{Validate\+Id}}
+\index{Validate\+Id@{Validate\+Id}!Frame@{Frame}}
+\subsubsection[{Validate\+Id}]{\setlength{\rightskip}{0pt plus 5cm}bool Frame\+::\+Validate\+Id (
+\begin{DoxyParamCaption}
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_frame_a2530927116bf3b764862623c518d274e}
+
+
+Definition at line 167 of file Frame.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_frame_af25db3f51bb9838c9bce46d30e663331}{\index{Frame@{Frame}!E\+C\+L\+I\+P\+J2000@{E\+C\+L\+I\+P\+J2000}}
+\index{E\+C\+L\+I\+P\+J2000@{E\+C\+L\+I\+P\+J2000}!Frame@{Frame}}
+\subsubsection[{E\+C\+L\+I\+P\+J2000}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Frame} Frame\+::\+E\+C\+L\+I\+P\+J2000 = {\bf Frame}(\char`\"{}E\+C\+L\+I\+P\+J2000\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}}\label{class_frame_af25db3f51bb9838c9bce46d30e663331}
+
+
+Definition at line 73 of file Frame.\+h.
+
+\hypertarget{class_frame_a83f98b1d0aa72dca955fd91752e6b499}{\index{Frame@{Frame}!J2000@{J2000}}
+\index{J2000@{J2000}!Frame@{Frame}}
+\subsubsection[{J2000}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Frame} Frame\+::\+J2000 = {\bf Frame}(\char`\"{}J2000\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}}\label{class_frame_a83f98b1d0aa72dca955fd91752e6b499}
+
+
+Definition at line 72 of file Frame.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_frame_8h}{Frame.\+h}\item 
+S\+S\+W\+C/src/\+C\+Spice/\hyperlink{_frame_8cpp}{Frame.\+cpp}\end{DoxyCompactItemize}

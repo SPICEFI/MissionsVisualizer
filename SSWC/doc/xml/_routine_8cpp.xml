@@ -1,0 +1,1155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_routine_8cpp" kind="file">
+    <compoundname>Routine.cpp</compoundname>
+    <includes local="no">Windows.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="yes">GL\glut.h</includes>
+    <includes local="no">gl\GL.h</includes>
+    <includes local="no">gl\GLU.h</includes>
+    <includes local="no">time.h</includes>
+    <includes refid="_program_8h" local="yes">Program.h</includes>
+    <includes local="yes">GL\ARB_Multisample.h</includes>
+    <includes refid="_app_8h" local="yes">App.h</includes>
+    <includes refid="_scene_8h" local="yes">Scene.h</includes>
+    <includes refid="_font_8h" local="yes">Font.h</includes>
+    <incdepgraph>
+      <node id="2164">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2138">
+        <label>iomanip</label>
+      </node>
+      <node id="2125">
+        <label>windows.h</label>
+      </node>
+      <node id="2165">
+        <label>gl/gl.h</label>
+      </node>
+      <node id="2160">
+        <label>CSpice\Date.h</label>
+      </node>
+      <node id="2117">
+        <label>SSWC/src/Routine.cpp</label>
+        <link refid="Routine.cpp"/>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2123" relation="include">
+        </childnode>
+        <childnode refid="2124" relation="include">
+        </childnode>
+        <childnode refid="2167" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2154" relation="include">
+        </childnode>
+        <childnode refid="2163" relation="include">
+        </childnode>
+      </node>
+      <node id="2162">
+        <label>Math\Matrix4x4.h</label>
+      </node>
+      <node id="2159">
+        <label>CSpice\SpaceObject.h</label>
+      </node>
+      <node id="2118">
+        <label>Windows.h</label>
+      </node>
+      <node id="2142">
+        <label>cmath</label>
+      </node>
+      <node id="2148">
+        <label>stdexcept</label>
+      </node>
+      <node id="2135">
+        <label>string</label>
+      </node>
+      <node id="2122">
+        <label>gl\GLU.h</label>
+      </node>
+      <node id="2156">
+        <label>TGA.h</label>
+        <link refid="_t_g_a_8h"/>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+      </node>
+      <node id="2140">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="2135" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+      </node>
+      <node id="2137">
+        <label>fstream</label>
+      </node>
+      <node id="2124">
+        <label>Program.h</label>
+        <link refid="_program_8h"/>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+      </node>
+      <node id="2126">
+        <label>glCameara.h</label>
+        <link refid="gl_cameara_8h"/>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2154" relation="include">
+        </childnode>
+      </node>
+      <node id="2145">
+        <label>Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="2131" relation="include">
+        </childnode>
+        <childnode refid="2146" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+      </node>
+      <node id="2144">
+        <label>Frame.h</label>
+        <link refid="_frame_8h"/>
+        <childnode refid="2131" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2145" relation="include">
+        </childnode>
+        <childnode refid="2143" relation="include">
+        </childnode>
+        <childnode refid="2147" relation="include">
+        </childnode>
+        <childnode refid="2149" relation="include">
+        </childnode>
+      </node>
+      <node id="2154">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2155" relation="include">
+        </childnode>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+      </node>
+      <node id="2120">
+        <label>GL\glut.h</label>
+      </node>
+      <node id="2131">
+        <label>CSpiceCore.h</label>
+        <link refid="_c_spice_core_8h"/>
+        <childnode refid="2132" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+      </node>
+      <node id="2129">
+        <label>App.h</label>
+        <link refid="_app_8h"/>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+        <childnode refid="2136" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+        <childnode refid="2138" relation="include">
+        </childnode>
+      </node>
+      <node id="2133">
+        <label>CSpiceUtil.h</label>
+        <link refid="_c_spice_util_8h"/>
+        <childnode refid="2131" relation="include">
+        </childnode>
+        <childnode refid="2134" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+        <childnode refid="2136" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+        <childnode refid="2138" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+      </node>
+      <node id="2163">
+        <label>Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+        <childnode refid="2164" relation="include">
+        </childnode>
+        <childnode refid="2165" relation="include">
+        </childnode>
+        <childnode refid="2166" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+      </node>
+      <node id="2136">
+        <label>ctime</label>
+      </node>
+      <node id="2146">
+        <label>Time.h</label>
+      </node>
+      <node id="2167">
+        <label>GL\ARB_Multisample.h</label>
+      </node>
+      <node id="2139">
+        <label>vector</label>
+      </node>
+      <node id="2155">
+        <label>Planet.h</label>
+        <link refid="_planet_8h"/>
+        <childnode refid="2156" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2157" relation="include">
+        </childnode>
+        <childnode refid="2162" relation="include">
+        </childnode>
+        <childnode refid="2163" relation="include">
+        </childnode>
+      </node>
+      <node id="2153">
+        <label>array</label>
+      </node>
+      <node id="2134">
+        <label>sstream</label>
+      </node>
+      <node id="2157">
+        <label>Trajectory.h</label>
+        <link refid="_trajectory_8h"/>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2158" relation="include">
+        </childnode>
+        <childnode refid="2159" relation="include">
+        </childnode>
+        <childnode refid="2160" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2161" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+      </node>
+      <node id="2128">
+        <label>Math\Vector3.h</label>
+      </node>
+      <node id="2123">
+        <label>time.h</label>
+      </node>
+      <node id="2127">
+        <label>math.h</label>
+      </node>
+      <node id="2149">
+        <label>../Math/Matrix4x4.h</label>
+        <link refid="_matrix4x4_8h"/>
+        <childnode refid="2150" relation="include">
+        </childnode>
+        <childnode refid="2148" relation="include">
+        </childnode>
+      </node>
+      <node id="2158">
+        <label>Math\Quantity.h</label>
+      </node>
+      <node id="2161">
+        <label>deque</label>
+      </node>
+      <node id="2141">
+        <label>../Math/Quantity.h</label>
+        <link refid="_quantity_8h"/>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+      </node>
+      <node id="2166">
+        <label>gl/glu.h</label>
+      </node>
+      <node id="2143">
+        <label>SpaceObject.h</label>
+        <link refid="_space_object_8h"/>
+        <childnode refid="2135" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2145" relation="include">
+        </childnode>
+        <childnode refid="2147" relation="include">
+        </childnode>
+        <childnode refid="2151" relation="include">
+        </childnode>
+      </node>
+      <node id="2152">
+        <label>SpaceBody.h</label>
+        <link refid="_space_body_8h"/>
+        <childnode refid="2143" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2153" relation="include">
+        </childnode>
+      </node>
+      <node id="2121">
+        <label>gl\GL.h</label>
+      </node>
+      <node id="2119">
+        <label>stdio.h</label>
+      </node>
+      <node id="2150">
+        <label>cstring</label>
+      </node>
+      <node id="2132">
+        <label>..\..\include\CSpice\SpiceUsr.h</label>
+      </node>
+      <node id="2147">
+        <label>../Math/Vector3.h</label>
+        <link refid="_vector3_8h"/>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2148" relation="include">
+        </childnode>
+      </node>
+      <node id="2151">
+        <label>../Math/Vector3T.h</label>
+        <link refid="_vector3_t_8h"/>
+        <childnode refid="2142" relation="include">
+        </childnode>
+      </node>
+      <node id="2130">
+        <label>CSpice/CSpice.h</label>
+        <link refid="_c_spice_8h"/>
+        <childnode refid="2131" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2143" relation="include">
+        </childnode>
+        <childnode refid="2152" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+        <childnode refid="2145" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_routine_8cpp_1a57e2e4402b0a1ec39bf04a8247063a5e" prot="public" static="no">
+        <name>CDS_FULLSCREEN</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="24" column="10" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int centerX</definition>
+        <argsstring></argsstring>
+        <name>centerX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="27" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int centerY</definition>
+        <argsstring></argsstring>
+        <name>centerY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="28" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a44ff4c01594b69315b77fc6f4de5bf63" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int prev_x</definition>
+        <argsstring></argsstring>
+        <name>prev_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="30" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1ada2a652d657eb2614c738c6a7e7f2788" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int prev_y</definition>
+        <argsstring></argsstring>
+        <name>prev_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="30" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a0d49ad4ac53415c43ba3e74ea8a2fbf6" prot="public" static="no" mutable="no">
+        <type><ref refid="classgl_camera" kindref="compound">glCamera</ref></type>
+        <definition>glCamera g_Camera</definition>
+        <argsstring></argsstring>
+        <name>g_Camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="32" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a8eb8e78356ceae9f4a7d46916e8dc161" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_g_l___window" kindref="compound">GL_Window</ref> *</type>
+        <definition>GL_Window* g_window</definition>
+        <argsstring></argsstring>
+        <name>g_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="33" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a9efe217743a3aa1f39bef72908d9186a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_keys" kindref="compound">Keys</ref> *</type>
+        <definition>Keys* g_keys</definition>
+        <argsstring></argsstring>
+        <name>g_keys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="34" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" prot="public" static="no" mutable="no">
+        <type><ref refid="class_app" kindref="compound">App</ref></type>
+        <definition>App app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="36" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1ac1729cf2815b19e1f4ba16755014f1a2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_scene" kindref="compound">Scene</ref></type>
+        <definition>Scene SolarSystem</definition>
+        <argsstring></argsstring>
+        <name>SolarSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="37" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a93d78c356dc9429a174a02ad1e9c84d0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="38" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a48a43c28f47001bf5d4085a5c9657007" prot="public" static="no" mutable="no">
+        <type><ref refid="class_t_g_a" kindref="compound">TGA</ref> *</type>
+        <definition>TGA* skyTexture</definition>
+        <argsstring></argsstring>
+        <name>skyTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="39" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a1da0b24ccf1236c9e02f062548578176" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref></type>
+        <definition>HDC instanceHDC</definition>
+        <argsstring></argsstring>
+        <name>instanceHDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="40" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a7441ef0865bcb3db9b8064dd7375c1ea" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="41" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" prot="public" static="no" mutable="no">
+        <type><ref refid="wglext_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int idWhenMove</definition>
+        <argsstring></argsstring>
+        <name>idWhenMove</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="42" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1ab7e1c084f44929beed1881b3bb553b28" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float g_LightPosition[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>g_LightPosition</name>
+        <initializer>= { 0, 0, 0, 1 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="44" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool orientationMode</definition>
+        <argsstring></argsstring>
+        <name>orientationMode</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="46" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a532c7e2a4fb116e04903b3f150ceed46" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PLANET_CLICKED</definition>
+        <argsstring></argsstring>
+        <name>PLANET_CLICKED</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="47" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a1b310468f8cf42ae2e37fd789daf75e7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool StopSimulation</definition>
+        <argsstring></argsstring>
+        <name>StopSimulation</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="48" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a1b3e34c62b41113b2d34ff20a4329937" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lastFrameSpaceWasPressed</definition>
+        <argsstring></argsstring>
+        <name>lastFrameSpaceWasPressed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="49" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1acc7a565202a8b90acff6c64fd7844241" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool moveTimeBack</definition>
+        <argsstring></argsstring>
+        <name>moveTimeBack</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="50" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a1cc303acbb3ff05d12048e9caaa58081" prot="public" static="no" mutable="no">
+        <type><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string planetName</definition>
+        <argsstring></argsstring>
+        <name>planetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="52" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a1e52b0778d1df763fc5b497c26ead7a9" prot="public" static="no" mutable="no">
+        <type><ref refid="class_font" kindref="compound">Font</ref></type>
+        <definition>Font font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="53" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_routine_8cpp_1a85d377224c6bd1d2c937ad1635c4a715" prot="public" static="no" mutable="no">
+        <type><ref refid="class_font" kindref="compound">Font</ref></type>
+        <definition>Font standalonePointFont</definition>
+        <argsstring></argsstring>
+        <name>standalonePointFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="54" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_routine_8cpp_1a9be9795bf9e11906a79fe70732dd7082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref></type>
+        <definition>BOOL Initialize</definition>
+        <argsstring>(GL_Window *window, Keys *keys)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type><ref refid="struct_g_l___window" kindref="compound">GL_Window</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_keys" kindref="compound">Keys</ref> *</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="56" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="56" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="_routine_8cpp_1a702c5734253c48e4765d8aa6d3a75242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Update</definition>
+        <argsstring>(DWORD milliseconds)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>DWORD</type>
+          <declname>milliseconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="145" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="145" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="_routine_8cpp_1a35f2f94ccb7adab22c634a5a596089f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void CreateSkyBox</definition>
+        <argsstring>(float x, float y, float z, float width, float height, float length)</argsstring>
+        <name>CreateSkyBox</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="255" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="255" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="_routine_8cpp_1ae39baa177eafe9cad35d363fc683d77f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Draw</definition>
+        <argsstring>(void)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" line="308" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp" bodystart="308" bodyend="332"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>GetObject</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GL\glut.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl\GL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gl\GLU.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_program_8h" kindref="compound">Program.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GL\ARB_Multisample.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_app_8h" kindref="compound">App.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_scene_8h" kindref="compound">Scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_font_8h" kindref="compound">Font.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(<sp/>lib,<sp/>&quot;opengl32.lib&quot;<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Search<sp/>For<sp/>OpenGL32.lib<sp/>While<sp/>Linking</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(<sp/>lib,<sp/>&quot;glu32.lib&quot;<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Search<sp/>For<sp/>GLu32.lib<sp/>While<sp/>Linking</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(<sp/>lib,<sp/>&quot;winmm.lib&quot;<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Search<sp/>For<sp/>WinMM<sp/>Library<sp/>While<sp/>Linking</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/><sp/><sp/><sp/><sp/>CDS_FULLSCREEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>CDS_FULLSCREEN<sp/>Is<sp/>Not<sp/>Defined<sp/>By<sp/>Some</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_routine_8cpp_1a57e2e4402b0a1ec39bf04a8247063a5e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>CDS_FULLSCREEN<sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Compilers.<sp/>By<sp/>Defining<sp/>It<sp/>This<sp/>Way,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>We<sp/>Can<sp/>Avoid<sp/>Errors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref>;</highlight></codeline>
+<codeline lineno="28" refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_routine_8cpp_1ada2a652d657eb2614c738c6a7e7f2788" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a44ff4c01594b69315b77fc6f4de5bf63" kindref="member">prev_x</ref>,<sp/><ref refid="_routine_8cpp_1ada2a652d657eb2614c738c6a7e7f2788" kindref="member">prev_y</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_routine_8cpp_1a0d49ad4ac53415c43ba3e74ea8a2fbf6" refkind="member"><highlight class="normal"><ref refid="classgl_camera" kindref="compound">glCamera</ref><sp/><ref refid="_routine_8cpp_1a0d49ad4ac53415c43ba3e74ea8a2fbf6" kindref="member">g_Camera</ref>;</highlight></codeline>
+<codeline lineno="33" refid="_routine_8cpp_1a8eb8e78356ceae9f4a7d46916e8dc161" refkind="member"><highlight class="normal"><ref refid="struct_g_l___window" kindref="compound">GL_Window</ref>*<sp/><sp/><ref refid="_routine_8cpp_1a8eb8e78356ceae9f4a7d46916e8dc161" kindref="member">g_window</ref>;</highlight></codeline>
+<codeline lineno="34" refid="_routine_8cpp_1a9efe217743a3aa1f39bef72908d9186a" refkind="member"><highlight class="normal"><ref refid="struct_keys" kindref="compound">Keys</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a9efe217743a3aa1f39bef72908d9186a" kindref="member">g_keys</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" refkind="member"><highlight class="normal"><ref refid="class_app" kindref="compound">App</ref><sp/><ref refid="_routine_8cpp_1a05b5a24325d46227633053ca49de6234" kindref="member">app</ref>;</highlight></codeline>
+<codeline lineno="37" refid="_routine_8cpp_1ac1729cf2815b19e1f4ba16755014f1a2" refkind="member"><highlight class="normal"><ref refid="class_scene" kindref="compound">Scene</ref><sp/><ref refid="_routine_8cpp_1ac1729cf2815b19e1f4ba16755014f1a2" kindref="member">SolarSystem</ref>;</highlight></codeline>
+<codeline lineno="38" refid="_routine_8cpp_1a93d78c356dc9429a174a02ad1e9c84d0" refkind="member"><highlight class="normal"><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="_routine_8cpp_1a93d78c356dc9429a174a02ad1e9c84d0" kindref="member">t</ref>;</highlight></codeline>
+<codeline lineno="39" refid="_routine_8cpp_1a48a43c28f47001bf5d4085a5c9657007" refkind="member"><highlight class="normal"><ref refid="class_t_g_a" kindref="compound">TGA</ref>*<sp/><ref refid="_routine_8cpp_1a48a43c28f47001bf5d4085a5c9657007" kindref="member">skyTexture</ref>;</highlight></codeline>
+<codeline lineno="40" refid="_routine_8cpp_1a1da0b24ccf1236c9e02f062548578176" refkind="member"><highlight class="normal"><ref refid="wglext_8h_1aaf5a06bd464c6ec72cf68b4819afebe3" kindref="member">HDC</ref><sp/><ref refid="_routine_8cpp_1a1da0b24ccf1236c9e02f062548578176" kindref="member">instanceHDC</ref>;</highlight></codeline>
+<codeline lineno="41" refid="_routine_8cpp_1a7441ef0865bcb3db9b8064dd7375c1ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="42" refid="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" kindref="member">idWhenMove</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_routine_8cpp_1ab7e1c084f44929beed1881b3bb553b28" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1ab7e1c084f44929beed1881b3bb553b28" kindref="member">g_LightPosition</ref>[4]<sp/>=<sp/>{<sp/>0,<sp/>0,<sp/>0,<sp/>1<sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47" refid="_routine_8cpp_1a532c7e2a4fb116e04903b3f150ceed46" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a532c7e2a4fb116e04903b3f150ceed46" kindref="member">PLANET_CLICKED</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48" refid="_routine_8cpp_1a1b310468f8cf42ae2e37fd789daf75e7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a1b310468f8cf42ae2e37fd789daf75e7" kindref="member">StopSimulation</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="_routine_8cpp_1a1b3e34c62b41113b2d34ff20a4329937" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a1b3e34c62b41113b2d34ff20a4329937" kindref="member">lastFrameSpaceWasPressed</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50" refid="_routine_8cpp_1acc7a565202a8b90acff6c64fd7844241" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1acc7a565202a8b90acff6c64fd7844241" kindref="member">moveTimeBack</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_routine_8cpp_1a1cc303acbb3ff05d12048e9caaa58081" refkind="member"><highlight class="normal"><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="_routine_8cpp_1a1cc303acbb3ff05d12048e9caaa58081" kindref="member">planetName</ref>;</highlight></codeline>
+<codeline lineno="53" refid="_routine_8cpp_1a1e52b0778d1df763fc5b497c26ead7a9" refkind="member"><highlight class="normal"><ref refid="class_font" kindref="compound">Font</ref><sp/><ref refid="_routine_8cpp_1a1e52b0778d1df763fc5b497c26ead7a9" kindref="member">font</ref>;</highlight></codeline>
+<codeline lineno="54" refid="_routine_8cpp_1a85d377224c6bd1d2c937ad1635c4a715" refkind="member"><highlight class="normal"><ref refid="class_font" kindref="compound">Font</ref><sp/><ref refid="_routine_8cpp_1a85d377224c6bd1d2c937ad1635c4a715" kindref="member">standalonePointFont</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_routine_8cpp_1a9be9795bf9e11906a79fe70732dd7082" refkind="member"><highlight class="normal"><ref refid="wglext_8h_1a05538ca0e53ef21cb679e6de0fef7f8e" kindref="member">BOOL</ref><sp/><ref refid="_routine_8cpp_1a9be9795bf9e11906a79fe70732dd7082" kindref="member">Initialize</ref>(<ref refid="struct_g_l___window" kindref="compound">GL_Window</ref>*<sp/>window,<sp/><ref refid="struct_keys" kindref="compound">Keys</ref>*<sp/>keys)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Any<sp/>OpenGL<sp/>Initialization<sp/>Goes<sp/>Here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>font<sp/>=<sp/><ref refid="class_font" kindref="compound">Font</ref>(window-&gt;<ref refid="struct_g_l___window_1ac968ec84163d9ff1818a6c7ca6f636ab" kindref="member">hDC</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>standalonePointFont<sp/>=<sp/><ref refid="class_font" kindref="compound">Font</ref>(window-&gt;<ref refid="struct_g_l___window_1ac968ec84163d9ff1818a6c7ca6f636ab" kindref="member">hDC</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>glShadeModel(GL_SMOOTH);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_TEXTURE_2D);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a698fea2610b1e5767c12525b67b33e6d" kindref="member">SetLoggingFile</ref>(</highlight><highlight class="stringliteral">&quot;error.log&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a8a64f7e38d933bdfde41d79ef0f847d0" kindref="member">SetReferenceFrame</ref>(<ref refid="class_frame_1af25db3f51bb9838c9bce46d30e663331" kindref="member">Frame::ECLIPJ2000</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a6503f750c4ed359bcd08db5a8e0c7008" kindref="member">SetDefaultUnits</ref>(<ref refid="class_app_1aea5a9482f92f593735e0e6568c46b0d8a7c7fdae6b9832748ec23644eebfcd51d" kindref="member">App::UT_DEFAULT</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a4c9cf8bd78997b07082a3a5d23e9f056" kindref="member">LoadKernel</ref>(</highlight><highlight class="stringliteral">&quot;data/meta.tm&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//app.LoadChildren(SpaceObject(&quot;Solar<sp/>system<sp/>barycenter&quot;),<sp/>true,<sp/>true);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_body" kindref="compound">SpaceBody</ref>(</highlight><highlight class="stringliteral">&quot;EARTH&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_body" kindref="compound">SpaceBody</ref>(</highlight><highlight class="stringliteral">&quot;SUN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_body" kindref="compound">SpaceBody</ref>(</highlight><highlight class="stringliteral">&quot;MOON&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(</highlight><highlight class="stringliteral">&quot;L2_OBJECT&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>app.<ref refid="class_app_1a2feb5b0ad3a5018c3bf61e3920aaaf5a" kindref="member">AddObject</ref>(<ref refid="class_space_object" kindref="compound">SpaceObject</ref>(</highlight><highlight class="stringliteral">&quot;L2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_t_g_a" kindref="compound">TGA</ref>*<sp/>sunTexture<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_t_g_a" kindref="compound">TGA</ref>(</highlight><highlight class="stringliteral">&quot;Images\\SUN.tga&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>skyTexture<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_t_g_a" kindref="compound">TGA</ref>(</highlight><highlight class="stringliteral">&quot;Images\\STARS.tga&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/><ref refid="class_date" kindref="compound">Date</ref>(</highlight><highlight class="stringliteral">&quot;Mar<sp/>29<sp/>2016<sp/>01:03:52.99996036291100000<sp/>(UTC+0)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a21e8cadba0f667e013dbc6fe22171386" kindref="member">count</ref><sp/>=<sp/>app.<ref refid="class_app_1afec3098fabcf5728d0a50b3660322e85" kindref="member">GetObjectsLength</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="glext_8h_1a21e8cadba0f667e013dbc6fe22171386" kindref="member">count</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_object" kindref="compound">SpaceObject</ref>&amp;<sp/><ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref><sp/>=<sp/>app.<ref refid="class_app_1af6e4143b4dabe6ea635099dda0bb531e" kindref="member">GetObjectByIndex</ref>(i);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_space_object_1a9983084aeef5b66ad1867a11af3f6d78" kindref="member">SpaceObject::IsPlanet</ref>(obj.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>())<sp/>||<sp/>obj.<ref refid="class_space_object_1a25a8be2d3fd0d272d9060981cff3121f" kindref="member">GetSpiceId</ref>()<sp/>==<sp/><ref refid="_space_object_8h_1a70a62dce03c8c66364745759b836f902" kindref="member">SUN_SPICE_ID</ref><sp/>||<sp/>obj.<ref refid="class_space_object_1aafe0595c55762e7fe30cb9722b45abe5" kindref="member">GetSpiceName</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;MOON&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="glext_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Images\\&quot;</highlight><highlight class="normal"><sp/>+<sp/>obj.<ref refid="class_space_object_1a5f202bec13294119b30e90f54ba2ed7f" kindref="member">GetName</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.tga&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_t_g_a" kindref="compound">TGA</ref>*<sp/>Texture<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_t_g_a" kindref="compound">TGA</ref>(path.c_str()))</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_body" kindref="compound">SpaceBody</ref>&amp;<sp/>body<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="class_space_body" kindref="compound">SpaceBody</ref>&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1a0f38de768620105c6026743a2bd8a851" kindref="member">addPlanet</ref>(<ref refid="class_planet" kindref="compound">Planet</ref>(body,<sp/>Texture,<sp/>obj,<sp/>app.<ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">GetReferenceFrame</ref>(),<sp/>window-&gt;<ref refid="struct_g_l___window_1ac968ec84163d9ff1818a6c7ca6f636ab" kindref="member">hDC</ref>));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_space_body" kindref="compound">SpaceBody</ref>&amp;<sp/>body<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="class_space_body" kindref="compound">SpaceBody</ref>&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="glext_8h_1a0c0d4701a6c89f4f7f0640715d27ab26" kindref="member">obj</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1a0f38de768620105c6026743a2bd8a851" kindref="member">addPlanet</ref>(<ref refid="class_planet" kindref="compound">Planet</ref>(body,<sp/>sunTexture,<sp/>obj,<sp/>app.<ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">GetReferenceFrame</ref>(),<sp/>window-&gt;<ref refid="struct_g_l___window_1ac968ec84163d9ff1818a6c7ca6f636ab" kindref="member">hDC</ref>));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj.<ref refid="class_space_object_1aafe0595c55762e7fe30cb9722b45abe5" kindref="member">GetSpiceName</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;L2_OBJECT&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1ac0e99f535b07d82bcca3a000da0e76cb" kindref="member">AddTrajectoryAsSpaceObject</ref>(obj,<sp/>app.<ref refid="class_app_1aae4a208c58219724eff18c9eb1e2ea64" kindref="member">GetReferenceFrame</ref>(),<sp/><ref refid="_routine_8cpp_1a93d78c356dc9429a174a02ad1e9c84d0" kindref="member">t</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj.<ref refid="class_space_object_1aafe0595c55762e7fe30cb9722b45abe5" kindref="member">GetSpiceName</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;L2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1a694c16b6f0e804e11c429edbc00f4663" kindref="member">AddStandaloneSpacePoint</ref>(obj,<sp/>standalonePointFont);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::bad_cast&amp;)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>g_window<sp/>=<sp/>window;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>g_keys<sp/>=<sp/>keys;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>g_Camera.<ref refid="classgl_camera_1aefdc27e4f845a5c3610044c78068f802" kindref="member">PositionCamera</ref>(<ref refid="class_vector3" kindref="compound">Vector3</ref>(-5.5<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>28.44<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.2<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>),<sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>(-17.6<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>53.26<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>-8.5<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>),<sp/><ref refid="class_vector3" kindref="compound">Vector3</ref>(0,<sp/>0,<sp/>1));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>RECT<sp/>rect;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>GetClientRect(g_window-&gt;<ref refid="struct_g_l___window_1a43e3e57bd7ba1d1e98a8bea7b1ca5bfa" kindref="member">hWnd</ref>,<sp/>&amp;rect);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref><sp/>=<sp/>(rect.right<sp/>-<sp/>rect.left)<sp/>&gt;&gt;<sp/>1;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref><sp/>=<sp/>(rect.bottom<sp/>-<sp/>rect.top)<sp/>&gt;&gt;<sp/>1;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>SetCursorPos(<ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref>,<sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//t<sp/>=<sp/>Date(&quot;Aug<sp/>17<sp/>2000<sp/>15:51:01<sp/>UTC-5&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Color<sp/>setup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>glClearColor(0,<sp/>0,<sp/>0,<sp/>1);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1ab7e1c084f44929beed1881b3bb553b28" kindref="member">g_LightPosition</ref>[4]<sp/>=<sp/>{<sp/>1,<sp/>1,<sp/>0,<sp/>1<sp/>};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ambience[4]<sp/>=<sp/>{<sp/>0.0f,<sp/>0.0f,<sp/>0.0f<sp/>};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>diffuse[4]<sp/>=<sp/>{<sp/>1.0f,<sp/>0.9f,<sp/>0.9f<sp/>};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>glLightfv(GL_LIGHT0,<sp/>GL_AMBIENT,<sp/>ambience);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>glLightfv(GL_LIGHT0,<sp/>GL_DIFFUSE,<sp/>diffuse);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>glLightfv(GL_LIGHT0,<sp/>GL_POSITION,<sp/>g_LightPosition);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHT0);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>TRUE<sp/>(Initialization<sp/>Successful)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="_routine_8cpp_1a702c5734253c48e4765d8aa6d3a75242" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a702c5734253c48e4765d8aa6d3a75242" kindref="member">Update</ref>(DWORD<sp/>milliseconds)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>Motion<sp/>Updates<sp/>Here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>CHECK_MOVING_KEYS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[VK_ESCAPE])<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cpp_1a0fdcd098e981b37c3685361619834b1e" kindref="member">TerminateApplication</ref>(g_window);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[</highlight><highlight class="charliteral">&apos;W&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_Camera.<ref refid="classgl_camera_1ac5785ab7420408b165ad7a48aaab1a3a" kindref="member">MoveCamera</ref>(1);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[</highlight><highlight class="charliteral">&apos;S&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_Camera.<ref refid="classgl_camera_1ac5785ab7420408b165ad7a48aaab1a3a" kindref="member">MoveCamera</ref>(-1);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_Camera.<ref refid="classgl_camera_1a31b34555bdea70f380fe6810b6be24ed" kindref="member">Strafe</ref>(-1);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[</highlight><highlight class="charliteral">&apos;D&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_Camera.<ref refid="classgl_camera_1a31b34555bdea70f380fe6810b6be24ed" kindref="member">Strafe</ref>(1);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>CHECK_MOUSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_program_8cpp_1a267464ccc3025f3a57afac78adad6c26" kindref="member">LEFT_MOUSE_BUTTON_DOWN</ref>)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>g_Camera.<ref refid="classgl_camera_1a1be4621c5b94b057920b3a2a27adb99b" kindref="member">RetrieveObjectID</ref>(<ref refid="_program_8cpp_1a6c59af730728bf5260ef828aea2eebee" kindref="member">mouse_x</ref>,<sp/><ref refid="_program_8cpp_1ab21653e455bbca86826aa5f628a5fdb2" kindref="member">mouse_y</ref>,<sp/><ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref><sp/>*<sp/>2,<sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref><sp/>*<sp/>2,<sp/>SolarSystem,<sp/>t,<sp/>app);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cpp_1a267464ccc3025f3a57afac78adad6c26" kindref="member">LEFT_MOUSE_BUTTON_DOWN</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1a1e1e900238cc3e383cb2796530c443dc" kindref="member">ShowInfoAboutPlanetWithID</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>app);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a532c7e2a4fb116e04903b3f150ceed46" kindref="member">PLANET_CLICKED</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a532c7e2a4fb116e04903b3f150ceed46" kindref="member">PLANET_CLICKED</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_program_8cpp_1ab4ee690627521f03271ea0d8ec41b4d6" kindref="member">MOUSE_CHANGED_POSITION</ref>)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>currID<sp/>=<sp/>g_Camera.<ref refid="classgl_camera_1a1be4621c5b94b057920b3a2a27adb99b" kindref="member">RetrieveObjectID</ref>(<ref refid="_program_8cpp_1a6c59af730728bf5260ef828aea2eebee" kindref="member">mouse_x</ref>,<sp/><ref refid="_program_8cpp_1ab21653e455bbca86826aa5f628a5fdb2" kindref="member">mouse_y</ref>,<sp/><ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref><sp/>*<sp/>2,<sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref><sp/>*<sp/>2,<sp/>SolarSystem,<sp/>t,<sp/>app);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(currID<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(currID<sp/>!=<sp/><ref refid="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" kindref="member">idWhenMove</ref>)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1a67017a8885dec76253de41a72bb4e261" kindref="member">MarkPlanetWithID</ref>(<ref refid="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" kindref="member">idWhenMove</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" kindref="member">idWhenMove</ref><sp/>=<sp/>currID;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1a67017a8885dec76253de41a72bb4e261" kindref="member">MarkPlanetWithID</ref>(<ref refid="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" kindref="member">idWhenMove</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1a67017a8885dec76253de41a72bb4e261" kindref="member">MarkPlanetWithID</ref>(<ref refid="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" kindref="member">idWhenMove</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a1ed5abbc67927ee0b5cc25add2bafb9b" kindref="member">idWhenMove</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[VK_SPACE])</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_routine_8cpp_1a1b3e34c62b41113b2d34ff20a4329937" kindref="member">lastFrameSpaceWasPressed</ref>)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a1b310468f8cf42ae2e37fd789daf75e7" kindref="member">StopSimulation</ref><sp/>=<sp/>!<ref refid="_routine_8cpp_1a1b310468f8cf42ae2e37fd789daf75e7" kindref="member">StopSimulation</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a1b3e34c62b41113b2d34ff20a4329937" kindref="member">lastFrameSpaceWasPressed</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a1b3e34c62b41113b2d34ff20a4329937" kindref="member">lastFrameSpaceWasPressed</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[VK_LEFT])</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1acc7a565202a8b90acff6c64fd7844241" kindref="member">moveTimeBack</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[VK_RIGHT])</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1acc7a565202a8b90acff6c64fd7844241" kindref="member">moveTimeBack</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[VK_DOWN])</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(g_Camera.<ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref><sp/>&gt;<sp/>0.0005)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_Camera.<ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref><sp/>-=<sp/>0.0001f;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_keys-&gt;<ref refid="struct_keys_1af1256cce11c2121b4ed7145e6b9ff148" kindref="member">keyDown</ref>[VK_UP])</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(g_Camera.<ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref><sp/>&lt;<sp/>2.0f)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_Camera.<ref refid="classgl_camera_1a78fc5959743b15b58b90fb747642fee2" kindref="member">speed</ref><sp/>+=<sp/>0.0001f;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_routine_8cpp_1a1b310468f8cf42ae2e37fd789daf75e7" kindref="member">StopSimulation</ref>)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_routine_8cpp_1acc7a565202a8b90acff6c64fd7844241" kindref="member">moveTimeBack</ref>)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>-=<sp/><ref refid="_quantity_8h_1ab180382d5dc1bcb91259cbd59a5d86fc" kindref="member">Time</ref>(0.05,<sp/><ref refid="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" kindref="member">Units::Common::days</ref>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>+=<sp/><ref refid="_quantity_8h_1ab180382d5dc1bcb91259cbd59a5d86fc" kindref="member">Time</ref>(0.05,<sp/><ref refid="class_units_1_1_common_1ade670c3d1602d80753114646787c853e" kindref="member">Units::Common::days</ref>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="_routine_8cpp_1a35f2f94ccb7adab22c634a5a596089f1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1a35f2f94ccb7adab22c634a5a596089f1" kindref="member">CreateSkyBox</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aa214bd63e12f7ddf524c83894fcc69a7" kindref="member">height</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a921fa83f7755f0139c84ba1831417a2e" kindref="member">length</ref>)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>=<sp/>x<sp/>-<sp/>width<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>=<sp/>y<sp/>-<sp/>height<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>z<sp/>=<sp/>z<sp/>-<sp/>length<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture(GL_TEXTURE_2D,<sp/>skyTexture-&gt;<ref refid="class_t_g_a_1af066c59bff232702fe5505b3a0189dcf" kindref="member">getTextureHandle</ref>());</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHT0);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_QUADS);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//BACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y<sp/>+<sp/>height,<sp/>z);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y<sp/>+<sp/>height,<sp/>z);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y<sp/>+<sp/>height,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y<sp/>+<sp/>height,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//BOTTOM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//UP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y<sp/>+<sp/>height,<sp/>z);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y<sp/>+<sp/>height,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y<sp/>+<sp/>height,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y<sp/>+<sp/>height,<sp/>z);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//LEFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y<sp/>+<sp/>height,<sp/>z);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y<sp/>+<sp/>height,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//RIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y,<sp/>z);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y<sp/>+<sp/>height,<sp/>z<sp/>+<sp/>length);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexCoord2f(0.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/>glVertex3f(x<sp/>+<sp/>width,<sp/>y<sp/>+<sp/>height,<sp/>z);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHT0);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="_routine_8cpp_1ae39baa177eafe9cad35d363fc683d77f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_routine_8cpp_1ae39baa177eafe9cad35d363fc683d77f" kindref="member">Draw</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Draw<sp/>Our<sp/>Scene</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(<ref refid="glext_8h_1af8a2a4cdd1572339a01b657a3a37d856" kindref="member">GL_MULTISAMPLE_ARB</ref>);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>glClear(GL_COLOR_BUFFER_BIT<sp/>|<sp/>GL_DEPTH_BUFFER_BIT);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>Screen<sp/>And<sp/>Depth<sp/>Buffer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_DEPTH_TEST);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>DRAWING_DATE_TO_THE_SCREEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>glLoadIdentity();</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>glDisable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3f(1,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>glRasterPos3f(0.5,<sp/>0.5,<sp/>-1);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>font.<ref refid="class_font_1abc5d95a4605278837b3f6697f6499dc1" kindref="member">glPrint</ref>(t.<ref refid="class_date_1ac952bc2fedfc299de91758e32b487810" kindref="member">AsString</ref>().c_str());</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_LIGHTING);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>glLoadIdentity();</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>g_Camera.<ref refid="classgl_camera_1a1ab1368aaf700ab1a4c38f4332a4fc0e" kindref="member">Update</ref>(<ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref>,<sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref>,<sp/><ref refid="_routine_8cpp_1a3772f1f217df2a7863cc26d1d8a5bbbe" kindref="member">orientationMode</ref>);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a35f2f94ccb7adab22c634a5a596089f1" kindref="member">CreateSkyBox</ref>(0,<sp/>0,<sp/>0,<sp/>400,<sp/>400,<sp/>400);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>SolarSystem.<ref refid="class_scene_1a2708a12dc045758611cabc6aad195a4a" kindref="member">render</ref>(t,<sp/>app);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1a44ff4c01594b69315b77fc6f4de5bf63" kindref="member">prev_x</ref><sp/>=<sp/><ref refid="_routine_8cpp_1a2ef9a98c01d810b5c65529f7a96db72c" kindref="member">centerX</ref>;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_routine_8cpp_1ada2a652d657eb2614c738c6a7e7f2788" kindref="member">prev_y</ref><sp/>=<sp/><ref refid="_routine_8cpp_1a02c5292ed607e9932ef7083772bd1df8" kindref="member">centerY</ref>;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>glLightfv(GL_LIGHT0,<sp/>GL_POSITION,<sp/><ref refid="_routine_8cpp_1ab7e1c084f44929beed1881b3bb553b28" kindref="member">g_LightPosition</ref>);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>glFlush();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flush<sp/>The<sp/>GL<sp/>Rendering<sp/>Pipeline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Routine.cpp"/>
+  </compounddef>
+</doxygen>

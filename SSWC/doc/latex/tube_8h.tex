@@ -1,0 +1,482 @@
+\hypertarget{tube_8h}{\section{S\+S\+W\+C/src/\+G\+L/tube.h File Reference}
+\label{tube_8h}\index{S\+S\+W\+C/src/\+G\+L/tube.\+h@{S\+S\+W\+C/src/\+G\+L/tube.\+h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tube_8h_a9de6dddb4a0a064a8cb406c8336a24b1}{G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}~228
+\item 
+\#define \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double}~double
+\item 
+\#define \hyperlink{tube_8h_a785078ecc5f271e5c7f1cbae0e883c05}{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+A\+W}~0x1
+\item 
+\#define \hyperlink{tube_8h_a567e0415209ae5b59230a56346d84e2c}{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+A\+N\+G\+L\+E}~0x2
+\item 
+\#define \hyperlink{tube_8h_a0047ec2c6733cfd459df0ea4c19a91c4}{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+U\+T}~0x3
+\item 
+\#define \hyperlink{tube_8h_a76c15a8f331249f6669c64fe8d122802}{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+O\+U\+N\+D}~0x4
+\item 
+\#define \hyperlink{tube_8h_aacd092525f23134be5543ff2324e3a42}{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+M\+A\+S\+K}~0xf    /$\ast$ mask bits $\ast$/
+\item 
+\#define \hyperlink{tube_8h_a169fdce85916e45c4358f87903fab682}{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+A\+P}~0x10
+\item 
+\#define \hyperlink{tube_8h_a0d9ff892883eee48246b0c4ee45fd27f}{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+F\+A\+C\+E\+T}~0x100
+\item 
+\#define \hyperlink{tube_8h_acee27fad87c79188b137dfbcdbff82cb}{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+E\+D\+G\+E}~0x200
+\item 
+\#define \hyperlink{tube_8h_ac99b028571d21df7ca03dccb32447baa}{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+P\+A\+T\+H\+\_\+\+E\+D\+G\+E}~0x400 /$\ast$ for spiral, lathe, helix primitives $\ast$/
+\item 
+\#define \hyperlink{tube_8h_a94520cb52d7e23e465e8ff1ba44a8024}{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+M\+A\+S\+K}~0xf00    /$\ast$ mask bits $\ast$/
+\item 
+\#define \hyperlink{tube_8h_a57036545c364ce854f273b20b1d6bc82}{T\+U\+B\+E\+\_\+\+C\+O\+N\+T\+O\+U\+R\+\_\+\+C\+L\+O\+S\+E\+D}~0x1000
+\item 
+\#define \hyperlink{tube_8h_a61b16b3a129bc93443db79a575f92829}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E}~0x10000
+\item 
+\#define \hyperlink{tube_8h_ade0f181b0ca2f9f420ae30335756b3d3}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+M\+A\+S\+K}~0xff
+\item 
+\#define \hyperlink{tube_8h_a7fbfa3244aa20375cf6031b398f6b298}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+T}~1
+\item 
+\#define \hyperlink{tube_8h_aadd05fa7a817b7bd9f78dbe601167484}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+F\+L\+A\+T}~2
+\item 
+\#define \hyperlink{tube_8h_acae0e8ab50d56ed61dbbeec8d846c705}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+C\+Y\+L}~3
+\item 
+\#define \hyperlink{tube_8h_aa051baaf33c0aca8e2534f92f0178b64}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+Y\+L}~4
+\item 
+\#define \hyperlink{tube_8h_a687ff2bbbb774fe698d945243b5e8b82}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+P\+H}~5
+\item 
+\#define \hyperlink{tube_8h_ae4e452730961c1b33a6edd1d2e58b5c0}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+S\+P\+H}~6
+\item 
+\#define \hyperlink{tube_8h_ab3654d249d055c768a378e5a5c4608ed}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T}~7
+\item 
+\#define \hyperlink{tube_8h_a3d433245ce45ddc01df3e28a352eec78}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T}~8
+\item 
+\#define \hyperlink{tube_8h_a276662dc21bc0de5e6256aa4c0381b9c}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L}~9
+\item 
+\#define \hyperlink{tube_8h_aa7d01138d935450c7b352b6ad00e9ce6}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L}~10
+\item 
+\#define \hyperlink{tube_8h_a17bb04f5162edff90ad803686bd8ca78}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H}~11
+\item 
+\#define \hyperlink{tube_8h_ab838b21fbbac2f686ac671b15168dce6}{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H}~12
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} \hyperlink{tube_8h_acbf16062767e3844d21ac8211443aa8f}{gle\+Affine} \mbox{[}2\mbox{]}\mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{tube_8h_a38cf36ee9b6ef4bfcc25184b81768390}{gle\+Get\+Join\+Style} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a0d4935d69cdee5ba6585f723d2443492}{gle\+Set\+Join\+Style} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} style)
+\item 
+\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{tube_8h_a5e5c53b4896179e7e3aebb2289e80c46}{gle\+Get\+Num\+Slices} (\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a3ab8274d65d7f502cd458bfbaefc3230}{gle\+Set\+Num\+Slices} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} slices)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_aebfb824754e7bc2d31876049f7b8bb34}{gle\+Poly\+Cylinder} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} npoints, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, float color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} radius)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a9a36c82bd02f7cab0fac083561370822}{gle\+Poly\+Cone} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} npoints, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, float color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} radius\+\_\+array\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a51f5fac37d515364de4e9be8d8b2d03d}{gle\+Extrusion} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} ncp, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} up\mbox{[}3\mbox{]}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} npoints, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, float color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a40728b7d625ead4e924e4b900fcb9eaf}{gle\+Twist\+Extrusion} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} ncp, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} up\mbox{[}3\mbox{]}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} npoints, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, float color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} twist\+\_\+array\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_acd89e2373a5e5869a59ca0a73f1ea670}{gle\+Super\+Extrusion} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} ncp, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} up\mbox{[}3\mbox{]}, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} npoints, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, float color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} xform\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}\mbox{[}3\mbox{]})
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_acf059cf3557628570317b7108ae06fa3}{gle\+Spiral} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} ncp, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} up\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Radius, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} drd\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Z, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} dzd\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Xform\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} d\+Xformd\+Theta\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} sweep\+Theta)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a2de0d4067ed5dcab066ca708d2161371}{gle\+Lathe} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} ncp, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} up\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Radius, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} drd\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Z, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} dzd\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Xform\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} d\+Xformd\+Theta\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} sweep\+Theta)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a3550c1319800e49b967b5ca077b9616f}{gle\+Helicoid} (\hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} r\+Toroid, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Radius, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} drd\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Z, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} dzd\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Xform\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} d\+Xformd\+Theta\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} sweep\+Theta)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a8bfafeeabe5aec050cf3f891e0376148}{gle\+Toroid} (\hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} r\+Toroid, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Radius, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} drd\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Z, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} dzd\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Xform\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} d\+Xformd\+Theta\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} start\+Theta, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} sweep\+Theta)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_a841d8a45fc934369eaa5bf2604318120}{gle\+Screw} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} ncp, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} up\mbox{[}3\mbox{]}, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} startz, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} endz, \hyperlink{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{gle\+Double} twist)
+\item 
+\hyperlink{wglext_8h_a9e6b7f1933461ef318bb000d6bd13b83}{void} \hyperlink{tube_8h_ae3a68ef9eba1a4c7125f922a7d45f770}{gle\+Texture\+Mode} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glext_8h_a1e71d9c196e4683cc06c4b54d53f7ef5}{mode})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{tube_8h_a9de6dddb4a0a064a8cb406c8336a24b1}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N@{G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}}
+\index{G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N@{G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N~228}}\label{tube_8h_a9de6dddb4a0a064a8cb406c8336a24b1}
+G\+L\+E A\+P\+I revision history\+:
+
+G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N is updated to reflect G\+L\+E A\+P\+I changes (interface changes, semantic changes, deletions, or additions).
+
+G\+L\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N=228 G\+L\+U\+T 3.\+7 release of G\+L\+E. 
+
+Definition at line 29 of file tube.\+h.
+
+\hypertarget{tube_8h_a61b16b3a129bc93443db79a575f92829}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+N\+A\+B\+L\+E~0x10000}}\label{tube_8h_a61b16b3a129bc93443db79a575f92829}
+
+
+Definition at line 55 of file tube.\+h.
+
+\hypertarget{tube_8h_aa051baaf33c0aca8e2534f92f0178b64}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+Y\+L@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+Y\+L}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+Y\+L@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+Y\+L}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+Y\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+Y\+L~4}}\label{tube_8h_aa051baaf33c0aca8e2534f92f0178b64}
+
+
+Definition at line 60 of file tube.\+h.
+
+\hypertarget{tube_8h_aadd05fa7a817b7bd9f78dbe601167484}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+F\+L\+A\+T@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+F\+L\+A\+T}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+F\+L\+A\+T@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+F\+L\+A\+T}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+F\+L\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+F\+L\+A\+T~2}}\label{tube_8h_aadd05fa7a817b7bd9f78dbe601167484}
+
+
+Definition at line 58 of file tube.\+h.
+
+\hypertarget{tube_8h_aa7d01138d935450c7b352b6ad00e9ce6}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L~10}}\label{tube_8h_aa7d01138d935450c7b352b6ad00e9ce6}
+
+
+Definition at line 66 of file tube.\+h.
+
+\hypertarget{tube_8h_a3d433245ce45ddc01df3e28a352eec78}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T~8}}\label{tube_8h_a3d433245ce45ddc01df3e28a352eec78}
+
+
+Definition at line 64 of file tube.\+h.
+
+\hypertarget{tube_8h_ab838b21fbbac2f686ac671b15168dce6}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H~12}}\label{tube_8h_ab838b21fbbac2f686ac671b15168dce6}
+
+
+Definition at line 68 of file tube.\+h.
+
+\hypertarget{tube_8h_ae4e452730961c1b33a6edd1d2e58b5c0}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+S\+P\+H@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+S\+P\+H}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+S\+P\+H@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+S\+P\+H}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+S\+P\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+S\+P\+H~6}}\label{tube_8h_ae4e452730961c1b33a6edd1d2e58b5c0}
+
+
+Definition at line 62 of file tube.\+h.
+
+\hypertarget{tube_8h_ade0f181b0ca2f9f420ae30335756b3d3}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+M\+A\+S\+K@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+M\+A\+S\+K}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+M\+A\+S\+K@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+M\+A\+S\+K}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+M\+A\+S\+K~0xff}}\label{tube_8h_ade0f181b0ca2f9f420ae30335756b3d3}
+
+
+Definition at line 56 of file tube.\+h.
+
+\hypertarget{tube_8h_acae0e8ab50d56ed61dbbeec8d846c705}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+C\+Y\+L@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+C\+Y\+L}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+C\+Y\+L@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+C\+Y\+L}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+C\+Y\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+C\+Y\+L~3}}\label{tube_8h_acae0e8ab50d56ed61dbbeec8d846c705}
+
+
+Definition at line 59 of file tube.\+h.
+
+\hypertarget{tube_8h_a7fbfa3244aa20375cf6031b398f6b298}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+T@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+T}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+T@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+T}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+L\+A\+T~1}}\label{tube_8h_a7fbfa3244aa20375cf6031b398f6b298}
+
+
+Definition at line 57 of file tube.\+h.
+
+\hypertarget{tube_8h_a276662dc21bc0de5e6256aa4c0381b9c}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+C\+Y\+L~9}}\label{tube_8h_a276662dc21bc0de5e6256aa4c0381b9c}
+
+
+Definition at line 65 of file tube.\+h.
+
+\hypertarget{tube_8h_ab3654d249d055c768a378e5a5c4608ed}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+L\+A\+T~7}}\label{tube_8h_ab3654d249d055c768a378e5a5c4608ed}
+
+
+Definition at line 63 of file tube.\+h.
+
+\hypertarget{tube_8h_a17bb04f5162edff90ad803686bd8ca78}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+M\+O\+D\+E\+L\+\_\+\+S\+P\+H~11}}\label{tube_8h_a17bb04f5162edff90ad803686bd8ca78}
+
+
+Definition at line 67 of file tube.\+h.
+
+\hypertarget{tube_8h_a687ff2bbbb774fe698d945243b5e8b82}{\index{tube.\+h@{tube.\+h}!G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+P\+H@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+P\+H}}
+\index{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+P\+H@{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+P\+H}!tube.\+h@{tube.\+h}}
+\subsubsection[{G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+P\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+L\+E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+P\+H~5}}\label{tube_8h_a687ff2bbbb774fe698d945243b5e8b82}
+
+
+Definition at line 61 of file tube.\+h.
+
+\hypertarget{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}{\index{tube.\+h@{tube.\+h}!gle\+Double@{gle\+Double}}
+\index{gle\+Double@{gle\+Double}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Double}]{\setlength{\rightskip}{0pt plus 5cm}\#define gle\+Double~double}}\label{tube_8h_a7a5ac253b5bacac0f18a7503390e7604}
+
+
+Definition at line 33 of file tube.\+h.
+
+\hypertarget{tube_8h_a57036545c364ce854f273b20b1d6bc82}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+C\+O\+N\+T\+O\+U\+R\+\_\+\+C\+L\+O\+S\+E\+D@{T\+U\+B\+E\+\_\+\+C\+O\+N\+T\+O\+U\+R\+\_\+\+C\+L\+O\+S\+E\+D}}
+\index{T\+U\+B\+E\+\_\+\+C\+O\+N\+T\+O\+U\+R\+\_\+\+C\+L\+O\+S\+E\+D@{T\+U\+B\+E\+\_\+\+C\+O\+N\+T\+O\+U\+R\+\_\+\+C\+L\+O\+S\+E\+D}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+C\+O\+N\+T\+O\+U\+R\+\_\+\+C\+L\+O\+S\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+C\+O\+N\+T\+O\+U\+R\+\_\+\+C\+L\+O\+S\+E\+D~0x1000}}\label{tube_8h_a57036545c364ce854f273b20b1d6bc82}
+
+
+Definition at line 53 of file tube.\+h.
+
+\hypertarget{tube_8h_a567e0415209ae5b59230a56346d84e2c}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+A\+N\+G\+L\+E@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+A\+N\+G\+L\+E}}
+\index{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+A\+N\+G\+L\+E@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+A\+N\+G\+L\+E}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+A\+N\+G\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+A\+N\+G\+L\+E~0x2}}\label{tube_8h_a567e0415209ae5b59230a56346d84e2c}
+
+
+Definition at line 40 of file tube.\+h.
+
+\hypertarget{tube_8h_a169fdce85916e45c4358f87903fab682}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+A\+P@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+A\+P}}
+\index{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+A\+P@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+A\+P}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+A\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+A\+P~0x10}}\label{tube_8h_a169fdce85916e45c4358f87903fab682}
+
+
+Definition at line 44 of file tube.\+h.
+
+\hypertarget{tube_8h_a0047ec2c6733cfd459df0ea4c19a91c4}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+U\+T@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+U\+T}}
+\index{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+U\+T@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+U\+T}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+C\+U\+T~0x3}}\label{tube_8h_a0047ec2c6733cfd459df0ea4c19a91c4}
+
+
+Definition at line 41 of file tube.\+h.
+
+\hypertarget{tube_8h_aacd092525f23134be5543ff2324e3a42}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+M\+A\+S\+K@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+M\+A\+S\+K}}
+\index{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+M\+A\+S\+K@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+M\+A\+S\+K}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+M\+A\+S\+K~0xf    /$\ast$ mask bits $\ast$/}}\label{tube_8h_aacd092525f23134be5543ff2324e3a42}
+
+
+Definition at line 43 of file tube.\+h.
+
+\hypertarget{tube_8h_a785078ecc5f271e5c7f1cbae0e883c05}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+A\+W@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+A\+W}}
+\index{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+A\+W@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+A\+W}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+A\+W}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+A\+W~0x1}}\label{tube_8h_a785078ecc5f271e5c7f1cbae0e883c05}
+
+
+Definition at line 39 of file tube.\+h.
+
+\hypertarget{tube_8h_a76c15a8f331249f6669c64fe8d122802}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+O\+U\+N\+D@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+O\+U\+N\+D}}
+\index{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+O\+U\+N\+D@{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+O\+U\+N\+D}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+O\+U\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+J\+N\+\_\+\+R\+O\+U\+N\+D~0x4}}\label{tube_8h_a76c15a8f331249f6669c64fe8d122802}
+
+
+Definition at line 42 of file tube.\+h.
+
+\hypertarget{tube_8h_acee27fad87c79188b137dfbcdbff82cb}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+E\+D\+G\+E@{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+E\+D\+G\+E}}
+\index{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+E\+D\+G\+E@{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+E\+D\+G\+E}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+E\+D\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+E\+D\+G\+E~0x200}}\label{tube_8h_acee27fad87c79188b137dfbcdbff82cb}
+
+
+Definition at line 48 of file tube.\+h.
+
+\hypertarget{tube_8h_a0d9ff892883eee48246b0c4ee45fd27f}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+F\+A\+C\+E\+T@{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+F\+A\+C\+E\+T}}
+\index{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+F\+A\+C\+E\+T@{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+F\+A\+C\+E\+T}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+F\+A\+C\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+F\+A\+C\+E\+T~0x100}}\label{tube_8h_a0d9ff892883eee48246b0c4ee45fd27f}
+
+
+Definition at line 47 of file tube.\+h.
+
+\hypertarget{tube_8h_a94520cb52d7e23e465e8ff1ba44a8024}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+M\+A\+S\+K@{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+M\+A\+S\+K}}
+\index{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+M\+A\+S\+K@{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+M\+A\+S\+K}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+M\+A\+S\+K~0xf00    /$\ast$ mask bits $\ast$/}}\label{tube_8h_a94520cb52d7e23e465e8ff1ba44a8024}
+
+
+Definition at line 50 of file tube.\+h.
+
+\hypertarget{tube_8h_ac99b028571d21df7ca03dccb32447baa}{\index{tube.\+h@{tube.\+h}!T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+P\+A\+T\+H\+\_\+\+E\+D\+G\+E@{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+P\+A\+T\+H\+\_\+\+E\+D\+G\+E}}
+\index{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+P\+A\+T\+H\+\_\+\+E\+D\+G\+E@{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+P\+A\+T\+H\+\_\+\+E\+D\+G\+E}!tube.\+h@{tube.\+h}}
+\subsubsection[{T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+P\+A\+T\+H\+\_\+\+E\+D\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+U\+B\+E\+\_\+\+N\+O\+R\+M\+\_\+\+P\+A\+T\+H\+\_\+\+E\+D\+G\+E~0x400 /$\ast$ for spiral, lathe, helix primitives $\ast$/}}\label{tube_8h_ac99b028571d21df7ca03dccb32447baa}
+
+
+Definition at line 49 of file tube.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{tube_8h_acbf16062767e3844d21ac8211443aa8f}{\index{tube.\+h@{tube.\+h}!gle\+Affine@{gle\+Affine}}
+\index{gle\+Affine@{gle\+Affine}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Affine}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf gle\+Double} gle\+Affine\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}}}\label{tube_8h_acbf16062767e3844d21ac8211443aa8f}
+
+
+Definition at line 34 of file tube.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{tube_8h_a51f5fac37d515364de4e9be8d8b2d03d}{\index{tube.\+h@{tube.\+h}!gle\+Extrusion@{gle\+Extrusion}}
+\index{gle\+Extrusion@{gle\+Extrusion}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Extrusion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Extrusion (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{ncp, }
+\item[{{\bf gle\+Double}}]{contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{up\mbox{[}3\mbox{]}, }
+\item[{{\bf int}}]{npoints, }
+\item[{{\bf gle\+Double}}]{point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{float}]{color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a51f5fac37d515364de4e9be8d8b2d03d}
+\hypertarget{tube_8h_a38cf36ee9b6ef4bfcc25184b81768390}{\index{tube.\+h@{tube.\+h}!gle\+Get\+Join\+Style@{gle\+Get\+Join\+Style}}
+\index{gle\+Get\+Join\+Style@{gle\+Get\+Join\+Style}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Get\+Join\+Style}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} gle\+Get\+Join\+Style (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a38cf36ee9b6ef4bfcc25184b81768390}
+\hypertarget{tube_8h_a5e5c53b4896179e7e3aebb2289e80c46}{\index{tube.\+h@{tube.\+h}!gle\+Get\+Num\+Slices@{gle\+Get\+Num\+Slices}}
+\index{gle\+Get\+Num\+Slices@{gle\+Get\+Num\+Slices}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Get\+Num\+Slices}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} gle\+Get\+Num\+Slices (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a5e5c53b4896179e7e3aebb2289e80c46}
+\hypertarget{tube_8h_a3550c1319800e49b967b5ca077b9616f}{\index{tube.\+h@{tube.\+h}!gle\+Helicoid@{gle\+Helicoid}}
+\index{gle\+Helicoid@{gle\+Helicoid}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Helicoid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Helicoid (
+\begin{DoxyParamCaption}
+\item[{{\bf gle\+Double}}]{r\+Toroid, }
+\item[{{\bf gle\+Double}}]{start\+Radius, }
+\item[{{\bf gle\+Double}}]{drd\+Theta, }
+\item[{{\bf gle\+Double}}]{start\+Z, }
+\item[{{\bf gle\+Double}}]{dzd\+Theta, }
+\item[{{\bf gle\+Double}}]{start\+Xform\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{d\+Xformd\+Theta\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{start\+Theta, }
+\item[{{\bf gle\+Double}}]{sweep\+Theta}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a3550c1319800e49b967b5ca077b9616f}
+\hypertarget{tube_8h_a2de0d4067ed5dcab066ca708d2161371}{\index{tube.\+h@{tube.\+h}!gle\+Lathe@{gle\+Lathe}}
+\index{gle\+Lathe@{gle\+Lathe}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Lathe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Lathe (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{ncp, }
+\item[{{\bf gle\+Double}}]{contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{up\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{start\+Radius, }
+\item[{{\bf gle\+Double}}]{drd\+Theta, }
+\item[{{\bf gle\+Double}}]{start\+Z, }
+\item[{{\bf gle\+Double}}]{dzd\+Theta, }
+\item[{{\bf gle\+Double}}]{start\+Xform\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{d\+Xformd\+Theta\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{start\+Theta, }
+\item[{{\bf gle\+Double}}]{sweep\+Theta}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a2de0d4067ed5dcab066ca708d2161371}
+\hypertarget{tube_8h_a9a36c82bd02f7cab0fac083561370822}{\index{tube.\+h@{tube.\+h}!gle\+Poly\+Cone@{gle\+Poly\+Cone}}
+\index{gle\+Poly\+Cone@{gle\+Poly\+Cone}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Poly\+Cone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Poly\+Cone (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{npoints, }
+\item[{{\bf gle\+Double}}]{point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{float}]{color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{radius\+\_\+array\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a9a36c82bd02f7cab0fac083561370822}
+\hypertarget{tube_8h_aebfb824754e7bc2d31876049f7b8bb34}{\index{tube.\+h@{tube.\+h}!gle\+Poly\+Cylinder@{gle\+Poly\+Cylinder}}
+\index{gle\+Poly\+Cylinder@{gle\+Poly\+Cylinder}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Poly\+Cylinder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Poly\+Cylinder (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{npoints, }
+\item[{{\bf gle\+Double}}]{point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{float}]{color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{radius}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_aebfb824754e7bc2d31876049f7b8bb34}
+\hypertarget{tube_8h_a841d8a45fc934369eaa5bf2604318120}{\index{tube.\+h@{tube.\+h}!gle\+Screw@{gle\+Screw}}
+\index{gle\+Screw@{gle\+Screw}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Screw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Screw (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{ncp, }
+\item[{{\bf gle\+Double}}]{contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{up\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{startz, }
+\item[{{\bf gle\+Double}}]{endz, }
+\item[{{\bf gle\+Double}}]{twist}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a841d8a45fc934369eaa5bf2604318120}
+\hypertarget{tube_8h_a0d4935d69cdee5ba6585f723d2443492}{\index{tube.\+h@{tube.\+h}!gle\+Set\+Join\+Style@{gle\+Set\+Join\+Style}}
+\index{gle\+Set\+Join\+Style@{gle\+Set\+Join\+Style}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Set\+Join\+Style}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Set\+Join\+Style (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{style}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a0d4935d69cdee5ba6585f723d2443492}
+\hypertarget{tube_8h_a3ab8274d65d7f502cd458bfbaefc3230}{\index{tube.\+h@{tube.\+h}!gle\+Set\+Num\+Slices@{gle\+Set\+Num\+Slices}}
+\index{gle\+Set\+Num\+Slices@{gle\+Set\+Num\+Slices}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Set\+Num\+Slices}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Set\+Num\+Slices (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{slices}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a3ab8274d65d7f502cd458bfbaefc3230}
+\hypertarget{tube_8h_acf059cf3557628570317b7108ae06fa3}{\index{tube.\+h@{tube.\+h}!gle\+Spiral@{gle\+Spiral}}
+\index{gle\+Spiral@{gle\+Spiral}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Spiral}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Spiral (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{ncp, }
+\item[{{\bf gle\+Double}}]{contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{up\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{start\+Radius, }
+\item[{{\bf gle\+Double}}]{drd\+Theta, }
+\item[{{\bf gle\+Double}}]{start\+Z, }
+\item[{{\bf gle\+Double}}]{dzd\+Theta, }
+\item[{{\bf gle\+Double}}]{start\+Xform\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{d\+Xformd\+Theta\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{start\+Theta, }
+\item[{{\bf gle\+Double}}]{sweep\+Theta}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_acf059cf3557628570317b7108ae06fa3}
+\hypertarget{tube_8h_acd89e2373a5e5869a59ca0a73f1ea670}{\index{tube.\+h@{tube.\+h}!gle\+Super\+Extrusion@{gle\+Super\+Extrusion}}
+\index{gle\+Super\+Extrusion@{gle\+Super\+Extrusion}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Super\+Extrusion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Super\+Extrusion (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{ncp, }
+\item[{{\bf gle\+Double}}]{contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{up\mbox{[}3\mbox{]}, }
+\item[{{\bf int}}]{npoints, }
+\item[{{\bf gle\+Double}}]{point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{float}]{color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{xform\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_acd89e2373a5e5869a59ca0a73f1ea670}
+\hypertarget{tube_8h_ae3a68ef9eba1a4c7125f922a7d45f770}{\index{tube.\+h@{tube.\+h}!gle\+Texture\+Mode@{gle\+Texture\+Mode}}
+\index{gle\+Texture\+Mode@{gle\+Texture\+Mode}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Texture\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Texture\+Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{mode}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_ae3a68ef9eba1a4c7125f922a7d45f770}
+\hypertarget{tube_8h_a8bfafeeabe5aec050cf3f891e0376148}{\index{tube.\+h@{tube.\+h}!gle\+Toroid@{gle\+Toroid}}
+\index{gle\+Toroid@{gle\+Toroid}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Toroid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Toroid (
+\begin{DoxyParamCaption}
+\item[{{\bf gle\+Double}}]{r\+Toroid, }
+\item[{{\bf gle\+Double}}]{start\+Radius, }
+\item[{{\bf gle\+Double}}]{drd\+Theta, }
+\item[{{\bf gle\+Double}}]{start\+Z, }
+\item[{{\bf gle\+Double}}]{dzd\+Theta, }
+\item[{{\bf gle\+Double}}]{start\+Xform\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{d\+Xformd\+Theta\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{start\+Theta, }
+\item[{{\bf gle\+Double}}]{sweep\+Theta}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a8bfafeeabe5aec050cf3f891e0376148}
+\hypertarget{tube_8h_a40728b7d625ead4e924e4b900fcb9eaf}{\index{tube.\+h@{tube.\+h}!gle\+Twist\+Extrusion@{gle\+Twist\+Extrusion}}
+\index{gle\+Twist\+Extrusion@{gle\+Twist\+Extrusion}!tube.\+h@{tube.\+h}}
+\subsubsection[{gle\+Twist\+Extrusion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gle\+Twist\+Extrusion (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{ncp, }
+\item[{{\bf gle\+Double}}]{contour\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{cont\+\_\+normal\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{{\bf gle\+Double}}]{up\mbox{[}3\mbox{]}, }
+\item[{{\bf int}}]{npoints, }
+\item[{{\bf gle\+Double}}]{point\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{float}]{color\+\_\+array\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]}, }
+\item[{{\bf gle\+Double}}]{twist\+\_\+array\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{tube_8h_a40728b7d625ead4e924e4b900fcb9eaf}

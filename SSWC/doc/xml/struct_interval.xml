@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_interval" kind="struct" prot="public">
+    <compoundname>Interval</compoundname>
+    <includes refid="_window_8h" local="no">Window.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_interval_1afa71d24f29c7e4d6245f26dea4ecf28f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Interval::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="39" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_interval_1a348459d780727db27429a113260dc199" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Interval::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="40" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_interval_1a697fae538798f95fcaf3b087b042d3c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Interval::Interval</definition>
+        <argsstring>(double left, double right)</argsstring>
+        <name>Interval</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="13" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_interval_1a63d19f70bebd9ebd2c9c5e1df1d9ae85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interval::Set</definition>
+        <argsstring>(double left, double right)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="18" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="18" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_interval_1ad8e2de09f19621527f200134e87cd5ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interval::GetLeft</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_interval_1a19a12cecf3455887d9a1e1c9e18f2aa6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interval::GetRight</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="33" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" line="11" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/CSpice/Window.h" bodystart="10" bodyend="41"/>
+    <listofallmembers>
+      <member refid="struct_interval_1ad8e2de09f19621527f200134e87cd5ad" prot="public" virt="non-virtual"><scope>Interval</scope><name>GetLeft</name></member>
+      <member refid="struct_interval_1a19a12cecf3455887d9a1e1c9e18f2aa6" prot="public" virt="non-virtual"><scope>Interval</scope><name>GetRight</name></member>
+      <member refid="struct_interval_1a697fae538798f95fcaf3b087b042d3c9" prot="public" virt="non-virtual"><scope>Interval</scope><name>Interval</name></member>
+      <member refid="struct_interval_1afa71d24f29c7e4d6245f26dea4ecf28f" prot="private" virt="non-virtual"><scope>Interval</scope><name>left</name></member>
+      <member refid="struct_interval_1a348459d780727db27429a113260dc199" prot="private" virt="non-virtual"><scope>Interval</scope><name>right</name></member>
+      <member refid="struct_interval_1a63d19f70bebd9ebd2c9c5e1df1d9ae85" prot="public" virt="non-virtual"><scope>Interval</scope><name>Set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

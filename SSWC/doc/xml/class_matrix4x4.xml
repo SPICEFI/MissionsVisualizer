@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_matrix4x4" kind="class" prot="public">
+    <compoundname>Matrix4x4</compoundname>
+    <includes refid="_matrix4x4_8h" local="no">Matrix4x4.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_matrix4x4_1a99f401556c3a025932ac6a5551f76db7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Matrix4x4::matrix[DIM][DIM]</definition>
+        <argsstring>[DIM][DIM]</argsstring>
+        <name>matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="29" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_matrix4x4_1acd4066dd53c9d97a6675f5f63736387b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref></type>
+        <definition>const Matrix4x4 Matrix4x4::Identity</definition>
+        <argsstring></argsstring>
+        <name>Identity</name>
+        <initializer>= <ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref>(1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="32" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_matrix4x4_1aa29a050d95415f55095e0a95cdca03c7" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref></type>
+        <definition>const Matrix4x4 Matrix4x4::Zero</definition>
+        <argsstring></argsstring>
+        <name>Zero</name>
+        <initializer>= <ref refid="class_matrix4x4" kindref="compound">Matrix4x4</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="33" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_matrix4x4_1a714a467ba7f85f88ebe3897b5e3580be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix4x4::Matrix4x4</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix4x4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="11" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="6" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1a870cfc231c909b9b2eed7de0568470f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix4x4::Matrix4x4</definition>
+        <argsstring>(const float *m)</argsstring>
+        <name>Matrix4x4</name>
+        <param>
+          <type>const float *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="12" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1a3b0a9ee0e5113c7805c3d0bb54b25460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix4x4::Matrix4x4</definition>
+        <argsstring>(const float m[DIM][DIM])</argsstring>
+        <name>Matrix4x4</name>
+        <param>
+          <type>const float</type>
+          <declname>m</declname>
+          <array>[DIM][DIM]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="13" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1a800b92eacd31be52d0ad1c52d74bd16a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix4x4::Matrix4x4</definition>
+        <argsstring>(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)</argsstring>
+        <name>Matrix4x4</name>
+        <param>
+          <type>float</type>
+          <declname>m11</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m12</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m13</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m14</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m21</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m22</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m23</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m24</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m31</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m32</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m33</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m34</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m41</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m42</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m43</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>m44</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="14" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1acb07f122201caa230eccaeb1688a7bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Matrix4x4::Set</definition>
+        <argsstring>(const float *m)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const float *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="19" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1a1e52f1eba7ea388bbca497a988e6db3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Matrix4x4::Set</definition>
+        <argsstring>(size_t row, size_t col, float val)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>size_t</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="20" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1a2fa8d389f00e100783d96dca2841dcd9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Matrix4x4::Get</definition>
+        <argsstring>(size_t row, size_t col) const </argsstring>
+        <name>Get</name>
+        <param>
+          <type>size_t</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="21" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1a1ac1a48d82ace2c2ac98c2bb86ff7b5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Matrix4x4::GetRowMajor</definition>
+        <argsstring>(float *m) const </argsstring>
+        <name>GetRowMajor</name>
+        <param>
+          <type>float *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="23" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="61" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1a5868dcbb00ef438b651a90ac0950f93c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglext_8h_1a9e6b7f1933461ef318bb000d6bd13b83" kindref="member">void</ref></type>
+        <definition>void Matrix4x4::GetColumnMajor</definition>
+        <argsstring>(float *m) const </argsstring>
+        <name>GetColumnMajor</name>
+        <param>
+          <type>float *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="24" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="78" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix4x4_1a3cfb5cb29c3afa4bff1514fdfd1551c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matrix4x4::IsRowColCorrect</definition>
+        <argsstring>(size_t row, size_t col) const </argsstring>
+        <name>IsRowColCorrect</name>
+        <param>
+          <type>size_t</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="26" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="965">
+        <label>Matrix4x4</label>
+        <link refid="class_matrix4x4"/>
+        <childnode refid="965" relation="usage">
+          <edgelabel>Identity</edgelabel>
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" line="9" column="1" bodyfile="/home/anton/Documents/doxygen/MissionsVisualizer/SSWC/src/Math/Matrix4x4.h" bodystart="8" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_matrix4x4_1a2fa8d389f00e100783d96dca2841dcd9" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Get</name></member>
+      <member refid="class_matrix4x4_1a5868dcbb00ef438b651a90ac0950f93c" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>GetColumnMajor</name></member>
+      <member refid="class_matrix4x4_1a1ac1a48d82ace2c2ac98c2bb86ff7b5f" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>GetRowMajor</name></member>
+      <member refid="class_matrix4x4_1acd4066dd53c9d97a6675f5f63736387b" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Identity</name></member>
+      <member refid="class_matrix4x4_1a3cfb5cb29c3afa4bff1514fdfd1551c0" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>IsRowColCorrect</name></member>
+      <member refid="class_matrix4x4_1a99f401556c3a025932ac6a5551f76db7" prot="private" virt="non-virtual"><scope>Matrix4x4</scope><name>matrix</name></member>
+      <member refid="class_matrix4x4_1a714a467ba7f85f88ebe3897b5e3580be" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Matrix4x4</name></member>
+      <member refid="class_matrix4x4_1a870cfc231c909b9b2eed7de0568470f2" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Matrix4x4</name></member>
+      <member refid="class_matrix4x4_1a3b0a9ee0e5113c7805c3d0bb54b25460" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Matrix4x4</name></member>
+      <member refid="class_matrix4x4_1a800b92eacd31be52d0ad1c52d74bd16a" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Matrix4x4</name></member>
+      <member refid="class_matrix4x4_1acb07f122201caa230eccaeb1688a7bb2" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Set</name></member>
+      <member refid="class_matrix4x4_1a1e52f1eba7ea388bbca497a988e6db3f" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Set</name></member>
+      <member refid="class_matrix4x4_1aa29a050d95415f55095e0a95cdca03c7" prot="public" virt="non-virtual"><scope>Matrix4x4</scope><name>Zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

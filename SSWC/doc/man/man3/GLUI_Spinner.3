@@ -1,0 +1,326 @@
+.TH "GLUI_Spinner" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Spinner \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Control\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Spinner\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBdata_type\fP=\fBGLUI_SPINNER_INT\fP, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Spinner\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP *live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Spinner\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, float *live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Spinner\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBdata_type\fP, \fBvoid\fP *live_var, \fBint\fP \fBid\fP=-1, \fBGLUI_CB\fP \fBcallback\fP=\fBGLUI_CB\fP())"
+.br
+.ti -1c
+.RI "\fBGLUI_Spinner\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBkey_handler\fP (unsigned char key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBspecial_handler\fP (\fBint\fP key, \fBint\fP modifiers)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_pressed\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_unpressed\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_text\fP (\fBint\fP sunken)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_float_limits\fP (float low, float high, \fBint\fP limit_type=\fBGLUI_LIMIT_CLAMP\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_int_limits\fP (\fBint\fP low, \fBint\fP high, \fBint\fP limit_type=\fBGLUI_LIMIT_CLAMP\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfind_arrow\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdo_drag\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdo_callbacks\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdo_click\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBidle\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "bool \fBneeds_idle\fP (\fBvoid\fP) const "
+.br
+.ti -1c
+.RI "const char * \fBget_text\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_float_val\fP (float new_val)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_int_val\fP (\fBint\fP new_val)"
+.br
+.ti -1c
+.RI "float \fBget_float_val\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_int_val\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBincrease_growth\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBreset_growth\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_speed\fP (float speed)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcurrently_inside\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBstate\fP"
+.br
+.ti -1c
+.RI "float \fBgrowth\fP"
+.br
+.ti -1c
+.RI "float \fBgrowth_exp\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_x\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_y\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBdata_type\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBcallback_count\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBlast_int_val\fP"
+.br
+.ti -1c
+.RI "float \fBlast_float_val\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBfirst_callback\fP"
+.br
+.ti -1c
+.RI "float \fBuser_speed\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_EditText\fP * \fBedittext\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_construct\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBdata_type\fP, \fBvoid\fP *live_var, \fBint\fP \fBid\fP, \fBGLUI_CB\fP \fBcallback\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 1858 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Spinner::GLUI_Spinner (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPdata_type = \fC\fBGLUI_SPINNER_INT\fP\fP, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_Spinner::GLUI_Spinner (\fBGLUI_Node\fP *parent, const char *name, \fBint\fP *live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_Spinner::GLUI_Spinner (\fBGLUI_Node\fP *parent, const char *name, float *live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_Spinner::GLUI_Spinner (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPdata_type, \fBvoid\fP *live_var, \fBint\fPid = \fC-1\fP, \fBGLUI_CB\fPcallback = \fC\fBGLUI_CB\fP()\fP)"
+
+.SS "GLUI_Spinner::GLUI_Spinner (\fBvoid\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 1876 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Spinner::common_construct (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPdata_type, \fBvoid\fP *live_var, \fBint\fPid, \fBGLUI_CB\fPcallback)\fC [protected]\fP"
+
+.SS "\fBvoid\fP GLUI_Spinner::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1925 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Spinner::do_callbacks (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Spinner::do_click (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Spinner::do_drag (\fBint\fPx, \fBint\fPy)"
+
+.SS "\fBvoid\fP GLUI_Spinner::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Implements \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Spinner::draw_pressed (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Spinner::draw_text (\fBint\fPsunken)"
+
+.SS "\fBvoid\fP GLUI_Spinner::draw_unpressed (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI_Spinner::find_arrow (\fBint\fPlocal_x, \fBint\fPlocal_y)"
+
+.SS "float GLUI_Spinner::get_float_val (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Spinner::get_int_val (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "const char* GLUI_Spinner::get_text (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Spinner::idle (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Spinner::increase_growth (\fBvoid\fP)"
+
+.SS "\fBint\fP GLUI_Spinner::key_handler (unsigned charkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Spinner::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Spinner::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Spinner::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "bool GLUI_Spinner::needs_idle (\fBvoid\fP) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Spinner::reset_growth (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Spinner::set_float_limits (floatlow, floathigh, \fBint\fPlimit_type = \fC\fBGLUI_LIMIT_CLAMP\fP\fP)"
+
+.SS "\fBvoid\fP GLUI_Spinner::set_float_val (floatnew_val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Spinner::set_int_limits (\fBint\fPlow, \fBint\fPhigh, \fBint\fPlimit_type = \fC\fBGLUI_LIMIT_CLAMP\fP\fP)"
+
+.SS "\fBvoid\fP GLUI_Spinner::set_int_val (\fBint\fPnew_val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Spinner::set_speed (floatspeed)\fC [inline]\fP"
+
+.PP
+Definition at line 1922 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Spinner::special_handler (\fBint\fPkey, \fBint\fPmodifiers)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Spinner::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBint\fP GLUI_Spinner::callback_count"
+
+.PP
+Definition at line 1883 of file glui\&.h\&.
+.SS "bool GLUI_Spinner::currently_inside"
+
+.PP
+Definition at line 1878 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Spinner::data_type"
+
+.PP
+Definition at line 1882 of file glui\&.h\&.
+.SS "\fBGLUI_EditText\fP* GLUI_Spinner::edittext"
+
+.PP
+Definition at line 1889 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Spinner::first_callback"
+
+.PP
+Definition at line 1886 of file glui\&.h\&.
+.SS "float GLUI_Spinner::growth"
+
+.PP
+Definition at line 1880 of file glui\&.h\&.
+.SS "float GLUI_Spinner::growth_exp"
+
+.PP
+Definition at line 1880 of file glui\&.h\&.
+.SS "float GLUI_Spinner::last_float_val"
+
+.PP
+Definition at line 1885 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Spinner::last_int_val"
+
+.PP
+Definition at line 1884 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Spinner::last_x"
+
+.PP
+Definition at line 1881 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Spinner::last_y"
+
+.PP
+Definition at line 1881 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Spinner::state"
+
+.PP
+Definition at line 1879 of file glui\&.h\&.
+.SS "float GLUI_Spinner::user_speed"
+
+.PP
+Definition at line 1887 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

@@ -1,0 +1,198 @@
+.TH "GLUI_Node" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Node \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherited by \fBGLUI_Control\fP, \fBGLUI_Glut_Window\fP, \fBGLUI_List_Item\fP, \fBGLUI_Listbox_Item\fP, and \fBGLUI_Main\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Node\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~GLUI_Node\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBfirst_sibling\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBlast_sibling\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBprev\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBnext\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBfirst_child\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBlast_child\fP ()"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBparent\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBint\fP \fBadd_control\fP (\fBGLUI_Control\fP *control)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBlink_this_to_parent_last\fP (\fBGLUI_Node\fP *\fBparent\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBlink_this_to_parent_first\fP (\fBGLUI_Node\fP *\fBparent\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBlink_this_to_sibling_next\fP (\fBGLUI_Node\fP *sibling)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBlink_this_to_sibling_prev\fP (\fBGLUI_Node\fP *sibling)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBunlink\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdump\fP (FILE *out, const char *\fBname\fP)"
+.br
+.in -1c
+.SS "Static Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBvoid\fP \fBadd_child_to_control\fP (\fBGLUI_Node\fP *\fBparent\fP, \fBGLUI_Control\fP *child)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBparent_node\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBchild_head\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBchild_tail\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBnext_sibling\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Node\fP * \fBprev_sibling\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBGLUI_Tree\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Rollout\fP"
+.br
+.ti -1c
+.RI "class \fBGLUI_Main\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBGLUI_Node\fP is a node in a sort of tree of \fBGLUI\fP controls\&. Each \fBGLUI_Node\fP has a list of siblings (in a circular list) and a linked list of children\&.
+.PP
+Everything onscreen is a \fBGLUI_Node\fP--windows, buttons, etc\&. The nodes are traversed for event processing, sizing, redraws, etc\&. 
+.PP
+Definition at line 327 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Node::GLUI_Node ()"
+
+.SS "virtual GLUI_Node::~GLUI_Node ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 335 of file glui\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBvoid\fP GLUI_Node::add_child_to_control (\fBGLUI_Node\fP *parent, \fBGLUI_Control\fP *child)\fC [static]\fP, \fC [protected]\fP"
+
+.SS "virtual \fBint\fP GLUI_Node::add_control (\fBGLUI_Control\fP *control)\fC [virtual]\fP"
+Link in a new child control 
+.PP
+Reimplemented in \fBGLUI\fP\&.
+.SS "\fBvoid\fP GLUI_Node::dump (FILE *out, const char *name)"
+
+.SS "\fBGLUI_Node\fP* GLUI_Node::first_child ()\fC [inline]\fP"
+
+.PP
+Definition at line 342 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP* GLUI_Node::first_sibling ()"
+
+.SS "\fBGLUI_Node\fP* GLUI_Node::last_child ()\fC [inline]\fP"
+
+.PP
+Definition at line 343 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP* GLUI_Node::last_sibling ()"
+
+.SS "\fBvoid\fP GLUI_Node::link_this_to_parent_first (\fBGLUI_Node\fP *parent)"
+
+.SS "\fBvoid\fP GLUI_Node::link_this_to_parent_last (\fBGLUI_Node\fP *parent)"
+
+.SS "\fBvoid\fP GLUI_Node::link_this_to_sibling_next (\fBGLUI_Node\fP *sibling)"
+
+.SS "\fBvoid\fP GLUI_Node::link_this_to_sibling_prev (\fBGLUI_Node\fP *sibling)"
+
+.SS "\fBGLUI_Node\fP* GLUI_Node::next ()"
+
+.SS "\fBGLUI_Node\fP* GLUI_Node::parent ()\fC [inline]\fP"
+
+.PP
+Definition at line 344 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP* GLUI_Node::prev ()"
+
+.SS "\fBvoid\fP GLUI_Node::unlink ()"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBGLUI_Main\fP\fC [friend]\fP"
+
+.PP
+Definition at line 331 of file glui\&.h\&.
+.SS "friend class \fBGLUI_Rollout\fP\fC [friend]\fP"
+
+.PP
+Definition at line 330 of file glui\&.h\&.
+.SS "friend class \fBGLUI_Tree\fP\fC [friend]\fP"
+
+.PP
+Definition at line 329 of file glui\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGLUI_Node\fP* GLUI_Node::child_head\fC [protected]\fP"
+
+.PP
+Definition at line 360 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP* GLUI_Node::child_tail\fC [protected]\fP"
+
+.PP
+Definition at line 361 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP* GLUI_Node::next_sibling\fC [protected]\fP"
+
+.PP
+Definition at line 362 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP* GLUI_Node::parent_node\fC [protected]\fP"
+
+.PP
+Definition at line 359 of file glui\&.h\&.
+.SS "\fBGLUI_Node\fP* GLUI_Node::prev_sibling\fC [protected]\fP"
+
+.PP
+Definition at line 363 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

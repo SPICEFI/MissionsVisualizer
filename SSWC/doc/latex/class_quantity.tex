@@ -1,0 +1,295 @@
+\hypertarget{class_quantity}{\section{Quantity$<$ length, time, mass $>$ Class Template Reference}
+\label{class_quantity}\index{Quantity$<$ length, time, mass $>$@{Quantity$<$ length, time, mass $>$}}
+}
+
+
+{\ttfamily \#include $<$Quantity.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_quantity_a9afc7e790ade60a644248a2654986443}{Quantity} ()
+\item 
+\hyperlink{class_quantity_ab4e1d4f62c6622bd0d7fcac6cc9b017f}{Quantity} (double \hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value}, const \hyperlink{class_unit}{Current\+Unit} \&unit=\hyperlink{class_unit_aa2102921ecd21d9938707db58e4df964}{Current\+Unit\+::\+Base\+Unit}())
+\item 
+double \hyperlink{class_quantity_af5aafbb8de9a913f79fcb0c80fc76d5a}{Value\+In} (const \hyperlink{class_unit}{Current\+Unit} \&\hyperlink{glext_8h_ad32bdec748ba376f6c0d2df39ab9a95b}{ref}) const 
+\item 
+double \hyperlink{class_quantity_a0bda6b05016d15deaa35f4ddf3ffd71f}{Value\+In\+Base} () const 
+\item 
+\hyperlink{class_quantity}{This\+Quantity} \& \hyperlink{class_quantity_a87ccb1a4f7497d0ccc96d70cae6755c2}{operator+=} (const \hyperlink{class_quantity}{This\+Quantity} \&rhs)
+\item 
+\hyperlink{class_quantity}{This\+Quantity} \& \hyperlink{class_quantity_a2b505bf1f41b7eadca3a1e31ff229890}{operator-\/=} (const \hyperlink{class_quantity}{This\+Quantity} \&rhs)
+\item 
+\hyperlink{class_quantity}{This\+Quantity} \& \hyperlink{class_quantity_acc1223e048130a379766f1d9114059a9}{operator$\ast$=} (double rhs)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_a1c68095ddfc203efce7f3ed41201776a}{operator+} (const \hyperlink{class_quantity}{Quantity} \&lhs, const \hyperlink{class_quantity}{Quantity} \&rhs)
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_ade9517aad39396b026fef2a9e3a07109}{operator-\/} (const \hyperlink{class_quantity}{Quantity} \&op)
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_aa95dcd341dbd3088d0d451a22f304e91}{operator-\/} (const \hyperlink{class_quantity}{Quantity} \&lhs, const \hyperlink{class_quantity}{Quantity} \&rhs)
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_a4b4d61d8c308af6bdc227edde9ed8dab}{operator$\ast$} (const \hyperlink{class_quantity}{Quantity} \&lhs, double rhs)
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_ac10cb0e95f6975a75e363b671869a95b}{operator$\ast$} (double lhs, const \hyperlink{class_quantity}{Quantity} \&rhs)
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_a73939bdd44776dba5b3652bc577cd83f}{operator$\ast$} (const \hyperlink{class_quantity}{Quantity} \&lhs, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} rhs)
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_a44071727bbb3ed92bc06746591cd57a6}{operator$\ast$} (\hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} lhs, const \hyperlink{class_quantity}{Quantity} \&rhs)
+\item 
+double \hyperlink{class_quantity_a16eb8208745256ec0ce18ff9fbb1b9c6}{operator/} (const \hyperlink{class_quantity}{Quantity} \&lhs, const \hyperlink{class_quantity}{Quantity} \&rhs)
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_acc56b1ddf2b51862365c0be55f1a5ed7}{operator/} (const \hyperlink{class_quantity}{Quantity} \&lhs, double rhs)
+\item 
+\hyperlink{class_quantity}{Quantity} \hyperlink{class_quantity_aa4257bcbc5cc3225088b2ca4979bd7af}{operator/} (const \hyperlink{class_quantity}{Quantity} \&lhs, \hyperlink{wglext_8h_a500a82aecba06f4550f6849b8099ca21}{int} rhs)
+\item 
+bool \hyperlink{class_quantity_af182aef223e19064c8062b061b3e1249}{operator$>$} (const \hyperlink{class_quantity}{Quantity} \&lhs, const \hyperlink{class_quantity}{Quantity} \&rhs)
+\item 
+bool \hyperlink{class_quantity_ac1a25fbfab188a02c2ef9c5989ee133e}{operator$<$} (const \hyperlink{class_quantity}{Quantity} \&lhs, const \hyperlink{class_quantity}{Quantity} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int length, int time, int mass$>$class Quantity$<$ length, time, mass $>$}
+
+
+
+Definition at line 108 of file Quantity.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_quantity_a9afc7e790ade60a644248a2654986443}{\index{Quantity@{Quantity}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Quantity@{Quantity}}
+\subsubsection[{Quantity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity}$<$ {\bf length}, time, mass $>$\+::{\bf Quantity} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_quantity_a9afc7e790ade60a644248a2654986443}
+
+
+Definition at line 114 of file Quantity.\+h.
+
+\hypertarget{class_quantity_ab4e1d4f62c6622bd0d7fcac6cc9b017f}{\index{Quantity@{Quantity}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Quantity@{Quantity}}
+\subsubsection[{Quantity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity}$<$ {\bf length}, time, mass $>$\+::{\bf Quantity} (
+\begin{DoxyParamCaption}
+\item[{double}]{value, }
+\item[{const {\bf Current\+Unit} \&}]{unit = {\ttfamily {\bf Current\+Unit\+::\+Base\+Unit}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_quantity_ab4e1d4f62c6622bd0d7fcac6cc9b017f}
+
+
+Definition at line 118 of file Quantity.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_quantity_acc1223e048130a379766f1d9114059a9}{\index{Quantity@{Quantity}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Quantity@{Quantity}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf This\+Quantity}\& {\bf Quantity}$<$ {\bf length}, time, mass $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{double}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_quantity_acc1223e048130a379766f1d9114059a9}
+
+
+Definition at line 144 of file Quantity.\+h.
+
+\hypertarget{class_quantity_a87ccb1a4f7497d0ccc96d70cae6755c2}{\index{Quantity@{Quantity}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Quantity@{Quantity}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf This\+Quantity}\& {\bf Quantity}$<$ {\bf length}, time, mass $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_quantity_a87ccb1a4f7497d0ccc96d70cae6755c2}
+
+
+Definition at line 132 of file Quantity.\+h.
+
+\hypertarget{class_quantity_a2b505bf1f41b7eadca3a1e31ff229890}{\index{Quantity@{Quantity}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Quantity@{Quantity}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf This\+Quantity}\& {\bf Quantity}$<$ {\bf length}, time, mass $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf This\+Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_quantity_a2b505bf1f41b7eadca3a1e31ff229890}
+
+
+Definition at line 138 of file Quantity.\+h.
+
+\hypertarget{class_quantity_af5aafbb8de9a913f79fcb0c80fc76d5a}{\index{Quantity@{Quantity}!Value\+In@{Value\+In}}
+\index{Value\+In@{Value\+In}!Quantity@{Quantity}}
+\subsubsection[{Value\+In}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ double {\bf Quantity}$<$ {\bf length}, time, mass $>$\+::Value\+In (
+\begin{DoxyParamCaption}
+\item[{const {\bf Current\+Unit} \&}]{ref}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_quantity_af5aafbb8de9a913f79fcb0c80fc76d5a}
+
+
+Definition at line 123 of file Quantity.\+h.
+
+\hypertarget{class_quantity_a0bda6b05016d15deaa35f4ddf3ffd71f}{\index{Quantity@{Quantity}!Value\+In\+Base@{Value\+In\+Base}}
+\index{Value\+In\+Base@{Value\+In\+Base}!Quantity@{Quantity}}
+\subsubsection[{Value\+In\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ double {\bf Quantity}$<$ {\bf length}, time, mass $>$\+::Value\+In\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_quantity_a0bda6b05016d15deaa35f4ddf3ffd71f}
+
+
+Definition at line 127 of file Quantity.\+h.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_quantity_a4b4d61d8c308af6bdc227edde9ed8dab}{\index{Quantity@{Quantity}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Quantity@{Quantity}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{double}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_a4b4d61d8c308af6bdc227edde9ed8dab}
+
+
+Definition at line 176 of file Quantity.\+h.
+
+\hypertarget{class_quantity_ac10cb0e95f6975a75e363b671869a95b}{\index{Quantity@{Quantity}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Quantity@{Quantity}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{lhs, }
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_ac10cb0e95f6975a75e363b671869a95b}
+
+
+Definition at line 180 of file Quantity.\+h.
+
+\hypertarget{class_quantity_a73939bdd44776dba5b3652bc577cd83f}{\index{Quantity@{Quantity}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Quantity@{Quantity}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{{\bf int}}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_a73939bdd44776dba5b3652bc577cd83f}
+
+
+Definition at line 184 of file Quantity.\+h.
+
+\hypertarget{class_quantity_a44071727bbb3ed92bc06746591cd57a6}{\index{Quantity@{Quantity}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Quantity@{Quantity}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{lhs, }
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_a44071727bbb3ed92bc06746591cd57a6}
+
+
+Definition at line 188 of file Quantity.\+h.
+
+\hypertarget{class_quantity_a1c68095ddfc203efce7f3ed41201776a}{\index{Quantity@{Quantity}!operator+@{operator+}}
+\index{operator+@{operator+}!Quantity@{Quantity}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_a1c68095ddfc203efce7f3ed41201776a}
+
+
+Definition at line 162 of file Quantity.\+h.
+
+\hypertarget{class_quantity_ade9517aad39396b026fef2a9e3a07109}{\index{Quantity@{Quantity}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Quantity@{Quantity}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_ade9517aad39396b026fef2a9e3a07109}
+
+
+Definition at line 168 of file Quantity.\+h.
+
+\hypertarget{class_quantity_aa95dcd341dbd3088d0d451a22f304e91}{\index{Quantity@{Quantity}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Quantity@{Quantity}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_aa95dcd341dbd3088d0d451a22f304e91}
+
+
+Definition at line 172 of file Quantity.\+h.
+
+\hypertarget{class_quantity_a16eb8208745256ec0ce18ff9fbb1b9c6}{\index{Quantity@{Quantity}!operator/@{operator/}}
+\index{operator/@{operator/}!Quantity@{Quantity}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ double operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_a16eb8208745256ec0ce18ff9fbb1b9c6}
+
+
+Definition at line 192 of file Quantity.\+h.
+
+\hypertarget{class_quantity_acc56b1ddf2b51862365c0be55f1a5ed7}{\index{Quantity@{Quantity}!operator/@{operator/}}
+\index{operator/@{operator/}!Quantity@{Quantity}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{double}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_acc56b1ddf2b51862365c0be55f1a5ed7}
+
+
+Definition at line 196 of file Quantity.\+h.
+
+\hypertarget{class_quantity_aa4257bcbc5cc3225088b2ca4979bd7af}{\index{Quantity@{Quantity}!operator/@{operator/}}
+\index{operator/@{operator/}!Quantity@{Quantity}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ {\bf Quantity} operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{{\bf int}}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_aa4257bcbc5cc3225088b2ca4979bd7af}
+
+
+Definition at line 200 of file Quantity.\+h.
+
+\hypertarget{class_quantity_ac1a25fbfab188a02c2ef9c5989ee133e}{\index{Quantity@{Quantity}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Quantity@{Quantity}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ bool operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_ac1a25fbfab188a02c2ef9c5989ee133e}
+
+
+Definition at line 208 of file Quantity.\+h.
+
+\hypertarget{class_quantity_af182aef223e19064c8062b061b3e1249}{\index{Quantity@{Quantity}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Quantity@{Quantity}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int length, int time, int mass$>$ bool operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{lhs, }
+\item[{const {\bf Quantity}$<$ {\bf length}, time, mass $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_quantity_af182aef223e19064c8062b061b3e1249}
+
+
+Definition at line 204 of file Quantity.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+S\+W\+C/src/\+Math/\hyperlink{_quantity_8h}{Quantity.\+h}\end{DoxyCompactItemize}

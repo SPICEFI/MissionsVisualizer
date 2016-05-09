@@ -1,0 +1,232 @@
+.TH "GLUI_Tree" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GLUI_Tree \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <glui\&.h>\fP
+.PP
+Inherits \fBGLUI_Panel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLUI_Tree\fP (\fBGLUI_Node\fP *\fBparent\fP, const char *\fBname\fP, \fBint\fP \fBopen\fP=false, \fBint\fP inset=0)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw\fP (\fBint\fP \fBx\fP, \fBint\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdraw_pressed\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_up_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_held_down_handler\fP (\fBint\fP local_x, \fBint\fP local_y, bool inside)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_column\fP (\fBGLUI_Column\fP *\fBc\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBopen\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBclose\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBupdate_size\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_id\fP (\fBint\fP i)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_level\fP (\fBint\fP l)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_format\fP (\fBint\fP \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_current\fP (\fBint\fP \fBc\fP)"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_id\fP ()"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_level\fP ()"
+.br
+.ti -1c
+.RI "\fBint\fP \fBget_child_number\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBenable_bar\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBdisable_bar\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_child_number\fP (\fBint\fP \fBc\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_level_color\fP (float \fBr\fP, float \fBg\fP, float \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBset_color\fP (float \fBr\fP, float \fBg\fP, float \fBb\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcurrently_inside\fP"
+.br
+.ti -1c
+.RI "bool \fBinitially_inside\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_Button\fP \fBbutton\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_String\fP \fBlevel_name\fP"
+.br
+.ti -1c
+.RI "\fBGLUI_TreePanel\fP * \fBpanel\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBcommon_init\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+One collapsible entry in a \fBGLUI_TreePanel\fP\&. 
+.PP
+Definition at line 1261 of file glui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GLUI_Tree::GLUI_Tree (\fBGLUI_Node\fP *parent, const char *name, \fBint\fPopen = \fCfalse\fP, \fBint\fPinset = \fC0\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvoid\fP GLUI_Tree::close (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Tree::common_init (\fBvoid\fP)\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 1320 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::disable_bar ()\fC [inline]\fP"
+
+.PP
+Definition at line 1307 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::draw (\fBint\fPx, \fBint\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Panel\fP\&.
+.SS "\fBvoid\fP GLUI_Tree::draw_pressed (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Tree::enable_bar ()\fC [inline]\fP"
+
+.PP
+Definition at line 1306 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Tree::get_child_number ()\fC [inline]\fP"
+
+.PP
+Definition at line 1305 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Tree::get_id (\fBvoid\fP)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.PP
+Definition at line 1303 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Tree::get_level ()\fC [inline]\fP"
+
+.PP
+Definition at line 1304 of file glui\&.h\&.
+.SS "\fBint\fP GLUI_Tree::mouse_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Tree::mouse_held_down_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBint\fP GLUI_Tree::mouse_up_handler (\fBint\fPlocal_x, \fBint\fPlocal_y, boolinside)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.SS "\fBvoid\fP GLUI_Tree::open (\fBvoid\fP)"
+
+.SS "\fBvoid\fP GLUI_Tree::set_child_number (\fBint\fPc)\fC [inline]\fP"
+
+.PP
+Definition at line 1308 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::set_color (floatr, floatg, floatb)\fC [inline]\fP"
+
+.PP
+Definition at line 1314 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::set_column (\fBGLUI_Column\fP *c)\fC [inline]\fP"
+
+.PP
+Definition at line 1293 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::set_current (\fBint\fPc)\fC [inline]\fP"
+
+.PP
+Definition at line 1302 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::set_format (\fBint\fPf)\fC [inline]\fP"
+
+.PP
+Definition at line 1301 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::set_id (\fBint\fPi)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Control\fP\&.
+.PP
+Definition at line 1299 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::set_level (\fBint\fPl)\fC [inline]\fP"
+
+.PP
+Definition at line 1300 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::set_level_color (floatr, floatg, floatb)\fC [inline]\fP"
+
+.PP
+Definition at line 1309 of file glui\&.h\&.
+.SS "\fBvoid\fP GLUI_Tree::update_size (\fBvoid\fP)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBGLUI_Panel\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGLUI_Button\fP GLUI_Tree::button"
+
+.PP
+Definition at line 1284 of file glui\&.h\&.
+.SS "bool GLUI_Tree::currently_inside"
+
+.PP
+Definition at line 1283 of file glui\&.h\&.
+.SS "bool GLUI_Tree::initially_inside"
+
+.PP
+Definition at line 1283 of file glui\&.h\&.
+.SS "\fBGLUI_String\fP GLUI_Tree::level_name"
+
+.PP
+Definition at line 1285 of file glui\&.h\&.
+.SS "\fBGLUI_TreePanel\fP* GLUI_Tree::panel"
+
+.PP
+Definition at line 1286 of file glui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.

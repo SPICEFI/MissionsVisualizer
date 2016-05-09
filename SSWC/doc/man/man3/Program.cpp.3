@@ -1,0 +1,161 @@
+.TH "SSWC/src/Program.cpp" 3 "Mon May 9 2016" "Version 0.1" "MissionsVisualizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SSWC/src/Program.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <windows\&.h>\fP
+.br
+\fC#include <gl/gl\&.h>\fP
+.br
+\fC#include <gl/glu\&.h>\fP
+.br
+\fC#include 'Program\&.h'\fP
+.br
+\fC#include 'glCameara\&.h'\fP
+.br
+\fC#include 'GL\\ARB_Multisample\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBWM_TOGGLEFULLSCREEN\fP   (WM_USER+1)"
+.br
+.ti -1c
+.RI "#define \fBWM_CHANGEMODE\fP   (WM_USER+2)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBOOL\fP \fBDestroyWindowGL\fP (\fBGL_Window\fP *window)"
+.br
+.ti -1c
+.RI "\fBBOOL\fP \fBCreateWindowGL\fP (\fBGL_Window\fP *window)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBTerminateApplication\fP (\fBGL_Window\fP *window)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBToggleFullscreen\fP (\fBGL_Window\fP *window)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBChangeMode\fP (\fBGL_Window\fP *window)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBReshapeGL\fP (\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBBOOL\fP \fBChangeScreenResolution\fP (\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP, \fBint\fP bitsPerPixel)"
+.br
+.ti -1c
+.RI "LRESULT \fBCALLBACK\fP \fBWindowProc\fP (HWND hWnd, \fBUINT\fP uMsg, WPARAM wParam, LPARAM lParam)"
+.br
+.ti -1c
+.RI "\fBBOOL\fP \fBRegisterWindowClass\fP (\fBApplication\fP *application)"
+.br
+.ti -1c
+.RI "\fBint\fP WINAPI \fBWinMain\fP (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, \fBint\fP nCmdShow)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBint\fP \fBmouse_x\fP"
+.br
+.ti -1c
+.RI "\fBint\fP \fBmouse_y\fP"
+.br
+.ti -1c
+.RI "bool \fBLEFT_MOUSE_BUTTON_DOWN\fP"
+.br
+.ti -1c
+.RI "bool \fBMOUSE_CHANGED_POSITION\fP"
+.br
+.ti -1c
+.RI "bool \fBorientationMode\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define WM_CHANGEMODE   (WM_USER+2)"
+
+.PP
+Definition at line 11 of file Program\&.cpp\&.
+.SS "#define WM_TOGGLEFULLSCREEN   (WM_USER+1)"
+
+.PP
+Definition at line 10 of file Program\&.cpp\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP ChangeMode (\fBGL_Window\fP *window)"
+
+.PP
+Definition at line 38 of file Program\&.cpp\&.
+.SS "\fBBOOL\fP ChangeScreenResolution (\fBint\fPwidth, \fBint\fPheight, \fBint\fPbitsPerPixel)"
+
+.PP
+Definition at line 54 of file Program\&.cpp\&.
+.SS "\fBBOOL\fP CreateWindowGL (\fBGL_Window\fP *window)"
+
+.PP
+Definition at line 70 of file Program\&.cpp\&.
+.SS "\fBBOOL\fP DestroyWindowGL (\fBGL_Window\fP *window)"
+
+.PP
+Definition at line 234 of file Program\&.cpp\&.
+.SS "\fBBOOL\fP RegisterWindowClass (\fBApplication\fP *application)"
+
+.PP
+Definition at line 373 of file Program\&.cpp\&.
+.SS "\fBvoid\fP ReshapeGL (\fBint\fPwidth, \fBint\fPheight)"
+
+.PP
+Definition at line 43 of file Program\&.cpp\&.
+.SS "\fBvoid\fP TerminateApplication (\fBGL_Window\fP *window)"
+
+.PP
+Definition at line 27 of file Program\&.cpp\&.
+.SS "\fBvoid\fP ToggleFullscreen (\fBGL_Window\fP *window)"
+
+.PP
+Definition at line 33 of file Program\&.cpp\&.
+.SS "LRESULT \fBCALLBACK\fP WindowProc (HWNDhWnd, \fBUINT\fPuMsg, WPARAMwParam, LPARAMlParam)"
+
+.PP
+Definition at line 263 of file Program\&.cpp\&.
+.SS "\fBint\fP WINAPI WinMain (HINSTANCEhInstance, HINSTANCEhPrevInstance, LPSTRlpCmdLine, \fBint\fPnCmdShow)"
+
+.PP
+Definition at line 395 of file Program\&.cpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "bool LEFT_MOUSE_BUTTON_DOWN"
+
+.PP
+Definition at line 21 of file Program\&.cpp\&.
+.SS "bool MOUSE_CHANGED_POSITION"
+
+.PP
+Definition at line 22 of file Program\&.cpp\&.
+.SS "\fBint\fP mouse_x"
+
+.PP
+Definition at line 16 of file Program\&.cpp\&.
+.SS "\fBint\fP mouse_y"
+
+.PP
+Definition at line 16 of file Program\&.cpp\&.
+.SS "bool orientationMode"
+
+.PP
+Definition at line 46 of file Routine\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MissionsVisualizer from the source code\&.
