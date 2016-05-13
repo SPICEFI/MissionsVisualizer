@@ -18,8 +18,6 @@ public:
 	float rotationMatrix[16];
 	bool simpleRender = false;
 	bool clicked = false;
-	//double scale = 0.00004f;
-	//double distanceScale = 0.00000003f;
 	double scale = 0.000004f;
 	double distanceScale = 0.0000004f;
 public:

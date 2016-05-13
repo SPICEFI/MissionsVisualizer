@@ -101,7 +101,7 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
 				}
 			}
 			else if (obj.GetSpiceName() == "L2_OBJECT")
-				SolarSystem.AddTrajectoryAsSpaceObject(obj, app.GetReferenceFrame(), t);
+				SolarSystem.AddTrajectoryAsSpaceObject(obj, app.GetReferenceFrame(), t, app.RetrieveObject("L2"));
 			else if (obj.GetSpiceName() == "L2")
 				SolarSystem.AddStandaloneSpacePoint(obj, standalonePointFont);
 		}
@@ -113,7 +113,7 @@ BOOL Initialize(GL_Window* window, Keys* keys)					// Any OpenGL Initialization 
  	g_window = window;
 	g_keys = keys;
 	g_Camera.PositionCamera(Vector3(-5.5f, 28.44f, 0.2f), Vector3(-17.6f, 53.26f, -8.5f), Vector3(0, 0, 1));
-
+	//g_Camera.FocusOnPlanet(SolarSystem.FindObjectWithID(0), t, app);
 	RECT rect;
 	GetClientRect(g_window->hWnd, &rect);
 
@@ -244,6 +244,7 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 		if(g_Camera.speed < 2.0f)
 			g_Camera.speed += 0.0001f;
 	}
+
 
 	if (!StopSimulation)
 		if(moveTimeBack)

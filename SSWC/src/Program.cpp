@@ -472,10 +472,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 						else											// If Window Is Visible
 						{
 							// Process Application Loop
-							tickCount = GetTickCount();				// Get The Tick Count
+							tickCount = GetTickCount();					// Get The Tick Count
 							Update(tickCount - window.lastTickCount);	// Update The Counter
 							window.lastTickCount = tickCount;			// Set Last Count To Current Count
-							Draw();									// Draw Our Scene
+							Draw();										// Draw Our Scene
 
 							SwapBuffers(window.hDC);					// Swap Buffers (Double Buffering)
 						}

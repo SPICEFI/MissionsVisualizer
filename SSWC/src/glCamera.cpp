@@ -201,8 +201,8 @@ int glCamera::RetrieveObjectID(int x, int y, int width, int height, Scene scene,
 		return 0;
 }
 
-void glCamera::FocusOnPlanet(Planet& planet, Date t, App& app)
+void glCamera::FocusOnPlanet(const Planet& planet, Date t, App& app)
 {
-
+	//position = planet.GetPosition(t, app);
 }
 

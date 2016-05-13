@@ -129,17 +129,19 @@ float Scene::UpdateTrackingDistances(Vector3& sceneCameraPosition, Date t, App& 
 	//}
 }
 
-void Scene::AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date startingDate)
+void Scene::AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date startingDate, const SpaceObject& relativeTo)
 {
-	standaloneTrajectories.push_back(Trajectory(obj, frame, Units::Metric::kilometers));
-	Time time(10, Units::Common::days);
+	Trajectory tj = Trajectory(obj, frame, Units::Metric::kilometers, distanceScale);
+	tj.SetRelativeTo(relativeTo);
+	standaloneTrajectories.push_back(/*Trajectory(obj, frame, Units::Metric::kilometers)*/tj);
+	Time time(100, Units::Common::days);
 	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetIncrementalParams(startingDate, time, 1000);
 }
 
 void Scene::RenderStandaloneTrajectories(Date t, float lineWidth, float red, float green, float blue)
 {
 	glDisable(GL_LIGHTING);
-	for (int i = 0; i < standaloneTrajectories.size(); i++)
+	/*for (int i = 0; i < standaloneTrajectories.size(); i++)
 	{
 		glLineWidth(lineWidth);
 		glColor3f(red, green, blue);
@@ -154,6 +156,10 @@ void Scene::RenderStandaloneTrajectories(Date t, float lineWidth, float red, flo
 		}
 		glDisable(GL_LINE_SMOOTH);
 		glEnd();
+	}*/
+	for (int i = 0; i < standaloneTrajectories.size(); i++)
+	{
+		standaloneTrajectories[i].Render(t,lineWidth,red,green,blue);
 	}
 	glEnable(GL_LIGHTING);
 }

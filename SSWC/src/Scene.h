@@ -37,7 +37,7 @@ public:
 
 	void AddPlanetToTrackDistanceTo(Planet& planet);
 	float UpdateTrackingDistances(Vector3& sceneCameraPosition, Date t, App& app);
-	void AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date startingDate);
+	void AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date startingDate, const SpaceObject& relativeTo);
 	void AddStandaloneSpacePoint(const SpaceObject& obj, Font standalonePointFont);
 
 protected:

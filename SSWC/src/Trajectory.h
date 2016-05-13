@@ -6,6 +6,7 @@
 
 #include "CSpice\SpaceObject.h"
 #include "CSpice\Date.h"
+#include "App.h"
 
 #include <vector>
 #include <deque>
@@ -41,8 +42,10 @@ protected:
 	float red = 255.0f;
 	float green = 255.0f;
 	float blue = 255.0f;
+
+	float distanceScale;
 public:
-	Trajectory(const SpaceObject& obj, Frame frame, const LengthUnit& unit);
+	Trajectory(const SpaceObject& obj, Frame frame, const LengthUnit& unit, const float distanceScale);
 	//Traectory(float lineWidth, Vector3 rgb);
 	~Trajectory(){};
 
@@ -67,6 +70,7 @@ public:
 	//void Render();
 	// void Render(Date curDate);
 	//void PushBack(Vector3 newPos);
+	void Render(Date t/*, App& app*/, float lineWidth, float red, float green, float blue);
 
 private:
 	Date GetFromDate(Date curDate) const

@@ -1,7 +1,7 @@
 #pragma once
 #include "Trajectory.h"
 
-Trajectory::Trajectory(const SpaceObject& obj, Frame frame, const LengthUnit& unit) : obj(obj), frame(frame)
+Trajectory::Trajectory(const SpaceObject& obj, Frame frame, const LengthUnit& unit, const float distanceScale) : obj(obj), frame(frame)
 {
 	this->staticDefined = false;
 	this->incrementalDefined = false;
@@ -14,6 +14,7 @@ Trajectory::Trajectory(const SpaceObject& obj, Frame frame, const LengthUnit& un
 	incResolution = -1;
 	incStepDuration = -1;
 	nextPointDate = -1;
+	this->distanceScale = distanceScale;
 };
 
 void Trajectory::SetRelativeTo(const SpaceObject& obj)
@@ -77,24 +78,25 @@ const std::vector<Vector3>& Trajectory::GetStaticTrajectory() const
 	return staticTrajectory;
 }
 
-//void Trajectory::PushBack(Vector3 newPos)
-//{
-//	path.push_back(newPos);
-//}
-//
-//void Trajectory::Render()
-//{
-//	glLineWidth(lineWidth);
-//	glColor3f(red, green, blue);
-//
-//	glDisable(GL_LIGHTING);
-//	
-//	glBegin(GL_LINE_STRIP);
-//	glEnable(GL_LINE_SMOOTH);
-//	for (int i = 0; i < path.size(); i++)
-//		glVertex3f(path.at(i).x, path.at(i).y, path.at(i).z);
-//	glDisable(GL_LINE_SMOOTH);
-//	glEnd();
-//	
-//	glEnable(GL_LIGHTING);
-//}
+void Trajectory::Render(Date t/*, App& app*/, float lineWidth, float red, float green, float blue)
+{
+	glLineWidth(lineWidth);
+	glColor3f(red, green, blue);
+
+	glDisable(GL_LIGHTING);
+
+	glBegin(GL_LINE_STRIP);
+	glEnable(GL_LINE_SMOOTH);
+
+	Vector3T <Length> pos = relativeTo->GetPosition(t, /*app.GetReferenceFrame()*/this->frame);
+	Vector3 relativePosition (pos.x.ValueIn(this->unit)* distanceScale, pos.y.ValueIn(this->unit) * distanceScale, pos.z.ValueIn(this->unit) * distanceScale);
+	if (this->IncrementalDefined())
+	{
+		const std::deque<Vector3>& path = this->GetIncrementalTrajectory(t);
+		for (int i = 0; i < path.size(); i++)
+			glVertex3f(path.at(i).x * distanceScale + relativePosition.x, path.at(i).y * distanceScale + relativePosition.y, path.at(i).z * distanceScale + relativePosition.z);
+	}
+	glDisable(GL_LINE_SMOOTH);
+	glEnd();
+	glEnable(GL_LIGHTING);
+}

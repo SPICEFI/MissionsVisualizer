@@ -6,17 +6,24 @@
 
 //double distanceScale = 0.00000003f;
 
-Planet::Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, const Frame& frame, HDC hdc) :body(body), trajectory(obj, frame, Units::Metric::kilometers)
+Planet::Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, const Frame& frame, HDC hdc) :body(body), trajectory(obj, frame, Units::Metric::kilometers, distanceScale)
 {
 	this->texture = texture;
 	ID = body.GetSpiceId();
 	marked = false;
 	font = Font(hdc);
-	if (body.GetSpiceId() == 399)
+	/*if (body.GetSpiceId() == 399)
 	{
 		Date t("Mar 29 2016 01:03:52.99996036291100000 (UTC+0)");
 		Time time(10, Units::Common::days);
 		trajectory.SetStaticParams(t - time, t + time, 100);
+	}*/
+	if (body.GetSpiceName() == "MOON")
+	{
+		Date t("Mar 29 2016 01:03:52.99996036291100000 (UTC+0)");
+		Time time(10, Units::Common::days);
+		trajectory.SetStaticParams(t - time, t + time, 100);
+		trajectory.SetRelativeToFrameCenter();
 	}
 }
 
@@ -92,9 +99,9 @@ void Planet::RenderObject(Date t, App& app)
 	glPushMatrix();
 
 #pragma region Trajectory_Rendering
-	glBindTexture(GL_TEXTURE_2D, texture->getTextureHandle());
-	if (body.GetSpiceId() == 399)
-		RenderTrajectory(t);
+	/*glBindTexture(GL_TEXTURE_2D, texture->getTextureHandle());
+	if (body.GetSpiceName() == "MOON");
+		RenderTrajectory(t);*/
 #pragma endregion
 
 	glTranslatef(position.x, position.y, position.z);
