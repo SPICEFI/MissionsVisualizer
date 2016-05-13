@@ -24,7 +24,8 @@ protected:
 	Frame frame;
 	LengthUnit unit;
 
-	const SpaceObject* relativeTo;
+	//const SpaceObject* relativeTo;
+	SpaceObject relativeTo;
 
 	bool staticDefined;
 	std::vector<Vector3> staticTrajectory;
@@ -51,10 +52,15 @@ public:
 
 	void SetRelativeTo(const SpaceObject& obj);
 	void SetRelativeToFrameCenter();
+	const SpaceObject& GetRelativeTo()
+	{
+		return relativeTo;
+	}
 	void SetStaticParams(Date startDate, Date endDate, int resolution);
 	void SetIncrementalParams(Date startDate, Time historyDuration, int resolution);
 
 	const std::deque<Vector3>& GetIncrementalTrajectory(Date curDate);
+	std::vector<Vector3> GetAbsoluteIncrementalTrajectory(Date curDate);
 	const std::vector<Vector3>& GetStaticTrajectory() const;
 
 	bool IncrementalDefined() const
@@ -85,10 +91,11 @@ private:
 	Vector3 GetPosition(Date date, const LengthUnit& unit) const
 	{
 		Vector3T<Length> pt;
-		if (relativeTo == nullptr)
-			pt = obj.GetPosition(date, frame);
-		else
-			pt = obj.GetPosition(date, *relativeTo, frame);
+		//if (relativeTo == nullptr)
+		//	pt = obj.GetPosition(date, frame);
+		//else
+		//	pt = obj.GetPosition(date, *relativeTo, frame);
+		pt = obj.GetPosition(date, relativeTo, frame);
 
 		return Vector3(pt.x.ValueIn(unit), pt.y.ValueIn(unit), pt.z.ValueIn(unit));
 	}

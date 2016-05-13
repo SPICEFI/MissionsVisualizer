@@ -248,9 +248,9 @@ void Update(DWORD milliseconds)									// Perform Motion Updates Here
 
 	if (!StopSimulation)
 		if(moveTimeBack)
-			t -= Time(0.05, Units::Common::days);
+			t -= Time(0.005, Units::Common::days);
 		else
-			t += Time(0.05, Units::Common::days);
+			t += Time(0.005 , Units::Common::days);
 }
 
 void CreateSkyBox(float x, float y, float z, float width, float height, float length)

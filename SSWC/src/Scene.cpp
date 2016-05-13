@@ -134,8 +134,8 @@ void Scene::AddTrajectoryAsSpaceObject(const SpaceObject& obj, Frame frame, Date
 	Trajectory tj = Trajectory(obj, frame, Units::Metric::kilometers, distanceScale);
 	tj.SetRelativeTo(relativeTo);
 	standaloneTrajectories.push_back(/*Trajectory(obj, frame, Units::Metric::kilometers)*/tj);
-	Time time(100, Units::Common::days);
-	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetIncrementalParams(startingDate, time, 1000);
+	Time time(10000, Units::Common::days);
+	standaloneTrajectories.at(standaloneTrajectories.size() - 1).SetIncrementalParams(startingDate, time, 10000);
 }
 
 void Scene::RenderStandaloneTrajectories(Date t, float lineWidth, float red, float green, float blue)

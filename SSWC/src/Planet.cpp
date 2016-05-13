@@ -21,9 +21,11 @@ Planet::Planet(const SpaceBody& body, TGA* texture, const SpaceObject& obj, cons
 	if (body.GetSpiceName() == "MOON")
 	{
 		Date t("Mar 29 2016 01:03:52.99996036291100000 (UTC+0)");
-		Time time(10, Units::Common::days);
-		trajectory.SetStaticParams(t - time, t + time, 100);
-		trajectory.SetRelativeToFrameCenter();
+		Time time(25, Units::Common::days);
+		/*trajectory.SetStaticParams(t - time, t + time, 100);
+		trajectory.SetRelativeToFrameCenter();*/
+		trajectory.SetIncrementalParams(t, time, 100);
+		trajectory.SetRelativeTo(SpaceObject("EARTH"));
 	}
 }
 
@@ -99,9 +101,9 @@ void Planet::RenderObject(Date t, App& app)
 	glPushMatrix();
 
 #pragma region Trajectory_Rendering
-	/*glBindTexture(GL_TEXTURE_2D, texture->getTextureHandle());
+	glBindTexture(GL_TEXTURE_2D, texture->getTextureHandle());
 	if (body.GetSpiceName() == "MOON");
-		RenderTrajectory(t);*/
+		RenderTrajectory(t);
 #pragma endregion
 
 	glTranslatef(position.x, position.y, position.z);
@@ -205,12 +207,13 @@ void Planet::RenderTrajectory(Date t, float lineWidth, float red, float green, f
 
 	glBegin(GL_LINE_STRIP);
 	glEnable(GL_LINE_SMOOTH);
-	if (trajectory.StaticDefined())
-	{
-		const std::vector<Vector3>& path = trajectory.GetStaticTrajectory();
-		for (int i = 0; i < path.size(); i++)
-			glVertex3f(path.at(i).x * distanceScale, path.at(i).y * distanceScale, path.at(i).z * distanceScale);
-	}
+	//if (trajectory.StaticDefined())
+	//{
+	//	const std::vector<Vector3>& path = trajectory.GetStaticTrajectory();
+	//	for (int i = 0; i < path.size(); i++)
+	//		glVertex3f(path.at(i).x * distanceScale, path.at(i).y * distanceScale, path.at(i).z * distanceScale);
+	//}
+	trajectory.Render(t, lineWidth, red, green, blue);
 	glDisable(GL_LINE_SMOOTH);
 	glEnd();
 	glEnable(GL_LIGHTING);
